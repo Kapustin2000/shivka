@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b46d21f6-72e2-4d12-9127-31e107ec95c1" name="Default" comment="" />
+    <list default="true" id="b46d21f6-72e2-4d12-9127-31e107ec95c1" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_01.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_05.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_06.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_07.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_09.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_12.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_13.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_14.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_19.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_20.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_21.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_22.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_23.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_26.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_27.11.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/db_31.10.2018.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/dump.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/private/db/hwr.sql" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,8 +137,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="47" column="67" lean-forward="false" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
+            <state relative-caret-position="-57">
+              <caret line="33" column="57" lean-forward="true" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -199,6 +219,11 @@
               <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
               <item name="htdocs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="htdocs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="private" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -242,17 +267,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546027401785</updated>
-      <workItem from="1546027410649" duration="8048000" />
+      <workItem from="1546027410649" duration="8718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8048000" />
+    <option name="totallyTimeSpent" value="8718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -260,7 +285,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -530,8 +555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="47" column="67" lean-forward="false" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
+        <state relative-caret-position="-57">
+          <caret line="33" column="57" lean-forward="true" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
           <folding />
         </state>
       </provider>
