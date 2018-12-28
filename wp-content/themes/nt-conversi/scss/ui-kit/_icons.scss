@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/hwr/icomoon.eot?mhz0zm');
+  src:  url('../fonts/hwr/icomoon.eot?mhz0zm#iefix') format('embedded-opentype'),
+  url('../fonts/hwr/icomoon.ttf?mhz0zm') format('truetype'),
+  url('../fonts/hwr/icomoon.woff?mhz0zm') format('woff'),
+  url('../fonts/hwr/icomoon.svg?mhz0zm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &:before {
+    color: inherit;
+    position: relative;
+  }
+}
+
+.icon-success:before {
+  content: "\e914";
+  color: #00da6e;
+}
+.icon-arrow-long:before {
+  content: "\e915";
+  color: #222eff;
+}
+.icon-clip:before {
+  content: "\e911";
+  color: #ff4f19;
+}
+.icon-cross:before {
+  content: "\e912";
+  color: #6b6d8c;
+}
+.icon-question:before {
+  content: "\e913";
+  color: #ff2174;
+}
+.icon-search:before {
+  content: "\e90d";
+}
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-instagram:before {
+  content: "\e901";
+}
+.icon-linkedin:before {
+  content: "\e902";
+}
+.icon-location:before {
+  content: "\e903";
+}
+.icon-pin:before {
+  content: "\e904";
+  color: $night-blue;
+}
+.icon-tag:before {
+  content: "\e905";
+  color: $night-blue;
+}
+.icon-twitter:before {
+  content: "\e906";
+}
+.icon-views:before {
+  content: "\e907";
+}
+.icon-youtube:before {
+  content: "\e908";
+}
+.icon-arrow-short:before {
+  content: "\e909";
+}
+.icon-big-clap:before {
+  content: "\e90a";
+}
+.icon-chevron-right:before {
+  content: "\e90b";
+}
+.icon-clap:before {
+  content: "\e90c";
+}
+.icon-linkedin-fill:before {
+  content: "\e90e";
+  color: #bbbcca;
+}
+.icon-skype-fill .path1:before {
+  content: "\e90f";
+  color: #bbbcca;
+}
+.icon-skype-fill .path2:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: $white;
+}

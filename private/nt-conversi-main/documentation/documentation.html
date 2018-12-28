@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Conversi - Multipage Wordpress Theme</title>
+    <link href="assets/bootstrap.css" rel="stylesheet">
+    <link href="assets/docs.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- Sticky Sidebar
+      ================================================== -->	
+    <div class="container">
+      <div class="sidebar">
+        <div class="well">
+          <ul class="nav nav-list">
+            <li>
+				<a href="#start"><span class="label color-01">01</span>Getting started</a>
+				<ul>
+				  <li><a href="#Download-Your-Wordpress-Theme"> Download Your Wordpress Theme</a></li>
+				</ul>
+			</li>
+			
+            <li>
+              <a href="#install"><span class="label color-02">02</span>Installation</a>
+              <ul>
+				<li><a href="#How-To-Install-Your-Theme"> How To Install Your Theme </a></li>				  
+				<li><a href="#theme-installation-errors"> Theme Installation Errors </a></li>
+                <li><a href="#install-activate-plugins">Install And Activate Plugins</a></li>
+				<li><a href="#oneclick">Oneclick Demodata Installer</a></li>	
+				<li><a href="#import-xml-demodata"> Import XML Demodata</a></li>	
+                <li><a href="#setting-front-and-blog-page">Setting Up Front and Blog Page</a></li>				
+				<li><a href="#theme-partials">Theme Main Partials</a>
+				   <ul>
+				    <li><a href="#Add Menu">Menu</a></li>
+					<li><a href="#Add Header Logo">Logo</a></li>
+					<li><a href="#sidebar">Sidebar</a></li>
+					<li><a href="#Widgets">Widgets</a></li>
+					<li><a href="#Install Revolution Slider">Install Revolution Slider</a></li>
+				   </ul>
+				</li>  
+                <li><a href="#Page Templates">Page Templates</a></li>               				
+				<li><a href="#Child Theme">Child Theme</a></li>
+				
+              </ul>
+            </li>
+            <li><a href="#footer-header"><span class="label color-03">03</span>Footer and Header</a>
+			   <ul>
+				  <li><a href="#header">Header Options</a></li>
+			      <li><a href="#footer">Footer Options</a></li>
+			   </ul>
+			</li>
+            <li>
+              <a href="#contact-forms"><span class="label color-04">04</span>Contact forms</a>
+              <ul>
+                <li><a href="#footer-newsletter">Footer Subscribe Form</a></li>
+                <li><a href="#hero-form-1">Hero Form 1</a></li>
+                <li><a href="#hero-form-2">Hero Form 2</a></li>
+                <li><a href="#hero-form-3">Hero Form 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#post-formats"><span class="label color-05">05</span>Blog - Post Formats</a></li>
+            <li><a href="#theme-settings"><span class="label color-06">06</span>Theme settings</a></li>
+            <li><a href="#woocommerce"><span class="label color-07">07</span>Woocomerce options</a></li>
+            <li><a href="#translate"><span class="label color-01">08</span>Translate theme</a></li>
+            <li><a href="#vcsc"><span class="label color-03">9</span>Visual Composer Shortcodes</a></li>
+			<li><a href="#design"><span class="label color-07">10</span>How to Design </a></li>
+            <li><a href="#icon-lists"><span class="label color-06">11</span>Icon Lists</a></li>
+            <li><a href="#faq"><span class="label color-07">12</span>FAQ</a></li>
+            <li>
+              <a href="#more"><span class="label color-01">13</span>More</a>
+              <ul>
+                <li><a href="#more-troubleshoot">Troubleshooting</a></li>
+                <li><a href="#theme-update-service"><strong>Theme Update Service</strong></a></li>
+				<li><a href="#Learn-WordPress">Learn WordPress</a></li>
+				<li><a href="#how-to-use-plugins">How to Use Plugins</a></li>
+              </ul>
+            </li>
+            <li><a href="#ninetheme"><span class="label color-02">14</span>Ninetheme Support Center</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--/sidebar-->
+    </div>
+    <!-- Header
+      ================================================== -->	
+    <header class="jumbotron" id="overview">
+      <div class="container">
+        <div class="row">
+          <img src="assets/img/logo.jpg">
+          <h2>Ninetheme</h2>
+        </div>
+        <p class="lead">Conversi - Theme Documentation</p>
+        <ul>
+          <li><strong>By :</strong> Ninetheme</li>
+          <li><strong>Support : </strong><a href="http://9theme.ticksy.com" target="_blank">Ninetheme Support Center</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--/header-->
+    <!-- Getting Started
+      ================================================== -->	
+    <section id="start" class="color-01">
+      <div class="container">
+        <h1><span class="label color-01">01</span>Getting started</h1>
+        <p>Firstly, a huge thanks for purchasing this theme, your support is truly appreciated!</p>
+        <p>This document covers the installation and use of this theme and often reveals answers to common problems and issues -
+		we encourage you to read this document thoroughly if you are experiencing any difficulties.
+		If you have any questions that are beyond the scope of this document, feel free to pose them in the dedicated support forum.</p>		
+        <div class="alert alert-warning">
+          Please read the documents carefully. If you forget to read even one single part of the documentation , your website might not work.
+        </div>
+		<p><strong>It is likely possible to have easly the demo in three steps : </strong></p>
+		<ol>
+			<li>Upload the theme and make it make it active</li>
+			<li>Upload the plugins of the theme and make sure that they are active : Go to <strong>Appereance  > Install Plugins</strong> </li>
+			<li>If the theme has the One-Click installer, please go to : Appereance  > Installer Panel , but if has not the One Click installer please use the XML demodata.</li>
+			<li>If you've followed  these steps provided above and also no problem in your host setting, you'll get the same demo within 10 minutes.</li>
+        </ol>
+      </div>
+    </section>
+    <!--/section-->	
+	
+	<section id="Download-Your-Wordpress-Theme" class="color-01">
+      <div class="container">
+        <h1><span class="label color-01">01.1</span>Download Your WordPress Theme</h1>
+		<p>Congratulations! You just purchased our Conversi Responsive Multipurpose WordPress theme on ThemeForest. 
+		To download the theme log into your ThemeForest account and go to your account profile. 
+		Then click on the downloads link. This is where you will find all of your ThemeForest purchases. 
+		Locate Conversi, click on the download button and select the installable WordPress file only. Also you can see the following image. </p>
+		Locate Conversi, click on the download button and select the installable WordPress file only. Also you can see the following image. </p>
+		<img src="assets/img/tf-install.jpg">		
+		<p>This will download the installable Conversi zip file.</p>
+	  </div>
+	</section>
+	
+	<!--section-->
+	
+	
+	<section id="How-To-Install-Your-Theme" class="color-02">
+      <div class="container">
+        <h1><span class="label color-02">02</span>Theme installation</h1>
+	  </div>
+	</section>
+	
+	<section id="How-To-Install-Your-Theme" class="color-02">
+     <div class="container">
+        <h1><span class="label color-02">02.1</span>How To Install Your Theme</h1>
+	
+		<p>Now that you’ve downloaded the Conversi WordPress theme there are two ways you can install the theme.</p>
+		<iframe width="660" height="315" src="https://www.youtube.com/embed/nJ0uTu4Vxkk" frameborder="0" allowfullscreen></iframe>		
+		<div class="alert alert-info">		  
+		  <p><strong>Important:</strong> One of the most common reasons people have issues is because they try uploading the 
+		  full zip that includes sample data, documentation…etc which displays the <strong> 
+		  
+		  “The package could not be installed. The theme is missing the style.css stylesheet.”</strong> error. 
+		</div> 
+		<div class="alert alert-info">	
+		  Please make sure you are uploading only the installable theme which is called theme-file-name.zip. 
+		  When you download the theme from your ThemeForest downloads it will give you 2 choices one is to 
+		  download the full zip which you will need to extract to locate the theme and the other one is 
+		  just the installable theme. Please pay close attention to this.</p>
+		</div>  
+		<div class="alert color-03" style="color:#fff;">	
+		<a href="http://www.hongkiat.com/blog/common-wordpress-errors-with-solutions/" target="_blank"style="color:#fff;">	10 Most Common WordPress Errors (With Solutions)</a>
+		</div> 
+		<h3><strong>Step 1: Make sure wordPress is up to date!</strong></h3>
+		  <p>Conversi is a powerful theme and makes use of all the latest WordPress functions to ensure the theme is coded as best as possible and is highly optimized, please make sure WordPress is fully up to date before installing the theme!
+		  You should ALWAYS be running the latest version of WordPress anyway, because otherwise you put your whole site at risk for potential threats. Never use an outdated version of WordPress!</p>
+		<h3><strong>Step 2: Install via wordPress or FTP</strong></h3> 
+		<p>Now that you made sure WordPress is up to date you can go a head and install the theme and there are 2 methods for doing so: via WordPress or via FTP. 
+		If you are working with WordPress and buying themes you should pretty much know how to install a theme, but below are some screenshots just incase you don’t know how!</p>
+		<iframe width="660" height="315" src="https://www.youtube.com/embed/aK05TLbQ6oA" frameborder="0" allowfullscreen></iframe>
+		<h3><strong>Install via Cpanel</strong></h3>
+		<iframe width="853" height="480" src="https://www.youtube.com/embed/YAF08HFgM-U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		<h3><strong>Install via wordPress</strong></h3>
+		<p>Log into your WordPress website and browse to Appearance > Themes</p>
+		<img src="assets/img/upload.png"/>
+		<p>Then click on the option to upload theme.</p>
+		<img src="assets/img/upload-theme-2.png"/>
+		<p></p>
+		<p></p>
+		<p></p>
+		<h4><strong>Install Via FTP</strong></h4>
+		<p>Your second installation option is to upload the theme via FTP. For this method first log into your site via FTP and browse to your folder located at wp-content/themes. Unzip the theme file you downloaded from Themeforest and upload only the extracted Conversi folder to your server.</p>
+		<img src="assets/img/ftp.png"/>
+	  </div>	  	  
+	</section>
+	
+	
+	<section id="theme-installation-errors" class="color-02">
+      <div class="container">
+        <h1><span class="label color-02">02.2</span>Theme installation errors</h1>
+		<p>The Conversi theme should install without any errors, although on some occasions people to encounter errors so here are the most common errors and the solutions:</p>				
+		
+		<p>One of the most common reasons people have issues is because they try uploading the Full zip that includes sample data, documentation…etc which displays the <strong>“The package could not be installed. The theme is missing the style.css stylesheet.”</strong> error. Please make sure you are uploading only the installable theme which is called theme-file-name.zip. When you download the theme from your ThemeForest downloads it will give you 2 choices one is to download the full zip which you will need to extract to locate the theme and the other one is just the installable theme. Please pay close attention to this.</p>
+		<h4>Are you sure you want to do this?</h4>
+		<p> You might have face such an warning and this error typically happens for one of two reasons:
+		<ul>
+		    <li><strong>a.</strong>Your server <a title="Increase Memory Limit" href="http://www.wpbeginner.com/wp-tutorials/how-to-increase-the-maximum-file-upload-size-in-wordpress/" target="_blank">memory limit to PHP is too low</a></li>
+			<li><strong>b.</strong>You are trying to upload the Full zip file and not just the installable theme.</li>
+		    <li><strong>c.</strong>Your upload limit isn’t large enough and you must update your PHP.INI file to increase the upload_max_filesize value or contact your webhost to fix it or try it : <a title="Increase Memory Limit" href="http://www.wpbeginner.com/wp-tutorials/how-to-increase-the-maximum-file-upload-size-in-wordpress/" target="_blank">Click me</a></li>
+
+	  </div>
+	</section>
+	
+    
+    <section id="install-activate-plugins" class="color-02">
+      <div class="container">
+        <h1><span class="label color-02">02.3</span>Install and activate plugins</h1>
+        <p>After activate the theme, you can see a section, on the top, it includes a reminding about plugins of the theme:</p>
+        <ol>
+          <li>Click <strong>Begin installing plugins</strong> </li>
+          <li>Go to <strong>Bulk actions > Install</strong> </li>
+          <li>Select all plugins</li>
+          <li>And click <strong>Apply</strong> </li>
+          <p>After a few minutes...That's it ! Now, you should activate the plugins for use them:</p>
+          <li>Get your mouse over <strong>Plugins</strong> on the right bar </li>
+          <li>Click <strong>Installed Plugins</strong> </li>
+          <li>Go to <strong>Bulk actions > Activate</strong> </li>
+          <li>Select all plugins</li>
+          <li>And click <strong>Apply</strong> </li>
+        </ol>
+        <div class="alert alert-info">After activate theme you can find plugins here : admin menu - appereance - install plugins</div>
+		<div class="alert alert-danger"><strong> NOTE : </strong>Please make sure that you've installed your plugins b'caz if not, you'll get an error even if you imported the Demo Data in a correct way.</div>
+      </div>
+    </section>	
+	
+	<section id="oneclick" class="color-02">
+		<div class="container">
+			<h1><span class="label color-02">02.4</span>Oneclick demodata installer</h1>                
+			<p><strong>NOTE</strong> : In theme theme, all the pages, media, images etc come with importing the demodata. If you don't, you'll have no content in your website.		
+			<p>Please follow the following instructions in order to import your xml demodata </p>
+			<ol>
+				<li><strong> Dashboard > appereance > Installer panel</strong></li>
+				<li><strong> Click on Run Installer button and wait. </strong></li>
+				<li><strong> If you are encounter with problems : <a href="#theme-installation-errors" >WordPress hosting problems</a> </strong></li>
+			</ol>
+			</div>
+    </section>
+	
+	<section id="import-xml-demodata" class="color-02">
+      <div class="container">
+        <h1><span class="label color-02">02.5</span>Import XML demodata</h1>                
+        <p><strong>NOTE</strong> : In theme theme, all the pages, media, images etc come with importing the demodata. If you don't, you'll have no content in your website.		
+  	    <p> Please follow the following instructions in order to import your xml demodata </p>
+		<p><strong> Dashboard > Tool > Import > WordPress > Select your file.</strong></p>	
+		<img src="assets/img/xml-file.png">
+    </section>
+	
+    <section id="setting-front-and-blog-page" class="color-02">
+      <div class="container">
+        <h1><span class="label color-02">02.6</span>Setting Up Front and Blog Page</h1>
+        <p>To set up the Frontpage, you must first create a new page with no content inside it, you can do so by navigating to </p>
+        <p><strong>Pages > Add New.</strong></p>
+        <p>You can give this page a title of <strong>"Frontpage"</strong> Under the page attributes section,</p>
+        <p>Select Page Template As <strong>Front Page Template</strong> and Click <strong>"Publish"</strong>.</p>
+        <p>Once you have created your new page:</p>
+        <ol>
+          <li>Go to <strong>Settings > Reading</strong></li>
+          <li>Select <strong>A static page</strong> from <strong>Front page displays</strong> section</li>
+          <li>Select <strong>frontpage</strong> for Front page</li>
+          <li>Select <strong>Blog</strong> for Posts page</li>
+        </ol>
+        <img src="assets/img/fpbp.jpg">
+        <div class="alert alert-warning">
+          <strong>If you haven't applied these setting above, your frontpage sections will not be displayed.</strong> 
+        </div>
+      </div>
+    </section>   
+	
+	<section id="theme-partials" class="color-02">
+		<div class="container">
+		<h1><span class="label color-02">02.7</span> Theme Partials</h1>
+		
+		<p>In our theme, we tried to make it easier the customizability providing much options in the theme partials section. 
+		You can find both menu and logo in the header area, while you can find the social icons, widgets in the footer area and also you're able to find the sidebar options in the theme options.
+		In this section, we're going to show you how to add these options providing images to make it more understandable. </p>	
+
+	</section>
+	
+	<section id="Add Menu" class="color-02">
+		<div class="container">
+			<h1><span class="label color-02">02.8</span>Add Menu</h1>
+			<p></p>
+			<p><strong>The Usage of Primary Menu </strong> : In Converse, you can use the primary menu so easy. What you need to do first is going to <strong> Pages </strong> > <strong>Home </strong> Here, at the bottom of the page, you should select the Primary Menu under the title of Home-Pages Menu Options. Once you selected the primary menu in the metabox area, please go to <strong>Appearance </strong> > <strong> Menu </strong>, where you can add your menu items. After adding your menu items, please make sure that you've saved after your editiions. Besides, you can select your menu position to be on the right side or top side in the mebox area as well. Please take a look at the following image to get the point well.</p>
+			<img src="assets/img/primary-menu.png">	
+			<p></p>
+			<p></p>
+			<p><strong>The Usage of Metabox Menu </strong> : In Conversi, the way to use the metabox is simple too. What you need to do first is going to Pages > Home Here, at the bottom of the page ( in the metabox area ), you should select the Metabox Menu under the title of Home-Pages Menu Options. Once you selected the Metabox Menu in the metabox area, you'll see a new field for the metabox menu items. Please take a look at the following image to get the point well. </p>
+			<img src="assets/img/metabox-menu.png">
+		</div>
+	</section>
+	
+	<section id="Add Header Logo" class="color-02">
+	<div class="container">
+	<h1><span class="label color-02">02.9</span>Add Header Logo</h1>
+	<p>In the theme, you can find the available logo in the theme options. If you would like to add your own logo, all you need to is just going to Appearance > Theme Options > General Config / Header Logo. Here, you need to make sure that the visibility of your logo is <strong> On</strong>.</p>   
+	 <img src="assets/img/logo.png"/>
+	</section>
+			
+	<section id="sidebar" class="color-02">
+	 <div class="container">
+		<h1><span class="label color-02">02.10</span>SIDEBARS</h1>
+		<p>Page sidebar options here : Appereance - Theme Options - Theme Sidebars Type</p>
+		<h4>Unlimited Sidebar - Working on Default Page Template</h4>
+		<p>If you'd like to be able to choose which widgets display on each page or post of your site, then this is the plugin you need. 
+		Screen space is limited and you can quickly run out of room when trying to pack every widget for every page of your site into one sidebar and a few widgetized footer areas.</p>
+		<p>Custom Sidebars allows you to display custom widget configurations on any page, post, category, post type, or archive page.</p>
+		<a href="https://srd.wordpress.org/plugins/simple-page-sidebars/">Download Page Sidebar Plugin</a>
+		
+		
+	
+	</div>
+	</section>
+	
+	<section id="Widgets" class="color-02">
+	<div class="container">
+	<h1><span class="label color-02">02.11</span> Widgets</h1>
+	<p>Adding widgets is simple. Browser to Appearance > Widgets and drag and drop your widgets into your footer Columns. The default Footer is composed of Widgets which you can add via <strong>Appearance > Widgets.</strong> You can also completely style and select your options for your footer via the Customizer. Look at the following images.</p>
+   <div class="alert alert-warning">
+    <p><strong> NOTE : </strong> You should in keep mind that you can add your contact form. What you need to do is copy-paste the shortcode of the contact form  and drap-drop the ' text 'into the related area as already shown in the images provided below.</p>
+   </div>
+    <img src="assets/img/widgets.png"/>
+	<img src="assets/img/widgets2.png"/>
+	</section>	
+	
+	<section id="Install Revolution Slider" class="color-02">
+	 <div class="container">
+		<h1><span class="label color-02">02.12</span>Install Revolution Slider</h1>
+		<p>If the theme has a revolution slider and you would like to use the same revolution slider like the demo, what you need to do is much simpler. Just go to the Admin > Slider Revolution > Import ( Here, you should select the demodata of the revolution slider and import it ).</p>
+        <p><strong> NOTE : </strong> If you would like to install your own revolution slider, you can do it following the instructions below in a simple way. </p>
+		<h4>Locating Your Slider Shortcode</h4>
+		<p>As you create sliders using the Revolution Slider or Layer Slider plugin, a unique shortcode is created for each.</p>
+		<img src="assets/img/rev-slider-sc.png"/>
+		<p>To find the shortcode simply click on the Revolution Slider link in your WordPress dashboard. Each slider and it’s shortcode is listed in the order you created or imported them.</p>
+		<div class="alert alert-warning">
+			<a href="https://www.youtube.com/watch?v=p7rBZmYgfUU" target="_blank">Click me To learn how to create a new rev. slider</a>
+		</div>
+	</section>
+									
+
+	
+	<section id="Page Templates" class="color-02">
+	 <div class="container">
+		<h1><span class="label color-02">02.13</span>PAGE TEMPLATES</h1>	
+		<h4><strong> Onepage Template Type</strong></h4>
+		<p> If you would like add a new page into your page, all you need to is just to select the Unlimited Template under the page attributes. Otherwise, you'll get a broken page in your website. After process, you can add this newly created page to your menu. If you like, you can add your newly created page in both the Metabox Menu, which is in the metabox area or in the Primary Menu, which is in the Appearance > Menu . We'll explain the detail for the menu in the next section of the documentation. </p>
+		<img src="assets/img/one-page.png"/> 
+		<p></p>
+		<p></p>
+		<h4><strong>Full Width Template Type</strong></h4>		
+	    <p>This template structure doesn't contain neither sidebar nor any of the part of a page. Instead, this template just considering your empty page needs.</p>
+		<p></p>
+	 </div>
+	</section>
+	
+					
+    <!-- Theme Options
+      ================================================== -->
+    
+	<section id="footer-header" class="color-03">
+      <div class="container">
+        <h1><span class="label color-03">03</span>Header and Footer Options</h1>
+		<p>Here, as we already tried to explain in the previous sections that each theme has a default header and footer section inside it. The options provided in this sections have been made just to make it easier to modify the appearance of your website for you. In this section, we're going to indicate you how to modify both the header and footer sections in a simple and short way.</p>		
+      </div>
+    </section>
+	
+	<section id="header" class="color-03">
+      <div class="container">
+        <h1><span class="label color-03">03.1</span>Header Options</h1>
+		<p> In our theme, our header area is consist of a kind of features including menu, logo, which  we'd already talked about previously and also revolution slider as well. Even though it is most likely to see the header options in the theme options, it's also possible to provide some available options in the metabox area in the home page. By the way, better to keep in mind that some options may take place in the theme options. Now, in the following, we're going to explain each of the available features in the header area step by step.
+			<ul>
+			  <li><strong>MENU </strong> : You can see the menu that we use in the header area. As we already said that you can add your menu in the <strong>Appearance > menu </strong> or in the metabox area </li>
+			  <li><strong>LOGO </strong> : You can add your logo in the theme options </li>
+	        </ul>
+			<img src="assets/img/logo.png">
+		</p>
+	</section>
+	
+	<section id="footer" class="color-03">
+      <div class="container">
+        <h1><span class="label color-03">03.2</span>Footer Options</h1>
+		<p>As we mentioned about that footer area comes up as default. However, the features in the footer area must be provided with option to make it looks nice. In the theme the footer option allows you to insert widgets, social icons, copyright text, shortcodes and more. You can find the footer options in the Appearance > Theme Options. At the following, we'll explain the available features and how to use in a simple and short way.
+		</ul>
+		  <li><strong>COPYRIGHT TEXT :</strong> Please go to Theme Options > Footer ( Here, you'll see the text area options for the copytext) </li>
+		  <li><strong>FOOTER POWERED : </strong> Please go to Theme Options > Footer ( Here, you'll see the powered area, it's up to you to make it <strong>On </strong> or <strong>Of </strong>) </li>
+		  <li><strong>FOOTER COLOR : </strong> Please go to Theme Options > Footer Color ( Here, you can select each the available color that you wish ) </li>
+		</p>
+	</section>
+    <!--/section-->
+    <!-- Shortcodes
+      ================================================== -->
+    <section id="footer-newsletter" class="color-04">
+		<div class="container">
+			<h1><span class="label color-04">04.1</span>Add Footer Subscribe Form </h1>
+			<p>The first thing you need to do is to go to <strong> Pages > frontpage > Subscribe Section</strong> Then, copy the shortcode of the subscribe form and paste into the related arae in the contact shortcode.</p>
+			<img src="assets/img/subscribe.png">
+			<div class="alert alert-info">
+			  <p><strong>Frontpage Contact Form 1 code:</strong></p>
+			  <textarea style="margin: 0px; height: 214px; width: 568px;">
+				<div class="affa-form-subscribe">
+					[text* text-684 placeholder "Email address...."]
+					[submit "Subscribe Now"]
+				</div>
+			  </textarea>
+			</div>
+			<p><strong> In case of facing any kind of problems related to the contact form, please check the following contact form documentation carefully. </strong></p>
+			<strong><a href="http://contactform7.com/docs/" target="_blank">Click Here For The Contact Form 7 Documentation</a></strong>
+		</div>
+	</section>
+	
+	<section id="hero-form-1" class="color-04">	
+		<div class="container">
+			<h1><span class="label color-04">04.2</span>Add Hero Form 1 </h1>
+			<p>The first thing you need to do is to go to <strong> Pages > frontpage > Hero Form 1 Shortcode </strong> Then, copy the shortcode of the hero form and paste into the related arae in the hero form shortcode.</p>
+			<img src="assets/img/hero-form-1.png">
+			<div class="alert alert-info">
+			  <p><strong>Frontpage Contact Form 1 code:</strong></p>
+			  <textarea style="margin: 0px; height: 214px; width: 568px;">
+				<div class="affa-form-signup">
+					[text* text-795 id:header_form_name "Full Name"]
+					[text* text-795 id:header_form_email "Email Address *"]
+					[text* text-795 id:header_form_phone "Phone Number"]
+					[textarea* textarea-447 id:header_form_message "Message *"]
+					[submit class:btn-medium "Sign-up Now!"]
+				</div>
+			  </textarea>
+			</div>
+			<p><strong> In case of facing any kind of problems related to the contact form, please check the following contact form documentation carefully. </strong></p>
+			<strong><a href="http://contactform7.com/docs/" target="_blank">Click Here For The Contact Form 7 Documentation</a></strong>
+		</div>
+	</section>
+	
+	<section id="hero-form-2" class="color-04">	
+		<div class="container">
+		<h1><span class="label color-04">04.3</span>Add Hero Form 2 </h1>
+			<p>The first thing you need to do is to go to <strong> Pages > frontpage > Hero Form 2 Shortcode </strong> Then, copy the shortcode of the hero form and paste into the related arae in the hero form shortcode.</p>
+			<img src="assets/img/hero-form-2.png">
+			<div class="alert alert-info">
+			  <p><strong>Frontpage Contact Form 2 code:</strong></p>
+			  <textarea style="margin: 0px; height: 214px; width: 568px;">
+			<div class="affa-form-signup">
+				[text* text-242 id:header_form_name placeholder "Full Name"]
+				[text* text-242 id:header_form_email placeholder "Email Address *"]
+				[submit class:btn-medium "Sign-up Now!"]
+			</div>
+			  </textarea>
+			</div>
+			<p><strong> In case of facing any kind of problems related to the contact form, please check the following contact form documentation carefully. </strong></p>
+			<strong><a href="http://contactform7.com/docs/" target="_blank">Click Here For The Contact Form 7 Documentation</a></strong>
+		</div>
+	</section>
+	
+	<section id="hero-form-3" class="color-04">			
+		<div class="container">
+		<h1><span class="label color-04">04.4</span>Add Hero Form 3 </h1>
+			<p>The first thing you need to do is to go to <strong> Pages > frontpage > Hero Form 3 Shortcode </strong> Then, copy the shortcode of the hero form and paste into the related arae in the hero form shortcode.</p>
+			<img src="assets/img/hero-form-3.png">
+			<div class="alert alert-info">
+			  <p><strong>Frontpage Contact Form 3 code:</strong></p>
+			  <textarea style="margin: 0px; height: 214px; width: 568px;">
+				<div class="affa-form-signup">
+					<div class="col-form-input">
+						[text* text-442 id:header_form_name placeholder "Full Name"]
+					</div>
+					<div class="col-form-input">
+						[text* text-442 id:header_form_email placeholder "Email Address *"]
+					</div>
+					<div class="col-form-submit">
+						[submit "Sign-up Now!"]
+					</div>
+				</div>
+			  </textarea>
+			</div>
+			<p><strong> In case of facing any kind of problems related to the contact form, please check the following contact form documentation carefully. </strong></p>
+			<strong><a href="http://contactform7.com/docs/" target="_blank">Click Here For The Contact Form 7 Documentation</a></strong>
+		</div>
+    </section>
+
+    <!--/section-->
+
+	
+	
+    <!-- Post Formats
+      ================================================== -->	 
+     
+    <section id="post-formats" class="color-05">
+      <div class="container">
+        <h1><span class="label color-05">05</span>Post Formats</h1>
+        <p>This theme makes use of all of WordPress' 10 post formats to give you plenty of ways to show content in the top section of your articles. You choose type by selecting format in the "Format" box on the right side when you edit or add a new post. Depending on which format you select, new options will appear below the large text field.</p>
+        <p>Here is how to use each one of the formats, and what each one does:</p>
+        <ul>          
+          <li>
+            <strong>Gallery</strong> - Shows all images attached to the post as a slider at the top of the article. More details how to use will appear below once selected.
+			<img src="assets/img/Gallery-Post.png"/>
+            <div class="alert alert-warning">
+              <p><strong>Note :</strong> If you want to show an image in the article below the slider, but still not include it in the slider, you need to go to <strong>Media > Add New</strong> and upload it there. Then go back to the post and insert it. Make sure it's not attached to the post.</p>
+            </div>
+          </li>
+          <li><strong>Video</strong> - Shows an embed video at the top of the article. Fields for link embed or code embed will appear once selected. <br /><br />You can show self-hosted videos in this field, although it's not intentionally supported, by using HTML5-video tags in the Embed Code field. <br /><br />
+		  <img src="assets/img/Video-Post.png"/>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--/section-->
+    <!-- Customization
+      ================================================== -->	
+    <section id="theme-settings" class="color-06">
+      <div class="container">
+        <h1><span class="label color-06">06</span>Theme Settings ( Theme Options )</h1>		
+		<p>First, we should know that options are the main pillar of a theme. In other words, theme options are the backbone of a theme. This is the section, where you have full control over your website and can customize as you wish and besides, you do not have to able to know about coding. The major groups of options you can set in the theme are the Theme Options. Here, in Conversi, you have a variety of options regarding the theme including socials, widgetize options etc.</p>
+		<img src="assets/img/Theme-Options.png"/>
+        <strong>Included:</strong>
+        <p><strong>General Config</strong></p>
+        <ol>
+          <li>Footer height option</li>
+          <li>Frontpage banner section option for class name, don't forget please.</li>
+          <li>Logo upload</li>
+          <li>Favicons upload</li>
+          <li>Custom css</li>
+        </ol>
+		<p><strong>Google Fonts</strong> : You can select any fonts you wish for your website. On the other hand, you can use the following plugin for fonts as well.<strong><a href="https://tr.wordpress.org/plugins/typekit-fonts-for-wordpress/" target="_blank"> Click Me.</a></strong></p>
+        <p><strong>Theme color</strong> : There are a variety of color options provided and you select each as you wish.</p>
+        <p><strong>Theme sidebars</strong> :You can select the sidebar for each of your page</p>
+        <p><strong>Header / logo options : </strong>Upload blog pages parallax background image and header logo options</p>
+        <p><strong>Meta Tags</strong> : You can make the widgetize area on or of based on your desire.</p>
+        <p><strong>Footer</strong> : As said that you can edit the footer area including social, copyright</p>
+      </div>
+    </section>
+    <!--/section-->	
+		
+	<section id="Child Theme" class="color-02">
+		<div class="container">
+			<h1><span class="label color-02">02.14</span> Child Theme</h1>
+			<h4>Why You Should Be Using Child Themes</h4>
+			<p>Creating a child theme when performing adjustments to your theme’s code can save you a lot of future headache. Child themes allow you to make changes without affecting the original theme’s code, which makes it easy to update your parent theme without erasing your changes. By creating a child theme, you create a separate set of files that you can use to customize the theme without affecting the original theme at all. Not only does this make updating easier, it also makes sure that you will never ruin your original theme as you are never actually modifying the files. You can always turn off your child theme and fall back on the original.<a title="Increase Memory Limit" href="https://www.elegantthemes.com/blog/resources/wordpress-child-theme-tutorial" target="_blank"> Click Me To Create A Child Theme</a></p>	   
+		</div>
+	</section>
+	
+    <!-- Child Theme
+      ================================================== -->		
+    <section id="woocommerce" class="color-07">
+      <div class="container">
+        <h1><span class="label color-07">07</span>Woocomerce options</h1>
+        <p>After install woocommerce plugin you need to set woocommerce pages. Woocommerce page settings here : appereance - theme options. If you want to add woocommerce widgets go here : appereance - widgets</p>
+        <div class="alert alert-warning">
+          <strong><a href="https://docs.woothemes.com/documentation/plugins/woocommerce/" target="_blank">You can visit plugin documentation website.</a></strong> 				
+        </div>
+      </div>
+    </section>
+    <!--/section-->	
+    <section id="translate" class="color-01">
+      <div class="container">
+        <h1><span class="label color-01">08</span>Translate theme</h1>
+        <div class="alert alert-warning">
+          <strong><a href="http://code.tutsplus.com/tutorials/translating-your-theme--wp-25014" target="_blank">Translate theme tutorial</a></strong> 				
+        </div>
+      </div>
+    </section>	
+       <!--/section-->	
+	   
+    <section id="vcsc" class="color-03">
+      <div class="container">
+        <h1><span class="label color-03">9</span>Visual Composer Shortcodes</h1>
+		<p>The theme has been created with the help of shortcodes, which means that you are able to change the order of sections without code information required. You can find the shortcode in the Pages > Homepage ( Here, you can find the shortcode that create the frontpage )
+        <p><strong>Frontpage Shortcode </strong></p>
+		<img src="assets/img/conversi.png" >
+        <p></p>        
+      </div>
+    </section>
+    <!--/section-->	
+	
+	<section id="design" class="color-07">
+      <div class="container">
+        <h1><span class="label color-07">10</span>How to Design Your Website</h1>
+        <p> In Conversi, you're able to modify your website using css codes. You can change/modify each of the available elements thanking to the css codes. Lets say, for example, that you would like to change the color one of your element, you can do it easly and also save your time as well. If you're not much more familiar with using css, please take a look deeply at the following link and video to learn how to design your website using css codes. </p>
+		<p><a href="https://dailypost.wordpress.com/2013/07/25/css-selectors/">Click here for the link  </a></p>
+		<p><a href="https://www.youtube.com/watch?v=4fZWATTNi1c">Click here for the video  </a></p>
+      </div>
+	</section>			
+
+    <!--/section-->	
+    <section id="icon-lists" class="color-06">
+      <div class="container">
+        <h1><span class="label color-06">11</span>Conversi icons</h1>
+        <p><a href="https://icomoon.io/#preview-free">Icomoon</a></p>
+        <p><a href="https://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a></p>
+        <p>In Conversi, we have a variety of icons listed under the Font Awesome.You can use all icons after family prefix, example :fa fa-pencil , copy paste pencil name.</p>
+		<p><strong>NOTE : </strong> Please keep in mind that you must use lowercase when writing the icon's name. For ex. fa fa-Twitter ( WRONG ), instead fa fa-twitter ( CORRECT ) </strong>
+        <p></p>
+      </div>
+    </section>
+    <!--/section-->
+    <section id="faq" class="color-07">
+      <div class="container">
+        <h1><span class="label color-07">12</span>Theme problems</h1>
+        <div class="alert alert-info">
+          <p><strong>1- </strong>Question : Where is the register form ?</p>
+          <p><a href="#header-2-register">Create Register form</a></p>
+        </div>
+        <div class="alert alert-danger">
+          <p><strong>2- </strong>Question : Why footer is looking broken ?</p>
+          <p><a href="#theme-settings">Footer options in the Theme Options panel. </a></p>
+        </div>
+        <div class="alert alert-info">
+          <p><strong>3- </strong>Question : There are gaps in the page, why ?</p>
+          <p><a href="#vcset">Click me, you have not read this section.</a></p>
+        </div>
+        <div class="alert alert-danger">
+          <p><strong>4- </strong>Question : How to create popup contact form ?</p>
+          <p><a href="#pop-up-contactform">Popup contact form video here.</a></p>
+        </div>
+        <div class="alert alert-info">
+          <p><strong>5- </strong>Question : I did everything like in the documentation but menu is invisible?</p>
+          <p><strong>Solution:</strong> Please go to <strong>Admin - pages - frontpage</strong> and click update</p>
+        </div>
+        <div class="alert alert-danger">
+          <p><strong>6- </strong>Problem : There is a gray area in footer </p>
+          <p><strong>Solution: </strong>Go to appereance -> Theme Options -> Footer and turn <strong>off</strong> the widgitize footer section</p>
+        </div>
+        <div class="alert alert-info">
+          <p><strong>7- </strong>Problem : I can not load the demodata or some images.</p>
+          <p><strong>Solution:</strong>Check your server settings or contact service provider. Some hosts block the demodata.</p>
+        </div>
+        <div class="alert alert-danger">
+          <p><strong>8- </strong>Problem : I can nor edit the frontpage. </p>
+          <p><strong>Solution: </strong>You can not change 'frontpage' or frontpage's name in Conversi. Check your 'reading settings' from admin area. </p>
+        </div>
+        <div class="alert alert-info">
+          <p><strong>9- </strong>Problem : I did al updates and did fresh installaiton but there are some allignment issues.</p>
+          <p><strong>Solution:</strong>Please install latest version of theme. Check your 'Theme Options'. <a href="#theme-updates">Update your theme via FTP or Wordpress Toolkit. </a></p>
+        </div>
+        <div class="alert alert-danger">
+          <p><strong>10- </strong>Problem : There is an empty area in frontpage. </p>
+          <p><strong>Solution: </strong>Please check your Visual Composer settings. </p>
+        </div>
+		<div class="alert alert-info">
+			<p><strong>11- </strong> problem :I have a horizantal scroll bar under the browser.</p>
+			<p><strong>solution: </strong>If you have a horizantal scroll bar under the browser,you can get rid of this problem by applying these settings.<a href="#vcset">Update your theme via FTP or Wordpress Toolkit. </a></p>
+		</div>
+		<div class="alert alert-danger">
+			<p><strong>12- </strong> problem :How can change the logo setting.</p>
+			<p><strong>Solution: </strong>Please check<strong>Theme Options </strong>> <strong>Header Logo Options</strong></p>
+		</div>
+		<div class="alert alert-info">
+			<p><strong>13- </strong> problem :How can I add a section to the frontend </p>
+			<p><strong>Solution: </strong>You can create a page ( must be selected as frontpage section ) and you can control it via primary menu drag and drop function. You must select a page section type in the metabox area ( bottom of page content editor area ). </strong></p>
+		</div>
+		<div class="alert alert-danger">
+			<p><strong>14- </strong> problem :I cannot edit the content of my pages anymore. Why ? </p>
+			<p><strong>Solution: </strong> Plz make sure that you have the latest version of visual composer. </strong></p>
+		</div>
+		<div class="alert alert-info">
+			<p><strong>15- </strong> problem :How can I edit my social icons, logo etc ? </p>
+			<p><strong>Solution: </strong> Plz go to Admin > <strong> Appearance > Theme Options </strong></strong></p>
+		</div>
+		<div class="alert alert-danger">
+			<p><strong>16- </strong> problem :Even though, I have imported Demo Data, I still can see not my page in frontend just like the demo Conversi on Ninetheme  </p>
+			<p><strong>Solution: </strong> Please make sure that you have select Frontpage for your frontpage and select Blog for your post in your static pages. If not, plz go to <strong> Admin > Setting >Reading > Select Frontpage and Blog. </strong></strong></p>
+		</div>
+		<div class="alert alert-info">
+			<p><strong>17- </strong> problem :How can I add contact form into the footer area? </p>
+			<p><strong>Solution: </strong>Please go to <strong>Appearance > Widgets. </strong>(Here, you should get the shortcode of your contact form on 'Contact' and put it into the widget) </strong></p>
+		</div>
+		<div class="alert alert-danger">
+			<p><strong>18- </strong> problem :How can I change the color of an element or dislay an element? </p>
+			<p><strong>Solution: </strong>All you need to do is just get the name of the related class and coding the color and add to css area in Theme Options </strong></p>
+			<p><strong> For Example:your-class-name {
+			color:#fffff;
+			display:none;
+			}
+		</div>
+		<div class="alert alert-info">
+			<p><strong>19- </strong> problem :Why I cannot see my content of the sections at frontend? </p>
+			<p><strong>Solution: </strong>Plz make sure that you've filled all the related field in shortcodes on <strong> Admin > Pages </strong> </strong></p>			
+		</div>
+		
+		<div class="alert alert-danger">
+			<p><strong>20- </strong> problem :I use the 3rd demo but would like to use the second header. How can I do that? </p>
+			<p><strong>Solution: </strong>You can use any header you want. There area five types of header in the shortcodes named Fronpage Header 1, Fronpage Header 2, Fronpage Header 3, Fronpage Header 4 and Fronpage Header 5. You can replace any of this within your theme.</p>			
+		</div>
+      </div>
+    </section>
+    <!--/section-->
+    <!-- More
+      ================================================== -->	
+    <section id="more" class="color-01">
+      <div class="container">
+        <h1><span class="label color-01">13</span>Additional Information</h1>
+        <p>Extra information that you may find useful.</p>
+        <h3>Font Awesome and other font (icon) issues?</h3>
+        <p>If you have trouble with Font Awesome showing strange characters instead of icons, you are most likely using a CDN or external host in some way for the font files. Certain browsers may have issues with that, as they follow certain web standards. (Also make sure that your font files were uploaded correctly, and empty caches)</p>
+        <p>This can be fixed with for example this sample <a target="_blank" href="http://support.maxcdn.com/tutorials/htaccess-examples/">.htaccess file</a> from MaxCDN. If you wish to read more about this, it relates to CORS headers.</p>
+        <h3>Useful plugins</h3>
+        <p>Many common problems or missing features can usually be solved with plugins. Here is a list of some great ones.</p>
+        <ul>
+          <li><strong><a target="_blank" href="http://wordpress.org/plugins/regenerate-thumbnails/">Regenerate Thumbnails</a></strong> - A must-have when changing theme or thumbnail sizes</li>
+          <li><strong><a target="_blank" href="http://wordpress.org/plugins/wordpress-importer/">WordPress Importer</a></strong> - Import XML file data for the website</li>
+          <li><strong><a target="_blank" href="http://wordpress.org/plugins/wp-pagenavi/">WP-PageNavi</a></strong> - Better pagination for your blog</li>
+          <li><strong><a target="_blank" href="http://wordpress.org/plugins/contact-form-7/">Contact Form 7</a></strong> - A simple and flexible contact form plugin</li>
+          <li><strong><a target="_blank" href="http://wordpress.org/plugins/w3-total-cache/">W3 Total Cache</a></strong> - Cache plugin to speed up your website</li>
+          <li><strong><a target="_blank" href="http://wordpress.org/plugins/easy-add-thumbnail/">Easy Add Thumbnail</a></strong> - Auto-set featured images for old as well as new posts</li>
+          <li><strong><a target="_blank" href="http://wordpress.org/plugins/facebook-thumb-fixer/">Facebook Thumb Fixer</a></strong> - Make sure articles shared on Facebook and Google+ shows the right thumbnail images</li>
+          <li><strong><a target="_blank" href="http://wordpress.org/plugins/responsive-lightbox/">Responsive Lightbox</a></strong> - Easily add responsive lightboxes to your website and gallery images</li>
+          <li><strong><a target="_blank" href="http://wordpress.org/plugins/syntaxhighlighter/">SyntaxHighlighter Evolved</a></strong> - Post code in your articles in a visually pleasing way</li>
+          <li><strong><a target="_blank" href="http://wordpress.org/plugins/woocommerce/">WooCommerce</a></strong> - Sell stuff</li>
+        </ul>
+        <h3>Recommended theme editing software</h3>
+        <ul>
+          <li><strong><a target="_blank" href="http://firefox.com">Firefox</a></strong> - The web browser of choice for me, although there are many good ones</li>
+          <li><strong><a target="_blank" href="https://getfirebug.com/">Firebug</a></strong> - Inspect code directly in the web browser. Lite version for Chrome <a target="_blank" href="https://getfirebug.com/releases/lite/chrome/">here</a>. Search on YouTube for video tutorials and you will quickly learn how to use it.</li>
+          <li><strong><a target="_blank" href="http://www.poedit.net/download.php">PoEdit</a></strong> - Translate your theme. Read how to translate <a target="_blank" href="http://www.appthemes.com/blog/how-to-translate-a-wordpress-theme/">here</a>.</li>
+          <li><strong><a target="_blank" href="http://notepad-plus-plus.org/download/">Notepad++</a></strong> - A great text editor to modify theme code</li>
+          <li><strong><a target="_blank" href="https://filezilla-project.org/download.php?type=client">FileZilla</a></strong> - Modify or upload theme files via FTP</li>
+        </ul>
+        <h3>Link Resources</h3>
+        <p>Learn more and ask about WordPress' standard features. WordPress is in itself an extremely well-documented open platform. It is recommended to search for answers via Google / DuckDuckGo first if you have questions – it almost always give useful information or at least point you in the right direction.</p>
+        <ul>
+          <li><strong><a target="_blank" href="http://en.support.wordpress.com/">WordPress.com Documentation</a></strong> - Quick and simple guides to standard features</li>
+          <li><strong><a target="_blank" href="http://codex.wordpress.org/">WordPress.org Codex</a></strong> - Documentation and great code examples</li>
+          <li><strong><a target="_blank" href="http://wordpress.org/support/">WordPress.org Forums</a></strong> - Support for WordPress</li>
+          <li><strong><a target="_blank" href="http://wordpress.stackexchange.com/">WordPress Code Answers</a></strong> - Ask and find great answers to code questions</li>
+          <li><strong><a target="_blank" href="https://9theme.ticksy.com/articles/">Ninetheme support videos</a></strong> - Find answers from all over the web. Always good.</li>
+          <li><strong><a target="_blank" href="http://www.themepunch.com/revslider-doc/slider-revolution-documentation/">Revolution slider docs</a></strong></li>
+          <li><strong><a target="_blank" href="https://www.youtube.com/watch?v=Yn3KrUDDmwQ">Contact form 7 tutorial</a></strong></li>
+		  <li><strong><a target="_blank" href="http://waspthemes.com/yellow-pencil/">Yellow Pencil</a></strong> - Visual Style Editor For WordPress!</li>
+		  <li><strong><a target="_blank" href="https://tr.wordpress.org/plugins/yellow-pencil-visual-theme-customizer/">Visual CSS Style Editor</a></strong> - Easily customize WordPress websites, live. Google Fonts, Backgrounds, Animations and more!</li>
+          <li><strong><a target="_blank" href="http://www.sparringmind.com/speed-up-wordpress/">Speed up WordPress</a></strong> - 15 Easy Ways To Speed Up WordPress !</li>
+		</ul>
+      </div>
+    </section>
+    <!--/section-->
+    <!-- Troubleshooting
+      ================================================== -->	
+    <section id="more-troubleshoot" class="color-01">
+      <div class="container">
+        <h1><span class="label color-01">13.1</span>Troubleshooting 101</h1>
+        <p>Do you have a problem with your theme? This quick troubleshooting guide should be the first thing to check through - it will help you find the <strong>root cause</strong> of the issue.</p>
+        <p>A WordPress website issue can come from mainly one of 4 areas:</p>
+        <ul>
+          <li>Conflicting plugins</li>
+          <li>Broken WordPress install</li>
+          <li>Incorrect server setup</li>
+          <li>The theme itself</li>
+        </ul>
+        <p>Lets find out where your issue is coming from!</p>
+        <h3>Step 1: Check your plugins</h3>
+        <p>The first thing to do is to see if you have any plugins installed. Do you? If so, go to your admin panel and disable all of them. Now, go back to your site and see if the issue remains. If the problem is gone, then re-activate your plugins one-by-one and check the site between each activation. This way you will directly find the plugin(s) that cause problems.</p>
+        <p>If your issue remains even with all plugins disabled, go on to the next step.</p>
+        <h3>Step 2: Check your customizations</h3>
+        <p>Have you customized your theme in any way before you noticed the issue? If so, go to the theme demo website of the theme and see if you find the same issue there. If you can not see the issue there, you need to take a look at your customized code and find what may be wrong.</p>
+        <h3>Step 3: Is the issue admin panel related?</h3>
+        <p>If you have problems with media uploads, errors in the WordPress dashboard or other access issues, the likely cause is either an incorrectly setup server or a broken WordPress install.</p>
+        <p>To see if your problem is related to a broken WordPress install or an incorrect server setup, simply activate a WordPress default theme such as Twenty Twelve. Does the issue remain? Then your issue is not theme related. If the issue goes away with a default theme active, then it's most likely theme related.</p>
+        <ul>
+          <li>Do you think your issue is WordPress related? <strong>Re-installing WordPress</strong> may be a good idea, or asking for help on the <a target="_blank" href="http://wordpress.org/support/">wordpress.org forums</a>.</li>
+          <li>Do you think your issue is server related? Try some <strong>Google-searching</strong> for the issue, or <strong>contact your server provider</strong> about it.</li>
+          <li>Do you think the issue is coming from the theme? Make sure to read this documentation through. If the issue remains and you are certain it's coming from the theme, feel free to report the bug on the wordpress.org <a target="_blank" href="http://wordpress.org/support/theme/hueman">support forums for hueman</a>.</li>
+        </ul>
+        <h3>Note: Remember cache!</h3>
+        <p>If you apply/repair code to fix issues but see no changes on your website when you save it, check if your website has any cache plugin activated. If so, make sure to empty all caches. Also force-refresh the page when viewing it by pressing F5.</p>
+      </div>
+    </section>
+    <!--/section-->
+    <section id="theme-update-service" class="color-01">
+      <div class="container">
+        <h1><span class="label color-01">13.2</span>Theme Update service</h1>
+        <div class="alert alert-success">
+          <strong>Theme Update</strong>
+          <p>Low price service for customers who don't want make mistake while updating theme.<strong>$15</strong></p>
+        </div>
+        <div class="alert alert-success">
+          <strong>Complete Theme Installation</strong>
+          <p>Includes; setup theme, setup demodata and all theme settings.<strong>$24</strong></p>
+        </div>
+        <div class="alert alert-success">
+          <strong>Wordpress Installation</strong>
+          <p>Includes; installing Worpress, creating database.<strong>$45</strong></p>
+        </div>
+		 <div class="alert alert-success">
+          <strong>Private Demands</strong>
+          <p>If you would like to add any features that non exist in the theme, you can hire an expert among our team. The prices may change from <strong>$15</strong> to <strong>$24</strong></p>
+        </div>
+      </div>
+    </section>
+    <!--/section-->
+    <section id="Learn-WordPress" class="color-01">
+      <div class="container">
+        <h1><span class="label color-01">13.3</span>Learn-WordPress</h1>
+          <p>As you can already imagine that it's becoming an obligatory to have the cotroll over the modification in your theme. So in this regard, if you would like to be able to understand the way how the wordpress work, you better to have a look at the following link.</p>
+		  <p>You can read description on this plugin. <a href="http://www.wpbeginner.com/category/wp-tutorials/">Click Me here to learn WordPress</a></p>
+		  <div class="alert alert-danger">
+			  <p><strong>NOTE : </strong> Almost all of our customer keep asking us to make some modification including changing color, which may not be provided in the theme options so for these kind of problem, using the chrome css editor is the greatest way to make any change you wish. Here, all you need to do is just take the name of the element you want to change and paste the code in the custom css area provided in the theme options. You can also take a look at the following video to get the point well.</p>			  
+			  <li><a href="https://www.youtube.com/watch?v=4fZWATTNi1c"> Click Me to Learn How to Use Chrome Css Editor</a></li>
+		  </div>
+		  <div class="alert alert-info">
+			  <p><strong>NOTE : </strong> In the following video, you'll learn how to add different type of fonts for your layout. </p>			  
+			  <li><a href="https://www.youtube.com/watch?v=5a4jt0dINsE"> Click Me to Learn How to Add Fonts and Text into Your Website</a></li>
+		  </div>
+		  <div class="alert alert-danger">
+			  <p><strong>NOTE : </strong> In the following video, you'll learn how to add google font into your website</p>			  
+			  <li><a href="https://www.youtube.com/watch?v=pxjO43HASd4">Click Me to Learn How to Add Fonts into Your Website </a></li>			  
+		  </div>
+		  <div class="alert alert-info">
+			  <p><strong>NOTE : </strong> In the following video, you'll learn how to add Revolution Slider into your website</p>			  
+			  <li><a href="https://www.youtube.com/watch?v=pxjO43HASd4">Click Me to Learn How to Add Revolution Slider into Your Website </a></li>			  
+		  </div>
+		  <div class="alert alert-danger">
+			  <p><strong>NOTE : </strong> In the following video, you'll learn how to add woocommerce plugin into your website</p>			  
+			  <li><a href="https://www.youtube.com/watch?v=IMT7WDZ3J5E">Click Me to Learn How to Add woocommerce plugin into Your Website </a></li>			  
+		  </div>
+		  
+		  <div class="alert alert-info">
+			<p>If this is your first-time install or if you use the wordpress.org version of the theme, you can skip this step.</p>
+			<p>It is a good idea to keep your theme up to date with the latest version, as it often includes important bugfixes or new neat features. If a new version of the theme is available, do the following steps to update it:</p>
+			<ol>
+			  <li>Download the latest version.</li>
+			  <li>Locate the <code>theme-file-name.zip</code> file to upload.</li>
+			  <li>Go to <strong>Appearance > Themes</strong> in the WordPress menu</li>
+			  <li>Activate a default theme temporarily, such as Twenty Twelve (to be able to delete your current theme)</li>
+			  <li>Click on the theme you wish to update, and press the red delete link bottom right. Your admin panel options should remain saved.</li>
+			  <li>Upload the new <code>theme-file-name.zip</code>, as you did on <a href="#install">first-time install</a>, and activate it.</li>
+			  <li>Learn more how to use child themes <strong><a target="_blank" href="http://codex.wordpress.org/Child_Themes">here</a></strong>.</li>
+			</ol>
+			<p>You are now running the latest and best version of the theme!</p>
+			<div class="alert alert-warning">
+			  <p><strong>Important:</strong> If you haven't used a child theme for your theme customizations, you must do the following steps before each update:</p>
+			  <ul>
+				<li>Backup your custom.css file if you have used it, it will be overwritten and needs to be re-added after the update.</li>
+				<li>Backup your additional language files if you have created/modified any, they will be removed and need to be re-added after the update.</li>
+				<li>Backup any other custom code.</li>
+			  </ul>
+			</div>	
+		   </div>
+		 </div>  
+	</section>
+	 <section id="how-to-use-plugins" class="color-01">
+      <div class="container">
+        <h1><span class="label color-01">13.4</span>How To Use Plugins</h1>
+           <p>In our theme, we've used a broad of plugins, which are used commonly and makes you able to customize your website in a simple way and looks nice as well. You can find the plugins that we used within our theme at the following list.</p>
+		   <ul>
+				<li>Visual Composer <a href="https://www.youtube.com/watch?v=K9SCWjdYWkI"> Click Me to Learn How to Use Visual Composer plugin</a></li>
+				<li>Contact Form 7  <a href="https://www.youtube.com/watch?v=4-Zcbo1Bxx0"> Click Me to Learn How to Use Contact Form 7 </a></li>
+				<li>Meta Box <a href="https://www.youtube.com/watch?v=Thv5F-Jmj6Y"> Click Me to Learn How to Use Meta Box </a></li>
+				<li>Slider Revolution <a href="https://www.youtube.com/watch?v=SuCBp329Buc"> Click Me to Learn How to Use Revolution Slider </a></li>
+				<li>Portfolio Post Type <a href="https://www.youtube.com/watch?v=_DrPCScpj2Q"> Click Me to Learn How to Use Portfolio Post Type </a></li>
+				<li>Team Post Type <a href="https://www.youtube.com/watch?v=xuSy_vE7hus"> Click Me to Learn How to Use Team Post Type </a></li>
+				<li>Price Manager <a href="https://www.youtube.com/watch?v=zVomAFkUCSA"> Click Me to Learn How to Use Prica Manager </a></li>
+				<li>Envato WordPress Toolkit <a href="https://youtu.be/ZC68VigIbCQ"> Click Me to Learn How to Use Envato Toolkit </a></li>
+				<li>Conversi Shortcode </li>
+           </ul>
+		   <div class="alert alert-danger">
+			  <p><strong>NOTE : </strong> The three plugins ( Team, Portfolio, Price ) work in the same way. Here, you need to do is first make sure that you make these plugins active and then going to the Team, for example, in the dashboard menu and add items as many as you wish and finally, you can use it in any page you want with the help of shortcodes. The same thing for the both price and portfolio as well.</p>			  
+		   </div>
+		  </div>
+	</section>
+	
+		
+	
+    <!--/section-->
+    <section id="ninetheme" class="color-02">
+      <div class="container">
+        <h1><span class="label color-02">14</span>Ninetheme Support Center</h1>
+        <p>Again, thank you for purchasing Conversi. If you need some help, or support please use email or contact form via themeforest profile site.
+          Hope you happy with the theme, all the best with your business.
+        </p>
+        <p><strong>You can ask your question on: </strong><a href="http://9theme.ticksy.com/"> Ninetheme Support</a></p>
+        <p><strong>If you want to rate it: </strong><a href="http://themeforest.net/downloads"> Conversi Page</a></p>
+      </div>
+    </section>
+    <!--/section-->	
+    <!-- Footer
+      ================================================== -->	
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p><a href="http://9theme.ticksy.com"> Ninetheme Support Center</a></p>
+        <p>Written by <a href="http://alxmedia.se"> AlxMedia</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

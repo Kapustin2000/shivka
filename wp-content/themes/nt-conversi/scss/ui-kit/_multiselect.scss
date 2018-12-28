@@ -1,0 +1,28 @@
+.multiselect.dropdown-toggle.btn.btn-default {
+  border: none;
+  padding: .7rem 1.6rem;
+  background-color: transparent;
+  line-height: 1;
+  .multiselect-selected-text {
+    text-transform: capitalize;
+    color: $night-blue;
+    font-size: 1.6rem;
+  }
+  .caret {
+    margin-left: .7rem;
+    margin-top: -.3rem;
+    color: #6b6d8c;
+  }
+}
+
+.btn-group.open .dropdown-toggle {
+  box-shadow:none;
+}
+
+.multiselect-container.dropdown-menu input[type="radio"] {
+  display: none
+}
+
+.multiselect-container>li>a>label.radio{
+  padding: 0
+}

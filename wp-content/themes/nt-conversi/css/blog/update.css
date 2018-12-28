@@ -1,0 +1,126 @@
+/* use this file just theme versions */
+.index-header {
+    z-index: 100;
+	position: relative;
+}
+.template-cover-style-2 > .template-overlay {
+    height: 100%;
+}
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 0px;
+}
+.template-cover-style-2 > .template-overlay {
+    z-index: -1;
+}
+.template-cover-text .col-md-8 {
+    margin-bottom: 40px;
+}
+#navigation_affix {
+
+    top: -250px;
+}
+.top-header {
+    position: relative;
+    padding: 20px 0;
+    color: #fff;
+}
+
+#header .social-list {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+#header .social-list ul {
+    margin: 0;
+    padding: 0;
+	list-style:none;
+}
+#header .social-list ul .social-media a, #navigation_mobile .mobile-nav-social .social-media a {
+    float: left;
+    width: 35px;
+    height: 35px;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+}
+#navigation_mobile .mobile-nav-social .social-media a {
+    margin: 0px 7px 0px 0px;
+}
+#header .social-list a.link-android, #navigation_mobile .mobile-nav-social .social-media a.link-android {background-color: #a7c839;}
+#header .social-list a.link-apple, #navigation_mobile .mobile-nav-social .social-media a.link-apple {background-color: #1abcfb;}
+#header .social-list a.link-behance, #navigation_mobile .mobile-nav-social .social-media a.link-behance {background-color: #138fcd;}
+#header .social-list a.link-delicious, #navigation_mobile .mobile-nav-social .social-media a.link-delicious {background-color: #3399ff;}
+#header .social-list a.link-deviantart, #navigation_mobile .mobile-nav-social .social-media a.link-deviantart {background-color: #05cc47;}
+#header .social-list a.link-digg, #navigation_mobile .mobile-nav-social .social-media a.link-digg {background-color: #286091;}
+#header .social-list a.link-dribbble, #navigation_mobile .mobile-nav-social .social-media a.link-dribbble { background-color:#d36b93; }
+#header .social-list a.link-facebook, #navigation_mobile .mobile-nav-social .social-media a.link-facebook { background-color:#3b589e; }
+#header .social-list a.link-flickr, #navigation_mobile .mobile-nav-social .social-media a.link-flickr { background-color:#fe0084; }
+#header .social-list a.link-google-plus, #navigation_mobile .mobile-nav-social .social-media a.link-google-plus { background-color:#d6492f; }
+#header .social-list a.link-instagram, #navigation_mobile .mobile-nav-social .social-media a.link-instagram { background-color:#2a5b83; }
+#header .social-list a.link-linkedin, #navigation_mobile .mobile-nav-social .social-media a.link-linkedin { background-color:#007ab5; }
+#header .social-list a.link-pinterest, #navigation_mobile .mobile-nav-social .social-media a.link-pinterest { background-color:#cb2027; }
+#header .social-list a.link-reddit, #navigation_mobile .mobile-nav-social .social-media a.link-reddit { background-color:#ff5600; }
+#header .social-list a.link-rss, #navigation_mobile .mobile-nav-social .social-media a.link-rss { background-color:#fd9f13; }
+#header .social-list a.link-skype, #navigation_mobile .mobile-nav-social .social-media a.link-skype { background-color:#00aff0; }
+#header .social-list a.link-soundcloud, #navigation_mobile .mobile-nav-social .social-media a.link-soundcloud { background-color:#ff6c00; }
+#header .social-list a.link-stumbleupon, #navigation_mobile .mobile-nav-social .social-media a.link-stumbleupon { background-color:#eb4823; }
+#header .social-list a.link-tumblr, #navigation_mobile .mobile-nav-social .social-media a.link-tumblr { background-color:#34465d; }
+#header .social-list a.link-twitter, #navigation_mobile .mobile-nav-social .social-media a.link-twitter { background-color:#5ea9dd; }
+#header .social-list a.link-vimeo, #navigation_mobile .mobile-nav-social .social-media a.link-vimeo { background-color:#1ab7ea; }
+#header .social-list a.link-wordpress, #navigation_mobile .mobile-nav-social .social-media a.link-wordpress { background-color:#00769c; }
+#header .social-list a.link-youtube, #navigation_mobile .mobile-nav-social .social-media a.link-youtube { background-color:#df192a; }
+
+
+#header .top-header .social-list li {
+    padding: 0px 0px 0px 14px;
+	float: left;
+}
+#navigation_mobile .mobile-nav-social {
+    padding-top: 0px !important;
+}
+#navigation_mobile .social-media {
+    display: inline-block;
+}
+
+
+.header-contact {
+    float: left;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.contact-list {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    float: left;
+}
+.contact-list .header-contact a {
+    color: #fff;
+}
+.contact-list .header-contact a:hover {
+    color: #3ebcfa;
+}
+.contact-list ul {
+    list-style: none;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 0;
+}
+#navigation_mobile .mobile-contact .mobile-contact-list {
+    margin: 0px;
+    padding: 0 0 30px 0;
+}
+.mobile-contact .header-contact {
+    float: none;
+    margin-right: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #fff;
+    text-transform: none;
+}

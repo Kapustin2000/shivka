@@ -1,0 +1,80 @@
+.success-cases-search,
+.blog-search {
+  .search-form + h3 {
+      max-width: 100%;
+      overflow: hidden;
+      display: inline-block;
+      text-overflow: ellipsis;
+      color: $grey-blue;
+      span:first-child {
+        color: $night-blue;
+      }
+  }
+}
+
+.success-cases-search {
+  .search-form, .search-form + h3 {
+    margin-bottom: 5.2rem;
+  }
+  .business-solution-list {
+    padding: 3.6rem 5rem;
+    background-color: $ghost-white;
+    border: 1px solid $pale-grey;
+    list-style: none;
+    li {
+      font-size: 1.6rem;
+    }
+    li:not(:last-child) {
+      padding-bottom: 1.6rem;
+    }
+  }
+}
+
+.list-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5.5rem;
+  i {
+    font-size: 2.4rem;
+  }
+  small {
+    margin: 0 0 0 1.2rem;
+  }
+}
+
+@media (min-width: $mobile) {
+  .success-cases-search,
+  .blog-search,
+  .privacy-policy {
+    .sticky {
+      float: left;
+      transform: translateX(25%);
+      padding: 20px 0 0;
+    }
+  }
+}
+
+@media (max-width: $mobile - 1px) {
+  #blog.success-cases-search {
+    padding-top: 26px;
+    .search-form {
+      margin-bottom: 2rem;
+    }
+    .search-form + h3 {
+      font-size: 1.6rem;
+      line-height: 1.5;
+      margin-bottom: 4.6rem;
+    }
+    .ajax-call-message {
+      .btn-icon {
+        margin-bottom: 4.2rem;
+      }
+    }
+    .sticky {
+      margin-bottom: 4.8rem;
+    }
+    .list-title {
+      margin-bottom: 4.2rem;
+    }
+  }
+}

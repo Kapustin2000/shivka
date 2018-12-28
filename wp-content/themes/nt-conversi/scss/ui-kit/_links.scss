@@ -1,0 +1,38 @@
+a {
+  font-family: Karla-Bold, sans-serif;
+  //font-size: 1.6rem;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  transition: $default;
+  &,
+  &:visited {
+    color: $night-blue;
+  }
+  &:hover {
+    text-decoration: underline;
+    color: inherit;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+  &.night-blue {
+    color: $night-blue;
+  }
+  &.white {
+    color: $white;
+  }
+  &.grey {
+    color: $grey-blue;
+  }
+  &.blue {
+    color: $blue;
+  }
+  &.orange {
+    color: $orange;
+  }
+  i::before {
+    transition: $default;
+  }
+}

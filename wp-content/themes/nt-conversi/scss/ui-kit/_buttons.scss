@@ -1,0 +1,276 @@
+button,
+[type="button"] {
+  display: inline-block;
+  font-family: Karla-Bold, sans-serif;
+  border-radius: 0;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-stretch: normal;
+  border-width: 0;
+  line-height: 1.75;
+  letter-spacing: normal;
+  transition: $default;
+  &:focus {
+    outline: none;
+  }
+}
+
+a.btn,
+a.btn-icon,
+a[type="button"] {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn,
+.btn-icon {
+  cursor: pointer;
+  background-color: $blue;
+  color: $white;
+  border-radius: 0;
+  font-size: 1.6rem;
+  &[disabled],
+  &.disabled {
+    background-color: inherit;
+    color: inherit;
+    opacity: .4;
+  }
+  &:hover {
+    background-color: $dark-blue;
+    color: $white;
+  }
+  &.focus,
+  &:focus,
+  &:active,
+  &.active,
+  &:hover {
+    box-shadow: none;
+    color: $white;
+  }
+}
+
+.btn {
+  padding: 22px 64px 20px;
+  &.blue {
+    background-color: $blue;
+    color: $white;
+    &:hover {
+      background-color: $dark-blue;
+    }
+  }
+  &.orange {
+    background-color: $orange;
+    color: $white;
+    &:hover {
+      background-color: $dark-orange;
+    }
+  }
+  &.transparent {
+    padding: 12px 0;
+    line-height: 12px;
+    border: none;
+    background-color: transparent;
+    color: $blue;
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+}
+
+.btn-icon {
+  padding: 22px 44px 20px;
+  background-color: transparent;
+  border: 1px solid $lavender;
+  color: $night-blue;
+  &:hover {
+    background-color: $ghost-white;
+    color: $night-blue;
+  }
+  span {
+    display: inline-block;
+    margin-right: 14px;
+  }
+  &.blue {
+    i {
+      color: $blue;
+    }
+  }
+  &.orange {
+    i {
+      color: $orange;
+    }
+  }
+  &.transparent {
+    padding: 12px 0;
+    line-height: 12px;
+    border: none;
+    i {
+      background-color: transparent;
+    }
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.btn-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  padding: 2.2rem;
+  line-height: 1;
+  background-color: $ghost-white;
+  i {
+    color: $grey-blue;
+    font-size: 3.4rem;
+    margin-top: -6px;
+  }
+}
+
+#main-page {
+  .btn-arrow {
+    display: inline-block;
+  }
+}
+#main-page {
+  .success-cases-references {
+    .btn-arrow {
+      display: block;
+    }
+  }
+}
+#main-page,
+#blog {
+  .btn-arrow {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 1px solid $pale-grey;
+    &:hover {
+      background-color: $ghost-white;
+    }
+    span {
+      background-color: transparent;
+      color: $night-blue;
+      margin-right: 0;
+    }
+    i {
+      display: inline-block;
+      margin-left: 1.2rem;
+      font-size: 1.2rem;
+    }
+    &.orange {
+      i {
+        color: $orange;
+      }
+    }
+    &.blue {
+      i {
+        color: $blue;
+      }
+    }
+  }
+}
+
+//For arrowed button
+.btn-icon {
+  &:hover {
+    .ic {
+      &.ic-arrow {
+        span {
+          width: 68px;
+        }
+      }
+    }
+  }
+  &.blue {
+    span {
+      background-color: $blue;
+    }
+  }
+  &.orange {
+    span {
+      background-color: $orange;
+    }
+  }
+  .ic {
+    display: inline-block;
+    width: 2.3rem;
+    height: 1.2rem;
+    position: relative;
+    &.ic-arrow {
+      span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2.3rem;
+        height: .1rem;
+        transition: $default;
+        &::before,
+        &::after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          right: -1px;
+          width: .8rem;
+          height: 1px;
+          background-color: inherit;
+        }
+        &::before {
+          top: -.2rem;
+          transform: translateY(-50%) rotate(45deg);
+        }
+        &::after {
+          bottom: -.3rem;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    font-size: 1.6rem;
+    color: $night-blue;
+  }
+  i {
+    display: inline-block;
+    color: $orange;
+    font-size: 1rem;
+    transform: rotate(90deg);
+  }
+  &:hover {
+    text-decoration: none;
+    .tag {
+      color: $night-blue;
+    }
+  }
+}
+
+.btn-back {
+  margin-bottom: 3.2rem;
+  i {
+    display: inline-block;
+    margin-right: 1.2rem;
+    transform: scale(-1);
+  }
+  span {
+    color: $grey-blue;
+    font-size: 1.6rem;
+    transition: $default;
+  }
+  &:hover {
+    span {
+      color: $dusk;
+    }
+  }
+}

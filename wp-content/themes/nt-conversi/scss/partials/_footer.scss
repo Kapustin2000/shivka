@@ -1,0 +1,189 @@
+$menu-padding: 1.5rem;
+
+footer {
+  background-color: $night-blue;
+  small {
+    display: block;
+    margin-bottom: 2.8rem;
+    color: $white;
+  }
+  a {
+    &,
+    &:visited {
+      color: $white;
+    }
+    &:hover,
+    &:active,
+    &.active,
+    &:focus {
+      color: $orange;
+      text-decoration: none;
+    }
+  }
+  .footer-contacts {
+    padding: 9rem 0 6.4rem;
+    border-bottom: 1px solid rgba(9, 12, 64, .04);
+    & > .row {
+      position: relative;
+    }
+    .location-list {
+      display: inline-block;
+      margin: 0;
+      list-style: none;
+      li {
+        &:not(:last-child) {
+          margin-bottom: 2.4rem;
+        }
+        a {
+          font-family: Karla-Regular, sans-serif;
+          position: relative;
+          font-size: 1.6rem;
+          line-height: 1.75;
+          color: $white;
+          &:hover,
+          &:active,
+          &.active,
+          &:focus {
+            color: $orange;
+            text-decoration: none;
+          }
+          b {
+            font-family: Karla-Bold, sans-serif;
+            display: inline-block;
+            margin-left: 1.4rem;
+            color: $grey-blue;
+          }
+          &::before {
+            content: '\e903';
+            display: block;
+            position: absolute;
+            left: -3rem;
+            top: 50%;
+            transform: translate(0, -50%);
+            font-family: 'icomoon';
+            font-size: 2rem;
+            color: $blue;
+          }
+        }
+      }
+    }
+    .social-icons {
+      height: 2.4rem;
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      padding: 0 26px;
+      li {
+        display: inline-block;
+        float: none;
+        &:not(:last-child) {
+          margin-right: 3.2rem;
+        }
+        a {
+          margin: 0;
+          i {
+            font-size: 2.4rem;
+            &::before {
+              color: $white;
+            }
+          }
+          &:hover,
+          &:active,
+          &.active,
+          &:focus {
+            text-decoration: none;
+            i::before {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-menu {
+    padding: 4.4rem - $menu-padding 0 3rem - $menu-padding;
+    ul {
+      position: relative;
+      z-index: 1;
+      padding: 0;
+      list-style: none;
+      li {
+        display: inline-block;
+        padding: $menu-padding 5.2rem $menu-padding 0;
+        &:last-child {
+          padding-right: 0;
+        }
+        a {
+          text-transform: capitalize;
+          font-size: 1.6rem;
+        }
+      }
+    }
+    small {
+      padding: $menu-padding 0;
+    }
+    .copywrite {
+      font-family: Karla-Regular, sans-serif;
+      opacity: .5;
+      text-align: right;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  footer {
+    .footer-menu {
+      .copywrite {
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  footer {
+    .footer-contacts {
+      .footer-offices {
+        margin-bottom: 5rem;
+        text-align: center;
+        .location-list {
+          padding-left: 0;
+          li {
+            &:not(:last-child) {
+              margin-bottom: 3.4rem;
+            }
+            a::before {
+              content: '';
+            }
+          }
+        }
+      }
+      .social-icons {
+        width: 100%;
+        text-align: center;
+        bottom: -3.6rem;
+      }
+    }
+    .footer-menu {
+      ul {
+        li {
+          display: block;
+          text-align: center;
+          padding: 2.5rem 0;
+        }
+      }
+      .copywrite {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: $mobile) {
+  footer {
+    .footer-offices {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.main-page {
+  @include blog-main();
+  .blog {
+    padding: 17rem 0 15rem;
+  }
+}
+
+@media (min-width: $fullhd) {
+  .main-page {
+    .blog {
+      .right {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .main-page {
+    .blog {
+      padding: 4rem 0 5rem;
+    }
+  }
+}

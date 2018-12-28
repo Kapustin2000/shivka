@@ -1,0 +1,85 @@
+.smarthoop-how-to-order {
+    .steps {
+        padding-bottom: 15rem;
+        .step {
+            position: relative;
+            padding: 8.5rem;
+            h3 {
+                color: $black;
+                font-family: 'Uni Sans Heavy Caps', sans-serif;
+                font-size: 4rem;
+                font-weight: 400;
+                line-height: 5rem;
+            }
+            img {
+                position: absolute;
+                display: block;
+                height: auto;
+                z-index: -1;
+            }
+            &:nth-child(1),
+            &:nth-child(3),
+            &:nth-child(5),
+            &:nth-child(7) {
+                @include bordered-block();
+                transform: translate(0, 0);
+                &::before {
+                    top: -3.7rem;
+                    bottom: auto;
+                }
+            }
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(6),
+            &:nth-child(8) {
+                @include background-block();
+                transform: translate(0, 50px);
+                padding: 8.5rem;
+                margin-left: auto;
+                z-index: 2;
+                &::before {
+                    bottom: -3.7rem;
+                    top: auto;
+                }
+            }
+            &:nth-child(2) {
+                img {
+                    bottom: 100%;
+                    right: 75px;
+                    width: 50%;
+                }
+            }
+            &:nth-child(3) {
+                img {
+                    top: calc(100% + 15px);
+                    left: -15px;
+                    width: 60%;
+                }
+            }
+            &:nth-child(5) {
+                img {
+                    top: calc(100% + 65px);
+                    left: -15px;
+                    width: 70%;
+                }
+            }
+            &:nth-child(6) {
+                img {
+                    bottom: calc(100% + 65px);
+                    right: 130px;
+                    width: 40%;
+                }
+            }
+        }
+    }
+    .make-order {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 15rem;
+        .decorative {
+            &.yellow {
+                top: 46rem;
+            }
+        }
+    }
+}

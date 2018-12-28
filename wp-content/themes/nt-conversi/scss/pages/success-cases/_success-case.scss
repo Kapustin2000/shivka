@@ -1,0 +1,340 @@
+#blog.success-case {
+  .success-case-jumbotron {
+    position: relative;
+    padding: 5.4% 6.25% 5%;
+    margin-bottom: 5.2rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    .success-case-info {
+      position: relative;
+      width: 75.6%;
+      height: 100%;
+      h2, p, small {
+        color: white;
+        margin-top: 0;
+      }
+      .tag, h2 {
+        margin-bottom: 2rem;
+      }
+      p {
+        margin-bottom: 5.2rem;
+      }
+      small {
+        display: inline-block;
+        margin-bottom: 1.6rem;
+      }
+      .links-list {
+        margin-bottom: 2.2rem;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .title-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .partner-logo {
+    position: absolute;
+    max-width: 200px;
+    height: auto;
+    right: -32%;
+    bottom: 5.2rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .links-block {
+    display: none;
+  }
+  .success-case-content {
+    margin: 0 80px 0 120px;
+    .success-case-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 7.6rem;
+      border-top: 1px solid $pale-grey;
+      padding: 2.8rem 0 0;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          display: inline-block;
+          list-style: none;
+          margin-right: 3rem;
+        }
+        a {
+          font-size: 2.4rem;
+          color: $grey-blue;
+          &:hover {
+            text-decoration: none;
+            color: $night-blue;
+          }
+        }
+      }
+    }
+  }
+  .success-case-related {
+    padding: 20.8rem 0 0;
+    h2 {
+      margin-bottom: 5.2rem;
+    }
+  }
+  @include reference-main();
+  .success-cases-references {
+    .bottom {
+      .btn-arrow.blue {
+        margin-top: 0;
+      }
+      .btn-arrow.orange {
+        display: block;
+        max-width: 27rem;
+        margin-top: 66rem;
+      }
+    }
+  }
+}
+.content-editable {
+  p {
+    margin-bottom: 3.6rem;
+    font-size: 1.8rem;
+    color: $dusk;
+  }
+  p + ul {
+    margin-top: -1.6rem;
+  }
+  p + h3 {
+    margin-top: 6.4rem;
+  }
+  .full-width {
+    margin-left: -120px;
+    margin-right: -120px;
+    &-last {
+      margin-bottom: 6.4rem;
+      .image-wrap {
+        margin-bottom: 0;
+      }
+    }
+  }
+  img {
+    margin-bottom: 3.2rem;
+    width: 100%;
+    height: auto;
+  }
+  span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: $grey-blue;
+    margin-bottom: 5.2rem;
+    font-size: 1.6rem;
+  }
+  ul {
+    padding-left: 34px;
+    margin-bottom: 5.2rem;
+    li {
+      list-style: none;
+      position: relative;
+      font-family: Karla-Bold, sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      color: $night-blue;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -34px;
+        top: .7rem;
+        width: 1rem;
+        height: 1rem;
+        background-color: $blue;
+      }
+    }
+  }
+}
+
+.social-sidebar {
+  transform: translateX(35%);
+  padding-right: 0;
+  ul {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    li {
+      text-align: center;
+      list-style: none;
+      font-size: 1.6rem;
+      a {
+        color: $grey-blue;
+
+      }
+    }
+    .claps {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 3;
+      margin-bottom: 3.2rem;
+    }
+    .btn {
+      width: 170px;
+      background-color: transparent;
+      border: 1px solid $pale-grey;
+      color: $night-blue;
+      height: auto;
+      white-space: inherit;
+      padding: 3rem 4rem 2.5rem;
+      margin-top: 5.5rem;
+      position: relative;
+      font-size: 1.6rem;
+      i {
+        display: inline-block;
+        margin-top: 1.6rem;
+        color: $blue;
+        transform: rotate(90deg);
+        font-size: 1.4rem;
+      }
+    }
+    a {
+      font-size: 2.4rem;
+
+      &:hover {
+        text-decoration: none;
+        color: $night-blue;
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  #blog.success-case {
+    .success-cases-references {
+      .bottom {
+        .btn-arrow {
+          &.blue,
+          &.orange {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  #blog.success-case {
+    padding-top: 0;
+    .success-case-content {
+      margin: 0;
+    }
+    .success-case-jumbotron {
+      margin: 0 -26px 48px;
+      padding: 52px 30px;
+      .tag {
+        margin-bottom: 2.6rem;
+      }
+      small, ul {
+        display: none;
+      }
+    }
+    .success-case-info {
+      width: 100%;
+      h2 {
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+        margin-bottom: 1rem;
+      }
+    }
+    .partner-logo {
+      position: relative;
+      display: block;
+      right: auto;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: auto;
+    }
+    .links-block {
+      display: block;
+      border-bottom: 1px solid $pale-grey;
+      small {
+        display: inline-block;
+        font-family: Karla-Bold, sans-serif;
+        margin-bottom: 2.8rem;
+        color: $night-blue;
+      }
+      .links-list {
+        margin-bottom: 3.2rem;
+        &:last-child {
+          margin-bottom: 2.6rem;
+        }
+      }
+    }
+    .content-editable {
+      padding-top: 4.6rem;
+      .full-width {
+        margin: 0;
+      }
+      ul, span, p {
+        margin-bottom: 3.6rem;
+      }
+      p + h3 {
+        margin-top: 0;
+      }
+    }
+    .social-sidebar {
+      display: none;
+    }
+    .success-case-footer {
+      margin-top: 4.6rem;
+      padding: 3rem 0;
+      text-align: center;
+      ul {
+        li {
+          margin-right: 2.4rem;
+        }
+        li:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .success-case-related {
+      padding-top: 7rem;
+      h2 {
+        font-size: 2.2rem;
+        margin-bottom: 3.6rem;
+      }
+      h3 {
+        margin-bottom: 2.2rem;
+      }
+      p, .btn-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  #blog.success-case {
+    .success-case-footer {
+      flex-direction: column;
+      ul {
+        margin-bottom: 2.2rem;
+      }
+      .btn-download {
+        width: 100%;
+      }
+    }
+  }
+}
+

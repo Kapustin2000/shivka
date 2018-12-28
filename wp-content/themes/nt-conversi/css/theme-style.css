@@ -1,0 +1,20 @@
+#footer p {
+    float: left;
+}
+#bottom .txt-desc {
+    margin-top: 10px;
+}
+.body-wrap {
+    position: relative;
+    clear: both;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.affa-faq-link {
+    text-decoration: underline;
+}
+@media (max-width: 767px){
+	.text-center-xs .vc_custom_heading, .text-center-xs .wpb_text_column  {
+		text-align: center!important;
+	}
+}

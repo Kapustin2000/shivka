@@ -1,0 +1,50 @@
+.blog-search {
+  .search-form {
+    margin-bottom: 5.2rem;
+  }
+  .blog-content {
+    margin-top: 5.2rem;
+  }
+  .sticky {
+    .tag-wrap {
+      margin-bottom: 5.2rem;
+    }
+    .publications-search {
+      margin-top: 9.6rem;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .blog-search {
+    @include blog-item();
+    .sticky {
+      padding: 0 $gap;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .blog-search {
+    padding: 3rem 0 6.4rem;
+    .search-form {
+      margin-bottom: 1.8rem;
+      & + h3 {
+        font-size: 1.6rem;
+        margin: 0;
+      }
+    }
+    .blog-content {
+      margin-top: 4rem;
+    }
+    .blog-item {
+      p {
+        display: none;
+      }
+    }
+    .list-title {
+      margin-bottom: 4rem;
+    }
+  }
+}

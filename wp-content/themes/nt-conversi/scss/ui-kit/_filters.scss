@@ -1,0 +1,91 @@
+@media (min-width: $mobile) {
+  .filters-wrap {
+    .industry-wrap {
+      display: none;
+    }
+    .search-form {
+      position: absolute;
+      top: 16px;
+      transform: translateY(-50%);
+      right: 26px;
+      transition: $default;
+      &:not(.active) {
+        width: 24px;
+        height: 24px;
+        input,
+        .error-tooltip,
+        .btn-close {
+          display: none;
+        }
+      }
+      &.active {
+        width: 35%;
+        padding-left: 60px;
+        .search-form {
+          top: 13px;
+        }
+        i {
+          font-size: 2.2rem;
+          color: $night-blue;
+        }
+        .btn-close {
+          i {
+            color: $grey-blue;
+          }
+        }
+      }
+      .btn-close i {
+        transition: $default;
+      }
+      .btn-close i:hover::before {
+        color: $night-blue;
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .filters-wrap {
+    .search-form {
+      &.active {
+        width: 36rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .filters-wrap {
+    flex-direction: column;
+    .tag-wrap {
+      display: none;
+    }
+    .search-form {
+      order: 1;
+      width: 100%;
+      &.active {
+        width: 100%;
+      }
+      i {
+        font-size: 2rem;
+        color: $night-blue;
+      }
+      input {
+        display: block;
+      }
+      .btn-close {
+        display: none;
+      }
+    }
+    .industry-wrap,
+    .technology-wrap,
+    .date-wrap {
+      margin: 1.6rem 0 0;
+      order: 2;
+      width: 100%;
+      select {
+        width: 100%;
+      }
+    }
+  }
+}

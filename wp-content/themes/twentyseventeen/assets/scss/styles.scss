@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Uni Sans Thin Caps';
+  src: url('../fonts/UNISANSTHIN.OTF');
+}
+
+@font-face {
+  font-family: 'Uni Sans Heavy Caps';
+  src: url('../fonts/UNISANSHEAVY.OTF');
+}
+
+@font-face {
+  font-family: 'Uni Sans Heavy Caps Italic';
+  src: url('../fonts/UNISANSHEAVYITALIC.OTF');
+}
+
+@import 'ui-kit/variables';
+@import 'ui-kit/color-library';
+@import 'ui-kit/general';
+@import 'ui-kit/buttons';
+
+@import 'partials/header';
+@import 'partials/footer';
+
+@import 'pages/main/jumbotron';
+@import 'pages/main/common-service-description';
+@import 'pages/main/services';
+@import 'pages/main/stock';
+@import 'pages/main/steps';
+@import 'pages/main/make-order';
+
+@import 'pages/services';
+@import 'pages/single-service';
+@import 'pages/how-to-order';
+@import 'pages/about';

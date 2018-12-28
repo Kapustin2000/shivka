@@ -1,0 +1,184 @@
+
+
+
+<h4>version 1.1.5 – 21/7/2017</h4>
+
+	UPDATE
+	Fixed maps problem
+	Updated shortcode and other plugins
+	Some minor problems
+
+
+	CHANGED
+	style.css
+	includes/theme-init.php
+	Shortcode plugin
+
+
+
+
+<h4>version 1.1.4.5 – 21/5/2017</h4>
+
+<pre>
+	UPDATE
+	Added new options for maps zoom
+	Updated shortcode and other plugins
+	Some minor problems
+
+
+	CHANGED
+	style.css
+	includes/theme-init.php
+	Shortcode plugin
+
+</pre>
+
+
+
+<h4>version 1.1.4.3 – 29/3/2017</h4>
+
+<pre>
+	FIXED
+	Added new options for blog title and subtitle
+	Some minor problems
+
+
+	CHANGED
+	style.css
+	includes/theme-init.php
+	includes/theme-options.php
+	includes/custom-style.php
+	one-page.php
+	shortcode plugin
+	index-header.php
+</pre>
+
+
+
+<h4>version 1.1.4.2 – 28/3/2017</h4>
+
+<pre>
+	FIXED
+	Added external logo options
+	Added new options for control theme
+	Added new options for header phone number or elements
+	Added new options for visual composer row shortcode 
+	Fixed footer img problem
+	Some minor problems
+
+
+	CHANGED
+	style.css
+	includes/theme-init.php
+	includes/theme-options.php
+	includes/custom-style.php
+	one-page.php
+	shortcode plugin
+	index-header.php
+</pre>
+
+
+
+
+<h4>version 1.1.4.1 – 20/01/2017</h4>
+
+<pre>
+FIXED
+Improved logo options
+Added new options for control theme
+Some minor problems
+
+
+CHANGED
+style.css
+includes/theme-options.php
+includes/custom-style.php
+css/update-css.css
+</pre>
+
+
+
+<h4>version 1.1.4 – 16/01/2017</h4>
+
+<pre>
+FIXED
+Some minor problems
+
+
+CHANGED
+style.css
+includes/theme-init.php
+includes/theme-options.php
+includes/custom-style.php
+
+</pre>
+
+
+
+<h4>version 1.1.3 – 13/01/2017</h4>
+
+<pre>
+FIXED
+Improved logo options
+Added new options for control theme
+Added custom preloader options
+Fixed mobile menu link problem
+Fixed page header breadcrumb mask visibility problem
+Updated layout (full and boxed) options
+
+
+CHANGED
+style.css
+includes/theme-init.php
+includes/theme-options.php
+includes/custom-style.php
+page.php
+fullwidth-template.php
+plugins/...zip
+</pre>
+
+
+
+<h4>version 1.1.2 – 07/01/2017</h4>
+
+FIXED
+Fixed small problems
+Google map location problem
+
+CHANGED
+style.css
+includes/theme-init.php
+includes/theme-options.php
+plugins/...zip
+
+
+
+
+<h4>version 1.1.1 – 02/01/2017</h4>
+
+FIXED
+Shortcode plugin problem
+
+CHANGED
+style.css
+includes/theme-init.php
+
+
+
+
+<h4>version 1.1 – 27/12/2016</h4>
+
+FIXED
+Shortcode plugin problem
+
+CHANGED
+includes/theme-init.php
+
+
+
+
+<pre>initial release</pre>
+
+<h4>version 1.0 – 9/12/2016</h4>
+
+<pre>initial release</pre>

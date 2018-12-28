@@ -1,0 +1,165 @@
+#blog.industries {
+  padding-top: 10rem;
+  .industry-info {
+    padding-bottom: 9.6rem;
+    h2 {
+      margin-top: 0;
+      color: $night-blue;
+    }
+    .toggle-description {
+      font-size: 1.6rem;
+      padding: 1.8rem 0;
+    }
+    .industry-info-item {
+      width: 100%;
+      height: 16rem;
+      display: inline-flex;
+      padding: 2rem;
+      position: relative;
+      flex-direction: column;
+      justify-content: flex-end;
+      border: 1px solid $pale-grey;
+      a {
+        position: absolute;
+        top: .9rem;
+        right: 1.1rem;
+        color: $orange;
+        i {
+          display: inline-block;
+          transform: rotate(-45deg);
+        }
+        &:hover {
+          text-decoration: none;
+          color: $dark-orange;
+        }
+      }
+      h2,
+      small {
+        margin: 0;
+      }
+    }
+  }
+  .success-cases {
+    .success-cases-heading {
+      order: 2;
+      margin-right: -$gap;
+    }
+  }
+  @include blog-main();
+  @include reference-main();
+  .success-cases-references {
+    margin-top: 20.8rem;
+  }
+
+  .btn-arrow {
+    display: block;
+    max-width: 27rem;
+  }
+}
+
+@media (min-width: $desktop) {
+  #blog.industries {
+    .success-cases {
+      @include success-cases-main();
+      .btn-arrow {
+        margin-top: 7.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  #blog.industries {
+    padding-top: 5rem;
+    h2 {
+      color: $blue;
+      margin-bottom: 3rem;
+      & + p {
+        margin-bottom: 4rem;
+      }
+    }
+    .industry-info {
+      text-align: center;
+      h2 {
+        color: $blue;
+      }
+      .toggle-description {
+        padding: 2.5rem 0;
+      }
+    }
+    .success-cases {
+      padding-top: 2rem;
+      .success-case-info-wrap {
+        position: relative;
+        line-height: 0;
+        .success-cases-image {
+          display: inline-block;
+          line-height: 0;
+          width: 100%;
+          height: 0;
+          padding-bottom: 43.26%;
+          margin: 0;
+          overflow: hidden;
+          .success-cases-image-wrap {
+            height: 0;
+            padding-bottom: 43.26%;
+          }
+        }
+        .tag {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          margin: 0;
+          &:not(:nth-child(2)) {
+            display: none;
+          }
+        }
+      }
+      h3 {
+        margin: 2.8rem 0 3.6rem;
+      }
+    }
+    .success-cases-references {
+      margin-top: 12.4rem;
+    }
+    .btn-arrow {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  #blog.industries {
+    @include blog-item();
+  }
+}
+
+@media (max-width: 425px) {
+  #blog.industries {
+    .success-cases {
+      .success-case-info-wrap {
+        .success-cases-image,
+        .success-cases-image-wrap {
+          padding-bottom: 22rem;
+        }
+      }
+    }
+  }
+}
+
+//TEMPORARY
+//@media (min-width: $desktop) and (max-width: 1300px) {
+//  #blog.industries {
+//    .success-cases {
+//      .success-cases-item .success-case-info {
+//        padding-right: 3.2rem;
+//        h3 {
+//          max-width: 36rem;
+//          font-size: 2.2rem;
+//          height: 9.8rem;
+//          margin-bottom: 4.2rem;
+//        }
+//      }
+//    }
+//  }
+//}

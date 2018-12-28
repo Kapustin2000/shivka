@@ -1,0 +1,209 @@
+form {
+  input {
+    padding: .8rem 0;
+  }
+  input,
+  textarea {
+    background-color: transparent;
+  }
+  textarea {
+    overflow: hidden;
+  }
+  label {
+    font-weight: normal;
+  }
+  .form-group {
+    line-height: 0;
+    label {
+      font-size: 1.6rem;
+      line-height: 1.75;
+      color: $grey-blue;
+      margin: 0;
+    }
+    input,
+    textarea {
+      width: 100%;
+    }
+    &.error {
+      input,
+      textarea {
+        border-bottom-color: $red !important;
+      }
+      label {
+        color: $red !important;
+      }
+      .error-tooltip {
+        display: block;
+      }
+    }
+    .error-tooltip {
+      display: none;
+      color: $red;
+      position: absolute;
+      top: 0;
+      right: 0;
+      .icon {
+        cursor: pointer;
+        font-size: 2.4rem;
+        &:hover + .tooltip {
+          opacity: 1;
+          z-index: 1;
+        }
+      }
+      .tooltip {
+        position: absolute;
+        top: 0;
+        white-space: nowrap;
+        right: 0;
+        background: $white;
+        border: 1px solid $red;
+        padding: .3rem 6rem;
+        font-size: 1.2rem;
+        letter-spacing: 0;
+        opacity: 0;
+        z-index: -1;
+        &:hover {
+          opacity: 1;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  .form-group-floating {
+    position: relative;
+    text-align: left;
+    label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: .2s ease-in;
+    }
+    &.active label,
+    input:focus + label,
+    textarea:focus + label {
+      top: -1.5rem;
+      font-size: 1.2rem;
+    }
+    input:focus + label,
+    textarea:focus + label {
+      color: $blue;
+    }
+  }
+  .checkbox-wrap {
+    position: relative;
+    margin-bottom: 9.6rem;
+    & > label {
+      cursor: pointer;
+      display: flex;
+      &:hover input[type="checkbox"] + label {
+        border-color: $blue;
+      }
+      span {
+        text-align: left;
+        margin-top: -.4rem;
+      }
+    }
+    input[type="checkbox"] {
+      display: none;
+    }
+    input[type="checkbox"] + label {
+      cursor: pointer;
+      position: relative;
+      min-width: 2rem;
+      min-height: 2rem;
+      max-width: 2rem;
+      max-height: 2rem;
+      margin-right: 1.6rem;
+      border: 1px solid $grey-blue;
+    }
+    input[type="checkbox"]:checked + label {
+      border-color: $blue !important;
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $blue;
+      }
+    }
+    &.error {
+      & > label {
+        span {
+          color: $grey-blue;
+          padding-right: 2.5rem;
+        }
+      }
+      input[type="checkbox"] + label {
+        border-color: $red;
+      }
+    }
+  }
+  &.inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+      width: 100%;
+      display: flex;
+      .form-group {
+        margin-bottom: 0;
+      }
+      input {
+        width: 100%;
+        background-color: transparent;
+      }
+    }
+    .btn {
+      margin: 0 auto;
+    }
+  }
+  button[type="submit"] {
+    max-height: 7rem;
+  }
+  .submit-wrap {
+    display: flex;
+  }
+  .form-message {
+    font-family: Karla-Bold, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    &.success-message {
+      color: $green;
+    }
+    &.error-message {
+      color: $red;
+    }
+  }
+  .success-submit {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: $mobile) {
+  form {
+    .form-group {
+      .error-tooltip {
+        .tooltip {
+          padding: .3rem 3rem;
+        }
+      }
+    }
+    &.inline-form {
+      & > div {
+        flex-direction: column;
+        .form-group {
+          margin-bottom: 5.2rem;
+          .multiselect-native-select {
+            margin-top: -2rem;
+          }
+        }
+      }
+    }
+  }
+}
