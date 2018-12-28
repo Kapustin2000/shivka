@@ -275,6 +275,17 @@ add_action( 'rest_api_init', function () {
         'callback' => 'shivka_Order_Save_AJAX',
     ) );
 } );
+
+function shivka_SERVICESAjax()
+{
+    get_template_part('templates/services-block');
+    exit;
+
+}
+
+// creating Ajax call for WordPress
+add_action('wp_ajax_nopriv_shivka_SERVICESAjax', 'shivka_SERVICESAjax');
+add_action('wp_ajax_shivka_SERVICESAjax', 'shivka_SERVICESAjax');
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -363,6 +374,8 @@ function twentyseventeen_resource_hints( $urls, $relation_type ) {
 	return $urls;
 }
 add_filter( 'wp_resource_hints', 'twentyseventeen_resource_hints', 10, 2 );
+
+
 
 /**
  * Register widget area.
