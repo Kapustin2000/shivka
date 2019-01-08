@@ -101,6 +101,21 @@
 }
 
 @media (max-width: $desktop) {
+  .smarthoop-home {
+    .services {
+      .service-item {
+        .service-title {
+          max-height: 20rem;
+          bottom: 50%;
+          right: 50%;
+          transform: translate(50%, 50%);
+          width: 100%;
+          padding-right: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
   .services {
     .service-item {
       padding-top: 0;
@@ -113,15 +128,7 @@
           padding-bottom: 50rem;
         }
       }
-      .service-title {
-        max-height: 20rem;
-        bottom: 50%;
-        right: 50%;
-        transform: translate(50%, 50%);
-        width: 100%;
-        padding-right: 0;
-        text-align: center;
-      }
+
       button {
         right: 50%;
         top: calc(50% + 10rem);

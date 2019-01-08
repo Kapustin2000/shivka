@@ -70,6 +70,7 @@
         margin-left: 7%;
         padding: 0 18px 0 0;
         margin-bottom: 50px;
+        max-height: 10.5rem;
       }
       button {
         position: absolute;
@@ -92,25 +93,19 @@
 
 
 @media (max-width: $large-desktop) {
-  .services .service-item .service-img-wrap .service-img {
+  .smarthoop-services .services .service-item .service-img-wrap .service-img {
     // padding-bottom: 145%;
   }
 }
 
 @media (min-width: $desktop + 1px) {
-  .services {
+  .smarthoop-services .services {
     .service-item:hover {
-  //     .service-img-wrap {
-  //       padding-right: 0;
-  //       &::after {
-  //         background-color: transparentize($white, .4);
-  //       }
-  //     }
       .service-title {
-        //transform: translateY(0);
+        transform: translateY(0) !important;
       }
       button {
-        //transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         opacity: 1;
         z-index: 2;
       }
@@ -121,6 +116,9 @@
 @media (max-width: $desktop) {
   .smarthoop-services .services {
     .service-item {
+      .service-title {
+        width: 93%;
+      }
       button {
         opacity: 1;
         z-index: 2;
@@ -129,19 +127,19 @@
   }
 }
 
-@media (min-width: $tablet + 1px) and (max-width: $desktop) {
-  .smarthoop-services .services {
-    .service-item {
-      .service-title {
-        transform: translateY(-200%);
-      }
-    }
-  }
-}
-
-@media (max-width: $mobile) {
-  .smarthoop-services .services {
-    padding: 5rem 0 10rem;
-  }
-}
+//@media (min-width: $tablet + 1px) and (max-width: $desktop) {
+//  .smarthoop-services .services {
+//    .service-item {
+//      .service-title {
+//        transform: translateY(-200%);
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: $mobile) {
+//  .smarthoop-services .services {
+//    padding: 5rem 0 10rem;
+//  }
+//}
 

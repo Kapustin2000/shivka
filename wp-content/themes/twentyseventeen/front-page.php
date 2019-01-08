@@ -26,157 +26,155 @@ $stock = pods('stock')->find();
 
 <?php get_header(); ?>
 
-
-<section class="jumbotron">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="inner">
-                    <h1>
+<div class="smarthoop-wrap smarthoop-home">
+    <section class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner">
+                        <h1>
               <span>
                   &nbsp;Машинная вышивка -&nbsp;<br/>
                   &nbsp;отличный способ&nbsp;<br/>
                   &nbsp;проявить свой стиль!&nbsp;</span>
-                    </h1>
-                    <div class="see-more">
-                        <span class="underline">узнать больше</span>
-                        <i class="icon icon-arrow"></i>
-                    </div>
-                    <div class="video-carousel">
-                        <div class="decorative lavander"></div>
-                        <div class="video-item"></div>
-                        <div class="video-progress"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="common-service-description">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-12">
-                <div class="common-service-img">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png" alt="Common Service">
-                </div>
-            </div>
-            <div class="col-lg-6 col-12">
-                <div class="common-service-text bordered">
-                    <h2>Общее описание услуги</h2>
-                    <p>
-                        Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.
-                    </p>
-                    <p>
-                        Мы также вышиваем шевроны и нашивки, логотипы и эмблемы компаний, создадим вышивку на одежде и крое, домашнем текстиле и полотенцах, коже и замше.
-                    </p>
-                    <p>
-                        Современное промышленное японское (Toyota) и немецкое (ZSK)оборудование, качественные расходные материалы и нитки (Gunold, Madeira, Durak и др.), профессиональное программирование и наш опыт позволяют осуществлять каждый заказ максимально быстро, качественно и по приемлемым ценам.
-                    </p>
-                </div>
-                <a href="#" type="button" class="btn btn-outline">Читать о нас</a>
-                <div class="decorative lavander"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2>Наши услуги</h2>
-                <div class="decorative yellow"></div>
-                <div class="row">
-                    <?php while($services->fetch()){ ?>
-                        <div class="col-lg-4 col-12">
-                            <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
-                                <div class="service-img-wrap">
-                                    <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
-                                </div>
-                                <div class="service-title"><?=$services->display('post_title')?></div>
-                                <button type="button" class="btn btn-primary">подробнее</button>
-                            </a>
+                        </h1>
+                        <div class="see-more">
+                            <span class="underline">узнать больше</span>
+                            <i class="icon icon-arrow"></i>
                         </div>
-                    <?php } ?>
-                </div>
-                <div class="see-more">
-                    <a href="/services" class="underline">смотреть все услуги</a>
+                        <div class="video-carousel">
+                            <div class="decorative lavander"></div>
+                            <div class="video-item"></div>
+                            <div class="video-progress"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<?php if($stock->total_found()){ ?>
-<section class="stock">
-    <div class="container">
-        <div class="row">
-            <div class="stock-img col-md-4">
-                <img src="<?=$stock->display('image')?>" alt="Stock">
-            </div>
-            <div class="col-lg-8 col-xs-12">
-                <div class="stock-text bordered">
-                    <h2><?=$stock->display('post_title')?></h2>
-                    <p>
-                        <?=$stock->display('post_content')?>
-                    </p>
-                    <a href="<?=get_permalink($stock->display('id'))?>" type="button" class="btn btn-primary">Подробнее</a>
-                    <img class="ornament" src="<?=$stock->display('patch')?>" alt="Ornament">
+    </section>
+
+    <section class="common-service-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="common-service-img">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png" alt="Common Service">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="common-service-text bordered">
+                        <h2>Общее описание услуги</h2>
+                        <p>
+                            Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.
+                        </p>
+                        <p>
+                            Мы также вышиваем шевроны и нашивки, логотипы и эмблемы компаний, создадим вышивку на одежде и крое, домашнем текстиле и полотенцах, коже и замше.
+                        </p>
+                        <p>
+                            Современное промышленное японское (Toyota) и немецкое (ZSK)оборудование, качественные расходные материалы и нитки (Gunold, Madeira, Durak и др.), профессиональное программирование и наш опыт позволяют осуществлять каждый заказ максимально быстро, качественно и по приемлемым ценам.
+                        </p>
+                    </div>
+                    <a href="#" type="button" class="btn btn-outline">Читать о нас</a>
+                    <div class="decorative lavander"></div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<?php } ?>
+    </section>
 
-<section class="steps">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2>этапы работы</h2>
-                <div class="steps-wrap row">
-                    <div class="step col-xl-3 col-sm-6 col-12">
-                        <h3>запрос от клиента</h3>
-                        <p>Краткое описание первого этапа работы с клиентами</p>
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Наши услуги</h2>
+                    <div class="decorative yellow"></div>
+                    <div class="row">
+                        <?php while($services->fetch()){ ?>
+                            <div class="col-lg-4 col-12">
+                                <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
+                                    <div class="service-img-wrap">
+                                        <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
+                                    </div>
+                                    <div class="service-title"><?=$services->display('post_title')?></div>
+                                    <button type="button" class="btn btn-primary">подробнее</button>
+                                </a>
+                            </div>
+                        <?php } ?>
                     </div>
-                    <div class="step col-xl-3 col-sm-6 col-12">
-                        <h3>запрос от клиента</h3>
-                        <p>Краткое описание первого этапа работы с клиентами</p>
+                    <div class="see-more">
+                        <a href="/services" class="underline">смотреть все услуги</a>
                     </div>
-                    <div class="step col-xl-3 col-sm-6 col-12">
-                        <h3>запрос от клиента</h3>
-                        <p>Краткое описание первого этапа работы с клиентами</p>
-                    </div>
-                    <div class="step col-xl-3 col-sm-6 col-12">
-                        <h3>запрос от клиента</h3>
-                        <p>Краткое описание первого этапа работы с клиентами</p>
-                    </div>
-                    <div class="step col-xl-3 col-sm-6 col-12">
-                        <h3>запрос от клиента</h3>
-                        <p>Краткое описание первого этапа работы с клиентами</p>
-                    </div>
-                    <div class="step col-xl-3 col-sm-6 col-12">
-                        <h3>запрос от клиента</h3>
-                        <p>Краткое описание первого этапа работы с клиентами</p>
-                    </div>
-                    <div class="step col-xl-3 col-sm-6 col-12">
-                        <h3>запрос от клиента</h3>
-                        <p>Краткое описание первого этапа работы с клиентами</p>
-                    </div>
-                    <div class="step col-xl-3 col-sm-6 col-12">
-                        <h3>запрос от клиента</h3>
-                        <p>Краткое описание первого этапа работы с клиентами</p>
-                    </div>
-                </div>
-                <div class="see-more">
-                    <a href="/" class="underline">смотреть подробности</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <?php if($stock->total_found()){ ?>
+        <section class="stock">
+            <div class="container">
+                <div class="row">
+                    <div class="stock-img col-md-4">
+                        <img src="<?=$stock->display('image')?>" alt="Stock">
+                    </div>
+                    <div class="col-lg-8 col-xs-12">
+                        <div class="stock-text bordered">
+                            <h2><?=$stock->display('post_title')?></h2>
+                            <p>
+                                <?=$stock->display('post_content')?>
+                            </p>
+                            <a href="<?=get_permalink($stock->display('id'))?>" type="button" class="btn btn-primary">Подробнее</a>
+                            <img class="ornament" src="<?=$stock->display('patch')?>" alt="Ornament">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <?php } ?>
 
-
-
+    <section class="steps">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>этапы работы</h2>
+                    <div class="steps-wrap row">
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                    </div>
+                    <div class="see-more">
+                        <a href="/" class="underline">смотреть подробности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 <?php get_footer(); ?>

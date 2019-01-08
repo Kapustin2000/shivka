@@ -655,6 +655,16 @@ footer {
     transform: translateY(-12.4rem); } }
 
 @media (max-width: 992px) {
+  .smarthoop-home .services .service-item .service-title {
+    max-height: 20rem;
+    bottom: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+    width: 100%;
+    padding-right: 0;
+    text-align: center; }
   .services .service-item {
     padding-top: 0; }
     .services .service-item .service-img-wrap {
@@ -663,16 +673,6 @@ footer {
         background-color: rgba(255, 255, 255, 0.6); }
       .services .service-item .service-img-wrap .service-img {
         padding-bottom: 50rem; }
-    .services .service-item .service-title {
-      max-height: 20rem;
-      bottom: 50%;
-      right: 50%;
-      -webkit-transform: translate(50%, 50%);
-      -ms-transform: translate(50%, 50%);
-      transform: translate(50%, 50%);
-      width: 100%;
-      padding-right: 0;
-      text-align: center; }
     .services .service-item button {
       right: 50%;
       top: calc(50% + 10rem);
@@ -923,7 +923,8 @@ footer {
     border-radius: 50px 0 0 50px;
     margin-left: 7%;
     padding: 0 18px 0 0;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    max-height: 10.5rem; }
   .smarthoop-services .services .service-item button {
     position: absolute;
     top: 50%;
@@ -940,24 +941,23 @@ footer {
     margin-top: 5rem; }
 
 @media (min-width: 993px) {
-  .services .service-item:hover button {
+  .smarthoop-services .services .service-item:hover .service-title {
+    -webkit-transform: translateY(0) !important;
+    -ms-transform: translateY(0) !important;
+    transform: translateY(0) !important; }
+  .smarthoop-services .services .service-item:hover button {
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     opacity: 1;
     z-index: 2; } }
 
 @media (max-width: 992px) {
+  .smarthoop-services .services .service-item .service-title {
+    width: 93%; }
   .smarthoop-services .services .service-item button {
     opacity: 1;
     z-index: 2; } }
-
-@media (min-width: 769px) and (max-width: 992px) {
-  .smarthoop-services .services .service-item .service-title {
-    -webkit-transform: translateY(-200%);
-    -ms-transform: translateY(-200%);
-    transform: translateY(-200%); } }
-
-@media (max-width: 576px) {
-  .smarthoop-services .services {
-    padding: 5rem 0 10rem; } }
 
 .smarthoop-single-service .single-service-description {
   padding: 10rem 0 15rem; }
