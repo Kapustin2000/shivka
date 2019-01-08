@@ -15,24 +15,11 @@ $data = pods('stock')->find();
 
 ?>
 
-
-
-
-
-
-
-
-
-<!-- Need header -->
 <?php get_header(); ?>
-<!-- -->
 
+<div class="smarthoop-wrap smarthoop-stock">
 
-
-
-
-
-<!-- YOUR HTML -->
+</div>
 
 
 <div class="row">
@@ -45,7 +32,6 @@ $data = pods('stock')->find();
      </div>
 <?php } ?>
 </div>
-
 
  
  <?php get_footer(); ?>

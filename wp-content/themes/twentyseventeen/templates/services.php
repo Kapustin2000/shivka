@@ -14,22 +14,10 @@ $data = pods('services')->find();
 
 ?>
 
-
-
-
-
-
-
-
-
 <!-- Need header -->
 <?php get_header(); ?>
-<!-- -->
 
-
-
-
-
+<div class="smarthoop-services">
     <section class="services">
         <div class="container">
             <div class="row">
@@ -59,13 +47,6 @@ $data = pods('services')->find();
             </div>
         </div>
     </section>
-
-
-<!-- YOUR HTML -->
-
-
-
-
-
+</div>
 
 <?php get_footer(); ?>

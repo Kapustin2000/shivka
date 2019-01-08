@@ -5,23 +5,10 @@ Template Name: Contacts
 
 ?>
 
-
-
-
-
-
-
-
-
-<!-- Need header -->
 <?php get_header(); ?>
-<!-- -->
 
+<div class="smarthoop-wrap smarthoop-contacts">
 
-
-
-
-
-
+</div>
 
 <?php get_footer(); ?>

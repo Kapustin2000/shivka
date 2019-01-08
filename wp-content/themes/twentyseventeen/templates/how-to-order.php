@@ -4,20 +4,12 @@ Template Name: How to order
 */
 
 ?>
- 
-
-
-
-
-
-
-
 
 <!-- Need header -->
 <?php get_header(); ?>
 <!-- -->
 
-
+<div class="smarthoop-wrap smarthoop-how-to-order">
     <section class="steps">
         <div class="container">
             <div class="row">
@@ -67,11 +59,7 @@ Template Name: How to order
             </div>
         </div>
     </section>
-
-
-
-
- 
+</div>
 
 
 <?php get_footer(); ?>

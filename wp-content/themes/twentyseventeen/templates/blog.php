@@ -27,7 +27,9 @@ $data = pods('blog')->find();
 <!-- -->
 
 
+<div class="smarthoop-wrap smarthoop-blog">
 
+</div>
 
 
 

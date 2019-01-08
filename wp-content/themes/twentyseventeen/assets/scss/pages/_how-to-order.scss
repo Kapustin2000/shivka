@@ -1,6 +1,10 @@
 .smarthoop-how-to-order {
+    margin-top: 20rem;
     .steps {
         padding-bottom: 15rem;
+        .steps-wrap {
+            margin: 0;
+        }
         .step {
             position: relative;
             padding: 8.5rem;

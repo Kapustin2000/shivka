@@ -20,9 +20,9 @@ if(!empty($data->total_found())) {
 ?>
 
 
+<div class="smarthoop-wrap smarthoop-blog smarthoop-blog-post">
 
-
-    <!-- Html -->
+</div>
 
 
 <?php if($found){ ?>

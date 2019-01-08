@@ -19,7 +19,9 @@ Template Name: Prices
 
 
 
+<div class="smarthoop-prices">
 
+</div>
 
 
 

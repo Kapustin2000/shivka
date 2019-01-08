@@ -78,11 +78,6 @@ foreach ( $file_types as $type ) {
 			$allowed_files += $theme->get_files( 'php', -1 );
 			$has_templates = ! empty( $allowed_files );
 			break;
-		case 'css':
-			$style_files = $theme->get_files( 'css', -1 );
-			$allowed_files['style.css'] = $style_files['style.css'];
-			$allowed_files += $style_files;
-			break;
 		default:
 			$allowed_files += $theme->get_files( $type, -1 );
 			break;
@@ -93,13 +88,9 @@ foreach ( $file_types as $type ) {
 if ( isset( $allowed_files['functions.php'] ) ) {
 	$allowed_files = array( 'functions.php' => $allowed_files['functions.php'] ) + $allowed_files;
 }
-if ( isset( $allowed_files['style.css'] ) ) {
-	$allowed_files = array( 'style.css' => $allowed_files['style.css'] ) + $allowed_files;
-}
 
 if ( empty( $file ) ) {
-	$relative_file = 'style.css';
-	$file = $allowed_files['style.css'];
+
 } else {
 	$relative_file = wp_unslash( $file );
 	$file = $theme->get_stylesheet_directory() . '/' . $relative_file;

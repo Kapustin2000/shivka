@@ -5,11 +5,8 @@ Template Name: About
 
 ?>
 
-
 <?php
 $settings = pods('about_ui')->find();
-
-
 
 $params = array(
     'orderby'=>"order_weight.meta_value DESC,id DESC"
@@ -19,17 +16,10 @@ $partners = pods('partners')->find();
 
 ?>
 
-
-
-
-
 <!-- Need header -->
 <?php get_header(); ?>
-<!-- -->
 
-
-
-
+<div class="smarthoop-wrap smarthoop-about">
     <section class="about-us">
         <div class="container">
             <div class="row">
@@ -47,7 +37,6 @@ $partners = pods('partners')->find();
             </div>
         </div>
     </section>
-
     <section class="socials">
         <div class="container">
             <div class="row">
@@ -74,30 +63,24 @@ $partners = pods('partners')->find();
         </div>
     </section>
     <?php if($partners->total_found()){ ?>
-    <section class="partners">
-        <div class="decorative yellow"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2>наши клиенты</h2>
-                    <div class="partner-wrap">
-                        <?php while($partners->fetch()){ ?>
-                        <div class="partner">
-                            <img src="<?=$partners->display('logo')?>" alt="<?=$partners->display('title')?>">
+        <section class="partners">
+            <div class="decorative yellow"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>наши клиенты</h2>
+                        <div class="partner-wrap">
+                            <?php while($partners->fetch()){ ?>
+                                <div class="partner">
+                                    <img src="<?=$partners->display('logo')?>" alt="<?=$partners->display('title')?>">
+                                </div>
+                            <?php } ?>
                         </div>
-                        <?php } ?>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     <?php } ?>
-
-
-
-
-
-
-
+</div>
 
 <?php get_footer(); ?>

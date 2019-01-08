@@ -27,9 +27,6 @@ $stock = pods('stock')->find();
 <?php get_header(); ?>
 
 
-
-
-
 <section class="jumbotron">
     <div class="container">
         <div class="row">

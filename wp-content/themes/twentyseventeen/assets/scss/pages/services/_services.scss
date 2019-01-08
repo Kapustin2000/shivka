@@ -92,13 +92,13 @@
 
 
 @media (max-width: $large-desktop) {
-  .services .service-item .service-img-wrap .service-img {
+  .smarthoop-services .services .service-item .service-img-wrap .service-img {
     // padding-bottom: 145%;
   }
 }
 
 @media (min-width: $desktop + 1px) {
-  .services {
+  .smarthoop-services .services {
     .service-item:hover {
   //     .service-img-wrap {
   //       padding-right: 0;
