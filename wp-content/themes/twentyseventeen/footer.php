@@ -22,7 +22,7 @@
             <div class="form-wrap col-md-8 col-12">
                 <h2>Хотите узнать стоимость услуги или сделать заказ?</h2>
                 <p>Свяжитесь с нами удобным для вас способом:</p>
-                <div class="tabs-wrap">
+                <div class="tabs-wrap yellow">
                     <button type="button" class="tab active">
                         <span>Написать</span>
                     </button>
@@ -124,15 +124,15 @@
                 <div class="footer-nav">
                     <ul>
                         <li><a href="#">услуги</a></li>
-                        <li><a href="#">наши работы</a></li>
-                        <li><a href="#">о нас</a></li>
-                        <li><a href="#">цены</a></li>
-                        <li><a href="#">акции</a></li>
+                        <li><a href="/works">наши работы</a></li>
+                        <li><a href="/about">о нас</a></li>
+                        <li><a href="/prices">цены</a></li>
+                        <li><a href="/stock">акции</a></li>
                         <li><a href="#">магазин</a></li>
-                        <li><a href="#">доставка и оплата</a></li>
-                        <li><a href="#">как заказать</a></li>
-                        <li><a href="#">блог</a></li>
-                        <li><a href="#">f.a.q.</a></li>
+                        <li><a href="/delivery">доставка и оплата</a></li>
+                        <li><a href="/how-to-order">как заказать</a></li>
+                        <li><a href="/blog">блог</a></li>
+                        <li><a href="/faq">f.a.q.</a></li>
                     </ul>
                 </div>
             </div>
@@ -152,5 +152,6 @@
 
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/jquery/jquery-1.12.4.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/bootstrap/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/assets/js/scripts.js"></script>
 </body>
 </html>

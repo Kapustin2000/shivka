@@ -36,46 +36,7 @@
             margin-bottom: 4.5rem;
         }
         .tabs-wrap {
-            display: flex;
             margin: 0 -10rem;
-            button {
-                cursor: pointer;
-                width: 50%;
-                text-align: center;
-                background-color: transparentize($yellow, .5);
-                border-radius: 0;
-                &:first-child {
-                    margin-right: 2px;
-                }
-                &:last-child {
-                    margin-left: 2px;
-                }
-                span{
-                    position: relative;
-                    &::after {
-                        content: '';
-                        display: block;
-                        position: absolute;
-                        left: 0;
-                        top: 90%;
-                        width: 0;
-                        height: 1px;
-                        background-color: $black;
-                        transition: width $default;
-                    }
-                }
-                &:hover {
-                    span::after {
-                        width: 100%;
-                    }
-                }
-                &.active {
-                    background-color: $yellow;
-                }
-                &:not(.active) {
-                    
-                }
-            }
         }
     }
     form {
@@ -97,9 +58,6 @@
             padding: 5rem 2rem;
             .tabs-wrap {
                 margin: 0 -15px;
-                button {
-                    padding: 1.3rem;
-                }
             }
         }
     }

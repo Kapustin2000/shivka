@@ -14,57 +14,15 @@
       }
     }
     .service-item {
-      // display: block;
-      // position: relative;
-      // max-height: 50rem;
-      // overflow: hidden;
-      // box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
-      // padding-top: 80%;
-      // margin-bottom: 5.5rem;
-      // background-color: $white;
       .service-img-wrap {
         height: 100%;
-        // position: absolute;
-        // top: 0;
-        // left: 0;
-        // width: 100%;
-        // height: auto;
-        // transition: $default;
         padding-right: 0;
-        &::after {
-          // content: '';
-          // display: block;
-          // width: 100%;
-          // height: 100%;
-          // position: absolute;
-          // top: 0;
-          // left: 0;
-          // transition: $default;
-        }
         .service-img {
           height: inherit;
           padding: 0;
-          // width: 100%;
-          // padding-bottom: 120%;
-          // background-image: url('../img/38bba466020cded409f222437f8c15d6.png');
-          // background-size: cover;
-          // background-repeat: no-repeat;
-          // background-position: center center;
-          // transition: $default;
         }
       }
       .service-title {
-        // position: relative;
-        // z-index: 1;
-        // padding: 1.5rem 2.7rem 1.5rem 0;
-        // text-align: right;
-        // color: $violet;
-        // font-family: 'Uni Sans Thin Caps', sans-serif;
-        // font-size: 2.5rem;
-        // font-weight: bold;
-        // line-height: 5rem;
-        // transition: $default;
-        // margin-bottom: -4.8rem;
         background: white;
         border-radius: 50px 0 0 50px;
         margin-left: 7%;
@@ -86,15 +44,7 @@
     }
     .see-more {
       margin-top: 5rem;
-      // text-align: center;
     }
-  }
-}
-
-
-@media (max-width: $large-desktop) {
-  .smarthoop-services .services .service-item .service-img-wrap .service-img {
-    // padding-bottom: 145%;
   }
 }
 
@@ -127,19 +77,4 @@
   }
 }
 
-//@media (min-width: $tablet + 1px) and (max-width: $desktop) {
-//  .smarthoop-services .services {
-//    .service-item {
-//      .service-title {
-//        transform: translateY(-200%);
-//      }
-//    }
-//  }
-//}
-//
-//@media (max-width: $mobile) {
-//  .smarthoop-services .services {
-//    padding: 5rem 0 10rem;
-//  }
-//}
 
