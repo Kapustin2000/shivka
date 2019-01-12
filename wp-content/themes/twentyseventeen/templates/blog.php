@@ -8,7 +8,7 @@ Template Name: Blog
 $params = array(
     'orderby'=>"order_weight.meta_value +0 DESC,id DESC"
 );
-$data = pods('blog')->find();
+$data = pods('blog')->find($params);
 
 ?>
 
@@ -36,36 +36,23 @@ $data = pods('blog')->find();
                     </div>
                     <div class="row">
                         <!--  TEMPORARY  -->
-                        <div class="col-md-6 col-12">
-                            <a class="blog-post" data-post-type="article" href="<?=get_permalink($data->display('id'))?>">
-                                <div class="blog-img-wrap">
-                                    <div class="blog-img" style="background: black;"></div>
-                                    <div class="blog-type">Статьи</div>
-                                </div>
-                                <div class="blog-info">
-                                    <div class="blog-title">Компьютерная вышивка</div>
-                                    <p>Наша компания SmartHoop имеет все необходимое оборудование для компьютерной вышивки.
-                                        Мы можем предложить для Вас машинную вышивку любой сложности, можем разработать дизайн вышивки,
-                                        подобрать или создать изображение для нанесения, предложить подходящий материал.</p>
-                                </div>
-                                <button type="button" class="btn btn-primary">смотреть</button>
-                            </a>
-                        </div>
-                        <!--  TEMPORARY  -->
-
                         <?php  while($data->fetch()){?>
                             <div class="col-md-6 col-12">
                                 <a class="blog-post" data-post-type="article" href="<?=get_permalink($data->display('id'))?>">
                                     <div class="blog-img-wrap">
-                                        <div class="blog-img" style="background-image: url(<?=$data->display('image')?>);"></div>
+                                        <div class="blog-img" style="background:  url(<?=$data->display('image')?>);"></div>
                                         <div class="blog-type"><?=$data->display('blog_type')?></div>
                                     </div>
-                                    <div class="blog-title"><?=$data->display('post_title')?></div>
-                                    <?=$data->display('post_content')?>
+                                    <div class="blog-info">
+                                        <div class="blog-title"><?=$data->display('post_title')?></div>
+                                        <p><?=$data->display('post_content')?></p>
+                                    </div>
                                     <button type="button" class="btn btn-primary">смотреть</button>
                                 </a>
                             </div>
                         <?php } ?>
+
+                        <!--  TEMPORARY  -->
                     </div>
                 </div>
             </div>

@@ -2,27 +2,31 @@
 /*
 Template Name: Blog - view
 */
-$id = shivka_escapeParam(trim($_GET['id'], '/'));
-$params = array('limit' => 1,
-    'where'=>"post_name = '".$id."'"
-);
-$data = pods('blog')->find($params);
+if(isset($_GET['id'])) {
+    $id = shivka_escapeParam(trim($_GET['id'], '/'));
+    $params = array('limit' => 1,
+        'where' => "post_name = '" . $id . "'"
+    );
+    $data = pods('blog')->find($params);
 
-$found = false;
-if(!empty($data->total_found())) {
-    while ($data->fetch()) {
-        shivka_SetPodsSeo($data->display('id'));
-        $found = true;
-        break;
+    $found = false;
+    if (!empty($data->total_found())) {
+        while ($data->fetch()) {
+            shivka_SetPodsSeo($data->display('id'));
+            $found = true;
+            break;
+        }
     }
+}else{
+    $found = false;
 }
 
 ?>
 
 
-<div class="smarthoop-wrap smarthoop-blog smarthoop-blog-post">
 
-</div>
+
+    <!-- Html -->
 
 
 <?php if($found){ ?>
@@ -30,9 +34,12 @@ if(!empty($data->total_found())) {
 
     <?=$data->display('post_title')?>
     <?=$data->display('post_content')?>
-    <?=$data->display('image')?>
+    <?=$data->display('patch')?>
     <?=$data->display('description')?>
-    <?=$data->display('blog_type')?>
+    <?=$data->display('image')?>
+
+    С <?=date("d.m.Y", strtotime($data->display('start_date')));?> по <?=date("d.m.Y", strtotime($data->display('end_date')));?>
+
 <?php  }else{ ?>
 
 

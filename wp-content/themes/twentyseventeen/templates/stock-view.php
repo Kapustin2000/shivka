@@ -2,19 +2,23 @@
 /*
 Template Name: Stock - view
 */
-$id = shivka_escapeParam(trim($_GET['id'], '/'));
-$params = array('limit' => 1,
-    'where'=>"post_name = '".$id."'"
-);
-$data = pods('stock')->find($params);
+if(isset($_GET['id'])) {
+    $id = shivka_escapeParam(trim($_GET['id'], '/'));
+    $params = array('limit' => 1,
+        'where' => "post_name = '" . $id . "'"
+    );
+    $data = pods('stock')->find($params);
 
-$found = false;
-if(!empty($data->total_found())) {
-    while ($data->fetch()) {
-        shivka_SetPodsSeo($data->display('id'));
-        $found = true;
-        break;
+    $found = false;
+    if (!empty($data->total_found())) {
+        while ($data->fetch()) {
+            shivka_SetPodsSeo($data->display('id'));
+            $found = true;
+            break;
+        }
     }
+}else{
+    $found = false;
 }
 
 ?>
