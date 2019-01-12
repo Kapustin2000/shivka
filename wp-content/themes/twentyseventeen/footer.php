@@ -71,7 +71,7 @@
             <div class="col-12">
                 <div class="inner-wrap">
                     <div class="logo-wrap">
-                        <img src="assets/img/smarthoop_logo_2.png" width="100" height="100" alt="Smarthoop">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/smarthoop_logo_2.png" width="100" height="100" alt="Smarthoop">
                     </div>
                     <div class="contacts">
                         <h4>контакты</h4>
