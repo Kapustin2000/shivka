@@ -53,7 +53,7 @@ ul {
     display: block;
     background-color: #000;
     position: absolute;
-    top: 14px;
+    top: 16px;
     left: 0; }
 
 .content-editable,
@@ -73,6 +73,22 @@ a {
   outline-color: #cdcfe9; }
   a:focus {
     outline: 1px dashed #cdcfe9; }
+  a.back {
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 3rem;
+    text-align: right; }
+    a.back span {
+      position: relative; }
+    a.back .icon-arrow {
+      position: absolute;
+      top: -5.5rem;
+      left: -10rem;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0; }
@@ -869,30 +885,30 @@ footer {
     .make-order .form-wrap .tabs-wrap {
       margin: 0 -15px; } }
 
-.smarthoop-services .services {
+.services.extra-services {
   padding: 10rem 0 15rem; }
-  .smarthoop-services .services .decorative.yellow {
+  .services.extra-services .decorative.yellow {
     top: 4rem;
     left: 30%; }
-  .smarthoop-services .services .decorative.lavander {
+  .services.extra-services .decorative.lavander {
     bottom: 95px;
     right: -35px;
     left: auto;
     top: auto; }
-  .smarthoop-services .services .service-item .service-img-wrap {
+  .services.extra-services .service-item .service-img-wrap {
     height: 100%;
     padding-right: 0; }
-    .smarthoop-services .services .service-item .service-img-wrap .service-img {
+    .services.extra-services .service-item .service-img-wrap .service-img {
       height: inherit;
       padding: 0; }
-  .smarthoop-services .services .service-item .service-title {
+  .services.extra-services .service-item .service-title {
     background: white;
     border-radius: 50px 0 0 50px;
     margin-left: 7%;
     padding: 0 18px 0 0;
     margin-bottom: 50px;
     max-height: 10.5rem; }
-  .smarthoop-services .services .service-item button {
+  .services.extra-services .service-item button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -904,15 +920,15 @@ footer {
     transform: translate(-50%, -50%);
     opacity: 0;
     z-index: -1; }
-  .smarthoop-services .services .see-more {
+  .services.extra-services .see-more {
     margin-top: 5rem; }
 
 @media (min-width: 993px) {
-  .smarthoop-services .services .service-item:hover .service-title {
+  .services.extra-services .service-item:hover .service-title {
     -webkit-transform: translateY(0) !important;
     -ms-transform: translateY(0) !important;
     transform: translateY(0) !important; }
-  .smarthoop-services .services .service-item:hover button {
+  .services.extra-services .service-item:hover button {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -920,15 +936,19 @@ footer {
     z-index: 2; } }
 
 @media (max-width: 992px) {
-  .smarthoop-services .services .service-item .service-title {
+  .services.extra-services .service-item .service-title {
     width: 93%; }
-  .smarthoop-services .services .service-item button {
+  .services.extra-services .service-item button {
     opacity: 1;
     z-index: 2; } }
+
+.smarthoop-single-service .back {
+  margin-top: 35px; }
 
 .smarthoop-single-service .single-service-description {
   padding: 10rem 0 15rem; }
   .smarthoop-single-service .single-service-description .bordered {
+    margin-top: 35px;
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
@@ -942,6 +962,8 @@ footer {
       bottom: 0;
       left: 1rem; }
       .smarthoop-single-service .single-service-description .bordered .service-img img {
+        position: absolute;
+        bottom: 0;
         width: auto;
         height: 96rem; }
     .smarthoop-single-service .single-service-description .bordered h1 {
@@ -993,6 +1015,36 @@ footer {
         left: 45%;
         top: 40rem;
         z-index: 2; }
+  .smarthoop-single-service .single-service-gallery .see-more {
+    position: relative;
+    z-index: 10; }
+
+.smarthoop-single-service .single-service-more {
+  padding-bottom: 15rem; }
+  .smarthoop-single-service .single-service-more .decorative {
+    width: 700px;
+    height: 200px;
+    right: -18rem;
+    bottom: -5rem; }
+
+.smarthoop-single-service .single-service-shop {
+  margin-bottom: -15rem; }
+  .smarthoop-single-service .single-service-shop .bordered {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    border-color: #3b2f5c;
+    max-width: 95rem; }
+    .smarthoop-single-service .single-service-shop .bordered a {
+      margin-bottom: 14rem; }
+  .smarthoop-single-service .single-service-shop .decorative {
+    width: 425px;
+    height: 425px;
+    bottom: 0;
+    right: 0; }
+
+.page-template-services-view .make-order .decorative {
+  display: none; }
 
 @media (max-width: 1920px) {
   .smarthoop-single-service .single-service-description .bordered h1 {
@@ -1300,6 +1352,105 @@ footer {
       .smarthoop-blog .blog .blog-post:hover button {
         opacity: 1;
         z-index: 1; }
+
+.smarthoop-contacts #map {
+  height: 100%; }
+
+.smarthoop-prices {
+  padding-top: 20rem; }
+  .smarthoop-prices table {
+    margin: 6.4rem 0 5rem;
+    width: 100%;
+    font-family: 'Uni Sans Thin Caps', sans-serif;
+    text-transform: uppercase;
+    color: #3b2f5c;
+    font-size: 25px;
+    line-height: 50px;
+    border-collapse: collapse; }
+    .smarthoop-prices table th {
+      background-color: rgba(242, 235, 192, 0.5);
+      border: 2px solid #fff; }
+    .smarthoop-prices table td {
+      border: 2px solid #f2ebc0; }
+    .smarthoop-prices table th, .smarthoop-prices table td {
+      padding: 28px 5px 25px;
+      text-align: center; }
+  .smarthoop-prices .extra-info {
+    position: relative;
+    padding: 10rem;
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15rem; }
+    .smarthoop-prices .extra-info ul li {
+      padding-bottom: 3rem; }
+    .smarthoop-prices .extra-info .content-editable {
+      position: relative;
+      z-index: 1; }
+    .smarthoop-prices .extra-info img {
+      position: absolute;
+      top: 5rem;
+      right: 5rem;
+      width: 68rem;
+      height: auto; }
+
+@media (max-width: 1200px) {
+  .smarthoop-prices table {
+    font-size: 18px;
+    line-height: 26px; }
+  .smarthoop-prices .extra-info img {
+    width: 40rem;
+    right: -5rem;
+    top: 60%; } }
+
+@media (max-width: 992px) {
+  .smarthoop-prices .extra-info {
+    padding: 5rem; } }
+
+@media (max-width: 768px) {
+  .smarthoop-prices .extra-info img {
+    top: 90%; } }
+
+.smarthoop-stock {
+  padding-bottom: 10rem; }
+  .smarthoop-stock h1 {
+    margin: 20rem 0 10rem; }
+  .smarthoop-stock .stock-item {
+    position: relative;
+    margin-bottom: 15rem;
+    height: 675px; }
+    .smarthoop-stock .stock-item.bordered {
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0); }
+    .smarthoop-stock .stock-item .content-editable {
+      max-height: 45rem;
+      overflow-y: hidden; }
+    .smarthoop-stock .stock-item p {
+      position: relative;
+      z-index: 2; }
+    .smarthoop-stock .stock-item a {
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      margin-top: 4.5rem; }
+    .smarthoop-stock .stock-item img {
+      position: absolute;
+      bottom: -15rem;
+      right: -15rem;
+      width: auto;
+      height: 47.5rem; }
+
+@media (max-width: 992px) {
+  .smarthoop-stock .stock-item {
+    height: auto;
+    padding: 5rem; }
+    .smarthoop-stock .stock-item img {
+      height: 30rem;
+      bottom: -10rem;
+      right: -5rem; } }
+
+.wrap {
+  display: none !important; }
 
 .tabs-wrap {
   display: -webkit-box;

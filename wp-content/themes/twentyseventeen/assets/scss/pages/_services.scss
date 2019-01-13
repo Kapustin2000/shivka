@@ -1,5 +1,4 @@
-.smarthoop-services {
-  .services {
+.services.extra-services {
     padding: 10rem 0 15rem;
     .decorative {
       &.yellow {
@@ -46,10 +45,10 @@
       margin-top: 5rem;
     }
   }
-}
+
 
 @media (min-width: $desktop + 1px) {
-  .smarthoop-services .services {
+  .services.extra-services {
     .service-item:hover {
       .service-title {
         transform: translateY(0) !important;
@@ -64,7 +63,7 @@
 }
 
 @media (max-width: $desktop) {
-  .smarthoop-services .services {
+  .services.extra-services {
     .service-item {
       .service-title {
         width: 93%;

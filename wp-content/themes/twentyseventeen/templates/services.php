@@ -11,14 +11,12 @@ $params = array(
 );
 $data = pods('services')->find();
 
-
 ?>
 
-<!-- Need header -->
 <?php get_header(); ?>
 
-<div class="smarthoop-services">
-    <section class="services">
+<div class="smarthoop-wrap smarthoop-services">
+    <section class="services extra-services">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -41,6 +39,7 @@ $data = pods('services')->find();
                         <?php } ?>
                     </div>
                     <div class="see-more">
+<!--                        TODO: Change link-->
                         <a href="/" class="underline">смотреть больше</a>
                     </div>
                 </div>

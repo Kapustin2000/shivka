@@ -1,7 +1,11 @@
 .smarthoop-single-service {
+    .back {
+        margin-top: 35px;
+    }
     .single-service-description {
         padding: 10rem 0 15rem;
         .bordered {
+            margin-top: 35px;
             transform: translate(0, 0);
             border-color: $violet;
             position: relative;
@@ -14,6 +18,8 @@
                 bottom: 0;
                 left: 1rem;
                 img {
+                    position: absolute;
+                    bottom: 0;
                     width: auto;
                     height: 96rem;
                 }
@@ -77,17 +83,50 @@
                 }
             }
         }
+        .see-more {
+            position: relative;
+            z-index: 10;
+        }
     }
     .single-service-more {
-
+        padding-bottom: 15rem;
+        .decorative {
+            width: 700px;
+            height: 200px;
+            right: -18rem;
+            bottom: -5rem;
+        }
     }
     .single-service-shop {
-
+        margin-bottom: -15rem;
+        .bordered {
+            transform: translate(0, 0);
+            border-color: $violet;
+            max-width: 95rem;
+            a {
+                margin-bottom: 14rem;
+            }
+        }
+        .decorative {
+            width: 425px;
+            height: 425px;
+            bottom: 0;
+            right: 0;
+        }
     }
     .single-service-related {
 
     }
 }
+
+.page-template-services-view {
+    .make-order {
+        .decorative {
+            display: none;
+        }
+    }
+}
+
 
 @media (max-width: $fullhd) {
     .smarthoop-single-service .single-service-description .bordered h1 {

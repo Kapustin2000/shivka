@@ -18,20 +18,29 @@ $data = pods('stock')->find();
 <?php get_header(); ?>
 
 <div class="smarthoop-wrap smarthoop-stock">
-
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>
+                    <span>&nbsp;Наши акции&nbsp;</span>
+                </h1>
+                <div class="row">
+                    <?php  while($data->fetch()){?>
+                        <div class="col-lg-6 col-12">
+                            <div class="stock-item bordered">
+                                <div class="content-editable">
+                                    <h2><?=$data->display('post_title')?></h2>
+                                    <?=$data->display('post_content')?>
+                                </div>
+                                <img src="<?=$data->display('patch')?>" alt="<?=$data->display('post_title')?>">
+                                <a type="button" class="btn btn-outline" href="<?=get_permalink($data->display('id'))?>">Подробнее</a>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-
-<div class="row">
-<?php  while($data->fetch()){?>
-     <div class="l6">
-        <?=$data->display('post_title')?>
-        <?=$data->display('patch')?>
-        <?=$data->display('post_content')?>
-        <?=get_permalink($data->display('id'))?>
-     </div>
-<?php } ?>
-</div>
-
- 
- <?php get_footer(); ?>
+<?php get_footer(); ?>

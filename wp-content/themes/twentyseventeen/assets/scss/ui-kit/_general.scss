@@ -55,7 +55,7 @@ ul {
         display: block;
         background-color: $black;
         position: absolute;
-        top: 14px;
+        top: 16px;
         left: 0;
       }
     }
@@ -76,6 +76,23 @@ a {
   text-decoration: none;
   transition: $default;
   @include outline();
+  &.back {
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    color: $black;
+    font-size: 3rem;
+    text-align: right;
+    span {
+      position: relative;
+    }
+    .icon-arrow {
+      position: absolute;
+      top: -5.5rem;
+      left: -10rem;
+      transform: rotate(90deg);
+    }
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
