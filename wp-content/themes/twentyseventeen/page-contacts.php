@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Contacts1
+Template Name: Contacts
 */
 
 ?>
@@ -12,7 +12,7 @@ Template Name: Contacts1
 
     <div id="map"></div>
 
-
+dsadasdas
 </div>
 
 <?php get_footer(); ?>
