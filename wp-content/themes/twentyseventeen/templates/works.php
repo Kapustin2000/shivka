@@ -4,7 +4,13 @@ Template Name: Works
 */
 
 ?>
+<?php
+$params = array(
+    'orderby'=>"order_weight.meta_value +0 DESC,id DESC"
+);
+$data = pods('works')->find($params);
 
+?>
 <?php get_header(); ?>
 
 <div class="smarthoop-wrap smarthoop-works">
@@ -18,17 +24,17 @@ Template Name: Works
                     <div class="decorative yellow"></div>
                     <div class="decorative lavander"></div>
                     <div class="row">
-<!--                        --><?php // while($data->fetch()){?>
-<!--                            <div class="col-lg-4 col-12">-->
-<!--                                <a href="--><?//=get_permalink($data->display('id'))?><!--" class="service-item">-->
-<!--                                    <div class="service-img-wrap">-->
-<!--                                        <div class="service-img" style="background-image: url( --><?//=$data->display('preview')?>/*);"></div>*/
-/*                                    </div>*/
-/*                                    <div class="service-title">*/<?//=$data->display('post_title')?><!--</div>-->
-<!--                                    <button type="button" class="btn btn-primary">смотреть</button>-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                        --><?php //} ?>
+                        <?php  while($data->fetch()){?>
+                            <div class="col-lg-4 col-12">
+                               <a href=" <?=get_permalink($data->display('id'))?>">
+                                    <div class="service-img-wrap">
+                                        <div class="service-img" style="background-image: url( <?=$data->display('preview')?>);"></div>
+                                   </div>
+                                    <div class="service-title"><?=$data->display('post_title')?>
+                                    <button type="button" class="btn btn-primary">смотреть</button>
+                                </a>
+                            </div>
+                        <?php } ?>
                     </div>
                     <div class="see-more">
 <!--                        TODO: Change link-->
