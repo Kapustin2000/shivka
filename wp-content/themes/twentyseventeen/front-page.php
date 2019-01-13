@@ -114,6 +114,7 @@ $stock = pods('stock')->find();
             </div>
         </div>
     </section>
+
     <?php if($stock->total_found()){ ?>
         <section class="stock">
             <div class="container">

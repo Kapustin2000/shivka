@@ -25,7 +25,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="smarthoop-wrap smarthoop-single-service">
     <header>
         <div class="container">
             <div class="row">

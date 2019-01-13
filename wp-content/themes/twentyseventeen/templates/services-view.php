@@ -18,7 +18,6 @@ if(!empty($data->total_found())) {
     }
 }
 
-
 $params = array(
     'orderby'=>"order_weight.meta_value DESC,id DESC",
     'limit'=> 4
@@ -28,33 +27,26 @@ $gallery = pods('gallery')->find();
 
 ?>
 
-
-
-
-    <!-- Html -->
-
-
-    <!-- Need header -->
 <?php get_header(); ?>
-    <!-- -->
-
-
-
-
-
 
 <?php if($found){ ?>
 
-    <div class="smarthoop-single-service">
+    <div class="smarthoop-wrap smarthoop-single-service">
         <section class="single-service-description">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
+                        <a href="/services" class="back">
+                            <span>
+                                <i class="icon icon-arrow"></i>
+                                назад к услугам
+                            </span>
+                        </a>
                         <div class="bordered">
                             <div class="row">
                                 <div class="col-xl-6 col-12">
                                     <div class="service-img">
-                                        <img src="  <?=$data->display('preview')?>" alt="Service">
+                                        <img src="<?=$data->display('preview')?>" alt="Service">
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-12">
@@ -102,6 +94,7 @@ $gallery = pods('gallery')->find();
                 <div class="row">
                     <div class="col-12">
                         <h2>описание услуги</h2>
+                        <div class="decorative yellow"></div>
                         <div class="row">
                             <?=$data->display('full_description')?>
                         </div>
@@ -113,6 +106,7 @@ $gallery = pods('gallery')->find();
             <div class="container">
                 <div class="row">
                     <div class="col-12">
+                        <div class="decorative lavander"></div>
                         <div class="bordered">
                             <h2>Готовые товары с нашей вышивкой</h2>
                             <p>Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.</p>

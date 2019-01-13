@@ -1,0 +1,49 @@
+.smarthoop-stock {
+  padding-bottom: 10rem;
+  h1 {
+    margin: 20rem 0 10rem;
+  }
+  .stock-item {
+    position: relative;
+    margin-bottom: 15rem;
+    height: 675px;
+    &.bordered {
+      transform: translate(0, 0);
+    }
+    .content-editable {
+      max-height: 45rem;
+      overflow-y: hidden;
+    }
+    p {
+      position: relative;
+      z-index: 2;
+    }
+    a {
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      margin-top: 4.5rem;
+    }
+    img {
+      position: absolute;
+      bottom: -15rem;
+      right: -15rem;
+      width: auto;
+      height: 47.5rem;
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .smarthoop-stock {
+    .stock-item {
+      height: auto;
+      padding: 5rem;
+      img {
+        height: 30rem;
+        bottom: -10rem;
+        right: -5rem;
+      }
+    }
+  }
+}
