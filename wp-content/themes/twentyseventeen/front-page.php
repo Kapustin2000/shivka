@@ -8,9 +8,10 @@ Template Name: Home
 
 <?php
 $params = array(
-    'orderby'=>"order_weight.meta_value DESC,id DESC"
+    'orderby'=>"order_weight.meta_value DESC,id DESC",
+    'limit' => 1
 );
-$stock = pods('home_sliders')->find();
+$sliders = pods('home_sliders')->find($params);
 
 
 
