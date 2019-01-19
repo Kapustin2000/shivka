@@ -184,7 +184,84 @@ function hys_SetPodsSeo($postId, $isTaxonomy = false) {
 }
 add_action('wp_enqueue_scripts', 'shapeSpace_include_custom_jquery');
 
+function shivka_Subscribe_Save_AJAX( WP_REST_Request $request)
+{
+    return validate_pod_data('subscribers',$request);
+}
 
+add_action( 'rest_api_init', function () {
+    register_rest_route( 'blog/v1', 'subscribe' , array(
+        'methods' => 'post',
+        'callback' => 'shivka_Subscribe_Save_AJAX',
+    ) );
+} );
+
+function shivka_Order_Save_AJAX( WP_REST_Request $request)
+{
+    return validate_pod_data('orders',$request);
+}
+
+add_action( 'rest_api_init', function () {
+    register_rest_route( 'order/v1', 'save' , array(
+        'methods' => 'post',
+        'callback' => 'shivka_Order_Save_AJAX',
+    ) );
+} );
+
+function shivka_SERVICESAjax()
+{
+    get_template_part('templates/services-block');
+    exit;
+
+}
+
+// creating Ajax call for WordPress
+add_action('wp_ajax_nopriv_shivka_SERVICESAjax', 'shivka_SERVICESAjax');
+add_action('wp_ajax_shivka_SERVICESAjax', 'shivka_SERVICESAjax');
+
+
+function shivka_escapeParam($id){
+    return addslashes_gpc($id);
+}
+function shivka_SetPodsSeo($postId, $isTaxonomy = false) {
+    if (!empty($postId)) {
+        if ($isTaxonomy) {
+            if (($taxonomiesMeta = get_option('wpseo_taxonomy_meta')) && (!empty($taxonomiesMeta['industry'][$postId]))) {
+                $seoTitle = $taxonomiesMeta['industry'][$postId]['wpseo_title'];
+                $seoDesc = $taxonomiesMeta['industry'][$postId]['wpseo_desc'];
+                $postUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                $seoImage = $taxonomiesMeta['industry'][$postId]['wpseo_opengraph-image'];
+            }
+        } else {
+            $seoTitle = get_post_meta($postId, '_yoast_wpseo_title', true);
+            $seoDesc = get_post_meta($postId, '_yoast_wpseo_metadesc', true);
+            $postUrl = get_post_permalink($postId);
+            $seoImage = get_post_meta($postId, '_yoast_wpseo_opengraph-image', true);
+        }
+        if ($seoTitle) {
+            add_filter('wpseo_opengraph_title', function () use ($seoTitle) {
+                return $seoTitle;
+            });
+        }
+        if ($seoDesc) {
+            add_filter('wpseo_opengraph_desc', function () use ($seoDesc) {
+                return $seoDesc;
+            });
+        }
+        if ($postUrl) {
+            add_filter('wpseo_opengraph_url', function () use ($postUrl) {
+                return $postUrl;
+            });
+        }
+
+        if ($seoImage) {
+            add_action( 'wpseo_opengraph', function () use ($seoImage) {
+                $GLOBALS['wpseo_og']->image($seoImage);
+            }, 29 );
+        }
+
+    }
+}
 
 function get_reference_block( $atts ) {
 	$settings = pods('front_page_settings')->find();
