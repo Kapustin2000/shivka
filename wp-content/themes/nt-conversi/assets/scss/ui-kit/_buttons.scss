@@ -1,0 +1,27 @@
+button,
+a[type='button'] {
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  padding: 1.3rem 5.7rem;
+  transition: $default;
+  @include outline();
+  &.btn-primary {
+    color: $white;
+    background-color: $violet;
+  }
+  &.btn-outline {
+    color: $violet;
+    border: 2px solid $violet;
+  }
+}
+
+
+

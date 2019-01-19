@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Uni Sans Thin Caps';
+  src: url('../fonts/UNISANSTHIN.OTF');
+}
+
+@font-face {
+  font-family: 'Uni Sans Heavy Caps';
+  src: url('../fonts/UNISANSHEAVY.OTF');
+}
+
+@font-face {
+  font-family: 'Uni Sans Heavy Caps Italic';
+  src: url('../fonts/UNISANSHEAVYITALIC.OTF');
+}
+
+@import 'ui-kit/variables';
+@import 'ui-kit/color-library';
+@import 'ui-kit/general';
+@import 'ui-kit/buttons';
+
+@import 'partials/header';
+@import 'partials/footer';
+
+@import 'pages/main/jumbotron';
+@import 'pages/main/common-service-description';
+@import 'pages/main/services';
+@import 'pages/main/stock';
+@import 'pages/main/steps';
+@import 'pages/main/make-order';
+
+@import 'pages/services';
+@import 'pages/single-service';
+@import 'pages/how-to-order';
+@import 'pages/about';
+@import 'pages/faq';
+@import 'pages/blog';
+@import 'pages/contacts';
+@import 'pages/prices';
+@import 'pages/works-category';
+@import 'pages/stock';
+
+.wrap {
+  display: none !important;
+}
+
+.tabs-wrap {
+  display: flex;
+  &.yellow {
+    a, button {
+      background-color: transparentize($yellow, .5);
+      &.active {
+        background-color: $yellow;
+      }
+    }
+  }
+  &.lavander {
+    a, button {
+      background-color: transparentize($lavander, .5);
+      &.active {
+        background-color: $lavander;
+      }
+    }
+  }
+  a, button {
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    border-radius: 0;
+    color: $black;
+    &:first-child {
+      margin-right: 2px;
+    }
+    &:last-child {
+      margin-left: 2px;
+    }
+    span {
+      position: relative;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 90%;
+        width: 0;
+        height: 1px;
+        background-color: $black;
+        transition: width $default;
+      }
+    }
+    &:hover {
+      span::after {
+        width: 100%;
+      }
+    }
+    &:not(.active) {
+
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .tabs-wrap {
+    button {
+      padding: 1.3rem;
+    }
+  }
+}

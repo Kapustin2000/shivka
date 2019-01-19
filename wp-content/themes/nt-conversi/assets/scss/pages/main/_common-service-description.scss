@@ -1,0 +1,28 @@
+.common-service-description {
+  padding-bottom: 10rem;
+  .common-service-img {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .common-service-text {
+    margin: 5rem 0;
+  }
+  .decorative {
+    width: 100vw;
+    height: 20rem;
+    left: 13rem;
+    bottom: -5rem;
+  }
+}
+
+@media (max-width: $mobile) {
+  .common-service-description {
+    padding-bottom: 15rem;
+    .btn {
+      display: block;
+      text-align: center;
+    }
+  }
+}

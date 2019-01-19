@@ -1,0 +1,169 @@
+.smarthoop-single-service {
+    .back {
+        margin-top: 35px;
+    }
+    .single-service-description {
+        padding: 10rem 0 15rem;
+        .bordered {
+            margin-top: 35px;
+            transform: translate(0, 0);
+            border-color: $violet;
+            position: relative;
+            height: 68rem;
+            .col-12:first-child {
+                position: static;
+            }
+            .service-img {
+                position: absolute;
+                bottom: 0;
+                left: 1rem;
+                img {
+                    position: absolute;
+                    bottom: 0;
+                    width: auto;
+                    height: 96rem;
+                }
+            }
+            h1 {
+                position: absolute;
+                top: -3rem;
+                width: 80rem;
+                text-align: right;
+            }
+            .text-wrap {
+                position: absolute;
+                top: 17rem;
+                right: 0;
+                padding: 5rem 5rem 0;
+                background-color: transparentize($yellow, .5);
+                height: 75rem;
+            }
+        }
+    }
+    .single-service-gallery {
+        padding: 0 0 25rem;
+        h2 {
+            margin-bottom: 10rem;
+        }
+        .gallery-wrap {
+            position: relative;
+            height: 66rem;
+            .img-wrap {
+                position: absolute;
+                display: block;
+                background-image: url('../img/Broderie-en-direct-1612x1078@1x.png');
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                &:nth-child(1) {
+                    width: 60%;
+                    height: 60rem;
+                    top: 0;
+                    left: 0;
+                }
+                &:nth-child(2) {
+                    width: 40%;
+                    height: 80rem;
+                    top: -10rem;
+                    right: 0;
+                }
+                &:nth-child(3) {
+                    width: 50rem;
+                    height: 50rem;
+                    left: 5rem;
+                    top: 5rem;
+                    z-index: 2;
+                }
+                &:nth-child(4) {
+                    width: 40rem;
+                    height: 40rem;
+                    left: 45%;
+                    top: 40rem;
+                    z-index: 2;
+                }
+            }
+        }
+        .see-more {
+            position: relative;
+            z-index: 10;
+        }
+    }
+    .single-service-more {
+        padding-bottom: 15rem;
+        .decorative {
+            width: 700px;
+            height: 200px;
+            right: -18rem;
+            bottom: -5rem;
+        }
+    }
+    .single-service-shop {
+        margin-bottom: -15rem;
+        .bordered {
+            transform: translate(0, 0);
+            border-color: $violet;
+            max-width: 95rem;
+            a {
+                margin-bottom: 14rem;
+            }
+        }
+        .decorative {
+            width: 425px;
+            height: 425px;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    .single-service-related {
+
+    }
+}
+
+.page-template-services-view {
+    .make-order {
+        .decorative {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: $fullhd) {
+    .smarthoop-single-service .single-service-description .bordered h1 {
+       right: -12rem;
+    }
+}
+
+@media (max-width: $large-desktop) {
+    .smarthoop-single-service {
+        .single-service-description {
+            .bordered {
+                height: auto;
+                padding: 5rem;
+                .col-12:first-child {
+                    display: none;
+                }
+                h1 {
+                    position: absolute;
+                    top: -10rem;
+                    right: auto;
+                    text-align: left;
+                    width: 100%;
+                    font-size: 4rem;
+                    line-height: 4.8rem;
+                    left: 1.5rem;
+                    br {
+                        display: none;
+                    }
+                }
+                .text-wrap {
+                    position: relative;
+                    top: auto;
+                    height: auto;
+                    padding: 5rem;
+                    margin-top: 6rem;
+                }
+            }
+        }
+    }
+}

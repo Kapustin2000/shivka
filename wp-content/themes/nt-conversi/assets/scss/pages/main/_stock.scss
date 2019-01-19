@@ -1,0 +1,70 @@
+.stock {
+  padding-bottom: 15rem;
+  .stock-img {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .stock-text {
+    position: relative;
+    p {
+      position: relative;
+      z-index: 1;
+      max-width: 40rem;
+    }
+    a {
+      display: inline-block;
+      margin: 1.5rem 0 4rem;
+    }
+    .ornament {
+      position: absolute;
+      max-width: 44rem;
+      width: 50%;
+      height: auto;
+      top: 5rem;
+      right: 5rem;
+    }
+  }
+}
+
+@media (max-width: $xl - 1px) {
+  .stock {
+    .stock-text {
+      .ornament {
+        right: -10rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop + 1px) {
+  .stock {
+    .stock-text {
+      &.bordered {
+        transform: translate(-9.3rem, -5rem);
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .stock {
+    .stock-img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .stock {
+    .stock-text {
+      .ornament {
+        top: 100%;
+        right: 0;
+        transform: translate(0, -60px);
+      }
+    }
+  }
+}

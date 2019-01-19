@@ -1,0 +1,80 @@
+.smarthoop-prices {
+  padding-top: 20rem;
+  table {
+    margin: 6.4rem 0 5rem;
+    width: 100%;
+    font-family: 'Uni Sans Thin Caps', sans-serif;
+    text-transform: uppercase;
+    color: $violet;
+    font-size: 25px;
+    line-height: 50px;
+    border-collapse: collapse;
+    th {
+      background-color: transparentize($yellow, .5);
+      border: 2px solid $white;
+    }
+    td {
+      border: 2px solid $yellow;
+    }
+    th, td {
+      padding: 28px 5px 25px;
+      text-align: center;
+    }
+  }
+  .extra-info {
+    position: relative;
+    padding: 10rem;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15rem;
+    ul {
+      li {
+        padding-bottom: 3rem;
+      }
+    }
+    .content-editable {
+      position: relative;
+      z-index: 1;
+    }
+    img {
+      position: absolute;
+      top: 5rem;
+      right: 5rem;
+      width: 68rem;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: $large-desktop) {
+  .smarthoop-prices {
+    table {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .extra-info {
+      img {
+        width: 40rem;
+        right: -5rem;
+        top: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .smarthoop-prices {
+    .extra-info {
+      padding: 5rem;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .smarthoop-prices {
+    .extra-info {
+      img {
+        top: 90%;
+      }
+    }
+  }
+}

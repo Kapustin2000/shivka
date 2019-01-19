@@ -1,124 +1,188 @@
 <?php
 /*
-Template Name: Index
+Template Name: Home
 */
 
 ?>
 
+
+<?php
+$params = array(
+    'orderby'=>"order_weight.meta_value DESC,id DESC",
+    'limit' => 1
+);
+$sliders = pods('home_sliders')->find($params);
+
+
+
+$params = array(
+    'orderby'=>"order_weight.meta_value DESC,id DESC",
+    'limit' => 3
+);
+$services = pods('services')->find();
+
+
+
+$params = array(
+    'orderby'=>"order_weight.meta_value DESC,id DESC",
+    'limit' => 1
+);
+$stock = pods('stock')->find();
+?>
+
+
 <?php get_header(); ?>
 
-<?php get_template_part( 'index-header' ); ?>
-
-<div id="main-page" class="main-page">
-    <!-- Header -->
-    <?php
-    $settings = pods('front_page_settings')->find();
-    ?>
-    <div id="trigger1"></div>
-    <section class="main-jumbotron">
-        <div class="background-overlay"
-             style="background-image: url(<?php echo $settings->display('image') ?>);"></div>
+<div class="smarthoop-wrap smarthoop-home">
+    <section class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <h1 class="text-white"><?php echo $settings->display('title') ?></h1>
-                    <h3 class="text-white"><?php echo $settings->display('description') ?></h3>
+                <div class="col-12">
+                    <div class="inner">
+                        <h1>
+              <span>
+                  &nbsp;Машинная вышивка -&nbsp;<br/>
+                  &nbsp;отличный способ&nbsp;<br/>
+                  &nbsp;проявить свой стиль!&nbsp;</span>
+                        </h1>
+                        <div class="see-more">
+                            <span class="underline">узнать больше</span>
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                        <div class="video-carousel">
+                            <div class="decorative lavander"></div>
+                            <div class="video-item"></div>
+                            <div class="video-progress"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blocks after header -->
-    <section class="hys-features">
+    <section class="common-service-description">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <a target="_blank" href="https://meetings.hubspot.com/mikhail-kapustin">  <button id="book-meeting" class="btn orange">Book A Meeting</button> </a>
+                <div class="col-lg-6 col-12">
+                    <div class="common-service-img">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png" alt="Common Service">
+                    </div>
                 </div>
-                <?php echo $settings->display('blocks_after_header') ?>
+                <div class="col-lg-6 col-12">
+                    <div class="common-service-text bordered">
+                        <h2>Общее описание услуги</h2>
+                        <p>
+                            Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.
+                        </p>
+                        <p>
+                            Мы также вышиваем шевроны и нашивки, логотипы и эмблемы компаний, создадим вышивку на одежде и крое, домашнем текстиле и полотенцах, коже и замше.
+                        </p>
+                        <p>
+                            Современное промышленное японское (Toyota) и немецкое (ZSK)оборудование, качественные расходные материалы и нитки (Gunold, Madeira, Durak и др.), профессиональное программирование и наш опыт позволяют осуществлять каждый заказ максимально быстро, качественно и по приемлемым ценам.
+                        </p>
+                    </div>
+                    <a href="#" type="button" class="btn btn-outline">Читать о нас</a>
+                    <div class="decorative lavander"></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Partners -->
-    <section class="hys-partners">
-        <div class="container hidden-scrollbar">
+    <section class="services">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-7">
-                    <?php
-                    $partners = pods('partners')->find(
-                        array(
-                            'orderby' => 'order_weight.meta_value DESC, id DESC'
-                        )
-                    );
-                    while ( $partners->fetch() ) { ?>
-                        <a href="<?php echo $partners->display('external_link') ?>" target="_blank" class="partner-image">
-                            <img src="" data-src="<?php echo $partners->display('logo') ?>" alt="Partner" />
-                        </a>
-                    <?php } ?>
-                </div>
-                <div class="col-lg-5">
-                    <!-- Pages for header -->
-                    <ul>
-                        <?php
-                        $pages  = $settings->field('related_pages');
-                        if(!empty($pages)){
-                            foreach($pages as $page){ ?>
-                                <li><a href="/<?php  echo $page['post_name']  ; ?>"><?php echo $page['post_title']; ?></a></li>
-                            <?php  } } ?>
-                    </ul>
+                <div class="col-12">
+                    <h2>Наши услуги</h2>
+                    <div class="decorative yellow"></div>
+                    <div class="row">
+                        <?php while($services->fetch()){ ?>
+                            <div class="col-lg-4 col-12">
+                                <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
+                                    <div class="service-img-wrap">
+                                        <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
+                                    </div>
+                                    <div class="service-title"><?=$services->display('post_title')?></div>
+                                    <button type="button" class="btn btn-primary">подробнее</button>
+                                </a>
+                            </div>
+                        <?php } ?>
+                    </div>
+                    <div class="see-more">
+                        <a href="/services" class="underline">смотреть все услуги</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <?php get_sidebar(); ?>
-
-    <!-- Get reference form -->
-
-
-    <!-- Epicflow-->
-    <?php if($settings->field('epicflow')){ ?>
-        <section class="epicflow">
+    <?php if($stock->total_found()){ ?>
+        <section class="stock">
             <div class="container">
                 <div class="row">
-                    <!-- Epicflow -->
-                    <?php
-                    $epicflow = pods('epicflow')->find();
-                    ?>
-                    <div class="col-lg-offset-1 col-lg-3 col-xs-12 hidden-xl hidden-lg">
-                        <h2 class="text-blue"><?php echo $epicflow->display('title') ?></h2>
-                        <?php echo $epicflow->display('description') ?>
+                    <div class="stock-img col-md-4">
+                        <img src="<?=$stock->display('image')?>" alt="Stock">
                     </div>
-                    <div class="devices col-lg-8 col-xs-12">
-                        <div class="img-wrap mac">
-                            <img src="" data-src="<?php echo $epicflow->display('image') ?>" alt="<?php echo $epicflow->display('title') ?>" />
+                    <div class="col-lg-8 col-xs-12">
+                        <div class="stock-text bordered">
+                            <h2><?=$stock->display('post_title')?></h2>
+                            <p>
+                                <?=$stock->display('post_content')?>
+                            </p>
+                            <a href="<?=get_permalink($stock->display('id'))?>" type="button" class="btn btn-primary">Подробнее</a>
+                            <img class="ornament" src="<?=$stock->display('patch')?>" alt="Ornament">
                         </div>
-                        <div class="img-wrap iphone">
-                            <img src="" data-src="<?php echo $epicflow->display('image2') ?>" alt="<?php echo $epicflow->display('title') ?>" />
-                        </div>
-                        <a href="<?php echo $epicflow->display('external_link') ?>" class="btn-icon btn-arrow orange hidden-xl hidden-lg">
-                            <span>More About Epicflow</span>
-                            <i class="icon-arrow-short"></i>
-                        </a>
-                    </div>
-                    <div class="epicflow-description col-lg-3 col-xs-12 hidden-md hiddem-sm hidden-xs">
-                        <h2 class="text-blue"><?php echo $epicflow->display('title') ?></h2>
-                        <?php echo $epicflow->display('description') ?>
-                        <a href="<?php echo $epicflow->display('external_link') ?>" target="_blank" class="btn-icon btn-arrow orange">
-                            <span>More About Epicflow</span>
-                            <i class="icon-arrow-short"></i>
-                        </a>
                     </div>
                 </div>
             </div>
         </section>
     <?php } ?>
 
-
-
+    <section class="steps">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>этапы работы</h2>
+                    <div class="steps-wrap row">
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                        <div class="step col-xl-3 col-sm-6 col-12">
+                            <h3>запрос от клиента</h3>
+                            <p>Краткое описание первого этапа работы с клиентами</p>
+                        </div>
+                    </div>
+                    <div class="see-more">
+                        <a href="/" class="underline">смотреть подробности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
-
-
 
 <?php get_footer(); ?>

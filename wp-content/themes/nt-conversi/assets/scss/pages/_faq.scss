@@ -1,0 +1,36 @@
+.smarthoop-faq {
+  margin-top: 20rem;
+  padding-bottom: 10rem;
+  .inner-wrap {
+    position: relative;
+  }
+  .decorative {
+    position: absolute;
+    width: 42.5rem;
+    height: 42.5rem;
+    z-index: -1;
+    &.lavander {
+      top: -5rem;
+      right: -4rem;
+    }
+    &.yellow {
+      left: -4rem;
+      bottom: 0;
+    }
+  }
+  .panel {
+    padding: 10rem;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    margin-bottom: 5rem;
+    background-color: $white;
+    .panel-answer {
+      font-size: 2.5rem;
+      font-weight: 300;
+      line-height: 3.5rem;
+      p {
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+  }
+}

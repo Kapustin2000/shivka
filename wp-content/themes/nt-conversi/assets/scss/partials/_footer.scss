@@ -1,0 +1,158 @@
+footer {
+  color: $violet;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 2px solid $violet;
+    border-bottom: 2px solid $violet;
+    padding: 2.4rem 0 0;
+    & > * {
+      margin-bottom: 3rem;
+    }
+  }
+  h4 {
+    font-family: 'Uni Sans Thin Caps', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 2.4rem;
+    white-space: nowrap;
+  }
+  a {
+    color: $violet;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  form {
+    .form-group {
+      position: relative;
+      input {
+        width: 40rem;
+      }
+      button {
+        width: 20rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $white;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+  .footer-nav {
+    padding: 2rem 0;
+    border-bottom: 2px solid $violet;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    a {
+      position: relative;
+      font-family: 'Uni Sans Thin Caps', sans-serif;
+      font-size: 1.6rem;
+      font-weight: bold;
+      line-height: 2.5rem;
+      padding: 2rem 0;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 75%;
+        width: 0;
+        height: 1px;
+        background-color: $violet;
+        transition: width $default;
+      }
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+    p {
+      text-align: right;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  footer {
+    .footer-nav {
+      ul {
+        flex-wrap: wrap;
+        li {
+          padding: 1rem 0;
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet + 1px) and (max-width: $desktop) {
+  footer {
+    .footer-nav {
+      ul {
+        li {
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $mobile + 1px) and (max-width: $tablet) {
+  footer {
+    .footer-nav {
+      ul {
+        li {
+          width: 33.33333%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  footer {
+    .subscribe {
+      width: 100%;
+    }
+    form {
+      .form-group {
+        input {
+          width: 100%;
+        }
+        button {
+          width: 50%;
+        }
+      }
+    }
+    .footer-nav {
+      ul {
+        li {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

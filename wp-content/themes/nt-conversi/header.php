@@ -1,77 +1,63 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="ie ie6" lang="en"><![endif]-->
-<!--[if IE 7]><html class="ie ie7" lang="en"><![endif]-->
-<!--[if IE 8]><html class="ie ie8" lang="en"><![endif]-->
-<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
-<!--[if (gte IE 10)|!(IE)]><!--><html <?php language_attributes(); ?> ><!--<![endif]-->
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package WordPress
+ * @subpackage Twenty_Seventeen
+ * @since 1.0
+ * @version 1.0
+ */
 
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
-	<!-- Meta UTF8 charset -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<?php wp_head(); ?>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="<?php bloginfo('template_url'); ?>/assets/libs/bootstrap/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_url'); ?>/assets/css/styles.css" rel="stylesheet">
+    <?php wp_head(); ?>
 </head>
 
-	<!-- BODY START=========== -->
-	<body <?php body_class(); ?>>
-
-	<?php if ( ot_get_option('nt_conversi_pre') != 'off' ) : ?>
-
-		<?php
-
-			$nt_conversi_tag_attribs = array(
-				'id' 	=> array(),
-				'class' => array(),
-				'title' => array(),
-				'style' => array(),
-			);
-			$nt_conversi_preloader_allowed_tags = array(
-			'div' 	=> $nt_conversi_tag_attribs,
-			'h1' 	=> $nt_conversi_tag_attribs,
-			'h2' 	=> $nt_conversi_tag_attribs,
-			'h3' 	=> $nt_conversi_tag_attribs,
-			'h4' 	=> $nt_conversi_tag_attribs,
-			'h5' 	=> $nt_conversi_tag_attribs,
-			'h6' 	=> $nt_conversi_tag_attribs,
-			'p' 	=> $nt_conversi_tag_attribs,
-			'span' 	=> $nt_conversi_tag_attribs,
-			'i' 	=> $nt_conversi_tag_attribs,
-			'hr' 	=> $nt_conversi_tag_attribs,
-			'img' 	=> array_merge( $nt_conversi_tag_attribs, array(
-					'src' 	 => array(),
-					'alt' 	 => array(),
-				) ),
-			);
-
-		?>
-
-		<?php // CUSTOM PRELOADER ?>
-		<?php if ( ot_get_option( 'nt_conversi_preloader' ) == 'custom' ) : ?>
-
-			<?php if ( ot_get_option( 'nt_conversi_custom_preloader_js' ) == 'off' && ot_get_option( 'nt_conversi_custom_preloader' ) !='' ) : ?>
-				<div class="nt-conversi-custom-preloader">
-			<?php endif; ?>
-
-					<?php echo wp_kses( ot_get_option( 'nt_conversi_custom_preloader' ), $nt_conversi_preloader_allowed_tags ); ?>
-
-			<?php if ( ot_get_option( 'nt_conversi_custom_preloader_js' ) == 'off' && ot_get_option( 'nt_conversi_custom_preloader' ) !='' ) : ?>
-				</div>
-			<?php endif; ?>
-
-		<?php // END CUSTOM PRELOADER ?>
-
-		<?php else : ?>
-
-			<?php // DEFAULT PRELOADER ?>
-			<div class="preloader-container">
-				<div class="la-ball-triangle-path la-2x">
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
-			</div>
-			
-	<?php endif; ?>
-
-	<?php endif; ?>
+<body <?php body_class(); ?>>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar">
+                    <a class="navbar-brand" href="/">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/smarthoop_logo_3@2x.png" alt="Smarthoop Logo">
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services/">услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/works/">наши работы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/shop">магазин</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contacts">контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about/">о нас</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline" type="button">
+                        написать нам
+                    </button>
+                    <button class="navbar-toggler" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
