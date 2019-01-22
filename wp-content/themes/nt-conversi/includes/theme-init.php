@@ -46,7 +46,8 @@ function nt_conversi_scripts() {
 
 	//if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
     // twitter Bootstrap framework
-	wp_enqueue_style( 'bootstrap',						get_template_directory_uri() . '/css/bootstrap.min.css', 			false, '1.0');
+//	wp_enqueue_style( 'bootstrap',						get_template_directory_uri() . '/css/bootstrap.min.css', 			false, '1.0');
+//	wp_enqueue_style( 'bootstrap',						get_template_directory_uri() . '/css/styles.css', 			false, '1.0');
 	// font awesome icon library
 	//wp_enqueue_style( 'font-awesome',					get_template_directory_uri() . '/css/font-awesome.min.css', 		false, '1.0');
 	// timeline section styles
@@ -81,11 +82,11 @@ function nt_conversi_scripts() {
 	//wp_enqueue_style( 'nt-conversi-fonts-load',  		nt_conversi_fonts_url(), array(), '1.0.0' );
 
 	// custom css
-	wp_enqueue_style( 'nt-conversi-custom-style', 		get_stylesheet_uri() );
-	wp_enqueue_style( 'style',							get_stylesheet_uri() );
+//	wp_enqueue_style( 'nt-conversi-custom-style', 		get_stylesheet_uri() );
+//	wp_enqueue_style( 'style',							get_stylesheet_uri() );
 
 	// JS plugins for this theme
-	wp_register_script('nt-conversi-particleground', 	get_template_directory_uri() .  '/js/jquery.particleground.min.js', 	array('jquery'), '1.0', true);
+//	wp_register_script('nt-conversi-particleground', 	get_template_directory_uri() .  '/js/jquery.particleground.min.js', 	array('jquery'), '1.0', true);
 	wp_enqueue_script( 'bootstrap', 					get_template_directory_uri() .  '/js/bootstrap.min.js', 				array('jquery'), '1.0', true);
 	//wp_enqueue_script( 'easing', 						get_template_directory_uri() .  '/js/jquery.easing.min.js', 			array('jquery'), '1.0', true);
 	$nt_conversi_smoothscroll = ot_get_option( 'nt_conversi_smoothscroll' );
@@ -96,11 +97,11 @@ function nt_conversi_scripts() {
 	//wp_enqueue_script( 'placeholder', 					get_template_directory_uri() .  '/js/jquery.placeholder.min.js', 		array('jquery'), '1.0', true);
 	//wp_enqueue_script( 'imgpreload', 					get_template_directory_uri() .  '/js/jquery.imgpreload.min.js', 		array('jquery'), '1.0', true);
 	//wp_enqueue_script( 'waypoints', 					get_template_directory_uri() .  '/js/waypoints.min.js', 				array('jquery'), '1.0', true);
-	wp_register_script( 'slick', 						get_template_directory_uri() .  '/js/slick.min.js', 					array('jquery'), '1.0', true);
-	wp_register_script( 'fancybox', 					get_template_directory_uri() .  '/js/jquery.fancybox.pack.js', 			array('jquery'), '1.0', true);
-	wp_register_script( 'fancybox-media', 				get_template_directory_uri() .  '/js/jquery.fancybox-media.js', 		array('jquery'), '1.0', true);
-	wp_register_script( 'counterup', 					get_template_directory_uri() .  '/js/jquery.counterup.min.js', 			array('jquery'), '1.0', true);
-	wp_register_script( 'parallax', 					get_template_directory_uri() .  '/js/parallax.min.js', 					array('jquery'), '1.0', true);
+//	wp_register_script( 'slick', 						get_template_directory_uri() .  '/js/slick.min.js', 					array('jquery'), '1.0', true);
+//	wp_register_script( 'fancybox', 					get_template_directory_uri() .  '/js/jquery.fancybox.pack.js', 			array('jquery'), '1.0', true);
+//	wp_register_script( 'fancybox-media', 				get_template_directory_uri() .  '/js/jquery.fancybox-media.js', 		array('jquery'), '1.0', true);
+//	wp_register_script( 'counterup', 					get_template_directory_uri() .  '/js/jquery.counterup.min.js', 			array('jquery'), '1.0', true);
+//	wp_register_script( 'parallax', 					get_template_directory_uri() .  '/js/parallax.min.js', 					array('jquery'), '1.0', true);
 
 	// Google maps api & customization
 	$nt_conversi_map_api_key 				= ot_get_option( 'nt_conversi_map_api_key' );
@@ -109,10 +110,10 @@ function nt_conversi_scripts() {
 	wp_register_script( 'gmaps', 						get_template_directory_uri() .  '/js/gmaps.js', 				array('jquery'), '1.0', true);
 
 	// Settings plugin for one page shortcode
-	wp_register_script( 'nt-conversi-map-set', 			get_template_directory_uri() .  '/js/short/map-set.js', 		array('jquery'), '1.0', true);
-	wp_register_script( 'nt-conversi-slick-set', 		get_template_directory_uri() .  '/js/short/slick-set.js', 		array('jquery'), '1.0', true);
-	wp_register_script( 'nt-conversi-counterup-set', 	get_template_directory_uri() .  '/js/short/counterup-set.js', 	array('jquery'), '1.0', true);
-	wp_register_script( 'nt-conversi-fancybox-set', 	get_template_directory_uri() .  '/js/short/fancybox-set.js', 	array('jquery'), '1.0', true);
+//	wp_register_script( 'nt-conversi-map-set', 			get_template_directory_uri() .  '/js/short/map-set.js', 		array('jquery'), '1.0', true);
+//	wp_register_script( 'nt-conversi-slick-set', 		get_template_directory_uri() .  '/js/short/slick-set.js', 		array('jquery'), '1.0', true);
+//	wp_register_script( 'nt-conversi-counterup-set', 	get_template_directory_uri() .  '/js/short/counterup-set.js', 	array('jquery'), '1.0', true);
+//	wp_register_script( 'nt-conversi-fancybox-set', 	get_template_directory_uri() .  '/js/short/fancybox-set.js', 	array('jquery'), '1.0', true);
 	//wp_enqueue_script( 'nt-conversi-script', 			get_template_directory_uri() .  '/js/main-script.js', 			array('jquery'), '1.0', true);
 
 	// WP default scripts for theme
@@ -314,25 +315,25 @@ add_action('admin_footer', function() {
 });
 
 
-function hwr_scripts() {
+function smarthoop_scripts() {
     //sticky-kit plugin
     wp_enqueue_script( 'sticky', 					get_template_directory_uri() . '/js/sticky-kit/sticky-kit.min.js', 				array('jquery'), '1.0', true);
     //bootstrap-multiselect plugin
     wp_enqueue_style( 'select2',						get_template_directory_uri() . '/js/bootstrap-multiselect/bootstrap-multiselect.css', 			false, '1.0');
     wp_enqueue_script( 'select2js', 					get_template_directory_uri() . '/js/bootstrap-multiselect/bootstrap-multiselect.js', 				array('jquery'), '1.0', true);
     // hwr fonts
-    wp_enqueue_style( 'hwr-fonts',						get_template_directory_uri() . '/css/fonts.css', 			false, '1.0');
+//    wp_enqueue_style( 'hwr-fonts',						get_template_directory_uri() . '/css/fonts.css', 			false, '1.0');
     // hwr theme
-    wp_enqueue_style( 'hwr-theme',						get_template_directory_uri() . '/css/hwr-theme.css', 			false, '1.0');
+//    wp_enqueue_style( 'hwr-theme',						get_template_directory_uri() . '/css/hwr-theme.css', 			false, '1.0');
     // hwr animation libs
-    wp_enqueue_script( 'gsap-tweenmax', 					get_template_directory_uri() .  '/js/greensock-js/src/minified/TweenMax.min.js', 				array('jquery'), '1.0', true);
-    wp_enqueue_script( 'scrollmagic', 					get_template_directory_uri() .  '/js/scrollmagic/scrollmagic/minified/ScrollMagic.min.js', 				array('jquery'), '1.0', true);
-    wp_enqueue_script( 'scrollmagic-gsap', 					get_template_directory_uri() .  '/js/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js', 				array('jquery'), '1.0', true);
-    wp_enqueue_script( 'scrollmagic-debug', 					get_template_directory_uri() .  '/js/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js', 				array('jquery'), '1.0', true);
+//    wp_enqueue_script( 'gsap-tweenmax', 					get_template_directory_uri() .  '/js/greensock-js/src/minified/TweenMax.min.js', 				array('jquery'), '1.0', true);
+//    wp_enqueue_script( 'scrollmagic', 					get_template_directory_uri() .  '/js/scrollmagic/scrollmagic/minified/ScrollMagic.min.js', 				array('jquery'), '1.0', true);
+//    wp_enqueue_script( 'scrollmagic-gsap', 					get_template_directory_uri() .  '/js/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js', 				array('jquery'), '1.0', true);
+//    wp_enqueue_script( 'scrollmagic-debug', 					get_template_directory_uri() .  '/js/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js', 				array('jquery'), '1.0', true);
     // hwr scripts
-    wp_enqueue_script( 'hwr-themejs', 					get_template_directory_uri() .  '/js/hwr-theme.js', 				array('jquery'), '1.0', true);
+//    wp_enqueue_script( 'hwr-themejs', 					get_template_directory_uri() .  '/js/hwr-theme.js', 				array('jquery'), '1.0', true);
 }
-add_action( 'wp_enqueue_scripts', 'hwr_scripts' );
+add_action( 'wp_enqueue_scripts', 'smarthoop_scripts' );
  
 
 /*************************************************

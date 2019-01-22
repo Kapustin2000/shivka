@@ -32,7 +32,7 @@ $gallery = pods('gallery')->find();
 <?php if($found){ ?>
 
     <div class="smarthoop-wrap smarthoop-single-service">
-        <section class="single-service-description">
+        <div class="single-service-description">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -65,7 +65,7 @@ $gallery = pods('gallery')->find();
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <div class="single-service-gallery">
             <div class="container">
