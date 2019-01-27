@@ -159,6 +159,28 @@ add_action( 'rest_api_init', function () {
     ) );
 } );
 
+
+function wp_corenavi() {
+    global $wp_query;
+    $pages = '';
+    $max = 5;
+    if (!$current = get_query_var('paged')) $current = 1;
+    $a['base'] = str_replace(999999999, '%#%', get_pagenum_link(999999999));
+    $a['total'] = $max;
+    $a['current'] = $current;
+
+    $total = 1; //1 - выводить текст "Страница N из N", 0 - не выводить
+    $a['mid_size'] = 3; //сколько ссылок показывать слева и справа от текущей
+    $a['end_size'] = 1; //сколько ссылок показывать в начале и в конце
+    $a['prev_text'] = '«'; //текст ссылки "Предыдущая страница"
+    $a['next_text'] = '»'; //текст ссылки "Следующая страница"
+
+    if ($max > 1) echo '<div class="navigation">';
+    if ($total == 1 && $max > 1) $pages = '<span class="pages">Страница ' . $current . ' из ' . $max . '</span>'."\r\n";
+    echo $pages . paginate_links($a);
+    if ($max > 1) echo '</div>';
+}
+
 function shivka_Order_Save_AJAX( WP_REST_Request $request)
 {
     return validate_pod_data('orders',$request);
