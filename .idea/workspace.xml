@@ -2,73 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b46d21f6-72e2-4d12-9127-31e107ec95c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/img/delivery1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/img/delivery2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_shipping.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/404.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_contacts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/main/_jumbotron.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/main/_jumbotron.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/partials/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/partials/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/ui-kit/_general.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/ui-kit/_general.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/includes/theme-init.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/includes/theme-init.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/_initial.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/hwr-theme.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/mixins/blog/_blog-item.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/mixins/main/_blog-main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/mixins/main/_reference-main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/mixins/main/_success-cases-main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/mixins/references/_references.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/_contact-us.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/_industries.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/_not-found.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/_privacy-policy.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/_services.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/blog/_blog-post.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/blog/_blog-search.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/blog/_blog.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/career/_career-view.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/career/_career.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/main-page/_blog.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/main-page/_epicflow.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/main-page/_hys-features.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/main-page/_hys-partners.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/main-page/_main-jumbotron.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/main-page/_success-cases-reference.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/main-page/_success-cases.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/references/_reference-view.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/references/_references.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/success-cases/_success-case.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/success-cases/_success-cases-search.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/success-cases/_success-cases.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/partials/_book-meeting.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/partials/_contact-form.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/partials/_footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/partials/_get-reference.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/partials/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/partials/_search-form.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_carousel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_color-library.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_filters.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_grid-overrides.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_icons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_inputs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_links.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_lists.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_multiselect.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_overlays.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_skeleton.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_tabs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_tags.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_transitions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_typography.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/ui-kit/_youtube-frame.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/css/hwr-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/css/hwr-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/index-header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/index-header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-contacts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/services-view.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/services-view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-shipping.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-shipping.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,37 +28,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/includes/theme-init.php">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-shipping.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/styles.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/main/_jumbotron.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="416">
+              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+              <folding>
+                <element signature="e#6#35#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,8 +42,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/ui-kit/_general.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+            <state relative-caret-position="626">
+              <caret line="212" column="16" lean-forward="true" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_shipping.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="40" column="77" selection-start-line="40" selection-start-column="77" selection-end-line="40" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1054">
+              <caret line="73" column="143" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="143" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/partials/_header.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -126,17 +87,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-contacts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+            <state relative-caret-position="493">
+              <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_contacts.scss">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/services-view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+            <state relative-caret-position="1139">
+              <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -167,6 +128,8 @@
       <find>bootst</find>
       <find>boot</find>
       <find>smarthoop1</find>
+      <find>position: fixed;</find>
+      <find>hwr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,12 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/smarthoop/how-to-order.html" />
-        <option value="$PROJECT_DIR$/smarthoop/index.html" />
-        <option value="$PROJECT_DIR$/smarthoop/single-service.html" />
-        <option value="$PROJECT_DIR$/smarthoop/services.html" />
-        <option value="$PROJECT_DIR$/smarthoop/about.html" />
-        <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa0.953/smarthoop/index.html" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/header.php" />
@@ -217,14 +174,21 @@
         <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/js/bootstrap.min.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/_contacts.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/styles.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/main/_jumbotron.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/includes/theme-init.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/services-view.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/ui-kit/_general.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-contacts.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_contacts.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-contacts.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/styles.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/index-header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/css/hwr-theme.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/partials/_header.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/404.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/ui-kit/_general.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-shipping.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_shipping.scss" />
       </list>
     </option>
   </component>
@@ -241,7 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,12 +294,29 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="nt-conversi" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="nt-conversi" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="nt-conversi" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,12 +324,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\OpenServer\domains\shivka\wp-content\themes\nt-conversi" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\wp-content\themes\twentyseventeen" />
       <recent name="C:\xampp\htdocs\wp-content\themes\twentyseventeen\assets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\OpenServer\domains\shivka\wp-content\themes\nt-conversi\assets\img" />
+      <recent name="H:\OpenServer\domains\shivka\wp-content\themes\nt-conversi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -390,7 +371,10 @@
       <workItem from="1548186889060" duration="1776000" />
       <workItem from="1548188778450" duration="799000" />
       <workItem from="1548190979715" duration="1776000" />
-      <workItem from="1548192793709" duration="827000" />
+      <workItem from="1548192793709" duration="1774000" />
+      <workItem from="1548194612818" duration="397000" />
+      <workItem from="1548595683971" duration="1716000" />
+      <workItem from="1548597528081" duration="966000" />
     </task>
     <task id="LOCAL-00001" summary="FAQ">
       <created>1546960833214</created>
@@ -406,17 +390,24 @@
       <option name="project" value="LOCAL" />
       <updated>1546963021355</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Contacts page">
+      <created>1548194068658</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548194068659</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32447000" />
+    <option name="totallyTimeSpent" value="36473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2803838" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -506,60 +497,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FAQ" />
     <MESSAGE value="Services page fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Services page fix" />
+    <MESSAGE value="Contacts page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contacts page" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/services-view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="108" column="23" selection-end-line="143" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/stock-view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="6" selection-end-line="49" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/works-view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/works.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" selection-start-line="6" selection-end-line="12" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/works-category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/how-to-start.php" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/page-contacts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="9" selection-start-line="14" selection-end-line="14" selection-end-column="9" />
-          <folding>
-            <element signature="e#6#35#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/blog.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -634,11 +575,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -666,19 +603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,13 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -798,31 +719,17 @@
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/ui-kit/_color-library.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/services-view.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_contacts.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/includes/theme-init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+        <state relative-caret-position="391">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="527">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -833,24 +740,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-contacts.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/index-header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/css/hwr-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="1895" column="20" selection-start-line="1895" selection-start-column="4" selection-end-line="1895" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/404.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/includes/theme-init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="323" column="10" selection-start-line="323" selection-start-column="7" selection-end-line="323" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="40" column="77" selection-start-line="40" selection-start-column="77" selection-end-line="40" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="73" column="143" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-contacts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/services-view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/partials/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/ui-kit/_general.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        <state relative-caret-position="626">
+          <caret line="212" column="16" lean-forward="true" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_contacts.scss">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-shipping.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        <state relative-caret-position="416">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+          <folding>
+            <element signature="e#6#35#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_shipping.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
         </state>
       </provider>
     </entry>

@@ -8,7 +8,6 @@ Template Name: Contacts
 <?php get_header(); ?>
 
 <div class="smarthoop-wrap smarthoop-contacts">
-
     <section class="contacts">
         <div class="container">
             <div class="row">
@@ -50,9 +49,6 @@ Template Name: Contacts
             </div>
         </div>
     </section>
-
-
-
 </div>
 
 <?php get_footer(); ?>

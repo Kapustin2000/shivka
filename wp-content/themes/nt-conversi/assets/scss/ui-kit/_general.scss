@@ -210,6 +210,9 @@ textarea {
   &.yellow {
     background-color: $yellow;
   }
+  &.light-yellow {
+    background-color: transparentize($yellow, .5);
+  }
 }
 
 .bordered {
@@ -220,6 +223,25 @@ textarea {
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+.not-found {
+  margin: 16rem 0 4rem;
+  .text-center {
+    text-align: center;
+  }
+  h1 {
+    font-size: 12rem;
+    line-height: 12rem;
+  }
+  p {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  h1, p {
+    color: $violet;
+    margin: 0;
   }
 }
 

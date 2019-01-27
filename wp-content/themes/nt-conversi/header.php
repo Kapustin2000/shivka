@@ -35,10 +35,10 @@
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/services/">услуги</a>
+                            <a class="nav-link" href="/services">услуги</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/works/">наши работы</a>
+                            <a class="nav-link" href="/works">наши работы</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/shop">магазин</a>
@@ -47,7 +47,7 @@
                             <a class="nav-link" href="/contacts">контакты</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about/">о нас</a>
+                            <a class="nav-link" href="/about">о нас</a>
                         </li>
                     </ul>
                     <button class="btn btn-outline" type="button">

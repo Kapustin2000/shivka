@@ -129,7 +129,7 @@
                         <li><a href="/prices">цены</a></li>
                         <li><a href="/stock">акции</a></li>
                         <li><a href="#">магазин</a></li>
-                        <li><a href="/delivery">доставка и оплата</a></li>
+                        <li><a href="/shipping">доставка и оплата</a></li>
                         <li><a href="/how-to-order">как заказать</a></li>
                         <li><a href="/blog">блог</a></li>
                         <li><a href="/faq">f.a.q.</a></li>
