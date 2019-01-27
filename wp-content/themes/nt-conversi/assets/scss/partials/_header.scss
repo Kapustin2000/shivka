@@ -106,17 +106,10 @@ header {
 @media (max-width: $large-desktop) {
   header {
     .navbar {
-      &-nav {
+      &-nav,
+      .btn {
         display: none;
       }
-    }
-  }
-}
-
-@media (max-width: $mobile) {
-  header {
-    .btn {
-      display: none;
     }
   }
 }

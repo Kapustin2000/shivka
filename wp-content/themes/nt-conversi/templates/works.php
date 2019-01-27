@@ -26,12 +26,12 @@ $data = pods('works')->find($params);
                     <div class="row">
                         <?php  while($data->fetch()){?>
                             <div class="col-lg-4 col-12">
-                               <a href=" <?=get_permalink($data->display('id'))?>">
+                               <a href="<?=get_permalink($data->display('id'))?>" class="service-item">
                                     <div class="service-img-wrap">
                                         <div class="service-img" style="background-image: url( <?=$data->display('preview')?>);"></div>
                                    </div>
-                                    <div class="service-title"><?=$data->display('post_title')?>
-                                    <button type="button" class="btn btn-primary">смотреть</button>
+                                   <div class="service-title"><?=$data->display('post_title')?></div>
+                                   <button type="button" class="btn btn-primary">смотреть</button>
                                 </a>
                             </div>
                         <?php } ?>

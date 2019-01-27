@@ -32,7 +32,7 @@
                 </div>
                 <form action="#" class="order-form active">
                     <div class="row">
-                        <div class="col-md-6 col-xs-12">
+                        <div class="col-lg-6 col-xs-12">
                             <input type="text" placeholder="Имя*" required>
                             <input type="email" placeholder="E-mail*" required>
                             <input type="number" placeholder="Телефон">
@@ -40,7 +40,7 @@
                               <option value="0" selected class="hidden">Вид услуги</option>
                             </select> -->
                         </div>
-                        <div class="col-md-6 col-xs-12">
+                        <div class="col-lg-6 col-xs-12">
                       <textarea rows="5"
                                 placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
                             <!-- <input type="file"> -->
@@ -50,11 +50,11 @@
                 </form>
                 <form action="#" class="call-form">
                     <div class="row">
-                        <div class="col-md-6 col-xs-12">
+                        <div class="col-lg-6 col-xs-12">
                             <input type="text" placeholder="Имя*" required>
                             <input type="number" placeholder="">
                         </div>
-                        <div class="col-md-6 col-xs-12">
+                        <div class="col-lg-6 col-xs-12">
                             <textarea name="" id="" cols="30" rows="10"></textarea>
                             <button type="submit">Отправить</button>
                         </div>

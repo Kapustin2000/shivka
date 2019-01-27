@@ -380,11 +380,8 @@ header {
     padding: 0 2rem; } }
 
 @media (max-width: 1200px) {
-  header .navbar-nav {
-    display: none; } }
-
-@media (max-width: 576px) {
-  header .btn {
+  header .navbar-nav,
+  header .navbar .btn {
     display: none; } }
 
 footer {
@@ -922,7 +919,7 @@ footer {
     background: white;
     border-radius: 50px 0 0 50px;
     margin-left: 7%;
-    padding: 0 18px 0 0;
+    padding: 0 18px;
     margin-bottom: 50px;
     max-height: 10.5rem; }
   .services.extra-services .service-item button {
@@ -1643,6 +1640,53 @@ footer {
       height: 30rem;
       bottom: -10rem;
       right: -5rem; } }
+
+.smarthoop-stock-item {
+  margin-top: 25rem;
+  overflow: visible; }
+  .smarthoop-stock-item h1 {
+    margin: 0;
+    position: absolute;
+    top: -50px;
+    left: -50px; }
+  .smarthoop-stock-item .stock-item {
+    position: relative;
+    padding-top: 140px; }
+    .smarthoop-stock-item .stock-item::before {
+      content: '';
+      position: absolute;
+      top: 70px;
+      left: 30px;
+      width: 50%;
+      height: calc(100% + 100px);
+      background-color: #cdcfe9;
+      opacity: .5;
+      z-index: -1; }
+    .smarthoop-stock-item .stock-item h2, .smarthoop-stock-item .stock-item p {
+      width: 50%; }
+    .smarthoop-stock-item .stock-item img {
+      height: 70rem;
+      bottom: -5rem;
+      right: -10rem; }
+  .smarthoop-stock-item .stock-more .stock-more-img {
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .smarthoop-stock-item .stock-more .content-editable {
+    padding-top: 50px; }
+
+@media (max-width: 992px) {
+  .smarthoop-stock-item {
+    margin-top: 15rem; }
+    .smarthoop-stock-item .stock-item::before, .smarthoop-stock-item .stock-item h2, .smarthoop-stock-item .stock-item p {
+      width: 80%; }
+    .smarthoop-stock-item .stock-item img {
+      height: 30rem; } }
+
+@media (max-width: 576px) {
+  .smarthoop-stock-item h1 {
+    left: 0; } }
 
 .wrap {
   display: none !important; }
