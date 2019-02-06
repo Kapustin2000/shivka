@@ -57,10 +57,7 @@ if(isset($_GET['id'])) {
                     </div>
                     <div class="col-lg-5 col-12">
                         <div class="content-editable">
-                            <p>Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.</p>
-                            <p>Мы также вышиваем шевроны и нашивки, логотипы и эмблемы компаний, создадим вышивку на одежде и крое, домашнем текстиле и полотенцах, коже и замше.</p>
-                            <p>Современное промышленное японское (Toyota) и немецкое (ZSK)оборудование, качественные расходные материалы и нитки (Gunold, Madeira, Durak и др.), профессиональное программирование и наш опыт позволяют осуществлять каждый заказ максимально быстро, качественно и по приемлемым ценам.</p>
-                            <?=$data->display('description')?>
+                           <?=$data->display('full_description')?>
                             <button type="button" class="btn btn-primary">связаться с нами</button>
                         </div>
                     </div>
