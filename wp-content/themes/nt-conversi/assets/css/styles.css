@@ -1367,7 +1367,8 @@ footer {
       display: block;
       -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
       box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
-      margin-bottom: 5rem; }
+      margin-bottom: 5rem;
+      color: #3b2f5c; }
       .smarthoop-blog .blog .blog-post::before {
         content: '';
         position: absolute;
@@ -1390,7 +1391,8 @@ footer {
           width: inherit;
           height: inherit;
           background-size: cover;
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          background-position: center center; }
         .smarthoop-blog .blog .blog-post .blog-img-wrap .blog-type {
           position: absolute;
           top: 5rem;
@@ -1439,6 +1441,80 @@ footer {
       .smarthoop-blog .blog .blog-post:hover button {
         opacity: 1;
         z-index: 1; }
+
+.smarthoop-blog-post {
+  overflow: visible;
+  margin: 25rem 0 90px; }
+  .smarthoop-blog-post .top-block {
+    position: relative; }
+    .smarthoop-blog-post .top-block h1 {
+      position: absolute;
+      max-width: 340px;
+      top: -50px;
+      left: 0; }
+    .smarthoop-blog-post .top-block .image-wrap {
+      width: 100%;
+      height: 600px;
+      padding-left: 50px; }
+    .smarthoop-blog-post .top-block .img {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
+    .smarthoop-blog-post .top-block .blog-type {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      min-width: 175px;
+      padding: 18px;
+      border-radius: 50px 0 0 50px;
+      background-color: #fff;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .smarthoop-blog-post .top-block .blog-content {
+      position: absolute;
+      width: 50%;
+      height: 570px;
+      background-color: #fff;
+      bottom: -112px;
+      left: 0;
+      -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+      padding: 100px 115px 130px 100px;
+      overflow-y: hidden; }
+  .smarthoop-blog-post .blog-description {
+    margin: 170px 0 46px;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 50px;
+    column-gap: 50px; }
+  .smarthoop-blog-post .back {
+    text-align: left;
+    padding-left: 190px;
+    font-family: "Uni Sans Thin Caps";
+    font-size: 30px;
+    font-weight: bold; }
+
+@media (max-width: 992px) {
+  .smarthoop-blog-post .top-block .blog-content {
+    padding: 30px; } }
+
+@media (max-width: 768px) {
+  .smarthoop-blog-post .top-block h1 {
+    max-width: 100%;
+    top: -150px; }
+  .smarthoop-blog-post .top-block .image-wrap {
+    padding-left: 0; }
+  .smarthoop-blog-post .top-block .blog-content {
+    width: 100%;
+    height: 300px; }
+  .smarthoop-blog-post .blog-description {
+    -webkit-column-count: 1;
+    column-count: 1; }
+  .smarthoop-blog-post .back {
+    padding-left: 170px; } }
 
 .smarthoop-contacts .contacts {
   margin-top: 15rem;
