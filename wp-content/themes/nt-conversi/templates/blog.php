@@ -40,7 +40,7 @@ $data = pods('blog')->find($params);
                             <div class="col-md-6 col-12">
                                 <a class="blog-post" data-post-type="article" href="<?=get_permalink($data->display('id'))?>">
                                     <div class="blog-img-wrap">
-                                        <div class="blog-img" style="background:  url(<?=$data->display('image')?>);"></div>
+                                        <div class="blog-img" style="background-image: url(<?=$data->display('image')?>);"></div>
                                         <div class="blog-type"><?=$data->display('blog_type')?></div>
                                     </div>
                                     <div class="blog-info">

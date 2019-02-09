@@ -23,6 +23,7 @@
       display: block;
       box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
       margin-bottom: 5rem;
+      color: $violet;
       &::before {
         content: '';
         position: absolute;
@@ -45,6 +46,7 @@
           height: inherit;
           background-size: cover;
           background-repeat: no-repeat;
+          background-position: center center;
         }
         .blog-type {
           position: absolute;
