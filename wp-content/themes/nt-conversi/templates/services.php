@@ -7,6 +7,7 @@ Template Name: Services
 <?php
 
 $params = array(
+    'where' => shivka_filters(),
     'orderby'=>"order_weight.meta_value DESC,id DESC"
 );
 $data = pods('services')->find();
@@ -47,5 +48,5 @@ $data = pods('services')->find();
         </div>
     </section>
 </div>
-
+<?php if (function_exists('wp_corenavi')) wp_corenavi($data->total_found()); ?>
 <?php get_footer(); ?>
