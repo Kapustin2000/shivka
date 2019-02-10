@@ -159,11 +159,19 @@ add_action( 'rest_api_init', function () {
     ) );
 } );
 
-
-function wp_corenavi($total_found) {
+function shivka_offset($count) {
+    if (!$offset = get_query_var('paged')) $offset = 0;
+    if($offset!=1){
+        return $count*$offset;
+    }else{
+        return 0;
+    }
+}
+add_action('filter_query', 'shivka_offset');
+function wp_corenavi($total_found,$count = 6) {
     global $wp_query;
     $pages = '';
-    $max = ceil($total_found/6);
+    $max = ceil($total_found/$count);
     if (!$current = get_query_var('paged')) $current = 1;
     $a['base'] = str_replace(999999999, '%#%', get_pagenum_link(999999999));
     $a['total'] = $max;

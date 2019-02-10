@@ -7,7 +7,8 @@ Template Name: Blog
 <?php
 $params = array(
     'where' => shivka_filters(),
-    'orderby'=>"order_weight.meta_value +0 DESC,id DESC"
+    'orderby'=>"order_weight.meta_value +0 DESC,id DESC",
+    'offset' => shivka_offset(6),
 );
 $data = pods('blog')->find($params);
 

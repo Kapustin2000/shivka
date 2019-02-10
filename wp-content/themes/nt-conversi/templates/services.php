@@ -8,7 +8,8 @@ Template Name: Services
 
 $params = array(
     'where' => shivka_filters(),
-    'orderby'=>"order_weight.meta_value DESC,id DESC"
+    'orderby'=>"order_weight.meta_value DESC,id DESC",
+    'offset' => shivka_offset(9),
 );
 $data = pods('services')->find();
 
@@ -22,6 +23,7 @@ $data = pods('services')->find();
             <div class="row">
                 <div class="col-12">
                     <h1>
+                        <?php  print_r(get_query_var('paged'));?>
                         <span>&nbsp;Наши услуги&nbsp;</span>
                     </h1>
                     <div class="decorative yellow"></div>
@@ -48,5 +50,5 @@ $data = pods('services')->find();
         </div>
     </section>
 </div>
-<?php if (function_exists('wp_corenavi')) wp_corenavi($data->total_found()); ?>
+<?php if (function_exists('wp_corenavi')) wp_corenavi($data->total_found(),9); ?>
 <?php get_footer(); ?>
