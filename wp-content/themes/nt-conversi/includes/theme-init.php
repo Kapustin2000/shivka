@@ -492,7 +492,42 @@ function nt_conversi_theme_setup() {
 }
 add_action( 'after_setup_theme', 'nt_conversi_theme_setup' );
 
+function shivka_filters($used_ids = null) {
+    $where = '';
 
+    if( isset($_GET['type']) && $_GET['type'] != 'null' && !empty($_GET['type']) && (bool) $_GET['type']){
+        $filter1 = explode(',',$_GET['type']);
+        foreach($filter1 as $key=>$item){
+            $item = (int) shivka_escapeParam($item);
+            if($item<=3){
+                if ($key == 0) {
+                    if(strlen($where)>1){
+                        $where .= ' AND ';
+                    }
+                    $where.=' blog_type.meta_value = '.$item;
+                }else{
+                    $where.=' OR blog_type.meta_value = "'.$item.'"';
+                }
+            }
+        }
+    }
+
+    if($used_ids){
+        foreach($used_ids as $key=>$item){
+            if ($key == 0) {
+                if(strlen($where)>1){
+                    $where .= ' AND ';
+                }
+                $where .= ' id != '.$item;
+            }else{
+                $where .= ' AND id != '.$item;
+            }
+        }
+    }
+    return $where;
+
+}
+add_action('filter_query', 'shivka_filters');
 /*************************************************
 ## Widget columns
 *************************************************/

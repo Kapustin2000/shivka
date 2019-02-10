@@ -6,6 +6,7 @@ Template Name: Blog
 ?>
 <?php
 $params = array(
+    'where' => shivka_filters(),
     'orderby'=>"order_weight.meta_value +0 DESC,id DESC"
 );
 $data = pods('blog')->find($params);
