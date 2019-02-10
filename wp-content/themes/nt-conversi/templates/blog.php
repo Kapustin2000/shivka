@@ -25,13 +25,13 @@ $data = pods('blog')->find($params);
                         <a href="#" type="button" class="active">
                             <span>Все</span>
                         </a>
-                        <a href="#article" type="button">
+                        <a href="?type=1" type="button">
                             <span>Статьи</span>
                         </a>
-                        <a href="#event" type="button">
+                        <a href="?type=2" type="button">
                             <span>События</span>
                         </a>
-                        <a href="#news" type="button">
+                        <a href="?type=3" type="button">
                             <span>Новости</span>
                         </a>
                     </div>
@@ -60,5 +60,5 @@ $data = pods('blog')->find($params);
         </div>
     </section>
 </div>
-
+<?php if (function_exists('wp_corenavi')) wp_corenavi(); ?>
 <?php get_footer(); ?>
