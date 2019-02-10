@@ -160,10 +160,10 @@ add_action( 'rest_api_init', function () {
 } );
 
 
-function wp_corenavi() {
+function wp_corenavi($total_found) {
     global $wp_query;
     $pages = '';
-    $max = 5;
+    $max = ceil($total_found/6);
     if (!$current = get_query_var('paged')) $current = 1;
     $a['base'] = str_replace(999999999, '%#%', get_pagenum_link(999999999));
     $a['total'] = $max;
