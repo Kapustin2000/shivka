@@ -3,6 +3,7 @@
 Template Name: Contacts
 */
 
+$settings  = pods('website_settings')->find();
 ?>
 
 <?php get_header(); ?>
@@ -19,12 +20,12 @@ Template Name: Contacts
                         <div class="address active">
                             <h2>Оптовые заказы</h2>
                             <p>
-                                г. Киев</br>
-                                ул.Выборгская, 94</br>
-                                С 10:00 до 19:00 (звоните предварительно)</br>
-                                Понедельник - Пятница</br>
-                                Тел: <a href="tel:+380677516622">067 751 66 22</a> Viber/WhatsApp, <a href="tel:+380667734186">066 773 41 86</a></br>
-                                E-mail: <a href="maito:smarthoop3@gmail.com">smarthoop3@gmail.com</a>
+                                <?=$settings->display('wholesale_city')?></br>
+                                <?=$settings->display('wholesale_street')?></br>
+                                <?=$settings->display('wholesale_working_hours')?></br>
+                                <?=$settings->display('wholesale_working_days')?></br>
+                                <?=$settings->display('wholesale_number')?></br>
+                                E-mail: <a href="maito:<?=$settings->display('wholesale_emaal')?>"><?=$settings->display('wholesale_email')?></a>
                             </p>
                             <button type="button" class="btn btn-primary">смотреть на карте</button>
                         </div>
@@ -32,12 +33,12 @@ Template Name: Contacts
                             <h2>Индивидуальные</br>
                                 заказы</h2>
                             <p>
-                                г.Белая Церквь</br>
-                                ул.Вокзальная, 4</br>
-                                С 10:00 до 19:00 (звоните предварительно)</br>
-                                Понедельник - Пятница</br>
-                                Тел: <a href="tel:+380968809206">096 880 92 06</a> Viber/WhatsApp</br>
-                                E-mail: <a href="maito:smarthoop3@gmail.com">smarthoop3@gmail.com</a>
+                                <?=$settings->display('individual_city')?></br>
+                                <?=$settings->display('individual_street')?></br>
+                                <?=$settings->display('individual_working_hours')?></br>
+                                <?=$settings->display('individual_working_days')?></br>
+                                <?=$settings->display('individual_number')?></br>
+                                E-mail: <a href="maito: <?=$settings->display('individual_email')?>"> <?=$settings->display('individual_email')?></a>
                             </p>
                             <button type="button" class="btn btn-primary">смотреть на карте</button>
                         </div>
