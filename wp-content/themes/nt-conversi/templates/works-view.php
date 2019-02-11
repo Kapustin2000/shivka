@@ -39,16 +39,7 @@ if(isset($_GET['id'])) {
                     <div class="col-xl-6 col-12">
                         <div class="info-block">
                             <h1><span>&nbsp;<?=$data->display('post_title')?>&nbsp;</span></h1>
-                            <?=$data->display('description')?>
-                            <p>
-                                Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.
-                            </p>
-                            <p>
-                                Мы также вышиваем шевроны и нашивки, логотипы и эмблемы компаний, создадим вышивку на одежде и крое, домашнем текстиле и полотенцах, коже и замше.
-                            </p>
-                            <p>
-                                Современное промышленное японское (Toyota) и немецкое Современное промышленное японское (Toyota) и немецкоеСовременное промышленное японское (Toyota) и немецкое Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.
-                            </p>
+                            <?=$data->display('post_content')?>
                         </div>
                     </div>
                     <div class="col-12">
