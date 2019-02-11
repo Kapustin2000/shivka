@@ -23,13 +23,6 @@ if(isset($_GET['id'])) {
 
 ?>
 
-<style>
-    .work-gallery {
-        display: grid;
-        grid-column-gap: 50px;
-    }
-</style>
-
 <?php get_header(); ?>
 
 <?php if($found){ ?>
@@ -38,22 +31,61 @@ if(isset($_GET['id'])) {
         <section class="work-info">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <h1><span>&nbsp;<?=$data->display('post_title')?>&nbsp;</span></h1>
-                        <?=$data->display('description')?>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="about-img">
+                    <div class="col-xl-6 col-12">
+                        <div class="work-info-img">
                             <img src="<?=$data->display('image')?>" alt="Work">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-12">
+                        <div class="info-block">
+                            <h1><span>&nbsp;<?=$data->display('post_title')?>&nbsp;</span></h1>
+                            <?=$data->display('description')?>
+                            <p>
+                                Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.
+                            </p>
+                            <p>
+                                Мы также вышиваем шевроны и нашивки, логотипы и эмблемы компаний, создадим вышивку на одежде и крое, домашнем текстиле и полотенцах, коже и замше.
+                            </p>
+                            <p>
+                                Современное промышленное японское (Toyota) и немецкое Современное промышленное японское (Toyota) и немецкоеСовременное промышленное японское (Toyota) и немецкое Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.
+                            </p>
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="work-gallery">
-                            <img src="<?=$data->display('image')?>" alt="Work">
-                            <img src="<?=$data->display('image')?>" alt="Work">
-                            <img src="<?=$data->display('image')?>" alt="Work">
-                            <img src="<?=$data->display('image')?>" alt="Work">
-                            <img src="<?=$data->display('image')?>" alt="Work">
+                            <div class="gallery-item">
+                                <img src="<?=$data->display('image')?>" alt="Work">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="<?=$data->display('image')?>" alt="Work">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="<?=$data->display('image')?>" alt="Work">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="<?=$data->display('image')?>" alt="Work">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="<?=$data->display('image')?>" alt="Work">
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="pagination">
+                                <a href="#"><</a>
+                                <a href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                ...
+                                <a href="#">21</a>
+                                <a href="#">></a>
+                            </div>
+                            <a href="/works" class="back">
+                            <span>
+                                <i class="icon icon-arrow"></i>
+                                Назад к работам
+                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>
