@@ -1,25 +1,58 @@
 button,
 a[type='button'] {
   cursor: pointer;
+  position: relative;
   display: inline-block;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1;
-  background-color: transparent;
   border: none;
+  background-color: transparent;
   border-radius: 5rem;
   text-transform: uppercase;
   padding: 1.3rem 5.7rem;
   transition: $default;
   @include outline();
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 1px;
+    height: 10px;
+    border-radius: 5rem;
+  }
   &.btn-primary {
     color: $white;
-    background-color: $violet;
+    border: 2px solid $violet;
+    background: linear-gradient(to right, $violet 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    &::after {
+      right: 0;
+      background: $violet;
+    }
+    &:hover {
+      color: $violet;
+      background-position: right bottom;
+    }
   }
   &.btn-outline {
     color: $violet;
     border: 2px solid $violet;
+    background: linear-gradient(to right, transparent 50%, $violet 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    &::after {
+      left: 0;
+      background: $violet;
+    }
+    &:hover {
+      color: $white;
+      background-position: right bottom;
+    }
   }
 }
 

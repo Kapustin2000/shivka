@@ -265,13 +265,14 @@ textarea {
 button,
 a[type='button'] {
   cursor: pointer;
+  position: relative;
   display: inline-block;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1;
-  background-color: transparent;
   border: none;
+  background-color: transparent;
   border-radius: 5rem;
   text-transform: uppercase;
   padding: 1.3rem 5.7rem;
@@ -282,14 +283,54 @@ a[type='button'] {
   button:focus,
   a[type='button']:focus {
     outline: 1px dashed #cdcfe9; }
+  button::after,
+  a[type='button']::after {
+    content: '';
+    position: absolute;
+    display: block;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+    width: 1px;
+    height: 10px;
+    border-radius: 5rem; }
   button.btn-primary,
   a[type='button'].btn-primary {
     color: #fff;
-    background-color: #3b2f5c; }
+    border: 2px solid #3b2f5c;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #3b2f5c), color-stop(50%, transparent));
+    background: -webkit-linear-gradient(left, #3b2f5c 50%, transparent 50%);
+    background: -o-linear-gradient(left, #3b2f5c 50%, transparent 50%);
+    background: linear-gradient(to right, #3b2f5c 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: left bottom; }
+    button.btn-primary::after,
+    a[type='button'].btn-primary::after {
+      right: 0;
+      background: #3b2f5c; }
+    button.btn-primary:hover,
+    a[type='button'].btn-primary:hover {
+      color: #3b2f5c;
+      background-position: right bottom; }
   button.btn-outline,
   a[type='button'].btn-outline {
     color: #3b2f5c;
-    border: 2px solid #3b2f5c; }
+    border: 2px solid #3b2f5c;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #3b2f5c));
+    background: -webkit-linear-gradient(left, transparent 50%, #3b2f5c 50%);
+    background: -o-linear-gradient(left, transparent 50%, #3b2f5c 50%);
+    background: linear-gradient(to right, transparent 50%, #3b2f5c 50%);
+    background-size: 200% 100%;
+    background-position: left bottom; }
+    button.btn-outline::after,
+    a[type='button'].btn-outline::after {
+      left: 0;
+      background: #3b2f5c; }
+    button.btn-outline:hover,
+    a[type='button'].btn-outline:hover {
+      color: #fff;
+      background-position: right bottom; }
 
 header {
   background-color: rgba(255, 255, 255, 0.8);

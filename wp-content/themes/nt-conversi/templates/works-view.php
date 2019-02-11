@@ -23,22 +23,45 @@ if(isset($_GET['id'])) {
 
 ?>
 
+<style>
+    .work-gallery {
+        display: grid;
+        grid-column-gap: 50px;
+    }
+</style>
 
-
-
-    <!-- Html -->
-
+<?php get_header(); ?>
 
 <?php if($found){ ?>
 
+    <div class="smarthoop-wrap smarthoop-works">
+        <section class="work-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h1><span>&nbsp;<?=$data->display('post_title')?>&nbsp;</span></h1>
+                        <?=$data->display('description')?>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="about-img">
+                            <img src="<?=$data->display('image')?>" alt="Work">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-gallery">
+                            <img src="<?=$data->display('image')?>" alt="Work">
+                            <img src="<?=$data->display('image')?>" alt="Work">
+                            <img src="<?=$data->display('image')?>" alt="Work">
+                            <img src="<?=$data->display('image')?>" alt="Work">
+                            <img src="<?=$data->display('image')?>" alt="Work">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    <?=$data->display('post_title')?>
-    <?=$data->display('post_content')?>
-    <?=$data->display('patch')?>
-    <?=$data->display('description')?>
-    <?=$data->display('image')?>
 
-    С <?=date("d.m.Y", strtotime($data->display('start_date')));?> по <?=date("d.m.Y", strtotime($data->display('end_date')));?>
 
 <?php  }else{ ?>
 
@@ -48,3 +71,5 @@ if(isset($_GET['id'])) {
     </script>
 
 <?php } ?>
+
+<?php get_footer(); ?>
