@@ -52,11 +52,12 @@
                     <div class="row">
                         <div class="col-lg-6 col-xs-12">
                             <input type="text" placeholder="Имя*" required>
-                            <input type="number" placeholder="">
+                            <input type="number" placeholder="Телефон">
                         </div>
                         <div class="col-lg-6 col-xs-12">
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                            <button type="submit">Отправить</button>
+                            <textarea rows="5"
+                                      placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
                         </div>
                     </div>
                 </form>
@@ -151,6 +152,28 @@
 
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/jquery/jquery-1.12.4.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/bootstrap/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/assets/js/slick.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/js/scripts.js"></script>
+<script>
+    $(document).ready(function() {
+
+        $('#main-slider').slick();
+
+        $('.tabs-wrap').on('click', '.tab', function() {
+            var $this = $(this);
+
+            $this.addClass('active')
+                .siblings()
+                .removeClass('active');
+
+            $this.parent()
+                .siblings('form')
+                .removeClass('active')
+                .eq($this.index())
+                .addClass('active');
+        });
+
+    });
+</script>
 </body>
 </html>

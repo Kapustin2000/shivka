@@ -40,21 +40,36 @@ $stock = pods('stock')->find();
                 <div class="col-12">
                     <div class="inner">
                         <h1>
-              <span>
-                  &nbsp;Машинная вышивка -&nbsp;<br/>
-                  &nbsp;отличный способ&nbsp;<br/>
-                  &nbsp;проявить свой стиль!&nbsp;</span>
+                            <span>
+                                &nbsp;Машинная вышивка -&nbsp;<br/>
+                                &nbsp;отличный способ&nbsp;<br/>
+                                &nbsp;проявить свой стиль!&nbsp;
+                            </span>
                         </h1>
                         <div class="see-more">
                             <span class="underline">узнать больше</span>
                             <i class="icon icon-arrow"></i>
                         </div>
-                        <div class="video-carousel">
+                        <div id="main-slider" class="main-slider">
                             <div class="decorative lavander"></div>
-                            <div class="video-item"></div>
-                            <div class="video-progress"></div>
+                            <div class="item">
+                                <div class="img" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png);"></div>
+                            </div>
+<!--                            <div class="item">-->
+<!--                                <img src="--><?php //bloginfo('template_url'); ?><!--/assets/img/Слой_1@1x.png" alt="slide">-->
+<!--                            </div>-->
+<!--                            <div class="item">-->
+<!--                                <img src="--><?php //bloginfo('template_url'); ?><!--/assets/img/Слой_1@1x.png" alt="slide">-->
+<!--                            </div>-->
                         </div>
-                    </div>
+
+
+<!--                          <div class="video-carousel">-->
+<!--                              <div class="decorative lavander"></div>-->
+<!--                              <div class="video-item"></div>-->
+<!--                              <div class="video-progress"></div>-->
+<!--                          </div>-->
+                      </div>
                 </div>
             </div>
         </div>
