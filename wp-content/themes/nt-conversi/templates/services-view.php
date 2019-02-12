@@ -26,106 +26,44 @@ $gallery = pods('gallery')->find();
 
 
 ?>
+<!--CATEGORY!!!!-->
 
 <?php get_header(); ?>
 
 <?php if($found){ ?>
 
-    <div class="smarthoop-wrap smarthoop-single-service">
-        <div class="single-service-description">
+    <div class="smarthoop-wrap smarthoop-services smarthoop-services-category">
+        <section class="services">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <a href="/services" class="back">
-                            <span>
-                                <i class="icon icon-arrow"></i>
-                                назад к услугам
-                            </span>
-                        </a>
-                        <div class="bordered">
-                            <div class="row">
-                                <div class="col-xl-6 col-12">
-                                    <div class="service-img">
-                                        <img src="<?=$data->display('preview')?>" alt="Service">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-12">
-                                    <h1>
-                                        <span><?=$data->display('post_title')?></span>
-                                    </h1>
-                                    <div class="text-wrap">
-                                        <p>
-                                            <?=$data->display('post_content')?>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="single-service-gallery">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>Фото готовых работ</h2>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="gallery-wrap">
-                                    <?php while($gallery->fetch()){?>
-                                        <div style="background-image: url(<?=$gallery->display('image')?>);" class="img-wrap"></div>
-                                    <?php } ?>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="see-more">
-                            <a href="/" class="underline">смотреть больше фото</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="single-service-more">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>описание услуги</h2>
+                        <h1>
+                            <span>&nbsp;вышивка на крое&nbsp;</span>
+                        </h1>
                         <div class="decorative yellow"></div>
-                        <div class="row">
-                            <?=$data->display('full_description')?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="single-service-shop">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
                         <div class="decorative lavander"></div>
-                        <div class="bordered">
-                            <h2>Готовые товары с нашей вышивкой</h2>
-                            <p>Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.</p>
-                            <p>Мы также вышиваем шевроны и нашивки, логотипы и эмблемы компаний, создадим вышивку на одежде и крое, домашнем текстиле и полотенцах, коже и замше.</p>
-                            <a type="button" class="btn btn-primary">перейти в магазин</a>
+                        <div class="row">
+
+                                <div class="col-lg-6 col-12">
+                                    <a href="#" class="service-item">
+                                        <div class="service-title-wrap">
+                                            <div class="service-title">вышивка на футболках, поло, толстовках</div>
+                                            <div class="service-desc service-small-desc">Краткое описание услуги Заказывайте у нас вышивку орнаментов любой сложности для вышиванок. Мы можем предложить вам готовые узоры, а также выполнить вышивку по вашему макету. Краткое описание услуги Заказывайте у нас вышивку орнаментов любой сложности для вышиванок. </div>
+                                            <br>
+                                            <div class="service-desc service-full-desc">Мы можем предложить вам готовые узоры, а также выполнить вышивку по вашему макету.Краткое описание услуги Заказывайте у нас вышивку орнаментов любой сложности для вышиванок. Мы можем предложить вам готовые узоры, а также выполнить вышивку по вашему макету.</div>
+                                        </div>
+                                        <div class="service-img-wrap">
+                                            <div class="service-img" style="background-image: url(http://shivka/wp-content/uploads/2018/11/photo5346096641628809665.jpg);"></div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary">подробнее</button>
+                                    </a>
+                                </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="single-service-related">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
 
     
