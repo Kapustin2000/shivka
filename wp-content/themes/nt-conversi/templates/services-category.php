@@ -47,7 +47,7 @@ $services = pods('single_services')->find($params);
                             <div class="col-lg-6 col-12">
                                 <a href="<?=get_permalink($services->display('id'));?>" class="service-item">
                                     <div class="service-title-wrap">
-                                        <div class="service-title"><?=$data->display('title')?></div>
+                                        <div class="service-title"><?=$services->display('post_title')?></div>
                                         <?php if($services->field('post_content')){ ?>
                                         <div class="service-desc service-small-desc"><?=$services->display('post_content')?></div>
                                         <br>
@@ -57,7 +57,7 @@ $services = pods('single_services')->find($params);
                                         <?php } ?>
                                     </div>
                                     <div class="service-img-wrap">
-                                        <div class="service-img" style="background-image: url(<?=$services->display('image')?>);"></div>
+                                        <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
                                     </div>
                                     <button type="button" class="btn btn-primary">подробнее</button>
                                 </a>
