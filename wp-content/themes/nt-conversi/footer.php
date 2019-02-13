@@ -149,31 +149,9 @@
         </div>
     </div>
 </footer>
-
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/jquery/jquery-1.12.4.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/bootstrap/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/js/slick.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/js/scripts.js"></script>
-<script>
-    $(document).ready(function() {
-
-        $('#main-slider').slick();
-
-        $('.tabs-wrap').on('click', '.tab', function() {
-            var $this = $(this);
-
-            $this.addClass('active')
-                .siblings()
-                .removeClass('active');
-
-            $this.parent()
-                .siblings('form')
-                .removeClass('active')
-                .eq($this.index())
-                .addClass('active');
-        });
-
-    });
-</script>
 </body>
 </html>

@@ -55,7 +55,6 @@ $stock = pods('stock')->find();
                         </div>
                         <?php if($settings->field('main_screen')) { ?>
                         <div id="main-slider" class="main-slider">
-                            <div class="decorative lavander"></div>
                             <div class="item">
                                 <div class="img" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png);"></div>
                             </div>
@@ -66,6 +65,7 @@ $stock = pods('stock')->find();
                                 <div class="img" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png);"></div>
                             </div>
                         </div>
+<<<<<<< HEAD
                         <?php }else{ ?>
                                                       <div class="video-carousel">
                                                           <div class="decorative lavander"></div>
@@ -73,6 +73,13 @@ $stock = pods('stock')->find();
                                                           <div class="video-progress"></div>
                                                       </div>
                         <?php } ?>
+=======
+
+<!--                          <div class="video-carousel">-->
+<!--                              <div class="video-item"></div>-->
+<!--                              <div class="video-progress"></div>-->
+<!--                          </div>-->
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
                       </div>
                 </div>
             </div>

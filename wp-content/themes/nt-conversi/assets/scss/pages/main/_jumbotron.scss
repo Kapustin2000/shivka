@@ -8,7 +8,7 @@
   }
   h1, .underline {
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
   .see-more {
     cursor: pointer;
@@ -24,25 +24,68 @@
       }
     }
   }
-  .decorative {
-    top: -5rem;
-    left: -5rem;
-    width: 36.5vw;
-    height: 36.5vw;
-  }
   .main-slider,
   .video-carousel {
     position: absolute;
     top: 5rem;
     right: 1.5rem;
     width: 68vw;
-    // width: 131rem;
     height: 36.5vw;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: -5rem;
+      left: -5rem;
+      width: 36.5vw;
+      height: 36.5vw;
+      background-color: $lavander;
+      z-index: -1;
+    }
   }
   .main-slider {
+    .slick-arrow {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: $lavander;
+      z-index: 1;
+      border-radius: 0;
+      padding: 0;
+      bottom: 0;
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 3px;
+        height: 20px;
+        background-color: $white;
+      }
+      &::before {
+        top: calc(50% - 6px);
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      &::after {
+        top: calc(50% + 6px);
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+    .slick-prev {
+      right: 100px;
+    }
+    .slick-next {
+      right: 0;
+      &::before {
+        transform: translate(-50%, -50%) rotate(135deg);
+      }
+      &::after {
+        transform: translate(-50%, -50%) rotate(-135deg);
+      }
+    }
     .item {
       width: 100%;
-      height: 100%;
+      height: 36.5vw;
     }
     .img {
       width: 100%;
@@ -62,6 +105,10 @@
     }
     .video-progress {
     }
+  }
+  .see-more {
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -86,7 +133,7 @@
     margin-top: 120px;
     .inner {
       text-align: center;
-      padding-top: 30rem;
+      padding-top: 36rem;
     }
     h1 {
       margin: 0 0 3rem;
@@ -103,6 +150,14 @@
       left: 15px;
       right: auto;
       width: calc(100% - 30px);
+      height: 350px;
+      &::after {
+        width: 350px;
+        height: 350px;
+      }
+      .item {
+        height: 350px;
+      }
     }
   }
 }
@@ -116,9 +171,16 @@
     .inner {
       padding-top: 33rem;
     }
-    .main-slider,
-    .video-carousel {
-      height: 35rem;
+    .main-slider {
+      .slick-arrow {
+        width: 60px;
+        height: 60px;
+        bottom: auto;
+        top: 0;
+      }
+      .slick-prev {
+        right: 60px;
+      }
     }
     .video-carousel {
       .video-item {

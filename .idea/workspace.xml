@@ -1,8 +1,311 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="11e8d404-6ee5-4b0e-bcec-ad207ec9de1c" name="Default" comment="Success cases include new blocks">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+=======
+    <list default="true" id="b197e598-a5e9-4ce4-a9e0-d9f08d60267e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_00dbeefdb9202cd9a4c0e56dfbfb5b2f.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_0421205ab40768a7bbf8ab3723935692.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_05317ee7a2281f61a316e42e743c2192.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_06d7fc62ad06fbce30ed22bace5f24c3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_0b75e4e795501ae0feffbd24c57906fb.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_0ca8dcb3f227bfeec6b2ef84cbdd6896.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_0cf6ede55fd5de70a18d6ffa043ab440.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_0ddafac2b7157297799459fb3d6b9bcc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_0f32bfe2a3361715814bf750fca09b53.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_0f38ee85598cbfdde7fda8e80743e13d.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_1473f8d09ae8010e85045d0620d9c804.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_1de81644ed5ce53239519ca23874c642.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_240a0ad1232efb7a82da946f621a8762.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_24d1d5c9b2fb38fbfbaa72ca01a798f4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_25059f5d12807cecb09e2b47d6d19ff9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_25b8fb34c18eb81f8cf0463940add786.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_265ab1f939743d57397f1edd3d5f2082.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_27c164cada52c0c6f32f6e6fb0bb1810.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_28693cced9eb3d736c1a81f1b1a7a763.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_2d2fbdf567f48b36ca36fa04cfea32d5.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_31116cea13043d03e3d961b4ad5c3e63.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_388470a49547c79dce6af3b807aaa9d4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_39c9eb6e656dbee88aff4a8bce7f51ed.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_3b4776539e864f9b655253489c885f03.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_402b9606a030619f8c9fd75a4bfba546.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_41e0c28d860fb2000edc689fca850d04.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_42050ee3c557a31b9584b38bd0242784.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_42552a2aeabd8e6ff6d5923e47a7cde2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_444502c4de83e9166c99cacc47bc2f10.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_452947fec2a905cb8918b18a2ba2127b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_454866b7b5773a46ec5e85ca889f3d98.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_45fb04e4e0b95e06b80b839fd201e192.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_47bd67c6645104a6f62133bfc933652d.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_4a71c4dfa8066073a120f3787aa72ee7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_4bb42a54c64bff99d69242d93f9abbb2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_4c7afee7ff1dad3b1ddddfd5cc2a8e87.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_4c9051b69ae20ed85cee0aba12dd59e6.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_4cab1b1d945a4e4c0b8c4be7e36d25e2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_50da37bc0c36c0f6c0975d84fc4cbada.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_5595d13735440cd18d1c3da402243b43.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_583223ed9a8834c1141fcbde1c02082d.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_58b34c4d261bea3ef65fb385268b837e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_659f126f4df399e1c289ea5e14d7b4d8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_66101ffec9885ea86b68ea2dbb364150.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_6637a891257aa62418b80e4050919e8c.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_673d3570cf083567a25aa5b26cdbbe2d.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_6838727e06ec9ea4b7012ba1c84ec3e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_6a802e958b065e3eae43b477d9ed0779.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_6bdd8869687c2d390905a7f58da6a25d.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_6c7d4437162a8bb648a187aaf8ef27c1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_72405d6095401e9116fed3a9918bd855.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_75f6fc864eaafcf096b06220c99321f4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_76c73d704c707a9f68c0e1509e75d6c1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_7732ec934a8032a2e411d3b6d121851b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_7abc0be26cb2012084e93d9def527943.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_7ee871d201e649277ca240da3754fe5b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_85be7e3ddc339fc034bd3707354ee294.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_8b08804e2a44977233a5c750f580311a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_8c68a29181e6314a0b5a484f59327b2b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_8d92ba09b2d9c2bd8bce2c8267f2d9e5.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_8f1261c076e926eae49bab380a85eac2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_8fe0c1bfa514aa72a3592ceadef3c93b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_92ca03aff0869f7902b848a29af07f2d.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_9c44796ed60bbade5436894aed8faf9f.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_9f11e3aba824d5d49b27c30bb04fe8df.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_a095e6e57396131b7441dd7d9289f312.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_a271bf7b3a1dc02096273ccdc7b1d714.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_a7b3684aceb5d4e341e0685015034e0a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_ab6a4f15f7722cc2b4b9b0110bdb5ae6.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_aded849328fab92d068467889a2e9b0a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_aecff2385b9d82643eae87be57de3f42.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_aef3b41e269db980b200d004940ec589.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_b1836bf14715b178ea36b5f8072111aa.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_b189e35f041397dc060b25174f80059b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_b5b4312257a60ae942a0566735f67e72.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_b604996a155110d9dff453ffc051e993.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_b6b0a7dd1a093bd92ee39c82c6ee6675.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_b9f0af2a0cdff5cb0e37a81a84851bd2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_ba5c6f7d7dba95e59f3d24f07f9e7546.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_c4ef9ab2fab9c770ac2d99aa746451bd.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_c6af32f8ecb21c3302ad9a4c10bb9356.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_c7c0cf45acd705dde63341e5f9fb1b78.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_cb5bea2658b25b5f6f9b5fe09f2844d7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_ccd524dd464853c09babe78d2353d96e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_cde5952bf1cc85f11f854ebf7a08a8b9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_cf22381158b359fafb024b5c2067d316.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_d061542e193f0f4d730eea74fcdc208d.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_d33eebf69cd086b08f4a72b97dd9e2b7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_dc3f1e9d2dca62597ca55a239ade9d9e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_dd9dfcc97a876a0187c11b758b5e354c.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_ddcbe62e9ce359c5adf0a9f19bd753d0.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_de7f137d095e7a1274f13923756f7814.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_df1bfdfb217b692ba8a49299281b7e3d.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_e19d22168561d4ad26f3d19719bbf6e8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_e1b037b882d3deaab724375a0993eafc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_e245ca595ee4c32c6652bb00f2476eaf.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_e4604676163a921b89e450b2fb9b0d02.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_e6e2a23d063a51642deef9a102c21fc8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_e7b3abdafc84035ac0264be3deae506e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_e93d20358da164ef86c63b997e6aeb57.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_e9f268eefa6c63150782f64eed36889f.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_ea3a69f11a5e318a0de3f1b50b0875e2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_ec7d4a5e4bc22bcd570d2a8564e0531a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_ecb378edd7d8cfd0465596311c8cc090.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_f20745f8c42e14e179bb8745733e6b82.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_f3694f4aa014ebea6c0ae89ee8d26694.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_f464790a9486bc2fa24f80da59cb769a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_f4fcccad60e86249c196d0dcee52543f.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_f784dc53c57516ba5dfcb3a715189908.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_f8f3f0109be6e3973827baba8f4148ac.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_f9b0986674735d18316c2402a0fe2fc8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_0395658287e9f3ee9b7c636e2a414ab2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_0ec323ba1e4ff3c1dc39eae849985877.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_11f88bf2421aa78ddbef739e0907f259.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_12667fdb76e2d43a277eaa2527006d69.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_19da0c81cacfa39c116eab8e9cb7c36e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_1b8d635e0e4b14e51f66b39d02b9e5a2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_2086701c37416a5080fa8a4ac0a3cecc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_26b4851b6e3f3c7e4d1189c69bb59953.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_2787fd927684bd78ce44f4605f6a832c.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_2a5b82108a9bed8e3a7e49fcc3504c63.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_32b51af5e40cce8484064912851b26c5.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_333cfac5e2909a25900153a03ac70b7b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_379f3dd54588281a5e9c64bf231c9c67.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_40908d9409f3745f8587d2b3a6f945a5.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_41baa3fb5319685c583e8e096e148be8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_421f23958b6316517ee69e37b43d9eeb.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_4419735b3d56e2d9c1635d420764770e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_460352b1e9aa1d288710972da3a05589.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_4fd1da6d80b10b83544cdfb1f021f47e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_508f8c4a5c2345f1324ec854d64654d7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_51447d2a4fce08f6ea23307b66243c13.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_5cf4ef9907a6526594d53c5076e3af01.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_5df476030903b80932c2395db4e51d15.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_5ead7e7a2214c738951f9846eb8677b4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_60bbe37af7ef85e7683e02a8e186ddb8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_62b6e099728acb1f984b0d4331fbb3da.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_6a3bed6a36dab59b1fb2c2bf58540641.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_6c232b82b4e70c0f2979b54f7190b439.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_74735df4e7080ac9c5193f28efbf8afd.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_75ad802eec48139bdfe211721d57e713.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_779ee79ec6847e671f4ab29b742d8684.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_781fb56841941ce3a4e2fcd0654e2c5e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_7bc004550c0005ff177d4ff07c44b21e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_8198eec3395fb74b09a9d4e4adc57947.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_824b0ed7a2a7d223ac286d6abbce5ea0.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_88ae732301bf7ad590fb4e72a8ec7a50.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_88b2daf9da57af3ab03fea77577a2fe5.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_9324f314f8a21b6678748fab9abc4acb.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_9c642aaa890e951c54abde20090fb50a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_a01c9fa1bf1bf2dc25f777c17924841b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_ab4a6b07e843dd09016f430c52a18a73.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_ad2342919a782fd1c268638622ceb482.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_b4dfb6093c1fce1df2d499cdd504b99a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_b74b3a94af731dad3319f2ea753617a3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_bdc4af2207ed1fd4951fa2213c827c85.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_c2bbbf770fd3d102a315d56eefc1fe69.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_c7fc7886357ecc2a7b8009173c10aa03.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_d554943e958c579ff56a48dc36981ae3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_d76c7afa05ad885c1af039f26f6f9a70.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_e0ebba0ba667e1827cf3389122ddecd1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_ea78432d384ec0ba8bfd5644c4e5e7ee.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_f010f609d3f5e49c1410414b67a682f7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_f214b9ca495fa99ce9219906f885b457.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_f5e028e0b7ad1ceb593a30e76b7f86e9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_f7fd5d1f72da7ff59bcd1bb9d79c83ff.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/css/autoptimize_snippet_f8758352fe7da27394a4cd9596932fc9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_00131dc25fdb5114193b7d0cd09d969c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_0b71a7618a22ba80670f11f3a35f999e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_1009f7dd5af86dc2cd9deb319fc648c4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_1490a0eb0ad595b5d60e8f3b2d325890.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_15419843b88e54d1394f5f168b064794.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_16b8ab563738806c1c18d982061461ba.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_21b2ff2984e1c0449a6b1a1564103a58.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_264c6bfda3f79da0b4b7aaaeb9e7c295.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_2a8771eac8e27513fd524b04350ee2a6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_311466a5b01677c0da72e67185647682.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_312d628fb104a468e86cdfcedfcf796b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_33e6d2330e545529c58bf535c39170fa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_353589c40df21c7ad42b6d83afd6809a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_35eb4d4590a36eff9967ff80ef76a4f5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_3ac716fd6b4ddcfc7a2ceda1195fb106.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_3afa22dfcbcfea8e8bc318e41e1bc5fc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_3e285cc27c55ac9600d1fa068a211b26.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_44eab95de6833f3afb40f75a7998f374.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_5156611e34a8918c3bdb8e087a867474.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_5c1b858eb571d99a8f914b6bba3e0b69.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_5d1a745c9ce7a4bf359758941be0f1c5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_617c3b6be0bb7cb53b0d819b797c54e4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_66e8d8c8377ffdeb397516cef45c14db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_689a864c2561b3f59c08bef6384853b5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_6be70212d736bf8f5556b4cc93e6a84e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_6c7d0a3b0480d718dca8ba827df97893.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_6e1645f93088a75f50c9512936939eeb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_6f4ded2fe6caa3c0abe136f4983fa7ce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_7515b77f2974fcd32b09f342f7227e4c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_778bd590af2d5fbfed4d7e2b6b2c3405.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_77ea8e20f50a3aed82988f62228616f8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_7a4351ee4de399d2c18adffb50517a9d.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_83c689959b4103de21f95df89655a65d.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_844367959e1c3fdbf4811802eed4d9cd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_880fa7e03f3b56bdadb56d59ecb6f026.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_8d7a6db5e81e6d9120f13ddd3fdc9cc2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_8f6c454b8882080aa2d163602029c385.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_945a69a8ba7f84ff74f61b1a17b80244.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_9bd5d2b826f978b0169fb9e02f22b5c7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_9e2cd130bfdf1a37294e11972649621e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_a141bce879c692e021a400cce74d9b46.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_a6d70a558039d11a7d28d9c9f1b4f22b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_a9f84c9ea311d4d2b098ae22a31e759b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_ad617e58a5be1df349072bdefd5de125.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_ada8bc8ddddc52a16ed8d7b813ee85bf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_af3f500009cbc1c8cb1cab4a0a7a2301.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_b0a2f98729aa692909612168e49d6b0e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_b36b7d5eb3dfaee9505d40c66f33db3e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_b7d1544caddf4e3d971befbe66dd22b6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_ba58a7f89b2c67d78bca6b1db91b3274.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_be4cc17dd1a3fb1c6cb2047b9b405f27.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_bedfcf5b08566d157c5b1415cf20485c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_c00abe5c22809e68de95c88992b539fe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_c9250ed84278add1bbf98aa12b99afa1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_ce9b57282e30af420ded9714b07ebdf2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_d41d8cd98f00b204e9800998ecf8427e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_d7824ae5af222151a150bbd8349a7114.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_d7861e5bd3fc37e784d50e7892a82500.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_d81cecd1051d95b1f12f76dfaa177f23.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_db888e498c1ed8cbe319edc3b4aaa3b6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_dc22743d6bed1c0e31030aaf448a3b6b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_e57219b2da5ad234e9a28b58f399c290.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_e6cd6250426d9a5556198648013d83d2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_e731d1ac75b64d6d057cf614f593b6dc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_ed9d55127b0f1b08feb495c5759f819d.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_f133ea3694ae419e9ad79244c1578eba.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_f2a498d5f77ed27e743385a7df5ca0e3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_fb22f778dfa170207c3ef93eb705df4e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_fb9cc3bec80d43f91d4cae62fe8f3330.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_fbb1ba680f0416dccae304a4fa1c3765.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_03a689fb9866e611fea82824710af497.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_071a5c6eff3e01dfefa4fc5ec01c1bcb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_0c3bf4efed2524884f45cb86d9b7ad53.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_15aadd51888428e04f72dd4a630a5e4e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_20d106455be368c4c68e88465338d4bd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_210d0a9303143fb519d3774b149e3025.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_3026c333b41d1ba6d46a2f5cdb54a96d.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_35145135c400ea8bfff68f35dd85f411.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_357324c276b6523655de8f1295981682.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_3830b836ec106c2f1a26ca54d15bd545.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_402d9e937dc030cd00d86bb0721e1348.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_4139854e7cec2bc66110f4d4879bd129.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_45906931191a28c220684beaba6250d4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_4729e031eec890dc57efa6515831e0bd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_54c862c740fa66f9b06a846b84880913.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_56bc2726d829207bfa802f957aac0791.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_58dfc4c27932b15704f696cf57e0d14e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_5a03f97cc479b9f5d7efdaccec31bc17.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_7319af1cc644d0a3c659d37d274e210e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_783b4287c52a0ef891ded3be163eddec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_7bec5efd93c89f9007bc9e5f51d8ba5e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_7e99b696f60a4b2178b1a84414b05375.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_804baf921f34a354f22e06806f7f0f57.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_86d2f10d4834ea72414c2e6cbe26bb5a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_8a7dc9750fb8dc43f105a44f9ac49b0b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_8f3cfb0f41a43a83ca698cbc976ca560.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_9eace63c91ae3c69b79e2e8452bdb5d9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_9eecb7db59d16c80417c72d1e1f4fbf1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_a454b27edfb0e1467a83ef3cb1d9cdd2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_a45cae99e26730eb693b5acdf7bd4538.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_a969996dd4443678806fe35aa91ce04e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_ac5840cf0870ecc0833ec7f0b46abdac.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_ad8c6deca88196575d2a6fcc3c65feb6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_afd7f8a65d2fe53c75c2014db5488204.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_b3929a626b37024e0387fea4380ab97f.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_b4bb8e11daf72ce04e086f1d57906257.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_b5e4698de1fb33898e3b0006e33584db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_b77c4980cfb6f15b52929dca1a9f0171.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_bba7c46cfb8f04381f8c4499e737c4fb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_c05152e337a56ca489e3cf43f96558df.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_c7e875e2e1fcb6387bf54d4946f1a317.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_c8a8c7cd1f481abe4d395fafde018a7f.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_dd18f17f1a7428e60f04a49fb6c25f14.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_de026453e63f779cfb54e0689596111c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_e712fc92cd21f25b5cc55b3374fa4cb8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_e7c67515db070be6d9b173d3fa1da217.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_e9c3a6873d9b1fae401799905d5b0dac.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_f535f08012d13b7bc9ba3098bef61c2b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_fc99ccdccba66b879cb49dbdb9edbc35.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/autoptimize/js/autoptimize_snippet_fd19438b7eef2ab280aafd9aef97eef0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/blogs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/cache/meta/index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-config.php" afterPath="$PROJECT_DIR$/wp-config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/css/styles.css" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/js/scripts.js" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/js/scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/main/_jumbotron.scss" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/main/_jumbotron.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/wp-cache-config.php" afterPath="$PROJECT_DIR$/wp-content/wp-cache-config.php" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
     </list>
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +326,66 @@
     <favorites_list name="html" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="56" column="72" lean-forward="false" selection-start-line="56" selection-start-column="72" selection-end-line="56" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2380">
+              <caret line="151" column="98" lean-forward="false" selection-start-line="151" selection-start-column="98" selection-end-line="151" selection-end-column="98" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_jumbotron.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/main/_jumbotron.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="178" column="13" lean-forward="true" selection-start-line="177" selection-start-column="14" selection-end-line="178" selection-end-column="13" />
+              <folding>
+                <element signature="e#782#1378#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/js/scripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="59" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1054">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <marker date="1550053074948" expanded="true" signature="1562:1987" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,6 +413,8 @@
       <find>smarthoop1</find>
       <find>position: fixed;</find>
       <find>hwr</find>
+      <find>jquery</find>
+      <find>punch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -59,6 +423,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/career-events-view.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/events-view.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/includes/widgets/no-suitable-roles-widget.php" />
@@ -110,6 +475,59 @@
         <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/shortcode-templates/how-to-start-block.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/industries.php" />
         <option value="$PROJECT_DIR$/shivka/wp-config.php" />
+=======
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/services.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/services-view.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/scss/pages/_faq.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/how-to-order.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/faq.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/contacts.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/blog-view.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/about.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/stock.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/scss/pages/_how-to-order.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/scss/pages/services/_services.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/services-block.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/front-page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/scss/pages/main/_services.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/scss/pages/_services.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/scss/pages/main/_make-order.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/scss/ui-kit/_variables.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/scss/styles.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/templates/blog.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/js/scripts.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/css/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/js/bootstrap.min.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/scss/pages/_contacts.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/services-view.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_contacts.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-contacts.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/styles.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/index-header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/css/hwr-theme.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/404.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/ui-kit/_general.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-shipping.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_shipping.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/partials/_header.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/works.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_services.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_stock.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/stock-view.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/ui-kit/_buttons.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/works-view.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/js/slick.min.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/includes/theme-init.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/header.php" />
+        <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/js/scripts.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/main/_jumbotron.scss" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
       </list>
     </option>
   </component>
@@ -119,10 +537,17 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
   <component name="PhpServers">
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="24" />
@@ -138,6 +563,12 @@
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="1451" />
+    <option name="height" value="860" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -154,6 +585,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files" />
@@ -168,14 +600,159 @@
           </PATH>
         </subPane>
       </pane>
+=======
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nt-conversi" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nt-conversi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nt-conversi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nt-conversi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libs" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nt-conversi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jquery" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nt-conversi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nt-conversi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nt-conversi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nt-conversi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nt-conversi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ui-kit" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nt-conversi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shivka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shivka" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nt-conversi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
+<<<<<<< HEAD
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wp" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -207,6 +784,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="11e8d404-6ee5-4b0e-bcec-ad207ec9de1c" name="Default" comment="" />
       <created>1536061567245</created>
       <option name="number" value="Default" />
@@ -325,6 +903,44 @@
       <workItem from="1549994691456" duration="1319000" />
       <workItem from="1549996045067" duration="285000" />
       <workItem from="1550043816641" duration="14000" />
+=======
+      <changelist id="b197e598-a5e9-4ce4-a9e0-d9f08d60267e" name="Default" comment="" />
+      <created>1546027401785</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1546027401785</updated>
+      <workItem from="1546027410649" duration="10044000" />
+      <workItem from="1546755878192" duration="286000" />
+      <workItem from="1546756234343" duration="598000" />
+      <workItem from="1546902318989" duration="2132000" />
+      <workItem from="1546907839696" duration="1798000" />
+      <workItem from="1546909696990" duration="1773000" />
+      <workItem from="1546911516327" duration="1453000" />
+      <workItem from="1546960784244" duration="1382000" />
+      <workItem from="1546962594244" duration="1773000" />
+      <workItem from="1546964444954" duration="1772000" />
+      <workItem from="1546975515877" duration="1447000" />
+      <workItem from="1547022533191" duration="429000" />
+      <workItem from="1548184304142" duration="1602000" />
+      <workItem from="1548186889060" duration="1776000" />
+      <workItem from="1548188778450" duration="799000" />
+      <workItem from="1548190979715" duration="1776000" />
+      <workItem from="1548192793709" duration="1774000" />
+      <workItem from="1548194612818" duration="397000" />
+      <workItem from="1548595683971" duration="1716000" />
+      <workItem from="1548597528081" duration="1746000" />
+      <workItem from="1548599332857" duration="1760000" />
+      <workItem from="1548601160713" duration="169000" />
+      <workItem from="1549893337089" duration="1687000" />
+      <workItem from="1549895068536" duration="252000" />
+      <workItem from="1549895440006" duration="1426000" />
+      <workItem from="1549896903052" duration="104000" />
+      <workItem from="1549996396922" duration="1243000" />
+      <workItem from="1550048033629" duration="1780000" />
+      <workItem from="1550050594562" duration="1774000" />
+      <workItem from="1550052433391" duration="2006000" />
+      <workItem from="1550055656475" duration="1211000" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
     </task>
     <task id="LOCAL-00001" summary="Success cases include new blocks">
       <created>1537431206957</created>
@@ -333,6 +949,7 @@
       <option name="project" value="LOCAL" />
       <updated>1537431206957</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
@@ -362,10 +979,64 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21556123" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+    <task id="LOCAL-00005" summary="Works view start">
+      <created>1549896962946</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1549896962946</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Slider problems">
+      <created>1550048357170</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1550048357171</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Mobile menu start">
+      <created>1550052044623</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1550052044623</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="51515000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36568123" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -392,25 +1063,15 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <MESSAGE value="Success cases include new blocks" />
     <option name="LAST_COMMIT_MESSAGE" value="Success cases include new blocks" />
   </component>
@@ -433,12 +1094,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+=======
+    <MESSAGE value="FAQ" />
+    <MESSAGE value="Services page fix" />
+    <MESSAGE value="Contacts page" />
+    <MESSAGE value="Delivery page" />
+    <MESSAGE value="Works view start" />
+    <MESSAGE value="Slider problems" />
+    <MESSAGE value="Mobile menu start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mobile menu start" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/front-page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
+<<<<<<< HEAD
           <caret line="103" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
         </state>
       </provider>
@@ -447,62 +1130,81 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+=======
+          <caret line="103" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
+<<<<<<< HEAD
           <caret line="55" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="13" />
+=======
+          <caret line="55" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="13" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
+<<<<<<< HEAD
           <caret line="55" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+=======
+          <caret line="55" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
+          <caret line="3" column="71" lean-forward="false" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3553">
-          <caret line="217" column="9" selection-start-line="217" selection-start-column="9" selection-end-line="217" selection-end-column="9" />
+          <caret line="217" column="9" lean-forward="false" selection-start-line="217" selection-start-column="9" selection-end-line="217" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
-          <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+          <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
+          <caret line="4" column="77" lean-forward="false" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/libs/bootstrap/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
+<<<<<<< HEAD
           <caret line="6" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="41" />
+=======
+          <caret line="6" column="41" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="41" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/js/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
+<<<<<<< HEAD
           <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+=======
+          <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
@@ -510,35 +1212,51 @@
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/assets/libs/bootstrap/bootstrap-grid.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
+<<<<<<< HEAD
           <caret line="6" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="50" />
+=======
+          <caret line="6" column="42" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="50" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/content-none.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
+<<<<<<< HEAD
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+=======
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/content-page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
+<<<<<<< HEAD
           <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+=======
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/content-search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
+<<<<<<< HEAD
           <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+=======
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/general-template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -547,21 +1265,14 @@
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_contacts.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/main/_jumbotron.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -575,7 +1286,7 @@
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/css/hwr-theme.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
-          <caret line="1895" column="20" selection-start-line="1895" selection-start-column="4" selection-end-line="1895" selection-end-column="20" />
+          <caret line="1895" column="20" lean-forward="false" selection-start-line="1895" selection-start-column="4" selection-end-line="1895" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -596,55 +1307,50 @@
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/404.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/includes/theme-init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="323" column="10" selection-start-line="323" selection-start-column="7" selection-end-line="323" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="40" column="77" selection-start-line="40" selection-start-column="77" selection-end-line="40" selection-end-column="77" />
+          <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-shipping.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
+<<<<<<< HEAD
           <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+=======
+          <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/ui-kit/_general.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3604">
-          <caret line="212" column="16" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="16" />
+          <caret line="212" column="16" lean-forward="false" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/how-to-order.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
+<<<<<<< HEAD
           <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+=======
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_services.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/services.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
+<<<<<<< HEAD
           <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
         </state>
       </provider>
@@ -653,57 +1359,174 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+=======
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_shipping.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+        <state relative-caret-position="0">
+          <caret line="43" column="15" lean-forward="false" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/partials/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
-          <caret line="114" column="1" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+          <caret line="114" column="1" lean-forward="false" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/page-contacts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/services-view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
-          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+          <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/stock.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
+<<<<<<< HEAD
           <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+=======
+          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/_stock.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
+        <state relative-caret-position="1530">
+          <caret line="90" column="24" lean-forward="false" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/stock-view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
-          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+        <state relative-caret-position="969">
+          <caret line="54" column="47" lean-forward="false" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+          <caret line="57" column="47" lean-forward="false" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/ui-kit/_buttons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/works.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="38" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/works-category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/works-view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/includes/theme-init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="326" column="65" lean-forward="true" selection-start-line="326" selection-start-column="65" selection-end-line="326" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/js/slick.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="17" column="11469" lean-forward="false" selection-start-line="17" selection-start-column="11469" selection-end-line="17" selection-end-column="11469" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="56" column="72" lean-forward="false" selection-start-line="56" selection-start-column="72" selection-end-line="56" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        <state relative-caret-position="2380">
+          <caret line="151" column="98" lean-forward="false" selection-start-line="151" selection-start-column="98" selection-end-line="151" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/templates/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <marker date="1550053074948" expanded="true" signature="1562:1987" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="59" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nt-conversi/assets/scss/pages/main/_jumbotron.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="178" column="13" lean-forward="true" selection-start-line="177" selection-start-column="14" selection-end-line="178" selection-end-column="13" />
+          <folding>
+            <element signature="e#782#1378#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
