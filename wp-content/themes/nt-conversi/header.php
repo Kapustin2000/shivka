@@ -54,9 +54,21 @@
                     <button class="btn btn-outline" type="button">
                         написать нам
                     </button>
-                    <button class="navbar-toggler" type="button">
+                    <button id="navbar-toggler" class="navbar-toggler" type="button">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <div id="menu-toggle" class="menu-toggle">
+<!--                        <nav>-->
+<!--                            <a href="#">услуги</a>-->
+<!--                            <a href="#">наши работы</a>-->
+<!--                            <a href="#">магазин</a>-->
+<!--                            <a href="#">контакты</a>-->
+<!--                            <a href="#">о нас</a>-->
+<!--                        </nav>-->
+<!--                        <button class="btn btn-outline" type="button">-->
+<!--                            написать нам-->
+<!--                        </button>-->
+                    </div>
                 </nav>
             </div>
         </div>

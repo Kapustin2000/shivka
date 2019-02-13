@@ -347,10 +347,10 @@ add_action('admin_footer', function() {
 
 function smarthoop_scripts() {
     //sticky-kit plugin
-    wp_enqueue_script( 'sticky', 					get_template_directory_uri() . '/js/sticky-kit/sticky-kit.min.js', 				array('jquery'), '1.0', true);
+//    wp_enqueue_script( 'sticky', 					get_template_directory_uri() . '/js/sticky-kit/sticky-kit.min.js', 				array('jquery'), '1.0', true);
     //bootstrap-multiselect plugin
-    wp_enqueue_style( 'select2',						get_template_directory_uri() . '/js/bootstrap-multiselect/bootstrap-multiselect.css', 			false, '1.0');
-    wp_enqueue_script( 'select2js', 					get_template_directory_uri() . '/js/bootstrap-multiselect/bootstrap-multiselect.js', 				array('jquery'), '1.0', true);
+//    wp_enqueue_style( 'select2',						get_template_directory_uri() . '/js/bootstrap-multiselect/bootstrap-multiselect.css', 			false, '1.0');
+//    wp_enqueue_script( 'select2js', 					get_template_directory_uri() . '/js/bootstrap-multiselect/bootstrap-multiselect.js', 				array('jquery'), '1.0', true);
     // hwr fonts
 //    wp_enqueue_style( 'hwr-fonts',						get_template_directory_uri() . '/css/fonts.css', 			false, '1.0');
     // hwr theme
