@@ -50,17 +50,18 @@ $stock = pods('stock')->find();
                             <span class="underline">узнать больше</span>
                             <i class="icon icon-arrow"></i>
                         </div>
+
                         <div id="main-slider" class="main-slider">
                             <div class="decorative lavander"></div>
                             <div class="item">
                                 <div class="img" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png);"></div>
                             </div>
-<!--                            <div class="item">-->
-<!--                                <img src="--><?php //bloginfo('template_url'); ?><!--/assets/img/Слой_1@1x.png" alt="slide">-->
-<!--                            </div>-->
-<!--                            <div class="item">-->
-<!--                                <img src="--><?php //bloginfo('template_url'); ?><!--/assets/img/Слой_1@1x.png" alt="slide">-->
-<!--                            </div>-->
+                            <div class="item">
+                                <div class="img" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png);"></div>
+                            </div>
+                            <div class="item">
+                                <div class="img" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png);"></div>
+                            </div>
                         </div>
 
 
