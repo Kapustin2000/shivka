@@ -52,7 +52,6 @@ $stock = pods('stock')->find();
                         </div>
 
                         <div id="main-slider" class="main-slider">
-                            <div class="decorative lavander"></div>
                             <div class="item">
                                 <div class="img" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png);"></div>
                             </div>
@@ -64,9 +63,7 @@ $stock = pods('stock')->find();
                             </div>
                         </div>
 
-
 <!--                          <div class="video-carousel">-->
-<!--                              <div class="decorative lavander"></div>-->
 <!--                              <div class="video-item"></div>-->
 <!--                              <div class="video-progress"></div>-->
 <!--                          </div>-->

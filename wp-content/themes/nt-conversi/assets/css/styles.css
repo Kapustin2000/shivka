@@ -549,7 +549,7 @@ footer {
     margin: 0 0 10rem; }
   .jumbotron h1, .jumbotron .underline {
     position: relative;
-    z-index: 1; }
+    z-index: 2; }
   .jumbotron .see-more {
     cursor: pointer;
     display: inline-block; }
@@ -557,11 +557,6 @@ footer {
       margin: 10.3rem auto 0; }
     .jumbotron .see-more:hover .underline::after, .jumbotron .see-more:focus .underline::after, .jumbotron .see-more:active .underline::after {
       width: 100%; }
-  .jumbotron .decorative {
-    top: -5rem;
-    left: -5rem;
-    width: 36.5vw;
-    height: 36.5vw; }
   .jumbotron .main-slider,
   .jumbotron .video-carousel {
     position: absolute;
@@ -569,9 +564,58 @@ footer {
     right: 1.5rem;
     width: 68vw;
     height: 36.5vw; }
+    .jumbotron .main-slider::after,
+    .jumbotron .video-carousel::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: -5rem;
+      left: -5rem;
+      width: 36.5vw;
+      height: 36.5vw;
+      background-color: #cdcfe9;
+      z-index: -1; }
+  .jumbotron .main-slider .slick-arrow {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #cdcfe9;
+    z-index: 1;
+    border-radius: 0;
+    padding: 0;
+    bottom: 0; }
+    .jumbotron .main-slider .slick-arrow::before, .jumbotron .main-slider .slick-arrow::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      width: 3px;
+      height: 20px;
+      background-color: #fff; }
+    .jumbotron .main-slider .slick-arrow::before {
+      top: calc(50% - 6px);
+      -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+      transform: translate(-50%, -50%) rotate(45deg); }
+    .jumbotron .main-slider .slick-arrow::after {
+      top: calc(50% + 6px);
+      -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+      transform: translate(-50%, -50%) rotate(-45deg); }
+  .jumbotron .main-slider .slick-prev {
+    right: 100px; }
+  .jumbotron .main-slider .slick-next {
+    right: 0; }
+    .jumbotron .main-slider .slick-next::before {
+      -webkit-transform: translate(-50%, -50%) rotate(135deg);
+      -ms-transform: translate(-50%, -50%) rotate(135deg);
+      transform: translate(-50%, -50%) rotate(135deg); }
+    .jumbotron .main-slider .slick-next::after {
+      -webkit-transform: translate(-50%, -50%) rotate(-135deg);
+      -ms-transform: translate(-50%, -50%) rotate(-135deg);
+      transform: translate(-50%, -50%) rotate(-135deg); }
   .jumbotron .main-slider .item {
     width: 100%;
-    height: 100%; }
+    height: 36.5vw; }
   .jumbotron .main-slider .img {
     width: 100%;
     height: 100%;
@@ -584,6 +628,9 @@ footer {
     background-position: center center;
     width: 100%;
     height: 100%; }
+  .jumbotron .see-more {
+    position: relative;
+    z-index: 2; }
 
 @media (max-width: 1440px) {
   .jumbotron h1 {
@@ -599,7 +646,7 @@ footer {
     margin-top: 120px; }
     .jumbotron .inner {
       text-align: center;
-      padding-top: 30rem; }
+      padding-top: 36rem; }
     .jumbotron h1 {
       margin: 0 0 3rem; }
     .jumbotron .see-more {
@@ -611,7 +658,15 @@ footer {
       top: 0;
       left: 15px;
       right: auto;
-      width: calc(100% - 30px); } }
+      width: calc(100% - 30px);
+      height: 350px; }
+      .jumbotron .main-slider::after,
+      .jumbotron .video-carousel::after {
+        width: 350px;
+        height: 350px; }
+      .jumbotron .main-slider .item,
+      .jumbotron .video-carousel .item {
+        height: 350px; } }
 
 @media (max-width: 576px) {
   .jumbotron h1 {
@@ -619,9 +674,13 @@ footer {
     line-height: 3.9rem; }
   .jumbotron .inner {
     padding-top: 33rem; }
-  .jumbotron .main-slider,
-  .jumbotron .video-carousel {
-    height: 35rem; }
+  .jumbotron .main-slider .slick-arrow {
+    width: 60px;
+    height: 60px;
+    bottom: auto;
+    top: 0; }
+  .jumbotron .main-slider .slick-prev {
+    right: 60px; }
   .jumbotron .video-carousel .video-item {
     width: calc(100% + 30px);
     margin-left: -15px; } }

@@ -22,6 +22,9 @@ $(document).ready(function() {
     });
 
     //main page slider
-    $('#main-slider').slick();
+    $('#main-slider').slick({
+        prevArrow: '<button type="button" class="slick-prev"> <i class="icon icon-prev"></i> </button>',
+        nextArrow: '<button type="button" class="slick-next"> <i class="icon icon-next"></i> </button>'
+    });
 
 });
