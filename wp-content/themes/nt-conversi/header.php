@@ -54,20 +54,20 @@
                     <button class="btn btn-outline" type="button">
                         написать нам
                     </button>
-                    <button id="navbar-toggler" class="navbar-toggler" type="button">
+                    <div id="navbar-toggler" class="navbar-toggler">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </div>
                     <div id="menu-toggle" class="menu-toggle">
-<!--                        <nav>-->
-<!--                            <a href="#">услуги</a>-->
-<!--                            <a href="#">наши работы</a>-->
-<!--                            <a href="#">магазин</a>-->
-<!--                            <a href="#">контакты</a>-->
-<!--                            <a href="#">о нас</a>-->
-<!--                        </nav>-->
-<!--                        <button class="btn btn-outline" type="button">-->
-<!--                            написать нам-->
-<!--                        </button>-->
+                        <nav>
+                            <a href="#">услуги</a>
+                            <a href="#">наши работы</a>
+                            <a href="#">магазин</a>
+                            <a href="#">контакты</a>
+                            <a href="#">о нас</a>
+                        </nav>
+                        <button class="btn btn-outline" type="button">
+                            написать нам
+                        </button>
                     </div>
                 </nav>
             </div>

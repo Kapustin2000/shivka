@@ -360,10 +360,24 @@ header {
       header .navbar-brand img {
         width: 27rem; }
     header .navbar-toggler {
+      cursor: pointer;
       position: relative;
       width: 3.5rem;
       height: 2.5rem;
       padding: 0; }
+      header .navbar-toggler.active .navbar-toggler-icon {
+        background-color: transparent; }
+        header .navbar-toggler.active .navbar-toggler-icon::before {
+          -webkit-transform: rotate(315deg);
+          -ms-transform: rotate(315deg);
+          transform: rotate(315deg);
+          top: 0; }
+        header .navbar-toggler.active .navbar-toggler-icon::after {
+          -webkit-transform: rotate(-315deg);
+          -ms-transform: rotate(-315deg);
+          transform: rotate(-315deg);
+          top: 0;
+          bottom: auto; }
     header .navbar-toggler-icon {
       position: absolute;
       top: 50%;
@@ -381,7 +395,10 @@ header {
         display: block;
         width: inherit;
         height: inherit;
-        background-color: inherit; }
+        background-color: #3b2f5c;
+        -webkit-transition: .5s ease-in;
+        -o-transition: .5s ease-in;
+        transition: .5s ease-in; }
       header .navbar-toggler-icon::before {
         top: -1rem; }
       header .navbar-toggler-icon::after {

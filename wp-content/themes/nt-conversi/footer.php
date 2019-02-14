@@ -19,50 +19,51 @@
             <div class="col-12">
                 <div class="decorative yellow"></div>
             </div>
-            <div class="form-wrap col-md-8 col-12">
-                <h2>Хотите узнать стоимость услуги или сделать заказ?</h2>
-                <p>Свяжитесь с нами удобным для вас способом:</p>
-                <div class="tabs-wrap yellow">
-                    <button type="button" class="tab active">
-                        <span>Написать</span>
-                    </button>
-                    <button type="button" class="tab">
-                        <span>Заказать звонок</span>
-                    </button>
-                </div>
-                <form action="#" class="order-form active">
-                    <div class="row">
-                        <div class="col-lg-6 col-xs-12">
-                            <input type="text" placeholder="Имя*" required>
-                            <input type="email" placeholder="E-mail*" required>
-                            <input type="number" placeholder="Телефон">
-                            <!-- <select name="" id="">
-                              <option value="0" selected class="hidden">Вид услуги</option>
-                            </select> -->
-                        </div>
-                        <div class="col-lg-6 col-xs-12">
+            <div class="col-lg-8 col-12">
+                <div class="form-wrap">
+                    <h2>Хотите узнать стоимость услуги или сделать заказ?</h2>
+                    <p>Свяжитесь с нами удобным для вас способом:</p>
+                    <div class="tabs-wrap yellow">
+                        <button type="button" class="tab active">
+                            <span>Написать</span>
+                        </button>
+                        <button type="button" class="tab">
+                            <span>Заказать звонок</span>
+                        </button>
+                    </div>
+                    <form action="#" class="order-form active">
+                        <div class="row">
+                            <div class="col-lg-6 col-xs-12">
+                                <input type="text" placeholder="Имя*" required>
+                                <input type="email" placeholder="E-mail*" required>
+                                <input type="number" placeholder="Телефон">
+                                <!-- <select name="" id="">
+                                  <option value="0" selected class="hidden">Вид услуги</option>
+                                </select> -->
+                            </div>
+                            <div class="col-lg-6 col-xs-12">
                       <textarea rows="5"
                                 placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                            <!-- <input type="file"> -->
-                            <button type="submit" class="btn btn-primary">Отправить</button>
+                                <!-- <input type="file"> -->
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </div>
                         </div>
-                    </div>
-                </form>
-                <form action="#" class="call-form">
-                    <div class="row">
-                        <div class="col-lg-6 col-xs-12">
-                            <input type="text" placeholder="Имя*" required>
-                            <input type="number" placeholder="Телефон">
-                        </div>
-                        <div class="col-lg-6 col-xs-12">
+                    </form>
+                    <form action="#" class="call-form">
+                        <div class="row">
+                            <div class="col-lg-6 col-xs-12">
+                                <input type="text" placeholder="Имя*" required>
+                                <input type="number" placeholder="Телефон">
+                            </div>
+                            <div class="col-lg-6 col-xs-12">
                             <textarea rows="5"
                                       placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                            <button type="submit" class="btn btn-primary">Отправить</button>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-
         </div>
     </div>
 </section>
