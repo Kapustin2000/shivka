@@ -21,10 +21,25 @@ header {
       }
     }
     &-toggler {
+      cursor: pointer;
       position: relative;
       width: 3.5rem;
       height: 2.5rem;
       padding: 0;
+      &.active {
+        .navbar-toggler-icon {
+          background-color: transparent;
+          &::before {
+            transform: rotate(315deg);
+            top: 0;
+          }
+          &::after {
+            transform: rotate(-315deg);
+            top: 0;
+            bottom: auto;
+          }
+        }
+      }
     }
     &-toggler-icon {
       position: absolute;
@@ -42,7 +57,8 @@ header {
         display: block;
         width: inherit;
         height: inherit;
-        background-color: inherit;
+        background-color: $violet;
+        transition: .5s ease-in;
       }
       &::before {
         top: -1rem;

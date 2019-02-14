@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     //mobile menu
     $('#navbar-toggler').on('click', function() {
-        $(this).addClass('active');
+        $(this).toggleClass('active');
         // $('#menu-toggle').toggleClass('active');
     });
 
