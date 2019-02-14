@@ -72,17 +72,17 @@ if(!empty($data->total_found())) {
                     <div class="decorative lavander"></div>
                     <?php if($data->field('gallery')){ ?>
                     <div class="row">
-                        <?php print_r($data->field('gallery'))?>
-                        <?php foreach($data->field('gallery') as $item){} ?>
+                        <?php foreach($data->field('gallery') as $related) {$related_gallery = pods('gallery')->find(array('limit' => 1, 'where' => 't.id = '.$related['ID'])); ?>
                          <div class="col-lg-4 col-12">
-                             <a href="<?=get_permalink($data->display('id'))?>" class="service-item">
-                                 <div class="service-img-wrap">-->
-                                     <div class="service-img" style="background-image: url(<?=$data->display('preview')?>);"></div>
+                             <a href="<?=get_permalink($related_gallery->display('id'))?>" class="service-item">
+                                 <div class="service-img-wrap">
+                                     <div class="service-img" style="background-image: url(<?=$related_gallery->display('preview')?>);"></div>
                                </div>
-                               <div class="service-title">*/<?=$data->display('post_title')?></div>
+                               <div class="service-title"><?=$related_gallery->display('post_title')?></div>
                                  <button type="button" class="btn btn-primary">смотреть</button>
                              </a>
                          </div>
+                        <?php } ?>
                     </div>
                     <?php } ?>
                     <div class="see-more">
