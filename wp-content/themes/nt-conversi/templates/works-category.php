@@ -5,10 +5,27 @@ Template Name: Works Category
 
 ?>
 <?php
-$params = array(
-    'orderby'=>"order_weight.meta_value +0 DESC,id DESC"
+$id = shivka_escapeParam(trim($_GET['id'], '/'));
+$params = array('limit' => 1,
+    'where'=>"slug = '".$id."'"
 );
-$data = pods('works')->find($params);
+$data = pods('work_categories')->find($params);
+
+$found = false;
+if(!empty($data->total_found())) {
+    while ($data->fetch()) {
+        $found = true;
+        break;
+
+    }
+}
+//$params = array(
+//    'orderby'=>"order_weight.meta_value +0 DESC,id DESC",
+//    'where'=> 'service_categories.slug ="'.$id.'"'
+//);
+//$services = pods('single_services')->find($params);
+
+
 
 ?>
 <?php get_header(); ?>
@@ -22,21 +39,20 @@ $data = pods('works')->find($params);
                         <div class="row">
                             <div class="col-xl-6 col-12">
                                 <h1>
-                                    <span>&nbsp;Этническая вышивка&nbsp;</span>
+                                    <span><?=$data->display('title')?></span>
                                 </h1>
                                 <div class="text-wrap">
                                     <p>
-                                        Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.
-                                        Мы также вышиваем шевроны и нашивки, логотипы и эмблемы компаний, создадим вышивку на одежде и крое, домашнем текстиле и полотенцах, коже и замше.
+                                        <?=$data->display('description')?>
                                     </p>
                                     <p>
-                                        Современное промышленное японское (Toyota) и немецкое Современное промышленное японское (Toyota) и немецкоеСовременное промышленное японское (Toyota) и немецкое Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.
+                                        <?=$data->display('full_description')?>
                                     </p>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-12">
                                 <div class="service-img">
-                                    <img src="" alt="Ethnic">
+                                    <img src="<?=$data->display('preview')?>" alt="<?=$data->display('title')?>">
                                 </div>
                             </div>
                         </div>
@@ -54,8 +70,10 @@ $data = pods('works')->find($params);
                     </h1>
                     <div class="decorative yellow"></div>
                     <div class="decorative lavander"></div>
+                    <?php if($data->field('gallery')){ ?>
                     <div class="row">
-                      <?php  while($data->fetch()){?>
+                        <?php print_r($data->field('gallery'))?>
+                        <?php foreach($data->field('gallery') as $item){} ?>
                          <div class="col-lg-4 col-12">
                              <a href="<?=get_permalink($data->display('id'))?>" class="service-item">
                                  <div class="service-img-wrap">-->
@@ -65,8 +83,8 @@ $data = pods('works')->find($params);
                                  <button type="button" class="btn btn-primary">смотреть</button>
                              </a>
                          </div>
-                     <?php } ?>
                     </div>
+                    <?php } ?>
                     <div class="see-more">
 <!--                        TODO: Change link-->
                         <a href="/" class="underline">смотреть больше</a>

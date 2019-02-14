@@ -18,11 +18,7 @@ if(!empty($data->total_found())) {
     }
 }
 
-$params = array(
-    'orderby'=>"order_weight.meta_value DESC,id DESC",
-    'limit'=> 4
-);
-$gallery = pods('gallery')->find();
+
 
 
 ?>
