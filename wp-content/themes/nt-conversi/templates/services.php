@@ -23,7 +23,6 @@ $data = pods('services')->find();
             <div class="row">
                 <div class="col-12">
                     <h1>
-                        <?php  print_r(get_query_var('paged'));?>
                         <span>&nbsp;Наши услуги&nbsp;</span>
                     </h1>
                     <div class="decorative yellow"></div>
@@ -31,7 +30,7 @@ $data = pods('services')->find();
                     <div class="row">
                         <?php  while($data->fetch()){?>
                             <div class="col-lg-4 col-12">
-                                <a href="<?=get_permalink($data->display('id'))?>" class="service-item">
+                                <a href="/services/category/?id=<?=$data->field('service_category')['slug']?>" class="service-item">
                                     <div class="service-img-wrap">
                                         <div class="service-img" style=" background-image: url( <?=$data->display('preview')?>);"></div>
                                     </div>

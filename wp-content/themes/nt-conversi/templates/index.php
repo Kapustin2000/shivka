@@ -7,6 +7,9 @@ Template Name: Home
 
 
 <?php
+$settings = pods('home_ui')->find();
+
+
 $params = array(
     'orderby'=>"order_weight.meta_value DESC,id DESC",
     'limit' => 1
@@ -50,7 +53,7 @@ $stock = pods('stock')->find();
                             <span class="underline">узнать больше</span>
                             <i class="icon icon-arrow"></i>
                         </div>
-
+                        <?php if($settings->field('main_screen')) { ?>
                         <div id="main-slider" class="main-slider">
                             <div class="item">
                                 <div class="img" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png);"></div>
@@ -62,11 +65,21 @@ $stock = pods('stock')->find();
                                 <div class="img" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png);"></div>
                             </div>
                         </div>
+<<<<<<< HEAD
+                        <?php }else{ ?>
+                                                      <div class="video-carousel">
+                                                          <div class="decorative lavander"></div>
+                                                          <div class="video-item"></div>
+                                                          <div class="video-progress"></div>
+                                                      </div>
+                        <?php } ?>
+=======
 
 <!--                          <div class="video-carousel">-->
 <!--                              <div class="video-item"></div>-->
 <!--                              <div class="video-progress"></div>-->
 <!--                          </div>-->
+>>>>>>> 7d3e6beda2c17b44469ea6b0634da562b4aabdbd
                       </div>
                 </div>
             </div>
@@ -110,7 +123,7 @@ $stock = pods('stock')->find();
                     <div class="row">
                         <?php while($services->fetch()){ ?>
                             <div class="col-lg-4 col-12">
-                                <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
+                                <a href="/services/category/?id=<?=$data->field('service_category')['slug']?>" class="service-item">
                                     <div class="service-img-wrap">
                                         <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
                                     </div>

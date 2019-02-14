@@ -6,7 +6,7 @@ $id = shivka_escapeParam(trim($_GET['id'], '/'));
 $params = array('limit' => 1,
     'where'=>"post_name = '".$id."'"
 );
-$data = pods('services')->find($params);
+$data = pods('single_services')->find($params);
 
 $found = false;
 if(!empty($data->total_found())) {
@@ -30,7 +30,7 @@ $gallery = pods('gallery')->find();
 <?php get_header(); ?>
 
 <?php if($found){ ?>
-
+<?php print_r($data->field('gallery')) ?>
     <div class="smarthoop-wrap smarthoop-single-service">
         <div class="single-service-description">
             <div class="container">
@@ -75,9 +75,11 @@ $gallery = pods('gallery')->find();
                         <div class="row">
                             <div class="col-12">
                                 <div class="gallery-wrap">
-                                    <?php while($gallery->fetch()){?>
-                                        <div style="background-image: url(<?=$gallery->display('image')?>);" class="img-wrap"></div>
-                                    <?php } ?>
+                                    <?php $related_gallery = pods('gallery')->find(array('limit' => 1, 'where' => 't.id = '.$data->field('gallery')['ID'])); ?>
+                                    <?php while($related_gallery->fetch()){?>
+                                        <?php foreach ($related_gallery->field('images') as $item) { ?>
+                                        <div style="background-image: url(<?=$item['guid']?>);" class="img-wrap"></div>
+                                    <?php } } ?>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +98,7 @@ $gallery = pods('gallery')->find();
                         <h2>описание услуги</h2>
                         <div class="decorative yellow"></div>
                         <div class="row">
-                            <?=$data->display('full_description')?>
+                            <p><?=$data->display('full_description')?></p>
                         </div>
                     </div>
                 </div>
