@@ -19,12 +19,14 @@ if(!empty($data->total_found())) {
 
     }
 }
-//$params = array(
-//    'orderby'=>"order_weight.meta_value +0 DESC,id DESC",
-//    'where'=> 'service_categories.slug ="'.$id.'"'
-//);
-//$services = pods('single_services')->find($params);
 
+
+$params = array(
+    'orderby'=>"order_weight.meta_value +0 DESC,t.term_id DESC",
+    'where'=> ' t.term_id !='.$data->display('id').''
+);
+$categories = pods('work_categories')->find($params);
+$data->reset();
 
 
 ?>
@@ -72,13 +74,13 @@ if(!empty($data->total_found())) {
                     <div class="decorative lavander"></div>
                     <?php if($data->field('gallery')){ ?>
                     <div class="row">
-                        <?php foreach($data->field('gallery') as $related) {$related_gallery = pods('gallery')->find(array('limit' => 1, 'where' => 't.id = '.$related['ID'])); ?>
+                         <?php while($categories->fetch()){ ?>
                          <div class="col-lg-4 col-12">
-                             <a href="<?=get_permalink($related_gallery->display('id'))?>" class="service-item">
+                             <a href="/works/category/?id=<?=$categories->display('slug')?>" class="service-item">
                                  <div class="service-img-wrap">
-                                     <div class="service-img" style="background-image: url(<?=$related_gallery->display('preview')?>);"></div>
+                                     <div class="service-img" style="background-image: url(<?=$categories->display('preview')?>);"></div>
                                </div>
-                               <div class="service-title"><?=$related_gallery->display('post_title')?></div>
+                               <div class="service-title"><?=$categories->display('title')?></div>
                                  <button type="button" class="btn btn-primary">смотреть</button>
                              </a>
                          </div>
