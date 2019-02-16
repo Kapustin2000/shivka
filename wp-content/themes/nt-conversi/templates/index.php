@@ -31,6 +31,13 @@ $params = array(
     'limit' => 1
 );
 $stock = pods('stock')->find();
+
+
+
+$params = array(
+    'orderby'=>"order_weight.meta_value DESC,id DESC",
+);
+$stages_of_work = pods('stages_of_work')->find($params);
 ?>
 
 
@@ -162,38 +169,13 @@ $stock = pods('stock')->find();
                 <div class="col-12">
                     <h2>этапы работы</h2>
                     <div class="steps-wrap row">
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
+                        <?php while($stages_of_work->fetch()){ ?>
+                            <div class="step col-xl-3 col-sm-6 col-12">
+                                <h3><?=$stages_of_work->display('post_title')?></h3>
+                                <p><?=$stages_of_work->display('post_content')?></p>
+                                <?=$stages_of_work->display('image')?>
+                            </div>
+                        <?php } ?>
                     </div>
                     <div class="see-more">
                         <a href="/" class="underline">смотреть подробности</a>

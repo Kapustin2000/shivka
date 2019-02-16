@@ -3,6 +3,17 @@
 Template Name: Prices
 */
 
+$params = array(
+    'orderby'=>"order_weight.meta_value DESC,id DESC",
+);
+$prices = pods('prices')->find($params);
+
+
+
+$prices_ui = pods('prices_ui')->find();
+
+
+$stages_of_work = pods('stages_of_work')->find($params);
 ?>
 
 <?php get_header(); ?>
@@ -20,35 +31,20 @@ Template Name: Prices
                             <th>цена, грн; размер 30х10см</th>
                             <th>сроки, дни</th>
                         </tr>
+                        <?php  while($prices->fetch()){ ?>
                         <tr>
-                            <td>50-100</td>
-                            <td>20</td>
-                            <td>45</td>
-                            <td>2-3</td>
+                            <td><?=$prices->display('count')?></td>
+                            <td><?=$prices->display('price1')?></td>
+                            <td><?=$prices->display('price2')?></td>
+                            <td><?=$prices->display('term')?></td>
                         </tr>
-                        <tr>
-                            <td>50-100</td>
-                            <td>20</td>
-                            <td>45</td>
-                            <td>2-3</td>
-                        </tr>
-                        <tr>
-                            <td>50-100</td>
-                            <td>20</td>
-                            <td>45</td>
-                            <td>2-3</td>
-                        </tr>
+                        <?php } ?>
                     </table>
                     <div class="extra-info">
                         <div class="content-editable">
-                            <ul>
-                                <li>Цены в таблице указаны ориентировочно, точная стоимость вышивки просчитывается индивидуально.</li>
-                                <li>Сроки выполнения заказа указаны с момента утверждения макета и внесения предоплаты.</li>
-                                <li>При тираже от 100 единиц разработка макета для вышивки бесплатно.</li>
-                            </ul>
-                            <strong>Скидки от 10% оптовым и постоянным клиентам.</strong>
+                            <?=$prices_ui->display('block_text')?>
                         </div>
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/scissors.png" alt="Extra info">
+                        <img src="<?=$prices_ui->display('block_image')?>" alt="<?=$prices_ui->field('block_image')['post_title']?>">
                     </div>
                 </div>
             </div>
@@ -61,38 +57,13 @@ Template Name: Prices
                 <div class="col-12">
                     <h2>этапы работы</h2>
                     <div class="steps-wrap row">
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
-                        <div class="step col-xl-3 col-sm-6 col-12">
-                            <h3>запрос от клиента</h3>
-                            <p>Краткое описание первого этапа работы с клиентами</p>
-                        </div>
+                        <?php while($stages_of_work->fetch()){ ?>
+                            <div class="step col-xl-3 col-sm-6 col-12">
+                                <h3><?=$stages_of_work->display('post_title')?></h3>
+                                <p><?=$stages_of_work->display('post_content')?></p>
+                                <?=$stages_of_work->display('image')?>
+                            </div>
+                        <?php } ?>
                     </div>
                     <div class="see-more">
                         <a href="/" class="underline">смотреть подробности</a>
