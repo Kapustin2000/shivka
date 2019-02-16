@@ -2,7 +2,7 @@
 /*
 Template Name: Shipping
 */
-$settings = pods('about_ui')->find();
+$settings = pods('delivery_ui')->find();
 ?>
 
 <?php get_header(); ?>
