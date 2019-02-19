@@ -74,11 +74,11 @@ $stages_of_work = pods('stages_of_work')->find($params);
                         </div>
 
                         <?php }else{ ?>
-                                                      <div class="video-carousel">
-                                                          <div class="decorative lavander"></div>
-                                                          <div class="video-item"></div>
-                                                          <div class="video-progress"></div>
-                                                      </div>
+                            <div class="video-carousel">
+                                <div class="decorative lavander"></div>
+                                <div class="video-item"></div>
+                                <div class="video-progress"></div>
+                            </div>
                         <?php } ?>
                       </div>
                 </div>
@@ -173,7 +173,6 @@ $stages_of_work = pods('stages_of_work')->find($params);
                             <div class="step col-xl-3 col-sm-6 col-12">
                                 <h3><?=$stages_of_work->display('post_title')?></h3>
                                 <p><?=$stages_of_work->display('post_content')?></p>
-                                <?=$stages_of_work->display('image')?>
                             </div>
                         <?php } ?>
                     </div>

@@ -15,7 +15,7 @@
 ?>
 <section class="make-order">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-lg-center">
             <div class="col-12">
                 <div class="decorative yellow"></div>
             </div>
@@ -53,7 +53,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-xs-12">
                                 <input type="text" placeholder="Имя*" required>
-                                <input type="number" placeholder="Телефон">
+                                <input type="number" placeholder="Телефон*" required>
                             </div>
                             <div class="col-lg-6 col-xs-12">
                             <textarea rows="5"
@@ -105,7 +105,7 @@
                     </div>
                     <div class="subscribe">
                         <h4>подписаться на рассылку</h4>
-                        <form action="#" class="subscribe">
+                        <form action="#" id="subscribe-form" class="subscribe">
                             <div class="form-group">
                                 <input type="email" placeholder="E-mail" required>
                                 <button type="submit" class="btn btn-outline">Подписаться</button>

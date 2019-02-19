@@ -364,7 +364,8 @@ header {
       position: relative;
       width: 3.5rem;
       height: 2.5rem;
-      padding: 0; }
+      padding: 0;
+      z-index: 100; }
       header .navbar-toggler.active .navbar-toggler-icon {
         background-color: transparent; }
         header .navbar-toggler.active .navbar-toggler-icon::before {
@@ -432,6 +433,85 @@ header {
           transition: width 0.3s ease-in-out; }
         header .navbar-nav .nav-item .nav-link:hover::after {
           width: 100%; }
+  header .menu-toggle {
+    position: absolute;
+    width: 800px;
+    height: 100vh;
+    top: 0;
+    right: -100vw;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    header .menu-toggle.active {
+      right: 0; }
+    header .menu-toggle::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      right: -800px;
+      width: inherit;
+      height: inherit;
+      background-color: inherit; }
+    header .menu-toggle ul {
+      position: relative;
+      margin-top: 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end; }
+      header .menu-toggle ul a {
+        position: relative;
+        font-family: 'Uni Sans Thin Caps', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 25px;
+        color: #3b2f5c;
+        padding: 25px 0;
+        display: inline-block; }
+        header .menu-toggle ul a:hover {
+          text-decoration: none; }
+      header .menu-toggle ul:not(.submenu) > li {
+        width: 100%;
+        text-align: right; }
+      header .menu-toggle ul:not(.submenu) > li > a:hover {
+        text-decoration: none; }
+        header .menu-toggle ul:not(.submenu) > li > a:hover::after {
+          opacity: 1; }
+      header .menu-toggle ul:not(.submenu) > li > a::after {
+        content: '';
+        position: absolute;
+        right: calc(100% + 22px);
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 250px;
+        height: 2px;
+        background-color: #3b2f5c;
+        z-index: 2;
+        opacity: 0; }
+    header .menu-toggle .submenu {
+      position: absolute;
+      width: 480px;
+      height: 100vh;
+      left: 0;
+      top: 0;
+      margin: 0;
+      padding: 10px 100px;
+      background-color: rgba(242, 235, 192, 0.5); }
+      header .menu-toggle .submenu a {
+        font-size: 16px;
+        padding: 16px 0; }
 
 @media (min-width: 992px) and (max-width: 1920px) {
   header .navbar-nav .nav-item {

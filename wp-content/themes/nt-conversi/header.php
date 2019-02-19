@@ -58,13 +58,65 @@
                         <span class="navbar-toggler-icon"></span>
                     </div>
                     <div id="menu-toggle" class="menu-toggle">
-                        <nav>
-                            <a href="#">услуги</a>
-                            <a href="#">наши работы</a>
-                            <a href="#">магазин</a>
-                            <a href="#">контакты</a>
-                            <a href="#">о нас</a>
-                        </nav>
+                        <ul>
+                            <li>
+                                <a href="#">услуги</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">
+                                            вышивка на крое
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            шевроны и нашивки
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            вышивка на одежде
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            вышивка на текстиле
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            флаги, гербы и вымпелы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            интерьерная вышивка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            широкоформатная вышивка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            эксклюзивная вышивка
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">наши работы</a>
+                            </li>
+                            <li>
+                                <a href="#">магазин</a>
+                            </li>
+                            <li>
+                                <a href="#">контакты</a>
+                            </li>
+                            <li>
+                                <a href="#">о нас</a>
+                            </li>
+                        </ul>
                         <button class="btn btn-outline" type="button">
                             написать нам
                         </button>
