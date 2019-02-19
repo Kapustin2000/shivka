@@ -26,7 +26,6 @@ if(!empty($data->total_found())) {
 <?php get_header(); ?>
 
 <?php if($found){ ?>
-<?php print_r($data->field('gallery')) ?>
     <div class="smarthoop-wrap smarthoop-single-service">
         <div class="single-service-description">
             <div class="container">
