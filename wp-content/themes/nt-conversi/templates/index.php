@@ -51,9 +51,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                     <div class="inner">
                         <h1>
                             <span>
-                                &nbsp;Машинная вышивка -&nbsp;<br/>
-                                &nbsp;отличный способ&nbsp;<br/>
-                                &nbsp;проявить свой стиль!&nbsp;
+                                <?=$settings->display('main_screen_title')?>
                             </span>
                         </h1>
                         <div class="see-more">
@@ -62,18 +60,15 @@ $stages_of_work = pods('stages_of_work')->find($params);
                         </div>
                         <?php if($settings->field('main_screen')) { ?>
                         <div id="main-slider" class="main-slider">
+                            <?php foreach($settings->field('sliders') as $slider) { ?>
                             <div class="item">
-                                <div class="img" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png);"></div>
+                                <div class="img" style="background-image: url(<?=$slider['guid']?>);"></div>
                             </div>
-                            <div class="item">
-                                <div class="img" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png);"></div>
-                            </div>
-                            <div class="item">
-                                <div class="img" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png);"></div>
-                            </div>
+                            <?php } ?>
                         </div>
 
                         <?php }else{ ?>
+                            <?=$settings->display('video')?>
                             <div class="video-carousel">
                                 <div class="decorative lavander"></div>
                                 <div class="video-item"></div>
