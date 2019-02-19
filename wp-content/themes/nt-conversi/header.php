@@ -51,7 +51,7 @@
                             <a class="nav-link" href="/about">о нас</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline" type="button">
+                    <button class="btn btn-outline" type="button" data-toggle="modal" data-target="#contactModal">
                         написать нам
                     </button>
                     <div id="navbar-toggler" class="navbar-toggler">
@@ -116,13 +116,67 @@
                             <li>
                                 <a href="#">о нас</a>
                             </li>
+                            <li>
+                                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#contactModal">
+                                    Заказать звонок
+                                </button>
+                            </li>
                         </ul>
-                        <button class="btn btn-outline" type="button">
-                            написать нам
-                        </button>
                     </div>
                 </nav>
             </div>
         </div>
     </div>
 </header>
+
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <section class="make-order">
+                <div class="form-wrap">
+                    <h2>Хотите узнать стоимость услуги или сделать заказ?</h2>
+                    <p>Свяжитесь с нами удобным для вас способом:</p>
+                    <div class="tabs-wrap yellow">
+                        <button type="button" class="tab active">
+                            <span>Написать</span>
+                        </button>
+                        <button type="button" class="tab">
+                            <span>Заказать звонок</span>
+                        </button>
+                    </div>
+                    <form action="#" class="order-form active">
+                        <div class="row">
+                            <div class="col-lg-6 col-xs-12">
+                                <input type="text" placeholder="Имя*" required>
+                                <input type="email" placeholder="E-mail*" required>
+                                <input type="number" placeholder="Телефон">
+                                <!-- <select name="" id="">
+                                             <option value="0" selected class="hidden">Вид услуги</option>
+                                           </select> -->
+                            </div>
+                            <div class="col-lg-6 col-xs-12">
+                                <textarea rows="5"
+                                          placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
+                                <!-- <input type="file"> -->
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="#" class="call-form">
+                        <div class="row">
+                            <div class="col-lg-6 col-xs-12">
+                                <input type="text" placeholder="Имя*" required>
+                                <input type="number" placeholder="Телефон*" required>
+                            </div>
+                            <div class="col-lg-6 col-xs-12">
+                                <textarea rows="5"
+                                          placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

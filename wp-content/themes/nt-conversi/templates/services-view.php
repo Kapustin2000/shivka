@@ -18,9 +18,6 @@ if(!empty($data->total_found())) {
     }
 }
 
-
-
-
 ?>
 
 <?php get_header(); ?>
