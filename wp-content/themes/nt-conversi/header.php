@@ -24,7 +24,15 @@
     <link href="<?php bloginfo('template_url'); ?>/assets/css/styles.css" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
+<?php
 
+$params = array(
+    'orderby'=>"order_weight.meta_value DESC,id DESC",
+    'limit' => 3
+);
+$services = pods('services')->find();
+
+?>
 <body <?php body_class(); ?>>
 <header>
     <div class="container">
@@ -61,48 +69,17 @@
                         <ul>
                             <li>
                                 <a href="#">услуги</a>
+                                <?php if($services->total_found()){ ?>
                                 <ul class="submenu">
+                                    <?php while($services->fetch()) {?>
                                     <li>
-                                        <a href="#">
-                                            вышивка на крое
+                                        <a href="/services/category/?id=<?=$services->field('service_category')['slug']?>">
+                                            <?=$services->display('post_title')?>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
-                                            шевроны и нашивки
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            вышивка на одежде
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            вышивка на текстиле
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            флаги, гербы и вымпелы
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            интерьерная вышивка
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            широкоформатная вышивка
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            эксклюзивная вышивка
-                                        </a>
-                                    </li>
+                                    <?php } ?>
                                 </ul>
+                                <?php } ?>
                             </li>
                             <li>
                                 <a href="#">наши работы</a>
