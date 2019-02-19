@@ -45,10 +45,10 @@ $(document).ready(function() {
             data: { action : 'shivka_Subscribe_Save_AJAX', data: $('#subscribe-form').serializeArray()},
             cache: true,
             success: function(data) {
-                alert('success');
+                console.log('success');
             },
             error: function(MLHttpRequest, textStatus, errorThrown) {
-                alert(errorThrown);
+                console.log(errorThrown);
             }
         });
     })

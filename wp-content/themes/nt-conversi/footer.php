@@ -107,7 +107,7 @@
                         <h4>подписаться на рассылку</h4>
                         <form action="#" id="subscribe-form" class="subscribe">
                             <div class="form-group">
-                                <input type="email" placeholder="E-mail" required>
+                                <input type="email" placeholder="E-mail" name="email" required>
                                 <button type="submit" class="btn btn-outline">Подписаться</button>
                             </div>
                         </form>
