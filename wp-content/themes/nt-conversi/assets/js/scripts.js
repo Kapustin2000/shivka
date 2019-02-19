@@ -41,7 +41,7 @@ $(document).ready(function() {
         e.preventDefault();
         $.ajax({
             type: 'POST',
-            url: '/wp-json/blog/v1',
+            url: '/wp-json/blog/v1/subscribe',
             data: { action : 'shivka_Subscribe_Save_AJAX', data: $('#subscribe-form').serializeArray()},
             cache: true,
             success: function(data) {
