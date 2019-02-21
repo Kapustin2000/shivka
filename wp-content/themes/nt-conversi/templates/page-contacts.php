@@ -26,6 +26,8 @@ $settings  = pods('website_settings')->find();
                                 <?=$settings->display('wholesale_working_days')?></br>
                                 <?=$settings->display('wholesale_number')?></br>
                                 E-mail: <a href="maito:<?=$settings->display('wholesale_emaal')?>"><?=$settings->display('wholesale_email')?></a>
+                                <?=$settings->display('wholesale_latitude')?>
+                                <?=$settings->display('wholesale_longitude')?>
                             </p>
                             <button type="button" class="btn btn-primary">смотреть на карте</button>
                         </div>
@@ -39,6 +41,8 @@ $settings  = pods('website_settings')->find();
                                 <?=$settings->display('individual_working_days')?></br>
                                 <?=$settings->display('individual_number')?></br>
                                 E-mail: <a href="maito: <?=$settings->display('individual_email')?>"> <?=$settings->display('individual_email')?></a>
+                                <?=$settings->display('individually_latitude')?>
+                                <?=$settings->display('individually_longitude')?>
                             </p>
                             <button type="button" class="btn btn-primary">смотреть на карте</button>
                         </div>
