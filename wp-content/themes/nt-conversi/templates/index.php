@@ -86,23 +86,15 @@ $stages_of_work = pods('stages_of_work')->find($params);
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div class="common-service-img">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/Слой_1@1x.png" alt="Common Service">
+                        <img src="<?=$settings->display('block_image')?>" alt="<?=$settings->display('block_title')?>">
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="common-service-text bordered">
-                        <h2>Общее описание услуги</h2>
-                        <p>
-                            Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.
-                        </p>
-                        <p>
-                            Мы также вышиваем шевроны и нашивки, логотипы и эмблемы компаний, создадим вышивку на одежде и крое, домашнем текстиле и полотенцах, коже и замше.
-                        </p>
-                        <p>
-                            Современное промышленное японское (Toyota) и немецкое (ZSK)оборудование, качественные расходные материалы и нитки (Gunold, Madeira, Durak и др.), профессиональное программирование и наш опыт позволяют осуществлять каждый заказ максимально быстро, качественно и по приемлемым ценам.
-                        </p>
+                        <h2><?=$settings->display('block_title')?></h2>
+                        <?=$settings->display('block_description')?>
                     </div>
-                    <a href="#" type="button" class="btn btn-outline">Читать о нас</a>
+                    <a href="/blog/" type="button" class="btn btn-outline">Читать о нас</a>
                     <div class="decorative lavander"></div>
                 </div>
             </div>
