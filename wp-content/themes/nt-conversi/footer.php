@@ -34,9 +34,9 @@
                     <form action="#" class="order-form active">
                         <div class="row">
                             <div class="col-lg-6 col-xs-12">
-                                <input type="text" placeholder="Имя*" required>
-                                <input type="email" placeholder="E-mail*" required>
-                                <input type="number" placeholder="Телефон">
+                                <input type="text" placeholder="Имя*" required name="full_name">
+                                <input type="email" placeholder="E-mail*" required name="email">
+                                <input type="number" placeholder="Телефон" name="phone">
                                 <!-- <select name="" id="">
                                   <option value="0" selected class="hidden">Вид услуги</option>
                                 </select> -->
@@ -52,8 +52,8 @@
                     <form action="#" class="call-form">
                         <div class="row">
                             <div class="col-lg-6 col-xs-12">
-                                <input type="text" placeholder="Имя*" required>
-                                <input type="number" placeholder="Телефон*" required>
+                                <input type="text" placeholder="Имя*" required name="full_name">
+                                <input type="number" placeholder="Телефон*" required name="phone">
                             </div>
                             <div class="col-lg-6 col-xs-12">
                             <textarea rows="5"
