@@ -159,6 +159,33 @@ add_action( 'rest_api_init', function () {
     ) );
 } );
 
+
+function shivka_Contact_Save_AJAX( WP_REST_Request $request)
+{
+	return validate_pod_data('contact',$request);
+}
+
+add_action( 'rest_api_init', function () {
+	register_rest_route( 'blog/v1', 'contact' , array(
+		'methods' => 'post',
+		'callback' => 'shivka_Contact_Save_AJAX',
+	) );
+} );
+
+
+function shivka_Calls_Save_AJAX( WP_REST_Request $request)
+{
+	return validate_pod_data('calls',$request);
+}
+
+add_action( 'rest_api_init', function () {
+	register_rest_route( 'blog/v1', 'calls' , array(
+		'methods' => 'post',
+		'callback' => 'shivka_Call_Save_AJAX',
+	) );
+} );
+
+
 function shivka_offset($count) {
     if (!$offset = get_query_var('paged')) $offset = 0;
     if($offset!=1){
