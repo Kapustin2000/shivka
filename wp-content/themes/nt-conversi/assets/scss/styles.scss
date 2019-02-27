@@ -155,6 +155,12 @@
   .services {
     .service-item {
       height: 775px;
+      &:not(:hover) {
+        .service-desc {
+          height: 70px;
+          overflow: hidden;
+        }
+      }
       &:hover {
         .service-title {
           transform: translateY(0);
@@ -179,10 +185,15 @@
         max-height: 100%;
       }
       .service-desc {
-        text-align: right;
-        color: $violet;
-        font-size: 25px;
-        padding: 0 50px 0 63px;
+        & {
+          padding: 0 50px 0 63px;
+          text-align: right;
+          color: $violet;
+        }
+        &, p {
+          font-size: 25px;
+          line-height: 35px;
+        }
       }
       .service-full-desc {
         opacity: 0;
@@ -264,7 +275,7 @@
   .modal-content {
     .make-order {
       .form-wrap {
-        padding: 5rem 2rem;
+        padding: 5rem 2rem !important;
       }
     }
   }

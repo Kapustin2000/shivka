@@ -11,9 +11,16 @@ $data = pods('services')->find();
 
 <?php get_header(); ?>
 
-Shop
-
-
-
+<section style="margin-top: 200px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>
+                    <span>Эта страница находится в разработке</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>

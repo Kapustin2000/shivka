@@ -37,7 +37,7 @@ $data = pods('works')->find($params);
                         <?php } ?>
                     </div>
                     <div class="see-more">
-<!--                        TODO: Change link-->
+x<!--                            TODO: вести на определенную галлерею-->
                         <a href="/" class="underline">смотреть больше</a>
                     </div>
                 </div>

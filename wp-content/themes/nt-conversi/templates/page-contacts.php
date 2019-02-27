@@ -29,8 +29,8 @@ $settings  = pods('website_settings')->find();
                                 <?=$settings->display('wholesale_working_days')?></br>
                                 Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>"><?=$settings->display('wholesale_number')?></a> Viber/WhatsApp, <a href="tel:+380667734186">0667734186</a></br>
                                 E-mail: <a href="maito:<?=$settings->display('wholesale_emaal')?>"><?=$settings->display('wholesale_email')?></a>
-                                <?=$settings->display('wholesale_latitude')?>
-                                <?=$settings->display('wholesale_longitude')?>
+<!--                                --><?//=$settings->display('wholesale_latitude')?>
+<!--                                --><?//=$settings->display('wholesale_longitude')?>
                             </p>
 <!--                            <button type="button" class="btn btn-primary">смотреть на карте</button>-->
                         </div>

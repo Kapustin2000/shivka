@@ -131,7 +131,6 @@ add_action( 'wp_enqueue_scripts', 'nt_conversi_scripts' );
 function shapeSpace_include_custom_jquery() {
 
 	wp_deregister_script('jquery');
-	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-1.12.4.min.js#defer', array(), null, true);
 
 }
 function add_async_forscript($url)

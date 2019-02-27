@@ -31,7 +31,7 @@
                             <span>Заказать звонок</span>
                         </button>
                     </div>
-                    <form action="#" class="order-form active">
+                    <form action="#" id="order-form" class="order-form active">
                         <div class="row">
                             <div class="col-lg-6 col-xs-12">
                                 <input type="text" placeholder="Имя*" required name="full_name">
@@ -49,7 +49,7 @@
                             </div>
                         </div>
                     </form>
-                    <form action="#" class="call-form">
+                    <form action="#" id="call-form" class="call-form">
                         <div class="row">
                             <div class="col-lg-6 col-xs-12">
                                 <input type="text" placeholder="Имя*" required name="full_name">
@@ -153,6 +153,7 @@
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/jquery/jquery-1.12.4.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/bootstrap/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/js/slick.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.magnific-popup.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/js/scripts.js"></script>
 </body>
 </html>
