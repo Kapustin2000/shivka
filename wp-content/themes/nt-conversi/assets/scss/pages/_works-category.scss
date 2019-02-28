@@ -1,3 +1,36 @@
-
+.smarthoop-works-category {
+  .work-info {
+    &-img {
+      &::after {
+        display: none;
+      }
+    }
+    .info-block {
+      background-color: transparentize($lavander, .5)
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        width: calc(100% + 100px);
+        height: 100%;
+        border: 15px solid $yellow;
+        z-index: 2;
+      }
+    }
+    h1 {
+      position: relative;
+      top: auto;
+      right: auto;
+      //position: absolute;
+      //top: -25px;
+      //right: 25px;
+    }
+  }
+  .see-more {
+    text-align: center;
+  }
+}
 
 

@@ -27,24 +27,24 @@ if(isset($_GET['id'])) {
 
 <?php if($found){ ?>
 
-    <div class="smarthoop-wrap smarthoop-works">
+    <div class="smarthoop-wrap smarthoop-works smarthoop-works-category">
         <section class="work-info">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 col-12">
-                        <div class="work-info-img">
-                            <img src="<?=$data->display('preview')?>" alt="<?=$data->display('post_title')?>">
-                        </div>
-                    </div>
                     <div class="col-xl-6 col-12">
                         <div class="info-block">
                             <h1><span>&nbsp;<?=$data->display('post_title')?>&nbsp;</span></h1>
                             <?=$data->display('post_content')?>
                         </div>
                     </div>
+                    <div class="col-xl-6 col-12">
+                        <div class="work-info-img">
+                            <img src="<?=$data->display('preview')?>" alt="<?=$data->display('post_title')?>">
+                        </div>
+                    </div>
 
                     <div class="col-12">
-                        <div class="services extra-services">
+                        <div class="related-categories services extra-services">
                             <div class="row">
                                 <div class="col-md-4 col-12">
                                     <a href="" class="service-item">
@@ -84,8 +84,11 @@ if(isset($_GET['id'])) {
                                 </div>
                             </div>
                         </div>
+                        <div class="see-more">
+                            <!--                        TODO: На related gallery -->
+                            <a href="/" class="underline">смотреть больше</a>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </section>

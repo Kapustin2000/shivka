@@ -40,10 +40,10 @@ $data = pods('services')->find();
                             </div>
                         <?php } ?>
                     </div>
-                    <div class="see-more">
-<!--                        TODO: Change link-->
-                        <a href="/" class="underline">смотреть больше</a>
-                    </div>
+<!--                    <div class="see-more">-->
+<!--<!--                        TODO: Change link-->-->
+<!--                        <a href="/" class="underline">смотреть больше</a>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>

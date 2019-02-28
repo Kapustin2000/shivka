@@ -2023,6 +2023,30 @@ footer {
   .smarthoop-prices .extra-info img {
     top: 90%; } }
 
+.smarthoop-works-category .work-info-img::after {
+  display: none; }
+
+.smarthoop-works-category .work-info .info-block {
+  background-color: rgba(205, 207, 233, 0.5) .smarthoop-works-category .work-info .info-block; }
+  .smarthoop-works-category .work-info .info-block ::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: calc(100% + 100px);
+    height: 100%;
+    border: 15px solid #f2ebc0;
+    z-index: 2; }
+
+.smarthoop-works-category .work-info h1 {
+  position: relative;
+  top: auto;
+  right: auto; }
+
+.smarthoop-works-category .see-more {
+  text-align: center; }
+
 .work-info {
   margin-bottom: 100px; }
   .work-info-img {
