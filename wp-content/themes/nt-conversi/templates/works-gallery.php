@@ -43,11 +43,18 @@ if(isset($_GET['id'])) {
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="work-gallery">
+                        <div id="work-gallery" class="work-gallery">
                             <?php foreach($data->field('images') as $image) { ?>
                             <div class="gallery-item">
                                 <img src="<?=$image['guid']?>" alt="<?=$image['post_title']?>">
                             </div>
+                            <?php } ?>
+                        </div>
+                        <div id="work-gallery-nav" class="work-gallery-nav">
+                            <?php foreach($data->field('images') as $image) { ?>
+                                <div class="gallery-nav-item">
+                                    <img src="<?=$image['guid']?>" alt="<?=$image['post_title']?>">
+                                </div>
                             <?php } ?>
                         </div>
                         <div class="bottom">

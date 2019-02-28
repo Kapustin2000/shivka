@@ -28,12 +28,6 @@ if(!empty($data->total_found())) {
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <a href="/services" class="back">
-                            <span>
-                                <i class="icon icon-arrow"></i>
-                                назад к услугам
-                            </span>
-                        </a>
                         <div class="bordered">
                             <div class="row">
                                 <div class="col-xl-6 col-12">

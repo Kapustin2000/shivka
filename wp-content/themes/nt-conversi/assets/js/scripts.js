@@ -46,7 +46,51 @@ $(document).ready(function() {
             slidesToShow: 3,
             slidesToScroll: 1,
             dots: false,
-            arrows: true
+            arrowPrev: '<button> < </button>',
+            arrowNext: '<button> > </button>',
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    }
+
+    //----
+    var workGallery = $('#work-gallery');
+    var workGalleryNav = $('#work-gallery-nav');
+
+    if (workGallery.length && workGalleryNav.length) {
+        workGallery.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            fade: true,
+            centerMode: true,
+            lazyLoad: 'ondemand',
+            asNavFor: '#work-gallery-nav'
+        });
+        workGalleryNav.slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '#work-gallery',
+            arrows: false,
+            dots: false,
+            centerMode: false,
+            lazyLoad: 'ondemand',
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }
+            ]
         });
     }
 
