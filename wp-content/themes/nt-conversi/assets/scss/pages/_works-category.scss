@@ -6,7 +6,7 @@
       }
     }
     .info-block {
-      background-color: transparentize($lavander, .5)
+      background-color: transparentize($lavander, .5);
       &::after {
         content: '';
         display: block;

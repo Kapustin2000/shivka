@@ -2027,8 +2027,8 @@ footer {
   display: none; }
 
 .smarthoop-works-category .work-info .info-block {
-  background-color: rgba(205, 207, 233, 0.5) .smarthoop-works-category .work-info .info-block; }
-  .smarthoop-works-category .work-info .info-block ::after {
+  background-color: rgba(205, 207, 233, 0.5); }
+  .smarthoop-works-category .work-info .info-block::after {
     content: '';
     display: block;
     position: absolute;
