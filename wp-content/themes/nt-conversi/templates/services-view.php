@@ -148,10 +148,10 @@ if(!empty($data->total_found())) {
                                 <button type="button" class="btn btn-primary">смотреть</button>
                             </a>
                         </div>
-                        <a href="/works" class="back">
+                        <a href="/services" class="back">
                             <span>
                                 <i class="icon icon-arrow"></i>
-                                Назад к работам
+                                Назад к услугам
                             </span>
                         </a>
                     </div>

@@ -36,10 +36,9 @@ $data = pods('works')->find($params);
                             </div>
                         <?php } ?>
                     </div>
-                    <div class="see-more">
-x<!--                            TODO: вести на определенную галлерею-->
-                        <a href="/" class="underline">смотреть больше</a>
-                    </div>
+<!--                    <div class="see-more">-->
+<!--                        <a href="/" class="underline">смотреть больше</a>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>

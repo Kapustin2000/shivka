@@ -42,36 +42,50 @@ if(isset($_GET['id'])) {
                             <?=$data->display('post_content')?>
                         </div>
                     </div>
+
                     <div class="col-12">
-                        <div class="work-gallery">
-                            <?php $related_gallery = pods('gallery')->find(array('limit' => 1, 'where' => 't.id = '.$data->field('gallery')['ID'])); ?>
-                            <?php while($related_gallery->fetch()){?>
-                            <?php foreach ($related_gallery->field('images') as $item) { ?>
-                                <div class="gallery-item">
-                                    <img src="<?=$item['guid']?>" alt="<?=$item['post_title']?>">
+                        <div class="services extra-services">
+                            <div class="row">
+                                <div class="col-md-4 col-12">
+                                    <a href="" class="service-item">
+                                        <div class="service-img-wrap">
+                                            <div class="service-img" style=" background: #000 url();"></div>
+                                        </div>
+                                        <div class="service-title">Широкоформатная вышивка</div>
+                                        <button type="button" class="btn btn-primary">смотреть</button>
+                                    </a>
                                 </div>
-                                <?php } ?>
-                            <?php } ?>
+                                <div class="col-md-4 col-12">
+                                    <a href="" class="service-item">
+                                        <div class="service-img-wrap">
+                                            <div class="service-img" style=" background: #000 url();"></div>
+                                        </div>
+                                        <div class="service-title">Широкоформатная вышивка</div>
+                                        <button type="button" class="btn btn-primary">смотреть</button>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <a href="" class="service-item">
+                                        <div class="service-img-wrap">
+                                            <div class="service-img" style=" background: #000 url();"></div>
+                                        </div>
+                                        <div class="service-title">Широкоформатная вышивка</div>
+                                        <button type="button" class="btn btn-primary">смотреть</button>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <a href="" class="service-item">
+                                        <div class="service-img-wrap">
+                                            <div class="service-img" style=" background: #000 url();"></div>
+                                        </div>
+                                        <div class="service-title">Широкоформатная вышивка</div>
+                                        <button type="button" class="btn btn-primary">смотреть</button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-<!--                        <div class="bottom">-->
-<!--                            <div class="pagination">-->
-<!--                                <a href="#"><</a>-->
-<!--                                <a href="#" class="active">1</a>-->
-<!--                                <a href="#">2</a>-->
-<!--                                <a href="#">3</a>-->
-<!--                                <a href="#">4</a>-->
-<!--                                ...-->
-<!--                                <a href="#">21</a>-->
-<!--                                <a href="#">></a>-->
-<!--                            </div>-->
-<!--                            <a href="/works" class="back">-->
-<!--                            <span>-->
-<!--                                <i class="icon icon-arrow"></i>-->
-<!--                                Назад к работам-->
-<!--                            </span>-->
-<!--                            </a>-->
-<!--                        </div>-->
                     </div>
+
                 </div>
             </div>
         </section>
