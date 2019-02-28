@@ -125,12 +125,12 @@ $settings  = pods('website_settings')->find();
             <div class="col-12">
                 <div class="footer-nav">
                     <ul>
-                        <li><a href="#">услуги</a></li>
+                        <li><a href="/services">услуги</a></li>
                         <li><a href="/works">наши работы</a></li>
                         <li><a href="/about">о нас</a></li>
                         <li><a href="/prices">цены</a></li>
                         <li><a href="/stock">акции</a></li>
-                        <li><a href="#">магазин</a></li>
+                        <li><a href="/shop">магазин</a></li>
                         <li><a href="/shipping">доставка и оплата</a></li>
                         <li><a href="/how-to-order">как заказать</a></li>
                         <li><a href="/blog">блог</a></li>
@@ -140,7 +140,7 @@ $settings  = pods('website_settings')->find();
             </div>
             <div class="col-12">
                 <div class="footer-info">
-                    <a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                    <a href="/privacy-policy">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
                     <p>
                         ©2011 SmartHoop</br>
                         Все права защищены и охраняются действующим законодательством Украины.

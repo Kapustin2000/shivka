@@ -51,7 +51,7 @@
             .img-wrap {
                 position: absolute;
                 display: block;
-                background-image: url('../img/Broderie-en-direct-1612x1078@1x.png');
+                //background-image: url('../img/Broderie-en-direct-1612x1078@1x.png');
                 background-size: cover;
                 background-position: center center;
                 background-repeat: no-repeat;
@@ -96,15 +96,18 @@
             right: -18rem;
             bottom: -5rem;
         }
+        p {
+            column-count: 2;
+        }
     }
     .single-service-shop {
-        margin-bottom: -15rem;
+        //margin-bottom: -15rem;
         .bordered {
             transform: translate(0, 0);
             border-color: $violet;
             max-width: 95rem;
             a {
-                margin-bottom: 14rem;
+                //margin-bottom: 14rem;
             }
         }
         .decorative {
@@ -115,7 +118,57 @@
         }
     }
     .single-service-related {
-
+        padding-top: 75px;
+        h2 {
+            margin-bottom: 25px;
+        }
+        .related-slider {
+            padding: 0;
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 100%;
+                left: -350%;
+                width: 400%;
+                height: 100%;
+                background-color: transparentize($yellow, .5);
+                z-index: -1;
+            }
+        }
+        .slick-track {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        .slick-slide {
+            padding: 0 15px;
+        }
+        .service-item {
+            margin-bottom: 0;
+        }
+        .slick-arrow {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            font-size: 0;
+            width: 100px;
+            height: 100px;
+            &::after {
+                content: '<';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $black;
+                font-size: 30px;
+            }
+        }
+        .slick-next::after {
+            content: '>';
+        }
+        .back {
+            margin-right: 30px;
+        }
     }
 }
 

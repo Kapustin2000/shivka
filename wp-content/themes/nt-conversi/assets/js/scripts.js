@@ -22,19 +22,32 @@ $(document).ready(function() {
 
     //-------main page slider
     //if slider is active
-    var slider = $('#main-slider');
-    if (slider.length) {
-        slider.slick({
+    var mainSlider = $('#main-slider');
+    if (mainSlider.length) {
+        mainSlider.slick({
             arrows: false,
             speed: 0,
             autoplay: true,
             autoplaySpeed: 24000
         });
     }
+
     //if video player is active
     var player = '';
     if (player.length) {
         console.log('player');
+    }
+
+    //---
+    var relatedSlider = $('#related-slider');
+    if (relatedSlider.length) {
+        relatedSlider.slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true
+        });
     }
 
     //-------footer form

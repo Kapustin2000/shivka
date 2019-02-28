@@ -1378,7 +1378,6 @@ footer {
     .smarthoop-single-service .single-service-gallery .gallery-wrap .img-wrap {
       position: absolute;
       display: block;
-      background-image: url("../img/Broderie-en-direct-1612x1078@1x.png");
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat; }
@@ -1415,22 +1414,67 @@ footer {
     height: 200px;
     right: -18rem;
     bottom: -5rem; }
+  .smarthoop-single-service .single-service-more p {
+    -webkit-column-count: 2;
+    column-count: 2; }
 
-.smarthoop-single-service .single-service-shop {
-  margin-bottom: -15rem; }
-  .smarthoop-single-service .single-service-shop .bordered {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-    border-color: #3b2f5c;
-    max-width: 95rem; }
-    .smarthoop-single-service .single-service-shop .bordered a {
-      margin-bottom: 14rem; }
-  .smarthoop-single-service .single-service-shop .decorative {
-    width: 425px;
-    height: 425px;
-    bottom: 0;
-    right: 0; }
+.smarthoop-single-service .single-service-shop .bordered {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  border-color: #3b2f5c;
+  max-width: 95rem; }
+
+.smarthoop-single-service .single-service-shop .decorative {
+  width: 425px;
+  height: 425px;
+  bottom: 0;
+  right: 0; }
+
+.smarthoop-single-service .single-service-related {
+  padding-top: 75px; }
+  .smarthoop-single-service .single-service-related h2 {
+    margin-bottom: 25px; }
+  .smarthoop-single-service .single-service-related .related-slider {
+    padding: 0; }
+    .smarthoop-single-service .single-service-related .related-slider::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 100%;
+      left: -350%;
+      width: 400%;
+      height: 100%;
+      background-color: rgba(242, 235, 192, 0.5);
+      z-index: -1; }
+  .smarthoop-single-service .single-service-related .slick-track {
+    margin-left: -15px;
+    margin-right: -15px; }
+  .smarthoop-single-service .single-service-related .slick-slide {
+    padding: 0 15px; }
+  .smarthoop-single-service .single-service-related .service-item {
+    margin-bottom: 0; }
+  .smarthoop-single-service .single-service-related .slick-arrow {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 0;
+    width: 100px;
+    height: 100px; }
+    .smarthoop-single-service .single-service-related .slick-arrow::after {
+      content: '<';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: #000;
+      font-size: 30px; }
+  .smarthoop-single-service .single-service-related .slick-next::after {
+    content: '>'; }
+  .smarthoop-single-service .single-service-related .back {
+    margin-right: 30px; }
 
 .page-template-services-view .make-order .decorative {
   display: none; }

@@ -117,6 +117,43 @@ if(!empty($data->total_found())) {
             <div class="container">
                 <div class="row">
                     <div class="col-12">
+                        <h2>Смотрите также</h2>
+                        <div id="related-slider" class="related-slider services extra-services">
+                            <a href="/services/category/?id=" class="service-item">
+                                <div class="service-img-wrap">
+                                    <div class="service-img" style=" background: #000 url();"></div>
+                                </div>
+                                <div class="service-title">Широкоформатная вышивка</div>
+                                <button type="button" class="btn btn-primary">смотреть</button>
+                            </a>
+                            <a href="/services/category/?id=" class="service-item">
+                                <div class="service-img-wrap">
+                                    <div class="service-img" style=" background: #000 url();"></div>
+                                </div>
+                                <div class="service-title">Широкоформатная вышивка</div>
+                                <button type="button" class="btn btn-primary">смотреть</button>
+                            </a>
+                            <a href="/services/category/?id=" class="service-item">
+                                <div class="service-img-wrap">
+                                    <div class="service-img" style=" background: #000 url();"></div>
+                                </div>
+                                <div class="service-title">Широкоформатная вышивка</div>
+                                <button type="button" class="btn btn-primary">смотреть</button>
+                            </a>
+                            <a href="/services/category/?id=" class="service-item">
+                                <div class="service-img-wrap">
+                                    <div class="service-img" style=" background: #000 url();"></div>
+                                </div>
+                                <div class="service-title">Широкоформатная вышивка</div>
+                                <button type="button" class="btn btn-primary">смотреть</button>
+                            </a>
+                        </div>
+                        <a href="/works" class="back">
+                            <span>
+                                <i class="icon icon-arrow"></i>
+                                Назад к работам
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
