@@ -33,7 +33,7 @@ if(isset($_GET['id'])) {
                 <div class="row">
                     <div class="col-xl-6 col-12">
                         <div class="work-info-img">
-                            <img src="<?=$data->display('image')?>" alt="Work">
+                            <img src="<?=$data->display('preview')?>" alt="<?=$data->display('post_title')?>">
                         </div>
                     </div>
                     <div class="col-xl-6 col-12">
@@ -44,38 +44,11 @@ if(isset($_GET['id'])) {
                     </div>
                     <div class="col-12">
                         <div class="work-gallery">
+                            <?php foreach($data->field('images') as $image) { ?>
                             <div class="gallery-item">
-                                <img src="<?=$data->display('image')?>" alt="Work">
+                                <img src="<?=$image['guid']?>" alt="<?=$image['post_title']?>">
                             </div>
-                            <div class="gallery-item">
-                                <img src="<?=$data->display('image')?>" alt="Work">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="<?=$data->display('image')?>" alt="Work">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="<?=$data->display('image')?>" alt="Work">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="<?=$data->display('image')?>" alt="Work">
-                            </div>
-                        </div>
-                        <div class="work-gallery-nav">
-                            <div class="gallery-nav-item">
-                                <img src="<?=$data->display('image')?>" alt="Work">
-                            </div>
-                            <div class="gallery-nav-item">
-                                <img src="<?=$data->display('image')?>" alt="Work">
-                            </div>
-                            <div class="gallery-nav-item">
-                                <img src="<?=$data->display('image')?>" alt="Work">
-                            </div>
-                            <div class="gallery-nav-item">
-                                <img src="<?=$data->display('image')?>" alt="Work">
-                            </div>
-                            <div class="gallery-nav-item">
-                                <img src="<?=$data->display('image')?>" alt="Work">
-                            </div>
+                            <?php } ?>
                         </div>
                         <div class="bottom">
                             <a href="/works" class="back">
