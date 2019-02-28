@@ -46,47 +46,25 @@ if(isset($_GET['id'])) {
                     <div class="col-12">
                         <div class="related-categories services extra-services">
                             <div class="row">
-                                <div class="col-md-4 col-12">
-                                    <a href="" class="service-item">
-                                        <div class="service-img-wrap">
-                                            <div class="service-img" style=" background: #000 url();"></div>
+                                <?php foreach($data->field('related_works') as $work) { $related_works = pods('works')->find(array('limit' => 1, 'where' => 'ID = '.$work['ID']));?>
+                                   <?php while($related_works->fetch()){ ?>
+
+
+                                        <div class="col-md-4 col-12">
+                                            <a href="<?=get_permalink($related_works->display('id'))?>" class="service-item">
+                                                <div class="service-img-wrap">
+                                                    <div class="service-img" style=" background: #000 url(<?=$related_works->display('preview')?>);"></div>
+                                                </div>
+                                                <div class="service-title"><?=$related_works->display('post_title')?></div>
+                                                <button type="button" class="btn btn-primary">смотреть</button>
+                                            </a>
                                         </div>
-                                        <div class="service-title">Широкоформатная вышивка</div>
-                                        <button type="button" class="btn btn-primary">смотреть</button>
-                                    </a>
-                                </div>
-                                <div class="col-md-4 col-12">
-                                    <a href="" class="service-item">
-                                        <div class="service-img-wrap">
-                                            <div class="service-img" style=" background: #000 url();"></div>
-                                        </div>
-                                        <div class="service-title">Широкоформатная вышивка</div>
-                                        <button type="button" class="btn btn-primary">смотреть</button>
-                                    </a>
-                                </div>
-                                <div class="col-md-4 col-12">
-                                    <a href="" class="service-item">
-                                        <div class="service-img-wrap">
-                                            <div class="service-img" style=" background: #000 url();"></div>
-                                        </div>
-                                        <div class="service-title">Широкоформатная вышивка</div>
-                                        <button type="button" class="btn btn-primary">смотреть</button>
-                                    </a>
-                                </div>
-                                <div class="col-md-4 col-12">
-                                    <a href="" class="service-item">
-                                        <div class="service-img-wrap">
-                                            <div class="service-img" style=" background: #000 url();"></div>
-                                        </div>
-                                        <div class="service-title">Широкоформатная вышивка</div>
-                                        <button type="button" class="btn btn-primary">смотреть</button>
-                                    </a>
-                                </div>
+
+                                <?php } } ?>
                             </div>
                         </div>
                         <div class="see-more">
-                            <!--                        TODO: На related gallery -->
-                            <a href="/" class="underline">смотреть больше</a>
+                            <a href="<?=get_permalink($data->field('gallery')['ID'])?>" class="underline">смотреть больше</a>
                         </div>
                     </div>
                 </div>
