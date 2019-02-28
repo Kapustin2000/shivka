@@ -11,7 +11,7 @@
  * @since 1.0
  * @version 1.2
  */
-
+$settings  = pods('website_settings')->find();
 ?>
 <section class="make-order">
     <div class="container">
@@ -80,28 +80,28 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="contact">
-                                    <a target="_blank" href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%92%D1%8B%D0%B1%D0%BE%D1%80%D0%B3%D1%81%D0%BA%D0%B0%D1%8F,+94,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4518438,30.4219243,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cc3f6c0fa761:0xeef8be2517cf5608!8m2!3d50.4518438!4d30.424113">
-                                        г.Киев, ул.Выборгская, 94
+                                    <a target="_blank" href="<?=$settings->display('wholesale_latitude')?>">
+                                        <?=$settings->display('wholesale_city')?>
                                     </a> </br>
-                                    Тел: <a href="tel:+380677516622">067 751 66 22</a>, <a href="tel:+380667734186">066 773 41 86</a> </br>
-                                    email: <a href="mailto:smarthoop@gmail.com">smarthoop@gmail.com</a>
+                                    <?=$settings->display('wholesale_number')?></br>
+                                    email: <a href="mailto:<?=$settings->display('wholesale_emaal')?>"><?=$settings->display('wholesale_emaal')?></a>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="contact">
-                                    <a target="_blank" href="https://www.google.com.ua/maps/place/%D0%92%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+4,+%D0%91%D0%B5%D0%BB%D0%B0%D1%8F+%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C,+%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+09100/@49.8078275,30.1015346,17z/data=!3m1!4b1!4m5!3m4!1s0x40d342308bddfaed:0x68874bc858a0a886!8m2!3d49.8078275!4d30.1037233">
-                                        г.Белая Церквь, ул.Вокзальная, 4
+                                    <a target="_blank" href="<?=$settings->display('individually_latitude')?>">
+                                        <?=$settings->display('individual_city')?>
                                     </a> </br>
-                                    Тел: <a href="tel:+380968809206">096 880 92 06</a></br>
-                                    email: <a href="mailto:smarthoop3@gmail.com">smarthoop3@gmail.com</a>
+                                    <?=$settings->display('individual_number')?></br>
+                                    email: <a href="mailto:<?=$settings->display('individual_email')?>"><?=$settings->display('individual_email')?></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="schedule">
                         <h4>График работы</h4>
-                        <p>С 10:00 до 19:00</br>
-                            Понедельник - Пятница</p>
+                        <p><?=$settings->display('individual_working_hours')?></br>
+                            <?=$settings->display('individual_working_days')?></p>
                     </div>
                     <div class="subscribe">
                         <h4>подписаться на рассылку</h4>
