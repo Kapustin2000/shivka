@@ -75,9 +75,8 @@ if(!empty($data->total_found())) {
                                 </div>
                             </div>
                         </div>
-                        <div class="see-more">
-<!--                            TODO: вести на определенную галлерею-->
-                            <a href="/" class="underline">смотреть больше фото</a>
+                        <div class="see-more"> 
+                            <a href="<?=get_permalink($data->field('gallery')['ID'])?>" class="underline">смотреть больше фото</a>
                         </div>
                     </div>
                 </div>
