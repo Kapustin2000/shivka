@@ -119,34 +119,18 @@ if(!empty($data->total_found())) {
                     <div class="col-12">
                         <h2>Смотрите также</h2>
                         <div id="related-slider" class="related-slider services extra-services">
-                            <a href="/services/category/?id=" class="service-item">
-                                <div class="service-img-wrap">
-                                    <div class="service-img" style=" background: #000 url();"></div>
-                                </div>
-                                <div class="service-title">Широкоформатная вышивка</div>
-                                <button type="button" class="btn btn-primary">смотреть</button>
-                            </a>
-                            <a href="/services/category/?id=" class="service-item">
-                                <div class="service-img-wrap">
-                                    <div class="service-img" style=" background: #000 url();"></div>
-                                </div>
-                                <div class="service-title">Широкоформатная вышивка</div>
-                                <button type="button" class="btn btn-primary">смотреть</button>
-                            </a>
-                            <a href="/services/category/?id=" class="service-item">
-                                <div class="service-img-wrap">
-                                    <div class="service-img" style=" background: #000 url();"></div>
-                                </div>
-                                <div class="service-title">Широкоформатная вышивка</div>
-                                <button type="button" class="btn btn-primary">смотреть</button>
-                            </a>
-                            <a href="/services/category/?id=" class="service-item">
-                                <div class="service-img-wrap">
-                                    <div class="service-img" style=" background: #000 url();"></div>
-                                </div>
-                                <div class="service-title">Широкоформатная вышивка</div>
-                                <button type="button" class="btn btn-primary">смотреть</button>
-                            </a>
+                            <?php foreach($data->field('related_services') as $service) {
+                                $related_service = pods('single_services')->find(array('limit' => 1, 'where' => 'ID = '.$service['ID']));
+                                while($related_service->fetch()){ ?>
+
+                                    <a href="<?=get_permalink($related_service->display('id'));?>" class="service-item">
+                                        <div class="service-img-wrap">
+                                            <div class="service-img" style=" background: #000 url(<?=$related_service->display('preview')?>);"></div>
+                                        </div>
+                                        <div class="service-title"><?=$related_service->display('post_title')?></div>
+                                        <button type="button" class="btn btn-primary">смотреть</button>
+                                    </a>
+                            <?php } } ?>
                         </div>
                         <a href="/services" class="back">
                             <span>
