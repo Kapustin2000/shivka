@@ -5,6 +5,7 @@
   }
   h1 {
     margin: 0 0 10rem;
+    max-width: 700px;
   }
   h1, .underline {
     position: relative;
@@ -30,7 +31,7 @@
     top: 5rem;
     right: 1.5rem;
     width: 68vw;
-    height: 36.5vw;
+    height: 38.2vw;
     &::after {
       content: '';
       position: absolute;
@@ -84,8 +85,25 @@
       }
     }
     .item {
+      position: relative;
       width: 100%;
-      height: 36.5vw;
+      height: 38.2vw;
+      overflow: hidden;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $white;
+      }
+    }
+    .slick-active .img {
+      opacity: .7;
+      transform: scale(1.2);
+      animation: myMove 24s ease-in-out;
+      transition: opacity .1s ease-in-out;
     }
     .img {
       width: 100%;
@@ -159,6 +177,9 @@
         height: 350px;
       }
     }
+    .video-carousel {
+      height: 50vw;
+    }
   }
 }
 
@@ -189,4 +210,34 @@
       }
     }
   }
+}
+
+@keyframes myMove {
+  0% {
+    transform: scale(1.2);
+    opacity: .7;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+
+
+  //1.04167%, 32.29167% {
+  //  opacity: 1
+  //}
+  //34.375% {
+  //  opacity: 0;
+  //  transform: scale(1)
+  //}
+  //0%, to {
+  //  transform: scale(1.2);
+  //  opacity: 1
+  //}
+  //98.95833% {
+  //  opacity: 0;
+  //  transform: scale(1.20606)
+  //}
 }

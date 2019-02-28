@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/assets/libs/bootstrap/bootstrap-grid.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/assets/css/slick.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_url'); ?>/assets/css/magnific-popup.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/assets/css/styles.css" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
@@ -68,7 +69,7 @@ $services = pods('services')->find();
                     <div id="menu-toggle" class="menu-toggle">
                         <ul>
                             <li>
-                                <a href="#">услуги</a>
+                                <a href="/services">услуги</a>
                                 <?php if($services->total_found()){ ?>
                                 <ul class="submenu">
                                     <?php while($services->fetch()) {?>
@@ -82,16 +83,16 @@ $services = pods('services')->find();
                                 <?php } ?>
                             </li>
                             <li>
-                                <a href="#">наши работы</a>
+                                <a href="/works">наши работы</a>
                             </li>
                             <li>
-                                <a href="#">магазин</a>
+                                <a href="/shop">магазин</a>
                             </li>
                             <li>
-                                <a href="#">контакты</a>
+                                <a href="/contacts">контакты</a>
                             </li>
                             <li>
-                                <a href="#">о нас</a>
+                                <a href="/about">о нас</a>
                             </li>
                             <li>
                                 <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#contactModal">

@@ -25,8 +25,10 @@ $(document).ready(function() {
     var slider = $('#main-slider');
     if (slider.length) {
         slider.slick({
-            prevArrow: '<button type="button" class="slick-prev"> <i class="icon icon-prev"></i> </button>',
-            nextArrow: '<button type="button" class="slick-next"> <i class="icon icon-next"></i> </button>'
+            arrows: false,
+            speed: 0,
+            autoplay: true,
+            autoplaySpeed: 24000
         });
     }
     //if video player is active
@@ -34,7 +36,6 @@ $(document).ready(function() {
     if (player.length) {
         console.log('player');
     }
-
 
     //-------footer form
     $('#subscribe-form').on('submit', function(e) {
@@ -52,5 +53,50 @@ $(document).ready(function() {
             }
         });
     })
+
+    //-------order form
+    $('#order-form').on('submit', function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: '/wp-json/blog/v1/contact',
+            data: { action : 'shivka_Contact_Save_AJAX', data: $('#order-form').serializeArray()},
+            cache: true,
+            success: function(data) {
+                console.log('success');
+            },
+            error: function(MLHttpRequest, textStatus, errorThrown) {
+                console.log(errorThrown);
+            }
+        });
+    })
+
+    //-------call form
+    $('#call-form').on('submit', function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: '/wp-json/blog/v1/calls',
+            data: { action : 'shivka_Calls_Save_AJAX', data: $('#call-form').serializeArray()},
+            cache: true,
+            success: function(data) {
+                console.log('success');
+            },
+            error: function(MLHttpRequest, textStatus, errorThrown) {
+                console.log(errorThrown);
+            }
+        });
+    });
+
+    //
+    var gallery = $('#gallery');
+    if (gallery.length) {
+        gallery.magnificPopup({
+            delegate: 'a', // child items selector, by clicking on it popup will open
+            type: 'image'
+            // other options
+        });
+    }
+
 
 });

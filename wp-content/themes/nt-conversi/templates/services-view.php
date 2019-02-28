@@ -66,16 +66,17 @@ if(!empty($data->total_found())) {
                         <h2>Фото готовых работ</h2>
                         <div class="row">
                             <div class="col-12">
-                                <div class="gallery-wrap">
+                                <div id="gallery" class="gallery-wrap">
                                     <?php $related_gallery = pods('gallery')->find(array('limit' => 1, 'where' => 't.id = '.$data->field('gallery')['ID'])); ?>
                                     <?php while($related_gallery->fetch()){?>
                                         <?php foreach ($related_gallery->field('images') as $item) { ?>
-                                        <div style="background-image: url(<?=$item['guid']?>);" class="img-wrap"></div>
+                                        <a href="<?=$item['guid']?>" style="background-image: url(<?=$item['guid']?>);" class="img-wrap"></a>
                                     <?php } } ?>
                                 </div>
                             </div>
                         </div>
                         <div class="see-more">
+<!--                            TODO: вести на определенную галлерею-->
                             <a href="/" class="underline">смотреть больше фото</a>
                         </div>
                     </div>
@@ -105,7 +106,7 @@ if(!empty($data->total_found())) {
                             <h2>Готовые товары с нашей вышивкой</h2>
                             <p>Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.</p>
                             <p>Мы также вышиваем шевроны и нашивки, логотипы и эмблемы компаний, создадим вышивку на одежде и крое, домашнем текстиле и полотенцах, коже и замше.</p>
-                            <a type="button" class="btn btn-primary">перейти в магазин</a>
+                            <a href="/shop" type="button" class="btn btn-primary">перейти в магазин</a>
                         </div>
                     </div>
                 </div>
