@@ -61,12 +61,12 @@ $stages_of_work = pods('stages_of_work')->find($params);
                             <div class="step col-xl-3 col-sm-6 col-12">
                                 <h3><?=$stages_of_work->display('post_title')?></h3>
                                 <p><?=$stages_of_work->display('post_content')?></p>
-                                <?=$stages_of_work->display('image')?>
+<!--                                --><?//=$stages_of_work->display('image')?>
                             </div>
                         <?php } ?>
                     </div>
                     <div class="see-more">
-                        <a href="/" class="underline">смотреть подробности</a>
+                        <a href="/how-to-order" class="underline">смотреть подробности</a>
                     </div>
                 </div>
             </div>
