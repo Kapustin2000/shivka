@@ -4,9 +4,9 @@ Template Name: Services - category
 */
 $id = shivka_escapeParam(trim($_GET['id'], '/'));
 $params = array('limit' => 1,
-    'where'=>"slug = '".$id."'"
+    'where'=>"post_name = '".$id."'"
 );
-$data = pods('service_categories')->find($params);
+$data = pods('services')->find($params);
 
 $found = false;
 if(!empty($data->total_found())) {
@@ -17,11 +17,6 @@ if(!empty($data->total_found())) {
 
     }
 }
-$params = array(
-    'orderby'=>"order_weight.meta_value +0 DESC,id DESC",
-    'where'=> 'service_categories.slug ="'.$id.'"'
-);
-$services = pods('single_services')->find($params);
 
 
 
@@ -30,7 +25,7 @@ $services = pods('single_services')->find($params);
 <?php get_header(); ?>
 
 <?php if($found){ ?>
-
+    <?php  print_r($data->field('service_category')); ?>
     <div class="smarthoop-wrap smarthoop-services smarthoop-services-category">
         <section class="services">
             <div class="container">
@@ -41,30 +36,29 @@ $services = pods('single_services')->find($params);
                         </h1>
                         <div class="decorative yellow"></div>
                         <div class="decorative lavander"></div>
-                        <?php if($services->total_found()){ ?>
                         <div class="row">
-                            <?php while($services->fetch()){ ?>
+                            <?php if($data->field('service_category')){  ?>
+                            <?php foreach($data->field('service_category') as $category) { $related_category = pods('service_categories')->find(array('limit' => 1, 'where' => 't.term_id = '.$category['term_id']));?>
                             <div class="col-lg-6 col-12">
-                                <a href="<?=get_permalink($services->display('id'));?>" class="service-item">
+                                <a href="<?=get_permalink($related_category->field('single_service')['ID'])?>" class="service-item">
                                     <div class="service-title-wrap">
-                                        <div class="service-title"><?=$services->display('post_title')?></div>
-                                        <?php if($services->field('post_content')){ ?>
-                                        <div class="service-desc service-small-desc"><?=$services->display('post_content')?></div>
+                                        <div class="service-title"><?=$related_category->display('title')?></div>
+                                        <?php if($related_category->field('title')){ ?>
+                                        <div class="service-desc service-small-desc"><?=$related_category->display('title')?></div>
                                         <br>
                                         <?php } ?>
-                                        <?php if($services->field('full_description')){ ?>
-                                        <div class="service-desc service-full-desc"><?=$services->display('full_description')?></div>
+                                        <?php if($related_category->field('description')){ ?>
+                                        <div class="service-desc service-full-desc"><?=$related_category->display('description')?></div>
                                         <?php } ?>
                                     </div>
                                     <div class="service-img-wrap">
-                                        <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
+                                        <div class="service-img" style="background-image: url(<?=$related_category->display('preview')?>);"></div>
                                     </div>
                                     <button type="button" class="btn btn-primary">подробнее</button>
                                 </a>
                             </div>
-                            <?php } ?>
+                            <?php } } ?>
                         </div>
-                        <?php } ?>
                     </div>
                 </div>
             </div>
