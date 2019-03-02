@@ -25,7 +25,6 @@ if(!empty($data->total_found())) {
 <?php get_header(); ?>
 
 <?php if($found){ ?>
-    <?php  print_r($data->field('service_category')); ?>
     <div class="smarthoop-wrap smarthoop-services smarthoop-services-category">
         <section class="services">
             <div class="container">
