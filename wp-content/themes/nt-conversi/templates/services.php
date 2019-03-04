@@ -11,7 +11,7 @@ $params = array(
     'orderby'=>"order_weight.meta_value DESC,id DESC",
     'offset' => shivka_offset(9),
 );
-$data = pods('services')->find();
+$data = pods('services')->find($params);
 
 ?>
 
