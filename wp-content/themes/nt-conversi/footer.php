@@ -84,7 +84,7 @@ $settings  = pods('website_settings')->find();
                                         <?=$settings->display('wholesale_city')?>
                                     </a> </br>
                                     <?=$settings->display('wholesale_number')?></br>
-                                    email: <a href="mailto:<?=$settings->display('wholesale_emaal')?>"><?=$settings->display('wholesale_emaal')?></a>
+                                    email: <a href="mailto:<?=$settings->display('wholesale_email')?>"><?=$settings->display('wholesale_email')?></a>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -92,7 +92,7 @@ $settings  = pods('website_settings')->find();
                                     <a target="_blank" href="<?=$settings->display('individually_latitude')?>">
                                         <?=$settings->display('individual_city')?>
                                     </a> </br>
-                                    <?=$settings->display('individual_number')?></br>
+                                    <?=$settings->display('individually_number')?></br>
                                     email: <a href="mailto:<?=$settings->display('individual_email')?>"><?=$settings->display('individual_email')?></a>
                                 </div>
                             </div>
@@ -100,8 +100,8 @@ $settings  = pods('website_settings')->find();
                     </div>
                     <div class="schedule">
                         <h4>График работы</h4>
-                        <p><?=$settings->display('individual_working_hours')?></br>
-                            <?=$settings->display('individual_working_days')?></p>
+                        <p><?=$settings->display('individually_working_hours')?></br>
+                            <?=$settings->display('individually_working_days')?></p>
                     </div>
                     <div class="subscribe">
                         <h4>подписаться на рассылку</h4>
