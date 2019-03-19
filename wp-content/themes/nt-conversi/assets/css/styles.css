@@ -769,37 +769,29 @@ footer {
       height: 36.5vw;
       background-color: #cdcfe9;
       z-index: -1; }
-  .jumbotron .main-slider .item {
-    position: relative;
-    width: 100%;
-    height: 38.2vw;
+  .jumbotron .main-slider {
     overflow: hidden; }
-    .jumbotron .main-slider .item::before {
-      content: '';
+    .jumbotron .main-slider .img {
       position: absolute;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
-      background-color: #fff; }
-  .jumbotron .main-slider .img {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    -webkit-animation-duration: 24s;
-    animation-duration: 24s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-name: myMove;
-    animation-name: myMove; }
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      opacity: 1;
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      -webkit-animation-duration: 24s;
+      animation-duration: 24s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-name: myMove;
+      animation-name: myMove; }
   .jumbotron .video-carousel .video-item {
     background-image: url("../img/videoblocks-machine-embroidery-is-an-embroidery-process-whereby-a-sewing-machine-or-embroidery-machine-is-used-to-create-patterns-on-textiles-textile-industrial-embroidery-machine-sewing-equipment-loom_rl_mluxx6x_thu.png");
     background-size: cover;

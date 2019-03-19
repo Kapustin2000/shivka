@@ -61,9 +61,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                         <?php if($settings->field('main_screen')) { ?>
                         <div id="main-slider" class="main-slider">
                             <?php foreach($settings->field('sliders') as $slider) { ?>
-                            <div class="item">
                                 <div class="img" style="background-image: url(<?=$slider['guid']?>);"></div>
-                            </div>
                             <?php } ?>
                         </div>
 
