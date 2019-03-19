@@ -15,6 +15,27 @@ footer {
       margin-bottom: 3rem;
     }
   }
+  .social-wrap {
+    display: flex;
+    a {
+      position: relative;
+      display: block;
+      margin-right: 25px;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      background-color: $black;
+      &:hover {
+        background-color: $lavander;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .icon {
+      position: absolute;
+    }
+  }
   h4 {
     font-family: 'Uni Sans Thin Caps', sans-serif;
     font-size: 1.6rem;
@@ -155,4 +176,30 @@ footer {
       }
     }
   }
+}
+
+.icon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-facebook {
+  background-image: url('../img/fb.png');
+  width: 21px;
+  height: 40px;
+  top: calc(50% + 6px);
+  left: calc(50% + 6px);
+}
+
+.icon-instagram {
+  background-image: url('../img/insta.png');
+  width: 30px;
+  height: 30px;
+}
+
+.icon-youtube {
+  background-image: url('../img/YouTube.png');
+  width: 30px;
+  height: 21px;
 }

@@ -102,9 +102,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: 'Uni Sans Heavy Caps Italic', sans-serif;
-  font-size: 6rem;
+  font-size: get-vw(60px);
   font-weight: 400;
-  line-height: 7.2rem;
+  line-height: get-vw(72px);
   color: $white;
   span {
     background-color: $violet;
@@ -113,10 +113,10 @@ h1 {
 
 h2 {
   font-family: 'Uni Sans Heavy Caps', sans-serif;
-  font-size: 4rem;
+  font-size: get-vw(40px);
   font-weight: 400;
-  line-height: 5rem;
-  margin-bottom: 5rem;
+  line-height: get-vw(50px);
+  margin-bottom: get-vw(50px);
 }
 
 @media (max-width: $mobile) {
@@ -172,14 +172,14 @@ textarea {
   text-transform: uppercase;
   font-family: "Uni Sans Thin Caps", sans-serif;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: get-vw(30px);
   color: $black;
   &::after {
     content: '';
     position: absolute;
     width: 80%;
-    height: 2px;
-    bottom: -1.4rem;
+    height: get-vw(2px);
+    bottom: get-vw(-14px);
     left: 50%;
     transform: translateX(-50%);
     background-color: $black;
@@ -198,8 +198,8 @@ textarea {
   display: block;
   background-image: url('../img/arrow.png');
   background-size: cover;
-  width: 1rem;
-  height: 15.3rem;
+  width: get-vw(10px);
+  height: get-vw(153px);
 }
 
 .decorative {
@@ -275,19 +275,24 @@ textarea {
 
 @media (min-width: $hd) {
   .container {
-    max-width: 135rem;
+    //max-width: get-vw(1350px);
+    //max-width: 93.75%;
+    max-width: 83.3333333333%;
   }
 }
 
 @media (min-width: $xl) {
   .container {
-    max-width: 150rem;
+    //max-width: get-vw(1500px);
+    //max-width: 93.75%;
+    max-width: 83.3333333333%;
   }
 }
 
 @media (min-width: $fullhd) {
   .container {
-    max-width: 160rem;
+    //max-width: get-vw(1600px);
+    max-width: 83.3333333333%;
   }
 }
 

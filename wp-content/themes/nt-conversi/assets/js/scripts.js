@@ -22,15 +22,15 @@ $(document).ready(function() {
 
     //-------main page slider
     //if slider is active
-    var mainSlider = $('#main-slider');
-    if (mainSlider.length) {
-        mainSlider.slick({
-            arrows: false,
-            speed: 0,
-            autoplay: true,
-            autoplaySpeed: 24000
-        });
-    }
+    // var mainSlider = $('#main-slider');
+    // if (mainSlider.length) {
+    //     mainSlider.slick({
+    //         arrows: false,
+    //         speed: 0,
+    //         autoplay: true,
+    //         autoplaySpeed: 24000
+    //     });
+    // }
 
     //if video player is active
     var player = '';

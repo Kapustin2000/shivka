@@ -2,29 +2,29 @@ header {
   background-color: transparentize($white, .2);
   position: fixed;
   width: 100%;
-  z-index: 10000;
+  z-index: 100;
   top: 0;
   & + section {
-    margin-top: 10rem;
+    margin-top: get-vw(100px);
   }
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 2.5rem 0;
+    padding: get-vw(25px) 0;
     &-brand {
       line-height: 0;
       @include outline();
       img {
-        width: 27rem;
+        width: get-vw(270px);
       }
     }
     &-toggler {
       cursor: pointer;
       position: relative;
-      width: 3.5rem;
-      height: 2.5rem;
+      width: get-vw(35px);
+      height: get-vw(25px);
       padding: 0;
       z-index: 100;
       &.active {
@@ -47,8 +47,8 @@ header {
       top: 50%;
       transform: translateY(-50%);
       left: 0;
-      width: 3.5rem;
-      height: 1px;
+      width: get-vw(35px);
+      height: get-vw(1px);
       background-color: $violet;
       &::before,
       &::after {
@@ -62,15 +62,16 @@ header {
         transition: .5s ease-in;
       }
       &::before {
-        top: -1rem;
+        top: get-vw(-10px);
       }
       &::after {
-        bottom: -1rem;
+        bottom: get-vw(-10px);
       }
     }
     &-nav {
       .nav-item {
-        padding: 0 5rem;
+        //padding: 0 get-vw(50px);
+        padding: 0 get-vw(20px);
         &:first-child {
           padding-left: 0;
         }
@@ -81,11 +82,11 @@ header {
           position: relative;
           color: $violet;
           font-family: "Uni Sans Thin Caps", sans-serif;
-          font-size: 1.6rem;
+          font-size: get-vw(16px);
           font-weight: bold;
-          line-height: 2.5rem;
+          line-height: get-vw(25px);
           text-transform: uppercase;
-          padding: 2rem 0;
+          padding: get-vw(20px) 0;
           &::after {
             content: '';
             display: block;
@@ -108,12 +109,12 @@ header {
   }
   .menu-toggle {
     position: absolute;
-    width: 800px;
+    width: get-vw(800px);
     height: 100vh;
     top: 0;
-    right: -1000px;
+    right: get-vw(-1000px);
     background-color: $white;
-    box-shadow: 0 0 50px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 get-vw(50px) rgba(0, 0, 0, .15);
     transition: $default;
     &.active {
       right: 0;
@@ -123,14 +124,14 @@ header {
       position: absolute;
       display: block;
       top: 0;
-      right: -800px;
+      right: get-vw(-800px);
       width: inherit;
       height: inherit;
       background-color: inherit;
     }
     ul {
       position: relative;
-      margin-top: 100px;
+      margin-top: get-vw(100px);
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -148,15 +149,15 @@ header {
       a {
         position: relative;
         font-family: 'Uni Sans Thin Caps', sans-serif;
-        font-size: 25px;
+        font-size: get-vw(25px);
         font-weight: bold;
-        line-height: 25px;
+        line-height: get-vw(25px);
         color: $violet;
-        padding: 25px 0;
+        padding: get-vw(25px) 0;
         display: inline-block;
       }
       button {
-        margin-top: 25px;
+        margin-top: get-vw(25px);
       }
       &:not(.submenu) > li {
         width: 100%;
@@ -166,10 +167,10 @@ header {
         &::after {
           content: '';
           position: absolute;
-          right: calc(100% + 22px);
+          right: calc(100% + 1.14583333333vw);
           top: 50%;
           transform: translateY(-50%);
-          width: 270px;
+          width: get-vw(270px);
           height: 2px;
           background-color: $violet;
           z-index: 2;
@@ -180,26 +181,26 @@ header {
     .submenu {
       display: none;
       position: absolute;
-      width: 480px;
+      width: get-vw(480px);
       height: 100vh;
       left: 0;
       top: 0;
       margin: 0;
-      padding: 10px 100px;
+      padding: get-vw(10px) get-vw(100px);
       background-color: #F9F5E0;
       &::after {
         content: '';
         position: absolute;
         left: 0;
         top: 0;
-        width: calc(100% - 50px);
+        width: calc(100% - 2.60416666667vw);
         height: inherit;
         background-color: inherit;
         z-index: 100;
       }
       a {
-        font-size: 16px;
-        padding: 16px 0;
+        font-size: get-vw(16px);
+        padding: get-vw(16px) 0;
         z-index: 1000;
       }
     }
@@ -211,7 +212,7 @@ header {
     .navbar {
       &-nav {
         .nav-item {
-          padding: 0 2rem;
+          //padding: 0 get-vw(20px);
         }
       }
     }
@@ -223,7 +224,7 @@ header {
     .navbar {
       &-nav,
       .btn {
-        display: none;
+        //display: none;
       }
     }
   }
@@ -279,7 +280,7 @@ header {
     .menu-toggle {
       ul {
         li {
-          padding: 0 25px;
+          padding: 0 get-vw(25px);
           .btn {
             margin-left: auto;
           }
