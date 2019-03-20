@@ -13,7 +13,6 @@ a[type='button'] {
   text-transform: uppercase;
   padding: get-vw(13px) get-vw(57px);
   transition: $default;
-  @include outline();
   &::after {
     content: '';
     position: absolute;

@@ -1,5 +1,5 @@
 .stock {
-  padding-bottom: 15rem;
+  padding-bottom: get-vw(150px);
   .stock-img {
     width: 100%;
     img {
@@ -12,59 +12,59 @@
     p {
       position: relative;
       z-index: 1;
-      max-width: 40rem;
+      max-width: get-vw(400px);
     }
     a {
       display: inline-block;
-      margin: 1.5rem 0 4rem;
+      margin: get-vw(150px) 0 get-vw(40px);
     }
     .ornament {
       position: absolute;
-      max-width: 44rem;
+      max-width: get-vw(440px);
       width: 50%;
       height: auto;
-      top: 5rem;
-      right: 5rem;
+      top: get-vw(50px);
+      right: get-vw(50px);
     }
   }
 }
 
-@media (max-width: $xl - 1px) {
-  .stock {
-    .stock-text {
-      .ornament {
-        right: -10rem;
-      }
-    }
-  }
-}
-
-@media (min-width: $desktop + 1px) {
-  .stock {
-    .stock-text {
-      &.bordered {
-        transform: translate(-9.3rem, -5rem);
-      }
-    }
-  }
-}
-
-@media (max-width: $desktop) {
-  .stock {
-    .stock-img {
-      display: none;
-    }
-  }
-}
-
-@media (max-width: $mobile) {
-  .stock {
-    .stock-text {
-      .ornament {
-        top: 100%;
-        right: 0;
-        transform: translate(0, -60px);
-      }
-    }
-  }
-}
+//@media (max-width: $xl - 1px) {
+//  .stock {
+//    .stock-text {
+//      .ornament {
+//        right: -10rem;
+//      }
+//    }
+//  }
+//}
+//
+//@media (min-width: $desktop + 1px) {
+//  .stock {
+//    .stock-text {
+//      &.bordered {
+//        transform: translate(-9.3rem, -5rem);
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: $desktop) {
+//  .stock {
+//    .stock-img {
+//      display: none;
+//    }
+//  }
+//}
+//
+//@media (max-width: $mobile) {
+//  .stock {
+//    .stock-text {
+//      .ornament {
+//        top: 100%;
+//        right: 0;
+//        transform: translate(0, -60px);
+//      }
+//    }
+//  }
+//}

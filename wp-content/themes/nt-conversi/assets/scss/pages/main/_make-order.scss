@@ -1,64 +1,71 @@
 .make-order {
-    padding-bottom: 5rem;
+    padding-bottom: get-vw(50px);
     .decorative {
         &.background {
-            top: -10rem;
-            left: 1.5rem;
-            width: calc(100% - 13rem);
-            height: 50rem;
+            top: get-vw(-100px);
+            left: get-vw(15px);
+            width: calc(100% - 6.77083vw);
+            height: get-vw(500px);
             background-image: url('../img/Broderie-en-direct-1612x1078@1x.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: top left;
         }
         &.yellow {
-            top: 7.5rem;
+            top: get-vw(75px);
             right: 0;
-            width: 42.5rem;
-            height: 42.5rem;
+            width: get-vw(425px);
+            height: get-vw(425px);
             opacity: .5;
         }
     }
     .form-wrap {
         background-color: $white;
         margin: 0 auto;
-        padding: 10rem;
-        box-shadow: 0 0 50px rgba(0, 0, 0, .15);
+        padding: get-vw(100px);
+        box-shadow: 0 0 get-vw(50px) rgba(0, 0, 0, .15);
         h2, p {
             text-align: center;
         }
         h2 {
-            max-width: 56rem;
+            max-width: get-vw(560px);
             margin-left: auto;
             margin-right: auto;
         }
         p {
-            margin-bottom: 4.5rem;
+            margin-bottom: get-vw(45px);
         }
         .tabs-wrap {
-            margin: 0 -10rem;
+            margin: 0 get-vw(-100px);
         }
     }
     form {
-        padding-top: 5rem;
-        margin-bottom: -5rem;
+        padding-top: get-vw(50px);
+        margin-bottom: get-vw(-50px);
         &:not(.active) {
             display: none;
         }
         input, textarea, button {
             width: 100%;
-            margin-bottom: 5rem;
+            margin-bottom: get-vw(50px);
+        }
+        .submit-wrap {
+            display: flex;
         }
     }
 }
 
-@media (max-width: $mobile) {
-    .make-order {
-        .form-wrap  {
-            padding: 5rem 2rem;
-            .tabs-wrap {
-                margin: 0 -15px;
-            }
-        }
-    }
+.rc-anchor-normal {
+    width: 50% !important;
 }
+
+//@media (max-width: $mobile) {
+//    .make-order {
+//        .form-wrap  {
+//            padding: get-vw(50px) get-vw(20px);
+//            .tabs-wrap {
+//                margin: 0 get-vw(-15px);
+//            }
+//        }
+//    }
+//}

@@ -1,7 +1,7 @@
 @mixin bordered-block() {
   position: relative;
-  border: 15px solid $violet;
-  transform: translate(5rem, 5rem);
+  border: get-vw(15px) solid $violet;
+  transform: translate(get-vw(50px), get-vw(50px));
   z-index: 1;
   background-color: $white;
   &::before {
@@ -11,38 +11,38 @@
 }
 
 @mixin background-block() {
-  padding-top: 11.3rem;
-  padding-left: 13rem;
-  padding-right: 3.4rem;
+  padding-top: get-vw(113px);
+  padding-left: get-vw(130px);
+  padding-right: get-vw(34px);
   background-color: $lavander;
   border: none;
   &::before {
-    right: -.6rem;
+    right: get-vw(-6px);
     color: $white;
   }
 }
 
 .steps {
   counter-reset: section;
-  padding-bottom: 26rem;
+  padding-bottom: get-vw(260px);
   .step {
-    min-height: 39rem;
-    padding: 5rem;
+    min-height: get-vw(390px);
+    padding: get-vw(50px);
     &::before {
       counter-increment: section;
       content: counter(section);
-      font-size: 15rem;
+      font-size: get-vw(150px);
       position: absolute;
       font-family: 'Uni Sans Heavy Caps', sans-serif;
-      bottom: -3.7rem;
+      bottom: get-vw(-37px);
     }
     h3 {
       color: $violet;
       font-family: 'Uni Sans Thin Caps', sans-serif;
-      font-size: 2.5rem;
+      font-size: get-vw(25px);
       font-weight: bold;
-      line-height: 5rem;
-      margin-bottom: 2.5rem;
+      line-height: get-vw(50px);
+      margin-bottom: get-vw(25px);
     }
     p {
       position: relative;
@@ -50,7 +50,7 @@
     }
   }
   .see-more {
-    margin-top: 9rem;
+    margin-top: get-vw(90px);
     text-align: center;
   }
 }
@@ -74,43 +74,43 @@
   }
 }
 
-@media (min-width: $mobile + 1px) and (max-width: $large-desktop) {
-  .steps {
-    .step {
-      &:nth-child(1),
-      &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(8) {
-        @include bordered-block();
-      }
-      &:nth-child(2),
-      &:nth-child(3),
-      &:nth-child(6),
-      &:nth-child(7) {
-        @include background-block();
-      }
-    }
-  }
-}
-
-@media (max-width: $mobile) {
-  .steps {
-    h2 {
-      margin: 2rem 0 0;
-    }
-    .step {
-      &:nth-child(1),
-      &:nth-child(3),
-      &:nth-child(5),
-      &:nth-child(7) {
-        @include bordered-block();
-      }
-      &:nth-child(2),
-      &:nth-child(4),
-      &:nth-child(6),
-      &:nth-child(8) {
-        @include background-block();
-      }
-    }
-  }
-}
+//@media (min-width: $mobile + 1px) and (max-width: $large-desktop) {
+//  .steps {
+//    .step {
+//      &:nth-child(1),
+//      &:nth-child(4),
+//      &:nth-child(5),
+//      &:nth-child(8) {
+//        @include bordered-block();
+//      }
+//      &:nth-child(2),
+//      &:nth-child(3),
+//      &:nth-child(6),
+//      &:nth-child(7) {
+//        @include background-block();
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: $mobile) {
+//  .steps {
+//    h2 {
+//      margin: get-vw(20px) 0 0;
+//    }
+//    .step {
+//      &:nth-child(1),
+//      &:nth-child(3),
+//      &:nth-child(5),
+//      &:nth-child(7) {
+//        @include bordered-block();
+//      }
+//      &:nth-child(2),
+//      &:nth-child(4),
+//      &:nth-child(6),
+//      &:nth-child(8) {
+//        @include background-block();
+//      }
+//    }
+//  }
+//}

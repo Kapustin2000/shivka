@@ -23,6 +23,7 @@
     <link href="<?php bloginfo('template_url'); ?>/assets/css/slick.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/assets/css/magnific-popup.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/assets/css/styles.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <?php wp_head(); ?>
 </head>
 <?php

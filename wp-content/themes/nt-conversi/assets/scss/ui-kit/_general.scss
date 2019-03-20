@@ -1,12 +1,8 @@
-@mixin outline() {
-  outline-color: $lavander;
-  &:focus {
-    outline: 1px dashed $lavander;
-  }
-}
-
 * {
   box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
 }
 
 html {
@@ -46,17 +42,17 @@ ul {
 .content-editable {
   ul {
     li {
-      padding-left: 40px;
+      padding-left: get-vw(40px);
       position: relative;
       display: block;
       &::before {
         content: '';
-        width: 25px;
-        height: 2px;
+        width: get-vw(25px);
+        height: get-vw(2px);
         display: block;
         background-color: $black;
         position: absolute;
-        top: 16px;
+        top: get-vw(16px);
         left: 0;
       }
     }
@@ -66,9 +62,9 @@ ul {
 .content-editable,
 p {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 2.5rem;
+  font-size: get-vw(25px);
   font-weight: 300;
-  line-height: 3.5rem;
+  line-height: get-vw(35px);
   margin-top: 0;
 }
 
@@ -76,21 +72,20 @@ a {
   cursor: pointer;
   text-decoration: none;
   transition: $default;
-  @include outline();
   &.back {
     display: block;
     position: relative;
     text-transform: uppercase;
     color: $black;
-    font-size: 3rem;
+    font-size: get-vw(30px);
     text-align: right;
     span {
       position: relative;
     }
     .icon-arrow {
       position: absolute;
-      top: -5.5rem;
-      left: -10rem;
+      top: get-vw(-55px);
+      left: get-vw(-100px);
       transform: rotate(90deg);
     }
   }
@@ -133,13 +128,12 @@ h2 {
 input,
 textarea {
   background-color: $lavander;
-  border-radius: 2.5rem;
+  border-radius: get-vw(25px);
   border: none;
   color: $white;
   text-transform: uppercase;
   font-family: 'Open Sans Condensed', sans-serif;
-  padding: 1.15rem 1.8rem 1.15rem 5rem;
-  @include outline();
+  padding: get-vw(11.5px) get-vw(18px) get-vw(11.5px) get-vw(50px);
   transition: $default;
   &::placeholder {
     color: $white;
@@ -150,7 +144,7 @@ textarea {
 }
 
 input {
-  font-size: 2rem;
+  font-size: get-vw(20px);
   font-weight: bold;
   &::placeholder {
     text-transform: uppercase;
@@ -158,9 +152,9 @@ input {
 }
 
 textarea {
-  font-size: 1.8rem;
+  font-size: get-vw(18px);
   font-weight: 300;
-  line-height: 2.5rem;
+  line-height: get-vw(25px);
   resize: none;
   &::placeholder {
     text-transform: initial;
@@ -217,10 +211,10 @@ textarea {
 }
 
 .bordered {
-  border: 15px solid $yellow;
-  padding: 8rem;
+  border: get-vw(15px) solid $yellow;
+  padding: get-vw(80px);
   p {
-    margin: 0 0 3rem;
+    margin: 0 0 get-vw(30px);
     &:last-child {
       margin-bottom: 0;
     }
@@ -246,32 +240,32 @@ textarea {
   }
 }
 
-@media (max-width: $hd) {
-  .bordered {
-    h2 {
-      font-size: 3rem;
-      line-height: 4rem;
-      margin-bottom: 3rem;
-    }
-  }
-  .content-editable,
-  p {
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-  }
-}
-
-@media (min-width: $desktop + 1px) {
-  .bordered {
-    transform: translate(-9.3rem, 0);
-  }
-}
-
-@media (max-width: $mobile) {
-  .bordered {
-    padding: 4rem;
-  }
-}
+//@media (max-width: $hd) {
+//  .bordered {
+//    h2 {
+//      font-size: 3rem;
+//      line-height: 4rem;
+//      margin-bottom: 3rem;
+//    }
+//  }
+//  .content-editable,
+//  p {
+//    font-size: 1.8rem;
+//    line-height: 2.8rem;
+//  }
+//}
+//
+//@media (min-width: $desktop + 1px) {
+//  .bordered {
+//    transform: translate(-9.3rem, 0);
+//  }
+//}
+//
+//@media (max-width: $mobile) {
+//  .bordered {
+//    padding: 4rem;
+//  }
+//}
 
 @media (min-width: $hd) {
   .container {
@@ -281,20 +275,20 @@ textarea {
   }
 }
 
-@media (min-width: $xl) {
-  .container {
-    //max-width: get-vw(1500px);
-    //max-width: 93.75%;
-    max-width: 83.3333333333%;
-  }
-}
-
-@media (min-width: $fullhd) {
-  .container {
-    //max-width: get-vw(1600px);
-    max-width: 83.3333333333%;
-  }
-}
+//@media (min-width: $xl) {
+//  .container {
+//    //max-width: get-vw(1500px);
+//    //max-width: 93.75%;
+//    max-width: 83.3333333333%;
+//  }
+//}
+//
+//@media (min-width: $fullhd) {
+//  .container {
+//    //max-width: get-vw(1600px);
+//    max-width: 83.3333333333%;
+//  }
+//}
 
 // @media (max-width: $tablet) {
 //   html {

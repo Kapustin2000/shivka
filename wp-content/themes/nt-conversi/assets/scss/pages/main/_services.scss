@@ -1,20 +1,20 @@
 .services {
-  padding-bottom: 21.5rem;
+  padding-bottom: get-vw(215px);
   .decorative {
-    width: 42.5rem;
-    height: 42.5rem;
+    width: get-vw(425px);
+    height: get-vw(425px);
     opacity: .5;
-    top: -5rem;
-    left: -17rem;
+    top: get-vw(-50px);
+    left: get-vw(-170px);
   }
   .service-item {
     display: block;
     position: relative;
-    height: 50rem;
+    height: get-vw(500px);
     overflow: hidden;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 get-vw(50px) rgba(0, 0, 0, 0.15);
     padding-top: 80%;
-    margin-bottom: 5.5rem;
+    margin-bottom: get-vw(55px);
     background-color: $white;
     .service-img-wrap {
       position: absolute;
@@ -36,7 +36,7 @@
       }
       .service-img {
         width: 100%;
-        padding-bottom: 38rem;
+        padding-bottom: get-vw(380px);
         background-image: url('../img/38bba466020cded409f222437f8c15d6.png');
         background-size: cover;
         background-repeat: no-repeat;
@@ -49,24 +49,24 @@
       bottom: 0;
       right: 0;
       z-index: 1;
-      padding: 1.1rem 2.7rem 1.1rem 0;
+      padding: get-vw(11px) get-vw(27px) get-vw(11px) 0;
       text-align: right;
       color: $violet;
       font-family: 'Uni Sans Thin Caps', sans-serif;
-      font-size: 2.5rem;
+      font-size: get-vw(25px);
       font-weight: bold;
-      line-height: 5rem;
+      line-height: get-vw(50px);
       transition: $default;
-      max-height: 12.2rem;
+      max-height: get-vw(122px);
       overflow: hidden;
       text-overflow: ellipsis;
     }
     button {
       display: block;
       position: absolute;
-      right: 2.7rem;
+      right: get-vw(27px);
       top: 100%;
-      margin-top: 2.5rem;
+      margin-top: get-vw(25px);
     }
   }
   .see-more {
@@ -74,97 +74,59 @@
   }
 }
 
-@media (max-width: $large-desktop) {
-  //.smarthoop-main-page .services .service-item .service-img-wrap .service-img {
-  //  padding-bottom: 145%;
-  //}
-}
-
-@media (min-width: $desktop + 1px) {
-  .services {
-    .service-item:hover {
-      .service-img-wrap {
-        padding-right: 0;
-        &::after {
-          background-color: transparentize($white, .4);
-        }
-        .service-img {
-          padding-bottom: 50rem;
-        }
-      }
-      .service-title,
-      button {
-        transform: translateY(-12.4rem);
-      }
-    }
-  }
-}
-
-@media (max-width: $desktop) {
-  .smarthoop-home {
-    .services {
-      .service-item {
-        .service-title {
-          max-height: 20rem;
-          bottom: 50%;
-          right: 50%;
-          transform: translate(50%, 50%);
-          width: 100%;
-          padding-right: 0;
-          text-align: center;
-        }
-      }
-    }
-  }
-  .services {
-    .service-item {
-      padding-top: 0;
-      .service-img-wrap {
-        padding-right: 0;
-        &::after {
-          background-color: transparentize($white, .4);
-        }
-        .service-img {
-          padding-bottom: 50rem;
-        }
-      }
-
-      button {
-        right: 50%;
-        top: calc(50% + 10rem);
-        transform: translate(50%, -50%);
-      }
-    }
-  }
-  //.smarthoop-main-page .services {
-  //  .service-item {
-  //    padding-top: 60%;
-  //    .service-img-wrap {
-  //      .service-img {
-  //        padding-bottom: 73%;
-  //      }
-  //    }
-  //    .service-title {
-  //      transform: translateY(-125%);
-  //    }
-  //    button {
-  //      transform: translateY(-100%);
-  //    }
-  //  }
-  //}
-}
-
-//@media (max-width: $mobile) {
-//  .smarthoop-main-page .services {
-//    .service-item {
-//      .service-img-wrap .service-img {
-//        padding-bottom: 100%;
+//@media (min-width: $desktop + 1px) {
+//  .services {
+//    .service-item:hover {
+//      .service-img-wrap {
+//        padding-right: 0;
+//        &::after {
+//          background-color: transparentize($white, .4);
+//        }
+//        .service-img {
+//          padding-bottom: 50rem;
+//        }
 //      }
-//      .service-title {
-//        transform: translateY(-100%);
-//      }
+//      .service-title,
 //      button {
-//        transform: translateY(-120%);
+//        transform: translateY(-12.4rem);
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: $desktop) {
+//  .smarthoop-home {
+//    .services {
+//      .service-item {
+//        .service-title {
+//          max-height: 20rem;
+//          bottom: 50%;
+//          right: 50%;
+//          transform: translate(50%, 50%);
+//          width: 100%;
+//          padding-right: 0;
+//          text-align: center;
+//        }
+//      }
+//    }
+//  }
+//  .services {
+//    .service-item {
+//      padding-top: 0;
+//      .service-img-wrap {
+//        padding-right: 0;
+//        &::after {
+//          background-color: transparentize($white, .4);
+//        }
+//        .service-img {
+//          padding-bottom: 50rem;
+//        }
+//      }
+//
+//      button {
+//        right: 50%;
+//        top: calc(50% + 10rem);
+//        transform: translate(50%, -50%);
 //      }
 //    }
 //  }

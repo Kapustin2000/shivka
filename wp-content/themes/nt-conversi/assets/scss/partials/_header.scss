@@ -15,7 +15,6 @@ header {
     padding: get-vw(25px) 0;
     &-brand {
       line-height: 0;
-      @include outline();
       img {
         width: get-vw(270px);
       }

@@ -1,5 +1,5 @@
 .common-service-description {
-  padding-bottom: 10rem;
+  padding-bottom: get-vw(100px);
   .common-service-img {
     img {
       width: 100%;
@@ -7,22 +7,22 @@
     }
   }
   .common-service-text {
-    margin: 5rem 0;
+    margin: get-vw(50px) 0;
   }
   .decorative {
     width: 100vw;
-    height: 20rem;
-    left: 13rem;
-    bottom: -5rem;
+    height: get-vw(200px);
+    left: get-vw(130px);
+    bottom: get-vw(-50px);
   }
 }
 
-@media (max-width: $mobile) {
-  .common-service-description {
-    padding-bottom: 15rem;
-    .btn {
-      display: block;
-      text-align: center;
-    }
-  }
-}
+//@media (max-width: $mobile) {
+//  .common-service-description {
+//    padding-bottom: 15rem;
+//    .btn {
+//      display: block;
+//      text-align: center;
+//    }
+//  }
+//}

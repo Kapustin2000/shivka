@@ -11,7 +11,7 @@
   }
   h1, .underline {
     position: relative;
-    z-index: 2;
+    z-index: 4;
   }
   .see-more {
     position: relative;
@@ -51,37 +51,40 @@
     }
   }
   .main-slider {
-    overflow: hidden;
-    //.item {
-    //
-    //  &::before {
-    //    content: '';
-    //    position: absolute;
-    //    width: 100%;
-    //    height: 100%;
-    //    top: 0;
-    //    left: 0;
-    //    background-color: $white;
-    //  }
-    //}
+    .slides-wrap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
     .img {
       position: absolute;
       width: 100%;
       height: 100%;
-
       top: 0;
       left: 0;
-
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
-
       opacity: 1;
       transform: scale(1.2);
       animation-duration: 24s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
-      animation-name: myMove;
+      &:nth-child(1) {
+        animation-name: myMove-1;
+        z-index: 2;
+      }
+      &:nth-child(2) {
+        animation-name: myMove-2;
+        z-index: 1;
+      }
+      &:nth-child(3) {
+        animation-name: myMove-3;
+        z-index: 0;
+      }
     }
   }
   .video-carousel {
@@ -113,13 +116,13 @@
 
 @media (max-width: $desktop) {
   .jumbotron {
-    margin-top: 120px;
+    margin-top: get-vw(120px);
     .inner {
       text-align: center;
-      padding-top: 36rem;
+      padding-top: get-vw(360px);
     }
     h1 {
-      margin: 0 0 3rem;
+      margin: 0 0 get-vw(30px);
     }
     .see-more {
       width: 100%;
@@ -166,7 +169,7 @@
   }
 }
 
-@keyframes myMove {
+@keyframes myMove-1 {
   1.04167%, 32.29167% {
     opacity: 1;
   }
@@ -179,8 +182,24 @@
     opacity: 1;
   }
   98.95833% {
-    opacity: 0;
-    transform: scale(1.20606);
+    opacity:0;transform:scale(1.20606)}
+}
+
+@keyframes myMove-2 {
+  32.29167% {
+    opacity: 1;
+    transform: scale(1.2);
   }
+  34.375%,65.625% {
+    opacity: 1
+  }
+  67.70833%{opacity:0;transform:scale(1)}
+  to{opacity:0;transform:scale(1.2)}
+}
+
+@keyframes myMove-3 {
+  65.625%{opacity:1;transform:scale(1.2)}
+  67.70833%,98.95833%{opacity:1}
+  to{opacity:0;transform:scale(1)}
 }
 

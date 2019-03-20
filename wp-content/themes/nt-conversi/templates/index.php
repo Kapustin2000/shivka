@@ -60,9 +60,11 @@ $stages_of_work = pods('stages_of_work')->find($params);
                         </div>
                         <?php if($settings->field('main_screen')) { ?>
                         <div id="main-slider" class="main-slider">
-                            <?php foreach($settings->field('sliders') as $slider) { ?>
-                                <div class="img" style="background-image: url(<?=$slider['guid']?>);"></div>
-                            <?php } ?>
+                            <div class="slides-wrap">
+                                <?php foreach($settings->field('sliders') as $slider) { ?>
+                                    <div class="img" style="background-image: url(<?=$slider['guid']?>);"></div>
+                                <?php } ?>
+                            </div>
                         </div>
 
                         <?php }else{ ?>
@@ -94,7 +96,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                         <h2><?=$settings->display('block_title')?></h2>
                         <?=$settings->display('block_description')?>
                     </div>
-                    <a href="/blog/" type="button" class="btn btn-outline">Читать о нас</a>
+                    <a href="/about" type="button" class="btn btn-outline">Читать о нас</a>
                     <div class="decorative lavander"></div>
                 </div>
             </div>
@@ -157,7 +159,8 @@ $stages_of_work = pods('stages_of_work')->find($params);
                     <h2>этапы работы</h2>
                     <div class="steps-wrap row">
                         <?php while($stages_of_work->fetch()){ ?>
-                            <div class="step col-xl-3 col-sm-6 col-12">
+<!--                            <div class="step col-xl-3 col-sm-6 col-12">-->
+                            <div class="step col-3">
                                 <h3><?=$stages_of_work->display('post_title')?></h3>
                                 <p><?=$stages_of_work->display('post_content')?></p>
                             </div>

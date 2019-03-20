@@ -37,14 +37,14 @@ $settings  = pods('website_settings')->find();
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="email" placeholder="E-mail*" required name="email">
                                 <input type="number" placeholder="Телефон" name="phone">
-                                <!-- <select name="" id="">
-                                  <option value="0" selected class="hidden">Вид услуги</option>
-                                </select> -->
+                                <select name="" id="">
+                                  <option value="0" selected>Вид услуги</option>
+                                </select>
                             </div>
                             <div class="col-lg-6 col-xs-12">
-                      <textarea rows="5"
-                                placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                                <!-- <input type="file"> -->
+                                <textarea rows="5"
+                                    placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
+                                <input type="file" multiple>
                                 <button type="submit" class="btn btn-primary">Отправить</button>
                             </div>
                         </div>
@@ -83,7 +83,7 @@ $settings  = pods('website_settings')->find();
                                     <a target="_blank" href="<?=$settings->display('wholesale_latitude')?>">
                                         <?=$settings->display('wholesale_city')?>
                                     </a> </br>
-                                    <?=$settings->display('wholesale_number')?></br>
+                                    Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>"><?=$settings->display('wholesale_number')?></a>, <a href="tel:+380667734186">0667734186</a></br>
                                     email: <a href="mailto:<?=$settings->display('wholesale_email')?>"><?=$settings->display('wholesale_email')?></a>
                                 </div>
                             </div>
@@ -92,7 +92,8 @@ $settings  = pods('website_settings')->find();
                                     <a target="_blank" href="<?=$settings->display('individually_latitude')?>">
                                         <?=$settings->display('individual_city')?>
                                     </a> </br>
-                                    <?=$settings->display('individually_number')?></br>
+                                    Тел: <a href="tel:+380<?=$settings->display('individually_number')?>"><?=$settings->display('individually_number')?></a></br>
+<!--                                    --><?//=$settings->display('individually_number')?><!--</br>-->
                                     email: <a href="mailto:<?=$settings->display('individual_email')?>"><?=$settings->display('individual_email')?></a>
                                 </div>
                             </div>

@@ -17,9 +17,6 @@ $settings  = pods('website_settings')->find();
                         <h1>
                             <span>&nbsp;контакты&nbsp;</span>
                         </h1>
-<!--                        num1 0677516622-->
-<!--                        num2 0667734186-->
-<!--                        num3 0968809206-->
                         <div class="address active">
                             <h2>Оптовые заказы</h2>
                             <p>
@@ -29,10 +26,7 @@ $settings  = pods('website_settings')->find();
                                 <?=$settings->display('wholesale_working_days')?></br>
                                 Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>"><?=$settings->display('wholesale_number')?></a> Viber/WhatsApp, <a href="tel:+380667734186">0667734186</a></br>
                                 E-mail: <a href="maito:<?=$settings->display('wholesale_emaal')?>"><?=$settings->display('wholesale_email')?></a>
-<!--                                --><?//=$settings->display('wholesale_latitude')?>
-<!--                                --><?//=$settings->display('wholesale_longitude')?>
                             </p>
-<!--                            <button type="button" class="btn btn-primary">смотреть на карте</button>-->
                         </div>
                         <div class="address">
                             <h2>Индивидуальные</br>
@@ -44,10 +38,7 @@ $settings  = pods('website_settings')->find();
                                 <?=$settings->display('individual_working_days')?></br>
                                 Тел: <a href="tel:+380<?=$settings->display('individual_number')?>"><?=$settings->display('individual_number')?></a> Viber/WhatsApp</br>
                                 E-mail: <a href="maito: <?=$settings->display('individual_email')?>"> <?=$settings->display('individual_email')?></a>
-<!--                                --><?//=$settings->display('individually_latitude')?>
-<!--                                --><?//=$settings->display('individually_longitude')?>
                             </p>
-<!--                            <button type="button" class="btn btn-primary">смотреть на карте</button>-->
                         </div>
                     </div>
                 </div>

@@ -1,18 +1,18 @@
 footer {
   color: $violet;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.4rem;
+  font-size: get-vw(14px);
   font-weight: 300;
-  line-height: 2.5rem;
+  line-height: get-vw(25px);
   .inner-wrap {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-top: 2px solid $violet;
-    border-bottom: 2px solid $violet;
-    padding: 2.4rem 0 0;
+    border-top: get-vw(2px) solid $violet;
+    border-bottom: get-vw(2px) solid $violet;
+    padding: get-vw(24px) 0 0;
     & > * {
-      margin-bottom: 3rem;
+      margin-bottom: get-vw(30px);
     }
   }
   .social-wrap {
@@ -20,9 +20,9 @@ footer {
     a {
       position: relative;
       display: block;
-      margin-right: 25px;
-      width: 50px;
-      height: 50px;
+      margin-right: get-vw(25px);
+      width: get-vw(50px);
+      height: get-vw(50px);
       border-radius: 100%;
       background-color: $black;
       &:hover {
@@ -38,9 +38,9 @@ footer {
   }
   h4 {
     font-family: 'Uni Sans Thin Caps', sans-serif;
-    font-size: 1.6rem;
+    font-size: get-vw(16px);
     font-weight: bold;
-    margin-bottom: 2.4rem;
+    margin-bottom: get-vw(24px);
     white-space: nowrap;
   }
   a {
@@ -50,16 +50,16 @@ footer {
     }
   }
   p {
-    font-size: 1.4rem;
+    font-size: get-vw(14px);
   }
   form {
     .form-group {
       position: relative;
       input {
-        width: 40rem;
+        width: get-vw(400px);
       }
       button {
-        width: 20rem;
+        width: get-vw(200px);
         position: absolute;
         top: 0;
         right: 0;
@@ -70,8 +70,8 @@ footer {
     }
   }
   .footer-nav {
-    padding: 2rem 0;
-    border-bottom: 2px solid $violet;
+    padding: get-vw(20px) 0;
+    border-bottom: get-vw(2px) solid $violet;
     ul {
       display: flex;
       justify-content: space-between;
@@ -80,9 +80,9 @@ footer {
     a {
       position: relative;
       font-family: 'Uni Sans Thin Caps', sans-serif;
-      font-size: 1.6rem;
+      font-size: get-vw(16px);
       font-weight: bold;
-      line-height: 2.5rem;
+      line-height: get-vw(25px);
       padding: 2rem 0;
       &::after {
         content: '';
