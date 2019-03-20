@@ -15,6 +15,12 @@ footer {
       margin-bottom: get-vw(30px);
     }
   }
+  .logo-wrap {
+    img {
+      width: get-vw(100px);
+      height: get-vw(100px);
+    }
+  }
   .social-wrap {
     display: flex;
     a {
@@ -91,7 +97,7 @@ footer {
         left: 0;
         top: 75%;
         width: 0;
-        height: 1px;
+        height: get-vw(1px);
         background-color: $violet;
         transition: width $default;
       }
@@ -107,7 +113,7 @@ footer {
   .footer-info {
     display: flex;
     justify-content: space-between;
-    padding: 2.5rem 0;
+    padding: get-vw(25px) 0;
     p {
       text-align: right;
       margin: 0;
@@ -115,68 +121,68 @@ footer {
   }
 }
 
-@media (max-width: $desktop) {
-  footer {
-    .footer-nav {
-      ul {
-        flex-wrap: wrap;
-        li {
-          padding: 1rem 0;
-          width: 20%;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: $tablet + 1px) and (max-width: $desktop) {
-  footer {
-    .footer-nav {
-      ul {
-        li {
-          width: 25%;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: $mobile + 1px) and (max-width: $tablet) {
-  footer {
-    .footer-nav {
-      ul {
-        li {
-          width: 33.33333%;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: $mobile) {
-  footer {
-    .subscribe {
-      width: 100%;
-    }
-    form {
-      .form-group {
-        input {
-          width: 100%;
-        }
-        button {
-          width: 50%;
-        }
-      }
-    }
-    .footer-nav {
-      ul {
-        li {
-          width: 50%;
-        }
-      }
-    }
-  }
-}
+//@media (max-width: $desktop) {
+//  footer {
+//    .footer-nav {
+//      ul {
+//        flex-wrap: wrap;
+//        li {
+//          padding: 1rem 0;
+//          width: 20%;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (min-width: $tablet + 1px) and (max-width: $desktop) {
+//  footer {
+//    .footer-nav {
+//      ul {
+//        li {
+//          width: 25%;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (min-width: $mobile + 1px) and (max-width: $tablet) {
+//  footer {
+//    .footer-nav {
+//      ul {
+//        li {
+//          width: 33.33333%;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: $mobile) {
+//  footer {
+//    .subscribe {
+//      width: 100%;
+//    }
+//    form {
+//      .form-group {
+//        input {
+//          width: 100%;
+//        }
+//        button {
+//          width: 50%;
+//        }
+//      }
+//    }
+//    .footer-nav {
+//      ul {
+//        li {
+//          width: 50%;
+//        }
+//      }
+//    }
+//  }
+//}
 
 .icon {
   top: 50%;
@@ -186,20 +192,20 @@ footer {
 
 .icon-facebook {
   background-image: url('../img/fb.png');
-  width: 21px;
-  height: 40px;
-  top: calc(50% + 6px);
-  left: calc(50% + 6px);
+  width: get-vw(21px);
+  height: get-vw(40px);
+  top: calc(50% + 0.3125vw);
+  left: calc(50% + 0.3125vw);
 }
 
 .icon-instagram {
   background-image: url('../img/insta.png');
-  width: 30px;
-  height: 30px;
+  width: get-vw(30px);
+  height: get-vw(30px);
 }
 
 .icon-youtube {
   background-image: url('../img/YouTube.png');
-  width: 30px;
-  height: 21px;
+  width: get-vw(30px);
+  height: get-vw(21px);
 }

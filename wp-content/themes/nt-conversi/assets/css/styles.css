@@ -549,6 +549,9 @@ footer {
     padding: 1.25vw 0 0; }
     footer .inner-wrap > * {
       margin-bottom: 1.5625vw; }
+  footer .logo-wrap img {
+    width: 5.20833vw;
+    height: 5.20833vw; }
   footer .social-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -616,7 +619,7 @@ footer {
         left: 0;
         top: 75%;
         width: 0;
-        height: 1px;
+        height: 0.05208vw;
         background-color: #3b2f5c;
         -webkit-transition: width 0.3s ease-in-out;
         -o-transition: width 0.3s ease-in-out;
@@ -632,36 +635,10 @@ footer {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 2.5rem 0; }
+    padding: 1.30208vw 0; }
     footer .footer-info p {
       text-align: right;
       margin: 0; }
-
-@media (max-width: 992px) {
-  footer .footer-nav ul {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    footer .footer-nav ul li {
-      padding: 1rem 0;
-      width: 20%; } }
-
-@media (min-width: 769px) and (max-width: 992px) {
-  footer .footer-nav ul li {
-    width: 25%; } }
-
-@media (min-width: 577px) and (max-width: 768px) {
-  footer .footer-nav ul li {
-    width: 33.33333%; } }
-
-@media (max-width: 576px) {
-  footer .subscribe {
-    width: 100%; }
-  footer form .form-group input {
-    width: 100%; }
-  footer form .form-group button {
-    width: 50%; }
-  footer .footer-nav ul li {
-    width: 50%; } }
 
 .icon {
   top: 50%;
@@ -672,20 +649,20 @@ footer {
 
 .icon-facebook {
   background-image: url("../img/fb.png");
-  width: 21px;
-  height: 40px;
-  top: calc(50% + 6px);
-  left: calc(50% + 6px); }
+  width: 1.09375vw;
+  height: 2.08333vw;
+  top: calc(50% + 0.3125vw);
+  left: calc(50% + 0.3125vw); }
 
 .icon-instagram {
   background-image: url("../img/insta.png");
-  width: 30px;
-  height: 30px; }
+  width: 1.5625vw;
+  height: 1.5625vw; }
 
 .icon-youtube {
   background-image: url("../img/YouTube.png");
-  width: 30px;
-  height: 21px; }
+  width: 1.5625vw;
+  height: 1.09375vw; }
 
 .jumbotron {
   margin-top: 5.20833vw;
