@@ -52,7 +52,7 @@ if(!empty($data->total_found())) {
                 </div>
             </div>
         </div>
-
+        <?php if(!empty($data->field('gallery'))){ ?>
         <div class="single-service-gallery">
             <div class="container">
                 <div class="row">
@@ -76,7 +76,7 @@ if(!empty($data->total_found())) {
                 </div>
             </div>
         </div>
-
+        <?php } ?>
         <div class="single-service-more">
             <div class="container">
                 <div class="row">
