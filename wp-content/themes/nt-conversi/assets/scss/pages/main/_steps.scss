@@ -55,7 +55,7 @@
   }
 }
 
-@media (min-width: $large-desktop + 1px) {
+//@media (min-width: $large-desktop + 1px) {
   .steps {
     .step {
       &:nth-child(1),
@@ -72,7 +72,7 @@
       }
     }
   }
-}
+//}
 
 //@media (min-width: $mobile + 1px) and (max-width: $large-desktop) {
 //  .steps {

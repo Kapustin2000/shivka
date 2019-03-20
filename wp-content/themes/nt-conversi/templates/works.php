@@ -25,7 +25,8 @@ $data = pods('works')->find($params);
                     <div class="decorative lavander"></div>
                     <div class="row">
                         <?php  while($data->fetch()){?>
-                            <div class="col-lg-4 col-12">
+<!--                            <div class="col-lg-4 col-12">-->
+                            <div class="col-4">
                                <a href="<?=get_permalink($data->display('id'))?>" class="service-item">
                                     <div class="service-img-wrap">
                                         <div class="service-img" style="background-image: url( <?=$data->display('preview')?>);"></div>

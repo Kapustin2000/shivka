@@ -1,19 +1,19 @@
 .smarthoop-how-to-order {
-    margin-top: 20rem;
+    margin-top: get-vw(200px);
     .steps {
-        padding-bottom: 15rem;
+        padding-bottom: get-vw(150px);
         .steps-wrap {
             margin: 0;
         }
         .step {
             position: relative;
-            padding: 8.5rem;
+            padding: get-vw(85px);
             h3 {
                 color: $black;
                 font-family: 'Uni Sans Heavy Caps', sans-serif;
-                font-size: 4rem;
+                font-size: get-vw(40px);
                 font-weight: 400;
-                line-height: 5rem;
+                line-height: get-vw(50px);
             }
             img {
                 position: absolute;
@@ -28,7 +28,7 @@
                 @include bordered-block();
                 transform: translate(0, 0);
                 &::before {
-                    top: -3.7rem;
+                    top: get-vw(-37px);
                     bottom: auto;
                 }
             }
@@ -37,40 +37,40 @@
             &:nth-child(6),
             &:nth-child(8) {
                 @include background-block();
-                transform: translate(0, 50px);
-                padding: 8.5rem;
+                transform: translate(0, get-vw(50px));
+                padding: get-vw(85px);
                 margin-left: auto;
                 z-index: 2;
                 &::before {
-                    bottom: -3.7rem;
+                    bottom: get-vw(-37px);
                     top: auto;
                 }
             }
             &:nth-child(2) {
                 img {
                     bottom: 100%;
-                    right: 75px;
+                    right: get-vw(75px);
                     width: 50%;
                 }
             }
             &:nth-child(3) {
                 img {
-                    top: calc(100% + 15px);
-                    left: -15px;
+                    top: calc(100% + 0.78125vw);
+                    left: get-vw(-15px);
                     width: 60%;
                 }
             }
             &:nth-child(5) {
                 img {
-                    top: calc(100% + 65px);
-                    left: -15px;
+                    top: calc(100% + 3.38541666667vw);
+                    left: get-vw(-15px);
                     width: 70%;
                 }
             }
             &:nth-child(6) {
                 img {
-                    bottom: calc(100% + 65px);
-                    right: 130px;
+                    bottom: calc(100% + 3.38541666667vw);
+                    right: get-vw(130px);
                     width: 40%;
                 }
             }
@@ -79,10 +79,10 @@
     .make-order {
         position: relative;
         z-index: 1;
-        padding-bottom: 15rem;
+        padding-bottom: get-vw(150px);
         .decorative {
             &.yellow {
-                top: 46rem;
+                top: get-vw(460px);
             }
         }
     }

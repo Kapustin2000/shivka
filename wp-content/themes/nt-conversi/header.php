@@ -69,7 +69,7 @@ $services = pods('services')->find();
                     </div>
                     <div id="menu-toggle" class="menu-toggle">
                         <ul>
-                            <li>
+                            <li class="has-submenu">
                                 <a href="/services">услуги</a>
                                 <?php if($services->total_found()){ ?>
                                 <ul class="submenu">
@@ -83,17 +83,39 @@ $services = pods('services')->find();
                                 </ul>
                                 <?php } ?>
                             </li>
-                            <li>
+                            <li class="has-submenu">
                                 <a href="/works">наши работы</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">
+                                            работа
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/about">о нас</a>
+                            </li>
+                            <li>
+                                <a href="/prices">цены</a>
                             </li>
                             <li>
                                 <a href="/shop">магазин</a>
                             </li>
                             <li>
+                                <a href="/stock">акции</a>
+                            </li>
+                            <li>
+                                <a href="/contacts">доставка и оплата</a>
+                            </li>
+                            <li>
                                 <a href="/contacts">контакты</a>
                             </li>
                             <li>
-                                <a href="/about">о нас</a>
+                                <a href="/faq">faq</a>
+                            </li>
+                            <li>
+                                <a href="/blog">блог</a>
                             </li>
                             <li>
                                 <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#contactModal">

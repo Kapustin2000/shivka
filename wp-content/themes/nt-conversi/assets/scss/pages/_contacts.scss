@@ -1,10 +1,10 @@
 .smarthoop-contacts {
   .contacts {
-    margin-top: 15rem;
+    margin-top: get-vw(150px);
     position: relative;
     .address-wrap {
-      width: 700px;
-      padding-left: 15px;
+      width: get-vw(700px);
+      padding-left: get-vw(15px);
     }
     .bordered {
       transform: translate(0, 0);
@@ -13,11 +13,11 @@
       position: relative;
       h1 {
         margin: 0;
-        transform: translate(-150px, -45px);
+        transform: translate(get-vw(-150px), get-vw(-45px));
       }
       .address {
         position: relative;
-        padding: 50px 0;
+        padding: get-vw(50px) 0;
         a {
           color: inherit;
           &:hover {
@@ -41,10 +41,10 @@
     }
     .map-wrap {
       position: absolute;
-      top: 50px;
+      top: get-vw(50px);
       right: 0;
       width: 58%;
-      height: 900px;
+      height: get-vw(900px);
       &::before {
         content: '';
         position: absolute;
@@ -74,90 +74,90 @@
   }
 }
 
-.page-template-page-contacts {
-  .make-order {
-    .form-wrap {
-      margin-top: -40px;
-      z-index: 2;
-    }
-  }
-}
-
-@media (max-width: $hd) {
-  .smarthoop-contacts {
-    .contacts {
-      .address-wrap {
-        width: 500px;
-      }
-    }
-  }
-}
-
-@media (max-width: $desktop) {
-  .smarthoop-contacts {
-    .contacts {
-      .address-wrap {
-        padding-left: 15px;
-        padding-right: 15px;
-        width: 100%;
-        .bordered {
-          display: flex;
-          padding: 3rem 0;
-        }
-        h1 {
-          position: absolute;
-          left: -30px;
-          top: -60px;
-          transform: translate(0, 0);
-        }
-        h2 {
-          height: 60px;
-          font-size: 2rem;
-          line-height: 3rem;
-        }
-        p {
-          font-size: 1.6rem;
-          line-height: 2.6rem;
-        }
-        .address {
-          width: 50%;
-          padding: 50px 20px;
-          &.active {
-            &::before {
-              width: 100%;
-            }
-          }
-        }
-      }
-      .map-wrap {
-        padding-left: 15px;
-        padding-right: 15px;
-        position: relative;
-        width: 100%;
-        #map {
-          height: 500px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: $mobile) {
-  .smarthoop-contacts {
-    .contacts {
-      .address-wrap {
-        h2 {
-          word-break: break-word;
-        }
-        p {
-          display: none;
-        }
-        button {
-          font-size: 1.4rem;
-          padding-left: 2rem;
-          padding-right: 2rem;
-        }
-      }
-    }
-  }
-}
+//.page-template-page-contacts {
+//  .make-order {
+//    .form-wrap {
+//      margin-top: -40px;
+//      z-index: 2;
+//    }
+//  }
+//}
+//
+//@media (max-width: $hd) {
+//  .smarthoop-contacts {
+//    .contacts {
+//      .address-wrap {
+//        width: 500px;
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: $desktop) {
+//  .smarthoop-contacts {
+//    .contacts {
+//      .address-wrap {
+//        padding-left: 15px;
+//        padding-right: 15px;
+//        width: 100%;
+//        .bordered {
+//          display: flex;
+//          padding: 3rem 0;
+//        }
+//        h1 {
+//          position: absolute;
+//          left: -30px;
+//          top: -60px;
+//          transform: translate(0, 0);
+//        }
+//        h2 {
+//          height: 60px;
+//          font-size: 2rem;
+//          line-height: 3rem;
+//        }
+//        p {
+//          font-size: 1.6rem;
+//          line-height: 2.6rem;
+//        }
+//        .address {
+//          width: 50%;
+//          padding: 50px 20px;
+//          &.active {
+//            &::before {
+//              width: 100%;
+//            }
+//          }
+//        }
+//      }
+//      .map-wrap {
+//        padding-left: 15px;
+//        padding-right: 15px;
+//        position: relative;
+//        width: 100%;
+//        #map {
+//          height: 500px;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: $mobile) {
+//  .smarthoop-contacts {
+//    .contacts {
+//      .address-wrap {
+//        h2 {
+//          word-break: break-word;
+//        }
+//        p {
+//          display: none;
+//        }
+//        button {
+//          font-size: 1.4rem;
+//          padding-left: 2rem;
+//          padding-right: 2rem;
+//        }
+//      }
+//    }
+//  }
+//}

@@ -30,12 +30,14 @@ if(!empty($data->total_found())) {
                     <div class="col-12">
                         <div class="bordered">
                             <div class="row">
-                                <div class="col-xl-6 col-12">
+<!--                                <div class="col-xl-6 col-12">-->
+                                <div class="col-6">
                                     <div class="service-img">
                                         <img src="<?=$data->display('preview')?>" alt="Service">
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-12">
+<!--                                <div class="col-xl-6 col-12">-->
+                                <div class="col-6">
                                     <h1>
                                         <span><?=$data->display('post_title')?></span>
                                     </h1>
@@ -83,9 +85,7 @@ if(!empty($data->total_found())) {
                     <div class="col-12">
                         <h2>описание услуги</h2>
                         <div class="decorative yellow"></div>
-                        <div class="row">
-                            <p><?=$data->display('full_description')?></p>
-                        </div>
+                        <p><?=$data->display('full_description')?></p>
                     </div>
                 </div>
             </div>

@@ -31,12 +31,14 @@ if(isset($_GET['id'])) {
         <section class="work-info">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 col-12">
+<!--                    <div class="col-xl-6 col-12">-->
+                    <div class="col-6">
                         <div class="work-info-img">
                             <img src="<?=$data->display('preview')?>" alt="<?=$data->display('post_title')?>">
                         </div>
                     </div>
-                    <div class="col-xl-6 col-12">
+<!--                    <div class="col-xl-6 col-12">-->
+                    <div class="col-6">
                         <div class="info-block">
                             <h1><span>&nbsp;<?=$data->display('post_title')?>&nbsp;</span></h1>
                             <?=$data->display('post_content')?>

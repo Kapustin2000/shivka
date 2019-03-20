@@ -1,30 +1,30 @@
 .smarthoop-shipping {
   .content-editable {
     li {
-      padding-bottom: 30px;
+      padding-bottom: get-vw(30px);
     }
   }
   .delivery {
-    padding: 250px 0 150px;
+    padding: get-vw(250px) 0 get-vw(150px);
     .bordered {
-      max-width: 850px;
+      max-width: get-vw(850px);
       border-color: $lavander;
       transform: translate(0, 0);
-      padding-top: 140px;
+      padding-top: get-vw(140px);
       z-index: 3;
       position: relative;
       h1 {
         position: absolute;
-        top: -70px;
-        left: 30px;
+        top: get-vw(-70px);
+        left: get-vw(30px);
       }
     }
     .delivery-img-wrap {
       position: absolute;
       top: 0;
       right: 0;
-      width: 800px;
-      height: 1037px;
+      width: get-vw(800px);
+      height: get-vw(1037px);
       img {
         height: 100%;
         width: auto;
@@ -34,7 +34,7 @@
 
   .payment {
     position: relative;
-    padding-bottom: 250px;
+    padding-bottom: get-vw(250px);
     .row {
       position: relative;
     }
@@ -42,14 +42,14 @@
       top: 0;
       left: 0;
       width: 54%;
-      height: 550px;
+      height: get-vw(550px);
     }
     .payment-img-wrap {
       position: absolute;
       top: 0;
       left: 0;
-      width: 850px;
-      height: 500px;
+      width: get-vw(850px);
+      height: get-vw(500px);
       img {
         height: auto;
         width: 100%;
@@ -61,35 +61,35 @@
   }
 }
 
-@media (max-width: $hd) {
-  .smarthoop-shipping {
-    .delivery {
-      .delivery-info {
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
-      .bordered {
-        max-width: 100%;
-      }
-      .delivery-img-wrap {
-        display: none;
-      }
-    }
-  }
-}
-
-@media (max-width: $desktop) {
-  .smarthoop-shipping {
-    .payment {
-      padding-bottom: 150px;
-      .payment-img-wrap {
-        display: none;
-      }
-      .payment-info {
-        margin-left: 0;
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
-    }
-  }
-}
+//@media (max-width: $hd) {
+//  .smarthoop-shipping {
+//    .delivery {
+//      .delivery-info {
+//        flex: 0 0 100%;
+//        max-width: 100%;
+//      }
+//      .bordered {
+//        max-width: 100%;
+//      }
+//      .delivery-img-wrap {
+//        display: none;
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: $desktop) {
+//  .smarthoop-shipping {
+//    .payment {
+//      padding-bottom: 150px;
+//      .payment-img-wrap {
+//        display: none;
+//      }
+//      .payment-info {
+//        margin-left: 0;
+//        flex: 0 0 100%;
+//        max-width: 100%;
+//      }
+//    }
+//  }
+//}

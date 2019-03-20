@@ -75,25 +75,25 @@
 }
 
 //@media (min-width: $desktop + 1px) {
-//  .services {
-//    .service-item:hover {
-//      .service-img-wrap {
-//        padding-right: 0;
-//        &::after {
-//          background-color: transparentize($white, .4);
-//        }
-//        .service-img {
-//          padding-bottom: 50rem;
-//        }
-//      }
-//      .service-title,
-//      button {
-//        transform: translateY(-12.4rem);
-//      }
-//    }
-//  }
+  .services {
+    .service-item:hover {
+      .service-img-wrap {
+        padding-right: 0;
+        &::after {
+          background-color: transparentize($white, .4);
+        }
+        .service-img {
+          padding-bottom: get-vw(500px);
+        }
+      }
+      .service-title,
+      button {
+        transform: translateY(get-vw(-124px));
+      }
+    }
+  }
 //}
-//
+
 //@media (max-width: $desktop) {
 //  .smarthoop-home {
 //    .services {

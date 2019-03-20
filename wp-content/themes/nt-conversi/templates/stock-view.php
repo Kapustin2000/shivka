@@ -52,10 +52,12 @@ if(isset($_GET['id'])) {
         <section class="stock-more">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7 col-12">
+<!--                    <div class="col-lg-7 col-12">-->
+                    <div class="col-7">
                         <div class="stock-more-img" style="background-image: url(<?=$data->display('image')?>);"></div>
                     </div>
-                    <div class="col-lg-5 col-12">
+<!--                    <div class="col-lg-5 col-12">-->
+                    <div class="col-5">
                         <div class="content-editable">
                            <?=$data->display('full_description')?>
                             <button type="button" class="btn btn-primary">связаться с нами</button>

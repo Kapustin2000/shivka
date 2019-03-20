@@ -943,49 +943,49 @@ footer {
     z-index: 2; } }
 
 .smarthoop-single-service .back {
-  margin-top: 35px; }
+  margin-top: get-vw(35px); }
 
 .smarthoop-single-service .single-service-description {
-  padding: 10rem 0 15rem; }
+  padding: get-vw(100px) 0 get-vw(150px); }
   .smarthoop-single-service .single-service-description .bordered {
-    margin-top: 35px;
+    margin-top: get-vw(35px);
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
     border-color: #3b2f5c;
     position: relative;
-    height: 68rem; }
+    height: get-vw(680px); }
     .smarthoop-single-service .single-service-description .bordered .col-12:first-child {
       position: static; }
     .smarthoop-single-service .single-service-description .bordered .service-img {
       position: absolute;
       bottom: 0;
-      left: 1rem; }
+      left: get-vw(10px); }
       .smarthoop-single-service .single-service-description .bordered .service-img img {
         position: absolute;
         bottom: 0;
         width: auto;
-        height: 96rem; }
+        height: get-vw(960px); }
     .smarthoop-single-service .single-service-description .bordered h1 {
       position: absolute;
-      top: -3rem;
-      width: 80rem;
+      top: get-vw(-30px);
+      width: get-vw(800px);
       text-align: right; }
     .smarthoop-single-service .single-service-description .bordered .text-wrap {
       position: absolute;
-      top: 17rem;
+      top: get-vw(170px);
       right: 0;
-      padding: 5rem 5rem 0;
+      padding: get-vw(50px) get-vw(50px) 0;
       background-color: rgba(242, 235, 192, 0.5);
-      height: 75rem; }
+      height: get-vw(750px); }
 
 .smarthoop-single-service .single-service-gallery {
-  padding: 0 0 25rem; }
+  padding: 0 0 get-vw(250px); }
   .smarthoop-single-service .single-service-gallery h2 {
-    margin-bottom: 10rem; }
+    margin-bottom: get-vw(100px); }
   .smarthoop-single-service .single-service-gallery .gallery-wrap {
     position: relative;
-    height: 66rem; }
+    height: get-vw(660px); }
     .smarthoop-single-service .single-service-gallery .gallery-wrap .img-wrap {
       position: absolute;
       display: block;
@@ -995,84 +995,56 @@ footer {
       background-repeat: no-repeat; }
       .smarthoop-single-service .single-service-gallery .gallery-wrap .img-wrap:nth-child(1) {
         width: 60%;
-        height: 60rem;
+        height: get-vw(600px);
         top: 0;
         left: 0; }
       .smarthoop-single-service .single-service-gallery .gallery-wrap .img-wrap:nth-child(2) {
         width: 40%;
-        height: 80rem;
-        top: -10rem;
+        height: get-vw(800px);
+        top: get-vw(-100px);
         right: 0; }
       .smarthoop-single-service .single-service-gallery .gallery-wrap .img-wrap:nth-child(3) {
-        width: 50rem;
-        height: 50rem;
-        left: 5rem;
-        top: 5rem;
+        width: get-vw(500px);
+        height: get-vw(500px);
+        left: get-vw(50px);
+        top: get-vw(50px);
         z-index: 2; }
       .smarthoop-single-service .single-service-gallery .gallery-wrap .img-wrap:nth-child(4) {
-        width: 40rem;
-        height: 40rem;
+        width: get-vw(400px);
+        height: get-vw(400px);
         left: 45%;
-        top: 40rem;
+        top: get-vw(400px);
         z-index: 2; }
   .smarthoop-single-service .single-service-gallery .see-more {
     position: relative;
     z-index: 10; }
 
 .smarthoop-single-service .single-service-more {
-  padding-bottom: 15rem; }
+  padding-bottom: get-vw(150px); }
   .smarthoop-single-service .single-service-more .decorative {
-    width: 700px;
-    height: 200px;
-    right: -18rem;
-    bottom: -5rem; }
+    width: get-vw(700px);
+    height: get-vw(200px);
+    right: get-vw(-180px);
+    bottom: get-vw(-50px); }
 
 .smarthoop-single-service .single-service-shop {
-  margin-bottom: -15rem; }
+  margin-bottom: get-vw(-150px); }
   .smarthoop-single-service .single-service-shop .bordered {
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
     border-color: #3b2f5c;
-    max-width: 95rem; }
+    max-width: get-vw(950px); }
     .smarthoop-single-service .single-service-shop .bordered a {
-      margin-bottom: 14rem; }
+      margin-bottom: get-vw(140px); }
   .smarthoop-single-service .single-service-shop .decorative {
-    width: 425px;
-    height: 425px;
+    width: get-vw(425px);
+    height: get-vw(425px);
     bottom: 0;
     right: 0; }
 
 .page-template-services-view .make-order .decorative {
   display: none; }
-
-@media (max-width: 1920px) {
-  .smarthoop-single-service .single-service-description .bordered h1 {
-    right: -12rem; } }
-
-@media (max-width: 1200px) {
-  .smarthoop-single-service .single-service-description .bordered {
-    height: auto;
-    padding: 5rem; }
-    .smarthoop-single-service .single-service-description .bordered .col-12:first-child {
-      display: none; }
-    .smarthoop-single-service .single-service-description .bordered h1 {
-      position: absolute;
-      top: -10rem;
-      right: auto;
-      text-align: left;
-      width: 100%;
-      font-size: 4rem;
-      line-height: 4.8rem;
-      left: 1.5rem; }
-      .smarthoop-single-service .single-service-description .bordered h1 br {
-        display: none; }
-    .smarthoop-single-service .single-service-description .bordered .text-wrap {
-      position: relative;
-      top: auto;
-      height: auto;
-      padding: 5rem;
-      margin-top: 6rem; } }
 
 .smarthoop-how-to-order {
   margin-top: 20rem; }

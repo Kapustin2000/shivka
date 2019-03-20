@@ -41,7 +41,8 @@ $data = pods('blog')->find($params);
                     <div class="row">
                         <!--  TEMPORARY  -->
                         <?php  while($data->fetch()){?>
-                            <div class="col-md-6 col-12">
+<!--                            <div class="col-md-6 col-12">-->
+                            <div class="col-6">
                                 <a class="blog-post" data-post-type="article" href="<?=get_permalink($data->display('id'))?>">
                                     <div class="blog-img-wrap">
                                         <div class="blog-img" style="background-image: url(<?=$data->display('image')?>);"></div>
@@ -55,8 +56,6 @@ $data = pods('blog')->find($params);
                                 </a>
                             </div>
                         <?php } ?>
-
-                        <!--  TEMPORARY  -->
                     </div>
                 </div>
             </div>

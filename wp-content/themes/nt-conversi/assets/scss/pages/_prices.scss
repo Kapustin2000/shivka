@@ -1,34 +1,34 @@
 .smarthoop-prices {
-  padding-top: 20rem;
+  padding-top: get-vw(200px);
   table {
-    margin: 6.4rem 0 5rem;
+    margin: get-vw(64px) 0 get-vw(50px);
     width: 100%;
     font-family: 'Uni Sans Thin Caps', sans-serif;
     text-transform: uppercase;
     color: $violet;
-    font-size: 25px;
-    line-height: 50px;
+    font-size: get-vw(25px);
+    line-height: get-vw(50px);
     border-collapse: collapse;
     th {
       background-color: transparentize($yellow, .5);
-      border: 2px solid $white;
+      border: get-vw(2px) solid $white;
     }
     td {
-      border: 2px solid $yellow;
+      border: get-vw(2px) solid $yellow;
     }
     th, td {
-      padding: 28px 5px 25px;
+      padding: get-vw(28px) get-vw(5px) get-vw(25px);
       text-align: center;
     }
   }
   .extra-info {
     position: relative;
-    padding: 10rem;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
-    margin-bottom: 15rem;
+    padding: get-vw(100px);
+    box-shadow: 0 0 get-vw(50px) rgba(0, 0, 0, 0.15);
+    margin-bottom: get-vw(150px);
     ul {
       li {
-        padding-bottom: 3rem;
+        padding-bottom: get-vw(30px);
       }
     }
     .content-editable {
@@ -37,44 +37,44 @@
     }
     img {
       position: absolute;
-      top: 5rem;
-      right: 5rem;
-      width: 68rem;
+      top: get-vw(50px);
+      right: get-vw(50px);
+      width: get-vw(680px);
       height: auto;
     }
   }
 }
 
-@media (max-width: $large-desktop) {
-  .smarthoop-prices {
-    table {
-      font-size: 18px;
-      line-height: 26px;
-    }
-    .extra-info {
-      img {
-        width: 40rem;
-        right: -5rem;
-        top: 60%;
-      }
-    }
-  }
-}
-
-@media (max-width: $desktop) {
-  .smarthoop-prices {
-    .extra-info {
-      padding: 5rem;
-    }
-  }
-}
-
-@media (max-width: $tablet) {
-  .smarthoop-prices {
-    .extra-info {
-      img {
-        top: 90%;
-      }
-    }
-  }
-}
+//@media (max-width: $large-desktop) {
+//  .smarthoop-prices {
+//    table {
+//      font-size: 18px;
+//      line-height: 26px;
+//    }
+//    .extra-info {
+//      img {
+//        width: 40rem;
+//        right: -5rem;
+//        top: 60%;
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: $desktop) {
+//  .smarthoop-prices {
+//    .extra-info {
+//      padding: 5rem;
+//    }
+//  }
+//}
+//
+//@media (max-width: $tablet) {
+//  .smarthoop-prices {
+//    .extra-info {
+//      img {
+//        top: 90%;
+//      }
+//    }
+//  }
+//}

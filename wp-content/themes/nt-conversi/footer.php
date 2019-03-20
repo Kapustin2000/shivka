@@ -15,11 +15,13 @@ $settings  = pods('website_settings')->find();
 ?>
 <section class="make-order">
     <div class="container">
-        <div class="row justify-content-lg-center">
+<!--        <div class="row justify-content-lg-center">-->
+        <div class="row justify-content-center">
             <div class="col-12">
                 <div class="decorative yellow"></div>
             </div>
-            <div class="col-lg-8 col-12">
+<!--            <div class="col-lg-8 col-12">-->
+            <div class="col-8">
                 <div class="form-wrap">
                     <h2>Хотите узнать стоимость услуги или сделать заказ?</h2>
                     <p>Свяжитесь с нами удобным для вас способом:</p>
@@ -33,7 +35,8 @@ $settings  = pods('website_settings')->find();
                     </div>
                     <form action="#" id="order-form" class="order-form active">
                         <div class="row">
-                            <div class="col-lg-6 col-xs-12">
+<!--                            <div class="col-lg-6 col-xs-12">-->
+                            <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="email" placeholder="E-mail*" required name="email">
                                 <input type="number" placeholder="Телефон" name="phone">
@@ -41,7 +44,8 @@ $settings  = pods('website_settings')->find();
                                   <option value="0" selected>Вид услуги</option>
                                 </select>
                             </div>
-                            <div class="col-lg-6 col-xs-12">
+<!--                            <div class="col-lg-6 col-xs-12">-->
+                            <div class="col-6">
                                 <textarea rows="5"
                                     placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
                                 <input type="file" multiple>
@@ -51,11 +55,13 @@ $settings  = pods('website_settings')->find();
                     </form>
                     <form action="#" id="call-form" class="call-form">
                         <div class="row">
-                            <div class="col-lg-6 col-xs-12">
+<!--                            <div class="col-lg-6 col-xs-12">-->
+                            <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="number" placeholder="Телефон*" required name="phone">
                             </div>
-                            <div class="col-lg-6 col-xs-12">
+<!--                            <div class="col-lg-6 col-xs-12">-->
+                            <div class="col-6">
                             <textarea rows="5"
                                       placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
                                 <button type="submit" class="btn btn-primary">Отправить</button>

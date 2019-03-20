@@ -32,6 +32,23 @@ $(document).ready(function() {
     //     });
     // }
 
+    //
+    $('.has-submenu').on('mouseenter', function() {
+        var $this = $(this);
+        $('.menu-toggle').css({
+            'width': '41.66667vw'
+        });
+        setTimeout(function() {
+            $this.children('.submenu').fadeIn();
+        }, 300);
+    }).on('mouseleave', function() {
+        var $this = $(this);
+        $('.menu-toggle').css({
+            'width': 'calc(41.66667vw - 24vw)'
+        });
+        $this.children('.submenu').fadeOut();
+    });
+
     //if video player is active
     var player = '';
     if (player.length) {

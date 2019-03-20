@@ -31,13 +31,15 @@ if(isset($_GET['id'])) {
         <section class="work-info">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 col-12">
+<!--                    <div class="col-xl-6 col-12">-->
+                    <div class="col-6">
                         <div class="info-block">
                             <h1><span>&nbsp;<?=$data->display('post_title')?>&nbsp;</span></h1>
                             <?=$data->display('post_content')?>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-12">
+<!--                    <div class="col-xl-6 col-12">-->
+                    <div class="col-6">
                         <div class="work-info-img">
                             <img src="<?=$data->display('preview')?>" alt="<?=$data->display('post_title')?>">
                         </div>
@@ -47,10 +49,9 @@ if(isset($_GET['id'])) {
                         <div class="related-categories services extra-services">
                             <div class="row">
                                 <?php foreach($data->field('related_works') as $work) { $related_works = pods('works')->find(array('limit' => 1, 'where' => 'ID = '.$work['ID']));?>
-                                   <?php while($related_works->fetch()){ ?>
-
-
-                                        <div class="col-md-4 col-12">
+                                    <?php while($related_works->fetch()){ ?>
+<!--                                        <div class="col-md-4 col-12">-->
+                                        <div class="col-4">
                                             <a href="<?=get_permalink($related_works->display('id'))?>" class="service-item">
                                                 <div class="service-img-wrap">
                                                     <div class="service-img" style=" background: #000 url(<?=$related_works->display('preview')?>);"></div>
@@ -59,7 +60,6 @@ if(isset($_GET['id'])) {
                                                 <button type="button" class="btn btn-primary">смотреть</button>
                                             </a>
                                         </div>
-
                                 <?php } } ?>
                             </div>
                         </div>

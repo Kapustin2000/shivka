@@ -86,12 +86,14 @@ $stages_of_work = pods('stages_of_work')->find($params);
     <section class="common-service-description">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-12">
+<!--                <div class="col-lg-6 col-12">-->
+                <div class="col-6">
                     <div class="common-service-img">
                         <img src="<?=$settings->display('block_image')?>" alt="<?=$settings->display('block_title')?>">
                     </div>
                 </div>
-                <div class="col-lg-6 col-12">
+<!--                <div class="col-lg-6 col-12">-->
+                <div class="col-6">
                     <div class="common-service-text bordered">
                         <h2><?=$settings->display('block_title')?></h2>
                         <?=$settings->display('block_description')?>
@@ -111,7 +113,8 @@ $stages_of_work = pods('stages_of_work')->find($params);
                     <div class="decorative yellow"></div>
                     <div class="row">
                         <?php while($services->fetch()){ ?>
-                            <div class="col-lg-4 col-12">
+<!--                            <div class="col-lg-4 col-12">-->
+                            <div class="col-4">
                                 <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
                                     <div class="service-img-wrap">
                                         <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
@@ -134,10 +137,12 @@ $stages_of_work = pods('stages_of_work')->find($params);
         <section class="stock">
             <div class="container">
                 <div class="row">
-                    <div class="stock-img col-md-4">
+<!--                    <div class="stock-img col-md-4">-->
+                    <div class="stock-img col-4">
                         <img src="<?=$stock->display('image')?>" alt="Stock">
                     </div>
-                    <div class="col-lg-8 col-xs-12">
+<!--                    <div class="col-lg-8 col-xs-12">-->
+                    <div class="col-8">
                         <div class="stock-text bordered">
                             <h2><?=$stock->display('post_title')?></h2>
                             <p>

@@ -38,7 +38,8 @@ if(!empty($data->total_found())) {
                         <div class="row">
                             <?php if(!empty($data->field('related_single_service'))){  ?>
                             <?php foreach($data->field('related_single_service') as $service) { $related_service = pods('single_services')->find(array('limit' => 1, 'where' => 'ID = '.$service['ID']));?>
-                            <div class="col-lg-6 col-12">
+<!--                            <div class="col-lg-6 col-12">-->
+                            <div class="col-6">
                                 <a href="<?=get_permalink($related_service->display('id'))?>" class="service-item">
                                     <div class="service-title-wrap">
                                         <div class="service-title"><?=$related_service->display('post_title')?></div>

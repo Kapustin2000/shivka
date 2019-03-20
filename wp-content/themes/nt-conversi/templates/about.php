@@ -23,13 +23,15 @@ $partners = pods('partners')->find();
     <section class="about-us">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-12">
+<!--                <div class="col-lg-6 col-12">-->
+                <div class="col-6">
                     <h1><span>&nbsp;о нас&nbsp;</span></h1>
                     <div class="bordered">
                         <?=$settings->display('block1_description')?>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12">
+<!--                <div class="col-lg-6 col-12">-->
+                <div class="col-6">
                     <div class="about-img">
                         <img src=" <?=$settings->display('block1_image')?>" alt="About us">
                     </div>
@@ -40,12 +42,14 @@ $partners = pods('partners')->find();
     <section class="socials">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-12">
+<!--                <div class="col-lg-6 col-12">-->
+                <div class="col-6">
                     <div class="about-img">
                         <img src=" <?=$settings->display('block2_image')?>" alt="About us">
                     </div>
                 </div>
-                <div class="col-lg-6 col-12">
+<!--                <div class="col-lg-6 col-12">-->
+                <div class="col-6">
                     <div class="socials-description">
                         <?=$settings->display('block2_description')?>
                         <div class="inner-wrap">

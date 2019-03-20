@@ -1,12 +1,12 @@
 .smarthoop-about {
     .about-us {
-        padding-bottom: 10rem;
-        margin-top: -10rem;
+        padding-bottom: get-vw(100px);
+        margin-top: get-vw(-100px);
         h1 {
             position: relative;
             z-index: 2;
-            margin: 20rem 0 0;
-            transform: translate(130px, 45px);
+            margin: get-vw(200px) 0 0;
+            transform: translate(get-vw(130px), get-vw(45px));
         }
         .bordered {
             transform: translate(80px, 0);

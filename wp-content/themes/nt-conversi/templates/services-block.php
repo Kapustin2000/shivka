@@ -17,7 +17,8 @@ if($data->total()){
 
 
     while ( $data->fetch() ) {   ?>
-        <div class="col-xl-4 col-lg-6 col-12">
+<!--        <div class="col-xl-4 col-lg-6 col-12">-->
+        <div class="col-4">
             <a href="<?=get_permalink($data->display('id'))?>" class="service-item">
                 <div class="service-img-wrap">
                     <div class="service-img" style="background-image: url( <?=$data->display('preview')?>);"></div>

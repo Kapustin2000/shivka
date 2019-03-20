@@ -76,10 +76,10 @@
     border-radius: 0;
     color: $black;
     &:first-child {
-      margin-right: 2px;
+      margin-right: get-vw(2px);
     }
     &:last-child {
-      margin-left: 2px;
+      margin-left: get-vw(2px);
     }
     span {
       position: relative;
@@ -90,7 +90,7 @@
         left: 0;
         top: 90%;
         width: 0;
-        height: 1px;
+        height: get-vw(1px);
         background-color: $black;
         transition: width $default;
       }
@@ -106,20 +106,20 @@
   }
 }
 
-@media (max-width: $mobile) {
-  .tabs-wrap {
-    button {
-      padding: 1.3rem;
-    }
-  }
-}
+//@media (max-width: $mobile) {
+//  .tabs-wrap {
+//    button {
+//      padding: 1.3rem;
+//    }
+//  }
+//}
 
 .pagination {
   position: relative;
   font-family: "Uni Sans Thin Caps", sans-serif;
-  font-size: 30px;
+  font-size: get-vw(30px);
   font-weight: bold;
-  padding: 50px 50px 50px 0;
+  padding: get-vw(50px) get-vw(50px) get-vw(50px) 0;
   &::before {
     content: '';
     position: absolute;
@@ -146,23 +146,23 @@
       content: '';
       display: block;
       position: absolute;
-      top: calc(100% - 2px);
+      top: calc(100% - 0.10416666666vw);
       left: 0;
       width: 100%;
-      height: 1px;
+      height: get-vw(1px);
       background-color: $black;
     }
   }
 }
 
 .smarthoop-services-category {
-  margin-top: 200px;
+  margin-top: get-vw(200px);
   .services {
     .service-item {
-      height: 775px;
+      height: get-vw(775px);
       &:not(:hover) {
         .service-desc {
-          height: 70px;
+          height: get-vw(70px);
           overflow: hidden;
         }
       }
@@ -175,7 +175,7 @@
         }
         .service-img-wrap {
           .service-img {
-            padding-bottom: 775px;
+            padding-bottom: get-vw(775px);
           }
         }
       }
@@ -186,18 +186,18 @@
       }
       .service-title {
         position: relative;
-        padding: 50px;
+        padding: get-vw(50px);
         max-height: 100%;
       }
       .service-desc {
         & {
-          padding: 0 50px 0 63px;
+          padding: 0 get-vw(50px) 0 get-vw(63px);
           text-align: right;
           color: $violet;
         }
         &, p {
-          font-size: 25px;
-          line-height: 35px;
+          font-size: get-vw(25px);
+          line-height: get-vw(35px);
         }
       }
       .service-full-desc {
@@ -207,7 +207,7 @@
         bottom: 0;
         top: auto;
         .service-img {
-          padding-bottom: 525px;
+          padding-bottom: get-vw(525px);
         }
       }
       button {
@@ -217,22 +217,22 @@
   }
 }
 
-@media (max-width: $large-desktop) {
-  .smarthoop-services-category {
-    .services {
-      .service-item {
-        .service-full-desc {
-          display: none;
-        }
-        .service-img-wrap {
-          .service-img {
-            padding-bottom: 775px;
-          }
-        }
-      }
-    }
-  }
-}
+//@media (max-width: $large-desktop) {
+//  .smarthoop-services-category {
+//    .services {
+//      .service-item {
+//        .service-full-desc {
+//          display: none;
+//        }
+//        .service-img-wrap {
+//          .service-img {
+//            padding-bottom: get-vw(775px);
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
 
 //modals
 .modal-open .modal {
@@ -269,27 +269,30 @@
   top: 50%;
   left: 50%;
 }
-@media (max-width: 1200px) {
-  .modal-dialog {
-    max-width: 100%;
-  }
-  .modal.fade .modal-dialog {
-    transform: translate(-50%, 0);
-    top: 0;
-  }
-  .modal-content {
-    .make-order {
-      .form-wrap {
-        padding: 5rem 2rem !important;
-      }
-    }
-  }
-}
-@media (min-width: 1200px) {
-  .modal-dialog {
-    max-width: 900px;
-  }
-}
+
+//@media (max-width: 1200px) {
+//  .modal-dialog {
+//    max-width: 100%;
+//  }
+//  .modal.fade .modal-dialog {
+//    transform: translate(-50%, 0);
+//    top: 0;
+//  }
+//  .modal-content {
+//    .make-order {
+//      .form-wrap {
+//        padding: get-vw(50px) get-vw(20px) !important;
+//      }
+//    }
+//  }
+//}
+
+//@media (min-width: 1200px) {
+//  .modal-dialog {
+//    max-width: 900px;
+//  }
+//}
+
 .modal-dialog {
   position: relative;
   width: auto;
@@ -309,13 +312,13 @@
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0,0,0,.2);
-  border-radius: .3rem;
+  border: get-vw(1px) solid rgba(0,0,0,.2);
+  border-radius: get-vw(3px);
   outline: 0;
   .make-order {
     padding-bottom: 0;
     .form-wrap {
-      padding: 5rem 10rem;
+      padding: get-vw(50px) get-vw(100px);
     }
   }
 }

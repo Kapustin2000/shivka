@@ -1,32 +1,32 @@
 .smarthoop-faq {
-  margin-top: 20rem;
-  padding-bottom: 10rem;
+  margin-top: get-vw(200px);
+  padding-bottom: get-vw(100px);
   .inner-wrap {
     position: relative;
   }
   .decorative {
     position: absolute;
-    width: 42.5rem;
-    height: 42.5rem;
+    width: get-vw(425px);
+    height: get-vw(425px);
     z-index: -1;
     &.lavander {
-      top: -5rem;
-      right: -4rem;
+      top: get-vw(-50px);
+      right: get-vw(-40px);
     }
     &.yellow {
-      left: -4rem;
+      left: get-vw(-40px);
       bottom: 0;
     }
   }
   .panel {
-    padding: 10rem;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
-    margin-bottom: 5rem;
+    padding: get-vw(100px);
+    box-shadow: 0 0 get-vw(50px) rgba(0, 0, 0, 0.15);
+    margin-bottom: get-vw(50px);
     background-color: $white;
     .panel-answer {
-      font-size: 2.5rem;
+      font-size: get-vw(25px);
       font-weight: 300;
-      line-height: 3.5rem;
+      line-height: get-vw(35px);
       p {
         font-size: inherit;
         line-height: inherit;

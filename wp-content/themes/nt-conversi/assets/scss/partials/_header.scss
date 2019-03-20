@@ -108,7 +108,7 @@ header {
   }
   .menu-toggle {
     position: absolute;
-    width: get-vw(800px);
+    width: calc(41.66667vw - 24vw);
     height: 100vh;
     top: 0;
     right: get-vw(-1000px);
@@ -123,7 +123,8 @@ header {
       position: absolute;
       display: block;
       top: 0;
-      right: get-vw(-800px);
+      right: -100%;
+      //right: calc(-41.66667vw + 24vw);
       width: inherit;
       height: inherit;
       background-color: inherit;
@@ -134,14 +135,19 @@ header {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      &:not(.submenu) > li:hover {
+      &:not(.submenu) > li.has-submenu:not(:hover) {
+        .submenu {
+          display: none !important;
+        }
+      }
+      &:not(.submenu) > li.has-submenu:hover {
         a {
           text-decoration: none;
           &::after {
             opacity: 1;
           }
           & + .submenu {
-            display: block;
+            //display: block;
           }
         }
       }
@@ -187,6 +193,16 @@ header {
       margin: 0;
       padding: get-vw(10px) get-vw(100px);
       background-color: #F9F5E0;
+      overflow-y: auto;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: $white;
+        height: 100%;
+        width: 100%;
+      }
       &::after {
         content: '';
         position: absolute;
@@ -201,57 +217,9 @@ header {
         font-size: get-vw(16px);
         padding: get-vw(16px) 0;
         z-index: 1000;
-      }
-    }
-  }
-}
-
-@media (min-width: $desktop) and (max-width: $fullhd) {
-  header {
-    .navbar {
-      &-nav {
-        .nav-item {
-          //padding: 0 get-vw(20px);
+        &:hover {
+          text-decoration: underline !important;
         }
-      }
-    }
-  }
-}
-
-@media (max-width: $large-desktop) {
-  header {
-    .navbar {
-      &-nav,
-      .btn {
-        //display: none;
-      }
-    }
-  }
-}
-
-@media (max-width: $desktop) {
-  header {
-    .menu-toggle {
-      width: 100%;
-      &.active::before {
-        opacity: 1;
-        z-index: 1;
-        height: inherit;
-      }
-      &::before {
-        content: '';
-        position: absolute;
-        display: block;
-        top: 0;
-        left: -100%;
-        width: inherit;
-        height: 0;
-        background-color: inherit;
-        opacity: 0;
-        z-index: -1;
-      }
-      &::after {
-        right: -100%;
       }
     }
   }
@@ -259,33 +227,92 @@ header {
 
 @media (max-width: $tablet) {
   header {
-    .menu-toggle {
-      ul {
-        a::after {
-          display: none;
-        }
-        button {
-          display: block !important;
-        }
-      }
-      .submenu {
-        display: none !important;
-      }
-    }
-  }
-}
-@media (max-width: $mobile) {
-  header {
-    .menu-toggle {
-      ul {
-        li {
-          padding: 0 get-vw(25px);
-          .btn {
-            margin-left: auto;
-          }
-        }
-      }
+    .navbar-nav {
+      display: none;
     }
   }
 }
 
+//@media (min-width: $desktop) and (max-width: $fullhd) {
+//  header {
+//    .navbar {
+//      &-nav {
+//        .nav-item {
+//          //padding: 0 get-vw(20px);
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: $large-desktop) {
+//  header {
+//    .navbar {
+//      &-nav,
+//      .btn {
+//        //display: none;
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: $desktop) {
+//  header {
+//    .menu-toggle {
+//      width: 100%;
+//      &.active::before {
+//        opacity: 1;
+//        z-index: 1;
+//        height: inherit;
+//      }
+//      &::before {
+//        content: '';
+//        position: absolute;
+//        display: block;
+//        top: 0;
+//        left: -100%;
+//        width: inherit;
+//        height: 0;
+//        background-color: inherit;
+//        opacity: 0;
+//        z-index: -1;
+//      }
+//      &::after {
+//        right: -100%;
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: $tablet) {
+//  header {
+//    .menu-toggle {
+//      ul {
+//        a::after {
+//          display: none;
+//        }
+//        button {
+//          display: block !important;
+//        }
+//      }
+//      .submenu {
+//        display: none !important;
+//      }
+//    }
+//  }
+//}
+//@media (max-width: $mobile) {
+//  header {
+//    .menu-toggle {
+//      ul {
+//        li {
+//          padding: 0 get-vw(25px);
+//          .btn {
+//            margin-left: auto;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+//

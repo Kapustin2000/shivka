@@ -131,7 +131,6 @@ textarea {
   border-radius: get-vw(25px);
   border: none;
   color: $white;
-  text-transform: uppercase;
   font-family: 'Open Sans Condensed', sans-serif;
   padding: get-vw(11.5px) get-vw(18px) get-vw(11.5px) get-vw(50px);
   transition: $default;
@@ -156,6 +155,7 @@ textarea {
   font-weight: 300;
   line-height: get-vw(25px);
   resize: none;
+  padding-right: get-vw(50px);
   &::placeholder {
     text-transform: initial;
   }
