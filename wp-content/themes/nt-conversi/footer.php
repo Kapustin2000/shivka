@@ -43,7 +43,7 @@ $services = pods('services')->find($params);
                             <span>Заказать звонок</span>
                         </button>
                     </div>
-                    <form action="#" id="order-form" class="order-form active">
+                    <form action="#" id="order-form" class="order-form active" enctype="multipart/form-data" method="post">
                         <div class="row">
 <!--                            <div class="col-lg-6 col-xs-12">-->
                             <div class="col-6">
@@ -61,7 +61,8 @@ $services = pods('services')->find($params);
                             <div class="col-6">
                                 <textarea rows="5" name="message"
                                     placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                                <input type="file" multiple>
+                                <input name="files[]" type="file" multiple>
+                                <input id="image" name="image" type="file" size = '50'" multiple/>
                                 <button type="submit" class="btn btn-primary">Отправить</button>
                             </div>
                         </div>
