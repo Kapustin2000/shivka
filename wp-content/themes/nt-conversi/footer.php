@@ -13,6 +13,16 @@
  */
 $settings  = pods('website_settings')->find();
 ?>
+<?php
+
+$params = array(
+    'where' => shivka_filters(),
+    'orderby'=>"order_weight.meta_value DESC,id DESC",
+    'offset' => shivka_offset(9),
+);
+$services = pods('services')->find($params);
+
+?>
 <section class="make-order">
     <div class="container">
 <!--        <div class="row justify-content-lg-center">-->
@@ -33,20 +43,23 @@ $settings  = pods('website_settings')->find();
                             <span>Заказать звонок</span>
                         </button>
                     </div>
-                    <form action="#" id="order-form" class="order-form active">
+                    <form action="#" id="order-form" class="order-form active" enctype="multipart/form-data" method="post">
                         <div class="row">
 <!--                            <div class="col-lg-6 col-xs-12">-->
                             <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="email" placeholder="E-mail*" required name="email">
                                 <input type="number" placeholder="Телефон" name="phone">
-                                <select name="" id="">
+                                <select name="service_name" id="">
                                   <option value="0" selected>Вид услуги</option>
+                                   <?php while($services->fetch()){ ?>
+                                       <option value="<?=$services->display('post_title')?>" selected><?=$services->display('post_title')?></option>
+                                    <?php } ?>
                                 </select>
                             </div>
 <!--                            <div class="col-lg-6 col-xs-12">-->
                             <div class="col-6">
-                                <textarea rows="5"
+                                <textarea rows="5" name="message"
                                     placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
                                 <input type="file" style="opacity: 0;">
                                 <button type="submit" class="btn btn-primary">Отправить</button>
@@ -56,7 +69,8 @@ $settings  = pods('website_settings')->find();
                     <form action="#" class="order-form file-form active">
                         <div class="row">
                             <div class="col-12">
-                                <input type="file" multiple>
+                                <input name="files[]" type="file" multiple>
+                                <input id="image" name="image" type="file" size = '50'" multiple/>
                             </div>
                         </div>
                     </form>
