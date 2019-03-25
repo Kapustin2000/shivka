@@ -48,8 +48,15 @@ $settings  = pods('website_settings')->find();
                             <div class="col-6">
                                 <textarea rows="5"
                                     placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                                <input type="file" multiple>
+                                <input type="file" style="opacity: 0;">
                                 <button type="submit" class="btn btn-primary">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="#" class="order-form file-form active">
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="file" multiple>
                             </div>
                         </div>
                     </form>

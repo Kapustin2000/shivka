@@ -1038,6 +1038,14 @@ footer {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+  .make-order .file-form {
+    position: absolute;
+    width: calc(50% - 0.78125vw);
+    bottom: calc(2.60417vw * 5);
+    right: 0.78125vw;
+    padding: 0 5.20833vw 0 15px; }
+    .make-order .file-form input {
+      margin: 0; }
 
 .rc-anchor-normal {
   width: 50% !important; }

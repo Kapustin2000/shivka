@@ -53,6 +53,17 @@
             display: flex;
         }
     }
+    .file-form {
+        position: absolute;
+        width: calc(50% - 0.78125vw);
+        //bottom: get-vw(165px);
+        bottom: calc(2.60417vw * 5);
+        right: 0.78125vw;
+        padding: 0 get-vw(100px) 0 15px;
+        input {
+            margin: 0;
+        }
+    }
 }
 
 .rc-anchor-normal {
