@@ -59,6 +59,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                             <i class="icon icon-arrow"></i>
                         </div>
                         <?php if($settings->field('main_screen')) { ?>
+                        <?php if(!empty($settings->field('sliders'))){ ?>    
                         <div id="main-slider" class="main-slider">
                             <div class="slides-wrap">
                                 <?php foreach($settings->field('sliders') as $slider) { ?>
@@ -66,6 +67,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                                 <?php } ?>
                             </div>
                         </div>
+                        <?php } ?>
 
                         <?php }else{ ?>
                             <?=$settings->display('video')?>

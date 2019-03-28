@@ -48,6 +48,7 @@ if(isset($_GET['id'])) {
                     <div class="col-12">
                         <div class="related-categories services extra-services">
                             <div class="row">
+                                <?php if(!empty($data->field('related_works'))) { ?>
                                 <?php foreach($data->field('related_works') as $work) { $related_works = pods('works')->find(array('limit' => 1, 'where' => 'ID = '.$work['ID']));?>
                                     <?php while($related_works->fetch()){ ?>
 <!--                                        <div class="col-md-4 col-12">-->
@@ -60,7 +61,7 @@ if(isset($_GET['id'])) {
                                                 <button type="button" class="btn btn-primary">смотреть</button>
                                             </a>
                                         </div>
-                                <?php } } ?>
+                                <?php } } } ?>
                             </div>
                         </div>
                         <div class="see-more">

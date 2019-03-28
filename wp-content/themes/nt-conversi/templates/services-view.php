@@ -64,10 +64,10 @@ if(!empty($data->total_found())) {
                             <div class="col-12">
                                 <div id="gallery" class="gallery-wrap">
                                     <?php $related_gallery = pods('gallery')->find(array('limit' => 1, 'where' => 't.id = '.$data->field('gallery')['ID'])); ?>
-                                    <?php while($related_gallery->fetch()){?>
+                                    <?php while($related_gallery->fetch()){ if(!empty($related_gallery->field('images'))){?>
                                         <?php foreach ($related_gallery->field('images') as $item) { ?>
                                         <a href="<?=$item['guid']?>" style="background-image: url(<?=$item['guid']?>);" class="img-wrap"></a>
-                                    <?php } } ?>
+                                    <?php } } } ?>
                                 </div>
                             </div>
                         </div>
@@ -112,6 +112,7 @@ if(!empty($data->total_found())) {
                     <div class="col-12">
                         <h2>Смотрите также</h2>
                         <div id="related-slider" class="related-slider services extra-services">
+                            <?php if(!empty($data->field('related_services'))){ ?>
                             <?php foreach($data->field('related_services') as $service) {
                                 $related_service = pods('single_services')->find(array('limit' => 1, 'where' => 'ID = '.$service['ID']));
                                 while($related_service->fetch()){ ?>
@@ -123,7 +124,7 @@ if(!empty($data->total_found())) {
                                         <div class="service-title"><?=$related_service->display('post_title')?></div>
                                         <button type="button" class="btn btn-primary">смотреть</button>
                                     </a>
-                            <?php } } ?>
+                            <?php } } } ?>
                         </div>
                         <a href="/services" class="back">
                             <span>

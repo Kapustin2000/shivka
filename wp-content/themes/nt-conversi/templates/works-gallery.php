@@ -45,6 +45,7 @@ if(isset($_GET['id'])) {
                         </div>
                     </div>
                     <div class="col-12">
+                        <?php if(!empty($data->field('images'))) { ?>
                         <div id="work-gallery" class="work-gallery">
                             <?php foreach($data->field('images') as $image) { ?>
                             <div class="gallery-item">
@@ -52,6 +53,8 @@ if(isset($_GET['id'])) {
                             </div>
                             <?php } ?>
                         </div>
+                        <?php } ?>
+                        <?php if(!empty($data->field('images'))){ ?>
                         <div id="work-gallery-nav" class="work-gallery-nav">
                             <?php foreach($data->field('images') as $image) { ?>
                                 <div class="gallery-nav-item">
@@ -59,6 +62,7 @@ if(isset($_GET['id'])) {
                                 </div>
                             <?php } ?>
                         </div>
+                        <?php } ?>
                         <div class="bottom">
                             <a href="/works" class="back">
                             <span>

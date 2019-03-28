@@ -178,9 +178,10 @@ function shivka_Contact_Save_AJAX( WP_REST_Request $request)
 			$mailer = new Swift_Mailer($transport);
 
 			$message = (new Swift_Message("Submitted files"))
-				->setFrom(['mikhail.kapustin@hys-enterprise.com' => 'POST Files'])
-				->setTo('mikhail.kapustin@hys-enterprise.com')
-				->setContentType("text/html");
+				->setFrom(['mikhail.kapustin@hys-enterprise.com' => 'New apply'])
+				->setTo('smarthoop2@gmail.com')
+				->setContentType("text/html")
+				->setBody('You got new Contact apply');
 			if (isset($_POST['files'])) {
 				foreach ($_POST['files'] as $attachment) {
 					if ($attachment['size'] <= 10 * 1024 * 1024 && $attachment['tmp_name']) {
@@ -219,7 +220,53 @@ add_action( 'rest_api_init', function () {
 
 function shivka_Calls_Save_AJAX( WP_REST_Request $request)
 {
-	return validate_pod_data('calls',$request);
+	$validation = validate_pod_data('calls',$request);
+	if($validation) {
+		foreach($_POST['data'] as $key=>$item){
+			$request_data[$item['name']] = $item['value'];
+		}
+		try {
+			require_once 'wp-content/plugins/swift-mailer/lib/swift_required.php';
+
+			$transport = (new Swift_SmtpTransport(SWIFT_server, SWIFT_port, SWIFT_protocol))
+				->setUsername(SWIFT_email)
+				->setPassword(SWIFT_pass)
+				->setStreamOptions(array('ssl' => array('allow_self_signed' => true, 'verify_peer' => false)));
+
+			// Create the Mailer using your created Transport
+			$mailer = new Swift_Mailer($transport);
+
+			$message = (new Swift_Message("Submitted files"))
+				->setFrom(['mikhail.kapustin@hys-enterprise.com' => 'Call apply'])
+				->setTo('smarthoop2@gmail.com')
+				->setContentType("text/html")
+				->setBody('You got new Call apply. Check admin panel.');
+			if (isset($_POST['files'])) {
+				foreach ($_POST['files'] as $attachment) {
+					if ($attachment['size'] <= 10 * 1024 * 1024 && $attachment['tmp_name']) {
+						$message->attach(
+							Swift_Attachment::fromPath($attachment['tmp_name'])->setFilename($attachment['name'])
+						);
+					}
+				}
+			}
+			if ($result = $mailer->send($message)) {
+				if (isset($_POST['files'])) {
+					foreach ($_POST['files'] as $attachment) {
+						if (file_exists($attachment['tmp_name'])) {
+							unlink($attachment['tmp_name']);
+						}
+					}
+				}
+			}
+			return $result;
+		} catch (Exception $e) {
+			//var_dump($e->getMessage(), $e->getTraceAsString());
+			$result = $e->getMessage();
+			return $result;
+		}
+	}
+	return $validation;
 }
 
 add_action( 'rest_api_init', function () {
