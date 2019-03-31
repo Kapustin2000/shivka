@@ -54,9 +54,10 @@ $stages_of_work = pods('stages_of_work')->find($params);
                                 <?=$settings->display('main_screen_title')?>
                             </span>
                         </h1>
-                        <div class="see-more">
+                        <div class="see-more eye-hover">
                             <span class="underline">узнать больше</span>
                             <i class="icon icon-arrow"></i>
+                            <i class="icon icon-eye"></i>
                         </div>
                         <?php if($settings->field('main_screen')) { ?>
                         <?php if(!empty($settings->field('sliders'))){ ?>    
@@ -88,20 +89,20 @@ $stages_of_work = pods('stages_of_work')->find($params);
     <section class="common-service-description">
         <div class="container">
             <div class="row">
-<!--                <div class="col-lg-6 col-12">-->
-                <div class="col-6">
-                    <div class="common-service-img">
-                        <img src="<?=$settings->display('block_image')?>" alt="<?=$settings->display('block_title')?>">
+                <div class="col-12">
+                    <div class="common-service-wrap">
+                        <div class="common-service-img">
+                            <img src="<?=$settings->display('block_image')?>" alt="<?=$settings->display('block_title')?>">
+                        </div>
+                        <div class="common-service-text-wrap">
+                            <div class="common-service-text bordered">
+                                <h2><?=$settings->display('block_title')?></h2>
+                                <?=$settings->display('block_description')?>
+                            </div>
+                            <a href="/about" type="button" class="btn btn-outline">Читать о нас</a>
+                            <div class="decorative lavander"></div>
+                        </div>
                     </div>
-                </div>
-<!--                <div class="col-lg-6 col-12">-->
-                <div class="col-6">
-                    <div class="common-service-text bordered">
-                        <h2><?=$settings->display('block_title')?></h2>
-                        <?=$settings->display('block_description')?>
-                    </div>
-                    <a href="/about" type="button" class="btn btn-outline">Читать о нас</a>
-                    <div class="decorative lavander"></div>
                 </div>
             </div>
         </div>
@@ -127,8 +128,9 @@ $stages_of_work = pods('stages_of_work')->find($params);
                             </div>
                         <?php } ?>
                     </div>
-                    <div class="see-more">
+                    <div class="see-more eye-hover">
                         <a href="/services" class="underline">смотреть все услуги</a>
+                        <i class="icon icon-eye"></i>
                     </div>
                 </div>
             </div>
@@ -139,19 +141,23 @@ $stages_of_work = pods('stages_of_work')->find($params);
         <section class="stock">
             <div class="container">
                 <div class="row">
-<!--                    <div class="stock-img col-md-4">-->
-                    <div class="stock-img col-4">
-                        <img src="<?=$stock->display('image')?>" alt="Stock">
-                    </div>
-<!--                    <div class="col-lg-8 col-xs-12">-->
-                    <div class="col-8">
-                        <div class="stock-text bordered">
-                            <h2><?=$stock->display('post_title')?></h2>
-                            <p>
-                                <?=$stock->display('post_content')?>
-                            </p>
-                            <a href="<?=get_permalink($stock->display('id'))?>" type="button" class="btn btn-primary">Подробнее</a>
-                            <img class="ornament" src="<?=$stock->display('patch')?>" alt="Ornament">
+                    <div class="col-12">
+                        <div class="stock-wrap">
+                            <!--                    <div class="stock-img col-md-4">-->
+                            <div class="stock-img">
+                                <img src="<?=$stock->display('image')?>" alt="Stock">
+                            </div>
+                            <!--                    <div class="col-lg-8 col-xs-12">-->
+                            <div class="stock-text-wrap">
+                                <div class="stock-text bordered">
+                                    <h2><?=$stock->display('post_title')?></h2>
+                                    <p>
+                                        <?=$stock->display('post_content')?>
+                                    </p>
+                                    <a href="<?=get_permalink($stock->display('id'))?>" type="button" class="btn btn-primary">Подробнее</a>
+                                    <img class="ornament" src="<?=$stock->display('patch')?>" alt="Ornament">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

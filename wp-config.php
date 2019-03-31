@@ -27,7 +27,7 @@ define('DB_NAME', 'shivka');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '123456');
+define('DB_PASSWORD', '12345');
 define( 'FS_METHOD', 'direct' );
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

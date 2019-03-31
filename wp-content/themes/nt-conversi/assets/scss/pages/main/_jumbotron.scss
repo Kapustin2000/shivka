@@ -1,9 +1,9 @@
 .jumbotron {
   margin-top: get-vw(100px);
   //height: 653px;
-  margin-bottom: get-vw(118px);
+  margin-bottom: get-vw(85px);
   .inner {
-    padding: get-vw(118px) 0;
+    padding: get-vw(105px) 0 get-vw(118px);
   }
   h1 {
     margin: 0 0 get-vw(100px);
@@ -19,13 +19,17 @@
     .icon-arrow {
       top: 100%;
       transform: translate(-50%, 0);
-      margin: get-vw(40px) auto 0;
+      margin: get-vw(90px) auto 0;
+      transition: .3s ease-in;
+    }
+    .icon-eye {
+      top: 45px;
     }
     &:hover,
     &:focus,
     &:active {
-      .underline::after {
-        width: 100%;
+      .icon-arrow {
+        margin: get-vw(150px) auto 0;
       }
     }
   }
@@ -35,7 +39,7 @@
     top: get-vw(50px);
     right: get-vw(15px);
     width: 68vw;
-    height: 38.2vw;
+    height: 36vw;
     &::after {
       content: '';
       position: absolute;

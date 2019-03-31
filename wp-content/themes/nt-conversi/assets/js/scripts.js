@@ -12,6 +12,27 @@ $(document).ready(function() {
             .removeClass('active')
             .eq($this.index())
             .addClass('active');
+
+        if ( $('#order-form').hasClass('active') ) {
+            $('.file-form').addClass('active');
+        }
+    });
+
+    //-------file form
+    function fileFormOffset() {
+        var width = $('#order-form input').outerWidth();
+        var offsetTop =  2 + $('.form-inner-wrap').outerHeight()
+            + parseInt($('.order-form').css('padding-top'))
+            + $('#order-form textarea').outerHeight()
+            + parseInt($('#order-form textarea').css('margin-bottom'));
+        $('.file-form').css({
+            'width': width,
+            'top': offsetTop
+        });
+    }
+    fileFormOffset();
+    $(window).on('resize', function() {
+        fileFormOffset();
     });
 
     //-------mobile menu

@@ -1,13 +1,23 @@
 .stock {
-  padding-bottom: get-vw(150px);
+  padding-bottom: get-vw(140px);
+  .stock-wrap {
+    position: relative;
+  }
   .stock-img {
-    width: 100%;
+    width: get-vw(550px);
     img {
       width: 100%;
       height: auto;
     }
   }
+  .stock-text-wrap {
+    position: absolute;
+    top: get-vw(-55px);
+    right: 0;
+    width: get-vw(1100px);
+  }
   .stock-text {
+    width: 100%;
     position: relative;
     p {
       position: relative;
@@ -16,14 +26,14 @@
     }
     a {
       display: inline-block;
-      margin: get-vw(150px) 0 get-vw(40px);
+      margin: 0 0 get-vw(100px);
     }
     .ornament {
       position: absolute;
       max-width: get-vw(440px);
       width: 50%;
       height: auto;
-      top: get-vw(50px);
+      bottom: get-vw(-50px);
       right: get-vw(50px);
     }
   }

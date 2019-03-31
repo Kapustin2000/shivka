@@ -1,5 +1,5 @@
 .services {
-  padding-bottom: get-vw(215px);
+  padding-bottom: get-vw(210px);
   .decorative {
     width: get-vw(425px);
     height: get-vw(425px);
@@ -60,6 +60,7 @@
       max-height: get-vw(122px);
       overflow: hidden;
       text-overflow: ellipsis;
+      max-width: get-vw(280px);
     }
     button {
       display: block;
