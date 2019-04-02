@@ -158,6 +158,21 @@
 .smarthoop-services-category {
   margin-top: get-vw(200px);
   .services {
+    h1 {
+      margin-bottom: get-vw(100px);
+    }
+    .decorative {
+      &.lavander {
+        top: auto;
+        bottom: 0;
+        left: get-vw(-35px);
+      }
+      &.yellow {
+        top: get-vw(120px);
+        right: get-vw(-35px);
+        left: auto;
+      }
+    }
     .service-item {
       height: get-vw(775px);
       &:not(:hover) {
@@ -183,11 +198,14 @@
         position: absolute;
         top: 0;
         z-index: 2;
+        width: 100%;
       }
       .service-title {
         position: relative;
         padding: get-vw(50px);
         max-height: 100%;
+        max-width: 100%;
+        width: 100%;
       }
       .service-desc {
         & {
