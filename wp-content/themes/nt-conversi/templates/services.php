@@ -41,10 +41,10 @@ $data = pods('services')->find($params);
                             </div>
                         <?php } ?>
                     </div>
-<!--                    <div class="see-more">-->
-<!--<!--                        TODO: Change link-->-->
-<!--                        <a href="/" class="underline">смотреть больше</a>-->
-<!--                    </div>-->
+                    <div class="see-more eye-hover">
+                        <a href="/" class="underline">смотреть больше</a>
+                        <i class="icon icon-eye"></i>
+                    </div>
                 </div>
             </div>
         </div>

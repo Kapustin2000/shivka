@@ -1,51 +1,68 @@
 .services.extra-services {
-    padding: get-vw(100px) 0 get-vw(150px);
-    .decorative {
-      &.yellow {
-        top: get-vw(40px);
-        left: 30%;
-      }
-      &.lavander {
-        bottom: get-vw(95px);
-        right: get-vw(-35px);
-        left: auto;
-        top: auto;
-      }
+  margin-top: get-vw(100px);
+  padding: get-vw(100px) 0 get-vw(150px);
+  h1 {
+    margin-bottom: get-vw(100px);
+  }
+  .decorative {
+    &.yellow {
+      top: get-vw(40px);
+      left: get-vw(360px);
     }
-    .service-item {
-      .service-img-wrap {
-        height: 100%;
-        padding-right: 0;
-        .service-img {
-          height: inherit;
-          padding: 0;
-        }
-      }
-      .service-title {
-        background: white;
-        border-radius: get-vw(50px) 0 0 get-vw(50px);
-        margin-left: 7%;
-        padding: 0 get-vw(18px);
-        margin-bottom: get-vw(50px);
-        max-height: get-vw(105px);
-      }
-      button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        display: block;
-        margin-left: auto;
-        margin-right: get-vw(27px);
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        z-index: -1;
-      }
-    }
-    .see-more {
-      margin-top: get-vw(50px);
+    &.lavander {
+      bottom: get-vw(95px);
+      right: get-vw(-35px);
+      left: auto;
+      top: auto;
     }
   }
+  .service-item {
+    &:hover {
+      .service-img {
+        transform: scale(1.1);
+      }
+    }
+    .service-img-wrap {
+      height: 100%;
+      padding-right: 0;
+      overflow: hidden;
+      .service-img {
+        height: inherit;
+        padding: 0;
+        transition: .3s ease-in;
+      }
+    }
+    .service-title {
+      background: white;
+      border-radius: get-vw(50px) 0 0 get-vw(50px);
+      margin-left: 7%;
+      padding: 0 get-vw(18px);
+      margin-bottom: get-vw(50px);
+      max-height: get-vw(105px);
+      max-width: 100%;
+    }
+    button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: get-vw(27px);
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+  .see-more {
+    margin-top: get-vw(50px);
+  }
+}
 
+.page-template-services {
+  .make-order {
+    display: none;
+  }
+}
 
 //@media (min-width: $desktop + 1px) {
   .services.extra-services {
