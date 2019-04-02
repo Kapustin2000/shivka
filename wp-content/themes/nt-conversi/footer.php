@@ -29,6 +29,9 @@ $services = pods('services')->find($params);
         <div class="row justify-content-center">
             <div class="col-12">
                 <div class="decorative yellow"></div>
+                <div class="decorative background">
+<!--                    <img src="--><?php //bloginfo('template_url'); ?><!--/assets/img/broderie.jpg" alt="Broderie">-->
+                </div>
             </div>
 <!--            <div class="col-lg-8 col-12">-->
             <div class="col-12">
@@ -36,14 +39,14 @@ $services = pods('services')->find($params);
                     <div class="form-inner-wrap">
                         <h2>Хотите узнать стоимость услуги или сделать заказ?</h2>
                         <p>Свяжитесь с нами удобным для вас способом:</p>
-                        <div class="tabs-wrap yellow">
-                            <button type="button" class="tab active">
-                                <span>Написать</span>
-                            </button>
-                            <button type="button" class="tab">
-                                <span>Заказать звонок</span>
-                            </button>
-                        </div>
+                    </div>
+                    <div class="tabs-wrap yellow">
+                        <button type="button" class="tab active">
+                            <span>Написать</span>
+                        </button>
+                        <button type="button" class="tab">
+                            <span>Заказать звонок</span>
+                        </button>
                     </div>
                     <form action="#" id="order-form" class="order-form active" enctype="multipart/form-data" method="post">
                         <div class="row">
@@ -51,11 +54,11 @@ $services = pods('services')->find($params);
                             <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="email" placeholder="E-mail*" required name="email">
-                                <input type="number" placeholder="Телефон" name="phone">
-                                <select name="service_name" id="">
+                                <input type="number" id="phone" placeholder="Телефон" name="phone">
+                                <select class="service-select" name="service_name">
                                   <option value="0" selected>Вид услуги</option>
                                    <?php while($services->fetch()){ ?>
-                                       <option value="<?=$services->display('post_title')?>" selected><?=$services->display('post_title')?></option>
+                                       <option value="<?=$services->display('post_title')?>"><?=$services->display('post_title')?></option>
                                     <?php } ?>
                                 </select>
                             </div>
@@ -63,7 +66,7 @@ $services = pods('services')->find($params);
                             <div class="col-6">
                                 <textarea rows="5" name="message"
                                     placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                                <input type="file" style="opacity: 0;">
+                                <input id="file" type="file" style="opacity: 0;">
                                 <button type="submit" class="btn btn-primary">Отправить</button>
                             </div>
                         </div>
@@ -86,8 +89,12 @@ $services = pods('services')->find($params);
                     <form action="#" class="order-form file-form active">
                         <div class="row">
                             <div class="col-12">
-                                <input name="files[]" type="file" multiple>
-<!--                                <input id="image" name="image" type="file" size = '50'" multiple/>-->
+                                <div class="form-element">
+                                    <label class="form-element-label" for="input-file">Выбрать файлы</label>
+                                    <div class="form-element-error">Невозможно загрузить файлы</div>
+                                    <input type="file" id="fileinput" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
+                                </div>
+<!--                            <input id="fileinput" name="files[]" type="file" multiple>-->
                             </div>
                         </div>
                     </form>
@@ -106,32 +113,29 @@ $services = pods('services')->find($params);
                     </div>
                     <div class="contacts">
                         <h4>контакты</h4>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="contact">
-                                    <a target="_blank" href="<?=$settings->display('wholesale_latitude')?>">
-                                        <?=$settings->display('wholesale_city')?>
-                                    </a> </br>
-                                    Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>"><?=$settings->display('wholesale_number')?></a>, <a href="tel:+380667734186">0667734186</a></br>
-                                    email: <a href="mailto:<?=$settings->display('wholesale_email')?>"><?=$settings->display('wholesale_email')?></a>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="contact">
-                                    <a target="_blank" href="<?=$settings->display('individually_latitude')?>">
-                                        <?=$settings->display('individual_city')?>
-                                    </a> </br>
-                                    Тел: <a href="tel:+380<?=$settings->display('individually_number')?>"><?=$settings->display('individually_number')?></a></br>
-<!--                                    --><?//=$settings->display('individually_number')?><!--</br>-->
-                                    email: <a href="mailto:<?=$settings->display('individual_email')?>"><?=$settings->display('individual_email')?></a>
-                                </div>
-                            </div>
+                        <div class="contact">
+                            <a target="_blank" href="<?=$settings->display('wholesale_latitude')?>">
+                                <?=$settings->display('wholesale_city')?>
+                            </a> </br>
+                            Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>"><?=$settings->display('wholesale_number')?></a>, <a href="tel:+380667734186">0667734186</a></br>
+                            email: <a href="mailto:<?=$settings->display('wholesale_email')?>"><?=$settings->display('wholesale_email')?></a>
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <h4>&nbsp;</h4>
+                        <div class="contact">
+                            <a target="_blank" href="<?=$settings->display('individually_latitude')?>">
+                                <?=$settings->display('individual_city')?>
+                            </a> </br>
+                            Тел: <a href="tel:+380<?=$settings->display('individually_number')?>"><?=$settings->display('individually_number')?></a></br>
+                            <!--                                    --><?//=$settings->display('individually_number')?><!--</br>-->
+                            email: <a href="mailto:<?=$settings->display('individual_email')?>"><?=$settings->display('individual_email')?></a>
                         </div>
                     </div>
                     <div class="schedule">
                         <h4>График работы</h4>
-                        <p><?=$settings->display('individually_working_hours')?></br>
-                            <?=$settings->display('individually_working_days')?></p>
+                        <div><?=$settings->display('individually_working_hours')?></br>
+                            <?=$settings->display('individually_working_days')?></div>
                     </div>
                     <div class="subscribe">
                         <h4>подписаться на рассылку</h4>
@@ -184,6 +188,8 @@ $services = pods('services')->find($params);
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/bootstrap/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/js/slick.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/assets/libs/select2/select2.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/assets/libs/fileinput/fileinput.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/js/scripts.js"></script>
 </body>
 </html>

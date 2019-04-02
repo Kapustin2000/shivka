@@ -138,7 +138,7 @@ textarea {
 
 input {
   font-size: 1.04167vw;
-  font-weight: bold; }
+  font-weight: 400; }
   input::-webkit-input-placeholder {
     text-transform: uppercase; }
   input:-ms-input-placeholder {
@@ -147,6 +147,12 @@ input {
     text-transform: uppercase; }
   input::placeholder {
     text-transform: uppercase; }
+
+input::-webkit-inner-spin-button {
+  display: none !important; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
 
 textarea {
   font-size: 0.9375vw;
@@ -175,7 +181,7 @@ textarea {
     content: '';
     position: absolute;
     width: 80%;
-    height: 0.10417vw;
+    height: 2px;
     bottom: -0.72917vw;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -206,7 +212,8 @@ textarea {
       opacity: 1; }
   .eye-hover .icon-eye {
     position: absolute;
-    background: url("../img/eye-hover.png");
+    background: url("../img/eye-hover.png") no-repeat;
+    background-size: contain;
     width: 9.11458vw;
     height: 4.53125vw;
     top: 0;
@@ -271,6 +278,101 @@ textarea {
 @media (min-width: 1440px) {
   .container {
     max-width: 86%; } }
+
+.select2-container {
+  width: 100% !important; }
+
+.select2-dropdown {
+  border: none; }
+  .select2-dropdown.select2-dropdown--above .select2-results__options {
+    border-radius: 1.30208vw 1.30208vw 0 0;
+    background-color: #cdcfe9; }
+
+.select2-container--default .select2-selection--single {
+  height: 2.60417vw;
+  background-color: #cdcfe9;
+  border-radius: 1.30208vw;
+  border: none;
+  padding: 0 .9375vw 0 2.60417vw; }
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 2.60417vw;
+  padding: 0;
+  font-size: 1.04167vw;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase; }
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 2.60417vw;
+  right: 1.04167vw;
+  top: -0.10417vw; }
+  .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #fff transparent transparent transparent;
+    border-width: 0.41667vw 0.3125vw 0 0.3125vw; }
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #fff transparent;
+  border-width: 0 0.3125vw 0.41667vw 0.3125vw; }
+
+.select2-dropdown.select2-dropdown--below {
+  border: none;
+  background: #cdcfe9;
+  border-radius: 0 0 1.30208vw 1.30208vw; }
+
+.select2-search.select2-search--dropdown {
+  display: none !important; }
+
+.select2-results__option[aria-selected] {
+  display: block;
+  font-size: 1.04167vw;
+  font-weight: 400;
+  color: #fff;
+  padding: 0 .9375vw;
+  height: 2.60417vw;
+  line-height: 2.60417vw;
+  text-transform: uppercase; }
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #3b2f5c; }
+
+.select2-dropdown {
+  z-index: 1000000 !important; }
+
+.form-element {
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  height: 2.60417vw; }
+  .form-element-label {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 2.60417vw;
+    height: 2.60417vw;
+    padding: 0 2vw;
+    z-index: 1;
+    color: #3b2f5c;
+    border: .10417vw solid #3b2f5c;
+    background-color: #fff;
+    font-size: 1.04167vw;
+    font-weight: 500;
+    border-radius: 2.60417vw;
+    text-transform: uppercase; }
+
+.form-element input[type="file"] + .form-element-inputfile {
+  height: 2.60417vw;
+  border-radius: 2.60417vw;
+  border: none;
+  background-color: #cdcfe9;
+  color: #fff;
+  font-size: 1.04167vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed',sans-serif; }
+  .form-element input[type="file"] + .form-element-inputfile span {
+    line-height: 2.60417vw; }
 
 button,
 a[type='button'] {
@@ -398,6 +500,7 @@ header {
       left: 0;
       width: 1.82292vw;
       height: 0.05208vw;
+      min-height: 1px;
       background-color: #3b2f5c; }
       header .navbar-toggler-icon::before, header .navbar-toggler-icon::after {
         content: '';
@@ -405,6 +508,7 @@ header {
         left: 0;
         display: block;
         width: inherit;
+        min-height: 1px;
         height: inherit;
         background-color: #3b2f5c;
         -webkit-transition: .5s ease-in;
@@ -571,9 +675,11 @@ footer {
     padding: 1.25vw 0 0; }
     footer .inner-wrap > * {
       margin-bottom: 1.5625vw; }
-  footer .logo-wrap img {
-    width: 5.20833vw;
-    height: 5.20833vw; }
+  footer .logo-wrap {
+    margin-right: -2.60417vw; }
+    footer .logo-wrap img {
+      width: 5.20833vw;
+      height: 5.20833vw; }
   footer .social-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -657,7 +763,7 @@ footer {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 1.30208vw 0; }
+    padding: 1.25vw 0; }
     footer .footer-info p {
       text-align: right;
       margin: 0; }
@@ -690,7 +796,7 @@ footer {
   margin-top: 5.20833vw;
   margin-bottom: 4.42708vw; }
   .jumbotron .inner {
-    padding: 5.46875vw 0 6.14583vw; }
+    padding: 5.46875vw 0 18.75vw; }
   .jumbotron h1 {
     margin: 0 0 5.20833vw;
     max-width: 36.45833vw; }
@@ -701,18 +807,18 @@ footer {
     cursor: pointer;
     display: inline-block; }
     .jumbotron .see-more .icon-arrow {
-      top: 100%;
+      position: absolute;
+      top: calc(100% + 4.6875vw);
+      left: 50%;
       -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
       transform: translate(-50%, 0);
-      margin: 4.6875vw auto 0;
+      background-position: center bottom;
       -webkit-transition: .3s ease-in;
       -o-transition: .3s ease-in;
       transition: .3s ease-in; }
-    .jumbotron .see-more .icon-eye {
-      top: 45px; }
     .jumbotron .see-more:hover .icon-arrow, .jumbotron .see-more:focus .icon-arrow, .jumbotron .see-more:active .icon-arrow {
-      margin: 7.8125vw auto 0; }
+      top: calc(100% + 6.25vw); }
   .jumbotron .main-slider,
   .jumbotron .video-carousel {
     position: absolute;
@@ -1062,13 +1168,14 @@ footer {
     color: #fff; }
 
 .make-order {
+  position: relative;
   padding-bottom: 2.60417vw; }
   .make-order .decorative.background {
     top: -5.20833vw;
     left: 0.78125vw;
     width: calc(100% - 6.77083vw);
     height: 26.04167vw;
-    background-image: url("../img/Broderie-en-direct-1612x1078@1x.png");
+    background-image: url("../img/broderie.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left; }
@@ -1085,6 +1192,8 @@ footer {
     margin: 0 auto;
     -webkit-box-shadow: 0 0 2.60417vw rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 2.60417vw rgba(0, 0, 0, 0.15); }
+    .make-order .form-wrap .form-inner-wrap {
+      margin-bottom: 2.34375vw; }
     .make-order .form-wrap h2, .make-order .form-wrap p {
       text-align: center; }
     .make-order .form-wrap h2 {
@@ -1093,16 +1202,17 @@ footer {
       margin-right: auto;
       padding: 5.20833vw 2.60417vw 0; }
     .make-order .form-wrap p {
-      margin-bottom: 2.34375vw;
+      margin-bottom: 0;
       padding: 0 2.60417vw; }
   .make-order form {
-    padding: 2.60417vw 5.20833vw 5.20833vw;
-    margin-bottom: -2.60417vw; }
+    padding: 2.60417vw 5.20833vw; }
     .make-order form:not(.active) {
       display: none; }
     .make-order form input, .make-order form textarea, .make-order form button {
       width: 100%;
       margin-bottom: 2.60417vw; }
+    .make-order form textarea {
+      height: 7.8125vw; }
     .make-order form .submit-wrap {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1110,7 +1220,9 @@ footer {
   .make-order .file-form {
     position: absolute;
     padding: 0;
-    right: 5.20833vw; }
+    right: 5.20833vw;
+    top: 31.56005vw;
+    width: calc(50% - 5.83333vw); }
     .make-order .file-form input {
       margin: 0; }
 
@@ -2101,6 +2213,12 @@ footer {
   position: relative;
   width: auto;
   pointer-events: none; }
+  .modal-dialog .close {
+    position: absolute;
+    top: 1.04167vw;
+    right: 1.04167vw;
+    font-size: 3.125vw;
+    color: #3b2f5c; }
 
 .modal-content {
   position: relative;
@@ -2113,12 +2231,12 @@ footer {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
   background-clip: padding-box;
   border: 0.05208vw solid rgba(0, 0, 0, 0.2);
   border-radius: 0.15625vw;
   outline: 0; }
   .modal-content .make-order {
-    padding-bottom: 0; }
-    .modal-content .make-order .form-wrap {
+    padding-bottom: 0;
+    margin-top: -2.60417vw; }
+    .modal-content .make-order form:not(.file-form) {
       padding: 2.60417vw 5.20833vw; }

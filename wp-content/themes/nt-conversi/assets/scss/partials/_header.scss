@@ -48,6 +48,7 @@ header {
       left: 0;
       width: get-vw(35px);
       height: get-vw(1px);
+      min-height: 1px;
       background-color: $violet;
       &::before,
       &::after {
@@ -56,6 +57,7 @@ header {
         left: 0;
         display: block;
         width: inherit;
+        min-height: 1px;
         height: inherit;
         background-color: $violet;
         transition: .5s ease-in;

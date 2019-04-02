@@ -1,4 +1,5 @@
 .make-order {
+    position: relative;
     padding-bottom: get-vw(50px);
     .decorative {
         &.background {
@@ -6,7 +7,7 @@
             left: get-vw(15px);
             width: calc(100% - 6.77083vw);
             height: get-vw(500px);
-            background-image: url('../img/Broderie-en-direct-1612x1078@1x.png');
+            background-image: url('../img/broderie.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: top left;
@@ -25,6 +26,9 @@
         background-color: $white;
         margin: 0 auto;
         box-shadow: 0 0 get-vw(50px) rgba(0, 0, 0, .15);
+        .form-inner-wrap {
+            margin-bottom: get-vw(45px);
+        }
         h2, p {
             text-align: center;
         }
@@ -35,7 +39,7 @@
             padding: get-vw(100px) get-vw(50px) 0;
         }
         p {
-            margin-bottom: get-vw(45px);
+            margin-bottom: 0;
             padding: 0 get-vw(50px);
         }
         //.tabs-wrap {
@@ -43,14 +47,16 @@
         //}
     }
     form {
-        padding: get-vw(50px) get-vw(100px) get-vw(100px);
-        margin-bottom: get-vw(-50px);
+        padding: get-vw(50px) get-vw(100px);
         &:not(.active) {
             display: none;
         }
         input, textarea, button {
             width: 100%;
             margin-bottom: get-vw(50px);
+        }
+        textarea {
+            height: get-vw(150px);
         }
         .submit-wrap {
             display: flex;
@@ -60,6 +66,8 @@
         position: absolute;
         padding: 0;
         right: get-vw(100px);
+        top: get-vw(605.953px);
+        width: calc(50% - 5.83333vw);
         input {
             margin: 0;
         }

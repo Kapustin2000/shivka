@@ -3,7 +3,7 @@
   //height: 653px;
   margin-bottom: get-vw(85px);
   .inner {
-    padding: get-vw(105px) 0 get-vw(118px);
+    padding: get-vw(105px) 0 get-vw(360px);
   }
   h1 {
     margin: 0 0 get-vw(100px);
@@ -17,19 +17,22 @@
     cursor: pointer;
     display: inline-block;
     .icon-arrow {
-      top: 100%;
+      position: absolute;
+      top: calc(100% + 4.6875vw);
+      left: 50%;
       transform: translate(-50%, 0);
-      margin: get-vw(90px) auto 0;
+      background-position: center bottom;
       transition: .3s ease-in;
     }
-    .icon-eye {
-      top: 45px;
-    }
+    //.icon-eye {
+    //  top: 45px;
+    //}
     &:hover,
     &:focus,
     &:active {
       .icon-arrow {
-        margin: get-vw(150px) auto 0;
+        top: calc(100% + 6.25vw);
+        //margin: get-vw(150px) auto 0;
       }
     }
   }

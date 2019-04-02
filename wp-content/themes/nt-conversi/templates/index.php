@@ -54,7 +54,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                                 <?=$settings->display('main_screen_title')?>
                             </span>
                         </h1>
-                        <div class="see-more eye-hover">
+                        <div class="see-more eye-hover" id="see-more">
                             <span class="underline">узнать больше</span>
                             <i class="icon icon-arrow"></i>
                             <i class="icon icon-eye"></i>
@@ -86,7 +86,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
         </div>
     </section>
 
-    <section class="common-service-description">
+    <section id="common-service-description" class="common-service-description">
         <div class="container">
             <div class="row">
                 <div class="col-12">

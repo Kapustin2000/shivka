@@ -19,20 +19,25 @@ $(document).ready(function() {
     });
 
     //-------file form
-    function fileFormOffset() {
-        var width = $('#order-form input').outerWidth();
-        var offsetTop =  2 + $('.form-inner-wrap').outerHeight()
-            + parseInt($('.order-form').css('padding-top'))
-            + $('#order-form textarea').outerHeight()
-            + parseInt($('#order-form textarea').css('margin-bottom'));
-        $('.file-form').css({
-            'width': width,
-            'top': offsetTop
-        });
-    }
-    fileFormOffset();
-    $(window).on('resize', function() {
-        fileFormOffset();
+    $('.service-select').select2();
+    $('input[type=file]').inputfile();
+    // function fileFormOffset() {
+    //     console.log($('.file-form').siblings('#order-form').find('input').outerWidth());
+    //     var width = $('.file-form').siblings('#order-form').find('input').outerWidth();
+    //     $('.file-form').css({
+    //         'width': width
+    //     });
+    // }
+    // fileFormOffset();
+    // $(window).on('resize', function() {
+    //     fileFormOffset();
+    // });
+    // $('#contactModal').on('shown.bs.modal', function() {
+    //     fileFormOffset();
+    // });
+
+    $('#see-more').on('click', function() {
+        $("html, body").animate({ scrollTop: $('#common-service-description').offset().top }, 1000);
     });
 
     //-------mobile menu

@@ -297,6 +297,13 @@
   position: relative;
   width: auto;
   pointer-events: none;
+  .close {
+    position: absolute;
+    top: get-vw(20px);
+    right: get-vw(20px);
+    font-size: get-vw(60px);
+    color: $violet;
+  }
 }
 
 .modal-content {
@@ -310,15 +317,16 @@
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  //background-color: #fff;
   background-clip: padding-box;
   border: get-vw(1px) solid rgba(0,0,0,.2);
   border-radius: get-vw(3px);
   outline: 0;
   .make-order {
     padding-bottom: 0;
-    .form-wrap {
-      padding: get-vw(50px) get-vw(100px);
+    margin-top: get-vw(-50px);
+    form:not(.file-form) {
+      padding: 2.60417vw 5.20833vw;
     }
   }
 }
