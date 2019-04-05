@@ -2283,7 +2283,7 @@ footer {
   display: none;
   overflow: hidden;
   outline: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(205, 207, 233, 0.9); }
 
 .fade {
   opacity: 0;
@@ -2340,11 +2340,18 @@ footer {
   width: 100%;
   pointer-events: auto;
   background-clip: padding-box;
-  border: 0.05208vw solid rgba(0, 0, 0, 0.2);
+  border: none;
   border-radius: 0.15625vw;
   outline: 0; }
   .modal-content .make-order {
     padding-bottom: 0;
     margin-top: -2.60417vw; }
+    .modal-content .make-order h2 {
+      max-width: 57.86458vw;
+      white-space: nowrap;
+      padding-left: 0;
+      padding-right: 0; }
     .modal-content .make-order form:not(.file-form) {
       padding: 2.60417vw 5.20833vw; }
+    .modal-content .make-order .file-form {
+      top: 26.5625vw; }
