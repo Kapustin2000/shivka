@@ -4,6 +4,8 @@
     }
     .single-service-description {
         padding: get-vw(100px) 0 get-vw(140px);
+        position: relative;
+        z-index: 3;
         .bordered {
             margin-top: get-vw(115px);
             transform: translate(0, 0);
@@ -56,6 +58,8 @@
     }
     .single-service-gallery {
         padding: 0 0 get-vw(240px);
+        position: relative;
+        z-index: 2;
         h2 {
             margin-bottom: get-vw(100px);
         }
@@ -138,9 +142,14 @@
         margin-top: get-vw(-100px);
     }
     .single-service-related {
+        text-align: right;
         padding: get-vw(45px) 0 get-vw(90px);
         h2 {
+            text-align: left;
             margin-bottom: get-vw(25px);
+        }
+        .back {
+            display: inline-block;
         }
         .related-slider {
             padding: 0;
@@ -149,16 +158,19 @@
                 content: '';
                 position: absolute;
                 display: block;
-                top: 100%;
-                left: -350%;
+                top: calc(100% - 0.15625vw);
+                left: -389%;
                 width: 400%;
                 height: get-vw(122px);
                 background-color: transparentize($yellow, .5);
                 z-index: -1;
             }
-            .service-item .service-title {
-                width: 100%;
-                max-width: 93%;
+            .service-item {
+                box-shadow: none;
+                .service-title {
+                    width: 100%;
+                    max-width: 93%;
+                }
             }
         }
         .slick-track {
@@ -172,24 +184,36 @@
             margin-bottom: 0;
         }
         .slick-arrow {
+            cursor: pointer;
             position: absolute;
             top: 100%;
             left: 0;
             font-size: 0;
-            width: get-vw(100px);
-            height: get-vw(100px);
+            width: get-vw(32px);
+            height: get-vw(122px);
+            padding: 0;
             &::after {
-                content: '<';
+                content: '';
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                color: $black;
                 font-size: get-vw(30px);
+                background-image: url('../img/arrow-2.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: get-vw(32px);
+                height: get-vw(10px);
             }
         }
-        .slick-next::after {
-            content: '>';
+        .slick-next {
+            left: get-vw(72px);
+            &::after {
+                content: '';
+                transform: rotate(180deg) translate(-50%, 0.20833333333vw);
+                left: 0;
+                top: 50%;
+            }
         }
         .back {
             margin-right: get-vw(30px);

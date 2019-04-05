@@ -317,9 +317,6 @@ textarea {
         top: get-vw(125px);
       }
     }
-    .service-item .service-title {
-      width: get-vw(450px);
-    }
   }
 }
 
@@ -375,13 +372,11 @@ textarea {
 //  }
 //}
 
-@media (min-width: $hd) {
+//@media (min-width: $hd) {
   .container {
-    //max-width: get-vw(1350px);
-    //max-width: 93.75%;
     max-width: 86%;
   }
-}
+//}
 
 //@media (min-width: $xl) {
 //  .container {

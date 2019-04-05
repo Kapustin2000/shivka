@@ -13,9 +13,6 @@ $(document).ready(function() {
             .eq($this.index())
             .addClass('active');
 
-        if ( $('#order-form').hasClass('active') ) {
-            $('.file-form').addClass('active');
-        }
     });
 
     //-------file form

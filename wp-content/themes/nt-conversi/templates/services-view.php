@@ -191,7 +191,7 @@ if(!empty($data->total_found())) {
 
                                     <a href="<?=get_permalink($related_service->display('id'));?>" class="service-item">
                                         <div class="service-img-wrap">
-                                            <div class="service-img" style=" background: #000 url(<?=$related_service->display('preview')?>);"></div>
+                                            <div class="service-img" style="background-image: url(<?=$related_service->display('preview')?>);"></div>
                                         </div>
                                         <div class="service-title"><?=$related_service->display('post_title')?></div>
                                         <button type="button" class="btn btn-primary">смотреть</button>

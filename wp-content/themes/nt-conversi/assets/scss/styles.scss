@@ -317,10 +317,20 @@
   pointer-events: none;
   .close {
     position: absolute;
-    top: get-vw(20px);
-    right: get-vw(20px);
-    font-size: get-vw(60px);
+    top: get-vw(25px);
+    right: get-vw(25px);
+    font-size: get-vw(90px);
+    padding: 0;
     color: $violet;
+    width: get-vw(35px);
+    height: get-vw(35px);
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: get-vw(35px);
+      max-height: get-vw(35px);
+    }
   }
 }
 

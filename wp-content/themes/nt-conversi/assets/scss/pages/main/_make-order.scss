@@ -62,6 +62,12 @@
             display: flex;
         }
     }
+    #order-form:not(.active) + form + .file-form {
+        display: none;
+    }
+    #order-form.active + form + .file-form {
+        display: block;
+    }
     .file-form {
         position: absolute;
         padding: 0;
