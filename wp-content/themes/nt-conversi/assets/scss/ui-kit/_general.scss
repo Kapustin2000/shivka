@@ -145,6 +145,7 @@ textarea {
 input {
   font-size: get-vw(20px);
   font-weight: 400;
+  height: get-vw(50px);
   &::placeholder {
     text-transform: uppercase;
   }
@@ -297,6 +298,34 @@ textarea {
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+.smarthoop-works {
+  .services.extra-services {
+    padding-top: get-vw(50px);
+    .decorative {
+      &.yellow {
+        top: auto;
+        bottom: get-vw(100px);
+        left: get-vw(350px);
+      }
+      &.lavander {
+        left: get-vw(725px);
+        right: auto;
+        bottom: auto;
+        top: get-vw(125px);
+      }
+    }
+    .service-item .service-title {
+      width: get-vw(450px);
+    }
+  }
+}
+
+.page-template-works {
+  .make-order {
+    display: none;
   }
 }
 

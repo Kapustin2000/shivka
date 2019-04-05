@@ -37,9 +37,10 @@ $data = pods('works')->find($params);
                             </div>
                         <?php } ?>
                     </div>
-<!--                    <div class="see-more">-->
-<!--                        <a href="/" class="underline">смотреть больше</a>-->
-<!--                    </div>-->
+                    <div class="see-more eye-hover">
+                        <a href="/" class="underline">смотреть больше</a>
+                        <i class="icon icon-eye"></i>
+                    </div>
                 </div>
             </div>
         </div>
