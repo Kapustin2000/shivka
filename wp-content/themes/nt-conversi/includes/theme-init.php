@@ -150,7 +150,41 @@ function shivka_Subscribe_Save_AJAX( WP_REST_Request $request)
 {
     return validate_pod_data('subscribers',$request);
 }
+function shivka_save_files(){
+    $files = [];
+    if(isset($_FILES['files'])){
+        $files = shivka_reArrayFiles( $_FILES['files']);
+        foreach($files as $key=>$attachment){
+            if($attachment['error'] == 0 || $attachment['size']<=10*1024*1024){
+                move_uploaded_file($attachment['tmp_name'],$attachment['tmp_name']);
+            }else{
+                unset($files[$key]);
+            }
+        }
+    }
+    return $files;
+}
+add_filter('shivka_save_files','shivka_save_files', 10,1);
+function shivka_reArrayFiles(&$file_post) {
 
+    $file_ary = array();
+    $file_count = count($file_post['name']);
+    $file_keys = array_keys($file_post);
+
+    for ($i=0; $i<$file_count; $i++) {
+        foreach ($file_keys as $key) {
+            $file_ary[$i][$key] = $file_post[$key][$i];
+        }
+    }
+
+    return $file_ary;
+}
+add_action( 'rest_api_init', function () {
+    register_rest_route( 'files/v1', 'save' , array(
+        'methods' => 'post',
+        'callback' => 'shivka_save_files',
+    ) );
+} );
 add_action( 'rest_api_init', function () {
     register_rest_route( 'blog/v1', 'subscribe' , array(
         'methods' => 'post',
@@ -158,7 +192,22 @@ add_action( 'rest_api_init', function () {
     ) );
 } );
 
-
+function shivka_delete_cv(){
+    $res = false;
+    if (isset($_POST['files'])) {
+        foreach ($_POST['files'] as $attachment) {
+            $res = unlink($attachment['tmp_name']);
+        }
+    }
+    return $res;
+}
+add_filter('shivka_delete_cv','shivka_delete_cv', 10,1);
+add_action( 'rest_api_init', function () {
+    register_rest_route( 'files/v1', 'delete' , array(
+        'methods' => 'post',
+        'callback' => 'shivka_delete_cv',
+    ) );
+} );
 function shivka_Contact_Save_AJAX( WP_REST_Request $request)
 {
 	$validation = validate_pod_data('contact',$request);
