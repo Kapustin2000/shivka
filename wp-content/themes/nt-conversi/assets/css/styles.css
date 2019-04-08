@@ -2036,46 +2036,53 @@ footer {
 
 .work-info {
   margin-bottom: 5.20833vw; }
-  .work-info-img {
-    position: relative; }
-    .work-info-img img {
+  .work-info .work-info-img {
+    position: relative;
+    width: 40.36458vw; }
+    .work-info .work-info-img img {
       width: 100%;
       height: auto; }
-    .work-info-img::after {
+    .work-info .work-info-img::after {
       content: '';
       display: block;
       position: absolute;
-      top: -0.78125vw;
-      left: -5.20833vw;
-      width: calc(100% + 10.4166666667vw);
-      height: calc(100% - 5.20833333333vw);
-      border: 0.78125vw solid #3b2f5c; }
+      top: -6.25vw;
+      left: -4.42708vw;
+      width: 50.78125vw;
+      height: 100%;
+      border: 0.78125vw solid #3b2f5c;
+      -webkit-transition: height 0.3s ease-in-out;
+      -o-transition: height 0.3s ease-in-out;
+      transition: height 0.3s ease-in-out; }
   .work-info .info-block {
-    position: relative;
-    margin-top: 10.41667vw;
+    position: absolute;
+    width: 41.66667vw;
+    top: 13.02083vw;
+    right: 0;
     padding: 5.20833vw;
     background-color: rgba(242, 235, 192, 0.5); }
   .work-info h1 {
     position: absolute;
-    top: -1.30208vw;
-    right: 1.30208vw; }
+    z-index: 10;
+    width: 110%;
+    bottom: calc(100% - 1.30208333333vw);
+    right: 1.30208vw;
+    text-align: right;
+    margin: 0; }
 
 .work-gallery {
-  margin: 5.20833vw 0 2.60417vw; }
-  .work-gallery .gallery-item img {
-    margin: 0 auto;
-    height: 31.25vw;
-    width: auto; }
-
-.work-gallery-nav {
-  margin-bottom: 2.60417vw; }
-  .work-gallery-nav img {
-    cursor: pointer;
-    width: auto;
-    height: 10.41667vw;
-    margin: 0 auto; }
-  .work-gallery-nav .slick-current img {
-    border: 0.52083vw solid #3b2f5c; }
+  -webkit-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 2.60417vw;
+  column-gap: 2.60417vw; }
+  .work-gallery .gallery-item {
+    margin-bottom: 2.60417vw; }
+    .work-gallery .gallery-item:first-child {
+      margin-top: 2.60417vw; }
+    .work-gallery .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block; }
 
 .bottom {
   display: -webkit-box;
@@ -2093,6 +2100,9 @@ footer {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1; }
+
+.page-template-works-gallery .make-order {
+  display: none; }
 
 .smarthoop-stock {
   padding-bottom: 5.20833vw; }
@@ -2216,15 +2226,12 @@ footer {
     width: 400%;
     height: 100%;
     background-color: rgba(205, 207, 233, 0.5); }
-  .pagination a {
+  .pagination a:not(.arrow) {
     position: relative;
     z-index: 1; }
-  .pagination a,
-  .pagination a:active,
-  .pagination a:focus,
-  .pagination a:hover {
-    color: #000;
-    text-decoration: none; }
+    .pagination a:not(.arrow), .pagination a:not(.arrow):active, .pagination a:not(.arrow):focus, .pagination a:not(.arrow):hover {
+      color: #000;
+      text-decoration: none; }
   .pagination .active::after {
     content: '';
     display: block;
@@ -2234,6 +2241,39 @@ footer {
     width: 100%;
     height: 0.05208vw;
     background-color: #000; }
+  .pagination .arrow {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    font-size: 0;
+    width: 1.66667vw;
+    height: 1.14583vw; }
+    .pagination .arrow.prev-arrow {
+      margin-right: 1.30208vw; }
+    .pagination .arrow.next-arrow {
+      margin-left: 1.30208vw; }
+    .pagination .arrow .icon::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-size: 1.5625vw;
+      background-image: url("../img/arrow-2.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 1.66667vw;
+      height: 0.52083vw; }
+    .pagination .arrow .icon-next::after {
+      content: '';
+      -webkit-transform: rotate(180deg) translate(0, 0.20833vw);
+      -ms-transform: rotate(180deg) translate(0, 0.20833vw);
+      transform: rotate(180deg) translate(0, 0.20833vw);
+      left: 0;
+      top: 50%; }
 
 .smarthoop-services-category {
   margin-top: 10.41667vw; }

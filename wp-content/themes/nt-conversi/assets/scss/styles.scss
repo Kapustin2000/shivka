@@ -130,16 +130,16 @@
     height: 100%;
     background-color: transparentize($lavander, .5);
   }
-  a {
+  a:not(.arrow) {
     position: relative;
     z-index: 1;
-  }
-  a,
-  a:active,
-  a:focus,
-  a:hover {
-    color: $black;
-    text-decoration: none;
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+      color: $black;
+      text-decoration: none;
+    }
   }
   .active {
     &::after {
@@ -151,6 +151,44 @@
       width: 100%;
       height: get-vw(1px);
       background-color: $black;
+    }
+  }
+  .arrow {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    font-size: 0;
+    width: get-vw(32px);
+    height: get-vw(22px);
+    &.prev-arrow {
+      margin-right: get-vw(25px);
+    }
+    &.next-arrow {
+      margin-left: get-vw(25px);
+    }
+    .icon {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: get-vw(30px);
+        background-image: url('../img/arrow-2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: get-vw(32px);
+        height: get-vw(10px);
+      }
+      &-next {
+        &::after {
+          content: '';
+          transform: rotate(180deg) translate(0, 0.20833333333vw);
+          left: 0;
+          top: 50%;
+        }
+      }
     }
   }
 }

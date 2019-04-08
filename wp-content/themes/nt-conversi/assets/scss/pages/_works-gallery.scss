@@ -1,7 +1,8 @@
 .work-info {
   margin-bottom: get-vw(100px);
-  &-img {
+  .work-info-img {
     position: relative;
+    width: get-vw(775px);
     img {
       width: 100%;
       height: auto;
@@ -10,57 +11,73 @@
       content: '';
       display: block;
       position: absolute;
-      top: get-vw(-15px);
-      left: get-vw(-100px);
-      width: calc(100% + 10.4166666667vw);
-      height: calc(100% - 5.20833333333vw);
+      top: get-vw(-120px);
+      left: get-vw(-85px);
+      width: get-vw(975px);
+      height: 100%;
       border: get-vw(15px) solid $violet;
+      transition: height $default;
     }
   }
   .info-block {
-    position: relative;
-    margin-top: get-vw(200px);
+    position: absolute;
+    width: get-vw(800px);
+    top: get-vw(250px);
+    right: 0;
     padding: get-vw(100px);
     background-color: transparentize($yellow, .5);
   }
   h1 {
     position: absolute;
-    top: get-vw(-25px);
+    z-index: 10;
+    width: 110%;
+    bottom: calc(100% - 1.30208333333vw);
     right: get-vw(25px);
+    text-align: right;
+    margin: 0;
   }
 }
 
 .work-gallery {
-  //column-count: 2;
-  //column-gap: 50px;
-  //margin-top: 50px;
-  margin: get-vw(100px) 0 get-vw(50px);
+  column-count: 2;
+  column-gap: get-vw(50px);
+  //margin: get-vw(100px) 0 get-vw(50px);
   .gallery-item {
-    //margin-bottom: 50px;
+    margin-bottom: get-vw(50px);
+    &:first-child {
+      margin-top: get-vw(50px);
+    }
     img {
-      margin: 0 auto;
-      height: get-vw(600px);
-      width: auto;
-      //display: block;
-      //width: 100%;
-      //height: auto;
+      width: 100%;
+      height: auto;
+      display: block;
     }
   }
 }
-.work-gallery-nav {
-  margin-bottom: get-vw(50px);
-  img {
-    cursor: pointer;
-    width: auto;
-    height: get-vw(200px);
-    margin: 0 auto;
-  }
-  .slick-current {
-    img {
-      border: get-vw(10px) solid $violet;
-    }
-  }
-}
+
+//.work-gallery {
+//  width: get-vw(775px);
+//  padding-bottom: get-vw(50px);
+//  .gallery-item {
+//    img {
+//
+//    }
+//  }
+//}
+//.work-gallery-nav {
+//  margin-bottom: get-vw(50px);
+//  img {
+//    cursor: pointer;
+//    width: auto;
+//    height: get-vw(200px);
+//    margin: 0 auto;
+//  }
+//  .slick-current {
+//    img {
+//      border: get-vw(10px) solid $violet;
+//    }
+//  }
+//}
 
 .bottom {
   display: flex;
@@ -72,6 +89,12 @@
     font-size: get-vw(30px);
     font-weight: bold;
     flex: 1;
+  }
+}
+
+.page-template-works-gallery {
+  .make-order {
+    display: none;
   }
 }
 
