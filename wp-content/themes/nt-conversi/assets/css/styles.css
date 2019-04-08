@@ -1643,81 +1643,103 @@ footer {
 
 .smarthoop-about .about-us {
   padding-bottom: 5.20833vw;
-  margin-top: -5.20833vw; }
+  margin-top: -5.20833vw;
+  height: 55.72917vw; }
   .smarthoop-about .about-us h1 {
     position: relative;
     z-index: 2;
-    margin: 10.41667vw 0 0;
-    -webkit-transform: translate(6.77083vw, 2.34375vw);
-    -ms-transform: translate(6.77083vw, 2.34375vw);
-    transform: translate(6.77083vw, 2.34375vw); }
+    margin: 12.76042vw 0 0;
+    -webkit-transform: translate(3.125vw, 2.34375vw);
+    -ms-transform: translate(3.125vw, 2.34375vw);
+    transform: translate(3.125vw, 2.34375vw); }
   .smarthoop-about .about-us .bordered {
-    -webkit-transform: translate(80px, 0);
-    -ms-transform: translate(80px, 0);
-    transform: translate(80px, 0);
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
     border-color: #cdcfe9;
     z-index: 1;
     position: relative; }
+  .smarthoop-about .about-us .about-desc {
+    width: 44.27083vw; }
   .smarthoop-about .about-us .about-img {
-    margin-top: 10rem; }
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 47.29167vw; }
+    .smarthoop-about .about-us .about-img img {
+      width: 100%;
+      height: auto; }
 
 .smarthoop-about .inner-wrap {
   margin-top: 4.6rem; }
 
 .smarthoop-about .socials {
-  padding-bottom: 20rem; }
-  .smarthoop-about .socials .col-12:first-child {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+  padding-bottom: 9.375vw;
+  height: 39.0625vw;
+  position: relative; }
+  .smarthoop-about .socials .about-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 52.60417vw;
+    height: 28.64583vw; }
+    .smarthoop-about .socials .about-img img {
+      width: 100%;
+      height: auto; }
+  .smarthoop-about .socials .socials-description {
+    position: absolute;
+    top: 2.91667vw;
+    right: 12.5vw;
+    width: 28.64583vw; }
+  .smarthoop-about .socials .inner-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .smarthoop-about .socials .socials-description {
-    padding: 5.6rem 0 0 7rem; }
+    .smarthoop-about .socials .inner-wrap a[type='button'] {
+      width: 100%;
+      text-align: center; }
+  .smarthoop-about .socials .social-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .smarthoop-about .socials .social-wrap a {
+      position: relative;
+      display: block;
+      margin-right: 1.30208vw;
+      width: 2.60417vw;
+      height: 2.60417vw;
+      border-radius: 100%;
+      background-color: #3b2f5c; }
+      .smarthoop-about .socials .social-wrap a:hover {
+        background-color: #cdcfe9; }
 
 .smarthoop-about .partners {
   position: relative; }
   .smarthoop-about .partners .decorative {
-    width: 42.5rem;
-    height: 28rem;
+    background-color: rgba(242, 235, 192, 0.5);
+    width: 22.13542vw;
+    height: 14.58333vw;
     left: 0;
-    top: -5rem; }
+    top: -2.60417vw; }
   .smarthoop-about .partners .partner-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-left: 4.58333vw; }
   .smarthoop-about .partners .partner {
-    margin-right: 7rem;
-    margin-bottom: 10rem; }
+    margin-right: 3.64583vw;
+    margin-bottom: 5.20833vw; }
     .smarthoop-about .partners .partner:last-child {
       margin-right: 0; }
     .smarthoop-about .partners .partner img {
       width: auto;
-      height: 10rem; }
+      height: 5.20833vw; }
 
-@media (max-width: 992px) {
-  .smarthoop-about .about-us {
-    padding-bottom: 5rem; }
-    .smarthoop-about .about-us .bordered {
-      -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-      transform: translate(0, 0); }
-    .smarthoop-about .about-us .about-img {
-      display: none; }
-  .smarthoop-about .socials {
-    padding-bottom: 10rem; }
-    .smarthoop-about .socials .about-img img {
-      width: 100%;
-      height: auto; }
-    .smarthoop-about .socials .socials-description {
-      padding-left: 0; }
-  .smarthoop-about .partners .partner {
-    margin-bottom: 5rem; }
-    .smarthoop-about .partners .partner img {
-      height: 7rem; } }
+.page-template-about .make-order {
+  display: none; }
 
 .smarthoop-faq {
   margin-top: 10.41667vw;

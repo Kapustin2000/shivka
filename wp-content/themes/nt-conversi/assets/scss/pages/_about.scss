@@ -2,91 +2,146 @@
     .about-us {
         padding-bottom: get-vw(100px);
         margin-top: get-vw(-100px);
+        height: get-vw(1070px);
         h1 {
             position: relative;
             z-index: 2;
-            margin: get-vw(200px) 0 0;
-            transform: translate(get-vw(130px), get-vw(45px));
+            margin: get-vw(245px) 0 0;
+            transform: translate(get-vw(60px), get-vw(45px));
         }
         .bordered {
-            transform: translate(80px, 0);
+            transform: translate(0, 0);
             border-color: $lavander;
             z-index: 1;
             position: relative;
         }
+        .about-desc {
+            width: get-vw(850px);
+        }
         .about-img {
-            margin-top: 10rem;
+            //margin-top: 10rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: get-vw(960px);
+            height: get-vw(908px);
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
     }
     .inner-wrap {
         margin-top: 4.6rem;
     }
     .socials {
-        padding-bottom: 20rem;
-        .col-12:first-child {
-            justify-content: flex-end;
-            display: flex;
+        padding-bottom: get-vw(180px);
+        height: get-vw(750px);
+        position: relative;
+        .about-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: get-vw(1010px);
+            height: get-vw(550px);
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
         .socials-description {
-            padding: 5.6rem 0 0 7rem;
+            position: absolute;
+            top: get-vw(56px);
+            right: get-vw(240px);
+            width: get-vw(550px);
+        }
+        .inner-wrap {
+            display: flex;
+            a[type='button'] {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .social-wrap {
+            display: flex;
+            a {
+                position: relative;
+                display: block;
+                margin-right: get-vw(25px);
+                width: get-vw(50px);
+                height: get-vw(50px);
+                border-radius: 100%;
+                background-color: $violet;
+                &:hover {
+                    background-color: $lavander;
+                }
+            }
         }
     }
     .partners {
         position: relative;
         .decorative {
-            width: 42.5rem;
-            height: 28rem;
+            background-color: transparentize($yellow, .5);
+            width: get-vw(425px);
+            height: get-vw(280px);
             left: 0;
-            top: -5rem;
+            top: get-vw(-50px);
         }
         .partner-wrap {
             display: flex;
             flex-wrap: wrap;
+            padding-left: get-vw(88px);
         }
         .partner {
-            margin-right: 7rem;
-            margin-bottom: 10rem;
+            margin-right: get-vw(70px);
+            margin-bottom: get-vw(100px);
             &:last-child {
                 margin-right: 0;
             }
             img {
                 width: auto;
-                height: 10rem;
+                height: get-vw(100px);
             }
         }
     }
 }
 
-@media (max-width: $desktop) {
-    .smarthoop-about {
-        .about-us {
-            padding-bottom: 5rem;
-            .bordered {
-                transform: translate(0, 0);
-            }
-            .about-img {
-                display: none;
-            }
-        }
-        .socials {
-            padding-bottom: 10rem;
-            .about-img {
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-            }
-            .socials-description {
-                padding-left: 0;
-            }
-        }
-        .partners {
-            .partner {
-                margin-bottom: 5rem;
-                img {
-                    height: 7rem;
-                }
-            }
-        }
+.page-template-about {
+    .make-order {
+        display: none;
     }
 }
+
+//@media (max-width: $desktop) {
+//    .smarthoop-about {
+//        .about-us {
+//            padding-bottom: 5rem;
+//            .bordered {
+//                transform: translate(0, 0);
+//            }
+//            .about-img {
+//                display: none;
+//            }
+//        }
+//        .socials {
+//            padding-bottom: 10rem;
+//            .about-img {
+//                img {
+//                    width: 100%;
+//                    height: auto;
+//                }
+//            }
+//            .socials-description {
+//                padding-left: 0;
+//            }
+//        }
+//        .partners {
+//            .partner {
+//                margin-bottom: 5rem;
+//                img {
+//                    height: 7rem;
+//                }
+//            }
+//        }
+//    }
+//}

@@ -149,9 +149,9 @@ $services = pods('services')->find($params);
                     <div class="social-media">
                         <h4>Мы в социальных сетях</h4>
                         <div class="social-wrap">
-                            <a href="<?=$settings->display('facebook')?>"><i class="icon icon-facebook"></i></a>
-                            <a href="<?=$settings->display('instagram')?>"><i class="icon icon-instagram"></i></a>
-                            <a href="<?=$settings->display('youtube')?>"><i class="icon icon-youtube"></i></a>
+                            <a href="<?=$settings->display('facebook')?>" target="_blank"><i class="icon icon-facebook"></i></a>
+                            <a href="<?=$settings->display('instagram')?>" target="_blank"><i class="icon icon-instagram"></i></a>
+                            <a href="<?=$settings->display('youtube')?>" target="_blank"><i class="icon icon-youtube"></i></a>
                         </div>
                     </div>
                 </div>
