@@ -18,6 +18,9 @@
         }
       }
     }
+    .blog-inner-wrap {
+      margin-bottom: get-vw(-50px);
+    }
     .blog-post {
       position: relative;
       display: block;
@@ -103,5 +106,19 @@
         }
       }
     }
+    .blog-pagination {
+      padding-bottom: get-vw(100px);
+      .pagination {
+        &::before {
+          background-color: transparentize($yellow, .5);
+        }
+      }
+    }
+  }
+}
+
+.page-template-blog {
+  .make-order {
+    display: none;
   }
 }

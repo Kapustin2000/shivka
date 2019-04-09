@@ -38,24 +38,47 @@ $data = pods('blog')->find($params);
                             <span>Новости</span>
                         </a>
                     </div>
-                    <div class="row">
-                        <!--  TEMPORARY  -->
-                        <?php  while($data->fetch()){?>
-<!--                            <div class="col-md-6 col-12">-->
-                            <div class="col-6">
-                                <a class="blog-post" data-post-type="article" href="<?=get_permalink($data->display('id'))?>">
-                                    <div class="blog-img-wrap">
-                                        <div class="blog-img" style="background-image: url(<?=$data->display('image')?>);"></div>
-                                        <div class="blog-type"><?=$data->display('blog_type')?></div>
+                    <div class="blog-inner-wrap">
+                        <div class="row">
+                            <?php  while($data->fetch()){?>
+                                <div class="col-6">
+                                    <a class="blog-post" data-post-type="article" href="<?=get_permalink($data->display('id'))?>">
+                                        <div class="blog-img-wrap">
+                                            <div class="blog-img" style="background-image: url(<?=$data->display('image')?>);"></div>
+                                            <div class="blog-type"><?=$data->display('blog_type')?></div>
+                                        </div>
+                                        <div class="blog-info">
+                                            <div class="blog-title"><?=$data->display('post_title')?></div>
+                                            <p><?=$data->display('post_content')?></p>
+                                        </div>
+                                        <button type="button" class="btn btn-primary">смотреть</button>
+                                    </a>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                    <div class="blog-pagination">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="bottom">
+                                    <div class="pagination">
+                                        <a href="#" class="arrow prev-arrow">
+                                            <i class="icon icon-prev"></i>
+                                        </a>
+                                        <a href="#" class="active">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#" class="arrow next-arrow">
+                                            <i class="icon icon-next"></i>
+                                        </a>
                                     </div>
-                                    <div class="blog-info">
-                                        <div class="blog-title"><?=$data->display('post_title')?></div>
-                                        <p><?=$data->display('post_content')?></p>
-                                    </div>
-                                    <button type="button" class="btn btn-primary">смотреть</button>
-                                </a>
+                                    <div class="back"></div>
+                                </div>
                             </div>
-                        <?php } ?>
+                        </div>
                     </div>
                 </div>
             </div>

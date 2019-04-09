@@ -1786,6 +1786,8 @@ footer {
           margin-left: 0; }
         .smarthoop-blog .blog .tabs-wrap a:last-child {
           margin-right: 0; }
+    .smarthoop-blog .blog .blog-inner-wrap {
+      margin-bottom: -2.60417vw; }
     .smarthoop-blog .blog .blog-post {
       position: relative;
       display: block;
@@ -1865,6 +1867,13 @@ footer {
       .smarthoop-blog .blog .blog-post:hover button {
         opacity: 1;
         z-index: 1; }
+    .smarthoop-blog .blog .blog-pagination {
+      padding-bottom: 5.20833vw; }
+      .smarthoop-blog .blog .blog-pagination .pagination::before {
+        background-color: rgba(242, 235, 192, 0.5); }
+
+.page-template-blog .make-order {
+  display: none; }
 
 .smarthoop-blog-post {
   overflow: visible;
@@ -1920,6 +1929,9 @@ footer {
     font-family: "Uni Sans Thin Caps", sans-serif;
     font-size: 1.5625vw;
     font-weight: bold; }
+
+.page-template-blog-view .make-order {
+  display: none; }
 
 .smarthoop-contacts .contacts {
   margin-top: 7.8125vw;
