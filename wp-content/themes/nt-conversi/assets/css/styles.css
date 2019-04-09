@@ -2159,6 +2159,7 @@ footer {
   .smarthoop-stock .stock-item {
     position: relative;
     margin-bottom: 7.8125vw;
+    width: 34.11458vw;
     height: 35.15625vw; }
     .smarthoop-stock .stock-item.bordered {
       -webkit-transform: translate(0, 0);
@@ -2169,7 +2170,8 @@ footer {
       overflow-y: hidden; }
     .smarthoop-stock .stock-item p {
       position: relative;
-      z-index: 2; }
+      z-index: 2;
+      max-width: 18.75vw; }
     .smarthoop-stock .stock-item a {
       position: relative;
       z-index: 2;
@@ -2177,10 +2179,13 @@ footer {
       margin-top: 2.34375vw; }
     .smarthoop-stock .stock-item img {
       position: absolute;
-      bottom: -7.8125vw;
-      right: -7.8125vw;
+      bottom: -5.20833vw;
+      right: -6.25vw;
       width: auto;
       height: 24.73958vw; }
+
+.page-template-stock .make-order {
+  display: none; }
 
 .smarthoop-stock-item {
   margin-top: 13.02083vw;
@@ -2192,7 +2197,10 @@ footer {
     left: -2.60417vw; }
   .smarthoop-stock-item .stock-item {
     position: relative;
-    padding-top: 7.29167vw; }
+    z-index: 10;
+    padding-top: 7.29167vw;
+    width: 100%;
+    margin-bottom: 5.20833vw; }
     .smarthoop-stock-item .stock-item::before {
       content: '';
       position: absolute;
@@ -2203,6 +2211,15 @@ footer {
       background-color: #cdcfe9;
       opacity: .5;
       z-index: -1; }
+    .smarthoop-stock-item .stock-item::after {
+      content: '';
+      width: 100%;
+      height: 0.78125vw;
+      background-color: #f2ebc0;
+      display: block;
+      position: absolute;
+      bottom: -0.78125vw;
+      left: 0; }
     .smarthoop-stock-item .stock-item h2, .smarthoop-stock-item .stock-item p {
       width: 50%; }
     .smarthoop-stock-item .stock-item img {
@@ -2216,6 +2233,15 @@ footer {
     background-size: cover; }
   .smarthoop-stock-item .stock-more .content-editable {
     padding-top: 2.60417vw; }
+  .smarthoop-stock-item .back {
+    font-family: 'Uni Sans Thin Caps', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10.41667vw;
+    margin-top: 2.60417vw; }
+
+.page-template-stock-view .make-order {
+  display: none; }
 
 .wrap {
   display: none !important; }

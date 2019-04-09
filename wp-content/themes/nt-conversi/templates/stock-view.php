@@ -63,6 +63,14 @@ if(isset($_GET['id'])) {
                             <button type="button" class="btn btn-primary">связаться с нами</button>
                         </div>
                     </div>
+                    <div class="col-12">
+                        <a href="/stock" class="back">
+                            <span>
+                                <i class="icon icon-arrow"></i>
+                                назад к акциям
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
