@@ -138,7 +138,7 @@ $services = pods('services')->find();
             <section class="make-order">
                 <div class="form-wrap">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true"></span>
                     </button>
                     <div class="form-inner-wrap">
                         <h2>Хотите узнать стоимость услуги или сделать заказ?</h2>
@@ -181,6 +181,38 @@ $services = pods('services')->find();
                     </form>
                 </div>
             </section>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+                <h2>спасибо за заявку!</h2>
+                <p>Наш менеджер свяжется с вами в ближайшее время и
+                    проконсультирует по всем вопросам.</p>
+                <a href="/" class="btn btn-primary" type="button">на главную</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+                <h2 class="error">что-то пошло не так!</h2>
+                <p>Проверьте подлючение к интернету или перезагрузите страницу
+                    и попобуйте отправить заявку снова.</p>
+                <a href="/" class="btn btn-outline" type="button">на главную</a>
+            </div>
         </div>
     </div>
 </div>

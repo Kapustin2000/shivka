@@ -198,6 +198,8 @@ textarea {
 .eye-hover {
   cursor: pointer;
   position: relative; }
+  .eye-hover a {
+    z-index: 10; }
   .eye-hover span,
   .eye-hover .underline {
     position: relative;
@@ -273,6 +275,9 @@ textarea {
     right: auto;
     bottom: auto;
     top: 6.51042vw; }
+
+.error404 > .make-order .background {
+  display: none; }
 
 .page-template-works > .make-order {
   display: none; }
@@ -1370,6 +1375,8 @@ footer {
   display: none; }
 
 .smarthoop-single-service .back {
+  font-family: 'Uni Sans Thin Caps', sans-serif;
+  font-weight: 700;
   margin-top: 1.82292vw; }
 
 .smarthoop-single-service .single-service-description {
@@ -2103,8 +2110,10 @@ footer {
   margin-bottom: 5.20833vw; }
 
 .smarthoop-works-category .back {
+  font-family: 'Uni Sans Thin Caps', sans-serif;
+  font-weight: 700;
   text-align: left;
-  padding-left: 9.375vw; }
+  padding-left: 10.41667vw; }
 
 .page-template-works-category > .make-order {
   display: none; }
@@ -2428,6 +2437,12 @@ footer {
         padding-bottom: 27.34375vw; }
     .smarthoop-services-category .services .service-item button {
       z-index: 3; }
+  .smarthoop-services-category .services .back {
+    margin-top: 2.60417vw;
+    font-family: 'Uni Sans Thin Caps', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    padding-left: 10.41667vw; }
 
 .modal-open .modal {
   overflow-x: hidden;
@@ -2471,6 +2486,20 @@ footer {
   top: 50%;
   left: 50%; }
 
+.modal-body {
+  position: relative;
+  width: 46.875vw;
+  background-color: #fff;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 2.60417vw rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 2.60417vw rgba(0, 0, 0, 0.15);
+  padding: 5.20833vw 9.375vw;
+  text-align: center; }
+  .modal-body h2.error {
+    color: #da6f5b; }
+  .modal-body h2, .modal-body p {
+    margin-bottom: 2.60417vw; }
+
 .modal-dialog {
   position: relative;
   width: auto;
@@ -2488,8 +2517,25 @@ footer {
       position: absolute;
       top: 0;
       left: 0;
-      line-height: 1.82292vw;
-      max-height: 1.82292vw; }
+      width: 1.82292vw;
+      height: 1.82292vw; }
+      .modal-dialog .close span::before, .modal-dialog .close span::after {
+        content: '';
+        position: absolute;
+        width: 0.07813vw;
+        min-width: 1.5px;
+        height: 2.34375vw;
+        background-color: #3b2f5c;
+        top: 50%;
+        left: 50%; }
+      .modal-dialog .close span::before {
+        -webkit-transform: translate(-50%, -50%) rotate(45deg);
+        -ms-transform: translate(-50%, -50%) rotate(45deg);
+        transform: translate(-50%, -50%) rotate(45deg); }
+      .modal-dialog .close span::after {
+        -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+        -ms-transform: translate(-50%, -50%) rotate(-45deg);
+        transform: translate(-50%, -50%) rotate(-45deg); }
 
 .modal-content {
   position: relative;

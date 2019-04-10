@@ -59,6 +59,7 @@ if(isset($_GET['id'])) {
                             </div>
                         </div>
                         <div class="see-more eye-hover">
+<!--                            TODO: fix 404 redirect-->
                             <a href="<?=get_permalink($data->field('gallery')['ID'])?>" class="underline">смотреть больше</a>
                             <i class="icon icon-eye"></i>
                         </div>
@@ -77,8 +78,6 @@ if(isset($_GET['id'])) {
 
 
 <?php  }else{ ?>
-
-
     <script language="javascript" type="text/javascript">
         document.location = "/404";
     </script>

@@ -19,6 +19,7 @@ $(document).ready(function() {
     $('.service-select').select2();
     $('input[type=file]').inputfile();
 
+    //
     $('#see-more').on('click', function() {
         $("html, body").animate({ scrollTop: $('#common-service-description').offset().top }, 1000);
     });
@@ -73,61 +74,6 @@ $(document).ready(function() {
         });
     }
 
-    //----
-    var workGallery = $('#work-gallery');
-    var workGalleryNav = $('#work-gallery-nav');
-    var workBorder = $('.work-gallery-wrap').find('.border');
-
-    if (workGallery.length && workGalleryNav.length) {
-        workGallery.slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: false,
-            fade: true,
-            centerMode: true,
-            lazyLoad: 'ondemand',
-            asNavFor: '#work-gallery-nav',
-            adaptiveHeight: true
-        });
-        workGalleryNav.slick({
-            asNavFor: '#work-gallery',
-            arrows: false,
-            dots: true,
-            centerMode: false,
-            lazyLoad: 'ondemand',
-            focusOnSelect: true,
-            slidesPerRow: 5,
-            rows: 3
-            // responsive: [
-            //     {
-            //         breakpoint: 1200,
-            //         settings: {
-            //             slidesToShow: 3
-            //         }
-            //     }
-            // ]
-        });
-
-        workGallery.on("afterChange", function (){
-            workGallery.css({
-                'height': $('.slick-active').height()
-            });
-            workBorder.css({
-                'height': $('.slick-active').height()
-            });
-        });
-
-        workGalleryNav.on("beforeChange", function (){
-            workGallery.css({
-                'height': $('.slick-active').height()
-            });
-            workBorder.css({
-                'height': $('.slick-active').height()
-            });
-        });
-    }
-
     //-------footer form
     $('#subscribe-form').on('submit', function(e) {
         e.preventDefault();
@@ -146,21 +92,21 @@ $(document).ready(function() {
     });
 
     //-------order form
-    $('#order-form').on('submit', function(e) {
-        e.preventDefault();
-        $.ajax({
-            type: 'POST',
-            url: '/wp-json/blog/v1/contact',
-            data: { action : 'shivka_Contact_Save_AJAX', data: $('#order-form').serializeArray()},
-            cache: true,
-            success: function(data) {
-                console.log('success');
-            },
-            error: function(MLHttpRequest, textStatus, errorThrown) {
-                console.log(errorThrown);
-            }
-        });
-    });
+    // $('#order-form').on('submit', function(e) {
+    //     e.preventDefault();
+    //     $.ajax({
+    //         type: 'POST',
+    //         url: '/wp-json/blog/v1/contact',
+    //         data: { action : 'shivka_Contact_Save_AJAX', data: $('#order-form').serializeArray()},
+    //         cache: true,
+    //         success: function(data) {
+    //             console.log('success');
+    //         },
+    //         error: function(MLHttpRequest, textStatus, errorThrown) {
+    //             console.log(errorThrown);
+    //         }
+    //     });
+    // });
 
     //-------call form
     $('#call-form').on('submit', function(e) {
@@ -171,10 +117,10 @@ $(document).ready(function() {
             data: { action : 'shivka_Calls_Save_AJAX', data: $('#call-form').serializeArray()},
             cache: true,
             success: function(data) {
-                console.log('success');
+                $('#successModal').modal('show');
             },
             error: function(MLHttpRequest, textStatus, errorThrown) {
-                console.log(errorThrown);
+                $('#errorModal').modal('show');
             }
         });
     });
@@ -296,16 +242,17 @@ $(document).ready(function() {
                 });
             });
 
-            $('#order-form').submit(function () {
+            $('#order-form').submit(function (e) {
+                e.preventDefault();
                 $.ajax({
                     type: 'POST',
-                    url:'/wp-json/cv/v1/send',
+                    url: '/wp-json/blog/v1/contact',
                     data:   {files : files_from_back, data: $('#order-form').serializeArray()},
                     success: function(data) {
-                        console.log('success');
+                        $('#successModal').modal('show');
                     },
                     error: function(MLHttpRequest, textStatus, errorThrown) {
-                        console.log(errorThrown);
+                        $('#errorModal').modal('show');
                     }
                 });
                 return false;

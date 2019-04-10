@@ -82,7 +82,7 @@ if(isset($_GET['id'])) {
                 <section class="make-order">
                     <div class="form-wrap">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <span aria-hidden="true"></span>
                         </button>
                         <div class="form-inner-wrap">
                             <h2>название акции</h2>

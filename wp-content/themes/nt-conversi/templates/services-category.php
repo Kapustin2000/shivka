@@ -61,6 +61,16 @@ if(!empty($data->total_found())) {
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href="/services" class="back">
+                            <span>
+                                <i class="icon icon-arrow"></i>
+                                назад к услугам
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

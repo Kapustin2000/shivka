@@ -228,6 +228,9 @@ textarea {
 .eye-hover {
   cursor: pointer;
   position: relative;
+  a {
+    z-index: 10;
+  }
   span,
   .underline {
     position: relative;
@@ -317,6 +320,12 @@ textarea {
         top: get-vw(125px);
       }
     }
+  }
+}
+
+.error404 {
+  & > .make-order .background {
+    display: none;
   }
 }
 
