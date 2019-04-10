@@ -65,8 +65,9 @@ $stages_of_work = pods('stages_of_work')->find($params);
                             </div>
                         <?php } ?>
                     </div>
-                    <div class="see-more">
+                    <div class="see-more eye-hover">
                         <a href="/how-to-order" class="underline">смотреть подробности</a>
+                        <i class="icon icon-eye"></i>
                     </div>
                 </div>
             </div>

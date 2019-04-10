@@ -42,7 +42,7 @@
                 margin-left: auto;
                 z-index: 2;
                 &::before {
-                    bottom: get-vw(-37px);
+                    bottom: get-vw(37px);
                     top: auto;
                 }
             }
@@ -76,11 +76,17 @@
             }
         }
     }
-    .make-order {
+}
+
+.page-template-how-to-order {
+    & > .make-order {
         position: relative;
         z-index: 1;
         padding-bottom: get-vw(150px);
         .decorative {
+            &.background {
+                display: none;
+            }
             &.yellow {
                 top: get-vw(460px);
             }

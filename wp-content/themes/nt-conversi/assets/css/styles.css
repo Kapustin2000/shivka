@@ -717,7 +717,7 @@ footer {
     font-family: 'Uni Sans Thin Caps', sans-serif;
     font-size: 0.83333vw;
     font-weight: bold;
-    margin-bottom: 1.25vw;
+    margin-bottom: 0.9375vw;
     white-space: nowrap; }
   footer a {
     color: #3b2f5c; }
@@ -1621,7 +1621,7 @@ footer {
           right: -0.3125vw;
           color: #fff; }
         .smarthoop-how-to-order .steps .step:nth-child(2)::before, .smarthoop-how-to-order .steps .step:nth-child(4)::before, .smarthoop-how-to-order .steps .step:nth-child(6)::before, .smarthoop-how-to-order .steps .step:nth-child(8)::before {
-          bottom: -1.92708vw;
+          bottom: 1.92708vw;
           top: auto; }
       .smarthoop-how-to-order .steps .step:nth-child(2) img {
         bottom: 100%;
@@ -1639,12 +1639,15 @@ footer {
         bottom: calc(100% + 3.38541666667vw);
         right: 6.77083vw;
         width: 40%; }
-  .smarthoop-how-to-order .make-order {
-    position: relative;
-    z-index: 1;
-    padding-bottom: 7.8125vw; }
-    .smarthoop-how-to-order .make-order .decorative.yellow {
-      top: 23.95833vw; }
+
+.page-template-how-to-order > .make-order {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 7.8125vw; }
+  .page-template-how-to-order > .make-order .decorative.background {
+    display: none; }
+  .page-template-how-to-order > .make-order .decorative.yellow {
+    top: 23.95833vw; }
 
 .smarthoop-about .about-us {
   padding-bottom: 5.20833vw;
@@ -1758,10 +1761,12 @@ footer {
     z-index: -1; }
     .smarthoop-faq .decorative.lavander {
       top: -2.60417vw;
-      right: -2.08333vw; }
+      right: -2.08333vw;
+      background-color: rgba(205, 207, 233, 0.5); }
     .smarthoop-faq .decorative.yellow {
       left: -2.08333vw;
-      bottom: 0; }
+      bottom: -1.04167vw;
+      background-color: rgba(242, 235, 192, 0.5); }
   .smarthoop-faq .panel {
     padding: 5.20833vw;
     -webkit-box-shadow: 0 0 2.60417vw rgba(0, 0, 0, 0.15);
@@ -1775,6 +1780,9 @@ footer {
       .smarthoop-faq .panel .panel-answer p {
         font-size: inherit;
         line-height: inherit; }
+
+.page-template-faq > .make-order {
+  display: none; }
 
 .smarthoop-blog {
   margin-top: 5.20833vw; }
@@ -2033,6 +2041,11 @@ footer {
       right: 2.60417vw;
       width: 35.41667vw;
       height: auto; }
+  .smarthoop-prices .steps {
+    padding-bottom: 8.33333vw; }
+
+.page-template-prices > .make-order {
+  display: none; }
 
 .smarthoop-works-category .work-info {
   margin-top: 5.20833vw;

@@ -43,6 +43,15 @@
       height: auto;
     }
   }
+  .steps {
+    padding-bottom: get-vw(160px);
+  }
+}
+
+.page-template-prices {
+  & > .make-order {
+    display: none;
+  }
 }
 
 //@media (max-width: $large-desktop) {

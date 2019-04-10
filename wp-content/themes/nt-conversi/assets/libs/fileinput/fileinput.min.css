@@ -259,12 +259,13 @@
 .form-element .form-element-dropdown ul li.selected {
     display: none; }
 .form-element input[type="file"].input-file-hidden {
-    width: 0.1px;
-    height: 0.1px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
     opacity: 0;
     overflow: hidden;
     position: absolute;
-    z-index: -1; }
+    z-index: 1000; }
 .form-element input[type="file"] + .form-element-inputfile {
     height: 36px;
     width: 100%;
