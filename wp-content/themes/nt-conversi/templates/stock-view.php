@@ -60,7 +60,7 @@ if(isset($_GET['id'])) {
                     <div class="col-5">
                         <div class="content-editable">
                            <?=$data->display('full_description')?>
-                            <button type="button" class="btn btn-primary">связаться с нами</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#stockModal">связаться с нами</button>
                         </div>
                     </div>
                     <div class="col-12">
@@ -74,6 +74,55 @@ if(isset($_GET['id'])) {
                 </div>
             </div>
         </section>
+    </div>
+
+    <div class="modal fade" id="stockModal" tabindex="-1" role="dialog" aria-labelledby="stockModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <section class="make-order">
+                    <div class="form-wrap">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="form-inner-wrap">
+                            <h2>название акции</h2>
+<!--                            TODO: date from BE-->
+                            <p>с 20.05.2018 по 20.06.2018</p>
+<!--                            <p>С --><?//=date("d.m.Y", strtotime($data->display('start_date')));?><!-- по --><?//=date("d.m.Y", strtotime($data->display('end_date')));?><!--</p>-->
+                        </div>
+                        <form action="#" id="order-form" class="order-form active" enctype="multipart/form-data" method="post">
+                            <div class="row">
+                                <!-- <div class="col-lg-6 col-xs-12">-->
+                                <div class="col-6">
+                                    <input type="text" placeholder="Имя*" required name="full_name">
+                                    <input type="email" placeholder="E-mail*" required name="email">
+                                    <input type="number" id="phone" placeholder="Телефон" name="phone">
+                                </div>
+                                <!-- <div class="col-lg-6 col-xs-12">-->
+                                <div class="col-6">
+                                <textarea rows="5" name="message"
+                                          placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
+                                    <input id="file" type="file" style="opacity: 0;">
+                                    <button type="submit" class="btn btn-primary">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form action="#" class="order-form file-form active">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-element">
+                                        <label class="form-element-label" for="input-file">Выбрать файлы</label>
+                                        <div class="form-element-error">Невозможно загрузить файлы</div>
+                                        <input type="file" id="fileinput" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
+                                    </div>
+                                    <!-- <input id="fileinput" name="files[]" type="file" multiple>-->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
     </div>
 
 <?php  }else{ ?>

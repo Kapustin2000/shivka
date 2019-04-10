@@ -144,7 +144,7 @@
 //}
 
 .page-template-stock-view {
-  .make-order {
+  & > .make-order {
     display: none;
   }
 }

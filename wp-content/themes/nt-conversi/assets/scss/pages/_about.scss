@@ -107,7 +107,7 @@
 }
 
 .page-template-about {
-    .make-order {
+    & > .make-order {
         display: none;
     }
 }

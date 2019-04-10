@@ -1,4 +1,5 @@
 .smarthoop-contacts {
+  margin-bottom: get-vw(-60px);
   .contacts {
     margin-top: get-vw(150px);
     position: relative;
@@ -161,3 +162,14 @@
 //    }
 //  }
 //}
+
+.page-template-page-contacts {
+  & > .make-order {
+    z-index: 20;
+    .decorative {
+      &.background {
+        display: none;
+      }
+    }
+  }
+}

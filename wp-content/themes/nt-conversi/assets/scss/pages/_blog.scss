@@ -118,7 +118,7 @@
 }
 
 .page-template-blog {
-  .make-order {
+  & > .make-order {
     display: none;
   }
 }

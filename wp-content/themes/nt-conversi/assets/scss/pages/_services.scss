@@ -60,7 +60,7 @@
 }
 
 .page-template-services {
-  .make-order {
+  & > .make-order {
     display: none;
   }
 }

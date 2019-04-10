@@ -70,7 +70,7 @@
 }
 
 .page-template-works-category  {
-  .make-order {
+  & > .make-order {
     display: none;
   }
 }

@@ -321,7 +321,7 @@ textarea {
 }
 
 .page-template-works {
-  .make-order {
+  & > .make-order {
     display: none;
   }
 }

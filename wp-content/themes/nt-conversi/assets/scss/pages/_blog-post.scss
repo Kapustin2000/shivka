@@ -94,7 +94,7 @@
 //}
 
 .page-template-blog-view {
-  .make-order {
+  & > .make-order {
     display: none;
   }
 }

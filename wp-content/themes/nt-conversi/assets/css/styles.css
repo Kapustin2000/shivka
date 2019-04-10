@@ -274,7 +274,7 @@ textarea {
     bottom: auto;
     top: 6.51042vw; }
 
-.page-template-works .make-order {
+.page-template-works > .make-order {
   display: none; }
 
 .not-found {
@@ -1299,7 +1299,7 @@ footer {
   .services.extra-services .see-more {
     margin-top: 2.60417vw; }
 
-.page-template-services .make-order {
+.page-template-services > .make-order {
   display: none; }
 
 .services.extra-services .service-item:hover .service-title {
@@ -1738,7 +1738,7 @@ footer {
       width: auto;
       height: 5.20833vw; }
 
-.page-template-about .make-order {
+.page-template-about > .make-order {
   display: none; }
 
 .smarthoop-faq {
@@ -1872,7 +1872,7 @@ footer {
       .smarthoop-blog .blog .blog-pagination .pagination::before {
         background-color: rgba(242, 235, 192, 0.5); }
 
-.page-template-blog .make-order {
+.page-template-blog > .make-order {
   display: none; }
 
 .smarthoop-blog-post {
@@ -1930,60 +1930,67 @@ footer {
     font-size: 1.5625vw;
     font-weight: bold; }
 
-.page-template-blog-view .make-order {
+.page-template-blog-view > .make-order {
   display: none; }
 
-.smarthoop-contacts .contacts {
-  margin-top: 7.8125vw;
-  position: relative; }
-  .smarthoop-contacts .contacts .address-wrap {
-    width: 36.45833vw;
-    padding-left: 0.78125vw; }
-  .smarthoop-contacts .contacts .bordered {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-    border-color: #cdcfe9;
-    z-index: 20;
+.smarthoop-contacts {
+  margin-bottom: -3.125vw; }
+  .smarthoop-contacts .contacts {
+    margin-top: 7.8125vw;
     position: relative; }
-    .smarthoop-contacts .contacts .bordered h1 {
-      margin: 0;
-      -webkit-transform: translate(-7.8125vw, -2.34375vw);
-      -ms-transform: translate(-7.8125vw, -2.34375vw);
-      transform: translate(-7.8125vw, -2.34375vw); }
-    .smarthoop-contacts .contacts .bordered .address {
-      position: relative;
-      padding: 2.60417vw 0; }
-      .smarthoop-contacts .contacts .bordered .address a {
-        color: inherit; }
-        .smarthoop-contacts .contacts .bordered .address a:hover {
-          text-decoration: underline; }
-      .smarthoop-contacts .contacts .bordered .address.active::before {
+    .smarthoop-contacts .contacts .address-wrap {
+      width: 36.45833vw;
+      padding-left: 0.78125vw; }
+    .smarthoop-contacts .contacts .bordered {
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
+      border-color: #cdcfe9;
+      z-index: 20;
+      position: relative; }
+      .smarthoop-contacts .contacts .bordered h1 {
+        margin: 0;
+        -webkit-transform: translate(-7.8125vw, -2.34375vw);
+        -ms-transform: translate(-7.8125vw, -2.34375vw);
+        transform: translate(-7.8125vw, -2.34375vw); }
+      .smarthoop-contacts .contacts .bordered .address {
+        position: relative;
+        padding: 2.60417vw 0; }
+        .smarthoop-contacts .contacts .bordered .address a {
+          color: inherit; }
+          .smarthoop-contacts .contacts .bordered .address a:hover {
+            text-decoration: underline; }
+        .smarthoop-contacts .contacts .bordered .address.active::before {
+          content: '';
+          position: absolute;
+          display: block;
+          background-color: rgba(242, 235, 192, 0.5);
+          top: 0;
+          right: 0;
+          width: 200%;
+          height: 100%;
+          z-index: -1; }
+    .smarthoop-contacts .contacts .map-wrap {
+      position: absolute;
+      top: 2.60417vw;
+      right: 0;
+      width: 58%;
+      height: 46.875vw; }
+      .smarthoop-contacts .contacts .map-wrap::before {
         content: '';
         position: absolute;
         display: block;
-        background-color: rgba(242, 235, 192, 0.5);
+        width: 100%;
+        height: 46px;
         top: 0;
-        right: 0;
-        width: 200%;
-        height: 100%;
-        z-index: -1; }
-  .smarthoop-contacts .contacts .map-wrap {
-    position: absolute;
-    top: 2.60417vw;
-    right: 0;
-    width: 58%;
-    height: 46.875vw; }
-    .smarthoop-contacts .contacts .map-wrap::before {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 46px;
-      top: 0;
-      left: 0;
-      z-index: 10;
-      background-color: #fff; }
+        left: 0;
+        z-index: 10;
+        background-color: #fff; }
+
+.page-template-page-contacts > .make-order {
+  z-index: 20; }
+  .page-template-page-contacts > .make-order .decorative.background {
+    display: none; }
 
 .smarthoop-prices {
   padding-top: 10.41667vw; }
@@ -2079,7 +2086,7 @@ footer {
   text-align: left;
   padding-left: 9.375vw; }
 
-.page-template-works-category .make-order {
+.page-template-works-category > .make-order {
   display: none; }
 
 .work-info {
@@ -2149,7 +2156,7 @@ footer {
     -ms-flex: 1;
     flex: 1; }
 
-.page-template-works-gallery .make-order {
+.page-template-works-gallery > .make-order {
   display: none; }
 
 .smarthoop-stock {
@@ -2240,7 +2247,7 @@ footer {
     padding-left: 10.41667vw;
     margin-top: 2.60417vw; }
 
-.page-template-stock-view .make-order {
+.page-template-stock-view > .make-order {
   display: none; }
 
 .wrap {
