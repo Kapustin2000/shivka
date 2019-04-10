@@ -5,12 +5,15 @@
     }
   }
   .delivery {
-    padding: get-vw(250px) 0 get-vw(150px);
+    padding: 0 0 get-vw(150px);
+    .delivery-info {
+      margin-top: get-vw(250px);
+    }
     .bordered {
-      max-width: get-vw(850px);
+      width: get-vw(850px);
       border-color: $lavander;
       transform: translate(0, 0);
-      padding-top: get-vw(140px);
+      padding-top: get-vw(180px);
       z-index: 3;
       position: relative;
       h1 {
@@ -34,7 +37,7 @@
 
   .payment {
     position: relative;
-    padding-bottom: get-vw(250px);
+    padding-bottom: get-vw(350px);
     .row {
       position: relative;
     }
@@ -46,18 +49,24 @@
     }
     .payment-img-wrap {
       position: absolute;
-      top: 0;
+      top: get-vw(-50px);
       left: 0;
       width: get-vw(850px);
       height: get-vw(500px);
       img {
-        height: auto;
         width: 100%;
+        height: auto;
       }
     }
     .payment-info {
-      margin-left: 58.333333%;
+      margin-left: 60.333333%;
     }
+  }
+}
+
+.page-template-page-shipping {
+  & > .make-order {
+    display: none;
   }
 }
 

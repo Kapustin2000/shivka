@@ -1318,14 +1318,16 @@ footer {
   padding-bottom: 1.5625vw; }
 
 .smarthoop-shipping .delivery {
-  padding: 13.02083vw 0 7.8125vw; }
+  padding: 0 0 7.8125vw; }
+  .smarthoop-shipping .delivery .delivery-info {
+    margin-top: 13.02083vw; }
   .smarthoop-shipping .delivery .bordered {
-    max-width: 44.27083vw;
+    width: 44.27083vw;
     border-color: #cdcfe9;
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
-    padding-top: 7.29167vw;
+    padding-top: 9.375vw;
     z-index: 3;
     position: relative; }
     .smarthoop-shipping .delivery .bordered h1 {
@@ -1344,7 +1346,7 @@ footer {
 
 .smarthoop-shipping .payment {
   position: relative;
-  padding-bottom: 13.02083vw; }
+  padding-bottom: 18.22917vw; }
   .smarthoop-shipping .payment .row {
     position: relative; }
   .smarthoop-shipping .payment .decorative {
@@ -1354,15 +1356,18 @@ footer {
     height: 28.64583vw; }
   .smarthoop-shipping .payment .payment-img-wrap {
     position: absolute;
-    top: 0;
+    top: -2.60417vw;
     left: 0;
     width: 44.27083vw;
     height: 26.04167vw; }
     .smarthoop-shipping .payment .payment-img-wrap img {
-      height: auto;
-      width: 100%; }
+      width: 100%;
+      height: auto; }
   .smarthoop-shipping .payment .payment-info {
-    margin-left: 58.333333%; }
+    margin-left: 60.333333%; }
+
+.page-template-page-shipping > .make-order {
+  display: none; }
 
 .smarthoop-single-service .back {
   margin-top: 1.82292vw; }
