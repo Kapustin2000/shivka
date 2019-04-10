@@ -28,8 +28,13 @@
                 @include bordered-block();
                 transform: translate(0, 0);
                 &::before {
-                    top: get-vw(-37px);
+                    top: get-vw(37px);
                     bottom: auto;
+                }
+            }
+            &:nth-child(1) {
+                &::before {
+                    top: get-vw(-37px);
                 }
             }
             &:nth-child(2),

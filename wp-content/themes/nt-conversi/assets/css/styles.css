@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'Uni Sans Thin Caps';
-  src: url("../fonts/UNISANSTHIN.OTF"); }
+  src: url("../fonts/UNISANSTHIN.OTF"), url("../fonts/UNISANSTHIN.woff"); }
 
 @font-face {
   font-family: 'Uni Sans Heavy Caps';
-  src: url("../fonts/UNISANSHEAVY.OTF"); }
+  src: url("../fonts/UNISANSHEAVY.OTF"), url("../fonts/UNISANSHEAVY.woff"); }
 
 @font-face {
   font-family: 'Uni Sans Heavy Caps Italic';
-  src: url("../fonts/UNISANSHEAVYITALIC.OTF"); }
+  src: url("../fonts/UNISANSHEAVYITALIC.OTF"), url("../fonts/UNISANSHEAVYITALIC.woff"); }
 
 * {
   -webkit-box-sizing: border-box;
@@ -1603,8 +1603,10 @@ footer {
           left: 0;
           color: #3b2f5c; }
         .smarthoop-how-to-order .steps .step:nth-child(1)::before, .smarthoop-how-to-order .steps .step:nth-child(3)::before, .smarthoop-how-to-order .steps .step:nth-child(5)::before, .smarthoop-how-to-order .steps .step:nth-child(7)::before {
-          top: -1.92708vw;
+          top: 1.92708vw;
           bottom: auto; }
+      .smarthoop-how-to-order .steps .step:nth-child(1)::before {
+        top: -1.92708vw; }
       .smarthoop-how-to-order .steps .step:nth-child(2), .smarthoop-how-to-order .steps .step:nth-child(4), .smarthoop-how-to-order .steps .step:nth-child(6), .smarthoop-how-to-order .steps .step:nth-child(8) {
         padding-top: 5.88542vw;
         padding-left: 6.77083vw;

@@ -5,17 +5,20 @@
 
 @font-face {
   font-family: 'Uni Sans Thin Caps';
-  src: url('../fonts/UNISANSTHIN.OTF');
+  src: url('../fonts/UNISANSTHIN.OTF'),
+       url('../fonts/UNISANSTHIN.woff');
 }
 
 @font-face {
   font-family: 'Uni Sans Heavy Caps';
-  src: url('../fonts/UNISANSHEAVY.OTF');
+  src: url('../fonts/UNISANSHEAVY.OTF'),
+       url('../fonts/UNISANSHEAVY.woff');
 }
 
 @font-face {
   font-family: 'Uni Sans Heavy Caps Italic';
-  src: url('../fonts/UNISANSHEAVYITALIC.OTF');
+  src: url('../fonts/UNISANSHEAVYITALIC.OTF'),
+       url('../fonts/UNISANSHEAVYITALIC.woff');
 }
 
 @import 'ui-kit/variables';
