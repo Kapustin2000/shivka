@@ -1583,6 +1583,7 @@ footer {
       margin: 0; }
     .smarthoop-how-to-order .steps .step {
       position: relative;
+      width: 50.78125vw;
       padding: 4.42708vw; }
       .smarthoop-how-to-order .steps .step h3 {
         color: #000;
@@ -1612,8 +1613,6 @@ footer {
         .smarthoop-how-to-order .steps .step:nth-child(1)::before, .smarthoop-how-to-order .steps .step:nth-child(3)::before, .smarthoop-how-to-order .steps .step:nth-child(5)::before, .smarthoop-how-to-order .steps .step:nth-child(7)::before {
           top: 1.92708vw;
           bottom: auto; }
-      .smarthoop-how-to-order .steps .step:nth-child(1)::before {
-        top: -1.92708vw; }
       .smarthoop-how-to-order .steps .step:nth-child(2), .smarthoop-how-to-order .steps .step:nth-child(4), .smarthoop-how-to-order .steps .step:nth-child(6), .smarthoop-how-to-order .steps .step:nth-child(8) {
         padding-top: 5.88542vw;
         padding-left: 6.77083vw;
@@ -1635,19 +1634,25 @@ footer {
       .smarthoop-how-to-order .steps .step:nth-child(2) img {
         bottom: 100%;
         right: 3.90625vw;
-        width: 50%; }
+        width: 31.25vw;
+        height: 41.66667vw; }
       .smarthoop-how-to-order .steps .step:nth-child(3) img {
         top: calc(100% + 0.78125vw);
         left: -0.78125vw;
-        width: 60%; }
+        width: 29.94792vw;
+        height: 29.94792vw; }
       .smarthoop-how-to-order .steps .step:nth-child(5) img {
         top: calc(100% + 3.38541666667vw);
         left: -0.78125vw;
-        width: 70%; }
-      .smarthoop-how-to-order .steps .step:nth-child(6) img {
-        bottom: calc(100% + 3.38541666667vw);
-        right: 6.77083vw;
-        width: 40%; }
+        width: 35.9375vw;
+        height: 35.9375vw; }
+      .smarthoop-how-to-order .steps .step:nth-child(6) {
+        top: -5.20833vw; }
+        .smarthoop-how-to-order .steps .step:nth-child(6) img {
+          bottom: calc(100% + 3.38541666667vw);
+          right: 6.77083vw;
+          width: 20.67708vw;
+          height: 19.94792vw; }
 
 .page-template-how-to-order > .make-order {
   position: relative;
@@ -2564,3 +2569,6 @@ footer {
       padding: 2.60417vw 5.20833vw; }
     .modal-content .make-order .file-form {
       top: 26.5625vw; }
+
+.default-section {
+  margin: 10.41667vw 0 5.20833vw; }
