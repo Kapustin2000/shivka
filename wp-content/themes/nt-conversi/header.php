@@ -216,3 +216,70 @@ $services = pods('services')->find();
         </div>
     </div>
 </div>
+
+<script>
+    'use strict';
+
+    ;( function ( document, window, index )
+    {
+        var files_to_send = [];
+
+        // applying the effect for every form
+        var forms = document.querySelectorAll( '.file-form' );
+
+        Array.prototype.forEach.call( forms, function( form )
+        {
+            var input		 = form.querySelector( 'input[type="file"]' );
+
+            // letting the server side to know we are going to make an Ajax request
+            var ajaxFlag = document.createElement( 'input' );
+            ajaxFlag.setAttribute( 'type', 'hidden' );
+            ajaxFlag.setAttribute( 'name', 'ajax' );
+            ajaxFlag.setAttribute( 'value', 1 );
+            form.appendChild( ajaxFlag );
+
+            // automatically submit the form on file select
+            input.addEventListener( 'change', function( e )
+            {
+                var files_to_check  = e.target.files;
+                var size;
+                if(files_to_check.length<10) {
+                    for (var key in files_to_check) {
+                        if (files_to_check[key]['size'] <= 10 * 1024 * 1024) {
+                            if (typeof files_to_check[key] === 'object')
+                                if(files_to_check.length<10) {
+                                    files_to_send.push(files_to_check[key]);
+                                }else{
+                                    console.log("You can upload only 10 files");
+                                    break;
+                                }
+                        } else {
+                            delete files_to_check[key];
+                        }
+                    }
+                }else{
+                    console.log("You can upload only 10 files");
+                }
+            });
+
+            document.addEventListener("DOMContentLoaded", function(event) {
+                $('#order-form').submit(function (event) {
+                    event.preventDefault();
+                    $.ajax({
+                        type: 'POST',
+                        url: '/wp-json/blog/v1/contact',
+                        data:   {files : files_to_send, data: $('#order-form').serializeArray()},
+                        success: function(data) {
+                            $('#successModal').modal('show');
+                        },
+                        error: function(MLHttpRequest, textStatus, errorThrown) {
+                            $('#errorModal').modal('show');
+                        }
+                    });
+                    return false;
+                });
+
+            });
+        });
+    }( document, window, 0 ));
+</script>
