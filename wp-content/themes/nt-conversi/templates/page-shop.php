@@ -11,7 +11,7 @@ $data = pods('services')->find();
 
 <?php get_header(); ?>
 
-<section style="margin-top: 200px;">
+<section class="default-section">
     <div class="container">
         <div class="row">
             <div class="col-12">
