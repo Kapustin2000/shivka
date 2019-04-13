@@ -48,7 +48,7 @@ $services = pods('services')->find($params);
                             <span>Заказать звонок</span>
                         </button>
                     </div>
-                    <form action="#" id="order-form" class="order-form active" enctype="multipart/form-data" method="post">
+                    <form action="#" id="order-form" class="order-form-js order-form active" enctype="multipart/form-data" method="post">
                         <div class="row">
 <!--                            <div class="col-lg-6 col-xs-12">-->
                             <div class="col-6">

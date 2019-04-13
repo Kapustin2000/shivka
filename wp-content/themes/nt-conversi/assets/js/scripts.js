@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     //-------file form
     $('.service-select').select2();
-    $('input[type=file]').inputfile();
+    // $('input[type=file]').inputfile();
 
     //
     $('#see-more').on('click', function() {
@@ -137,6 +137,38 @@ $(document).ready(function() {
     //         // other options
     //     });
     // }
+
+    var fileCollection = [];
+
+    $('#fileinput').on('change', function(e) {
+
+        var files = e.target.files;
+        $.each(files, function(i, file) {
+            fileCollection.push(file);
+        });
+
+        console.log(fileCollection);
+    });
+
+    $('.order-form-js').each(function() {
+        $(this).submit(function (event) {
+            event.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/wp-json/blog/v1/contact',
+                data:   {files : fileCollection, data: $('#order-form').serializeArray()},
+                success: function(data) {
+                    $('#successModal').modal('show');
+                },
+                error: function(MLHttpRequest, textStatus, errorThrown) {
+                    $('#errorModal').modal('show');
+                }
+            });
+            return false;
+        });
+    });
+
+
 
 });
 
