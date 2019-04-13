@@ -451,3 +451,12 @@
 .default-section {
   margin: get-vw(200px) 0 get-vw(100px);
 }
+
+.fileinput {
+  &::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  &::before {
+
+  }
+}

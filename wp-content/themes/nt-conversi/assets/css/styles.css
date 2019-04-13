@@ -1228,11 +1228,12 @@ footer {
     padding: 2.60417vw 5.20833vw; }
     .make-order form:not(.active) {
       display: none; }
-    .make-order form input, .make-order form textarea, .make-order form button {
+    .make-order form input, .make-order form textarea, .make-order form button, .make-order form .form-element {
       width: 100%;
       margin-bottom: 2.60417vw; }
     .make-order form textarea {
-      height: 7.76042vw; }
+      height: 7.76042vw;
+      margin-bottom: 2.39583vw; }
     .make-order form .submit-wrap {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2572,3 +2573,6 @@ footer {
 
 .default-section {
   margin: 10.41667vw 0 5.20833vw; }
+
+.fileinput::-webkit-file-upload-button {
+  visibility: hidden; }

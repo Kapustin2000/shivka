@@ -51,12 +51,13 @@
         &:not(.active) {
             display: none;
         }
-        input, textarea, button {
+        input, textarea, button, .form-element {
             width: 100%;
             margin-bottom: get-vw(50px);
         }
         textarea {
             height: get-vw(149px);
+            margin-bottom: get-vw(46px);
         }
         .submit-wrap {
             display: flex;

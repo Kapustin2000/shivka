@@ -146,7 +146,6 @@ $services = pods('services')->find();
                     </div>
                     <form action="#" id="order-form" class="order-form-js order-form active" enctype="multipart/form-data" method="post">
                         <div class="row">
-                            <!--                            <div class="col-lg-6 col-xs-12">-->
                             <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="email" placeholder="E-mail*" required name="email">
@@ -158,24 +157,15 @@ $services = pods('services')->find();
                                     <?php } ?>
                                 </select>
                             </div>
-                            <!--                            <div class="col-lg-6 col-xs-12">-->
                             <div class="col-6">
                                 <textarea rows="5" name="message"
                                           placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                                <input id="file" type="file" style="opacity: 0;">
-                                <button type="submit" class="btn btn-primary">Отправить</button>
-                            </div>
-                        </div>
-                    </form>
-                    <form action="#" class="order-form file-form active">
-                        <div class="row">
-                            <div class="col-12">
                                 <div class="form-element">
                                     <label class="form-element-label" for="fileinput">Выбрать файлы</label>
                                     <div class="form-element-error">Невозможно загрузить файлы</div>
                                     <input class="fileinput" type="file" id="fileinput" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
                                 </div>
-                                <!--                            <input id="fileinput" name="files[]" type="file" multiple>-->
+                                <button type="submit" class="btn btn-primary">Отправить</button>
                             </div>
                         </div>
                     </form>
