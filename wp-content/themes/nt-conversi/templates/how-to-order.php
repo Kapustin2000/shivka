@@ -21,9 +21,8 @@ $stages_of_work = pods('stages_of_work')->find($params);
                         <span>как заказать</span>
                     </h1>
                     <div class="steps-wrap row">
-                        <?php $count=0; while($stages_of_work->fetch()){ ?>
-                            <!--  Block 1 -->
-                            <?php if($count==0){ ?>
+                        <?php  while($stages_of_work->fetch()){ ?>
+
 
                                 <div class="step content-editable">
 
@@ -33,13 +32,6 @@ $stages_of_work = pods('stages_of_work')->find($params);
                                 </div>
 
 
-                                <!--  Block 2 -->
-                            <?php $count++; }else{ ?>
-
-
-
-
-                            <?php $count = 0;} ?>
 
                         <?php }   ?>
                     </div>
