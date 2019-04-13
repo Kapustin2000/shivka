@@ -173,7 +173,7 @@ $services = pods('services')->find();
                                 <div class="form-element">
                                     <label class="form-element-label" for="fileinput">Выбрать файлы</label>
                                     <div class="form-element-error">Невозможно загрузить файлы</div>
-                                    <input type="file" id="fileinput" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
+                                    <input class="fileinput" type="file" id="fileinput" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
                                 </div>
                                 <!--                            <input id="fileinput" name="files[]" type="file" multiple>-->
                             </div>

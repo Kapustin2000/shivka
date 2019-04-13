@@ -140,14 +140,16 @@ $(document).ready(function() {
 
     var fileCollection = [];
 
-    $('#fileinput').on('change', function(e) {
+    $('.fileinput').each(function() {
+        $(this).on('change', function(e) {
 
-        var files = e.target.files;
-        $.each(files, function(i, file) {
-            fileCollection.push(file);
+            var files = e.target.files;
+            $.each(files, function(i, file) {
+                fileCollection.push(file);
+            });
+
+            console.log(fileCollection);
         });
-
-        console.log(fileCollection);
     });
 
     $('.order-form-js').each(function() {
