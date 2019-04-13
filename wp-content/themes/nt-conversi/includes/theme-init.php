@@ -321,7 +321,7 @@ function shivka_Calls_Save_AJAX( WP_REST_Request $request)
 add_action( 'rest_api_init', function () {
 	register_rest_route( 'blog/v1', 'calls' , array(
 		'methods' => 'post',
-		'callback' => 'shivka_Call_Save_AJAX',
+		'callback' => 'shivka_Calls_Save_AJAX',
 	) );
 } );
 
