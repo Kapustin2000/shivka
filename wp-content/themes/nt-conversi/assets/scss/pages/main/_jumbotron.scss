@@ -122,13 +122,38 @@
       top: 0;
       left: 0;
     }
-    .player-button {
+    .progress {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      color: $white;
-      transform: translate(-50%, -50%);
-      font-size: get-vw(50px);
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: get-vw(6px);
+      min-height: 3px;
+      opacity: .5;
+      background-color: $white;
+      z-index: 2;
+    }
+    .player-button {
+      width: get-vw(100px);
+      height: get-vw(100px);
+      padding: 0;
+      border-radius: 100%;
+      background-color: transparentize($white, .5);
+      &,
+      &::after {
+        content: '▷';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: get-vw(50px);
+        color: $white;
+      }
+      &::after {
+        width: get-vw(50px);
+        height: get-vw(50px);
+        left: calc(50% + 0.26041666666vw);
+      }
     }
   }
 }

@@ -83,7 +83,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                                     <div class="progress">
                                         <div class="progress-filled"></div>
                                     </div>
-                                    <button class="player-button">▷</button>
+                                    <button class="player-button"></button>
                                 </div>
                             </div>
                         <?php } ?>
