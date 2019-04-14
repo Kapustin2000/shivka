@@ -70,15 +70,15 @@ $data = pods('blog')->find($params);
                                     <?php if($pages_count!=1){ ?>
                                         <div class="pagination">
                                             <?php if(isset($_GET['pages']) && (int) $_GET['pages']!=1){ ?>
-                                                <a href="<?=$_SERVER['REQUEST_URI']?><?php echo (!isset($_GET['type']) ? '?' :'&') ?>pages=<?=(int) $_GET['pages']-1?>" class="arrow prev-arrow">
+                                                <a href="<?=$_SERVER['REQUEST_URI']?><?php echo (!isset($_GET['type']) && !isset($_GET['pages']) ? '?' :'&') ?>pages=<?=(int) $_GET['pages']-1?>" class="arrow prev-arrow">
                                                     <i class="icon icon-prev"></i>
                                                 </a>
                                             <?php } ?>
                                             <?php for($i=1;$i<=$pages_count;$i++){ ?>
-                                                <a href="<?=$_SERVER['REQUEST_URI']?><?php echo (!isset($_GET['type']) ? '?' :'&') ?>pages=<?=$i?>" <?php if(isset($_GET['pages']) && (int) $_GET['pages'] == $i || !isset($_GET['pages']) && $i==1) { ?> class="active" <?php } ?>><?=$i?></a>
+                                                <a href="<?=$_SERVER['REQUEST_URI']?><?php echo (!isset($_GET['type']) && !isset($_GET['pages']) ? '?' :'&') ?>pages=<?=$i?>" <?php if(isset($_GET['pages']) && (int) $_GET['pages'] == $i || !isset($_GET['pages']) && $i==1) { ?> class="active" <?php } ?>><?=$i?></a>
                                             <?php } ?>
                                             <?php if($pages_count>1 && (!isset($_GET['pages']) || $_GET['pages']==1) || isset($_GET['pages']) && ((int) $_GET['pages'] + 1) <= $pages_count){ ?>
-                                                <a <?php if(!isset($_GET['pages'])){ ?> href="<?=$_SERVER['REQUEST_URI']?><?php echo (!isset($_GET['type']) ? '?' :'&') ?>pages=2"  <?php }else{ ?> href="<?=$_SERVER['REQUEST_URI']?>&page=<?=$_GET['pages']+1?>" <?php } ?> class="arrow next-arrow">
+                                                <a <?php if(!isset($_GET['pages'])){ ?> href="<?=$_SERVER['REQUEST_URI']?><?php echo (!isset($_GET['type']) && !isset($_GET['pages']) ? '?' :'&') ?>pages=2"  <?php }else{ ?> href="<?=$_SERVER['REQUEST_URI']?>&page=<?=$_GET['pages']+1?>" <?php } ?> class="arrow next-arrow">
                                                     <i class="icon icon-next"></i>
                                                 </a>
                                             <?php } ?>

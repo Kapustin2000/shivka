@@ -118,7 +118,7 @@
             bottom: get-vw(-50px);
             background-color: transparentize($yellow, .5);
         }
-        p {
+        .full-description {
             column-count: 2;
         }
     }

@@ -1542,7 +1542,7 @@ footer {
     right: -9.375vw;
     bottom: -2.60417vw;
     background-color: rgba(242, 235, 192, 0.5); }
-  .smarthoop-single-service .single-service-more p {
+  .smarthoop-single-service .single-service-more .full-description {
     -webkit-column-count: 2;
     column-count: 2; }
 

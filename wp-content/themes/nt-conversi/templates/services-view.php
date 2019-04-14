@@ -84,7 +84,7 @@ if(!empty($data->total_found())) {
                     <div class="col-12">
                         <h2>описание услуги</h2>
                         <div class="decorative yellow"></div>
-                        <p><?=$data->display('full_description')?></p>
+                        <div class="full-description"><?=$data->display('full_description')?></div>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@ if(!empty($data->total_found())) {
                                     <span>Заказать звонок</span>
                                 </button>
                             </div>
-                            <form action="#" id="order-form" class="order-form active" enctype="multipart/form-data" method="post">
+                            <form action="<?=$_SERVER['REQUEST_URI']?>&form=success" id="order-form" class="order-form active" enctype="multipart/form-data" method="post">
                                 <div class="row">
                                     <div class="col-6">
                                         <input type="text" placeholder="Имя*" required name="full_name">
