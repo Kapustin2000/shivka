@@ -49,8 +49,8 @@ if(isset($_GET['id'])) {
                                 <?php } ?>
                             </div>
                         <?php } ?>
-                        <?php if($pages_count!=1){ ?>
                         <div class="bottom">
+                            <?php if($pages_count!=1){ ?>
                             <div class="pagination">
                                 <?php if(isset($_GET['page']) && (int) $_GET['page']!=1){ ?>
                                 <a href="<?=$_SERVER['REQUEST_URI']?>&page=<?=(int) $_GET['page']-1?>" class="arrow prev-arrow">
@@ -66,6 +66,7 @@ if(isset($_GET['id'])) {
                                 </a>
                                 <?php } ?>
                             </div>
+                            <?php } ?>
                             <a href="/works" class="back">
                                 <span>
                                     <i class="icon icon-arrow"></i>
@@ -73,7 +74,6 @@ if(isset($_GET['id'])) {
                                 </span>
                             </a>
                         </div>
-                        <?php } ?>
                     </div>
                 </div>
             </div>
