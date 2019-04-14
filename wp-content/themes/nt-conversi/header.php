@@ -164,23 +164,28 @@ $works = pods('works')->find($params);
                             <div class="col-6">
                                 <textarea rows="5" name="message"
                                           placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                                <input type="text" style="opacity: 0;">
-                                <button type="submit" class="btn btn-primary">Отправить</button>
-                            </div>
-                        </div>
-                    </form>
-                    <form action="#" class="order-form file-form active">
-                        <div class="row">
-                            <div class="col-12">
+<!--                                <input type="text" style="opacity: 0;">-->
                                 <div class="form-element">
                                     <label class="form-element-label" for="fileinput">Выбрать файлы</label>
                                     <div class="form-element-error">Невозможно загрузить файлы</div>
                                     <input class="fileinput" type="file" id="fileinput" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
                                 </div>
-                                <!-- <input id="fileinput" name="files[]" type="file" multiple>-->
+                                <button type="submit" class="btn btn-primary">Отправить</button>
                             </div>
                         </div>
                     </form>
+<!--                    <form action="#" class="order-form file-form active">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-12">-->
+<!--                                <div class="form-element">-->
+<!--                                    <label class="form-element-label" for="fileinput">Выбрать файлы</label>-->
+<!--                                    <div class="form-element-error">Невозможно загрузить файлы</div>-->
+<!--                                    <input class="fileinput" type="file" id="fileinput" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />-->
+<!--                                </div>-->
+<!--                                <!-- <input id="fileinput" name="files[]" type="file" multiple>-->-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </form>-->
                 </div>
             </section>
         </div>
