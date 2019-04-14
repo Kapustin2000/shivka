@@ -120,10 +120,10 @@ $(document).ready(function() {
     });
 
     //
-    var gallery = $('#gallery');
-    gallery.find('a').each(function(e) {
-        e.preventDefault();
-    });
+    // var gallery = $('#gallery');
+    // gallery.find('a').each(function(e) {
+    //     e.preventDefault();
+    // });
     // if (gallery.length) {
     //     gallery.magnificPopup({
     //         delegate: 'a', // child items selector, by clicking on it popup will open
@@ -146,6 +146,7 @@ $(document).ready(function() {
         });
     });
 
+    console.log(window.location.search);
     if (window.location.search.match(/form=success/)) {
         $('#successModal').modal('show');
     }
