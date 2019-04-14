@@ -128,6 +128,20 @@ function nt_conversi_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'nt_conversi_scripts' );
+function reArrayFiles(&$file_post) {
+
+    $file_ary = array();
+    $file_count = count($file_post['name']);
+    $file_keys = array_keys($file_post);
+
+    for ($i=0; $i<$file_count; $i++) {
+        foreach ($file_keys as $key) {
+            $file_ary[$i][$key] = $file_post[$key][$i];
+        }
+    }
+
+    return $file_ary;
+}
 function shapeSpace_include_custom_jquery() {
 
 	wp_deregister_script('jquery');

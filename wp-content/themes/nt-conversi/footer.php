@@ -48,7 +48,7 @@ $services = pods('services')->find($params);
                             <span>Заказать звонок</span>
                         </button>
                     </div>
-                    <form action="#" id="order-form" class="order-form-js order-form active" enctype="multipart/form-data" method="post">
+                    <form action="?form=success"   class="  active" enctype="multipart/form-data" method="post">
                         <div class="row">
 <!--                            <div class="col-lg-6 col-xs-12">-->
                             <div class="col-6">
@@ -196,5 +196,71 @@ $services = pods('services')->find($params);
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/select2/select2.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/fileinput/fileinput.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/js/scripts.js"></script>
+<?php
+if($_POST){
+    $pod = pods( 'contact');
+    $fields = $pod->fields();
+    $data = array();
+    foreach($fields as $key=>$item){
+        if(isset($_POST[$key]) && !empty($_POST[$key])){
+            $param = shivka_escapeParam($_POST[$key]);
+            if(trim($param) === "" || trim($param) === null){
+                if((bool) $fields[$key]['options']['required']) {
+                    header("HTTP/1.0 " . $key . "  can't be empty");
+                    exit();
+                }else{
+                    $param = "";
+                }
+            }
+            $data[$key] = $param;
+        }else if((bool) $fields[$key]['options']['required']){
+            header("HTTP/1.0 ".$key." is required");
+            exit();
+        }
+    }
+    $data['post_title'] = date("Y/m/d");
+
+    $res =    $new_id = $pod->add($data);
+    if($res){
+        try {
+            require_once 'wp-content/plugins/swift-mailer/lib/swift_required.php';
+
+            $transport = (new Swift_SmtpTransport(SWIFT_server, SWIFT_port, SWIFT_protocol))
+                ->setUsername(SWIFT_email)
+                ->setPassword(SWIFT_pass)
+                ->setStreamOptions(array('ssl' => array('allow_self_signed' => true, 'verify_peer' => false)));
+
+            // Create the Mailer using your created Transport
+            $mailer = new Swift_Mailer($transport);
+            $message = (new Swift_Message("You got new Contact request"))
+                ->setFrom(['mikhail.kapustin@hys-enterprise.com' => 'You got new Contact request'])
+                ->setTo('kapustinomm@gmail.com')
+                ->setContentType("text/html")
+                ->setBody('You got new Contact request');
+            if (isset($_FILES['files'])) {
+                foreach (reArrayFiles($_FILES['files']) as $attachment) {
+
+                    $message->attach(
+                        Swift_Attachment::fromPath($attachment['tmp_name'])->setFilename($attachment['name'])
+                    );
+                }
+            }
+            if ($result = $mailer->send($message)) {
+                if (isset($_POST['files'])) {
+                    foreach ($_POST['files'] as $attachment) {
+                        if (file_exists($attachment['tmp_name'])) {
+                            unlink($attachment['tmp_name']);
+                        }
+                    }
+                }
+            }
+        } catch (Exception $e) {
+            //var_dump($e->getMessage(), $e->getTraceAsString());
+            $result = $e->getMessage();
+
+        }
+    }
+}
+?>
 </body>
 </html>

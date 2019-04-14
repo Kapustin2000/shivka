@@ -146,28 +146,35 @@ $(document).ready(function() {
         });
     });
 
-    $('.order-form-js').each(function() {
-        $(this).submit(function (event) {
-            event.preventDefault();
-            var formData = new FormData();
-            formData.append('file', fileCollection[0]);
+    if (window.location.search.substr(1) === 'form=success') {
+        $('#successModal').modal('show');
+    }
+    if (window.location.search.substr(1) === 'form=error') {
+        $('#errorModal').modal('show');
+    }
 
-            var request = new XMLHttpRequest();
-            request.open('post', '/wp-json/blog/v1/contact', true);
-            request.send(formData);
-
-            // $.ajax({
-            //     type: 'POST',
-            //     url: '/wp-json/blog/v1/contact',
-            //     data:   {files : fileCollection, data: $('#order-form').serializeArray()},
-            //     success: function(data) {
-            //         $('#successModal').modal('show');
-            //     },
-            //     error: function(MLHttpRequest, textStatus, errorThrown) {
-            //         $('#errorModal').modal('show');
-            //     }
-            // });
-            // return false;
-        });
-    });
+    // $('.order-form-js').each(function() {
+    //     $(this).submit(function (event) {
+    //         event.preventDefault();
+    //         var formData = new FormData();
+    //         formData.append('file', fileCollection[0]);
+    //
+    //         var request = new XMLHttpRequest();
+    //         request.open('post', '/wp-json/blog/v1/contact', true);
+    //         request.send(formData);
+    //
+    //         // $.ajax({
+    //         //     type: 'POST',
+    //         //     url: '/wp-json/blog/v1/contact',
+    //         //     data:   {files : fileCollection, data: $('#order-form').serializeArray()},
+    //         //     success: function(data) {
+    //         //         $('#successModal').modal('show');
+    //         //     },
+    //         //     error: function(MLHttpRequest, textStatus, errorThrown) {
+    //         //         $('#errorModal').modal('show');
+    //         //     }
+    //         // });
+    //         // return false;
+    //     });
+    // });
 });
