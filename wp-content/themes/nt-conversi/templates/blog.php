@@ -94,5 +94,4 @@ $data = pods('blog')->find($params);
         </div>
     </section>
 </div>
-<?php if (function_exists('wp_corenavi')) wp_corenavi($data->total_found()); ?>
 <?php get_footer(); ?>
