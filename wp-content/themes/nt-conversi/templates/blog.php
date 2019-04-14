@@ -7,12 +7,18 @@ Template Name: Blog
 <?php
 $params = array(
     'where' => shivka_filters(),
+    'orderby'=>"order_weight.meta_value +0 DESC,id DESC"
+);
+$count = pods('blog')->find($params);
+$pages_count = round(  (int) $count->total_found() /6);
+
+$params = array(
+    'where' => shivka_filters(),
     'orderby'=>"order_weight.meta_value +0 DESC,id DESC",
-    'offset' => shivka_offset(6),
+    'offset'=>(isset($_GET['pages']) && (int) $_GET['pages'] != 1 ? ((int) $_GET['pages']*6-6) : 0),
+    'limit'=>6
 );
 $data = pods('blog')->find($params);
-
-
 
 ?>
 
@@ -61,20 +67,23 @@ $data = pods('blog')->find($params);
                         <div class="row">
                             <div class="col-12">
                                 <div class="bottom">
-                                    <div class="pagination">
-                                        <a href="#" class="arrow prev-arrow">
-                                            <i class="icon icon-prev"></i>
-                                        </a>
-                                        <a href="#" class="active">1</a>
-                                        <a href="#">2</a>
-                                        <a href="#">3</a>
-                                        <a href="#">4</a>
-                                        <a href="#">5</a>
-                                        <a href="#">6</a>
-                                        <a href="#" class="arrow next-arrow">
-                                            <i class="icon icon-next"></i>
-                                        </a>
-                                    </div>
+                                    <?php if($pages_count!=1){ ?>
+                                        <div class="pagination">
+                                            <?php if(isset($_GET['pages']) && (int) $_GET['pages']!=1){ ?>
+                                                <a href="<?=$_SERVER['REQUEST_URI']?><?php echo (!isset($_GET['type']) ? '?' :'&') ?>pages=<?=(int) $_GET['pages']-1?>" class="arrow prev-arrow">
+                                                    <i class="icon icon-prev"></i>
+                                                </a>
+                                            <?php } ?>
+                                            <?php for($i=1;$i<=$pages_count;$i++){ ?>
+                                                <a href="<?=$_SERVER['REQUEST_URI']?><?php echo (!isset($_GET['type']) ? '?' :'&') ?>pages=<?=$i?>" <?php if(isset($_GET['pages']) && (int) $_GET['pages'] == $i || !isset($_GET['pages']) && $i==1) { ?> class="active" <?php } ?>><?=$i?></a>
+                                            <?php } ?>
+                                            <?php if($pages_count>1 && (!isset($_GET['pages']) || $_GET['pages']==1) || isset($_GET['pages']) && ((int) $_GET['pages'] + 1) <= $pages_count){ ?>
+                                                <a <?php if(!isset($_GET['pages'])){ ?> href="<?=$_SERVER['REQUEST_URI']?><?php echo (!isset($_GET['type']) ? '?' :'&') ?>pages=2"  <?php }else{ ?> href="<?=$_SERVER['REQUEST_URI']?>&page=<?=$_GET['pages']+1?>" <?php } ?> class="arrow next-arrow">
+                                                    <i class="icon icon-next"></i>
+                                                </a>
+                                            <?php } ?>
+                                        </div>
+                                    <?php } ?>
                                     <div class="back"></div>
                                 </div>
                             </div>

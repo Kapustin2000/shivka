@@ -58,11 +58,13 @@ if(isset($_GET['id'])) {
                                 <?php } } } ?>
                             </div>
                         </div>
+                        <?php if(!empty($data->field('gallery'))){ ?>
                         <div class="see-more eye-hover">
 <!--                            TODO: fix 404 redirect-->
                             <a href="<?=get_permalink($data->field('gallery')['ID'])?>" class="underline">смотреть больше</a>
                             <i class="icon icon-eye"></i>
                         </div>
+                        <?php } ?>
                         <a href="/works" class="back">
                             <span>
                                 <i class="icon icon-arrow"></i>
