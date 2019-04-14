@@ -79,7 +79,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                                     Your browser does not support the video tag.
                                 </video>
                                 <div class="player-controls">
-                                    <div class="video-thumbnail"></div>
+                                    <div class="video-thumbnail" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/videoblocks.jpg);"></div>
                                     <div class="progress">
                                         <div class="progress-filled"></div>
                                     </div>
