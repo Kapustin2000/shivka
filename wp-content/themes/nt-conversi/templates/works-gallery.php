@@ -42,7 +42,7 @@ if(isset($_GET['id'])) {
                         </div> 
                         <?php if(!empty($data->field('images'))){ ?>
                             <div class="work-gallery">
-                                <?php for($i=0 + ((isset($_GET['page']) && (int) $_GET['page']!=1) ? ((int) $_GET['page'] * 4 - 4) : 0);$i<((isset($_GET['page']) && (int) $_GET['page']!=1) ? ((int) $_GET['page'] * 4) : 4);$i++) {?>
+                                <?php for($i=0 + ((isset($_GET['pages']) && (int) $_GET['pages']!=1) ? ((int) $_GET['pages'] * 4 - 4) : 0);$i<((isset($_GET['pages']) && (int) $_GET['pages']!=1) ? ((int) $_GET['pages'] * 4) : 4);$i++) {?>
                                 <div class="gallery-item">
                                     <img src="<?=$data->field('images')[$i]['guid']?>" alt="<?=$data->field('images')[$i]['post_title']?>">
                                 </div>
@@ -52,16 +52,16 @@ if(isset($_GET['id'])) {
                         <div class="bottom">
                             <?php if($pages_count!=1){ ?>
                             <div class="pagination">
-                                <?php if(isset($_GET['page']) && (int) $_GET['page']!=1){ ?>
-                                <a href="<?=$_SERVER['REQUEST_URI']?>&page=<?=(int) $_GET['page']-1?>" class="arrow prev-arrow">
+                                <?php if(isset($_GET['pages']) && (int) $_GET['pages']!=1){ ?>
+                                <a href="<?=$_SERVER['REQUEST_URI']?>&page=<?=(int) $_GET['pages']-1?>" class="arrow prev-arrow">
                                     <i class="icon icon-prev"></i>
                                 </a>
                                 <?php } ?>
                                 <?php for($i=1;$i<=$pages_count;$i++){ ?>
-                                    <a href="<?=$_SERVER['REQUEST_URI']?>&page=<?=$i?>" <?php if(isset($_GET['page']) && (int) $_GET['page'] == $i || !isset($_GET['page']) && $i==1) { ?> class="active" <?php } ?>><?=$i?></a>
+                                    <a href="<?=$_SERVER['REQUEST_URI']?>&page=<?=$i?>" <?php if(isset($_GET['pages']) && (int) $_GET['pages'] == $i || !isset($_GET['pages']) && $i==1) { ?> class="active" <?php } ?>><?=$i?></a>
                                 <?php } ?>
-                                <?php if($pages_count>1 && (!isset($_GET['page']) || $_GET['page']==1) || isset($_GET['page']) && ((int) $_GET['page'] + 1) <= $pages_count){ ?>
-                                    <a <?php if(!isset($_GET['page'])){ ?> href="<?=$_SERVER['REQUEST_URI']?>&page=2"  <?php }else{ ?> href="<?=$_SERVER['REQUEST_URI']?>&page=<?=$_GET['page']+1?>" <?php } ?> class="arrow next-arrow">
+                                <?php if($pages_count>1 && (!isset($_GET['pages']) || $_GET['pages']==1) || isset($_GET['pages']) && ((int) $_GET['pages'] + 1) <= $pages_count){ ?>
+                                    <a <?php if(!isset($_GET['pages'])){ ?> href="<?=$_SERVER['REQUEST_URI']?>&page=2"  <?php }else{ ?> href="<?=$_SERVER['REQUEST_URI']?>&page=<?=$_GET['pages']+1?>" <?php } ?> class="arrow next-arrow">
                                     <i class="icon icon-next"></i>
                                 </a>
                                 <?php } ?>
