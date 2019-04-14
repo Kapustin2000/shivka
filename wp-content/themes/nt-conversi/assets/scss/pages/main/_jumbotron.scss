@@ -129,9 +129,6 @@
       width: 100%;
       height: calc(100% - 6px);
       z-index: 2;
-      &:hover + .player-button {
-        z-index: 1 !important;
-      }
     }
     .progress {
       cursor: pointer;
@@ -146,29 +143,21 @@
     .progress-filled {
       transition: width $default;
       background-color: $yellow;
+      width: 0;
       height: 100%;
     }
     .player-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: get-vw(100px);
       height: get-vw(100px);
       padding: 0;
-      border-radius: 100%;
-      background-color: transparentize($white, .5);
-      &,
-      &::after {
-        content: '▷';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: get-vw(50px);
-        color: $white;
-      }
-      &::after {
-        width: get-vw(50px);
-        height: get-vw(50px);
-        left: calc(50% + 0.26041666666vw);
-      }
+      background-image: url('../img/video-icon.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
     }
   }
 }
