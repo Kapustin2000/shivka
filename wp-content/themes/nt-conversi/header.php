@@ -32,10 +32,10 @@
 
 $params = array(
     'orderby'=>"order_weight.meta_value DESC,id DESC",
-    'limit' => 3
 );
-$services = pods('services')->find();
+$services = pods('services')->find($params);
 
+$works = pods('works')->find($params);
 ?>
 <body <?php body_class(); ?>>
 <header>
@@ -87,13 +87,17 @@ $services = pods('services')->find();
                             </li>
                             <li class="has-submenu">
                                 <a href="/works">наши работы</a>
-                                <ul class="submenu">
-                                    <li>
-                                        <a href="#">
-                                            работа
-                                        </a>
-                                    </li>
-                                </ul>
+                                <?php if($works->total_found()){ ?>
+                                    <ul class="submenu">
+                                        <?php while($works->fetch()) {?>
+                                            <li>
+                                                <a href="<?=get_permalink($works->display('id'))?>">
+                                                    <?=$works->display('post_title')?>
+                                                </a>
+                                            </li>
+                                        <?php } ?>
+                                    </ul>
+                                <?php } ?>
                             </li>
                             <li>
                                 <a href="/about">о нас</a>
