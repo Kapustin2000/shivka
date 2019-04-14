@@ -48,10 +48,27 @@ $(document).ready(function() {
     });
 
     //if video player is active
-    var player = '';
-    if (player.length) {
-        console.log('player');
-    }
+    var player = $('.video-carousel');
+    var video = player.find('video')[0];
+    var progress = player.find('.progress');
+    var progressBar = player.find('.progress-filled');
+    var playButton = player.find('.player-button');
+    var thumbnail = player.find('.video-thumbnail');
+    // console.log(video);
+
+    playButton.on('click', function() {
+        // var method = video.paused ? 'play' : 'pause';
+        // video[method]();
+        if (video.paused) {
+            thumbnail.css('z-index', '-1');
+            playButton.css('z-index', '-1');
+            video.play();
+        } else {
+            thumbnail.css('z-index', '1');
+            playButton.css('z-index', '1');
+            video.pause();
+        }
+    });
 
     //---
     var relatedSlider = $('#related-slider');

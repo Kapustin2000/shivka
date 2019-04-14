@@ -844,8 +844,8 @@ footer {
     position: absolute;
     top: 2.60417vw;
     right: 0.78125vw;
-    width: 68vw;
-    height: 36vw; }
+    width: 64.73958vw;
+    height: 36.45833vw; }
     .jumbotron .main-slider::after,
     .jumbotron .video-carousel::after {
       content: '';
@@ -901,6 +901,33 @@ footer {
     background-position: center center;
     width: 100%;
     height: 100%; }
+  .jumbotron .video-carousel:hover .player-button {
+    z-index: 1 !important; }
+  .jumbotron .video-carousel .video-thumbnail {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #3b2f5c; }
+  .jumbotron .video-carousel .player-controls {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .jumbotron .video-carousel .player-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 2.60417vw; }
+
+::-webkit-media-controls {
+  display: none; }
 
 @-webkit-keyframes myMove-1 {
   1.04167%, 32.29167% {

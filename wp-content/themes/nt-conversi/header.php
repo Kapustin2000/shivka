@@ -37,7 +37,7 @@ $params = array(
 $services = pods('services')->find();
 
 ?>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> ontouchstart="">
 <header>
     <div class="container">
         <div class="row">
