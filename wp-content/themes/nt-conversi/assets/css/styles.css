@@ -28,7 +28,8 @@ html {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   overflow-x: hidden;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-filter: blur(0px); }
 
 body {
   margin: 0;
@@ -122,16 +123,20 @@ textarea {
   transition: 0.3s ease-in-out; }
   input::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder {
-    color: #fff; }
+    color: #fff;
+    opacity: 1; }
   input:-ms-input-placeholder,
   textarea:-ms-input-placeholder {
-    color: #fff; }
+    color: #fff;
+    opacity: 1; }
   input::-ms-input-placeholder,
   textarea::-ms-input-placeholder {
-    color: #fff; }
+    color: #fff;
+    opacity: 1; }
   input::placeholder,
   textarea::placeholder {
-    color: #fff; }
+    color: #fff;
+    opacity: 1; }
   input:focus,
   textarea:focus {
     outline: none; }
@@ -1788,7 +1793,11 @@ footer {
       display: block;
       margin-right: 1.30208vw;
       width: 2.60417vw;
+      min-width: 2.60417vw;
+      max-width: 2.60417vw;
       height: 2.60417vw;
+      min-height: 2.60417vw;
+      max-height: 2.60417vw;
       border-radius: 100%;
       background-color: #3b2f5c; }
       .smarthoop-about .socials .social-wrap a:hover {

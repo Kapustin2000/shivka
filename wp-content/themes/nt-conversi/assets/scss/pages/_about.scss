@@ -69,7 +69,11 @@
                 display: block;
                 margin-right: get-vw(25px);
                 width: get-vw(50px);
+                min-width: get-vw(50px);
+                max-width: get-vw(50px);
                 height: get-vw(50px);
+                min-height: get-vw(50px);
+                max-height: get-vw(50px);
                 border-radius: 100%;
                 background-color: $violet;
                 &:hover {

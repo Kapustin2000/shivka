@@ -18,6 +18,7 @@ html {
   touch-action: manipulation;
   overflow-x: hidden;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-filter: blur(0.000001px);
 }
 
 body {
@@ -136,6 +137,7 @@ textarea {
   transition: $default;
   &::placeholder {
     color: $white;
+    opacity: 1;
   }
   &:focus {
     outline: none;
