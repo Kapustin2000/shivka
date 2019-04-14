@@ -146,10 +146,10 @@ $(document).ready(function() {
         });
     });
 
-    if (window.location.search.substr(1) === 'form=success') {
+    if (window.location.search.match(/form=success/)) {
         $('#successModal').modal('show');
     }
-    if (window.location.search.substr(1) === 'form=error') {
+    if (window.location.search.match(/form=error/)) {
         $('#errorModal').modal('show');
     }
 

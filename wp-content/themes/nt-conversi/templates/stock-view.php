@@ -87,10 +87,9 @@ if(isset($_GET['id'])) {
                         <div class="form-inner-wrap">
                             <h2>название акции</h2>
 <!--                            TODO: date from BE-->
-                            <p>с 20.05.2018 по 20.06.2018</p>
-<!--                            <p>С --><?//=date("d.m.Y", strtotime($data->display('start_date')));?><!-- по --><?//=date("d.m.Y", strtotime($data->display('end_date')));?><!--</p>-->
+                            <p>С <?=date("d.m.Y", strtotime($data->display('start_date')));?> по <?=date("d.m.Y", strtotime($data->display('end_date')));?></p>
                         </div>
-                        <form action="#" id="order-form" class="order-form active" enctype="multipart/form-data" method="post">
+                        <form action="<?=$_SERVER['REQUEST_URI']?>&form=success" id="order-form" class="order-form active" enctype="multipart/form-data" method="post">
                             <div class="row">
                                 <!-- <div class="col-lg-6 col-xs-12">-->
                                 <div class="col-6">
