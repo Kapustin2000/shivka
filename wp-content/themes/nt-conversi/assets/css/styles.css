@@ -1255,7 +1255,7 @@ footer {
     padding: 2.60417vw 5.20833vw; }
     .make-order form:not(.active) {
       display: none; }
-    .make-order form input, .make-order form textarea, .make-order form button, .make-order form .form-element {
+    .make-order form input, .make-order form textarea, .make-order form button {
       width: 100%;
       margin-bottom: 2.60417vw; }
     .make-order form textarea {
