@@ -902,8 +902,6 @@ footer {
     background-position: center center;
     width: 100%;
     height: 100%; }
-  .jumbotron .video-carousel:hover .player-button {
-    z-index: 1 !important; }
   .jumbotron .video-carousel video {
     cursor: pointer; }
   .jumbotron .video-carousel .video-thumbnail {
@@ -920,6 +918,16 @@ footer {
     position: absolute;
     top: 0;
     left: 0; }
+  .jumbotron .video-carousel .toggler {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 6px);
+    z-index: 2; }
+    .jumbotron .video-carousel .toggler:hover + .player-button {
+      z-index: 1 !important; }
   .jumbotron .video-carousel .progress {
     cursor: pointer;
     position: absolute;

@@ -83,6 +83,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                                     <div class="progress">
                                         <div class="progress-filled"></div>
                                     </div>
+                                    <div class="toggler"></div>
                                     <button class="player-button"></button>
                                 </div>
                             </div>
@@ -195,6 +196,40 @@ $stages_of_work = pods('stages_of_work')->find($params);
         </div>
     </section>
 </div>
-<?php //if (function_exists('wp_corenavi')) wp_corenavi(); ?>
+<script>
+    var player = document.querySelector('.video-carousel');
+    var video = player.querySelector('.video-player');
+    var progress = player.querySelector('.progress');
+    var progressBar = player.querySelector('.progress-filled');
+    var playButton = player.querySelector('.player-button');
+    var thumbnail = player.querySelector('.video-thumbnail');
+    var toggler = player.querySelector('.toggler');
+
+    var togglePlay = function() {
+        if (video.paused) {
+            thumbnail.style.zIndex = '-1';
+            playButton.style.zIndex = '-1';
+            video.play();
+        } else {
+            thumbnail.style.zIndex = '1';
+            playButton.style.zIndex = '1';
+            video.pause();
+        }
+    };
+
+    var handleProgress = function() {
+        const percent = (video.currentTime / video.duration) * 100;
+        progressBar.style.width = percent+'%';
+    };
+
+    var scrub = function(e) {
+        const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
+        video.currentTime = scrubTime;
+    };
+
+    toggler.addEventListener('click', togglePlay);
+    video.addEventListener('timeupdate', handleProgress);
+    progress.addEventListener('click', scrub);
+</script>
 
 <?php get_footer(); ?>

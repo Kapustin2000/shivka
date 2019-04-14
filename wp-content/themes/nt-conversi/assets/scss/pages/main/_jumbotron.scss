@@ -102,11 +102,6 @@
     }
   }
   .video-carousel {
-    &:hover {
-      .player-button {
-        z-index: 1 !important;
-      }
-    }
     video {
       cursor: pointer;
     }
@@ -125,6 +120,18 @@
       position: absolute;
       top: 0;
       left: 0;
+    }
+    .toggler {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 6px);
+      z-index: 2;
+      &:hover + .player-button {
+        z-index: 1 !important;
+      }
     }
     .progress {
       cursor: pointer;
