@@ -209,10 +209,12 @@ $stages_of_work = pods('stages_of_work')->find($params);
         if (video.paused) {
             thumbnail.style.zIndex = '-1';
             playButton.style.zIndex = '-1';
+            video.style.zIndex = '3';
             video.play();
         } else {
             thumbnail.style.zIndex = '1';
             playButton.style.zIndex = '1';
+            video.style.zIndex = '-1';
             video.pause();
         }
     };
