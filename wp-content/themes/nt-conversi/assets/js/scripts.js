@@ -47,29 +47,6 @@ $(document).ready(function() {
         $this.children('.submenu').fadeOut();
     });
 
-    //if video player is active
-    var player = $('.video-carousel');
-    var video = player.find('video')[0];
-    var progress = player.find('.progress');
-    var progressBar = player.find('.progress-filled');
-    var playButton = player.find('.player-button');
-    var thumbnail = player.find('.video-thumbnail');
-    // console.log(video);
-
-    playButton.on('click', function() {
-        // var method = video.paused ? 'play' : 'pause';
-        // video[method]();
-        if (video.paused) {
-            thumbnail.css('z-index', '-1');
-            playButton.css('z-index', '-1');
-            video.play();
-        } else {
-            thumbnail.css('z-index', '1');
-            playButton.css('z-index', '1');
-            video.pause();
-        }
-    });
-
     //---
     var relatedSlider = $('#related-slider');
     if (relatedSlider.length) {
@@ -193,8 +170,45 @@ $(document).ready(function() {
             // return false;
         });
     });
-
-
-
 });
+
+//if video player is active
+var player = document.querySelector('.video-carousel');
+var video = player.querySelector('.video-player');
+var progress = player.querySelector('.progress');
+var progressBar = player.querySelector('.progress-filled');
+var playButton = player.querySelector('.player-button');
+var thumbnail = player.querySelector('.video-thumbnail');
+// console.log(video);
+
+var togglePlay = function() {
+    if (video.paused) {
+        thumbnail.style.zIndex = '-1';
+        playButton.style.zIndex = '-1';
+        // thumbnail.css('z-index', '-1');
+        // playButton.css('z-index', '-1');
+        video.play();
+    } else {
+        thumbnail.style.zIndex = '1';
+        playButton.style.zIndex = '1';
+        // thumbnail.css('z-index', '1');
+        // playButton.css('z-index', '1');
+        video.pause();
+    }
+};
+
+var handleProgress = function() {
+    const percent = (video.currentTime / video.duration) * 100;
+    progressBar.style.width = percent+'%';
+};
+
+var scrub = function(e) {
+    const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
+    video.currentTime = scrubTime;
+};
+
+thumbnail.addEventListener('click', togglePlay);
+playButton.addEventListener('click', togglePlay);
+video.addEventListener('timeupdate', handleProgress);
+progress.addEventListener('click', scrub);
 

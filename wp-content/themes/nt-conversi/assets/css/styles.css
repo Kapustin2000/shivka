@@ -904,7 +904,10 @@ footer {
     height: 100%; }
   .jumbotron .video-carousel:hover .player-button {
     z-index: 1 !important; }
+  .jumbotron .video-carousel video {
+    cursor: pointer; }
   .jumbotron .video-carousel .video-thumbnail {
+    cursor: pointer;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -918,15 +921,20 @@ footer {
     top: 0;
     left: 0; }
   .jumbotron .video-carousel .progress {
+    cursor: pointer;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0.3125vw;
-    min-height: 3px;
-    opacity: .5;
-    background-color: #fff;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.5);
     z-index: 2; }
+  .jumbotron .video-carousel .progress-filled {
+    -webkit-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    background-color: #f2ebc0;
+    height: 100%; }
   .jumbotron .video-carousel .player-button {
     width: 5.20833vw;
     height: 5.20833vw;

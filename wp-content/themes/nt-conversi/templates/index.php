@@ -74,12 +74,12 @@ $stages_of_work = pods('stages_of_work')->find($params);
                             <?=$settings->display('video')?>
                             <div class="video-carousel">
                                 <div class="decorative lavander"></div>
-                                <div class="video-thumbnail"></div>
-                                <video width="100%" height="100%" controls="false">
+                                <video width="100%" height="100%" controls="false" class="video-player">
                                     <source src="<?php bloginfo('template_url'); ?>/video/smarthoop.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                                 <div class="player-controls">
+                                    <div class="video-thumbnail"></div>
                                     <div class="progress">
                                         <div class="progress-filled"></div>
                                     </div>
