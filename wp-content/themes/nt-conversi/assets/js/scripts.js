@@ -119,18 +119,11 @@ $(document).ready(function() {
         });
     });
 
-    //
-    // var gallery = $('#gallery');
-    // gallery.find('a').each(function(e) {
-    //     e.preventDefault();
-    // });
-    // if (gallery.length) {
-    //     gallery.magnificPopup({
-    //         delegate: 'a', // child items selector, by clicking on it popup will open
-    //         type: 'image'
-    //         // other options
-    //     });
-    // }
+    $('.work-gallery').masonry({
+        itemSelector : '.gallery-item',
+        gutter: 50,
+        percentPosition: true
+    });
 
     var fileCollection = [];
 
@@ -146,7 +139,6 @@ $(document).ready(function() {
         });
     });
 
-    console.log(window.location.search);
     if (window.location.search.match(/form=success/)) {
         $('#successModal').modal('show');
     }
