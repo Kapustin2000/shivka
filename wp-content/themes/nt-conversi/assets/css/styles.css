@@ -684,7 +684,7 @@ footer {
   color: #3b2f5c;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 0.72917vw;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 1.30208vw; }
   footer .inner-wrap {
     display: -webkit-box;
@@ -724,7 +724,7 @@ footer {
     footer .social-wrap .icon {
       position: absolute; }
   footer h4 {
-    font-family: 'Uni Sans Thin Caps', sans-serif;
+    font-family: 'Uni Sans Heavy Caps', sans-serif;
     font-size: 0.83333vw;
     font-weight: bold;
     margin-bottom: 0.9375vw;
@@ -734,14 +734,18 @@ footer {
     footer a:hover {
       text-decoration: underline; }
   footer p {
-    font-size: 0.72917vw; }
+    font-size: 0.72917vw;
+    font-weight: 600; }
   footer form .form-group {
     position: relative; }
     footer form .form-group input {
-      width: 20.83333vw; }
+      width: 20.83333vw;
+      font-weight: 600;
+      padding-right: 10.9375vw; }
     footer form .form-group button {
       width: 10.41667vw;
       position: absolute;
+      font-weight: 600;
       top: 0;
       right: 0;
       background-color: #fff;
@@ -760,7 +764,7 @@ footer {
       width: 100%; }
     footer .footer-nav a {
       position: relative;
-      font-family: 'Uni Sans Thin Caps', sans-serif;
+      font-family: 'Uni Sans Heavy Caps', sans-serif;
       font-size: 0.83333vw;
       font-weight: bold;
       line-height: 1.30208vw;
@@ -2366,6 +2370,13 @@ footer {
 
 .wrap {
   display: none !important; }
+
+.default-section {
+  margin-top: 10.41667vw; }
+  .default-section + .make-order {
+    display: none; }
+  .default-section p + h4 {
+    margin-top: 4.16667vw; }
 
 .tabs-wrap {
   display: -webkit-box;

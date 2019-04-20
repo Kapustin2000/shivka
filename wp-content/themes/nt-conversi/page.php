@@ -34,36 +34,34 @@
 
     <?php get_template_part( 'index-header' ); ?>
 
-    <section id="blog">
-        <div class="container has-margin-bottom">
-            <div class="container-mx">
-                <div class="row">
-                    <div class="col-md-8 col-xs-12">
-                        <?php  if( ( $nt_conversi_disable_title ) != true ): ?>
-                            <?php  if( $nt_conversi_page_title  ): ?>
-                                <h2 class="text-night-blue"><?php echo esc_html( $nt_conversi_page_title ) ; ?></h2>
-                            <?php else : ?>
-                                <h2 class="text-night-blue"><?php echo the_title(); ?></h2>
-                            <?php endif; ?>
+    <section class="default-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <?php  if( ( $nt_conversi_disable_title ) != true ): ?>
+                        <?php  if( $nt_conversi_page_title  ): ?>
+                            <h1> <span><?php echo esc_html( $nt_conversi_page_title ) ; ?></span> </h1>
+                        <?php else : ?>
+                            <h1> <span><?php echo the_title(); ?></span> </h1>
                         <?php endif; ?>
+                    <?php endif; ?>
 
-                        <div class="content-editable">
-                            <?php
-                            // Start the loop.
-                            while ( have_posts() ) : the_post();
+                    <div class="content-editable">
+                        <?php
+                        // Start the loop.
+                        while ( have_posts() ) : the_post();
 
-                                // Include the page content template.
-                                get_template_part( 'content', 'page' );
+                            // Include the page content template.
+                            get_template_part( 'content', 'page' );
 
-                                // If comments are open or we have at least one comment, load up the comment template.
-                                if ( comments_open() || get_comments_number() ) :
-                                    comments_template();
-                                endif;
+                            // If comments are open or we have at least one comment, load up the comment template.
+                            if ( comments_open() || get_comments_number() ) :
+                                comments_template();
+                            endif;
 
-                                // End the loop.
-                            endwhile;
-                            ?>
-                        </div>
+                            // End the loop.
+                        endwhile;
+                        ?>
                     </div>
                 </div>
             </div>
