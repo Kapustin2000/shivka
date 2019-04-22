@@ -3,7 +3,7 @@
   border: get-vw(15px) solid $violet;
   transform: translate(get-vw(50px), get-vw(50px));
   z-index: 1;
-  background-color: $white;
+  background-color: transparent;
   &::before {
     left: 0;
     color: $violet;

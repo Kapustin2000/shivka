@@ -1,8 +1,8 @@
 footer {
   color: $violet;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: get-vw(14px);
-  font-weight: 600;
+  font-size: get-vw(16px);
+  font-weight: 400;
   line-height: get-vw(25px);
   .inner-wrap {
     display: flex;
@@ -44,7 +44,7 @@ footer {
     }
   }
   h4 {
-    font-family: 'Uni Sans Heavy Caps', sans-serif;
+    font-family: 'Uni Sans Thin Caps', sans-serif;
     font-size: get-vw(16px);
     font-weight: bold;
     margin-bottom: get-vw(18px);
@@ -58,20 +58,20 @@ footer {
   }
   p {
     font-size: get-vw(14px);
-    font-weight: 600;
+    font-weight: 400;
   }
   form {
     .form-group {
       position: relative;
       input {
         width: get-vw(400px);
-        font-weight: 600;
+        font-weight: 400;
         padding-right: get-vw(210px);
       }
       button {
         width: get-vw(200px);
         position: absolute;
-        font-weight: 600;
+        font-weight: 400;
         top: 0;
         right: 0;
         background-color: $white;
@@ -90,7 +90,7 @@ footer {
     }
     a {
       position: relative;
-      font-family: 'Uni Sans Heavy Caps', sans-serif;
+      font-family: 'Uni Sans Thin Caps', sans-serif;
       font-size: get-vw(16px);
       font-weight: bold;
       line-height: get-vw(25px);

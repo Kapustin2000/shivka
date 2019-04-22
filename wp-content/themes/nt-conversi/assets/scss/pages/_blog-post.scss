@@ -42,7 +42,7 @@
       left: 0;
       box-shadow: 0 0 get-vw(50px) rgba(0, 0, 0, .15);
       padding: get-vw(100px) get-vw(115px) get-vw(130px) get-vw(100px);
-      overflow-y: hidden;
+      overflow-y: auto;
     }
   }
   .blog-description {

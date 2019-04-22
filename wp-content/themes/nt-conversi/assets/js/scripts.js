@@ -77,10 +77,10 @@ $(document).ready(function() {
             data: { action : 'shivka_Subscribe_Save_AJAX', data: $('#subscribe-form').serializeArray()},
             cache: true,
             success: function(data) {
-                console.log('success');
+                $('#successModal').modal('show');
             },
             error: function(MLHttpRequest, textStatus, errorThrown) {
-                console.log(errorThrown);
+                $('#errorModal').modal('show');
             }
         });
     });
