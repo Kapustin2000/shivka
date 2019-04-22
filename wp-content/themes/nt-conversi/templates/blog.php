@@ -57,7 +57,7 @@ $data = pods('blog')->find($params);
                                             <div class="blog-title"><?=$data->display('post_title')?></div>
                                             <p><?=$data->display('post_content')?></p>
                                         </div>
-                                        <button type="button" class="btn btn-primary">смотреть</button>
+                                        <button type="button" class="btn btn-primary">подробнее</button>
                                     </a>
                                 </div>
                             <?php } ?>

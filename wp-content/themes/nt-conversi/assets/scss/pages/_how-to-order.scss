@@ -63,6 +63,9 @@
                     height: get-vw(575px);
                 }
             }
+            &:nth-child(4) {
+                margin-bottom: get-vw(100px);
+            }
             &:nth-child(5) {
                 img {
                     top: calc(100% + 3.38541666667vw);

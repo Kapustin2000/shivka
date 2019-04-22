@@ -112,7 +112,10 @@ $works = pods('works')->find($params);
                                 <a href="/stock">акции</a>
                             </li>
                             <li>
-                                <a href="/contacts">доставка и оплата</a>
+                                <a href="/shipping">доставка и оплата</a>
+                            </li>
+                            <li>
+                                <a href="/how-to-order">Как заказать</a>
                             </li>
                             <li>
                                 <a href="/contacts">контакты</a>

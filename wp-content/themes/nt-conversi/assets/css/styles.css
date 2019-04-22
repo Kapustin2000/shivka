@@ -506,6 +506,14 @@ header {
       height: 1.30208vw;
       padding: 0;
       z-index: 100; }
+      header .navbar-toggler.active::before {
+        content: '';
+        position: absolute;
+        top: -1.04167vw;
+        left: -1.04167vw;
+        width: calc(100% + 2.08333333333vw);
+        height: calc(100% + 2.08333333333vw);
+        background-color: #fff; }
       header .navbar-toggler.active .navbar-toggler-icon {
         background-color: transparent; }
         header .navbar-toggler.active .navbar-toggler-icon::before {
@@ -582,13 +590,15 @@ header {
     top: 0;
     right: -52.08333vw;
     background-color: #fff;
-    -webkit-box-shadow: 0 0 2.60417vw rgba(0, 0, 0, 0.15);
-    box-shadow: 0 0 2.60417vw rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: -1.30208vw 0 2.60417vw rgba(0, 0, 0, 0.15);
+    box-shadow: -1.30208vw 0 2.60417vw rgba(0, 0, 0, 0.15);
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out; }
+    transition: 0.3s ease-in-out;
+    padding-right: 1.5625vw;
+    overflow: hidden auto; }
     header .menu-toggle.active {
-      right: 0; }
+      right: -1.5625vw; }
     header .menu-toggle::after {
       content: '';
       position: absolute;
@@ -1723,6 +1733,8 @@ footer {
         left: -0.78125vw;
         width: 29.94792vw;
         height: 29.94792vw; }
+      .smarthoop-how-to-order .steps .step:nth-child(4) {
+        margin-bottom: 5.20833vw; }
       .smarthoop-how-to-order .steps .step:nth-child(5) img {
         top: calc(100% + 3.38541666667vw);
         left: -0.78125vw;
