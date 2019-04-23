@@ -31,6 +31,10 @@ body {
   overflow: hidden;
 }
 
+.hidden {
+  display: none !important;
+}
+
 ul {
   margin: 0;
   padding: 0;

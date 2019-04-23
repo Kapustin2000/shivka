@@ -153,23 +153,20 @@ $(document).ready(function() {
         if (typeof(total) === 'undefined' || total === null) {
             total = 0;
         }
-        var domain;
-        if (param) {
-            domain = $(location).attr('protocol') + '//' + $(location).attr('hostname') + '/wp-admin/admin-ajax.php?type=' + param;
-        } else {
-            domain = $(location).attr('protocol') + '//' + $(location).attr('hostname') + '/wp-admin/admin-ajax.php?';
-        }
+        var domain = $(location).attr('protocol') + '//' + $(location).attr('hostname') + '/wp-admin/admin-ajax.php?';
         var url = domain + (window.location.href.split('?').pop() !== window.location.href ? window.location.href.split('?').pop() : '');
         var state = 'inactive';
         var initialLimit = 9;
         var limit = 9;
         var offset = initialLimit;
-
         var loadButton = button;
+
+        if (state === 'inactive') {
+            load_data(0, initialLimit);
+        }
 
         function load_data(offset, limit) {
             if (total === 0) {
-                $('.ajax-call').append('<div class="col-12"><h3>Нет данных</h3></div>');
                 loadButton.addClass('hidden');
                 return;
             }
@@ -198,31 +195,30 @@ $(document).ready(function() {
             });
         }
 
-        if (state === 'inactive') {
-            load_data(0, initialLimit);
-            // state = 'active';
+
+        if (total < initialLimit || total < offset) {
+            loadButton.addClass('hidden');
+            return;
         }
 
-        (function mobile_loading() {
-            if (total < initialLimit || total < offset) {
-                loadButton.addClass('hidden');
-                return;
-            }
-            loadButton.on('click', function() {
-                if (state === 'inactive'
-                    && total !== 0) {
-                    load_data(offset, limit);
-                    state = 'active';
-                    offset += limit;
-                    if (total < offset + limit) {
-                        loadButton.addClass('hidden');
-                    }
+        loadButton.on('click', function() {
+            if (state === 'inactive'
+                && total !== 0) {
+                load_data(offset, limit);
+                state = 'active';
+                offset += limit;
+                if (total < offset + limit) {
+                    loadButton.addClass('hidden');
                 }
-            });
-        })();
+            }
+        });
 
     }
-    console.log($('#services-ajax').prop('[data-total]'));
-    inifite_loading('shivka_SERVICESAjax', $('#services-ajax').prop('[data-total]'), $('#services-ajax'));
+
+    var callServicesButton = $('#services-ajax');
+    inifite_loading('shivka_SERVICESAjax', callServicesButton.attr('data-total'), callServicesButton);
+
+    var callWorksButton = $('#works-ajax');
+    inifite_loading('shivka_WORKSAjax', callWorksButton.attr('data-total'), callWorksButton);
 
 });

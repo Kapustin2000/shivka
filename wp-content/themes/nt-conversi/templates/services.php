@@ -28,21 +28,9 @@ $data = pods('services')->find($params);
                     <div class="decorative yellow"></div>
                     <div class="decorative lavander"></div>
                     <div class="row ajax-call">
-                        <?php  while($data->fetch()){?>
-<!--                            <div class="col-lg-4 col-12">-->
-                            <div class="col-4">
-                                <a href="<?=get_permalink($data->display('id'))?>" class="service-item">
-                                    <div class="service-img-wrap">
-                                        <div class="service-img" style=" background-image: url( <?=$data->display('preview')?>);"></div>
-                                    </div>
-                                    <div class="service-title"><?=$data->display('post_title')?></div>
-                                    <button type="button" class="btn btn-primary">смотреть</button>
-                                </a>
-                            </div>
-                        <?php } ?>
                     </div>
-                    <div id="services-ajax" class="see-more eye-hover">
-                        <a href="/" class="underline">смотреть больше</a>
+                    <div class="see-more eye-hover" id="services-ajax" data-total="<?=$total_found?>">
+                        <span class="underline">смотреть больше</span>
                         <i class="icon icon-eye"></i>
                     </div>
                 </div>
