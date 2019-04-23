@@ -41,7 +41,7 @@ $data = pods('services')->find($params);
                             </div>
                         <?php } ?>
                     </div>
-                    <div class="see-more eye-hover ajax-call-button">
+                    <div id="services-ajax" class="see-more eye-hover">
                         <a href="/" class="underline">смотреть больше</a>
                         <i class="icon icon-eye"></i>
                     </div>

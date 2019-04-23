@@ -222,7 +222,7 @@ $(document).ready(function() {
         })();
 
     }
-
-    inifite_loading('shivka_WORKSAjax', 18, '.ajax-call-button')
+    console.log($('#services-ajax').prop('[data-total]'));
+    inifite_loading('shivka_SERVICESAjax', $('#services-ajax').prop('[data-total]'), $('#services-ajax'));
 
 });
