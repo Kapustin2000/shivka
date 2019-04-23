@@ -394,6 +394,20 @@ add_action('wp_ajax_nopriv_shivka_SERVICESAjax', 'shivka_SERVICESAjax');
 add_action('wp_ajax_shivka_SERVICESAjax', 'shivka_SERVICESAjax');
 
 
+
+
+function shivka_WORKSAjax()
+{
+	get_template_part('templates/works-block');
+	exit;
+
+}
+
+// creating Ajax call for WordPress
+add_action('wp_ajax_nopriv_shivka_WORKSAjax', 'shivka_WORKSAjax');
+add_action('wp_ajax_shivka_WORKSAjax', 'shivka_WORKSAjax');
+
+
 function shivka_escapeParam($id){
     return addslashes_gpc($id);
 }
