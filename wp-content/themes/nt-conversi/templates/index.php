@@ -10,13 +10,6 @@ Template Name: Home
 $settings = pods('home_ui')->find();
 
 
-$params = array(
-    'orderby'=>"order_weight.meta_value DESC,id DESC",
-    'limit' => 1
-);
-$sliders = pods('home_sliders')->find($params);
-
-
 
 $params = array(
     'orderby'=>"order_weight.meta_value DESC,id DESC",
@@ -75,7 +68,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                             <div class="video-carousel">
                                 <div class="decorative lavander"></div>
                                 <video width="100%" height="100%" class="video-player">
-                                    <source src="<?php bloginfo('template_url'); ?>/video/smarthoop.mp4" type="video/mp4">
+                                    <source src="<?=$settings->display('video')?>" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                                 <div class="player-controls">
