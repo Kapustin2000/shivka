@@ -27,7 +27,7 @@ $data = pods('services')->find($params);
                     </h1>
                     <div class="decorative yellow"></div>
                     <div class="decorative lavander"></div>
-                    <div class="row">
+                    <div class="row ajax-call">
                         <?php  while($data->fetch()){?>
 <!--                            <div class="col-lg-4 col-12">-->
                             <div class="col-4">
@@ -41,7 +41,7 @@ $data = pods('services')->find($params);
                             </div>
                         <?php } ?>
                     </div>
-                    <div class="see-more eye-hover">
+                    <div class="see-more eye-hover ajax-call-button">
                         <a href="/" class="underline">смотреть больше</a>
                         <i class="icon icon-eye"></i>
                     </div>
