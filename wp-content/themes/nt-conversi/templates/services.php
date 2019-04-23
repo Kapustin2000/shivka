@@ -9,8 +9,8 @@ Template Name: Services
 $params = array(
     'where' => shivka_filters(),
     'orderby'=>"order_weight.meta_value DESC,id DESC",
-    'offset' => shivka_offset(9),
 );
+$total_found = pods('services')->find()->total_found();
 $data = pods('services')->find($params);
 
 ?>
