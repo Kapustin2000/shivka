@@ -40,12 +40,11 @@
 
 .work-gallery {
   .gallery-item {
-    max-width: 545px;
     display: inline-block;
-    width: 50%;
-    margin-bottom: get-vw(50px);
+    margin-bottom: 50px;
+    width: calc(50% - 25px);
     &:first-child {
-      margin-top: get-vw(50px);
+      margin-top: 50px;
     }
     //&:nth-child(odd) {
     //  margin-right: get-vw(50px);
@@ -57,9 +56,6 @@
     }
   }
 }
-
-.grid-sizer { width: 50%; }
-
 
 //.work-gallery {
 //  width: get-vw(775px);

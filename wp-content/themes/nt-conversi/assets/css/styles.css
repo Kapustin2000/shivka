@@ -506,14 +506,6 @@ header {
       height: 1.30208vw;
       padding: 0;
       z-index: 100; }
-      header .navbar-toggler.active::before {
-        content: '';
-        position: absolute;
-        top: -1.04167vw;
-        left: -1.04167vw;
-        width: calc(100% + 2.08333333333vw);
-        height: calc(100% + 2.08333333333vw);
-        background-color: #fff; }
       header .navbar-toggler.active .navbar-toggler-icon {
         background-color: transparent; }
         header .navbar-toggler.active .navbar-toggler-icon::before {
@@ -594,9 +586,11 @@ header {
     box-shadow: -1.30208vw 0 2.60417vw rgba(0, 0, 0, 0.15);
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    padding-right: 1.5625vw;
-    overflow: hidden auto; }
+    transition: 0.3s ease-in-out; }
+    header .menu-toggle > ul {
+      height: 90%;
+      overflow: hidden auto;
+      padding-right: 1.5625vw; }
     header .menu-toggle.active {
       right: -1.5625vw; }
     header .menu-toggle::after {
@@ -2258,19 +2252,15 @@ footer {
     margin: 0; }
 
 .work-gallery .gallery-item {
-  max-width: 545px;
   display: inline-block;
-  width: 50%;
-  margin-bottom: 2.60417vw; }
+  margin-bottom: 50px;
+  width: calc(50% - 25px); }
   .work-gallery .gallery-item:first-child {
-    margin-top: 2.60417vw; }
+    margin-top: 50px; }
   .work-gallery .gallery-item img {
     width: 100%;
     height: auto;
     display: block; }
-
-.grid-sizer {
-  width: 50%; }
 
 .bottom {
   display: -webkit-box;

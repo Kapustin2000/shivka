@@ -27,15 +27,6 @@ header {
       padding: 0;
       z-index: 100;
       &.active {
-        &::before {
-          content: '';
-          position: absolute;
-          top: get-vw(-20px);
-          left: get-vw(-20px);
-          width: calc(100% + 2.08333333333vw);
-          height: calc(100% + 2.08333333333vw);
-          background-color: $white;
-        }
         .navbar-toggler-icon {
           background-color: transparent;
           &::before {
@@ -126,8 +117,11 @@ header {
     background-color: $white;
     box-shadow: get-vw(-25px) 0 get-vw(50px) rgba(0, 0, 0, .15);
     transition: $default;
-    padding-right: get-vw(30px);
-    overflow: hidden auto;
+    & > ul {
+      height: 90%;
+      overflow: hidden auto;
+      padding-right: get-vw(30px);
+    }
     &.active {
       right: get-vw(-30px);
     }
