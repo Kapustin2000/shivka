@@ -185,6 +185,9 @@ $(document).ready(function() {
                         $('.ajax-call').append(data);
                         state = 'inactive';
                     }
+                    if (total <= offset + limit) {
+                        loadButton.addClass('hidden');
+                    }
                 },
                 error: function(MLHttpRequest, textStatus, errorThrown) {
                     if (!offset) {
@@ -198,18 +201,17 @@ $(document).ready(function() {
 
         if (total < initialLimit || total < offset) {
             loadButton.addClass('hidden');
-            return;
         }
 
         loadButton.on('click', function() {
+            if (total <= offset + limit) {
+                loadButton.addClass('hidden');
+            }
             if (state === 'inactive'
                 && total !== 0) {
                 load_data(offset, limit);
                 state = 'active';
                 offset += limit;
-                if (total < offset + limit) {
-                    loadButton.addClass('hidden');
-                }
             }
         });
 
