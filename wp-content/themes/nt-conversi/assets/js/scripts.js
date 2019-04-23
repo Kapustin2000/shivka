@@ -146,28 +146,83 @@ $(document).ready(function() {
         $('#errorModal').modal('show');
     }
 
-    // $('.order-form-js').each(function() {
-    //     $(this).submit(function (event) {
-    //         event.preventDefault();
-    //         var formData = new FormData();
-    //         formData.append('file', fileCollection[0]);
-    //
-    //         var request = new XMLHttpRequest();
-    //         request.open('post', '/wp-json/blog/v1/contact', true);
-    //         request.send(formData);
-    //
-    //         // $.ajax({
-    //         //     type: 'POST',
-    //         //     url: '/wp-json/blog/v1/contact',
-    //         //     data:   {files : fileCollection, data: $('#order-form').serializeArray()},
-    //         //     success: function(data) {
-    //         //         $('#successModal').modal('show');
-    //         //     },
-    //         //     error: function(MLHttpRequest, textStatus, errorThrown) {
-    //         //         $('#errorModal').modal('show');
-    //         //     }
-    //         // });
-    //         // return false;
-    //     });
-    // });
+    function inifite_loading(action, total, button) {
+        if (typeof(action) === 'undefined' || action === null) {
+            action = '';
+        }
+        if (typeof(total) === 'undefined' || total === null) {
+            total = 0;
+        }
+        var domain;
+        if (param) {
+            domain = $(location).attr('protocol') + '//' + $(location).attr('hostname') + '/wp-admin/admin-ajax.php?type=' + param;
+        } else {
+            domain = $(location).attr('protocol') + '//' + $(location).attr('hostname') + '/wp-admin/admin-ajax.php?';
+        }
+        var url = domain + (window.location.href.split('?').pop() !== window.location.href ? window.location.href.split('?').pop() : '');
+        var state = 'inactive';
+        var initialLimit = 9;
+        var limit = 9;
+        var offset = initialLimit;
+
+        var loadButton = button;
+
+        function load_data(offset, limit) {
+            if (total === 0) {
+                $('.ajax-call').append('<div class="col-12"><h3>Нет данных</h3></div>');
+                loadButton.addClass('hidden');
+                return;
+            }
+            if (state === 'active') {
+                return;
+            }
+            $.ajax({
+                type: 'GET',
+                url: url,
+                data: { action : action, offset: offset, limit: limit},
+                success: function(data) {
+                    if (data.trim() === '') {
+                        loadButton.addClass('hidden');
+                        state = 'active';
+                    } else {
+                        $('.ajax-call').append(data);
+                        state = 'inactive';
+                    }
+                },
+                error: function(MLHttpRequest, textStatus, errorThrown) {
+                    if (!offset) {
+                        $('.ajax-call').append('<div class="col-12"><h3>'+ errorThrown + '</h3></div>');
+                    }
+                    state = 'active';
+                }
+            });
+        }
+
+        if (state === 'inactive') {
+            load_data(0, initialLimit);
+            // state = 'active';
+        }
+
+        (function mobile_loading() {
+            if (total < initialLimit || total < offset) {
+                loadButton.addClass('hidden');
+                return;
+            }
+            loadButton.on('click', function() {
+                if (state === 'inactive'
+                    && total !== 0) {
+                    load_data(offset, limit);
+                    state = 'active';
+                    offset += limit;
+                    if (total < offset + limit) {
+                        loadButton.addClass('hidden');
+                    }
+                }
+            });
+        })();
+
+    }
+
+    inifite_loading('shivka_WORKSAjax', 18, '.ajax-call-button')
+
 });
