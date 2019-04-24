@@ -14,7 +14,6 @@ $data = pods('works')->find($params);
 
 <?php foreach($data->field('related_works') as $work) { $related_works = pods('works')->find(array('limit' => 1, 'where' => 'ID = '.$work['ID']));?>
     <?php while($related_works->fetch()){ ?>
-        <!--                                        <div class="col-md-4 col-12">-->
         <div class="col-4">
             <a href="<?=get_permalink($related_works->display('id'))?>" class="service-item">
                 <div class="service-img-wrap">
