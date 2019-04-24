@@ -5,6 +5,11 @@
  * Date: 23.04.19
  * Time: 13:39
  */
+$id = shivka_escapeParam(trim($_REQUEST['id'], '/'));
+$params = array('limit' => 1,
+    'where' => "post_name = '" . $id . "'"
+);
+$data = pods('works')->find($params);
 ?>
 
 <?php foreach($data->field('related_works') as $work) { $related_works = pods('works')->find(array('limit' => 1, 'where' => 'ID = '.$work['ID']));?>
