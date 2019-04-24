@@ -41,30 +41,13 @@ if(isset($_GET['id'])) {
                         </div>
 
                         <div class="related-categories services extra-services">
-                            <div class="row">
-                                <?php if(!empty($data->field('related_works'))) { ?>
-                                <?php foreach($data->field('related_works') as $work) { $related_works = pods('works')->find(array('limit' => 1, 'where' => 'ID = '.$work['ID']));?>
-                                    <?php while($related_works->fetch()){ ?>
-<!--                                        <div class="col-md-4 col-12">-->
-                                        <div class="col-4">
-                                            <a href="<?=get_permalink($related_works->display('id'))?>" class="service-item">
-                                                <div class="service-img-wrap">
-                                                    <div class="service-img" style="background-image: url(<?=$related_works->display('preview')?>);"></div>
-                                                </div>
-                                                <div class="service-title"><?=$related_works->display('post_title')?></div>
-                                                <button type="button" class="btn btn-primary">смотреть</button>
-                                            </a>
-                                        </div>
-                                <?php } } } ?>
+                            <div class="row ajax-call">
                             </div>
                         </div>
-                        <?php if(!empty($data->field('gallery'))){ ?>
-                        <div class="see-more eye-hover">
-<!--                            TODO: fix 404 redirect-->
-                            <a href="<?=get_permalink($data->field('gallery')['ID'])?>" class="underline">смотреть больше</a>
+                        <div class="see-more eye-hover" id="works-category-ajax" data-total="<?=$total_found?>">
+                            <span class="underline">смотреть больше</span>
                             <i class="icon icon-eye"></i>
                         </div>
-                        <?php } ?>
                         <a href="/works" class="back">
                             <span>
                                 <i class="icon icon-arrow"></i>

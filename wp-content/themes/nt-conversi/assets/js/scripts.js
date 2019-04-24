@@ -223,4 +223,7 @@ $(document).ready(function() {
     var callWorksButton = $('#works-ajax');
     inifite_loading('shivka_WORKSAjax', callWorksButton.attr('data-total'), callWorksButton);
 
+    var callWorksCategoryButton = $('#works-category-ajax');
+    inifite_loading('shivka_WORKSCATEGORYAjax', callWorksCategoryButton.attr('data-total'), callWorksCategoryButton);
+
 });
