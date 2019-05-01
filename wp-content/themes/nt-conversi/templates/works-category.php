@@ -44,7 +44,7 @@ if(isset($_GET['id'])) {
                             <div class="row ajax-call">
                             </div>
                         </div>
-                        <div class="see-more eye-hover" id="works-category-ajax" data-total="<?=$total_found?>">
+                        <div class="see-more eye-hover" id="works-category-ajax" data-total="<?=count($data->field('related_works'))?>">
                             <span class="underline">смотреть больше</span>
                             <i class="icon icon-eye"></i>
                         </div>
