@@ -14,7 +14,7 @@ $data = pods('works')->find($params);
 $array = $data->field('related_works');
 if(!empty($array) && $_REQUEST['offset'] < count($array)){
    ?>
-    <?php for($i=$_REQUEST['offset']; ($i < $_REQUEST['limit'] && $i < count($array)); $i++){$related_works = pods('works')->find(array('limit' => 1, 'where' => 'ID = '.$array[$i]['ID']));?>
+    <?php for($i=$_REQUEST['offset']; ($i < ($_REQUEST['offset']+$_REQUEST['limit']) && $i < count($array)); $i++){$related_works = pods('works')->find(array('limit' => 1, 'where' => 'ID = '.$array[$i]['ID']));?>
         <?php while($related_works->fetch()){ ?>
             <!--                                        <div class="col-md-4 col-12">-->
             <div class="col-4">
