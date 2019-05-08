@@ -77,7 +77,7 @@ $works = pods('works')->find($params);
                                 <ul class="submenu">
                                     <?php while($services->fetch()) {?>
                                     <li>
-                                        <a href="/services/category/?id=<?=$services->field('service_category')['slug']?>">
+                                        <a href="<?=get_permalink($services->display('id'))?>">
                                             <?=$services->display('post_title')?>
                                         </a>
                                     </li>
