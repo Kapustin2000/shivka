@@ -494,6 +494,19 @@ textarea {
   z-index: 1000000 !important;
 }
 
+.select2-container--default {
+  .select2-selection__rendered {
+    color: $white !important;
+  }
+}
+
+.select2-container--default.select2-container--below:not(.select2-container--open),
+.select2-container--default.select2-container--above:not(.select2-container--open) {
+  .select2-selection__rendered {
+    color: $black !important;
+  }
+}
+
 //fileinput
 .form-element {
   cursor: pointer;

@@ -19,10 +19,11 @@
   .stock-text {
     width: 100%;
     position: relative;
-    p {
+    .stock-short-desc {
       position: relative;
       z-index: 1;
       max-width: get-vw(400px);
+      margin-bottom: get-vw(45px);
     }
     a {
       display: inline-block;

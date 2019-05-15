@@ -54,7 +54,7 @@ if(!empty($data->total_found())) {
                                     <div class="service-img-wrap">
                                         <div class="service-img" style="background-image: url(<?=$related_service->display('preview')?>);"></div>
                                     </div>
-                                    <button type="button" class="btn btn-primary">подробнее</button>
+                                    <span class="btn btn-primary btn-span">подробнее</span>
                                 </a>
                             </div>
                             <?php } } ?>

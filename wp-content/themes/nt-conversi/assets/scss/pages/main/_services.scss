@@ -62,7 +62,7 @@
       text-overflow: ellipsis;
       max-width: get-vw(280px);
     }
-    button {
+    .btn {
       display: block;
       position: absolute;
       right: get-vw(27px);
@@ -88,7 +88,7 @@
         }
       }
       .service-title,
-      button {
+      .btn {
         transform: translateY(get-vw(-124px));
       }
     }

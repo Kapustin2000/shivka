@@ -23,7 +23,7 @@ if(!empty($array) && $_REQUEST['offset'] < count($array)){
                         <div class="service-img" style="background-image: url(<?=$related_works->display('preview')?>);"></div>
                     </div>
                     <div class="service-title"><?=$related_works->display('post_title')?></div>
-                    <button type="button" class="btn btn-primary">смотреть</button>
+                    <span class="btn btn-primary btn-span">смотреть</span>
                 </a>
             </div>
         <?php  } }}?>

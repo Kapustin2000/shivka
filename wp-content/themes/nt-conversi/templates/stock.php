@@ -34,7 +34,7 @@ $data = pods('stock')->find();
                                     <?=$data->display('post_content')?>
                                 </div>
                                 <img src="<?=$data->display('patch')?>" alt="<?=$data->display('post_title')?>">
-                                <a type="button" class="btn btn-outline" href="<?=get_permalink($data->display('id'))?>">Подробнее</a>
+                                <a class="btn btn-outline btn-span" href="<?=get_permalink($data->display('id'))?>">Подробнее</a>
                             </div>
                         </div>
                     <?php } ?>

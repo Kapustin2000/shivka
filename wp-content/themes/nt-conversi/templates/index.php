@@ -69,6 +69,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                                 <div class="decorative lavander"></div>
                                 <video width="100%" height="100%" class="video-player">
                                     <source src="<?=$settings->display('video')?>" type="video/mp4">
+<!--                                    <source src="--><?php //bloginfo('template_url'); ?><!--/video/smarthoop.mp4" type="video/mp4">-->
                                     Your browser does not support the video tag.
                                 </video>
                                 <div class="player-controls">
@@ -100,7 +101,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                                 <h2><?=$settings->display('block_title')?></h2>
                                 <?=$settings->display('block_description')?>
                             </div>
-                            <a href="/about" type="button" class="btn btn-outline">Читать о нас</a>
+                            <a href="/about" class="btn btn-outline btn-span">Читать о нас</a>
                             <div class="decorative lavander"></div>
                         </div>
                     </div>
@@ -124,7 +125,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                                         <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
                                     </div>
                                     <div class="service-title"><?=$services->display('post_title')?></div>
-                                    <button type="button" class="btn btn-primary">подробнее</button>
+                                    <span class="btn btn-primary btn-span">подробнее</span>
                                 </a>
                             </div>
                         <?php } ?>
@@ -152,10 +153,10 @@ $stages_of_work = pods('stages_of_work')->find($params);
                             <div class="stock-text-wrap">
                                 <div class="stock-text bordered">
                                     <h2><?=$stock->display('post_title')?></h2>
-                                    <p>
+                                    <div class="stock-short-desc">
                                         <?=$stock->display('post_content')?>
-                                    </p>
-                                    <a href="<?=get_permalink($stock->display('id'))?>" type="button" class="btn btn-primary">Подробнее</a>
+                                    </div>
+                                    <a href="<?=get_permalink($stock->display('id'))?>" class="btn btn-primary btn-span">Подробнее</a>
                                     <img class="ornament" src="<?=$stock->display('patch')?>" alt="Ornament">
                                 </div>
                             </div>
@@ -176,7 +177,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
 <!--                            <div class="step col-xl-3 col-sm-6 col-12">-->
                             <div class="step col-3">
                                 <h3><?=$stages_of_work->display('post_title')?></h3>
-                                <p><?=$stages_of_work->display('post_content')?></p>
+                                <?=$stages_of_work->display('post_content')?>
                             </div>
                         <?php } ?>
                     </div>

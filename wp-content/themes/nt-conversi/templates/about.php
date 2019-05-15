@@ -50,7 +50,7 @@ $partners = pods('partners')->find();
                     <a href="<?=$settings->display('youtube')?>" target="_blank"><i class="icon icon-youtube"></i></a>
                     <a href="<?=$settings->display('prom')?>" target="_blank"><i class="icon icon-prom"></i></a>
                 </div>
-                <a href="/blog" type="button" class="btn btn-primary">наш блог</a>
+                <a href="/blog" class="btn btn-primary btn-span">наш блог</a>
             </div>
         </div>
     </section>

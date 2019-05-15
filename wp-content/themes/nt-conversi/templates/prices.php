@@ -60,7 +60,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                         <?php while($stages_of_work->fetch()){ ?>
                             <div class="step col-xl-3 col-sm-6 col-12">
                                 <h3><?=$stages_of_work->display('post_title')?></h3>
-                                <p><?=$stages_of_work->display('post_content')?></p>
+                                <?=$stages_of_work->display('post_content')?>
 <!--                                --><?//=$stages_of_work->display('image')?>
                             </div>
                         <?php } ?>

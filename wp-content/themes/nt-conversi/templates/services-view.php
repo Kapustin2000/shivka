@@ -98,7 +98,7 @@ if(!empty($data->total_found())) {
                             <h2>Готовые товары с нашей вышивкой</h2>
                             <p>Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.</p>
                             <p>Мы также вышиваем шевроны и нашивки, логотипы и эмблемы компаний, создадим вышивку на одежде и крое, домашнем текстиле и полотенцах, коже и замше.</p>
-                            <a href="/shop" type="button" class="btn btn-primary">перейти в магазин</a>
+                            <a href="/shop" class="btn btn-primary btn-span">перейти в магазин</a>
                         </div>
                     </div>
                 </div>
@@ -194,7 +194,7 @@ if(!empty($data->total_found())) {
                                             <div class="service-img" style="background-image: url(<?=$related_service->display('preview')?>);"></div>
                                         </div>
                                         <div class="service-title"><?=$related_service->display('post_title')?></div>
-                                        <button type="button" class="btn btn-primary">смотреть</button>
+                                        <span class="btn btn-primary btn-span">смотреть</span>
                                     </a>
                             <?php } } } ?>
                         </div>

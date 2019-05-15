@@ -20,7 +20,7 @@ if($data->total()){
                 <div class="service-img" style="background-image: url( <?=$data->display('preview')?>);"></div>
             </div>
             <div class="service-title"><?=$data->display('post_title')?></div>
-            <button type="button" class="btn btn-primary">смотреть</button>
+            <span class="btn btn-primary btn-span">смотреть</span>
         </a>
     </div>
 <?php } } else {

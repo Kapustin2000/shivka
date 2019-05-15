@@ -1,6 +1,6 @@
 button,
-a[type='button'] {
-  cursor: pointer;
+.btn-span {
+  cursor: pointer !important;
   position: relative;
   display: inline-block;
   font-family: 'Open Sans Condensed', sans-serif;
