@@ -92,19 +92,20 @@
             top: get-vw(-50px);
         }
         .partner-wrap {
-            display: flex;
-            flex-wrap: wrap;
+            width: 100%;
+            overflow: hidden;
             padding-left: get-vw(88px);
+            margin-bottom: get-vw(100px);
+        }
+        .partner-slider {
+            display: flex;
+            flex-wrap: nowrap;
         }
         .partner {
-            margin-right: get-vw(70px);
-            margin-bottom: get-vw(100px);
-            &:last-child {
-                margin-right: 0;
-            }
             img {
                 width: auto;
                 height: get-vw(100px);
+                margin-right: get-vw(70px);
             }
         }
     }

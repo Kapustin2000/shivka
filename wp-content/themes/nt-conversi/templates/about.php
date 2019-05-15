@@ -61,7 +61,7 @@ $partners = pods('partners')->find();
                 <div class="row">
                     <div class="col-12">
                         <h2>наши клиенты</h2>
-                        <div class="partner-wrap">
+                        <div id="marquee" class="partner-wrap">
                             <?php while($partners->fetch()){ ?>
                                 <div class="partner">
                                     <img src="<?=$partners->display('logo')?>" alt="<?=$partners->display('title')?>">

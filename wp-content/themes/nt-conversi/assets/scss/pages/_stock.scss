@@ -100,7 +100,9 @@
       width: get-vw(617px);
       height: get-vw(550px);
       overflow-y: auto;
-
+    }
+    p {
+      max-width: get-vw(617px);
     }
     img {
       height: get-vw(700px);

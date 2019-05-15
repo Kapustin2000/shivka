@@ -119,7 +119,7 @@ $services = pods('services')->find($params);
                     <div class="contacts">
                         <h4>контакты</h4>
                         <div class="contact">
-                            <a target="_blank" href="<?=$settings->display('wholesale_latitude')?>">
+                            <a target="_blank" href="<?=$settings->display('wholesale_latitude')?>" class="map-link">
                                 <?=$settings->display('wholesale_city')?>
                             </a> </br>
                             Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>"><?=$settings->display('wholesale_number')?></a>, <a href="tel:+380667734186">0667734186</a></br>
@@ -129,7 +129,7 @@ $services = pods('services')->find($params);
                     <div class="contacts">
                         <h4>&nbsp;</h4>
                         <div class="contact">
-                            <a target="_blank" href="<?=$settings->display('individually_latitude')?>">
+                            <a target="_blank" href="<?=$settings->display('individually_latitude')?>" class="map-link">
                                 <?=$settings->display('individual_city')?>
                             </a> </br>
                             Тел: <a href="tel:+380<?=$settings->display('individually_number')?>"><?=$settings->display('individually_number')?></a></br>

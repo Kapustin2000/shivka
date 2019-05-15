@@ -36,7 +36,7 @@ $settings  = pods('website_settings')->find();
                                 <?=$settings->display('individually_street')?></br>
                                 <?=$settings->display('individually_working_hours')?></br>
                                 <?=$settings->display('individually_working_days')?></br>
-                                Тел: <a href="tel:+380<?=$settings->display('individual_number')?>"><?=$settings->display('individual_number')?></a> Viber/WhatsApp</br>
+                                Тел: <a href="tel:+380<?=$settings->display('individually_number')?>"><?=$settings->display('individually_number')?></a> Viber/WhatsApp</br>
                                 E-mail: <a href="maito: <?=$settings->display('individual_email')?>"> <?=$settings->display('individual_email')?></a>
                             </p>
                         </div>
