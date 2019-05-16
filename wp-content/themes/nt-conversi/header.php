@@ -159,7 +159,7 @@ $works = pods('works')->find($params);
                                 <input type="number" id="phone" placeholder="Телефон" name="phone">
                                 <select class="service-select" name="service_name">
                                     <option value="0" selected>Вид услуги</option>
-                                    <?php while($services->fetch()){ ?>
+                                    <?php $services->reset(); while($services->fetch()){ ?>
                                         <option value="<?=$services->display('post_title')?>"><?=$services->display('post_title')?></option>
                                     <?php } ?>
                                 </select>
