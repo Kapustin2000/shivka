@@ -236,7 +236,7 @@ if($_POST){
             $mailer = new Swift_Mailer($transport);
             $message = (new Swift_Message("You got new Contact request"))
                 ->setFrom(['mikhail.kapustin@hys-enterprise.com' => 'You got new Contact request'])
-                ->setTo('kapustinomm@gmail.com')
+                ->setTo('smarthoop2@gmail.com')
                 ->setContentType("text/html")
                 ->setBody('You got new Contact request');
             if (isset($_FILES['files'])) {
