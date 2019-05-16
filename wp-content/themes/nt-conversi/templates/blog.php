@@ -31,16 +31,16 @@ $data = pods('blog')->find($params);
                 <div class="col-12">
                     <h1><span>&nbsp;Наш блог&nbsp;</span></h1>
                     <div class="tabs-wrap lavander">
-                        <a href="?type=0" class="btn-span" <?php if(!isset($_GET['type']) || (int) $_GET['type']==0){ ?> class="active" <?php } ?>>
+                        <a href="?type=0" class="btn-span <?php if(!isset($_GET['type']) || (int) $_GET['type']==0){ ?>  active <?php } ?>" >
                             <span>Все</span>
                         </a>
-                        <a href="?type=1" class="btn-span" <?php if(isset($_GET['type']) && (int) $_GET['type']==1){ ?> class="active" <?php } ?>>
+                        <a href="?type=1" class="btn-span <?php if(isset($_GET['type']) && (int) $_GET['type']==1){ ?>  active  <?php } ?>">
                             <span>Статьи</span>
                         </a>
-                        <a href="?type=2" class="btn-span" <?php if(isset($_GET['type']) && (int) $_GET['type']==2){ ?> class="active" <?php } ?>>
+                        <a href="?type=2" class="btn-span <?php if(isset($_GET['type']) && (int) $_GET['type']==2){ ?>  active  <?php } ?>" >
                             <span>События</span>
                         </a>
-                        <a href="?type=3" class="btn-span" <?php if(isset($_GET['type']) && (int) $_GET['type']==3){ ?> class="active" <?php } ?>>
+                        <a href="?type=3" class="btn-span  <?php if(isset($_GET['type']) && (int) $_GET['type']==3){ ?>  active  <?php } ?>">
                             <span>Новости</span>
                         </a>
                     </div>
