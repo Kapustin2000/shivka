@@ -18,7 +18,7 @@ if(!empty($array) && $_REQUEST['offset'] < count($array)){
         <?php while($related_works->fetch()){ ?>
             <!--                                        <div class="col-md-4 col-12">-->
             <div class="col-4">
-                <a href="<?=get_permalink($related_works->display('id'))?>" class="service-item">
+                <a href="<?=get_permalink($related_works->field('gallery')['ID'])?>" class="service-item">
                     <div class="service-img-wrap">
                         <div class="service-img" style="background-image: url(<?=$related_works->display('preview')?>);"></div>
                     </div>
