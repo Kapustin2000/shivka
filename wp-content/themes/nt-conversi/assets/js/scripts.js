@@ -102,18 +102,18 @@ $(document).ready(function() {
         });
     });
 
-    function mapLink() {
+    function phoneLink() {
         if ($(window).width() > 768) {
-            $('.map-link').on('click', function(event) {
+            $('.phone-link').on('click', function(event) {
                 event.preventDefault();
             });
         }
     }
 
     $(window).on('resize', function() {
-        mapLink();
+        phoneLink();
     });
-    mapLink();
+    phoneLink();
 
     //-------order form
     // $('#order-form').on('submit', function(e) {
@@ -149,9 +149,9 @@ $(document).ready(function() {
         });
     });
 
-    $('.work-gallery').masonry({
+    $('.work-gallery').isotope({
+        layoutMode: 'packery',
         itemSelector : '.gallery-item',
-        gutter: 50,
         percentPosition: true
     });
 

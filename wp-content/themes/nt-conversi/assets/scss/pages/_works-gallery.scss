@@ -39,12 +39,18 @@
 }
 
 .work-gallery {
+  //margin-left: get-vw(-25px);
+  //margin-right: get-vw(-25px);
   .gallery-item {
     display: inline-block;
-    margin-bottom: 50px;
     width: calc(50% - 25px);
+    //margin: get-vw(50px) get-vw(25px);
+    margin-bottom: 50px;
     &:first-child {
       margin-top: 50px;
+    }
+    &:nth-child(odd) {
+      margin-right: 50px;
     }
     //&:nth-child(odd) {
     //  margin-right: get-vw(50px);
@@ -55,6 +61,10 @@
       display: block;
     }
   }
+}
+
+.gallery-item {
+  width: calc(50% - 25px);
 }
 
 //.work-gallery {

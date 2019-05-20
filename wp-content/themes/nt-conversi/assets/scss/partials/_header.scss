@@ -158,6 +158,9 @@ header {
           }
         }
       }
+      li:last-child {
+        padding-bottom: 2vw;
+      }
       a {
         position: relative;
         font-family: 'Uni Sans Thin Caps', sans-serif;

@@ -122,7 +122,7 @@ $services = pods('services')->find($params);
                             <a target="_blank" href="<?=$settings->display('wholesale_latitude')?>" class="map-link">
                                 <?=$settings->display('wholesale_city')?>
                             </a> </br>
-                            Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>"><?=$settings->display('wholesale_number')?></a>, <a href="tel:+380667734186">0667734186</a></br>
+                            Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>" class="phone-link"><?=$settings->display('wholesale_number')?></a>, <a href="tel:+380667734186" class="phone-link">0667734186</a></br>
                             email: <a href="mailto:<?=$settings->display('wholesale_email')?>"><?=$settings->display('wholesale_email')?></a>
                         </div>
                     </div>
@@ -132,7 +132,7 @@ $services = pods('services')->find($params);
                             <a target="_blank" href="<?=$settings->display('individually_latitude')?>" class="map-link">
                                 <?=$settings->display('individual_city')?>
                             </a> </br>
-                            Тел: <a href="tel:+380<?=$settings->display('individually_number')?>"><?=$settings->display('individually_number')?></a></br>
+                            Тел: <a href="tel:+380<?=$settings->display('individually_number')?>" class="phone-link"><?=$settings->display('individually_number')?></a></br>
                             <!--                                    --><?//=$settings->display('individually_number')?><!--</br>-->
                             email: <a href="mailto:<?=$settings->display('individual_email')?>"><?=$settings->display('individual_email')?></a>
                         </div>

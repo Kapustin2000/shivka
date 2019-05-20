@@ -126,20 +126,12 @@ footer {
   }
 }
 
-//@media (max-width: $desktop) {
-//  footer {
-//    .footer-nav {
-//      ul {
-//        flex-wrap: wrap;
-//        li {
-//          padding: 1rem 0;
-//          width: 20%;
-//        }
-//      }
-//    }
-//  }
-//}
-//
+@media (max-width: $desktop) {
+  footer {
+
+  }
+}
+
 //@media (min-width: $tablet + 1px) and (max-width: $desktop) {
 //  footer {
 //    .footer-nav {
@@ -190,7 +182,7 @@ footer {
 //}
 
 @media (min-width: $tablet + 1px) {
-  .map-link {
+  .phone-link {
     cursor: default;
     &:hover {
       text-decoration: none;

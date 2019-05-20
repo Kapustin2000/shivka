@@ -127,7 +127,7 @@ $works = pods('works')->find($params);
                                 <a href="/blog">блог</a>
                             </li>
                             <li>
-                                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#contactModal">
+                                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#callModal">
                                     Заказать звонок
                                 </button>
                             </li>
@@ -195,6 +195,37 @@ $works = pods('works')->find($params);
     </div>
 </div>
 
+<div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-labelledby="callModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <section class="make-order">
+                <div class="form-wrap">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                    <div class="form-inner-wrap">
+                        <h2>Хотите узнать стоимость услуги или сделать заказ?</h2>
+                        <p>Напишите нам! Наш менеджер свяжется с вами в ближайшее время и проконсультирует по всем вопросам.</p>
+                    </div>
+                    <form action="#" id="call-form" class="order-form-js order-form active" enctype="multipart/form-data" method="post">
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" placeholder="Имя*" required name="full_name">
+                                <input type="number" id="phone" placeholder="Телефон*" required name="phone">
+                            </div>
+                            <div class="col-6">
+                                <textarea rows="5" name="message"
+                                          placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -205,7 +236,7 @@ $works = pods('works')->find($params);
                 <h2>спасибо за заявку!</h2>
                 <p>Наш менеджер свяжется с вами в ближайшее время и
                     проконсультирует по всем вопросам.</p>
-                <a href="/" class="btn btn-primary" type="button">на главную</a>
+                <a href="/" class="btn btn-span btn-primary">на главную</a>
             </div>
         </div>
     </div>

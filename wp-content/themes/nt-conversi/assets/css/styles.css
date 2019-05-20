@@ -631,6 +631,8 @@ header {
         text-decoration: none; }
         header .menu-toggle ul:not(.submenu) > li.has-submenu:hover a::after {
           opacity: 1; }
+      header .menu-toggle ul li:last-child {
+        padding-bottom: 2vw; }
       header .menu-toggle ul a {
         position: relative;
         font-family: 'Uni Sans Thin Caps', sans-serif;
@@ -815,9 +817,9 @@ footer {
       margin: 0; }
 
 @media (min-width: 769px) {
-  .map-link {
+  .phone-link {
     cursor: default; }
-    .map-link:hover {
+    .phone-link:hover {
       text-decoration: none; } }
 
 .icon {
@@ -2270,14 +2272,19 @@ footer {
 
 .work-gallery .gallery-item {
   display: inline-block;
-  margin-bottom: 50px;
-  width: calc(50% - 25px); }
+  width: calc(50% - 25px);
+  margin-bottom: 50px; }
   .work-gallery .gallery-item:first-child {
     margin-top: 50px; }
+  .work-gallery .gallery-item:nth-child(odd) {
+    margin-right: 50px; }
   .work-gallery .gallery-item img {
     width: 100%;
     height: auto;
     display: block; }
+
+.gallery-item {
+  width: calc(50% - 25px); }
 
 .bottom {
   display: -webkit-box;
