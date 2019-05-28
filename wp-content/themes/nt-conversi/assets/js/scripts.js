@@ -152,8 +152,9 @@ $(document).ready(function() {
     $('.work-gallery').isotope({
         layoutMode: 'packery',
         itemSelector : '.gallery-item',
+        isHorizontal: false,
         percentPosition: true
-    });
+    }).isotope('reLayout');
 
     var fileCollection = [];
 
