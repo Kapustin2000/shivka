@@ -139,7 +139,7 @@ $(document).ready(function() {
             $.ajax({
                 type: 'POST',
                 url: '/wp-json/blog/v1/calls',
-                data: { action : 'shivka_Calls_Save_AJAX', data: $('#call-form').serializeArray()},
+                data: { action : 'shivka_Calls_Save_AJAX', data: $(this).serializeArray()},
                 cache: true,
                 success: function(data) {
                     $('#successModal').modal('show');
