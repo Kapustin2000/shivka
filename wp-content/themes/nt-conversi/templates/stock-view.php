@@ -107,11 +107,10 @@ if(isset($_GET['id'])) {
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-element">
-                                        <label class="form-element-label" for="input-file">Выбрать файлы</label>
+                                        <label class="form-element-label" for="fileinput4">Выбрать файлы</label>
                                         <div class="form-element-error">Невозможно загрузить файлы</div>
-                                        <input type="file" id="fileinput" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
+                                        <input type="file" class="fileinput" id="fileinput4" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
                                     </div>
-                                    <!-- <input id="fileinput" name="files[]" type="file" multiple>-->
                                 </div>
                             </div>
                         </form>

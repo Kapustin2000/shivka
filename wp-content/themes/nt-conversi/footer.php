@@ -68,15 +68,15 @@ $services = pods('services')->find($params);
                                     placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
 <!--                                <input type="text" style="opacity: 0;">-->
                                 <div class="form-element">
-                                    <label class="form-element-label" for="fileinput">Выбрать файлы</label>
+                                    <label class="form-element-label" for="fileinput3">Выбрать файлы</label>
                                     <div class="form-element-error">Невозможно загрузить файлы</div>
-                                    <input class="fileinput" type="file" id="fileinput" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
+                                    <input type="file" class="fileinput" id="fileinput3" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
                                 </div>
                                 <button type="submit" class="btn btn-primary">Отправить</button>
                             </div>
                         </div>
                     </form>
-                    <form action="#" id="call-form" class="call-form">
+                    <form action="#" class="call-form">
                         <div class="row">
 <!--                            <div class="col-lg-6 col-xs-12">-->
                             <div class="col-6">
@@ -91,18 +91,6 @@ $services = pods('services')->find($params);
                             </div>
                         </div>
                     </form>
-<!--                    <form action="#" class="order-form file-form active">-->
-<!--                        <div class="row">-->
-<!--                            <div class="col-12">-->
-<!--                                <div class="form-element">-->
-<!--                                    <label class="form-element-label" for="fileinput">Выбрать файлы</label>-->
-<!--                                    <div class="form-element-error">Невозможно загрузить файлы</div>-->
-<!--                                    <input class="fileinput" type="file" id="fileinput" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />-->
-<!--                                </div>-->
-<!--                                <!-- <input id="fileinput" name="files[]" type="file" multiple>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </form>-->
                 </div>
             </div>
         </div>
@@ -121,8 +109,8 @@ $services = pods('services')->find($params);
                         <div class="contact">
                             <a target="_blank" href="<?=$settings->display('wholesale_latitude')?>" class="map-link">
                                 <?=$settings->display('wholesale_city')?>
-                            </a> </br>
-                            Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>" class="phone-link"><?=$settings->display('wholesale_number')?></a>, <a href="tel:+380667734186" class="phone-link">0667734186</a></br>
+                            </a> <br/>
+                            Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>" class="phone-link"><?=$settings->display('wholesale_number')?></a>, <a href="tel:+380667734186" class="phone-link">0667734186</a><br/>
                             email: <a href="mailto:<?=$settings->display('wholesale_email')?>"><?=$settings->display('wholesale_email')?></a>
                         </div>
                     </div>
@@ -131,15 +119,14 @@ $services = pods('services')->find($params);
                         <div class="contact">
                             <a target="_blank" href="<?=$settings->display('individually_latitude')?>" class="map-link">
                                 <?=$settings->display('individual_city')?>
-                            </a> </br>
-                            Тел: <a href="tel:+380<?=$settings->display('individually_number')?>" class="phone-link"><?=$settings->display('individually_number')?></a></br>
-                            <!--                                    --><?//=$settings->display('individually_number')?><!--</br>-->
+                            </a> <br/>
+                            Тел: <a href="tel:+380<?=$settings->display('individually_number')?>" class="phone-link"><?=$settings->display('individually_number')?></a><br/>
                             email: <a href="mailto:<?=$settings->display('individual_email')?>"><?=$settings->display('individual_email')?></a>
                         </div>
                     </div>
                     <div class="schedule">
                         <h4>График работы</h4>
-                        <div><?=$settings->display('individually_working_hours')?></br>
+                        <div><?=$settings->display('individually_working_hours')?><br/>
                             <?=$settings->display('individually_working_days')?></div>
                     </div>
                     <div class="subscribe">
@@ -181,7 +168,7 @@ $services = pods('services')->find($params);
                 <div class="footer-info">
                     <a href="/privacy-policy">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
                     <p>
-                        ©2011 SmartHoop</br>
+                        ©2011 SmartHoop<br/>
                         Все права защищены и охраняются действующим законодательством Украины.
                     </p>
                 </div>

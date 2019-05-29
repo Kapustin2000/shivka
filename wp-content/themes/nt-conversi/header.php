@@ -167,28 +167,15 @@ $works = pods('works')->find($params);
                             <div class="col-6">
                                 <textarea rows="5" name="message"
                                           placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-<!--                                <input type="text" style="opacity: 0;">-->
                                 <div class="form-element">
-                                    <label class="form-element-label" for="fileinput">Выбрать файлы</label>
+                                    <label class="form-element-label" for="fileinput1">Выбрать файлы</label>
                                     <div class="form-element-error">Невозможно загрузить файлы</div>
-                                    <input class="fileinput" type="file" id="fileinput" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
+                                    <input type="file" class="fileinput" id="fileinput1" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
                                 </div>
                                 <button type="submit" class="btn btn-primary">Отправить</button>
                             </div>
                         </div>
                     </form>
-<!--                    <form action="#" class="order-form file-form active">-->
-<!--                        <div class="row">-->
-<!--                            <div class="col-12">-->
-<!--                                <div class="form-element">-->
-<!--                                    <label class="form-element-label" for="fileinput">Выбрать файлы</label>-->
-<!--                                    <div class="form-element-error">Невозможно загрузить файлы</div>-->
-<!--                                    <input class="fileinput" type="file" id="fileinput" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />-->
-<!--                                </div>-->
-<!--                                <!-- <input id="fileinput" name="files[]" type="file" multiple>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </form>-->
                 </div>
             </section>
         </div>
@@ -207,7 +194,7 @@ $works = pods('works')->find($params);
                         <h2>Хотите узнать стоимость услуги или сделать заказ?</h2>
                         <p>Напишите нам! Наш менеджер свяжется с вами в ближайшее время и проконсультирует по всем вопросам.</p>
                     </div>
-                    <form action="#" id="call-form" class="order-form-js order-form active" enctype="multipart/form-data" method="post">
+                    <form action="#" class="order-form-js call-form order-form active" enctype="multipart/form-data" method="post">
                         <div class="row">
                             <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
@@ -252,7 +239,7 @@ $works = pods('works')->find($params);
                 <h2 class="error">что-то пошло не так!</h2>
                 <p>Проверьте подлючение к интернету или перезагрузите страницу
                     и попобуйте отправить заявку снова.</p>
-                <a href="/" class="btn btn-outline" type="button">на главную</a>
+                <a href="/" class="btn btn-span btn-outline">на главную</a>
             </div>
         </div>
     </div>

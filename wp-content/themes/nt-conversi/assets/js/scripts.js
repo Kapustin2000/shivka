@@ -133,19 +133,21 @@ $(document).ready(function() {
     // });
 
     //-------call form
-    $('#call-form').on('submit', function(e) {
-        e.preventDefault();
-        $.ajax({
-            type: 'POST',
-            url: '/wp-json/blog/v1/calls',
-            data: { action : 'shivka_Calls_Save_AJAX', data: $('#call-form').serializeArray()},
-            cache: true,
-            success: function(data) {
-                $('#successModal').modal('show');
-            },
-            error: function(MLHttpRequest, textStatus, errorThrown) {
-                $('#errorModal').modal('show');
-            }
+    $('.call-form').each(function() {
+        $(this).on('submit', function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/wp-json/blog/v1/calls',
+                data: { action : 'shivka_Calls_Save_AJAX', data: $('#call-form').serializeArray()},
+                cache: true,
+                success: function(data) {
+                    $('#successModal').modal('show');
+                },
+                error: function(MLHttpRequest, textStatus, errorThrown) {
+                    $('#errorModal').modal('show');
+                }
+            });
         });
     });
 
