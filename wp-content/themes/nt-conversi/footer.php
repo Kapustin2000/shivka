@@ -182,8 +182,9 @@ $services = pods('services')->find($params);
 <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.magnific-popup.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/select2/select2.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/fileinput/fileinput.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/assets/libs/masonry.min.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>-->
+<script src="<?php bloginfo('template_url'); ?>/assets/libs/imagesLoaded/imagesloaded.pkgd.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/assets/libs/imagefill/jquery-imagefill.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/assets/libs/masonry/masonry.pkgd.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/js/scripts.js"></script>
 <?php
 if($_POST){

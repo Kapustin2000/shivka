@@ -2270,21 +2270,22 @@ footer {
     text-align: right;
     margin: 0; }
 
-.work-gallery .gallery-item {
-  display: inline-block;
-  width: calc(50% - 25px);
-  margin-bottom: 50px; }
-  .work-gallery .gallery-item:first-child {
-    margin-top: 50px; }
-  .work-gallery .gallery-item:nth-child(odd) {
-    margin-right: 50px; }
-  .work-gallery .gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block; }
+.work-gallery {
+  margin-left: -1.30208vw;
+  margin-right: -1.30208vw; }
+  .work-gallery .gallery-item {
+    width: calc(50% - 1.30208333333vw);
+    margin-bottom: 2.60417vw;
+    padding: 0 1.30208vw; }
+    .work-gallery .gallery-item:first-child {
+      margin-top: 2.60417vw; }
+    .work-gallery .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block; }
 
 .gallery-item {
-  width: calc(50% - 25px); }
+  width: calc(50% - 1.30208333333vw); }
 
 .bottom {
   display: -webkit-box;

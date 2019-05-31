@@ -151,24 +151,22 @@ $(document).ready(function() {
         });
     });
 
-    $('.work-gallery').isotope({
-        layoutMode: 'packery',
-        itemSelector : '.gallery-item',
-        isHorizontal: false,
-        percentPosition: true
-    }).isotope('reLayout');
+    var gallery = $('.work-gallery');
+    gallery.imagesLoaded(function() {
+        gallery.masonry({
+            columnWidth : '.gallery-item',
+            itemSelector : '.gallery-item'
+        });
+    });
 
     var fileCollection = [];
 
     $('.fileinput').each(function() {
         $(this).on('change', function(e) {
-
             var files = e.target.files;
             $.each(files, function(i, file) {
                 fileCollection.push(file);
             });
-
-            console.log(fileCollection);
         });
     });
 

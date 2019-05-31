@@ -38,23 +38,41 @@
   }
 }
 
+//.work-gallery {
+//  //margin-left: get-vw(-25px);
+//  //margin-right: get-vw(-25px);
+//  .gallery-item {
+//    display: inline-block;
+//    width: calc(50% - 25px);
+//    //margin: get-vw(50px) get-vw(25px);
+//    margin-bottom: 50px;
+//    &:first-child {
+//      margin-top: 50px;
+//    }
+//    &:nth-child(odd) {
+//      margin-right: 50px;
+//    }
+//    //&:nth-child(odd) {
+//    //  margin-right: get-vw(50px);
+//    //}
+//    img {
+//      width: 100%;
+//      height: auto;
+//      display: block;
+//    }
+//  }
+//}
+
 .work-gallery {
-  //margin-left: get-vw(-25px);
-  //margin-right: get-vw(-25px);
+  margin-left: get-vw(-25px);
+  margin-right: get-vw(-25px);
   .gallery-item {
-    display: inline-block;
-    width: calc(50% - 25px);
-    //margin: get-vw(50px) get-vw(25px);
-    margin-bottom: 50px;
+    width: calc(50% - 1.30208333333vw);
+    margin-bottom: get-vw(50px);
+    padding: 0 get-vw(25px);
     &:first-child {
-      margin-top: 50px;
+      margin-top: get-vw(50px);
     }
-    &:nth-child(odd) {
-      margin-right: 50px;
-    }
-    //&:nth-child(odd) {
-    //  margin-right: get-vw(50px);
-    //}
     img {
       width: 100%;
       height: auto;
@@ -64,7 +82,7 @@
 }
 
 .gallery-item {
-  width: calc(50% - 25px);
+  width: calc(50% - 1.30208333333vw);
 }
 
 //.work-gallery {
