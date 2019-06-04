@@ -92,7 +92,7 @@ if(isset($_GET['id'])) {
                                 <div class="col-6">
                                     <input type="text" placeholder="Имя*" required name="full_name">
                                     <input type="email" placeholder="E-mail*" required name="email">
-                                    <input type="number" id="phone" placeholder="Телефон" name="phone">
+                                    <input type="text" id="phone" placeholder="Телефон" name="phone">
                                 </div>
                                 <!-- <div class="col-lg-6 col-xs-12">-->
                                 <div class="col-6">

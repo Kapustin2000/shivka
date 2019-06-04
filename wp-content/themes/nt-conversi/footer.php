@@ -54,7 +54,7 @@ $services = pods('services')->find($params);
                             <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="email" placeholder="E-mail*" required name="email">
-                                <input type="number" id="phone" placeholder="Телефон" name="phone">
+                                <input type="text" id="phone" placeholder="Телефон" name="phone">
                                 <select class="service-select" name="service_name">
                                   <option value="0" selected>Вид услуги</option>
                                    <?php while($services->fetch()){ ?>
@@ -81,7 +81,7 @@ $services = pods('services')->find($params);
 <!--                            <div class="col-lg-6 col-xs-12">-->
                             <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
-                                <input type="number" placeholder="Телефон*" required name="phone">
+                                <input type="text" placeholder="Телефон*" required name="phone">
                             </div>
 <!--                            <div class="col-lg-6 col-xs-12">-->
                             <div class="col-6">
