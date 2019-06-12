@@ -94,7 +94,7 @@ $(document).ready(function() {
             data: { action : 'shivka_Subscribe_Save_AJAX', data: $('#subscribe-form').serializeArray()},
             cache: true,
             success: function(data) {
-                $('#successModal').modal('show');
+                $('#successSubscribeModal').modal('show');
             },
             error: function(MLHttpRequest, textStatus, errorThrown) {
                 $('#errorModal').modal('show');
