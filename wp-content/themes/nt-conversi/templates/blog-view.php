@@ -39,17 +39,10 @@ if(isset($_GET['id'])) {
                                 <span><?=$data->display('post_title')?></span>
                             </h1>
                             <div class="blog-type"><?=$data->display('blog_type')?></div>
-                            <div class="blog-content"><?=$data->display('post_content')?>
-                                <p>
-                                    Наша компания SmartHoop имеет все необходимое оборудование для компьютерной вышивки. Мы можем предложить для Вас машинную вышивку любой сложности, можем разработать дизайн вышивки, подобрать или создать изображение для нанесения, предложить подходящий материал.
-                                </p>
-                                <p>
-                                    Мы можем предложить для Вас машинную вышивку любой сложности, можем разработать дизайн вышивки, подобрать или создать изображение для нанесения, предложить подходящий материал.
-                                </p>
-                            </div>
+                            <div class="blog-content"><?=$data->display('post_content')?></div>
                         </div>
                         <div class="blog-description">
-                            <?=$data->display('description')?>
+                             <?=$data->display('description')?>
                         </div>
                         <a href="/blog" class="back">
                             <span>
