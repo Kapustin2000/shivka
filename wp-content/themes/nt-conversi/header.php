@@ -218,7 +218,7 @@ $works = pods('works')->find($params);
         </div>
     </div>
 </div>
-
+<?php $alerts = pods('alerts')->find(); ?>
 <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -226,9 +226,8 @@ $works = pods('works')->find($params);
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"></span>
                 </button>
-                <h2>спасибо за заявку!</h2>
-                <p>Наш менеджер свяжется с вами в ближайшее время и
-                    проконсультирует по всем вопросам.</p>
+                <h2><?=$alerts->display('form_title')?></h2>
+                 <?=$alerts->display('form_description')?>
                 <a href="/" class="btn btn-span btn-primary">на главную</a>
             </div>
         </div>
@@ -242,8 +241,8 @@ $works = pods('works')->find($params);
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"></span>
                 </button>
-                <h2>Спасибо за Подписку!</h2>
-                <p>Вы будете первыми, кто узнает о новинках и акционных предложениях нашей компании!</p>
+                <h2><?=$alerts->display('form_title_2')?></h2>
+                 <?=$alerts->display('form_description_2')?> 
                 <a href="/" class="btn btn-span btn-primary">на главную</a>
             </div>
         </div>
