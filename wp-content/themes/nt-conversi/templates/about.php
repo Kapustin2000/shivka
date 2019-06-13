@@ -13,7 +13,7 @@ $params = array(
 );
 $partners = pods('partners')->find();
 
-
+$settings_website  = pods('website_settings')->find();
 ?>
 
 <!-- Need header -->
@@ -45,10 +45,10 @@ $partners = pods('partners')->find();
             <?=$settings->display('block2_description')?>
             <div class="inner-wrap">
                 <div class="social-wrap">
-                    <a href="<?=$settings->display('facebook')?>" target="_blank"><i class="icon icon-facebook"></i></a>
-                    <a href="<?=$settings->display('instagram')?>" target="_blank"><i class="icon icon-instagram"></i></a>
-                    <a href="<?=$settings->display('youtube')?>" target="_blank"><i class="icon icon-youtube"></i></a>
-                    <a href="<?=$settings->display('prom')?>" target="_blank"><i class="icon icon-prom"></i></a>
+                    <a href="<?=$settings_website->display('facebook')?>" target="_blank"><i class="icon icon-facebook"></i></a>
+                    <a href="<?=$settings_website->display('instagram')?>" target="_blank"><i class="icon icon-instagram"></i></a>
+                    <a href="<?=$settings_website->display('youtube')?>" target="_blank"><i class="icon icon-youtube"></i></a>
+                    <a href="<?=$settings_website->display('promua')?>" target="_blank"><i class="icon icon-prom"></i></a>
                 </div>
                 <a href="/blog" class="btn btn-primary btn-span">наш блог</a>
             </div>
