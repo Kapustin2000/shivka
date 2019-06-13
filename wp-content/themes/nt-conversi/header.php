@@ -235,6 +235,21 @@ $works = pods('works')->find($params);
     </div>
 </div>
 
+<div class="modal fade" id="successSubscribeModal" tabindex="-1" role="dialog" aria-labelledby="successSubscribeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+                <h2>Спасибо за Подписку!</h2>
+                <p>Вы будете первыми, кто узнает о новинках и акционных предложениях нашей компании!</p>
+                <a href="/" class="btn btn-span btn-primary">на главную</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

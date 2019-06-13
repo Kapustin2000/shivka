@@ -214,7 +214,14 @@ if($_POST){
     if($res){
         try {
             require_once 'wp-content/plugins/swift-mailer/lib/swift_required.php';
-
+            $request_data = array();
+            foreach($_POST['data'] as $key=>$item){
+                $request_data[$item['name']] = $item['value'];
+            }
+            set_query_var('data', $request_data);
+            ob_start();
+            include 'wp-content/themes/nt-conversi/templates/post_print.php';
+            $html = ob_get_clean();
             $transport = (new Swift_SmtpTransport(SWIFT_server, SWIFT_port, SWIFT_protocol))
                 ->setUsername(SWIFT_email)
                 ->setPassword(SWIFT_pass)
@@ -226,7 +233,7 @@ if($_POST){
                 ->setFrom(['mikhail.kapustin@hys-enterprise.com' => 'You got new Contact request'])
                 ->setTo('smarthoop2@gmail.com')
                 ->setContentType("text/html")
-                ->setBody('You got new Contact request');
+                ->setBody($html);
             if (isset($_FILES['files'])) {
                 foreach (reArrayFiles($_FILES['files']) as $attachment) {
 

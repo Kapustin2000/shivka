@@ -231,7 +231,14 @@ function shivka_Contact_Save_AJAX( WP_REST_Request $request)
 		}
 		try {
 			require_once 'wp-content/plugins/swift-mailer/lib/swift_required.php';
-
+			$request_data = array();
+			foreach($_POST['data'] as $key=>$item){
+				$request_data[$item['name']] = $item['value'];
+			}
+			set_query_var('data', $request_data);
+			ob_start();
+			include 'wp-content/themes/nt-conversi/templates/post_print.php';
+			$html = ob_get_clean();
 			$transport = (new Swift_SmtpTransport(SWIFT_server, SWIFT_port, SWIFT_protocol))
 				->setUsername(SWIFT_email)
 				->setPassword(SWIFT_pass)
@@ -244,7 +251,7 @@ function shivka_Contact_Save_AJAX( WP_REST_Request $request)
 				->setFrom(['mikhail.kapustin@hys-enterprise.com' => 'New apply'])
 				->setTo('smarthoop2@gmail.com')
 				->setContentType("text/html")
-				->setBody('You got new Contact apply');
+				->setBody($html);
 			if (isset($_POST['files'])) {
 				foreach ($_POST['files'] as $attachment) {
 					if ($attachment['size'] <= 10 * 1024 * 1024 && $attachment['tmp_name']) {
@@ -290,7 +297,14 @@ function shivka_Calls_Save_AJAX( WP_REST_Request $request)
 		}
 		try {
 			require_once 'wp-content/plugins/swift-mailer/lib/swift_required.php';
-
+			$request_data = array();
+			foreach($_POST['data'] as $key=>$item){
+				$request_data[$item['name']] = $item['value'];
+			}
+			set_query_var('data', $request_data);
+			ob_start();
+			include 'wp-content/themes/nt-conversi/templates/post_print.php';
+			$html = ob_get_clean();
 			$transport = (new Swift_SmtpTransport(SWIFT_server, SWIFT_port, SWIFT_protocol))
 				->setUsername(SWIFT_email)
 				->setPassword(SWIFT_pass)
@@ -303,7 +317,7 @@ function shivka_Calls_Save_AJAX( WP_REST_Request $request)
 				->setFrom(['mikhail.kapustin@hys-enterprise.com' => 'Call apply'])
 				->setTo('smarthoop2@gmail.com')
 				->setContentType("text/html")
-				->setBody('You got new Call apply. Check admin panel.');
+				->setBody($html);
 			if (isset($_POST['files'])) {
 				foreach ($_POST['files'] as $attachment) {
 					if ($attachment['size'] <= 10 * 1024 * 1024 && $attachment['tmp_name']) {
