@@ -15,7 +15,7 @@ $params = array(
     'orderby'=>"order_weight.meta_value DESC,id DESC",
     'limit' => 3
 );
-$services = pods('services')->find();
+$services = pods('services')->find($params);
 
 
 
@@ -23,7 +23,7 @@ $params = array(
     'orderby'=>"order_weight.meta_value DESC,id DESC",
     'limit' => 1
 );
-$stock = pods('stock')->find();
+$stock = pods('stock')->find($params);
 
 
 
