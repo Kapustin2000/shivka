@@ -5,7 +5,7 @@ Template Name: How to order
 $params = array(
     'orderby'=>"order_weight.meta_value DESC,id DESC",
 );
-$stages_of_work = pods('stages_of_work')->find($params);
+$stages_of_work = pods('how_to_order')->find($params);
 ?>
 
 <!-- Need header -->
