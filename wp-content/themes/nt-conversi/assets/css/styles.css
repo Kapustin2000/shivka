@@ -1786,10 +1786,13 @@ footer {
           z-index: -1; }
       .smarthoop-how-to-order .steps .step:nth-child(7) {
         z-index: 10; }
+      .smarthoop-how-to-order .steps .step:nth-child(7), .smarthoop-how-to-order .steps .step:nth-child(8) {
+        display: none; }
 
 .page-template-how-to-order > .make-order {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  margin-top: -2.60417vw;
   padding-bottom: 7.8125vw; }
   .page-template-how-to-order > .make-order .decorative.background {
     display: none; }
