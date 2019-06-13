@@ -17,7 +17,7 @@ if(isset($_GET['id'])) {
             break;
         }
     } 
-    $pages_count = round(count($data->field('images'))/6);
+    $pages_count = round(count($data->field('images'))/10);
 }else{
     $found = false;
 }
@@ -42,7 +42,7 @@ if(isset($_GET['id'])) {
                         </div> 
                         <?php if(!empty($data->field('images'))){ ?>
                             <div class="work-gallery">
-                                <?php for($i=0 + ((isset($_GET['pages']) && (int) $_GET['pages']!=1) ? ((int) $_GET['pages'] * 6 - 6) : 0);$i<((isset($_GET['pages']) && (int) $_GET['pages']!=1) ? ((int) $_GET['pages'] * 6) : 6);$i++) {?>
+                                <?php for($i=0 + ((isset($_GET['pages']) && (int) $_GET['pages']!=1) ? ((int) $_GET['pages'] * 10 - 10) : 0);$i<((isset($_GET['pages']) && (int) $_GET['pages']!=1) ? ((int) $_GET['pages'] * 10) : 10);$i++) {?>
                                 <div class="gallery-item">
                                     <img src="<?=$data->field('images')[$i]['guid']?>" alt="<?=$data->field('images')[$i]['post_title']?>">
                                 </div>
