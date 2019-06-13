@@ -29,8 +29,14 @@
                 @include bordered-block();
                 transform: translate(0, 0);
                 &::before {
-                    top: get-vw(37px);
+                    top: get-vw(35px);
+                    left: get-vw(-10px);
                     bottom: auto;
+                }
+            }
+            &:nth-child(1) {
+                &::before {
+                    left: 0;
                 }
             }
             &:nth-child(2),
@@ -43,8 +49,10 @@
                 margin-left: auto;
                 z-index: 2;
                 &::before {
-                    bottom: get-vw(37px);
+                    bottom: get-vw(52px);
+                    right: get-vw(15px);
                     top: auto;
+                    left: auto;
                 }
             }
             &:nth-child(2) {
@@ -67,21 +75,36 @@
                 margin-bottom: get-vw(100px);
             }
             &:nth-child(5) {
+                z-index: 4;
                 img {
-                    top: calc(100% + 3.38541666667vw);
-                    left: get-vw(-15px);
-                    width: get-vw(690px);
-                    height: get-vw(690px);
+                    bottom: get-vw(114px);
+                    right: get-vw(-497px);
+                    width: get-vw(397px);
+                    height: get-vw(383px);
                 }
             }
             &:nth-child(6) {
                 top: get-vw(-100px);
                 img {
-                    bottom: calc(100% + 3.38541666667vw);
-                    right: get-vw(130px);
-                    width: get-vw(397px);
-                    height: get-vw(383px);
+                    left: get-vw(-623px);
+                    top: get-vw(100px);
+                    width: get-vw(690px);
+                    height: get-vw(690px);
+
                 }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: get-vw(85px);
+                    height: 100%;
+                    background-color: $lavander;
+                    z-index: -1;
+                }
+            }
+            &:nth-child(7) {
+                z-index: 10;
             }
         }
     }

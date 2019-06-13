@@ -36,13 +36,16 @@
     .blog-content {
       position: absolute;
       width: 50%;
-      height: get-vw(570px);
+      max-height: get-vw(570px);
       background-color: $white;
       bottom: get-vw(-112px);
       left: 0;
       box-shadow: 0 0 get-vw(50px) rgba(0, 0, 0, .15);
       padding: get-vw(100px) get-vw(115px) get-vw(130px) get-vw(100px);
       overflow-y: auto;
+      p:last-child {
+        margin-bottom: 0;
+      }
     }
   }
   .blog-description {

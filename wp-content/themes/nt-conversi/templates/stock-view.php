@@ -83,7 +83,7 @@ if(isset($_GET['id'])) {
                             <span aria-hidden="true"></span>
                         </button>
                         <div class="form-inner-wrap">
-                            <h2>название акции</h2>
+                            <h2><?=$data->display('post_title')?></h2>
                             <p>С <?=date("d.m.Y", strtotime($data->display('start_date')));?> по <?=date("d.m.Y", strtotime($data->display('end_date')));?></p>
                         </div>
                         <form action="<?=$_SERVER['REQUEST_URI']?>&form=success" id="order-form" class="order-form active" enctype="multipart/form-data" method="post">

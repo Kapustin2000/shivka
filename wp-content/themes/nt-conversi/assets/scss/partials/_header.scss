@@ -150,16 +150,26 @@ header {
       &:not(.submenu) > li.has-submenu:hover {
         a {
           text-decoration: none;
-          &::after {
+          span {
             opacity: 1;
-          }
-          & + .submenu {
-            //display: block;
           }
         }
       }
       li:last-child {
         padding-bottom: 2vw;
+      }
+      .has-submenu {
+        cursor: pointer;
+        &:nth-child(1) {
+          a > span {
+            width: get-vw(210px);
+          }
+        }
+        &:nth-child(2) {
+          a > span {
+            width: get-vw(118px);
+          }
+        }
       }
       a {
         position: relative;
@@ -179,17 +189,17 @@ header {
         text-align: right;
       }
       &:not(.submenu) > li > a {
-        &::after {
-          content: '';
+        span {
           position: absolute;
+          display: block;
           right: calc(100% + 1.14583333333vw);
           top: 50%;
           transform: translateY(-50%);
-          width: get-vw(270px);
           height: 2px;
           background-color: $violet;
           z-index: 2;
           opacity: 0;
+          transition: opacity $default;
         }
       }
     }

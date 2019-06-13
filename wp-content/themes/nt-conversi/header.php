@@ -72,7 +72,10 @@ $works = pods('works')->find($params);
                     <div id="menu-toggle" class="menu-toggle">
                         <ul>
                             <li class="has-submenu">
-                                <a href="/services">услуги</a>
+                                <a href="/services">
+                                    услуги
+                                    <span></span>
+                                </a>
                                 <?php if($services->total_found()){ ?>
                                 <ul class="submenu">
                                     <?php while($services->fetch()) {?>
@@ -86,7 +89,10 @@ $works = pods('works')->find($params);
                                 <?php } ?>
                             </li>
                             <li class="has-submenu">
-                                <a href="/works">наши работы</a>
+                                <a href="/works">
+                                    наши работы
+                                    <span></span>
+                                </a>
                                 <?php if($works->total_found()){ ?>
                                     <ul class="submenu">
                                         <?php while($works->fetch()) {?>
