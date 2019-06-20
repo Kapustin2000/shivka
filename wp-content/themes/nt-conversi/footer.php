@@ -86,7 +86,7 @@ $services = pods('services')->find($params);
 <!--                            <div class="col-lg-6 col-xs-12">-->
                             <div class="col-6">
                             <textarea rows="5"
-                                      placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
+                                      name="message"   placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
                                 <button type="submit" class="btn btn-primary">Отправить</button>
                             </div>
                         </div>
