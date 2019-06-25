@@ -2533,7 +2533,7 @@ footer {
     top: calc(100% - 0.10416666666vw);
     left: 0;
     width: 100%;
-    height: 0.05208vw;
+    height: 1px;
     background-color: #000; }
   .pagination .arrow {
     cursor: pointer;
