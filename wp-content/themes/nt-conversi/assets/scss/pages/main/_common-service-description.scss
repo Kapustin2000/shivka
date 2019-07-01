@@ -1,20 +1,22 @@
 .common-service-description {
   padding-bottom: get-vw(240px);
   .common-service-wrap {
+    display: flex;
     position: relative;
   }
   .common-service-img {
     width: get-vw(850px);
+    min-width: get-vw(850px);
     img {
       width: 100%;
       height: auto;
     }
   }
   .common-service-text-wrap {
-    position: absolute;
-    top: 0;
     right: get-vw(110px);
     width: get-vw(700px);
+    min-width: get-vw(700px);
+    transform: translate(-2.60416666667vw, 0);
     .btn {
       margin-left: get-vw(118px);
     }

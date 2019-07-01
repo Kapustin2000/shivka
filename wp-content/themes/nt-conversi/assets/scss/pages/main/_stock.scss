@@ -1,20 +1,21 @@
 .stock {
   padding-bottom: get-vw(140px);
   .stock-wrap {
+    display: flex;
     position: relative;
   }
   .stock-img {
     width: get-vw(550px);
+    min-width: get-vw(550px);
     img {
       width: 100%;
       height: auto;
     }
   }
   .stock-text-wrap {
-    position: absolute;
-    top: get-vw(-55px);
-    right: 0;
     width: get-vw(1100px);
+    min-width: get-vw(1100px);
+    transform: translate(-2.60416666667vw, -2.86458333333vw);
   }
   .stock-text {
     width: 100%;
