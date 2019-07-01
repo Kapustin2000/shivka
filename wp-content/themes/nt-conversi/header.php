@@ -157,7 +157,7 @@ $works = pods('works')->find($params);
                         <h2>Хотите узнать стоимость услуги или сделать заказ?</h2>
                         <p>Напишите нам! Наш менеджер свяжется с вами в ближайшее время и проконсультирует по всем вопросам.</p>
                     </div>
-                    <form action="#" id="order-form" class="order-form-js order-form active" enctype="multipart/form-data" method="post">
+                    <form action="?form=success" id="order-form" class="order-form-js order-form active" enctype="multipart/form-data" method="post">
                         <div class="row">
                             <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
@@ -200,7 +200,7 @@ $works = pods('works')->find($params);
                         <h2>Хотите узнать стоимость услуги или сделать заказ?</h2>
                         <p>Напишите нам! Наш менеджер свяжется с вами в ближайшее время и проконсультирует по всем вопросам.</p>
                     </div>
-                    <form action="#" class="order-form-js call-form order-form active" enctype="multipart/form-data" method="post">
+                    <form action="?form=success" class="order-form-js call-form order-form active" enctype="multipart/form-data" method="post">
                         <div class="row">
                             <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
