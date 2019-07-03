@@ -1910,9 +1910,11 @@ footer {
       -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
     .smarthoop-about .partners .partner-wrap span {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
       text-align: left; }
     .smarthoop-about .partners .partner-wrap img {
       width: auto;

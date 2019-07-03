@@ -90,12 +90,8 @@ $(document).ready(function() {
         marquee.find('div').append(marquee.find("span").clone());
         var reset = function() {
             var $this = $(this);
-            if ($(window).width() <= '800'){
-                $this.stop();
-            } else {
-                $this.css("margin-left", "0%");
-                $this.animate({ "margin-left": "-100%" }, 25000, 'linear', reset);
-            }
+            $this.css("margin-left", "0%");
+            $this.animate({ "margin-left": "-100%" }, 25000, 'linear', reset);
         };
         reset.call(marquee.find("div"));
     });
