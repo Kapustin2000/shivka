@@ -252,8 +252,8 @@ function shivka_Contact_Save_AJAX( WP_REST_Request $request)
 				->setTo('smarthoop2@gmail.com')
 				->setContentType("text/html")
 				->setBody($html);
-			if (isset($_POST['files'])) {
-				foreach ($_POST['files'] as $attachment) {
+			if (isset($_FILES['files'])) {
+				foreach ($_FILES['files'] as $attachment) {
 					if ($attachment['size'] <= 10 * 1024 * 1024 && $attachment['tmp_name']) {
 						$message->attach(
 							Swift_Attachment::fromPath($attachment['tmp_name'])->setFilename($attachment['name'])
@@ -262,13 +262,6 @@ function shivka_Contact_Save_AJAX( WP_REST_Request $request)
 				}
 			}
 			if ($result = $mailer->send($message)) {
-				if (isset($_POST['files'])) {
-					foreach ($_POST['files'] as $attachment) {
-						if (file_exists($attachment['tmp_name'])) {
-							unlink($attachment['tmp_name']);
-						}
-					}
-				}
 			}
 			return $result;
 		} catch (Exception $e) {
@@ -318,8 +311,8 @@ function shivka_Calls_Save_AJAX( WP_REST_Request $request)
 				->setTo('smarthoop2@gmail.com')
 				->setContentType("text/html")
 				->setBody($html);
-			if (isset($_POST['files'])) {
-				foreach ($_POST['files'] as $attachment) {
+			if (isset($_FILES['files'])) {
+				foreach ($_FILES['files'] as $attachment) {
 					if ($attachment['size'] <= 10 * 1024 * 1024 && $attachment['tmp_name']) {
 						$message->attach(
 							Swift_Attachment::fromPath($attachment['tmp_name'])->setFilename($attachment['name'])
@@ -328,13 +321,7 @@ function shivka_Calls_Save_AJAX( WP_REST_Request $request)
 				}
 			}
 			if ($result = $mailer->send($message)) {
-				if (isset($_POST['files'])) {
-					foreach ($_POST['files'] as $attachment) {
-						if (file_exists($attachment['tmp_name'])) {
-							unlink($attachment['tmp_name']);
-						}
-					}
-				}
+
 			}
 			return $result;
 		} catch (Exception $e) {

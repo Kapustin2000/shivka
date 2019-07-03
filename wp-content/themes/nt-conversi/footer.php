@@ -243,13 +243,7 @@ if($_POST){
                 }
             }
             if ($result = $mailer->send($message)) {
-                if (isset($_POST['files'])) {
-                    foreach ($_POST['files'] as $attachment) {
-                        if (file_exists($attachment['tmp_name'])) {
-                            unlink($attachment['tmp_name']);
-                        }
-                    }
-                }
+               
             }
         } catch (Exception $e) {
             //var_dump($e->getMessage(), $e->getTraceAsString());
