@@ -92,21 +92,33 @@
             top: get-vw(-50px);
         }
         .partner-wrap {
-            width: 100%;
+            width: calc(100% - 4.58333vw);
             overflow: hidden;
-            padding-left: get-vw(88px);
+            margin-left: get-vw(88px);
             margin-bottom: get-vw(100px);
-        }
-        .partner-slider {
-            display: flex;
-            flex-wrap: nowrap;
-        }
-        .partner {
+            & > div {
+                width: 200%;
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            span {
+                //width: 50%;
+                display: inline-flex;
+                text-align: left;
+            }
             img {
                 width: auto;
                 height: get-vw(100px);
                 margin-right: get-vw(70px);
             }
+        }
+        .partner-slider {
+            display: flex;
+            flex-wrap: nowrap;
+
+        }
+        .partner {
+
         }
     }
 }

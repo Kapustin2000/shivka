@@ -62,11 +62,22 @@ $settings_website  = pods('website_settings')->find();
                     <div class="col-12">
                         <h2>наши клиенты</h2>
                         <div id="marquee" class="partner-wrap">
-                            <?php while($partners->fetch()){ ?>
-                                <div class="partner">
+                            <div>
+                                <span>
+                                <?php while($partners->fetch()){ ?>
                                     <img src="<?=$partners->display('logo')?>" alt="<?=$partners->display('title')?>">
-                                </div>
-                            <?php } ?>
+                                <?php } ?>
+                                    <img src="http://shivka/wp-content/uploads/2019/03/partner1-1.png" alt="Partners1">
+                                <img src="http://shivka/wp-content/uploads/2019/03/partner1-1.png" alt="Partners1">
+                                <img src="http://shivka/wp-content/uploads/2019/03/partner1-1.png" alt="Partners1">
+                                <img src="http://shivka/wp-content/uploads/2019/03/partner1-1.png" alt="Partners1">
+                                <img src="http://shivka/wp-content/uploads/2019/03/partner1-1.png" alt="Partners1">
+                                <img src="http://shivka/wp-content/uploads/2019/03/partner1-1.png" alt="Partners1">
+                                <img src="http://shivka/wp-content/uploads/2019/03/partner1-1.png" alt="Partners1">
+                                <img src="http://shivka/wp-content/uploads/2019/03/partner1-1.png" alt="Partners1">
+                                <img src="http://shivka/wp-content/uploads/2019/03/partner1-1.png" alt="Partners1">
+                            </span>
+                            </div>
                         </div>
                     </div>
                 </div>

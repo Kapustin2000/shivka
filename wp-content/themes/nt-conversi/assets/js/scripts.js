@@ -68,22 +68,37 @@ $(document).ready(function() {
         });
     }
 
-    var marquee = $('#marquee');
-    if (marquee.length) {
-        marquee.slick({
-            speed: 5000,
-            autoplay: true,
-            autoplaySpeed: 0,
-            cssEase: 'linear',
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            variableWidth: true,
-            infinite: true,
-            initialSlide: 1,
-            arrows: false,
-            buttons: false
-        });
-    }
+    // var marquee = $('#marquee');
+    // if (marquee.length) {
+    //     marquee.slick({
+    //         speed: 5000,
+    //         autoplay: true,
+    //         autoplaySpeed: 0,
+    //         cssEase: 'linear',
+    //         slidesToShow: 1,
+    //         slidesToScroll: 1,
+    //         variableWidth: true,
+    //         infinite: true,
+    //         initialSlide: 1,
+    //         arrows: false,
+    //         buttons: false
+    //     });
+    // }
+
+    $(function() {
+        var marquee = $('#marquee');
+        marquee.find('div').append(marquee.find("span").clone());
+        var reset = function() {
+            var $this = $(this);
+            if ($(window).width() <= '800'){
+                $this.stop();
+            } else {
+                $this.css("margin-left", "0%");
+                $this.animate({ "margin-left": "-100%" }, 25000, 'linear', reset);
+            }
+        };
+        reset.call(marquee.find("div"));
+    });
 
     //-------footer form
     $('#subscribe-form').on('submit', function(e) {
