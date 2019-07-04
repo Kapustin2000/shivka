@@ -85,16 +85,42 @@ $(document).ready(function() {
     //     });
     // }
 
-    $(function() {
-        var marquee = $('#marquee');
-        marquee.find('div').append(marquee.find("span").clone());
-        var reset = function() {
-            var $this = $(this);
-            $this.css("margin-left", "0%");
-            $this.animate({ "margin-left": "-100%" }, 25000, 'linear', reset);
-        };
-        reset.call(marquee.find("div"));
-    });
+    // $(function() {
+    //     var marquee = $('#marquee');
+    //     marquee.find('div').append(marquee.find("span").clone());
+    //     var reset = function() {
+    //         var $this = $(this);
+    //         $this.css("margin-left", "0%");
+    //         $this.animate({ "margin-left": "-100%" }, 25000, 'linear', reset);
+    //     };
+    //     reset.call(marquee.find("div"));
+    // });
+
+
+    (function( ele, frame, step ) {
+        var stp = step || 1;
+        var $item = $(ele).children();
+        var w = 0 ;
+        $item.each(function () {
+            w += $(this).width();
+        });
+
+        $(ele).html( $(ele).html() + $(ele).html() );
+
+        var $items = $(ele);
+
+        var temp = 0;
+        function move() {
+            if( temp > w ){
+                temp = 0
+            } else {
+                temp = temp + stp ;
+            }
+            $items.scrollLeft( temp );
+        }
+
+        setInterval(move , 1000/frame);
+    })('#marquee', 40, 1);
 
     //-------footer form
     $('#subscribe-form').on('submit', function(e) {

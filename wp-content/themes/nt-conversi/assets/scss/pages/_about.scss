@@ -96,13 +96,10 @@
             overflow: hidden;
             margin-left: get-vw(88px);
             margin-bottom: get-vw(100px);
+
+            display: flex;
+            flex-wrap: nowrap;
             & > div {
-                width: 200%;
-                display: flex;
-                flex-wrap: nowrap;
-            }
-            span {
-                //width: 50%;
                 display: flex;
                 flex-shrink: 0;
                 text-align: left;

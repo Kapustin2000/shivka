@@ -1901,15 +1901,13 @@ footer {
     width: calc(100% - 4.58333vw);
     overflow: hidden;
     margin-left: 4.58333vw;
-    margin-bottom: 5.20833vw; }
+    margin-bottom: 5.20833vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
     .smarthoop-about .partners .partner-wrap > div {
-      width: 200%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
-    .smarthoop-about .partners .partner-wrap span {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
