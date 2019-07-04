@@ -236,10 +236,11 @@ if($_POST){
                 ->setBody($html);
             if (isset($_FILES['files'])) {
                 foreach (reArrayFiles($_FILES['files']) as $attachment) {
-
-                    $message->attach(
-                        Swift_Attachment::fromPath($attachment['tmp_name'])->setFilename($attachment['name'])
-                    );
+                    if($attachment['tmp_name']!="") {
+                        $message->attach(
+                            Swift_Attachment::fromPath($attachment['tmp_name'])->setFilename($attachment['name'])
+                        );
+                    }
                 }
             }
             if ($result = $mailer->send($message)) {
