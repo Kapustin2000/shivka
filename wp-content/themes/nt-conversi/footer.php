@@ -215,8 +215,8 @@ if($_POST){
         try {
             require_once 'wp-content/plugins/swift-mailer/lib/swift_required.php';
             $request_data = array();
-            foreach($_POST['data'] as $key=>$item){
-                $request_data[$item['name']] = $item['value'];
+            foreach($_POST as $key=>$item){
+                $request_data[$key] = $item;
             }
             set_query_var('data', $request_data);
             ob_start();
