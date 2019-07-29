@@ -102,7 +102,9 @@ h1 {
   font-size: 3.125vw;
   font-weight: 400;
   line-height: 3.75vw;
-  color: #fff; }
+  color: #fff;
+  letter-spacing: 0.05208vw;
+  word-spacing: 0.15625vw; }
   h1 span {
     background-color: #3b2f5c; }
 
@@ -2321,7 +2323,7 @@ footer {
     position: absolute;
     z-index: 10;
     width: 110%;
-    bottom: calc(100% - 1.30208333333vw);
+    top: -6.25vw;
     right: 1.30208vw;
     text-align: right;
     margin: 0; }
