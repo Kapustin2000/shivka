@@ -374,43 +374,156 @@ textarea {
 .select2-container--default.select2-container--above:not(.select2-container--open) .select2-selection__rendered {
   color: #000 !important; }
 
-.form-element {
-  cursor: pointer;
+.make-order .g-recaptcha,
+.make-order .custom-submit {
+  margin: 2.60417vw 0 0; }
+
+.make-order .box {
   position: relative;
-  margin: 0;
-  height: 2.60417vw; }
-  .form-element-label {
-    cursor: pointer;
+  padding: 0.88542vw 2.5vw 0.52083vw;
+  height: 7.8125vw; }
+  .make-order .box__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .make-order .box__input > span {
+      display: block;
+      margin: 1.19792vw 0 0.88542vw;
+      font-size: 1.04167vw;
+      font-weight: 300;
+      font-stretch: condensed;
+      font-style: normal;
+      line-height: 0.9;
+      letter-spacing: normal;
+      text-align: center;
+      color: #cdcfe9;
+      text-transform: uppercase; }
+    .make-order .box__input input[type="file"] {
+      display: none; }
+    .make-order .box__input .btn-span {
+      padding: 0.57292vw 0 0.625vw;
+      font-size: 0.9375vw;
+      width: 8.33333vw;
+      white-space: nowrap;
+      margin: 0 auto; }
+    .make-order .box__input .uploaded + .btn-span {
+      position: absolute;
+      left: 50%;
+      bottom: 0.52083vw;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .make-order .box__input .files-names {
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+      padding-bottom: 0.52083vw; }
+    .make-order .box__input .file-item {
+      margin-bottom: 0.52083vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .make-order .box__input .file-item span {
+        font-size: 0.83333vw;
+        font-weight: 600;
+        font-stretch: condensed;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000; }
+      .make-order .box__input .file-item .btn-close {
+        width: 0.72917vw;
+        height: 0.72917vw;
+        padding: 0;
+        margin: 0; }
+  .make-order .box.has-advanced-upload {
+    border-radius: 25px;
+    border: 2px dashed #cdcfe9; }
+  .make-order .box.is-dragover {
+    border-color: #3b2f5c; }
+  .make-order .box__dragndrop, .make-order .box__icon {
+    display: none; }
+  .make-order .box.has-advanced-upload .make-order .box__dragndrop {
+    display: inline; }
+  .make-order .box.is-uploading .make-order .box__input,
+  .make-order .box.is-success .make-order .box__input,
+  .make-order .box.is-error .make-order .box__input {
+    visibility: hidden; }
+  .make-order .box__uploading, .make-order .box__success, .make-order .box__error {
+    display: none; }
+  .make-order .box.is-uploading .make-order .box__uploading,
+  .make-order .box.is-success .make-order .box__success,
+  .make-order .box.is-error .make-order .box__error {
+    display: block;
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
-    line-height: 2.60417vw;
-    height: 2.60417vw;
-    padding: 0 2vw;
-    z-index: 1;
-    color: #3b2f5c;
-    border: .10417vw solid #3b2f5c;
-    background-color: #fff;
-    font-size: 1.04167vw;
-    font-weight: 500;
-    border-radius: 2.60417vw;
-    text-transform: uppercase; }
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .make-order .box__uploading {
+    font-style: italic; }
 
-.form-element input[type="file"] + .form-element-inputfile {
-  height: 2.60417vw;
-  border-radius: 2.60417vw;
-  border: none;
-  background-color: #cdcfe9;
-  color: #fff;
-  font-size: 1.04167vw;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-family: 'Open Sans Condensed',sans-serif; }
-  .form-element input[type="file"] + .form-element-inputfile span {
-    line-height: 2.60417vw; }
+.box__restart {
+  font-weight: 700; }
 
-.form-element-inputfile-filled span {
-  color: #000; }
+.box__restart:focus,
+.box__restart:hover {
+  color: #39bfd3; }
+
+.js .box__file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+.js .box__file + label {
+  max-width: 80%;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden; }
+
+.js .box__file + label:hover strong,
+.box__file:focus + label strong,
+.box__file.has-focus + label strong {
+  color: #39bfd3; }
+
+.js .box__file:focus + label,
+.js .box__file.has-focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px; }
+
+.no-js .box__button {
+  display: block; }
+
+.box__button {
+  font-weight: 700;
+  color: #e5edf1;
+  background-color: #39bfd3;
+  display: block;
+  padding: 8px 16px;
+  margin: 40px auto 0; }
+
+.box__button:hover,
+.box__button:focus {
+  background-color: #0f3c4b; }
 
 button,
 .btn-span {
@@ -422,13 +535,14 @@ button,
   font-weight: 500;
   line-height: 1;
   border: none;
+  text-align: center;
   background-color: transparent;
   border-radius: 2.60417vw;
   text-transform: uppercase;
   padding: 0.67708vw 2.96875vw;
-  -webkit-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out; }
+  -webkit-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out; }
   button::after,
   .btn-span::after {
     content: '';
@@ -1200,7 +1314,7 @@ footer {
       overflow: hidden;
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
-      max-width: 16.58333vw; }
+      max-width: 14.58333vw; }
     .services .service-item .btn {
       display: block;
       position: absolute;
@@ -1238,10 +1352,10 @@ footer {
       height: auto; }
   .stock .stock-text-wrap {
     width: 57.29167vw;
-    min-width: 54.29167vw;
+    min-width: 57.29167vw;
     -webkit-transform: translate(-2.60417vw, -2.86458vw);
     -ms-transform: translate(-2.60417vw, -2.86458vw);
-    transform: translate(-0.60417vw,-2.86458vw); }
+    transform: translate(-2.60417vw, -2.86458vw); }
   .stock .stock-text {
     width: 100%;
     position: relative; }
@@ -1255,11 +1369,11 @@ footer {
       margin: 0 0 5.20833vw; }
     .stock .stock-text .ornament {
       position: absolute;
-      max-width: 32.91667vw;
-      width: 100%;
+      max-width: 22.91667vw;
+      width: 50%;
       height: auto;
-      bottom: -3.60417vw;
-      right: -3.39583vw; }
+      bottom: -2.60417vw;
+      right: 2.60417vw; }
 
 .steps {
   counter-reset: section;
@@ -1365,13 +1479,13 @@ footer {
     display: none; }
   .make-order #order-form.active + form + .file-form {
     display: block; }
-  .make-order .file-form {
+  .make-order .box-wrap {
     position: absolute;
     padding: 0;
     right: 5.20833vw;
     top: 31.45833vw;
     width: calc(50% - 6.23333vw); }
-    .make-order .file-form input {
+    .make-order .box-wrap input {
       margin: 0; }
 
 .rc-anchor-normal {
@@ -2074,7 +2188,7 @@ footer {
     position: relative; }
     .smarthoop-blog-post .top-block h1 {
       position: absolute;
-      max-width: 41.70833vw;
+      max-width: 17.70833vw;
       top: -2.60417vw;
       left: 0; }
     .smarthoop-blog-post .top-block .image-wrap {
@@ -2405,9 +2519,9 @@ footer {
   .smarthoop-stock-item h1 {
     margin: 0;
     position: absolute;
-    max-width: 30.86458vw;
+    max-width: 17.86458vw;
     top: -2.60417vw;
-    left: -4.60417vw; }
+    left: -2.60417vw; }
   .smarthoop-stock-item .stock-item {
     position: relative;
     z-index: 10;
@@ -2453,7 +2567,7 @@ footer {
     display: flex; }
   .smarthoop-stock-item .stock-more .stock-more-img {
     width: 52.08333vw;
-    height: 52.08333vw;
+    height: 31.25vw;
     background-repeat: no-repeat;
     background-size: cover; }
   .smarthoop-stock-item .stock-more .content-editable {

@@ -8,11 +8,12 @@ button,
   font-weight: 500;
   line-height: 1;
   border: none;
+  text-align: center;
   background-color: transparent;
   border-radius: get-vw(50px);
   text-transform: uppercase;
   padding: get-vw(13px) get-vw(57px);
-  transition: $default;
+  transition: background $default;
   &::after {
     content: '';
     position: absolute;

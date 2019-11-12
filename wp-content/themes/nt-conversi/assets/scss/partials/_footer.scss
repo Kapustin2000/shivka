@@ -126,61 +126,6 @@ footer {
   }
 }
 
-@media (max-width: $desktop) {
-  footer {
-
-  }
-}
-
-//@media (min-width: $tablet + 1px) and (max-width: $desktop) {
-//  footer {
-//    .footer-nav {
-//      ul {
-//        li {
-//          width: 25%;
-//        }
-//      }
-//    }
-//  }
-//}
-//
-//@media (min-width: $mobile + 1px) and (max-width: $tablet) {
-//  footer {
-//    .footer-nav {
-//      ul {
-//        li {
-//          width: 33.33333%;
-//        }
-//      }
-//    }
-//  }
-//}
-//
-//@media (max-width: $mobile) {
-//  footer {
-//    .subscribe {
-//      width: 100%;
-//    }
-//    form {
-//      .form-group {
-//        input {
-//          width: 100%;
-//        }
-//        button {
-//          width: 50%;
-//        }
-//      }
-//    }
-//    .footer-nav {
-//      ul {
-//        li {
-//          width: 50%;
-//        }
-//      }
-//    }
-//  }
-//}
-
 @media (min-width: $tablet + 1px) {
   .phone-link {
     cursor: default;

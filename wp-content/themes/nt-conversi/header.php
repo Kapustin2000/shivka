@@ -41,7 +41,7 @@
 }
         
         .g-recaptcha > div{
-            margin:0 auto;
+            margin: 0;
         }
         #g-recaptcha-response {
     display: block !important;

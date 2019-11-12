@@ -69,7 +69,7 @@
     #order-form.active + form + .file-form {
         display: block;
     }
-    .file-form {
+    .box-wrap {
         position: absolute;
         padding: 0;
         right: get-vw(100px);

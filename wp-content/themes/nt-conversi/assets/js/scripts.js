@@ -17,7 +17,6 @@ $(document).ready(function() {
 
     //-------file form
     $('.service-select').select2();
-    $('input[type=file]').inputfile();
 
     //
     $('#see-more').on('click', function() {

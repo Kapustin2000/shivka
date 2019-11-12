@@ -507,49 +507,177 @@ textarea {
   }
 }
 
-//fileinput
-.form-element {
+//drag&drop
+.make-order {
+  .g-recaptcha,
+  .custom-submit {
+    margin: get-vw(50px) 0 0;
+  }
+  .box {
+    position: relative;
+    padding: get-vw(17px) get-vw(48px) get-vw(10px);
+    height: get-vw(150px);
+    &__input {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & > span {
+        display: block;
+        margin: get-vw(23px) 0 get-vw(17px);
+        font-size: get-vw(20px);
+        font-weight: 300;
+        font-stretch: condensed;
+        font-style: normal;
+        line-height: 0.9;
+        letter-spacing: normal;
+        text-align: center;
+        color: $lavander;
+        text-transform: uppercase;
+      }
+      input[type="file"] {
+        display: none;
+      }
+      .btn-span {
+        padding: get-vw(11px) 0 get-vw(12px);
+        font-size: get-vw(18px);
+        width: get-vw(160px);
+        white-space: nowrap;
+        margin: 0 auto;
+      }
+      .uploaded + .btn-span {
+        position: absolute;
+        left: 50%;
+        bottom: get-vw(10px);
+        transform: translateX(-50%);
+      }
+      .files-names {
+        background-color: $white;
+        position: relative;
+        z-index: 1;
+        padding-bottom: get-vw(10px);
+      }
+      .file-item {
+        margin-bottom: get-vw(10px);
+        display: flex;
+        justify-content: space-between;
+        span {
+          font-size: get-vw(16px);
+          font-weight: 600;
+          font-stretch: condensed;
+          font-style: normal;
+          line-height: 1.13;
+          letter-spacing: normal;
+          text-align: center;
+          color: $black;
+        }
+        .btn-close {
+          width: get-vw(14px);
+          height: get-vw(14px);
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+    &.has-advanced-upload {
+      border-radius: 25px;
+      border: 2px dashed $lavander;
+    }
+    &.is-dragover {
+      border-color: $violet;
+    }
+    &__dragndrop,
+    &__icon
+    {
+      display: none;
+    }
+    &.has-advanced-upload &__dragndrop
+    {
+      display: inline;
+    }
+    &.is-uploading &__input,
+    &.is-success &__input,
+    &.is-error &__input {
+      visibility: hidden;
+    }
+    &__uploading,
+    &__success,
+    &__error {
+      display: none;
+    }
+    &.is-uploading &__uploading,
+    &.is-success &__success,
+    &.is-error &__error {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      -webkit-transform: translateY( -50% );
+      transform: translateY( -50% );
+    }
+    &__uploading {
+      font-style: italic;
+    }
+  }
+}
+
+
+.box__restart
+{
+  font-weight: 700;
+}
+.box__restart:focus,
+.box__restart:hover
+{
+  color: #39bfd3;
+}
+
+.js .box__file
+{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.js .box__file + label
+{
+  max-width: 80%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   cursor: pointer;
-  position: relative;
-  margin: 0;
-  height: get-vw(50px);
-  &-label {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    line-height: get-vw(50px);
-    height: get-vw(50px);
-    padding: 0 2vw;
-    z-index: 1;
-    color: #3b2f5c;
-    border: .10417vw solid #3b2f5c;
-    background-color: $white;
-    font-size: 1.04167vw;
-    font-weight: 500;
-    border-radius: 2.60417vw;
-    text-transform: uppercase;
-  }
+  display: inline-block;
+  overflow: hidden;
 }
-
-.form-element input[type="file"] + .form-element-inputfile {
-  height: get-vw(50px);
-  border-radius: 2.60417vw;
-  border: none;
-  background-color: $lavander;
-  color: $white;
-  font-size: 1.04167vw;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-family: 'Open Sans Condensed',sans-serif;
-  span {
-    line-height: get-vw(50px);
-  }
+.js .box__file + label:hover strong,
+.box__file:focus + label strong,
+.box__file.has-focus + label strong
+{
+  color: #39bfd3;
 }
-
-.form-element-inputfile-filled {
-  span {
-    color: $black;
-  }
+.js .box__file:focus + label,
+.js .box__file.has-focus + label
+{
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+.no-js .box__button
+{
+  display: block;
+}
+.box__button
+{
+  font-weight: 700;
+  color: #e5edf1;
+  background-color: #39bfd3;
+  display: block;
+  padding: 8px 16px;
+  margin: 40px auto 0;
+}
+.box__button:hover,
+.box__button:focus
+{
+  background-color: #0f3c4b;
 }
 
