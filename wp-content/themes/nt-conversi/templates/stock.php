@@ -8,9 +8,9 @@ Template Name: Stock
 
 $params = array(
     'where' => "end_date.meta_value >= '".date("Y-m-d")."'",
-    'orderby'=>"start_date,order_weight.meta_value DESC,id DESC"
+    'orderby'=>"order_weight.meta_value + 0 DESC,id DESC"
 );
-$data = pods('stock')->find();
+$data = pods('stock')->find($params);
 
 
 ?>

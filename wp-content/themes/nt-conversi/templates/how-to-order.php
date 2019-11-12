@@ -3,7 +3,7 @@
 Template Name: How to order
 */
 $params = array(
-    'orderby'=>"order_weight.meta_value DESC,id DESC",
+    'orderby'=>"order_weight.meta_value + 0 DESC,id DESC",
 );
 $stages_of_work = pods('how_to_order')->find($params);
 ?>

@@ -3,7 +3,7 @@
 <?php
 
 $params = array(
-    'orderby'=>"order_weight.meta_value DESC,id DESC",
+    'orderby'=>"order_weight.meta_value + 0 DESC,id DESC",
     'offset' => isset($_REQUEST['offset']) ? intval($_REQUEST['offset']) : 0,
     'limit' => isset($_REQUEST['limit']) ? intval($_REQUEST['limit']) : 0
 );

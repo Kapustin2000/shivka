@@ -8,7 +8,6 @@ if(isset($_GET['id'])) {
         'where' => "post_name = '" . $id . "'"
     );
     $data = pods('stock')->find($params);
-
     $found = false;
     if (!empty($data->total_found())) {
         while ($data->fetch()) {
@@ -20,7 +19,6 @@ if(isset($_GET['id'])) {
 }else{
     $found = false;
 }
-
 ?>
 
 <?php get_header(); ?>
@@ -90,9 +88,12 @@ if(isset($_GET['id'])) {
                             <div class="row">
                                 <!-- <div class="col-lg-6 col-xs-12">-->
                                 <div class="col-6">
+                                     <input type="hidden" required name="stock_name" value="<?=$data->display('post_title')?>">
                                     <input type="text" placeholder="Имя*" required name="full_name">
                                     <input type="email" placeholder="E-mail*" required name="email">
                                     <input type="text" id="phone" placeholder="Телефон" name="phone">
+                                                                <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
+
                                 </div>
                                 <!-- <div class="col-lg-6 col-xs-12">-->
                                 <div class="col-6">
@@ -103,7 +104,8 @@ if(isset($_GET['id'])) {
                                         <div class="form-element-error">Невозможно загрузить файлы</div>
                                         <input type="file" class="fileinput" id="fileinput4" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Отправить</button>
+                                                                   
+                                <button style="" type="submit" class="btn btn-primary custom-submit">Отправить</button>
                                 </div>
                             </div>
                         </form>

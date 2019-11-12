@@ -9,7 +9,7 @@ Template Name: About
 $settings = pods('about_ui')->find();
 
 $params = array(
-    'orderby'=>"order_weight.meta_value DESC,id DESC"
+    'orderby'=>"order_weight.meta_value + 0 DESC,id DESC"
 );
 $partners = pods('partners')->find();
 

@@ -12,7 +12,7 @@ $settings = pods('home_ui')->find();
 
 
 $params = array(
-    'orderby'=>"order_weight.meta_value DESC,id DESC",
+    'orderby'=>"order_weight2.meta_value DESC,id DESC",
     'limit' => 3
 );
 $services = pods('services')->find($params);
@@ -20,7 +20,7 @@ $services = pods('services')->find($params);
 
 
 $params = array(
-    'orderby'=>"order_weight.meta_value DESC,id DESC",
+    'orderby'=>"order_weight2.meta_value DESC,id DESC",
     'limit' => 1
 );
 $stock = pods('stock')->find($params);

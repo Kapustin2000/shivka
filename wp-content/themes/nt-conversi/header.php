@@ -26,7 +26,33 @@
     <link href="<?php bloginfo('template_url'); ?>/assets/libs/fileinput/fileinput.min.css" rel="stylesheet" />
     <link href="<?php bloginfo('template_url'); ?>/assets/css/styles.css" rel="stylesheet">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <?php wp_head(); ?>
+    <?php wp_head(); ?>  
+    <style>
+    .captcha-fake-field {
+  background: transparent;
+  bottom: 0;
+  border: none;
+  display: block;
+  height: 1px;
+  left: 12px;
+  width: 1px;
+  position: absolute;
+  z-index: -1;
+}
+        
+        .g-recaptcha > div{
+            margin:0 auto;
+        }
+        #g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -78px 0 0 0 !important;
+    width: 302px !important;
+    height: 76px !important;
+    z-index: -999999;
+    opacity: 0;
+}
+    </style>
 </head>
 <?php
 
@@ -178,9 +204,10 @@ $works = pods('works')->find($params);
                                     <div class="form-element-error">Невозможно загрузить файлы</div>
                                     <input type="file" class="fileinput" id="fileinput1" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
                                 </div>
-                                <button type="submit" class="btn btn-primary">Отправить</button>
-                            </div>
+                                <button style="" type="submit" class="btn btn-primary custom-submit">Отправить</button>       </div>
                         </div>
+                                                                                                                           <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
+
                     </form>
                 </div>
             </section>
@@ -205,12 +232,14 @@ $works = pods('works')->find($params);
                             <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="text" id="phone" placeholder="Телефон*" required name="phone">
+                                <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>  
                             </div>
                             <div class="col-6">
                                 <textarea rows="5" name="message"
                                           placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                                <button type="submit" class="btn btn-primary">Отправить</button>
+                              <button style="" type="submit" class="btn btn-primary custom-submit">Отправить</button>
                             </div>
+                                        
                         </div>
                     </form>
                 </div>

@@ -29,9 +29,7 @@ $data = pods('faq')->find(); ?>
                         <h2 class="panel-question"><?=$data->display('post_title')?></h2>
                         <div class="panel-answer">
                             <?=$data->display('post_content')?>
-                            <ul>
-                                <li>Вы отправляете нам заявку с картинкой для будущей вышивки с указанием размеров, тиража и вашими пожеланиями.</li>
-                            </ul>
+                            <?=$data->display('description')?>
                         </div>
                     </div>
                 <?php } ?>

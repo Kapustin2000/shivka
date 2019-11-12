@@ -248,7 +248,7 @@ function shivka_Contact_Save_AJAX( WP_REST_Request $request)
 			$mailer = new Swift_Mailer($transport);
 
 			$message = (new Swift_Message("Submitted files"))
-				->setFrom(['mikhail.kapustin@hys-enterprise.com' => 'New apply'])
+				->setFrom(['info@smarthoop.com.ua' => 'New apply'])
 				->setTo('smarthoop2@gmail.com')
 				->setContentType("text/html")
 				->setBody($html);
@@ -305,9 +305,9 @@ function shivka_Calls_Save_AJAX( WP_REST_Request $request)
 
 			// Create the Mailer using your created Transport
 			$mailer = new Swift_Mailer($transport);
-
-			$message = (new Swift_Message("Submitted files"))
-				->setFrom(['mikhail.kapustin@hys-enterprise.com' => 'Call apply'])
+			$message = (new Swift_Message())
+				->setSubject('ПЕРЕЗВОНИТЕ МНЕ')
+				->setFrom(['info@smarthoop.com.ua' => 'SMARTHOOP'])
 				->setTo('smarthoop2@gmail.com')
 				->setContentType("text/html")
 				->setBody($html);

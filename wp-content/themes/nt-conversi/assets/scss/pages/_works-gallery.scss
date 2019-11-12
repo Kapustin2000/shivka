@@ -31,7 +31,7 @@
     position: absolute;
     z-index: 10;
     width: 110%;
-    top: get-vw(-120px);
+    bottom: calc(100% - 1.30208333333vw);
     right: get-vw(25px);
     text-align: right;
     margin: 0;

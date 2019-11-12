@@ -7,7 +7,7 @@ $styles = array(
     'col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12'
 );
 $params = array(
-    'orderby'=>"order_weight.meta_value DESC,id DESC",
+    'orderby'=>"order_weight.meta_value + 0 DESC,id DESC",
     'offset' => isset($_REQUEST['offset']) ? intval($_REQUEST['offset']) : 0,
     'limit' => isset($_REQUEST['limit']) ? intval($_REQUEST['limit']) : 0
 );

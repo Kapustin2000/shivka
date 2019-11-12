@@ -102,9 +102,7 @@ h1 {
   font-size: 3.125vw;
   font-weight: 400;
   line-height: 3.75vw;
-  color: #fff;
-  letter-spacing: 0.05208vw;
-  word-spacing: 0.15625vw; }
+  color: #fff; }
   h1 span {
     background-color: #3b2f5c; }
 
@@ -1202,7 +1200,7 @@ footer {
       overflow: hidden;
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
-      max-width: 14.58333vw; }
+      max-width: 16.58333vw; }
     .services .service-item .btn {
       display: block;
       position: absolute;
@@ -1240,10 +1238,10 @@ footer {
       height: auto; }
   .stock .stock-text-wrap {
     width: 57.29167vw;
-    min-width: 57.29167vw;
+    min-width: 54.29167vw;
     -webkit-transform: translate(-2.60417vw, -2.86458vw);
     -ms-transform: translate(-2.60417vw, -2.86458vw);
-    transform: translate(-2.60417vw, -2.86458vw); }
+    transform: translate(-0.60417vw,-2.86458vw); }
   .stock .stock-text {
     width: 100%;
     position: relative; }
@@ -1257,11 +1255,11 @@ footer {
       margin: 0 0 5.20833vw; }
     .stock .stock-text .ornament {
       position: absolute;
-      max-width: 22.91667vw;
-      width: 50%;
+      max-width: 32.91667vw;
+      width: 100%;
       height: auto;
-      bottom: -2.60417vw;
-      right: 2.60417vw; }
+      bottom: -3.60417vw;
+      right: -3.39583vw; }
 
 .steps {
   counter-reset: section;
@@ -2076,7 +2074,7 @@ footer {
     position: relative; }
     .smarthoop-blog-post .top-block h1 {
       position: absolute;
-      max-width: 17.70833vw;
+      max-width: 41.70833vw;
       top: -2.60417vw;
       left: 0; }
     .smarthoop-blog-post .top-block .image-wrap {
@@ -2323,7 +2321,7 @@ footer {
     position: absolute;
     z-index: 10;
     width: 110%;
-    top: -6.25vw;
+    bottom: calc(100% - 1.30208333333vw);
     right: 1.30208vw;
     text-align: right;
     margin: 0; }
@@ -2407,9 +2405,9 @@ footer {
   .smarthoop-stock-item h1 {
     margin: 0;
     position: absolute;
-    max-width: 17.86458vw;
+    max-width: 30.86458vw;
     top: -2.60417vw;
-    left: -2.60417vw; }
+    left: -4.60417vw; }
   .smarthoop-stock-item .stock-item {
     position: relative;
     z-index: 10;
@@ -2455,7 +2453,7 @@ footer {
     display: flex; }
   .smarthoop-stock-item .stock-more .stock-more-img {
     width: 52.08333vw;
-    height: 31.25vw;
+    height: 52.08333vw;
     background-repeat: no-repeat;
     background-size: cover; }
   .smarthoop-stock-item .stock-more .content-editable {

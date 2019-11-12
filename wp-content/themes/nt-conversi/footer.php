@@ -72,9 +72,10 @@ $services = pods('services')->find($params);
                                     <div class="form-element-error">Невозможно загрузить файлы</div>
                                     <input type="file" class="fileinput" id="fileinput3" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
                                 </div>
-                                <button type="submit" class="btn btn-primary">Отправить</button>
+                                <button style="" type="submit" class="btn btn-primary custom-submit">Отправить</button>  
                             </div>
                         </div>
+                                                                                                                   <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
                     </form>
                     <form action="#" class="call-form">
                         <div class="row">
@@ -82,12 +83,14 @@ $services = pods('services')->find($params);
                             <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="text" placeholder="Телефон*" required name="phone">
+                                                                                                                         <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
+
                             </div>
 <!--                            <div class="col-lg-6 col-xs-12">-->
                             <div class="col-6">
                             <textarea rows="5"
                                       name="message"   placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                                <button type="submit" class="btn btn-primary">Отправить</button>
+                                <button style="" type="submit" class="btn btn-primary custom-submit">Отправить</button> 
                             </div>
                         </div>
                     </form>
@@ -110,7 +113,7 @@ $services = pods('services')->find($params);
                             <a target="_blank" href="<?=$settings->display('wholesale_latitude')?>" class="map-link">
                                 <?=$settings->display('wholesale_city')?>
                             </a> <br/>
-                            Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>" class="phone-link"><?=$settings->display('wholesale_number')?></a>, <a href="tel:+380667734186" class="phone-link">0667734186</a><br/>
+                            Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>" class="phone-link"><?=$settings->display('wholesale_number')?></a>, <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="tel:+380667734186" class="phone-link">(066) 773 41 86</a><br/>
                             email: <a href="mailto:<?=$settings->display('wholesale_email')?>"><?=$settings->display('wholesale_email')?></a>
                         </div>
                     </div>
@@ -186,8 +189,16 @@ $services = pods('services')->find($params);
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/imagefill/jquery-imagefill.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/libs/masonry/masonry.pkgd.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/js/scripts.js"></script>
+ <script>
+    window.onload = function() {
+    window.removeFakeCaptcha = function() {
+   $('.captcha-fake-field').remove();
+}
+     
+};
+</script> 
 <?php
-if($_POST){
+if($_POST && !empty($_POST['g-recaptcha-response'])){
     $pod = pods( 'contact');
     $fields = $pod->fields();
     $data = array();
@@ -229,8 +240,9 @@ if($_POST){
 
             // Create the Mailer using your created Transport
             $mailer = new Swift_Mailer($transport);
-            $message = (new Swift_Message("You got new Contact request"))
-                ->setFrom(['mikhail.kapustin@hys-enterprise.com' => 'You got new Contact request'])
+            $message = (new Swift_Message())
+                ->setSubject('ЗАПРОС НА ВЫШИВКУ')
+                ->setFrom(['info@smarthoop.com.ua' => 'SMARTHOOP'])
                 ->setTo('smarthoop2@gmail.com')
                 ->setContentType("text/html")
                 ->setBody($html);
