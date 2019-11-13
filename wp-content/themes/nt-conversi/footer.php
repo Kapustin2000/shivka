@@ -64,9 +64,9 @@ $services = pods('services')->find($params);
                             </div>
                             <div class="col-12">
                                 <div class="row">
-                                    <div class="col-6">
-                                        <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
-                                    </div>
+<!--                                    <div class="col-6">-->
+<!--                                        <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>-->
+<!--                                    </div>-->
                                     <div class="col-6">
                                         <button type="submit" class="btn btn-primary custom-submit">Отправить</button>
                                     </div>
@@ -76,7 +76,7 @@ $services = pods('services')->find($params);
                     </form>
 
                     <div class="box-wrap">
-                        <form id="submit-info-form" method="post" action="" enctype="multipart/form-data" novalidate="" class="active box has-advanced-upload">
+                        <form id="submit-info-form" action="/wp-json/cv/v1/save" method="post" action="" enctype="multipart/form-data" novalidate="" class="active box has-advanced-upload">
                             <div class="box__input">
                                 <span class="d-lg-none d-md-none d-sm-none d-xs-none">Добавьте ваш файл, картинки или фотографии</span>
                                 <span class="d-xl-none">Добавьте ваш файл или картинки</span>
@@ -257,7 +257,7 @@ $services = pods('services')->find($params);
                     files_names.html('');
                     var files_list = '';
                     for (var key in files) {
-                        files_list += '<div class="file-item"><span>'+files[key]['name']+'</span><button data-item-id="\'+key+\'" type="button" class="btn-close">×</button></div>';
+                        files_list += '<div class="file-item"><span>'+files[key]['name']+'</span><button data-item-id="'+key+'" type="button" class="btn-close">×</button></div>';
                     }
                     $('.box__input > span').hide();
                     label.classList.add('uploaded');
@@ -473,18 +473,17 @@ $services = pods('services')->find($params);
                         type: 'POST',
                         url:'/wp-json/cv/v1/delete',
                         data:   {files : [files_from_back[file_key_back]]},
-                        success: function(data) {
+                        success: function(data) { 
                             if(files_to_send.length > 1) {
                                 files_to_send.splice(file_key_send,1);
                             }else{
                                 files_to_send = [];
                             }
                             if(files_from_back.length>1){
-                                files_from_back.splice(file_key_send,1);
+                                files_from_back.splice(file_key_back,1);
                             }else{
                                 files_from_back = [];
                             }
-
                             showFiles(files_to_send);
                         },
                         error: function(MLHttpRequest, textStatus, errorThrown) {
@@ -493,7 +492,7 @@ $services = pods('services')->find($params);
                     });
                 });
 
-                $('#submit-info-form').submit(function () {
+                $('#submit-info-form').submit(function (e) {
                     var valid = true;
                     var required = $('#submit-info-form').find('[required]');
                     if (required) {
@@ -520,6 +519,7 @@ $services = pods('services')->find($params);
                             }
                         });
                     }
+                    e.preventDefault();
                 });
             });
         });
@@ -527,75 +527,5 @@ $services = pods('services')->find($params);
 
 </script>
 
-
-<?php
-if($_POST && !empty($_POST['g-recaptcha-response'])){
-    $pod = pods( 'contact');
-    $fields = $pod->fields();
-    $data = array();
-    foreach($fields as $key=>$item){
-        if(isset($_POST[$key]) && !empty($_POST[$key])){
-            $param = shivka_escapeParam($_POST[$key]);
-            if(trim($param) === "" || trim($param) === null){
-                if((bool) $fields[$key]['options']['required']) {
-                    header("HTTP/1.0 " . $key . "  can't be empty");
-                    exit();
-                }else{
-                    $param = "";
-                }
-            }
-            $data[$key] = $param;
-        }else if((bool) $fields[$key]['options']['required']){
-            header("HTTP/1.0 ".$key." is required");
-            exit();
-        }
-    }
-    $data['post_title'] = date("Y/m/d");
-
-    $res =    $new_id = $pod->add($data);
-    if($res){
-        try {
-            require_once 'wp-content/plugins/swift-mailer/lib/swift_required.php';
-            $request_data = array();
-            foreach($_POST as $key=>$item){
-                $request_data[$key] = $item;
-            }
-            set_query_var('data', $request_data);
-            ob_start();
-            include 'wp-content/themes/nt-conversi/templates/post_print.php';
-            $html = ob_get_clean();
-            $transport = (new Swift_SmtpTransport(SWIFT_server, SWIFT_port, SWIFT_protocol))
-                ->setUsername(SWIFT_email)
-                ->setPassword(SWIFT_pass)
-                ->setStreamOptions(array('ssl' => array('allow_self_signed' => true, 'verify_peer' => false)));
-
-            // Create the Mailer using your created Transport
-            $mailer = new Swift_Mailer($transport);
-            $message = (new Swift_Message())
-                ->setSubject('ЗАПРОС НА ВЫШИВКУ')
-                ->setFrom(['info@smarthoop.com.ua' => 'SMARTHOOP'])
-                ->setTo('smarthoop2@gmail.com')
-                ->setContentType("text/html")
-                ->setBody($html);
-            if (isset($_FILES['files'])) {
-                foreach (reArrayFiles($_FILES['files']) as $attachment) {
-                    if($attachment['tmp_name']!="") {
-                        $message->attach(
-                            Swift_Attachment::fromPath($attachment['tmp_name'])->setFilename($attachment['name'])
-                        );
-                    }
-                }
-            }
-            if ($result = $mailer->send($message)) {
-               
-            }
-        } catch (Exception $e) {
-            //var_dump($e->getMessage(), $e->getTraceAsString());
-            $result = $e->getMessage();
-
-        }
-    }
-}
-?>
 </body>
 </html>
