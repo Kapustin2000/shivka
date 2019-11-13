@@ -171,3 +171,104 @@ footer {
   width: get-vw(30px);
   height: get-vw(30px);
 }
+
+@media (min-width: $min-tablet)
+and (max-width: $tablet) {
+  footer {
+    font-size: get-vw-t(16px);
+    line-height: get-vw-t(23px);
+    .inner-wrap {
+      flex-wrap: nowrap;
+      border-top: get-vw-t(1px) solid $violet;
+      border-bottom: get-vw-t(1px) solid $violet;
+      padding: get-vw-t(29px) 0 0;
+      & > * {
+        margin-bottom: get-vw(30px);
+      }
+    }
+    .logo-wrap {
+      margin-right: get-vw-t(60px);
+      img {
+        width: get-vw-t(88px);
+        height: get-vw-t(88px);
+      }
+    }
+    .contacts {
+      min-width: get-vw-t(177px);
+    }
+    .schedule {
+      min-width: get-vw-t(127px);
+    }
+    .contacts,
+    .schedule {
+      margin-right: get-vw-t(60px);
+    }
+    .social-wrap {
+      a {
+        margin-right: get-vw-t(20px);
+        width: get-vw-t(50px);
+        height: get-vw-t(50px);
+      }
+    }
+    h4 {
+      font-size: get-vw-t(16px);
+      margin-bottom: get-vw-t(26px);
+    }
+    p {
+      font-size: get-vw-t(16px);
+    }
+    form {
+      .form-group {
+        input {
+          width: get-vw-t(380px);
+          padding-right: get-vw-t(240px);
+        }
+        button {
+          width: get-vw-t(146px);
+        }
+      }
+    }
+    .footer-nav {
+      padding: get-vw-t(20px) 0;
+      border-bottom: get-vw-t(1px) solid $violet;
+      a {
+        font-size: get-vw-t(16px);
+        line-height: get-vw-t(22px);
+        padding: 2rem 0;
+        &::after {
+          left: 0;
+          top: 75%;
+          width: 0;
+          height: get-vw(1px);
+        }
+      }
+    }
+    .footer-info {
+      padding: get-vw(24px) 0;
+    }
+  }
+
+  .icon-facebook {
+    width: get-vw-t(45px);
+    height: get-vw-t(45px);
+  }
+
+  .icon-instagram {
+    width: get-vw-t(30px);
+    height: get-vw-t(30px);
+  }
+
+  .icon-youtube {
+    width: get-vw-t(30px);
+    height: get-vw-t(21px);
+  }
+
+  .icon-prom {
+    width: get-vw-t(30px);
+    height: get-vw-t(30px);
+  }
+}
+
+@media (max-width: $mobile) {
+
+}

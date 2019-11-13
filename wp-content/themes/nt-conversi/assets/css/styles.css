@@ -421,7 +421,7 @@ textarea {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .select2-dropdown.select2-dropdown--above .select2-results__options {
-    border-radius: 1.30208vw 1.30208vw 0 0; }
+    border-radius: 2.44141vw 2.44141vw 0 0; }
   .select2-container--default .select2-selection--single {
     height: 4.88281vw;
     border-radius: 2.44141vw;
@@ -439,9 +439,9 @@ textarea {
   .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
     border-width: 0 0.58594vw 0.78125vw 0.58594vw; }
   .select2-dropdown.select2-dropdown--below {
-    border-radius: 0 0 1.30208vw 1.30208vw; }
+    border-radius: 0 0 2.44141vw 2.44141vw; }
   .select2-results__option[aria-selected] {
-    font-size: 1.04167vw;
+    font-size: 1.75781vw;
     padding: 0 .9375vw;
     height: 4.88281vw;
     line-height: 4.88281vw; } }
@@ -1136,6 +1136,71 @@ footer {
   background-image: url("../img/pu.svg");
   width: 1.5625vw;
   height: 1.5625vw; }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  footer {
+    font-size: 1.5625vw;
+    line-height: 2.24609vw; }
+    footer .inner-wrap {
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      border-top: 0.09766vw solid #3b2f5c;
+      border-bottom: 0.09766vw solid #3b2f5c;
+      padding: 2.83203vw 0 0; }
+      footer .inner-wrap > * {
+        margin-bottom: 1.5625vw; }
+    footer .logo-wrap {
+      margin-right: 5.85938vw; }
+      footer .logo-wrap img {
+        width: 8.59375vw;
+        height: 8.59375vw; }
+    footer .contacts {
+      min-width: 17.28516vw; }
+    footer .schedule {
+      min-width: 12.40234vw; }
+    footer .contacts,
+    footer .schedule {
+      margin-right: 5.85938vw; }
+    footer .social-wrap a {
+      margin-right: 1.95313vw;
+      width: 4.88281vw;
+      height: 4.88281vw; }
+    footer h4 {
+      font-size: 1.5625vw;
+      margin-bottom: 2.53906vw; }
+    footer p {
+      font-size: 1.5625vw; }
+    footer form .form-group input {
+      width: 37.10938vw;
+      padding-right: 23.4375vw; }
+    footer form .form-group button {
+      width: 14.25781vw; }
+    footer .footer-nav {
+      padding: 1.95313vw 0;
+      border-bottom: 0.09766vw solid #3b2f5c; }
+      footer .footer-nav a {
+        font-size: 1.5625vw;
+        line-height: 2.14844vw;
+        padding: 2rem 0; }
+        footer .footer-nav a::after {
+          left: 0;
+          top: 75%;
+          width: 0;
+          height: 0.05208vw; }
+    footer .footer-info {
+      padding: 1.25vw 0; }
+  .icon-facebook {
+    width: 4.39453vw;
+    height: 4.39453vw; }
+  .icon-instagram {
+    width: 2.92969vw;
+    height: 2.92969vw; }
+  .icon-youtube {
+    width: 2.92969vw;
+    height: 2.05078vw; }
+  .icon-prom {
+    width: 2.92969vw;
+    height: 2.92969vw; } }
 
 .jumbotron {
   margin-top: 5.20833vw;

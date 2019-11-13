@@ -490,7 +490,7 @@ textarea {
 and (max-width: $tablet) {
   .select2-dropdown {
     &.select2-dropdown--above .select2-results__options {
-      border-radius: 1.30208vw 1.30208vw 0 0;
+      border-radius: get-vw-t(25px) get-vw-t(25px) 0 0;
     }
   }
   .select2-container--default .select2-selection--single {
@@ -521,11 +521,11 @@ and (max-width: $tablet) {
   }
 
   .select2-dropdown.select2-dropdown--below {
-    border-radius: 0 0 1.30208vw 1.30208vw;
+    border-radius: 0 0 get-vw-t(25px) get-vw-t(25px);
   }
 
   .select2-results__option[aria-selected] {
-    font-size: 1.04167vw;
+    font-size: get-vw-t(18px);
     padding: 0 .9375vw;
     height: get-vw-t(50px);
     line-height: get-vw-t(50px);
@@ -649,7 +649,6 @@ and (max-width: $tablet) {
     }
   }
 }
-
 
 .box__restart
 {

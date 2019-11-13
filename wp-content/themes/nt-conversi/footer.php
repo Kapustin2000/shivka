@@ -78,7 +78,8 @@ $services = pods('services')->find($params);
                     <div class="box-wrap">
                         <form id="submit-info-form" method="post" action="" enctype="multipart/form-data" novalidate="" class="active box has-advanced-upload">
                             <div class="box__input">
-                                <span>Добавьте ваш файл, картинки или фотографии</span>
+                                <span class="d-lg-none d-md-none d-sm-none d-xs-none">Добавьте ваш файл, картинки или фотографии</span>
+                                <span class="d-xl-none">Добавьте ваш файл или картинки</span>
                                 <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
                                 <label class="files-names" id="files_names"></label>
                                 <label for="file" class="btn-span btn-outline">Выбрать файл</label>
@@ -126,8 +127,15 @@ $services = pods('services')->find($params);
                             Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>" class="phone-link"><?=$settings->display('wholesale_number')?></a>, <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="tel:+380667734186" class="phone-link">(066) 773 41 86</a><br/>
                             email: <a href="mailto:<?=$settings->display('wholesale_email')?>"><?=$settings->display('wholesale_email')?></a>
                         </div>
+                        <div class="contact d-xl-none">
+                            <a target="_blank" href="<?=$settings->display('individually_latitude')?>" class="map-link">
+                                <?=$settings->display('individual_city')?>
+                            </a> <br/>
+                            Тел: <a href="tel:+380<?=$settings->display('individually_number')?>" class="phone-link"><?=$settings->display('individually_number')?></a><br/>
+                            email: <a href="mailto:<?=$settings->display('individual_email')?>"><?=$settings->display('individual_email')?></a>
+                        </div>
                     </div>
-                    <div class="contacts">
+                    <div class="contacts d-lg-none d-md-none d-sm-none d-xs-none">
                         <h4>&nbsp;</h4>
                         <div class="contact">
                             <a target="_blank" href="<?=$settings->display('individually_latitude')?>" class="map-link">
@@ -150,8 +158,16 @@ $services = pods('services')->find($params);
                                 <button type="submit" class="btn btn-outline">Подписаться</button>
                             </div>
                         </form>
+                        <div class="social-media d-xl-none">
+                            <h4>Мы в социальных сетях</h4>
+                            <div class="social-wrap">
+                                <a href="<?=$settings->display('facebook')?>" target="_blank"><i class="icon icon-facebook"></i></a>
+                                <a href="<?=$settings->display('instagram')?>" target="_blank"><i class="icon icon-instagram"></i></a>
+                                <a href="<?=$settings->display('youtube')?>" target="_blank"><i class="icon icon-youtube"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="social-media">
+                    <div class="social-media d-lg-none d-md-none d-sm-none d-xs-none">
                         <h4>Мы в социальных сетях</h4>
                         <div class="social-wrap">
                             <a href="<?=$settings->display('facebook')?>" target="_blank"><i class="icon icon-facebook"></i></a>
