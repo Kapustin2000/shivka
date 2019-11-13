@@ -33,12 +33,32 @@
   }
 }
 
-//@media (max-width: $mobile) {
-//  .common-service-description {
-//    padding-bottom: 15rem;
-//    .btn {
-//      display: block;
-//      text-align: center;
-//    }
-//  }
-//}
+@media (min-width: $min-tablet)
+   and (max-width: $tablet) {
+  .common-service-description {
+    padding-bottom: get-vw-t(142px);
+    .common-service-img {
+      width: get-vw-t(480px);
+      min-width: get-vw-t(480px);
+    }
+    .common-service-text-wrap {
+      right: 0;
+      width: get-vw-t(520px);
+      min-width: get-vw-t(520px);
+      transform: translate(-4.22265625vw, 0);
+      .btn {
+        margin-left: get-vw-t(148px);
+      }
+    }
+    .common-service-text {
+      width: 100%;
+      margin: get-vw-t(55px) 0 get-vw-t(40px);
+    }
+    .decorative {
+      width: 100vw;
+      height: get-vw-t(170px);
+      left: get-vw-t(260px);
+      bottom: get-vw-t(-48px);
+    }
+  }
+}

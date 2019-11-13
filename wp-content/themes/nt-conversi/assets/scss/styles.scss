@@ -3,6 +3,16 @@
   @return ($target/$vw-context) * 1vw;
 }
 
+@function get-vw-t($target) {
+  $vw-context: (1024*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+@function get-vw-m($target) {
+  $vw-context: (375*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
 @font-face {
   font-family: 'Uni Sans Thin Caps';
   src: url('../fonts/UNISANSTHIN.OTF'),

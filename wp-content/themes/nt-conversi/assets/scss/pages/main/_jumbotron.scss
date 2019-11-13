@@ -168,76 +168,58 @@
   display: none;
 }
 
-//@media (max-width: $hd) {
-//  .jumbotron {
-//    h1 {
-//      //font-size: get-vw(40px);
-//      //line-height: get-vw(48px);
-//    }
-//    .see-more {
-//      .icon-arrow {
-//        //margin: get-vw(30px) auto 0;
-//        //height: get-vw(50px);
-//        //background-position: center bottom;
-//      }
-//    }
-//  }
-//}
-//
-//@media (max-width: $desktop) {
-//  .jumbotron {
-//    margin-top: get-vw(120px);
-//    .inner {
-//      text-align: center;
-//      padding-top: get-vw(360px);
-//    }
-//    h1 {
-//      margin: 0 0 get-vw(30px);
-//    }
-//    .see-more {
-//      width: 100%;
-//    }
-//    .decorative {
-//      display: none;
-//    }
-//    .main-slider,
-//    .video-carousel {
-//      top: 0;
-//      left: get-vw(15px);
-//      right: auto;
-//      width: calc(100% - 30px);
-//      height: get-vw(350px);
-//      &::after {
-//        width: get-vw(350px);
-//        height: get-vw(350px);
-//      }
-//      .item {
-//        height: get-vw(350px);
-//      }
-//    }
-//    .video-carousel {
-//      height: 50vw;
-//    }
-//  }
-//}
-//
-//@media (max-width: $mobile) {
-//  .jumbotron {
-//    h1 {
-//      font-size: get-vw(32px);
-//      line-height: get-vw(39px);
-//    }
-//    .inner {
-//      padding-top: get-vw(330px);
-//    }
-//    .video-carousel {
-//      .video-item {
-//        width: calc(100% + 1.5625vw);
-//        margin-left: get-vw(-15px);
-//      }
-//    }
-//  }
-//}
+@media (min-width: $min-tablet)
+   and (max-width: $tablet) {
+  .jumbotron {
+    margin-top: get-vw-t(100px);
+    margin-bottom: 0;
+    .inner {
+      padding: get-vw-t(74px) 0 get-vw-t(311px);
+    }
+    h1 {
+      margin: 0 0 get-vw-t(58px);
+      max-width: get-vw-t(520px);
+    }
+    .see-more {
+      .icon-arrow {
+        top: calc(100% + 3.5vw);
+        background-size: 100%;
+        height: get-vw-t(106px);
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        .icon-arrow {
+          top: calc(100% + 5.25vw);
+        }
+      }
+    }
+    .main-slider,
+    .video-carousel {
+      top: get-vw-t(40px);
+      right: get-vw-t(15px);
+      width: get-vw-t(796px);
+      height: get-vw-t(430px);
+      &::after {
+        top: get-vw-t(-40px);
+        left: get-vw-t(-40px);
+        width: get-vw-t(450px);
+        height: get-vw-t(450px);
+      }
+    }
+    .video-carousel {
+      .player-button {
+        width: get-vw-t(70px);
+        height: get-vw-t(70px);
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+
+}
+
 
 @keyframes myMove-1 {
   1.04167%, 32.29167% {

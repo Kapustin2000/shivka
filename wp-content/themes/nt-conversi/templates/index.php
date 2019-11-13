@@ -117,7 +117,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                     <div class="decorative yellow"></div>
                     <div class="row">
                         <?php while($services->fetch()){ ?>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-6">
                                 <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
                                     <div class="service-img-wrap">
                                         <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
@@ -170,7 +170,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                     <h2>этапы работы</h2>
                     <div class="steps-wrap row">
                         <?php while($stages_of_work->fetch()){ ?>
-                            <div class="step col-3">
+                            <div class="step col-xl-3 col-6">
                                 <h3><?=$stages_of_work->display('post_title')?></h3>
                                 <?=$stages_of_work->display('post_content')?>
                             </div>

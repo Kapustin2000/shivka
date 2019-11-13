@@ -63,5 +63,24 @@ button,
   }
 }
 
+@media (min-width: $min-tablet)
+and (max-width: $tablet) {
+  button,
+  .btn-span {
+    font-size: get-vw-t(20px);
+    border-radius: get-vw-t(50px);
+    padding: get-vw-t(13px) get-vw-t(57px);
+    &::after {
+      height: get-vw-t(10px);
+      border-radius: get-vw-t(50px);
+    }
+    &.btn-primary {
+      border: get-vw-t(2px) solid $violet;
+    }
+    &.btn-outline {
+      border: get-vw-t(2px) solid $violet;
+    }
+  }
+}
 
 

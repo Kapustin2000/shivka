@@ -55,62 +55,84 @@
   }
 }
 
-//@media (min-width: $large-desktop + 1px) {
+.steps {
+  .step {
+    &:nth-child(1),
+    &:nth-child(3),
+    &:nth-child(6),
+    &:nth-child(8) {
+      @include bordered-block();
+    }
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(7) {
+      @include background-block();
+    }
+  }
+}
+
+@media (min-width: $min-tablet)
+   and (max-width: $tablet) {
+  .steps {
+    padding-bottom: get-vw-t(185px);
+    h2 {
+      padding-left: get-vw-t(16px);
+      margin-bottom: get-vw-t(62px);
+    }
+    &-wrap {
+      width: get-vw-t(774px);
+      margin: 0 auto;
+    }
+    .step {
+      min-height: get-vw-t(387px);
+      padding: get-vw-t(80px) get-vw-t(70px);
+      &::before {
+        font-size: get-vw-t(150px);
+        bottom: get-vw-t(-37px);
+      }
+      h3 {
+        font-size: get-vw-t(22px);
+        line-height: get-vw-t(40px);
+        margin-bottom: get-vw-t(5px);
+      }
+      h3, p {
+        max-width: get-vw-t(200px);
+      }
+    }
+    .see-more {
+      margin-top: get-vw-t(90px);
+    }
+  }
   .steps {
     .step {
       &:nth-child(1),
-      &:nth-child(3),
-      &:nth-child(6),
-      &:nth-child(8) {
-        @include bordered-block();
-      }
-      &:nth-child(2),
       &:nth-child(4),
       &:nth-child(5),
+      &:nth-child(8) {
+        @include bordered-block();
+        border: get-vw-t(12px) solid $violet;
+        transform: translate(get-vw-t(35px), get-vw-t(35px));
+        z-index: 2;
+      }
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(6),
       &:nth-child(7) {
         @include background-block();
+        padding-top: get-vw-t(114px);
+        padding-left: get-vw-t(112px);
+        padding-right: get-vw-t(62px);
+        transform: translate(0, 0);
+        &::before {
+          left: auto;
+          right: get-vw-t(-6px);
+        }
       }
     }
   }
-//}
+}
 
-//@media (min-width: $mobile + 1px) and (max-width: $large-desktop) {
-//  .steps {
-//    .step {
-//      &:nth-child(1),
-//      &:nth-child(4),
-//      &:nth-child(5),
-//      &:nth-child(8) {
-//        @include bordered-block();
-//      }
-//      &:nth-child(2),
-//      &:nth-child(3),
-//      &:nth-child(6),
-//      &:nth-child(7) {
-//        @include background-block();
-//      }
-//    }
-//  }
-//}
-//
-//@media (max-width: $mobile) {
-//  .steps {
-//    h2 {
-//      margin: get-vw(20px) 0 0;
-//    }
-//    .step {
-//      &:nth-child(1),
-//      &:nth-child(3),
-//      &:nth-child(5),
-//      &:nth-child(7) {
-//        @include bordered-block();
-//      }
-//      &:nth-child(2),
-//      &:nth-child(4),
-//      &:nth-child(6),
-//      &:nth-child(8) {
-//        @include background-block();
-//      }
-//    }
-//  }
-//}
+@media (max-width: $mobile) {
+
+}

@@ -69,15 +69,7 @@
       top: 100%;
       margin-top: get-vw(25px);
     }
-  }
-  .see-more {
-    text-align: center;
-  }
-}
-
-//@media (min-width: $desktop + 1px) {
-  .services {
-    .service-item:hover {
+    &:hover {
       .service-img-wrap {
         padding-right: 0;
         &::after {
@@ -93,43 +85,66 @@
       }
     }
   }
-//}
+  .see-more {
+    text-align: center;
+  }
+}
 
-//@media (max-width: $desktop) {
-//  .smarthoop-home {
-//    .services {
-//      .service-item {
-//        .service-title {
-//          max-height: 20rem;
-//          bottom: 50%;
-//          right: 50%;
-//          transform: translate(50%, 50%);
-//          width: 100%;
-//          padding-right: 0;
-//          text-align: center;
-//        }
-//      }
-//    }
-//  }
-//  .services {
-//    .service-item {
-//      padding-top: 0;
-//      .service-img-wrap {
-//        padding-right: 0;
-//        &::after {
-//          background-color: transparentize($white, .4);
-//        }
-//        .service-img {
-//          padding-bottom: 50rem;
-//        }
-//      }
-//
-//      button {
-//        right: 50%;
-//        top: calc(50% + 10rem);
-//        transform: translate(50%, -50%);
-//      }
-//    }
-//  }
-//}
+@media (min-width: $min-tablet)
+and (max-width: $tablet) {
+  .services {
+    padding-bottom: get-vw-t(170px);
+    h2 {
+      padding-left: get-vw-t(16px);
+      margin-bottom: get-vw-t(40px);
+    }
+    .decorative {
+      width: get-vw-t(296px);
+      height: get-vw-t(425px);
+      top: get-vw-t(-50px);
+      left: -2%;
+    }
+    .service-item {
+      height: get-vw-t(465px);
+      box-shadow: 0 0 get-vw-t(50px) rgba(0, 0, 0, 0.15);
+      padding-top: get-vw-t(375px);
+      margin-bottom: get-vw-t(75px);
+      .service-img-wrap {
+        padding-right: 19%;
+        .service-img {
+          padding-bottom: get-vw-t(375px);
+        }
+      }
+      .service-title {
+        padding: get-vw-t(5px) get-vw-t(16px) get-vw-t(15px) 0;
+        font-size: get-vw-t(22px);
+        line-height: get-vw-t(40px);
+        max-height: get-vw-t(90px);
+        max-width: get-vw-t(280px);
+      }
+      .btn {
+        right: get-vw-t(27px);
+        margin-top: get-vw-t(25px);
+      }
+      .see-more {
+        margin-top: get-vw-t(-25px);
+      }
+      &:hover {
+        .service-img-wrap {
+          .service-img {
+            padding-bottom: get-vw-t(500px);
+          }
+        }
+        .service-title,
+        .btn {
+          transform: translateY(get-vw-t(-124px));
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+
+}
 
