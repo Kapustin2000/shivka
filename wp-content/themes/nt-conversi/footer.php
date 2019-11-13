@@ -64,9 +64,9 @@ $services = pods('services')->find($params);
                             </div>
                             <div class="col-12">
                                 <div class="row">
-<!--                                    <div class="col-6">-->
-<!--                                        <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>-->
-<!--                                    </div>-->
+                                    <div class="col-6">
+                                        <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
+                                    </div>
                                     <div class="col-6">
                                         <button type="submit" class="btn btn-primary custom-submit">Отправить</button>
                                     </div>
@@ -473,7 +473,7 @@ $services = pods('services')->find($params);
                         type: 'POST',
                         url:'/wp-json/cv/v1/delete',
                         data:   {files : [files_from_back[file_key_back]]},
-                        success: function(data) { 
+                        success: function(data) {
                             if(files_to_send.length > 1) {
                                 files_to_send.splice(file_key_send,1);
                             }else{
@@ -513,6 +513,7 @@ $services = pods('services')->find($params);
                                 files_to_send = [];
                                 files_from_back = [];
                                 showFiles(0);
+                                window.location.href = window.location.href + '?form=success'
                             },
                             error: function(MLHttpRequest, textStatus, errorThrown) {
 
