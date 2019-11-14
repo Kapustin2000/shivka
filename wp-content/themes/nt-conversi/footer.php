@@ -85,8 +85,8 @@ $services = pods('services')->find($params);
                                 <label for="file" class="btn-span btn-outline">Выбрать файл</label>
                             </div>
                             <div class="box__uploading">Uploading…</div>
-                            <div class="box__success">Done! <a href="https://css-tricks.com/examples/DragAndDropFileUploading//?submit-on-demand" class="box__restart" role="button">Upload more?</a></div>
-                            <div class="box__error">Error! <span></span>. <a href="https://css-tricks.com/examples/DragAndDropFileUploading//?submit-on-demand" class="box__restart" role="button">Try again!</a></div>
+                            <div class="box__success">Done!</div>
+                            <div class="box__error">Error! <span></span></div>
                             <input type="hidden" name="ajax" value="1"></form>
                     </div>
 

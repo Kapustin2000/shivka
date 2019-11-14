@@ -71,7 +71,8 @@ $works = pods('works')->find($params);
             <div class="col-12">
                 <nav class="navbar">
                     <a class="navbar-brand" href="/">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/smarthoop_logo_3@2x.png" alt="Smarthoop Logo">
+                        <img class="desktop-logo" src="<?php bloginfo('template_url'); ?>/assets/img/smarthoop_logo_3@2x.png" alt="Smarthoop Logo">
+                        <img class="mobile-logo" src="<?php bloginfo('template_url'); ?>/assets/img/smarthoop_logo_2.png" alt="Smarthoop Logo">
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">

@@ -195,6 +195,9 @@ and (max-width: $tablet) {
     }
     .contacts {
       min-width: get-vw-t(177px);
+      .contact:not(.d-xl-none) {
+        margin-bottom: get-vw-t(11px);
+      }
     }
     .schedule {
       min-width: get-vw-t(127px);
@@ -202,6 +205,9 @@ and (max-width: $tablet) {
     .contacts,
     .schedule {
       margin-right: get-vw-t(60px);
+    }
+    .social-media {
+      margin-top: get-vw-t(24px);
     }
     .social-wrap {
       a {
@@ -212,7 +218,7 @@ and (max-width: $tablet) {
     }
     h4 {
       font-size: get-vw-t(16px);
-      margin-bottom: get-vw-t(26px);
+      margin-bottom: get-vw-t(9px);
     }
     p {
       font-size: get-vw-t(16px);
@@ -229,7 +235,7 @@ and (max-width: $tablet) {
       }
     }
     .footer-nav {
-      padding: get-vw-t(20px) 0;
+      padding: get-vw-t(22px) 0;
       border-bottom: get-vw-t(1px) solid $violet;
       a {
         font-size: get-vw-t(16px);

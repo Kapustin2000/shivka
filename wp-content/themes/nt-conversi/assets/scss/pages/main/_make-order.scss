@@ -36,7 +36,7 @@
             max-width: get-vw(670px);
             margin-left: auto;
             margin-right: auto;
-            padding: get-vw(100px) get-vw(50px) 0;
+            padding: get-vw(95px) get-vw(50px) 0;
         }
         p {
             margin-bottom: 0;
@@ -88,7 +88,7 @@
 @media (min-width: $min-tablet)
 and (max-width: $tablet) {
     .make-order {
-        padding-bottom: get-vw-t(70px);
+        padding-bottom: get-vw-t(65px);
         .decorative {
             &.background {
                 top: get-vw-t(-80px);
@@ -119,16 +119,16 @@ and (max-width: $tablet) {
         form {
             padding: get-vw-t(50px) get-vw-t(40px);
             input, textarea, button, .form-element {
-                margin-bottom: get-vw-t(50px);
+                margin-bottom: get-vw-t(42px);
             }
             textarea {
-                height: get-vw-t(149px);
-                margin-bottom: get-vw-t(46px);
+                height: get-vw-t(140px);
+                margin-bottom: get-vw-t(45px);
             }
         }
         .box-wrap {
             right: get-vw-t(40px);
-            top: get-vw-t(545px);
+            top: get-vw-t(530px);
             width: calc(50% - 5.3vw);
         }
     }

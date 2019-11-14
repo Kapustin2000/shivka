@@ -30,20 +30,41 @@ $(document).ready(function() {
     });
 
     //
-    $('.has-submenu').on('mouseenter', function() {
-        var $this = $(this);
-        $('.menu-toggle').css({
-            'width': '41.66667vw'
+
+    function submenuWidthCalc(width, submenuWidth) {
+        $('.has-submenu').on('mouseenter', function() {
+            var $this = $(this);
+            $('.menu-toggle').css({
+                'width': width
+            });
+            setTimeout(function() {
+                $this.children('.submenu').fadeIn();
+            }, 300);
+        }).on('mouseleave', function() {
+            var $this = $(this);
+            $('.menu-toggle').css({
+                'width': 'calc(' + width + ' '+ submenuWidth +')' //- 24vw
+            });
+            $this.children('.submenu').fadeOut();
         });
-        setTimeout(function() {
-            $this.children('.submenu').fadeIn();
-        }, 300);
-    }).on('mouseleave', function() {
-        var $this = $(this);
-        $('.menu-toggle').css({
-            'width': 'calc(41.66667vw - 24vw)'
-        });
-        $this.children('.submenu').fadeOut();
+    }
+
+    if ($(window).width() > 1024) {
+        submenuWidthCalc('41.66667vw', '- 24vw');
+    }
+
+    if ($(window).width() > 768 && $(window).width() <= 1024) {
+        submenuWidthCalc('66.66667vw', '- 40vw');
+    }
+
+    $(window).on('resize', function() {
+        if ($(window).width() > 1024) {
+            submenuWidthCalc('41.66667vw', '- 24vw');
+        }
+
+        if ($(window).width() > 768 && $(window).width() <= 1024) {
+            submenuWidthCalc('66.66667vw', '- 40vw');
+        }
     });
 
     //---

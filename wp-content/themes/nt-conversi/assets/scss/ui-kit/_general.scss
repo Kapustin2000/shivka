@@ -131,6 +131,18 @@ h2 {
   }
 }
 
+@media (max-width: $mobile) {
+  h1 {
+    font-size: get-vw-m(28px);
+    line-height: get-vw-m(46px);
+  }
+  h2 {
+    font-size: get-vw-m(30px);
+    line-height: get-vw-m(42px);
+    margin-bottom: get-vw-m(25px);
+  }
+}
+
 input,
 textarea {
   background-color: $lavander;
@@ -346,7 +358,7 @@ textarea {
   input,
   textarea {
     border-radius: get-vw-t(25px);
-    padding: get-vw-t(11.5px) get-vw-t(18px) get-vw-t(11.5px) get-vw-t(50px);
+    padding: get-vw-t(11.5px) get-vw-t(18px) get-vw-t(11.5px) get-vw-t(30px);
   }
 
   input {
@@ -396,7 +408,66 @@ textarea {
       }
     }
   }
+}
 
+@media (max-width: $mobile) {
+  .container {
+    max-width: 100%;
+  }
+
+  input,
+  textarea {
+    border-radius: get-vw-t(25px);
+    padding: get-vw-t(11.5px) get-vw-t(18px) get-vw-t(11.5px) get-vw-t(30px);
+  }
+
+  input {
+    font-size: get-vw-t(20px);
+    height: get-vw-t(50px);
+  }
+
+  textarea {
+    font-size: get-vw-t(18px);
+    line-height: get-vw-t(25px);
+    padding-right: get-vw-t(50px);
+  }
+
+  .eye-hover {
+    span,
+    .underline {
+      font-size: get-vw-t(19px);
+      padding: 0;
+      &::after {
+        width: 88%;
+      }
+    }
+    .icon-eye {
+      //width: get-vw-t(175px);
+      //height: get-vw-t(87px);
+    }
+  }
+
+  .icon-arrow {
+    width: get-vw-t(10px);
+    height: get-vw-t(99px);
+  }
+
+  .content-editable,
+  p {
+    font-size: get-vw-t(22px);
+    line-height: get-vw-t(28px);
+  }
+
+  .bordered {
+    border: get-vw-t(12px) solid $yellow;
+    padding: get-vw-t(40px) get-vw-t(23px) get-vw-t(24px) get-vw-t(43px);
+    p {
+      margin: 0 0 get-vw-t(30px);
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 //select2 overrides
@@ -703,15 +774,16 @@ and (max-width: $tablet) {
   .make-order {
     .g-recaptcha,
     .custom-submit {
-      margin: get-vw-t(50px) 0 0;
+      margin: get-vw-t(40px) 0 0;
     }
     .box {
       padding: get-vw-t(17px) get-vw-t(48px) get-vw-t(10px);
-      height: get-vw-t(150px);
+      height: get-vw-t(140px);
       &__input {
         & > span {
-          margin: get-vw-t(23px) 0 get-vw-t(17px);
-          font-size: get-vw-t(20px);
+          margin: get-vw-t(15px) 0 get-vw-t(8px);
+          font-size: get-vw-t(18px);
+          line-height: get-vw-t(18px);
         }
         .btn-span {
           padding: get-vw-t(11px) 0 get-vw-t(12px);

@@ -122,6 +122,15 @@ h2 {
     line-height: 4.29688vw;
     margin-bottom: 2.44141vw; } }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 7.46667vw;
+    line-height: 12.26667vw; }
+  h2 {
+    font-size: 8vw;
+    line-height: 11.2vw;
+    margin-bottom: 6.66667vw; } }
+
 input,
 textarea {
   background-color: #cdcfe9;
@@ -322,7 +331,43 @@ textarea {
   input,
   textarea {
     border-radius: 2.44141vw;
-    padding: 1.12305vw 1.75781vw 1.12305vw 4.88281vw; }
+    padding: 1.12305vw 1.75781vw 1.12305vw 2.92969vw; }
+  input {
+    font-size: 1.95313vw;
+    height: 4.88281vw; }
+  textarea {
+    font-size: 1.75781vw;
+    line-height: 2.44141vw;
+    padding-right: 4.88281vw; }
+  .eye-hover span,
+  .eye-hover .underline {
+    font-size: 1.85547vw;
+    padding: 0; }
+    .eye-hover span::after,
+    .eye-hover .underline::after {
+      width: 88%; }
+  .icon-arrow {
+    width: 0.97656vw;
+    height: 9.66797vw; }
+  .content-editable,
+  p {
+    font-size: 2.14844vw;
+    line-height: 2.73438vw; }
+  .bordered {
+    border: 1.17188vw solid #f2ebc0;
+    padding: 3.90625vw 2.24609vw 2.34375vw 4.19922vw; }
+    .bordered p {
+      margin: 0 0 2.92969vw; }
+      .bordered p:last-child {
+        margin-bottom: 0; } }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%; }
+  input,
+  textarea {
+    border-radius: 2.44141vw;
+    padding: 1.12305vw 1.75781vw 1.12305vw 2.92969vw; }
   input {
     font-size: 1.95313vw;
     height: 4.88281vw; }
@@ -590,13 +635,14 @@ textarea {
 @media (min-width: 769px) and (max-width: 1024px) {
   .make-order .g-recaptcha,
   .make-order .custom-submit {
-    margin: 4.88281vw 0 0; }
+    margin: 3.90625vw 0 0; }
   .make-order .box {
     padding: 1.66016vw 4.6875vw 0.97656vw;
-    height: 14.64844vw; }
+    height: 13.67188vw; }
     .make-order .box__input > span {
-      margin: 2.24609vw 0 1.66016vw;
-      font-size: 1.95313vw; }
+      margin: 1.46484vw 0 0.78125vw;
+      font-size: 1.75781vw;
+      line-height: 1.75781vw; }
     .make-order .box__input .btn-span {
       padding: 1.07422vw 0 1.17188vw;
       font-size: 1.75781vw;
@@ -707,6 +753,23 @@ button,
     .btn-span.btn-outline {
       border: 0.19531vw solid #3b2f5c; } }
 
+@media (max-width: 768px) {
+  button,
+  .btn-span {
+    font-size: 3.73333vw;
+    border-radius: 13.33333vw;
+    padding: 2.66667vw 5.33333vw; }
+    button::after,
+    .btn-span::after {
+      height: 2.66667vw;
+      border-radius: 13.33333vw; }
+    button.btn-primary,
+    .btn-span.btn-primary {
+      border: 0.53333vw solid #3b2f5c; }
+    button.btn-outline,
+    .btn-span.btn-outline {
+      border: 0.53333vw solid #3b2f5c; } }
+
 header {
   background-color: rgba(255, 255, 255, 0.8);
   position: fixed;
@@ -729,8 +792,11 @@ header {
     padding: 1.30208vw 0; }
     header .navbar-brand {
       line-height: 0; }
-      header .navbar-brand img {
+      header .navbar-brand .desktop-logo {
+        display: block;
         width: 14.0625vw; }
+      header .navbar-brand .mobile-logo {
+        display: none; }
     header .navbar-toggler {
       cursor: pointer;
       position: relative;
@@ -868,7 +934,7 @@ header {
         font-weight: bold;
         line-height: 1.30208vw;
         color: #3b2f5c;
-        padding: 1.30208vw 0;
+        padding: 1.04167vw 0;
         display: inline-block; }
       header .menu-toggle ul button {
         margin-top: 1.30208vw; }
@@ -918,6 +984,8 @@ header {
         height: inherit;
         background-color: inherit;
         z-index: 100; }
+      header .menu-toggle .submenu li {
+        display: block; }
       header .menu-toggle .submenu a {
         font-size: 0.83333vw;
         padding: 0.83333vw 0;
@@ -956,6 +1024,7 @@ header {
   header .navbar-nav + .btn-outline {
     margin: 0 4.88281vw 0 auto; }
   header .menu-toggle {
+    width: calc(66.66667vw - 40vw);
     right: -97.65625vw;
     -webkit-box-shadow: -2.44141vw 0 4.88281vw rgba(0, 0, 0, 0.15);
     box-shadow: -2.44141vw 0 4.88281vw rgba(0, 0, 0, 0.15); }
@@ -966,21 +1035,81 @@ header {
     header .menu-toggle ul {
       margin-top: 9.76563vw; }
       header .menu-toggle ul .has-submenu:nth-child(1) a > span {
-        width: 20.50781vw; }
+        width: 15.625vw; }
       header .menu-toggle ul .has-submenu:nth-child(2) a > span {
         width: 11.52344vw; }
       header .menu-toggle ul a {
-        font-size: 2.44141vw;
-        line-height: 2.44141vw;
-        padding: 2.44141vw 0; }
+        font-size: 1.5625vw;
+        line-height: 1.95313vw;
+        padding: 0.97656vw 0; }
       header .menu-toggle ul button {
-        margin-top: 2.44141vw; }
+        width: 14.64844vw;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 1.46484vw; }
     header .menu-toggle .submenu {
-      width: 46.875vw;
-      padding: 0.97656vw 9.76563vw; }
+      width: 43.94531vw;
+      padding: 0.97656vw 4.88281vw; }
       header .menu-toggle .submenu a {
         font-size: 1.5625vw;
-        padding: 1.5625vw 0; } }
+        line-height: 1.95313vw;
+        padding: 0.97656vw 0; } }
+
+@media (max-width: 768px) {
+  header .navbar {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 1.86667vw 0; }
+    header .navbar-brand .mobile-logo {
+      display: block;
+      width: 6.66667vw;
+      height: 6.66667vw; }
+    header .navbar-brand .desktop-logo {
+      display: none; }
+    header .navbar-toggler {
+      width: 6.66667vw;
+      height: 6.66667vw; }
+    header .navbar-toggler-icon {
+      width: 6.66667vw;
+      height: 0.26667vw; }
+      header .navbar-toggler-icon::before {
+        top: -1.86667vw; }
+      header .navbar-toggler-icon::after {
+        bottom: -1.86667vw; }
+  header .navbar-nav + .btn-outline {
+    margin: 0 10.66667vw 0 auto; }
+  header .menu-toggle {
+    width: calc(66.66667vw - 40vw);
+    right: -97.65625vw;
+    -webkit-box-shadow: -2.44141vw 0 4.88281vw rgba(0, 0, 0, 0.15);
+    box-shadow: -2.44141vw 0 4.88281vw rgba(0, 0, 0, 0.15); }
+    header .menu-toggle > ul {
+      padding-right: 2.92969vw; }
+    header .menu-toggle.active {
+      right: -2.92969vw; }
+    header .menu-toggle ul {
+      margin-top: 9.76563vw; }
+      header .menu-toggle ul .has-submenu:nth-child(1) a > span {
+        width: 15.625vw; }
+      header .menu-toggle ul .has-submenu:nth-child(2) a > span {
+        width: 11.52344vw; }
+      header .menu-toggle ul a {
+        font-size: 1.5625vw;
+        line-height: 1.95313vw;
+        padding: 0.97656vw 0; }
+      header .menu-toggle ul button {
+        width: 14.64844vw;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 1.46484vw; }
+    header .menu-toggle .submenu {
+      width: 43.94531vw;
+      padding: 0.97656vw 4.88281vw; }
+      header .menu-toggle .submenu a {
+        font-size: 1.5625vw;
+        line-height: 1.95313vw;
+        padding: 0.97656vw 0; } }
 
 footer {
   color: #3b2f5c;
@@ -1158,18 +1287,22 @@ footer {
         height: 8.59375vw; }
     footer .contacts {
       min-width: 17.28516vw; }
+      footer .contacts .contact:not(.d-xl-none) {
+        margin-bottom: 1.07422vw; }
     footer .schedule {
       min-width: 12.40234vw; }
     footer .contacts,
     footer .schedule {
       margin-right: 5.85938vw; }
+    footer .social-media {
+      margin-top: 2.34375vw; }
     footer .social-wrap a {
       margin-right: 1.95313vw;
       width: 4.88281vw;
       height: 4.88281vw; }
     footer h4 {
       font-size: 1.5625vw;
-      margin-bottom: 2.53906vw; }
+      margin-bottom: 0.87891vw; }
     footer p {
       font-size: 1.5625vw; }
     footer form .form-group input {
@@ -1178,7 +1311,7 @@ footer {
     footer form .form-group button {
       width: 14.25781vw; }
     footer .footer-nav {
-      padding: 1.95313vw 0;
+      padding: 2.14844vw 0;
       border-bottom: 0.09766vw solid #3b2f5c; }
       footer .footer-nav a {
         font-size: 1.5625vw;
@@ -1374,6 +1507,44 @@ footer {
       right: 1.46484vw;
       width: 77.73438vw;
       height: 41.99219vw; }
+      .jumbotron .main-slider::after,
+      .jumbotron .video-carousel::after {
+        top: -3.90625vw;
+        left: -3.90625vw;
+        width: 43.94531vw;
+        height: 43.94531vw; }
+    .jumbotron .video-carousel .player-button {
+      width: 6.83594vw;
+      height: 6.83594vw; } }
+
+@media (max-width: 768px) {
+  .jumbotron {
+    margin-top: 16vw;
+    margin-bottom: 0; }
+    .jumbotron .inner {
+      padding: 7.22656vw 0 30.37109vw; }
+    .jumbotron h1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      max-width: 100%;
+      line-height: 9.06667vw; }
+    .jumbotron .see-more {
+      position: absolute;
+      bottom: 0; }
+      .jumbotron .see-more .icon-arrow {
+        top: calc(100% + 3.5vw);
+        background-size: 100%;
+        height: 10.35156vw; }
+      .jumbotron .see-more:hover .icon-arrow, .jumbotron .see-more:focus .icon-arrow, .jumbotron .see-more:active .icon-arrow {
+        top: calc(100% + 5.25vw); }
+    .jumbotron .main-slider,
+    .jumbotron .video-carousel {
+      position: relative;
+      margin: 0 0 0 -15px;
+      width: calc(100% + 32px);
+      height: 138.66667vw; }
       .jumbotron .main-slider::after,
       .jumbotron .video-carousel::after {
         top: -3.90625vw;
@@ -1861,7 +2032,7 @@ footer {
       max-width: 34.89583vw;
       margin-left: auto;
       margin-right: auto;
-      padding: 5.20833vw 2.60417vw 0; }
+      padding: 4.94792vw 2.60417vw 0; }
     .make-order .form-wrap p {
       margin-bottom: 0;
       padding: 0 2.60417vw; }
@@ -1897,7 +2068,7 @@ footer {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .make-order {
-    padding-bottom: 6.83594vw; }
+    padding-bottom: 6.34766vw; }
     .make-order .decorative.background {
       top: -7.8125vw;
       left: 1.46484vw;
@@ -1921,13 +2092,13 @@ footer {
     .make-order form {
       padding: 4.88281vw 3.90625vw; }
       .make-order form input, .make-order form textarea, .make-order form button, .make-order form .form-element {
-        margin-bottom: 4.88281vw; }
+        margin-bottom: 4.10156vw; }
       .make-order form textarea {
-        height: 14.55078vw;
-        margin-bottom: 4.49219vw; }
+        height: 13.67188vw;
+        margin-bottom: 4.39453vw; }
     .make-order .box-wrap {
       right: 3.90625vw;
-      top: 53.22266vw;
+      top: 51.75781vw;
       width: calc(50% - 5.3vw); } }
 
 .services.extra-services {
