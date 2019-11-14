@@ -45,7 +45,7 @@ $services = pods('services')->find($params);
                             <span>Заказать звонок</span>
                         </button>
                     </div>
-                    <form action="?form=success" id="submit-info-form" class="active" enctype="multipart/form-data" method="post">
+                    <form action="?form=success" class="active" enctype="multipart/form-data" method="post">
                         <div class="row">
                             <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
@@ -78,7 +78,7 @@ $services = pods('services')->find($params);
                     <div class="box-wrap">
                         <form id="submit-info-form" action="/wp-json/cv/v1/save" method="post" action="" enctype="multipart/form-data" novalidate="" class="active box has-advanced-upload">
                             <div class="box__input">
-                                <span class="d-lg-none d-md-none d-sm-none d-xs-none">Добавьте ваш файл, картинки или фотографии</span>
+                                <span class="d-xl-block d-lg-none d-md-none d-sm-none d-xs-none">Добавьте ваш файл, картинки или фотографии</span>
                                 <span class="d-xl-none">Добавьте ваш файл или картинки</span>
                                 <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
                                 <label class="files-names" id="files_names"></label>
@@ -259,7 +259,7 @@ $services = pods('services')->find($params);
                     for (var key in files) {
                         files_list += '<div class="file-item"><span>'+files[key]['name']+'</span><button data-item-id="'+key+'" type="button" class="btn-close">×</button></div>';
                     }
-                    $('.box__input > span').hide();
+                    $('#submit-info-form').addClass('uploaded');
                     label.classList.add('uploaded');
                     files_names.append(files_list);
                 },
@@ -282,6 +282,10 @@ $services = pods('services')->find($params);
             {
                 var files_to_check  = e.target.files;
                 var size;
+//                if(files_to_check.length == 0) {
+//                    $('#submit-info-form').removeClass('uploaded');
+//                }
+
                 if(files_to_check.length<=4 && files_to_send.length < 4 && (files_to_check.length + files_to_send.length ) <= 4) {
                     for (var key in files_to_check) {
                         if (files_to_check[key]['size'] <= 4 * 1024 * 1024) {

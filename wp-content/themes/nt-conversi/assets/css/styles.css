@@ -454,6 +454,8 @@ textarea {
   position: relative;
   padding: 0.88542vw 2.5vw 0.52083vw;
   height: 7.8125vw; }
+  .make-order .box.uploaded > .box__input > span {
+    display: none !important; }
   .make-order .box__input {
     display: -webkit-box;
     display: -ms-flexbox;
