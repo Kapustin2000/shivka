@@ -259,7 +259,11 @@ $services = pods('services')->find($params);
                     for (var key in files) {
                         files_list += '<div class="file-item"><span>'+files[key]['name']+'</span><button data-item-id="'+key+'" type="button" class="btn-close">×</button></div>';
                     }
-                    $('#submit-info-form').addClass('uploaded');
+                    if(files.length > 0) {
+                        $('#submit-info-form').addClass('uploaded');
+                    }else{
+                        $('#submit-info-form').removeClass('uploaded');
+                    }
                     label.classList.add('uploaded');
                     files_names.append(files_list);
                 },
@@ -282,9 +286,7 @@ $services = pods('services')->find($params);
             {
                 var files_to_check  = e.target.files;
                 var size;
-//                if(files_to_check.length == 0) {
-//                    $('#submit-info-form').removeClass('uploaded');
-//                }
+
 
                 if(files_to_check.length<=4 && files_to_send.length < 4 && (files_to_check.length + files_to_send.length ) <= 4) {
                     for (var key in files_to_check) {
