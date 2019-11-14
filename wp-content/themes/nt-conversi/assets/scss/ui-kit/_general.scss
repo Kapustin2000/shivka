@@ -546,6 +546,9 @@ and (max-width: $tablet) {
     position: relative;
     padding: get-vw(17px) get-vw(48px) get-vw(10px);
     height: get-vw(150px);
+    &.uploaded > .box__input > span {
+      display: none !important;
+    }
     &__input {
       display: flex;
       flex-direction: column;
