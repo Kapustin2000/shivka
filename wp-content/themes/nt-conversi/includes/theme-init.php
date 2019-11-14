@@ -1172,6 +1172,78 @@ class Nt_Conversi_Wp_Bootstrap_Navwalker extends Walker_Nav_Menu {
 	}
 }
 
+add_action( 'pods_api_post_save_pod_item_stock', 'before_stock_create', 10, 3 );
+
+/**
+ * Update post terms on save for another associated taxonomy.
+ *
+ * @param array   $pieces      List of data.
+ * @param boolean $is_new_item Whether the item is new.
+ * @param int     $id          Item ID.
+ */
+function before_stock_create( $pieces, $is_new_item, $id ) {
+	$emails = array();
+	$params = array(
+		'where' => "id = ".$id,
+	);
+	$data = pods('stock')->find($params);
+	$template = [
+	   'title' => 	$data->display('title'),
+		'description' =>        $data->display('description'),
+		'patch' =>  $data->display('patch'),
+		'start_date' =>  $data->display('start_date'),
+		'end_date' => $data->display('end_date'),
+		'full_description' =>  $data->display('full_description'),
+		'image' =>  $data->display('image')
+
+	];
+	set_query_var('template', $template);
+    $params = array(
+		'where'=>' t.post_status="Draft"',
+	);
+	$contact  = pods('contact')->find($params);
+	while($contact->fetch()){
+		array_push($emails,$contact->field('email'));
+	}
+	$subscribers = pods('subscribers')->find($params);
+	while($subscribers->fetch()){
+		array_push($emails,$subscribers->field('email'));
+	}
+	$emails = array_unique($emails);
+	try {
+		require_once '../wp-content/plugins/swift-mailer/lib/swift_required.php';
+		ob_start();
+		include '../wp-content/themes/nt-conversi/templates/emails/stock.php';
+		$html = ob_get_clean();
+		$transport = (new Swift_SmtpTransport(SWIFT_server, SWIFT_port, SWIFT_protocol))
+			->setUsername(SWIFT_email)
+			->setPassword(SWIFT_pass)
+			->setStreamOptions(array('ssl' => array('allow_self_signed' => true, 'verify_peer' => false)));
+
+		// Create the Mailer using your created Transport
+		$mailer = new Swift_Mailer($transport);
+		$message = (new Swift_Message("ЗАПРОС НА ВЫШИВКУ"))
+			->setFrom(['info@smarthoop.com.ua' => 'SMARTHOOP'])
+			->setTo('mikhail.kapustin@hys-enterprise.com')
+			->setContentType("text/html")
+			->setBody($html);
+		if (isset($_POST['files'])) {
+			foreach ($_POST['files'] as $attachment) {
+				if ($attachment['size'] <= 10 * 1024 * 1024 && $attachment['tmp_name']) {
+					$message->attach(
+						Swift_Attachment::fromPath($attachment['tmp_name'])->setFilename($attachment['name'])
+					);
+				}
+			}
+		}
+		return $mailer->send($message);
+	} catch (Exception $e) {
+		//var_dump($e->getMessage(), $e->getTraceAsString());
+		$result = $e->getMessage();
+		return $result;
+	}
+}
+
 /*************************************************
 ## nt_conversi Comment
 *************************************************/
