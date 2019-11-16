@@ -526,44 +526,51 @@ add_action('wp_ajax_shivka_WORKSCATEGORYAjax', 'shivka_WORKSCATEGORYAjax');
 function shivka_escapeParam($id){
     return addslashes_gpc($id);
 }
-function shivka_SetPodsSeo($postId, $isTaxonomy = false) {
-    if (!empty($postId)) {
-        if ($isTaxonomy) {
-            if (($taxonomiesMeta = get_option('wpseo_taxonomy_meta')) && (!empty($taxonomiesMeta['industry'][$postId]))) {
-                $seoTitle = $taxonomiesMeta['industry'][$postId]['wpseo_title'];
-                $seoDesc = $taxonomiesMeta['industry'][$postId]['wpseo_desc'];
-                $postUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-                $seoImage = $taxonomiesMeta['industry'][$postId]['wpseo_opengraph-image'];
-            }
-        } else {
-            $seoTitle = get_post_meta($postId, '_yoast_wpseo_title', true);
-            $seoDesc = get_post_meta($postId, '_yoast_wpseo_metadesc', true);
-            $postUrl = get_post_permalink($postId);
-            $seoImage = get_post_meta($postId, '_yoast_wpseo_opengraph-image', true);
-        }
-        if ($seoTitle) {
-            add_filter('wpseo_opengraph_title', function () use ($seoTitle) {
-                return $seoTitle;
-            });
-        }
-        if ($seoDesc) {
-            add_filter('wpseo_opengraph_desc', function () use ($seoDesc) {
-                return $seoDesc;
-            });
-        }
-        if ($postUrl) {
-            add_filter('wpseo_opengraph_url', function () use ($postUrl) {
-                return $postUrl;
-            });
-        }
+function shivka_SetPodsSeo($postId, $isTaxonomy = false,$taxonomy_name = false) {
+	if (!empty($postId)) {
+		if ($isTaxonomy) {
+			if (($taxonomiesMeta = get_option('wpseo_taxonomy_meta')) && (!empty($taxonomiesMeta[$taxonomy_name][$postId]))) {
+				$seoTitle = isset($taxonomiesMeta[$taxonomy_name][$postId]['wpseo_title']) ? $taxonomiesMeta[$taxonomy_name][$postId]['wpseo_title'] : '';
+				$seoDesc = isset($taxonomiesMeta[$taxonomy_name][$postId]['wpseo_desc']) ? $taxonomiesMeta[$taxonomy_name][$postId]['wpseo_desc'] : '';
+				$postUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+				$seoImage = isset($taxonomiesMeta[$taxonomy_name][$postId]['wpseo_opengraph-image']) ? $taxonomiesMeta[$taxonomy_name][$postId]['wpseo_opengraph-image'] : '' ;
+			}
+		} else {
+			$seoTitle = get_post_meta($postId, '_yoast_wpseo_title', true);
+			$seoDesc = get_post_meta($postId, '_yoast_wpseo_metadesc', true);
+			$postUrl = get_post_permalink($postId);
+			$seoImage = get_post_meta($postId, '_yoast_wpseo_opengraph-image', true);
+		}
+		if (isset($seoTitle)) {
+			add_filter('wpseo_opengraph_title', function () use ($seoTitle) {
+				return $seoTitle;
+			});
+			add_filter('wpseo_title',function () use ($seoTitle) {
+				return $seoTitle;
+			});
+		}
+		if (isset($seoDesc)) {
+			add_filter('wpseo_opengraph_desc', function () use ($seoDesc) {
+				return $seoDesc;
+			});
+		}
+		if (isset($postUrl)) {
+			add_filter('wpseo_opengraph_url', function () use ($postUrl) {
+				return $postUrl;
+			});
+		}
 
-        if ($seoImage) {
-            add_action( 'wpseo_opengraph', function () use ($seoImage) {
-                $GLOBALS['wpseo_og']->image($seoImage);
-            }, 29 );
-        }
+		if (isset($seoImage) && $seoImage!="") {
+			add_action('wp_head',function() use ($seoImage){
+				$sizes = getimagesize($seoImage);
+				echo '<meta property="og:image" content="'.$seoImage.'" />';
+				echo '<meta property="og:image:width" content="'.$sizes[0].'" />';
+				echo '<meta property="twitter:card" content="summary_large_image" />';
+				echo '<meta property="og:image:height" content="'.$sizes[1].'" />';
+			},10,1);
+		}
 
-    }
+	}
 }
 
 

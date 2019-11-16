@@ -2,22 +2,24 @@
 /*
 Template Name: Services - view
 */
-$id = shivka_escapeParam(trim($_GET['id'], '/'));
-$params = array('limit' => 1,
-    'where'=>"post_name = '".$id."'"
-);
-$data = pods('single_services')->find($params);
+if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)))) {
+    $params = array('limit' => 1,
+        'where' => "post_name = '" . $id . "'"
+    );
+    $data = pods('single_services')->find($params);
 
-$found = false;
-if(!empty($data->total_found())) {
-    while ($data->fetch()) {
-        shivka_SetPodsSeo($data->display('id'));
-        $found = true;
-        break;
+    $found = false;
+    if (!empty($data->total_found())) {
+        while ($data->fetch()) {
+            shivka_SetPodsSeo($data->display('id'));
+            $found = true;
+            break;
 
+        }
     }
+}else{
+    $found = false;
 }
-
 ?>
 
 <?php get_header(); ?>

@@ -2,8 +2,7 @@
 /*
 Template Name: Stock - view
 */
-if(isset($_GET['id'])) {
-    $id = shivka_escapeParam(trim($_GET['id'], '/'));
+if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)))) {
     $params = array('limit' => 1,
         'where' => "post_name = '" . $id . "'"
     );
