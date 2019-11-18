@@ -446,7 +446,7 @@ function shivka_send_cv(WP_REST_Request $request){
 			$mailer = new Swift_Mailer($transport);
 			$message = (new Swift_Message("ЗАПРОС НА ВЫШИВКУ"))
 				->setFrom(['info@smarthoop.com.ua' => 'SMARTHOOP'])
-				->setTo('smarthoop2@gmail.com')
+				->setTo('mikhail.kapustin@hys-enterprise.com')
 				->setContentType("text/html")
 				->setBody($html);
 			if (isset($_POST['files'])) {
