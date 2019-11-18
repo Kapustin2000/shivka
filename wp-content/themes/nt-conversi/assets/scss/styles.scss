@@ -371,29 +371,6 @@
   }
 }
 
-//@media (max-width: 1200px) {
-//  .modal-dialog {
-//    max-width: 100%;
-//  }
-//  .modal.fade .modal-dialog {
-//    transform: translate(-50%, 0);
-//    top: 0;
-//  }
-//  .modal-content {
-//    .make-order {
-//      .form-wrap {
-//        padding: get-vw(50px) get-vw(20px) !important;
-//      }
-//    }
-//  }
-//}
-
-//@media (min-width: 1200px) {
-//  .modal-dialog {
-//    max-width: 900px;
-//  }
-//}
-
 .modal-dialog {
   position: relative;
   width: auto;
@@ -459,13 +436,79 @@
       padding-left: 0;
       padding-right: 0;
     }
-    form:not(.file-form) {
+    form:not(.box) {
       padding: 2.60417vw 5.20833vw;
     }
-    .file-form {
-      top: get-vw(510px);
+    .box-wrap {
+      top: get-vw(505px);
     }
   }
+  .call-form {
+    .g-recaptcha,
+    .custom-submit {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: $min-tablet)
+and (max-width: $tablet) {
+
+  .modal.fade .modal-dialog {
+    transform: translate(-50%,0);
+    top: get-vw-t(75px);
+    margin-bottom: get-vw-t(25px);
+  }
+
+  .modal-body {
+    width: get-vw-t(820px);
+    padding: get-vw-t(70px) get-vw-t(170px);
+    h2, p {
+      margin-bottom: get-vw-t(40px);
+    }
+  }
+
+  .modal-dialog {
+    .close {
+      position: absolute;
+      top: get-vw-t(25px);
+      right: get-vw-t(25px);
+      font-size: get-vw-t(90px);
+      width: get-vw-t(35px);
+      height: get-vw-t(35px);
+      span {
+        width: get-vw-t(35px);
+        height: get-vw-t(35px);
+        &::before,
+        &::after {
+          width: get-vw-t(1.5px);
+          min-width: 1.5px;
+          height: get-vw-t(45px);
+        }
+      }
+    }
+  }
+
+  .modal-content {
+    border-radius: get-vw-t(3px);
+    .make-order {
+      margin-top: get-vw-t(-50px);
+      h2 {
+        max-width: get-vw-t(506px);
+        white-space: initial;
+      }
+      form:not(.box) {
+        padding: 2.60417vw 5.20833vw;
+      }
+      .box-wrap {
+        top: get-vw-t(490px);
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+
 }
 
 .default-section {
@@ -475,8 +518,5 @@
 .fileinput {
   &::-webkit-file-upload-button {
     visibility: hidden;
-  }
-  &::before {
-
   }
 }

@@ -85,8 +85,8 @@ $services = pods('services')->find($params);
                                 <label for="file" class="btn-span btn-outline">Выбрать файл</label>
                             </div>
                             <div class="box__uploading">Uploading…</div>
-                            <div class="box__success">Done!</div>
-                            <div class="box__error">Error! <span></span></div>
+                            <div class="box__success">Done! <a href="https://css-tricks.com/examples/DragAndDropFileUploading//?submit-on-demand" class="box__restart" role="button">Upload more?</a></div>
+                            <div class="box__error">Error! <span></span>. <a href="https://css-tricks.com/examples/DragAndDropFileUploading//?submit-on-demand" class="box__restart" role="button">Try again!</a></div>
                             <input type="hidden" name="ajax" value="1"></form>
                     </div>
 
@@ -259,11 +259,7 @@ $services = pods('services')->find($params);
                     for (var key in files) {
                         files_list += '<div class="file-item"><span>'+files[key]['name']+'</span><button data-item-id="'+key+'" type="button" class="btn-close">×</button></div>';
                     }
-                    if(files.length > 0) {
-                        $('#submit-info-form').addClass('uploaded');
-                    }else{
-                        $('#submit-info-form').removeClass('uploaded');
-                    }
+                    $('#submit-info-form').addClass('uploaded');
                     label.classList.add('uploaded');
                     files_names.append(files_list);
                 },
@@ -286,7 +282,9 @@ $services = pods('services')->find($params);
             {
                 var files_to_check  = e.target.files;
                 var size;
-
+//                if(files_to_check.length == 0) {
+//                    $('#submit-info-form').removeClass('uploaded');
+//                }
 
                 if(files_to_check.length<=4 && files_to_send.length < 4 && (files_to_check.length + files_to_send.length ) <= 4) {
                     for (var key in files_to_check) {
@@ -488,6 +486,8 @@ $services = pods('services')->find($params);
                             if(files_from_back.length>1){
                                 files_from_back.splice(file_key_back,1);
                             }else{
+                                $('#submit-info-form').removeClass('uploaded');
+
                                 files_from_back = [];
                             }
                             showFiles(files_to_send);

@@ -653,13 +653,23 @@ and (max-width: $tablet) {
         bottom: get-vw(10px);
         transform: translateX(-50%);
       }
-      .files-names {
+      .uploaded .file-item:nth-child(4) span::after {
+        content: '';
+        position: absolute;
+        bottom: get-vw(-20px);;
+        left: 0;
+        width: 100%;
+        height: get-vw(50px);
         background-color: $white;
+        z-index: -1;
+      }
+      .files-names {
         position: relative;
         z-index: 1;
         padding-bottom: get-vw(10px);
       }
       .file-item {
+        position: relative;
         margin-bottom: get-vw(10px);
         display: flex;
         justify-content: space-between;

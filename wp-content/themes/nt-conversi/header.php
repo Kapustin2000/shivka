@@ -201,16 +201,35 @@ $works = pods('works')->find($params);
                             <div class="col-6">
                                 <textarea rows="5" name="message"
                                           placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                                <div class="form-element">
-                                    <label class="form-element-label" for="fileinput1">Выбрать файлы</label>
-                                    <div class="form-element-error">Невозможно загрузить файлы</div>
-                                    <input type="file" class="fileinput" id="fileinput1" name="files[]" data-label="Файлы" data-multiple-caption="{n} файлов выбрано" multiple />
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="submit" class="btn btn-primary custom-submit">Отправить</button>
+                                    </div>
                                 </div>
-                                <button style="" type="submit" class="btn btn-primary custom-submit">Отправить</button>       </div>
+                            </div>
                         </div>
-                                                                                                                           <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
-
                     </form>
+
+                    <div class="box-wrap">
+                        <form id="submit-info-form" action="/wp-json/cv/v1/save" method="post" action="" enctype="multipart/form-data" novalidate="" class="active box has-advanced-upload">
+                            <div class="box__input">
+                                <span class="d-xl-block d-lg-none d-md-none d-sm-none d-xs-none">Добавьте ваш файл, картинки или фотографии</span>
+                                <span class="d-xl-none">Добавьте ваш файл или картинки</span>
+                                <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
+                                <label class="files-names" id="files_names"></label>
+                                <label for="file" class="btn-span btn-outline">Выбрать файл</label>
+                            </div>
+                            <div class="box__uploading">Uploading…</div>
+                            <div class="box__success">Done! <a href="https://css-tricks.com/examples/DragAndDropFileUploading//?submit-on-demand" class="box__restart" role="button">Upload more?</a></div>
+                            <div class="box__error">Error! <span></span>. <a href="https://css-tricks.com/examples/DragAndDropFileUploading//?submit-on-demand" class="box__restart" role="button">Try again!</a></div>
+                            <input type="hidden" name="ajax" value="1"></form>
+                    </div>
+
                 </div>
             </section>
         </div>

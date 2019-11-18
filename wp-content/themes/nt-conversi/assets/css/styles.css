@@ -539,12 +539,21 @@ textarea {
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       transform: translateX(-50%); }
-    .make-order .box__input .files-names {
+    .make-order .box__input .uploaded .file-item:nth-child(4) span::after {
+      content: '';
+      position: absolute;
+      bottom: -1.04167vw;
+      left: 0;
+      width: 100%;
+      height: 2.60417vw;
       background-color: #fff;
+      z-index: -1; }
+    .make-order .box__input .files-names {
       position: relative;
       z-index: 1;
       padding-bottom: 0.52083vw; }
     .make-order .box__input .file-item {
+      position: relative;
       margin-bottom: 0.52083vw;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3482,10 +3491,51 @@ footer {
       white-space: nowrap;
       padding-left: 0;
       padding-right: 0; }
-    .modal-content .make-order form:not(.file-form) {
+    .modal-content .make-order form:not(.box) {
       padding: 2.60417vw 5.20833vw; }
-    .modal-content .make-order .file-form {
-      top: 26.5625vw; }
+    .modal-content .make-order .box-wrap {
+      top: 26.30208vw; }
+  .modal-content .call-form .g-recaptcha,
+  .modal-content .call-form .custom-submit {
+    margin-top: 0; }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .modal.fade .modal-dialog {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 7.32422vw;
+    margin-bottom: 2.44141vw; }
+  .modal-body {
+    width: 80.07813vw;
+    padding: 6.83594vw 16.60156vw; }
+    .modal-body h2, .modal-body p {
+      margin-bottom: 3.90625vw; }
+  .modal-dialog .close {
+    position: absolute;
+    top: 2.44141vw;
+    right: 2.44141vw;
+    font-size: 8.78906vw;
+    width: 3.41797vw;
+    height: 3.41797vw; }
+    .modal-dialog .close span {
+      width: 3.41797vw;
+      height: 3.41797vw; }
+      .modal-dialog .close span::before, .modal-dialog .close span::after {
+        width: 0.14648vw;
+        min-width: 1.5px;
+        height: 4.39453vw; }
+  .modal-content {
+    border-radius: 0.29297vw; }
+    .modal-content .make-order {
+      margin-top: -4.88281vw; }
+      .modal-content .make-order h2 {
+        max-width: 49.41406vw;
+        white-space: initial; }
+      .modal-content .make-order form:not(.box) {
+        padding: 2.60417vw 5.20833vw; }
+      .modal-content .make-order .box-wrap {
+        top: 47.85156vw; } }
 
 .default-section {
   margin: 10.41667vw 0 5.20833vw; }
