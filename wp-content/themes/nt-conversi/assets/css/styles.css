@@ -671,6 +671,14 @@ textarea {
       border-radius: 2.44141vw;
       border: 2px dashed #cdcfe9; } }
 
+@media (max-width: 768px) {
+  .eye-hover span,
+  .eye-hover .underline {
+    font-size: 5.33333vw; }
+  .eye-hover .icon-eye {
+    width: 16vw;
+    height: 8vw; } }
+
 button,
 .btn-span {
   cursor: pointer !important;
@@ -767,7 +775,7 @@ button,
   .btn-span {
     font-size: 3.73333vw;
     border-radius: 13.33333vw;
-    padding: 2.66667vw 5.33333vw; }
+    padding: 2.13333vw 5.33333vw; }
     button::after,
     .btn-span::after {
       height: 2.66667vw;
@@ -1528,24 +1536,29 @@ footer {
 
 @media (max-width: 768px) {
   .jumbotron {
-    margin-top: 16vw;
+    margin-top: 14.66667vw;
     margin-bottom: 0; }
     .jumbotron .inner {
       padding: 7.22656vw 0 30.37109vw; }
     .jumbotron h1 {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 8vw;
+      left: 4vw;
       margin: 0;
       max-width: 100%;
       line-height: 9.06667vw; }
     .jumbotron .see-more {
       position: absolute;
-      bottom: 0; }
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      bottom: 16vw; }
       .jumbotron .see-more .icon-arrow {
         top: calc(100% + 3.5vw);
         background-size: 100%;
-        height: 10.35156vw; }
+        width: 2.13333vw;
+        height: 4.8vw; }
       .jumbotron .see-more:hover .icon-arrow, .jumbotron .see-more:focus .icon-arrow, .jumbotron .see-more:active .icon-arrow {
         top: calc(100% + 5.25vw); }
     .jumbotron .main-slider,
@@ -1556,13 +1569,14 @@ footer {
       height: 138.66667vw; }
       .jumbotron .main-slider::after,
       .jumbotron .video-carousel::after {
-        top: -3.90625vw;
-        left: -3.90625vw;
-        width: 43.94531vw;
-        height: 43.94531vw; }
+        top: -9.33333vw;
+        left: 0;
+        width: 84vw;
+        height: 100vw; }
     .jumbotron .video-carousel .player-button {
-      width: 6.83594vw;
-      height: 6.83594vw; } }
+      top: calc(50% + 5.33333333333vw);
+      width: 13.33333vw;
+      height: 13.33333vw; } }
 
 @-webkit-keyframes myMove-1 {
   1.04167%, 32.29167% {

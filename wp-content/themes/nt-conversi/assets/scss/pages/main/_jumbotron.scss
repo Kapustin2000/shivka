@@ -218,26 +218,29 @@
 
 @media (max-width: $mobile) {
   .jumbotron {
-    margin-top: get-vw-m(60px);
+    margin-top: get-vw-m(55px);
     margin-bottom: 0;
     .inner {
       padding: get-vw-t(74px) 0 get-vw-t(311px);
     }
     h1 {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: get-vw-m(30px);
+      left: get-vw-m(15px);
       margin: 0;
       max-width: 100%;
       line-height: get-vw-m(34px);
     }
     .see-more {
       position: absolute;
-      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      bottom: get-vw-m(60px);
       .icon-arrow {
         top: calc(100% + 3.5vw);
         background-size: 100%;
-        height: get-vw-t(106px);
+        width: get-vw-m(8px);
+        height: get-vw-m(18px);
       }
       &:hover,
       &:focus,
@@ -254,16 +257,17 @@
       width: calc(100% + 32px);
       height: get-vw-m(520px);
       &::after {
-        top: get-vw-t(-40px);
-        left: get-vw-t(-40px);
-        width: get-vw-t(450px);
-        height: get-vw-t(450px);
+        top: get-vw-m(-35px);
+        left: 0;
+        width: get-vw-m(315px);
+        height: get-vw-m(375px);
       }
     }
     .video-carousel {
       .player-button {
-        width: get-vw-t(70px);
-        height: get-vw-t(70px);
+        top: calc(50% + 5.33333333333vw);
+        width: get-vw-m(50px);
+        height: get-vw-m(50px);
       }
     }
   }

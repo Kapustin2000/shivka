@@ -826,7 +826,16 @@ and (max-width: $tablet) {
 }
 
 @media (max-width: $mobile) {
-
+  .eye-hover {
+    span,
+    .underline {
+      font-size: get-vw-m(20px);
+    }
+    .icon-eye {
+      width: get-vw-m(60px);
+      height: get-vw-m(30px);
+    }
+  }
 }
 
 @media (min-width: $min-tablet)
