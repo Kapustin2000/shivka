@@ -14,14 +14,12 @@
 $settings  = pods('website_settings')->find();
 ?>
 <?php
-
 $params = array(
     'where' => shivka_filters(),
     'orderby'=>"order_weight.meta_value DESC,id DESC",
     'offset' => shivka_offset(9),
 );
 $services = pods('services')->find($params);
-
 ?>
 <section class="make-order">
     <div class="container">
@@ -45,28 +43,28 @@ $services = pods('services')->find($params);
                             <span>Заказать звонок</span>
                         </button>
                     </div>
-                    <form action="?form=success" class="active" enctype="multipart/form-data" method="post">
+                    <form  class="active submit-info-form" enctype="multipart/form-data" method="post">
                         <div class="row">
                             <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="email" placeholder="E-mail*" required name="email">
                                 <input type="text" id="phone" placeholder="Телефон" name="phone">
                                 <select class="service-select" name="service_name">
-                                   <option value="0" selected>Вид услуги</option>
-                                   <?php while($services->fetch()){ ?>
-                                       <option value="<?=$services->display('post_title')?>"><?=$services->display('post_title')?></option>
+                                    <option value="0" selected>Вид услуги</option>
+                                    <?php while($services->fetch()){ ?>
+                                        <option value="<?=$services->display('post_title')?>"><?=$services->display('post_title')?></option>
                                     <?php } ?>
                                 </select>
                             </div>
                             <div class="col-6">
                                 <textarea rows="5" name="message"
-                                    placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
+                                          placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
                             </div>
                             <div class="col-12">
                                 <div class="row">
-                                    <div class="col-6">
-                                        <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
-                                    </div>
+<!--                                    <div class="col-6">-->
+<!--                                        <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>-->
+<!--                                    </div>-->
                                     <div class="col-6">
                                         <button type="submit" class="btn btn-primary custom-submit">Отправить</button>
                                     </div>
@@ -76,12 +74,12 @@ $services = pods('services')->find($params);
                     </form>
 
                     <div class="box-wrap">
-                        <form id="submit-info-form" action="/wp-json/cv/v1/save" method="post" action="" enctype="multipart/form-data" novalidate="" class="active box has-advanced-upload">
+                        <form  action="/wp-json/cv/v1/save" method="post" action="" enctype="multipart/form-data" novalidate="" class="active box has-advanced-upload submit-file-form">
                             <div class="box__input">
                                 <span class="d-xl-block d-lg-none d-md-none d-sm-none d-xs-none">Добавьте ваш файл, картинки или фотографии</span>
                                 <span class="d-xl-none">Добавьте ваш файл или картинки</span>
                                 <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
-                                <label class="files-names" id="files_names"></label>
+                                <label class="files-names files_names"></label>
                                 <label for="file" class="btn-span btn-outline">Выбрать файл</label>
                             </div>
                             <div class="box__uploading">Uploading…</div>
@@ -222,9 +220,7 @@ $services = pods('services')->find($params);
     };
 </script>
 <script>
-
     'use strict';
-
     ;( function ( document, window, index )
     {
         var files_to_send = [];
@@ -235,13 +231,12 @@ $services = pods('services')->find($params);
             var div = document.createElement( 'div' );
             return ( ( 'draggable' in div ) || ( 'ondragstart' in div && 'ondrop' in div ) ) && 'FormData' in window && 'FileReader' in window;
         }();
-
         // applying the effect for every form
         var forms = document.querySelectorAll( '.box' );
         Array.prototype.forEach.call( forms, function( form )
         {
             var input		 = form.querySelector( 'input[type="file"]' ),
-                label		 = form.querySelector( 'label#files_names' ),
+                label		 = form.querySelector( 'label.files_names' ),
                 errorMsg	 = form.querySelector( '.box__error span' ),
                 restart		 = form.querySelectorAll( '.box__restart' ),
                 droppedFiles = false,
@@ -252,16 +247,16 @@ $services = pods('services')->find($params);
                         count++;
                     }
                     label.textContent = count > 1 ? ( input.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', count ) : (files[ 0 ] ? files[ 0 ].name : "Drag & Drop CV Here");
-                    var files_names = $('#files_names');
+                    var files_names = $('.files_names');
                     files_names.html('');
                     var files_list = '';
                     for (var key in files) {
                         files_list += '<div class="file-item"><span>'+files[key]['name']+'</span><button data-item-id="'+key+'" type="button" class="btn-close">×</button></div>';
                     }
                     if(files.length > 0) {
-                        $('#submit-info-form').addClass('uploaded');
+                        $('.submit-file-form').addClass('uploaded');
                     }else{
-                        $('#submit-info-form').removeClass('uploaded');
+                        $('.submit-file-form').removeClass('uploaded');
                     }
                     label.classList.add('uploaded');
                     files_names.append(files_list);
@@ -272,23 +267,20 @@ $services = pods('services')->find($params);
                     event.initEvent( 'submit', true, true );
                     form.dispatchEvent( event );
                 };
-
             // letting the server side to know we are going to make an Ajax request
             var ajaxFlag = document.createElement( 'input' );
             ajaxFlag.setAttribute( 'type', 'hidden' );
             ajaxFlag.setAttribute( 'name', 'ajax' );
             ajaxFlag.setAttribute( 'value', 1 );
             form.appendChild( ajaxFlag );
-
             // automatically submit the form on file select
             input.addEventListener( 'change', function( e )
             {
                 var files_to_check  = e.target.files;
                 var size;
 //                if(files_to_check.length == 0) {
-//                    $('#submit-info-form').removeClass('uploaded');
+//                    $('.submit-file-form).removeClass('uploaded');
 //                }
-
                 if(files_to_check.length<=4 && files_to_send.length < 4 && (files_to_check.length + files_to_send.length ) <= 4) {
                     for (var key in files_to_check) {
                         if (files_to_check[key]['size'] <= 4 * 1024 * 1024) {
@@ -315,12 +307,10 @@ $services = pods('services')->find($params);
                     alert("You can upload only 4 files");
                 }
             });
-
             // drag&drop files if the feature is available
             if( isAdvancedUpload )
             {
                 form.classList.add( 'has-advanced-upload' ); // letting the CSS part to know drag&drop is supported by the browser
-
                 [ 'drag', 'dragstart', 'dragend', 'dragover', 'dragenter', 'dragleave', 'drop' ].forEach( function( event )
                 {
                     form.addEventListener( event, function( e )
@@ -374,21 +364,16 @@ $services = pods('services')->find($params);
                     }
                 });
             }
-
-
             // if the form was submitted
             form.addEventListener( 'submit', function( e )
             {
                 // preventing the duplicate submissions if the current one is in progress
                 if( form.classList.contains( 'is-uploading' ) ) return false;
-
                 form.classList.add( 'is-uploading' );
                 form.classList.remove( 'is-error' );
-
                 if( isAdvancedUpload ) // ajax file upload for modern browsers
                 {
                     e.preventDefault();
-
                     // gathering the form data
                     var ajaxData = new FormData( form );
                     if (!ajaxData.get('files[]')) {
@@ -401,11 +386,9 @@ $services = pods('services')->find($params);
                             ajaxData.append( input.getAttribute( 'name' ), file );
                         });
                     }
-
                     // ajax request
                     var ajax = new XMLHttpRequest();
                     ajax.open( form.getAttribute( 'method' ), form.getAttribute( 'action' ), true );
-
                     ajax.onload = function()
                     {
                         form.classList.remove( 'is-uploading' );
@@ -418,28 +401,22 @@ $services = pods('services')->find($params);
                         }
                         else alert( 'Error. Please, contact the webmaster!' );
                     };
-
                     ajax.onerror = function()
                     {
                         form.classList.remove( 'is-uploading' );
                         alert( 'Error. Please, try again!' );
                     };
-
                     ajax.send( ajaxData );
                 }
                 else // fallback Ajax solution upload for older browsers
                 {
                     var iframeName	= 'uploadiframe' + new Date().getTime(),
                         iframe		= document.createElement( 'iframe' );
-
                     $iframe		= $( '<iframe name="' + iframeName + '" style="display: none;"></iframe>' );
-
                     iframe.setAttribute( 'name', iframeName );
                     iframe.style.display = 'none';
-
                     document.body.appendChild( iframe );
                     form.setAttribute( 'target', iframeName );
-
                     iframe.addEventListener( 'load', function()
                     {
                         var data = JSON.parse( iframe.contentDocument.body.innerHTML );
@@ -451,7 +428,6 @@ $services = pods('services')->find($params);
                     });
                 }
             });
-
             // restart the form if has a state of error/success
             Array.prototype.forEach.call( restart, function( entry )
             {
@@ -462,11 +438,9 @@ $services = pods('services')->find($params);
                     input.click();
                 });
             });
-
             // Firefox focus bug fix for file input
             input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
             input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });;
-
             document.addEventListener("DOMContentLoaded", function(event) {
                 $("#files_names").on("click", "button.btn-close", function(){
                     var file_key_send =  parseInt($(this).attr('data-item-id'));
@@ -489,21 +463,18 @@ $services = pods('services')->find($params);
                             if(files_from_back.length>1){
                                 files_from_back.splice(file_key_back,1);
                             }else{
-                                $('#submit-info-form').removeClass('uploaded');
-
+                                $('.submit-file-form').removeClass('uploaded');
                                 files_from_back = [];
                             }
                             showFiles(files_to_send);
                         },
                         error: function(MLHttpRequest, textStatus, errorThrown) {
-
                         }
                     });
                 });
-
-                $('#submit-info-form').submit(function (e) {
+                $('.submit-info-form').submit(function (e) {
                     var valid = true;
-                    var required = $('#submit-info-form').find('[required]');
+                    var required = $(e.target).find('[required]');
                     if (required) {
                         required
                             .each(function () {
@@ -516,16 +487,15 @@ $services = pods('services')->find($params);
                         $.ajax({
                             type: 'POST',
                             url:'/wp-json/cv/v1/send',
-                            data:   {files : files_from_back, data: $('#submit-info-form').serializeArray()},
+                            data:   {files : files_from_back, data: $(e.target).serializeArray()},
                             success: function(data) {
-                                $('#files_sender').trigger('reset');
+                                $('.files_sender').trigger('reset');
                                 files_to_send = [];
                                 files_from_back = [];
                                 showFiles(0);
                                 window.location.href = window.location.href + '?form=success'
                             },
                             error: function(MLHttpRequest, textStatus, errorThrown) {
-
                             }
                         });
                     }
@@ -534,7 +504,6 @@ $services = pods('services')->find($params);
             });
         });
     }( document, window, 0 ));
-
 </script>
 
 </body>
