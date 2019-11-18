@@ -62,9 +62,9 @@ $services = pods('services')->find($params);
                             </div>
                             <div class="col-12">
                                 <div class="row">
-<!--                                    <div class="col-6">-->
-<!--                                        <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>-->
-<!--                                    </div>-->
+                                    <div class="col-6">
+                                        <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
+                                    </div>
                                     <div class="col-6">
                                         <button type="submit" class="btn btn-primary custom-submit">Отправить</button>
                                     </div>
@@ -474,6 +474,9 @@ $services = pods('services')->find($params);
                     });
                 });
                 $('.submit-info-form').submit(function (e) {
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+
                     var valid = true;
                     var required = $(e.target).find('[required]');
                     if (required) {
@@ -500,7 +503,8 @@ $services = pods('services')->find($params);
                             }
                         });
                     }
-                    e.preventDefault();
+
+                    return false;
                 });
             });
         });
