@@ -77,45 +77,10 @@ $(document).ready(function() {
             dots: false,
             arrowPrev: '<button> < </button>',
             arrowNext: '<button> > </button>'
-            // responsive: [
-            //     {
-            //         breakpoint: 576,
-            //         settings: {
-            //             slidesToShow: 1
-            //         }
-            //     }
-            // ]
         });
     }
 
-    // var marquee = $('#marquee');
-    // if (marquee.length) {
-    //     marquee.slick({
-    //         speed: 5000,
-    //         autoplay: true,
-    //         autoplaySpeed: 0,
-    //         cssEase: 'linear',
-    //         slidesToShow: 1,
-    //         slidesToScroll: 1,
-    //         variableWidth: true,
-    //         infinite: true,
-    //         initialSlide: 1,
-    //         arrows: false,
-    //         buttons: false
-    //     });
-    // }
-
-    // $(function() {
-    //     var marquee = $('#marquee');
-    //     marquee.find('div').append(marquee.find("span").clone());
-    //     var reset = function() {
-    //         var $this = $(this);
-    //         $this.css("margin-left", "0%");
-    //         $this.animate({ "margin-left": "-100%" }, 25000, 'linear', reset);
-    //     };
-    //     reset.call(marquee.find("div"));
-    // });
-
+    $('#services-carousel').slick();
 
     (function( ele, frame, step ) {
         var stp = step || 1;

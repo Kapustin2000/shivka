@@ -90,6 +90,10 @@
   }
 }
 
+.services-mobile {
+  display: none;
+}
+
 @media (min-width: $min-tablet)
 and (max-width: $tablet) {
   .services {
@@ -145,6 +149,14 @@ and (max-width: $tablet) {
 }
 
 @media (max-width: $mobile) {
-
+  .services {
+    padding-bottom: get-vw-m(100px);
+  }
+  .services-desktop {
+    display: none;
+  }
+  .services-mobile {
+    display: block;
+  }
 }
 

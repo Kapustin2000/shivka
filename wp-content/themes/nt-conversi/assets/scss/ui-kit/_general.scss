@@ -139,7 +139,7 @@ h2 {
   h2 {
     font-size: get-vw-m(30px);
     line-height: get-vw-m(42px);
-    margin-bottom: get-vw-m(25px);
+    margin-bottom: get-vw-m(13px);
   }
 }
 
@@ -454,15 +454,15 @@ textarea {
 
   .content-editable,
   p {
-    font-size: get-vw-t(22px);
-    line-height: get-vw-t(28px);
+    font-size: get-vw-m(18px);
+    line-height: get-vw-m(24px);
   }
 
   .bordered {
-    border: get-vw-t(12px) solid $yellow;
-    padding: get-vw-t(40px) get-vw-t(23px) get-vw-t(24px) get-vw-t(43px);
+    border: get-vw-m(6px) solid $yellow;
+    padding: get-vw-m(45px) get-vw-m(11px) get-vw-m(38px) get-vw-m(6px);
     p {
-      margin: 0 0 get-vw-t(30px);
+      margin: 0 0 get-vw-m(24px);
       &:last-child {
         margin-bottom: 0;
       }

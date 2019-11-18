@@ -115,18 +115,35 @@ $stages_of_work = pods('stages_of_work')->find($params);
                 <div class="col-12">
                     <h2>Наши услуги</h2>
                     <div class="decorative yellow"></div>
-                    <div class="row">
-                        <?php while($services->fetch()){ ?>
-                            <div class="col-xl-4 col-6">
-                                <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
-                                    <div class="service-img-wrap">
-                                        <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
-                                    </div>
-                                    <div class="service-title"><?=$services->display('post_title')?></div>
-                                    <span class="btn btn-primary btn-span">подробнее</span>
-                                </a>
+                    <div class="services-desktop">
+                        <div class="row">
+                            <?php while($services->fetch()){ ?>
+                                <div class="col-xl-4 col-6">
+                                    <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
+                                        <div class="service-img-wrap">
+                                            <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
+                                        </div>
+                                        <div class="service-title"><?=$services->display('post_title')?></div>
+                                        <span class="btn btn-primary btn-span">подробнее</span>
+                                    </a>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                    <div class="services-mobile">
+                        <div class="row">
+                            <div id="services-carousel">
+                                <?php while($services->fetch()){ ?>
+                                    <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
+                                        <div class="service-img-wrap">
+                                            <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
+                                        </div>
+                                        <div class="service-title"><?=$services->display('post_title')?></div>
+                                        <span class="btn btn-primary btn-span">подробнее</span>
+                                    </a>
+                                <?php } ?>
                             </div>
-                        <?php } ?>
+                        </div>
                     </div>
                     <div class="see-more eye-hover">
                         <a href="/services" class="underline">смотреть все услуги</a>
@@ -168,13 +185,15 @@ $stages_of_work = pods('stages_of_work')->find($params);
             <div class="row">
                 <div class="col-12">
                     <h2>этапы работы</h2>
-                    <div class="steps-wrap row">
-                        <?php while($stages_of_work->fetch()){ ?>
-                            <div class="step col-xl-3 col-6">
-                                <h3><?=$stages_of_work->display('post_title')?></h3>
-                                <?=$stages_of_work->display('post_content')?>
-                            </div>
-                        <?php } ?>
+                    <div class="steps-scroll">
+                        <div class="steps-wrap row">
+                            <?php while($stages_of_work->fetch()){ ?>
+                                <div class="step col-xl-3 col-md-6">
+                                    <h3><?=$stages_of_work->display('post_title')?></h3>
+                                    <?=$stages_of_work->display('post_content')?>
+                                </div>
+                            <?php } ?>
+                        </div>
                     </div>
                     <div class="see-more eye-hover">
                         <a href="/how-to-order/" class="underline">смотреть подробности</a>
