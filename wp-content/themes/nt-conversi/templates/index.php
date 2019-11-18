@@ -133,7 +133,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                     <div class="services-mobile">
                         <div class="row">
                             <div id="services-carousel">
-                                <?php while($services->fetch()){ ?>
+                                <?php $services->reset(); while($services->fetch()){ ?>
                                     <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
                                         <div class="service-img-wrap">
                                             <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
