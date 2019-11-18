@@ -251,7 +251,7 @@ $services = pods('services')->find($params);
                     files_names.html('');
                     var files_list = '';
                     for (var key in files) {
-                        files_list += '<div class="file-item"><span>'+files[key]['name']+'</span><button data-item-id="'+key+'" type="button" class="btn-close">×</button></div>';
+                        files_list += '<div class="file-item"><span>'+files[key]['name']+'</span><button data-item-id="'+key+'" type="button" class="btn-close remove_file">×</button></div>';
                     }
                     if(files.length > 0) {
                         $('.submit-file-form').addClass('uploaded');
@@ -442,7 +442,9 @@ $services = pods('services')->find($params);
             input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
             input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });;
             document.addEventListener("DOMContentLoaded", function(event) {
-                $("#files_names").on("click", "button.btn-close", function(){
+                $(".files_names").on("click", "button.btn-close", function(e){
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
                     var file_key_send =  parseInt($(this).attr('data-item-id'));
                     var file_key_back;
                     for (var key in files_from_back) {
