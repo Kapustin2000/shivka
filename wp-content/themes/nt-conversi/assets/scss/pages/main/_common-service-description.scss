@@ -62,3 +62,38 @@
     }
   }
 }
+
+@media (max-width: $mobile) {
+  .common-service-description {
+    padding-bottom: get-vw-m(87px);
+    .common-service-wrap {
+      flex-wrap: wrap;
+    }
+    .common-service-img {
+      width: get-vw-m(346px);
+      min-width: get-vw-m(350px);
+      margin-left: get-vw-m(-15px);
+    }
+    .common-service-text-wrap {
+      right: auto;
+      width: get-vw-m(347px);
+      min-width: get-vw-m(347px);
+      transform: translate(0, -8.53333333333vw);
+      .btn {
+        width: get-vw-m(225px);
+        margin-left: get-vw-m(60px);
+      }
+    }
+    .common-service-text {
+      width: 100%;
+      margin: 0 0 get-vw-m(30px);
+    }
+    .decorative {
+      width: get-vw-m(184px);
+      height: get-vw-m(120px);
+      right: get-vw-m(-15px);
+      left: auto;
+      bottom: get-vw-m(-15px);
+    }
+  }
+}

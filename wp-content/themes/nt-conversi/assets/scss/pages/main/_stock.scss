@@ -79,5 +79,42 @@
 }
 
 @media (max-width: $mobile) {
-
+  .stock {
+    padding-bottom: get-vw-m(150px);
+    .stock-wrap {
+      flex-wrap: wrap;
+    }
+    .stock-img {
+      width: get-vw-m(350px);
+      min-width: get-vw-m(350px);
+      margin-left: get-vw-m(-15px);
+    }
+    .stock-text-wrap {
+      width: get-vw-m(350px);
+      min-width: get-vw-m(350px);
+      transform: translate(0, -8.53333333333vw);
+    }
+    .stock-text {
+      &.bordered {
+        padding: get-vw-m(50px) get-vw-m(27px) get-vw-m(140px) get-vw-m(6px);
+      }
+      h2 {
+        //margin-bottom: get-vw-m(20px);
+      }
+      .stock-short-desc {
+        max-width: 100%;
+        margin-bottom: get-vw-m(30px);
+      }
+      a {
+        width: get-vw-m(225px);
+        //margin: 0 0 get-vw-t(95px);
+      }
+      .ornament {
+        width: get-vw-m(140px);
+        max-width: get-vw-m(140px);
+        bottom: get-vw-m(-50px);
+        right: get-vw-m(-15px);
+      }
+    }
+  }
 }

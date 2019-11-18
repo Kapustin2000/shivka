@@ -203,17 +203,16 @@ $services = pods('services')->find($params);
         </div>
     </div>
 </footer>
-<script src="<?php bloginfo('template_url'); ?>/assets/libs/jquery/jquery-1.12.4.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/assets/libs/bootstrap/bootstrap.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/assets/js/slick.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.magnific-popup.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/assets/libs/select2/select2.min.js"></script>
-<!--<script src="--><?php //bloginfo('template_url'); ?><!--/assets/libs/fileinput/fileinput.min.js"></script>-->
-<script src="/wp-content/themes/nt-conversi/assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/assets/libs/imagefill/jquery-imagefill.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/assets/libs/masonry/masonry.pkgd.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/assets/js/scripts.js"></script>
-<script>
+<script defer src="<?php bloginfo('template_url'); ?>/assets/libs/jquery/jquery-1.12.4.min.js"></script>
+<script defer src="<?php bloginfo('template_url'); ?>/assets/libs/bootstrap/bootstrap.min.js"></script>
+<script defer src="<?php bloginfo('template_url'); ?>/assets/js/slick.min.js"></script>
+<script defer src="<?php bloginfo('template_url'); ?>/assets/js/jquery.magnific-popup.min.js"></script>
+<script defer src="<?php bloginfo('template_url'); ?>/assets/libs/select2/select2.min.js"></script>
+<script defer src="/wp-content/themes/nt-conversi/assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script defer src="<?php bloginfo('template_url'); ?>/assets/libs/imagefill/jquery-imagefill.js"></script>
+<script defer src="<?php bloginfo('template_url'); ?>/assets/libs/masonry/masonry.pkgd.min.js"></script>
+<script defer src="<?php bloginfo('template_url'); ?>/assets/js/scripts.js"></script>
+ <script>
     window.onload = function() {
         window.removeFakeCaptcha = function() {
             $('.captcha-fake-field').remove();

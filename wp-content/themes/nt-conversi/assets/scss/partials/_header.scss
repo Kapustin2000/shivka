@@ -363,6 +363,11 @@ header {
           display: none;
         }
       }
+      button,
+      .btn-span {
+        font-size: get-vw-m(14px);
+        padding: get-vw-m(8px) get-vw-m(20px);
+      }
       &-toggler {
         width: get-vw-m(25px);
         height: get-vw-m(25px);

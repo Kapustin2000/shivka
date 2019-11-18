@@ -86,9 +86,9 @@ and (max-width: $tablet) {
 @media (max-width: $mobile) {
   button,
   .btn-span {
-    font-size: get-vw-m(14px);
+    font-size: get-vw-m(20px);
     border-radius: get-vw-m(50px);
-    padding: get-vw-m(8px) get-vw-m(20px);
+    padding: get-vw-m(15px) get-vw-m(20px);
     &::after {
       height: get-vw-m(10px);
       border-radius: get-vw-m(50px);
