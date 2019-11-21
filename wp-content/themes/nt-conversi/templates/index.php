@@ -132,16 +132,18 @@ $stages_of_work = pods('stages_of_work')->find($params);
                     </div>
                     <div class="services-mobile">
                         <div class="row">
-                            <div id="services-carousel">
-                                <?php $services->reset(); while($services->fetch()){ ?>
-                                    <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
-                                        <div class="service-img-wrap">
-                                            <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
-                                        </div>
-                                        <div class="service-title"><?=$services->display('post_title')?></div>
-                                        <span class="btn btn-primary btn-span">подробнее</span>
-                                    </a>
-                                <?php } ?>
+                            <div class="col-12">
+                                <div id="services-carousel">
+                                    <?php $services->reset(); while($services->fetch()){ ?>
+                                        <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
+                                            <div class="service-img-wrap">
+                                                <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
+                                            </div>
+                                            <div class="service-title"><?=$services->display('post_title')?></div>
+                                            <span class="btn btn-primary btn-span">подробнее</span>
+                                        </a>
+                                    <?php } ?>
+                                </div>
                             </div>
                         </div>
                     </div>

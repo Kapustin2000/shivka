@@ -45,7 +45,7 @@ $services = pods('services')->find($params);
                     </div>
                     <form  class="active submit-info-form" enctype="multipart/form-data" method="post">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="email" placeholder="E-mail*" required name="email">
                                 <input type="text" id="phone" placeholder="Телефон" name="phone">
@@ -56,16 +56,16 @@ $services = pods('services')->find($params);
                                     <?php } ?>
                                 </select>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <textarea rows="5" name="message"
                                           placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
                             </div>
                             <div class="col-12">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-md-6 col-12">
                                         <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-md-6 col-12">
                                         <button type="submit" class="btn btn-primary custom-submit">Отправить</button>
                                     </div>
                                 </div>

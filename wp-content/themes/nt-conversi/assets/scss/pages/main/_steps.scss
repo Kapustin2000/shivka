@@ -135,7 +135,7 @@
 
 @media (max-width: $mobile) {
   .steps {
-    padding-bottom: get-vw-t(185px);
+    padding-bottom: get-vw-m(165px);
     h2 {
       padding-left: get-vw-t(16px);
       margin-bottom: get-vw-t(62px);
@@ -147,13 +147,15 @@
     .steps-scroll {
       overflow-y: auto;
       height: get-vw-m(530px);
+      margin-right: -15px;
     }
     .step {
       width: get-vw-m(250px);
       min-height: get-vw-m(250px);
       padding: get-vw-m(25px) get-vw-m(45px);
       &::before {
-        font-size: get-vw-t(150px);
+        font-size: get-vw-m(120px);
+        line-height: get-vw-m(112px);
         bottom: get-vw-t(-37px);
       }
       h3 {

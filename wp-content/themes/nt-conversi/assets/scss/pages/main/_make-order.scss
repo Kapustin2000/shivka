@@ -135,5 +135,54 @@ and (max-width: $tablet) {
 }
 
 @media (max-width: $mobile) {
-
+    .make-order {
+        padding-bottom: get-vw-m(65px);
+        .decorative {
+            &.background {
+                top: get-vw-m(-60px);
+                left: 0;
+                width: 100%;
+                height: get-vw-m(350px);
+            }
+            &.yellow {
+                top: get-vw-t(75px);
+                width: get-vw-m(320px);
+                height: get-vw-m(370px);
+            }
+        }
+        .form-wrap {
+            width: get-vw-m(347px);
+            box-shadow: 0 0 get-vw-m(50px) rgba(0, 0, 0, .15);
+            .form-inner-wrap {
+                margin-bottom: get-vw-m(32px);
+            }
+            h2 {
+                max-width: get-vw-m(310px);
+                padding: get-vw-m(50px) 0 0;
+                line-height: get-vw-m(38px);
+                margin-bottom: get-vw-m(20px);
+            }
+            p {
+                padding: 0 get-vw-t(50px);
+            }
+        }
+        form {
+            padding: get-vw-m(40px) get-vw-m(12px);
+            input, textarea, button, .form-element {
+                margin-bottom: get-vw-m(30px);
+            }
+            textarea {
+                height: get-vw-m(170px);
+                margin-bottom: get-vw-m(200px);
+            }
+            .select2-container {
+                margin-bottom: get-vw-m(30px);
+            }
+        }
+        .box-wrap {
+            right: get-vw-m(40px);
+            top: get-vw-m(820px);
+            width: calc(50% - 5.3vw);
+        }
+    }
 }

@@ -80,7 +80,13 @@ $(document).ready(function() {
         });
     }
 
-    $('#services-carousel').slick();
+    $('#services-carousel').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false
+    });
 
     (function( ele, frame, step ) {
         var stp = step || 1;
