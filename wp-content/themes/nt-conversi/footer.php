@@ -76,7 +76,7 @@ $services = pods('services')->find($params);
                     <div class="box-wrap">
                         <form  action="/wp-json/cv/v1/save" method="post" action="" enctype="multipart/form-data" novalidate="" class="active box has-advanced-upload submit-file-form">
                             <div class="box__input">
-                                <span class="d-xl-block d-lg-none d-md-none d-sm-none d-xs-none">Добавьте ваш файл, картинки или фотографии</span>
+                                <span class="d-xl-block d-lg-none d-md-none d-sm-none d-none">Добавьте ваш файл, картинки или фотографии</span>
                                 <span class="d-xl-none">Добавьте ваш файл или картинки</span>
                                 <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
                                 <label class="files-names files_names"></label>
@@ -133,7 +133,7 @@ $services = pods('services')->find($params);
                             email: <a href="mailto:<?=$settings->display('individual_email')?>"><?=$settings->display('individual_email')?></a>
                         </div>
                     </div>
-                    <div class="contacts d-lg-none d-md-none d-sm-none d-xs-none">
+                    <div class="contacts d-lg-none d-md-none d-sm-none d-none">
                         <h4>&nbsp;</h4>
                         <div class="contact">
                             <a target="_blank" href="<?=$settings->display('individually_latitude')?>" class="map-link">

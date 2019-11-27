@@ -263,6 +263,7 @@ header {
 @media (min-width: $min-tablet)
    and (max-width: $tablet) {
   header {
+    max-width: get-vw-m(375px);
     .navbar {
       justify-content: flex-start;
       padding: get-vw-t(25px) 0;

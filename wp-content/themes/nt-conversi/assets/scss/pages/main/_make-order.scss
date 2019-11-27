@@ -180,9 +180,9 @@ and (max-width: $tablet) {
             }
         }
         .box-wrap {
-            right: get-vw-m(40px);
-            top: get-vw-m(820px);
-            width: calc(50% - 5.3vw);
+            right: get-vw-m(12px);
+            top: get-vw-m(845px);
+            width: calc(100% - 6.4vw);
         }
     }
 }

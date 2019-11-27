@@ -276,5 +276,110 @@ and (max-width: $tablet) {
 }
 
 @media (max-width: $mobile) {
+  footer {
+    font-size: get-vw-m(18px);
+    line-height: get-vw-m(23px);
+    .inner-wrap {
+      flex-wrap: wrap;
+      border-top: get-vw-t(1px) solid $violet;
+      border-bottom: get-vw-t(1px) solid $violet;
+      padding: get-vw-t(29px) 0 0;
+      & > * {
+        margin-bottom: get-vw(30px);
+      }
+    }
+    .logo-wrap {
+      width: 100%;
+      text-align: center;
+      img {
+        width: get-vw-m(75px);
+        height: get-vw-m(75px);
+      }
+    }
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: auto;
+      width: 100%;
+      margin-right: 0;
+      .contact {
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+    .schedule {
+      min-width: get-vw-t(127px);
+      margin-right: get-vw-t(60px);
+    }
+    .social-media {
+      margin-top: get-vw-t(24px);
+    }
+    .social-wrap {
+      a {
+        margin-right: get-vw-t(20px);
+        width: get-vw-t(50px);
+        height: get-vw-t(50px);
+      }
+    }
+    h4 {
+      width: 100%;
+      text-align: center;
+      font-size: get-vw-m(16px);
+      line-height: get-vw-m(25px);
+      margin-bottom: get-vw-m(20px);
+    }
+    p {
+      font-size: get-vw-t(16px);
+    }
+    form {
+      .form-group {
+        input {
+          width: get-vw-t(380px);
+          padding-right: get-vw-t(240px);
+        }
+        button {
+          width: get-vw-t(146px);
+        }
+      }
+    }
+    .footer-nav {
+      padding: get-vw-t(22px) 0;
+      border-bottom: get-vw-t(1px) solid $violet;
+      a {
+        font-size: get-vw-t(16px);
+        line-height: get-vw-t(22px);
+        padding: 2rem 0;
+        &::after {
+          left: 0;
+          top: 75%;
+          width: 0;
+          height: get-vw(1px);
+        }
+      }
+    }
+    .footer-info {
+      padding: get-vw(24px) 0;
+    }
+  }
 
+  .icon-facebook {
+    width: get-vw-m(45px);
+    height: get-vw-m(45px);
+  }
+
+  .icon-instagram {
+    width: get-vw-m(30px);
+    height: get-vw-m(30px);
+  }
+
+  .icon-youtube {
+    width: get-vw-m(30px);
+    height: get-vw-m(21px);
+  }
+
+  .icon-prom {
+    width: get-vw-m(30px);
+    height: get-vw-m(30px);
+  }
 }

@@ -141,13 +141,21 @@
       margin-bottom: get-vw-t(62px);
     }
     &-wrap {
-      width: get-vw-m(1000px);
+      width: get-vw-m(1030px);
       margin: 0;
     }
     .steps-scroll {
       overflow-y: auto;
-      height: get-vw-m(530px);
+      height: get-vw-m(560px);
       margin-right: -15px;
+      &::-webkit-scrollbar {
+        width: 0px;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+      }
+      /* Optional: show position indicator in red */
+      &::-webkit-scrollbar-thumb {
+        background: transparent;
+      }
     }
     .step {
       width: get-vw-m(250px);
@@ -168,7 +176,7 @@
       }
     }
     .see-more {
-      margin-top: get-vw-t(90px);
+      margin-top: get-vw-t(60px);
     }
   }
   .steps {
