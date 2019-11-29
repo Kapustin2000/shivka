@@ -184,7 +184,7 @@ $works = pods('works')->find($params);
                         <h2>Хотите узнать стоимость услуги или сделать заказ?</h2>
                         <p>Напишите нам! Наш менеджер свяжется с вами в ближайшее время и проконсультирует по всем вопросам.</p>
                     </div>
-                    <form action="?form=success"  class="order-form-js order-form active submit-info-form" enctype="multipart/form-data" method="post">
+                    <form action="?form=success" class="order-form-js order-form active submit-info-form" enctype="multipart/form-data" method="post">
                         <div class="row">
                             <div class="col-6">
                                 <input type="text" placeholder="Имя*" required name="full_name">
@@ -215,7 +215,7 @@ $works = pods('works')->find($params);
                     </form>
 
                     <div class="box-wrap">
-                        <form action="/wp-json/cv/v1/save" method="post" action="" enctype="multipart/form-data" novalidate="" class="active box has-advanced-upload submit-file-form">
+                        <form action="/wp-json/cv/v1/save" method="post" action="" enctype="multipart/form-data" novalidate="" class="box has-advanced-upload submit-file-form">
                             <div class="box__input">
                                 <span class="d-xl-block d-lg-none d-md-none d-sm-none d-xs-none">Добавьте ваш файл, картинки или фотографии</span>
                                 <span class="d-xl-none">Добавьте ваш файл или картинки</span>
