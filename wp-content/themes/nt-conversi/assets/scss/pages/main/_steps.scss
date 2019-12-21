@@ -160,6 +160,7 @@
     .step {
       width: get-vw-m(250px);
       min-height: get-vw-m(250px);
+      height: get-vw-m(251px);
       padding: get-vw-m(25px) get-vw-m(45px);
       &::before {
         font-size: get-vw-m(120px);

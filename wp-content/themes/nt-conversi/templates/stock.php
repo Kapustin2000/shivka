@@ -26,8 +26,7 @@ $data = pods('stock')->find($params);
                 </h1>
                 <div class="row">
                     <?php  while($data->fetch()){?>
-<!--                        <div class="col-lg-6 col-12">-->
-                        <div class="col-6">
+                        <div class="col-md-6 col-12">
                             <div class="stock-item bordered">
                                 <div class="content-editable">
                                     <h2><?=$data->display('post_title')?></h2>

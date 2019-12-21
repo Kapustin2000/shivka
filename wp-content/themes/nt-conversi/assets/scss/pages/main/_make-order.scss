@@ -63,6 +63,9 @@
             display: flex;
         }
     }
+    .submit-info-form.active + .box-wrap form {
+        display: block;
+    }
     #order-form:not(.active) + form + .file-form {
         display: none;
     }
@@ -136,7 +139,7 @@ and (max-width: $tablet) {
 
 @media (max-width: $mobile) {
     .make-order {
-        padding-bottom: get-vw-m(65px);
+        padding-bottom: get-vw-m(50px);
         .decorative {
             &.background {
                 top: get-vw-m(-60px);
@@ -167,7 +170,7 @@ and (max-width: $tablet) {
             }
         }
         form {
-            padding: get-vw-m(40px) get-vw-m(12px);
+            padding: get-vw-m(40px) get-vw-m(12px) get-vw-m(58px);
             input, textarea, button, .form-element {
                 margin-bottom: get-vw-m(30px);
             }

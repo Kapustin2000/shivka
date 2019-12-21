@@ -76,7 +76,21 @@ $(document).ready(function() {
             slidesToScroll: 1,
             dots: false,
             arrowPrev: '<button> < </button>',
-            arrowNext: '<button> > </button>'
+            arrowNext: '<button> > </button>',
+            responsive: [
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
         });
     }
 
@@ -143,22 +157,12 @@ $(document).ready(function() {
     });
     phoneLink();
 
-    //-------order form
-    // $('#order-form').on('submit', function(e) {
-    //     e.preventDefault();
-    //     $.ajax({
-    //         type: 'POST',
-    //         url: '/wp-json/blog/v1/contact',
-    //         data: { action : 'shivka_Contact_Save_AJAX', data: $('#order-form').serializeArray()},
-    //         cache: true,
-    //         success: function(data) {
-    //             console.log('success');
-    //         },
-    //         error: function(MLHttpRequest, textStatus, errorThrown) {
-    //             console.log(errorThrown);
-    //         }
-    //     });
-    // });
+    $('#js-address-next').on('click', function() {
+       if ($('.address-wrap').length) {
+           console.log('lol');
+           $('.address-wrap').find('.address.active').removeClass('active').siblings().addClass('active');
+       }
+    });
 
     //-------call form
     $('.call-form').each(function() {

@@ -40,10 +40,11 @@ $settings  = pods('website_settings')->find();
                                 E-mail: <a href="maito: <?=$settings->display('individual_email')?>"> <?=$settings->display('individual_email')?></a>
                             </p>
                         </div>
+                        <button id="js-address-next" class="next"></button>
                     </div>
                 </div>
                 <div class="map-wrap">
-                    <iframe src="http://maps.google.com.ua/maps/ms?msa=0&amp;msid=206958626610732093873.0004bfb616afe71fccbd8&amp;gl=ua&amp;ie=UTF8&amp;t=m&amp;ll=50.185692,30.349731&amp;spn=0.879324,1.974792&amp;z=9&amp;output=embed" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%"></iframe><br /><small>Просмотреть <a style="color: #0000ff; text-align: left;" href="http://maps.google.com.ua/maps/ms?msa=0&amp;msid=206958626610732093873.0004bfb616afe71fccbd8&amp;gl=ua&amp;ie=UTF8&amp;t=m&amp;ll=50.185692,30.349731&amp;spn=0.879324,1.974792&amp;z=9&amp;source=embed">SmartHoop</a> на карте большего размера</small>
+                    <iframe src="https://maps.google.com.ua/maps/ms?msa=0&amp;msid=206958626610732093873.0004bfb616afe71fccbd8&amp;gl=ua&amp;ie=UTF8&amp;t=m&amp;ll=50.185692,30.349731&amp;spn=0.879324,1.974792&amp;z=9&amp;output=embed" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%"></iframe><br /><small>Просмотреть <a style="color: #0000ff; text-align: left;" href="http://maps.google.com.ua/maps/ms?msa=0&amp;msid=206958626610732093873.0004bfb616afe71fccbd8&amp;gl=ua&amp;ie=UTF8&amp;t=m&amp;ll=50.185692,30.349731&amp;spn=0.879324,1.974792&amp;z=9&amp;source=embed">SmartHoop</a> на карте большего размера</small>
                 </div>
             </div>
         </div>

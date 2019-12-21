@@ -212,7 +212,7 @@ $works = pods('works')->find($params);
                     </div>
                     <form action="?form=success" class="order-form-js order-form active submit-info-form" enctype="multipart/form-data" method="post">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-sm-6 col-12">
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="email" placeholder="E-mail*" required name="email">
                                 <input type="text" id="phone" placeholder="Телефон" name="phone">
@@ -223,16 +223,16 @@ $works = pods('works')->find($params);
                                     <?php } ?>
                                 </select>
                             </div>
-                            <div class="col-6">
+                            <div class="col-sm-6 col-12">
                                 <textarea rows="5" name="message"
                                           placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
                             </div>
                             <div class="col-12">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-sm-6 col-12">
                                         <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-sm-6 col-12">
                                         <button type="submit" class="btn btn-primary custom-submit">Отправить</button>
                                     </div>
                                 </div>
@@ -243,7 +243,7 @@ $works = pods('works')->find($params);
                     <div class="box-wrap">
                         <form action="/wp-json/cv/v1/save" method="post" action="" enctype="multipart/form-data" novalidate="" class="box has-advanced-upload submit-file-form">
                             <div class="box__input">
-                                <span class="d-xl-block d-lg-none d-md-none d-sm-none d-xs-none">Добавьте ваш файл, картинки или фотографии</span>
+                                <span class="d-xl-block d-lg-none d-md-none d-sm-none d-none">Добавьте ваш файл, картинки или фотографии</span>
                                 <span class="d-xl-none">Добавьте ваш файл или картинки</span>
                                 <input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
                                 <label class="files-names files_names"></label>

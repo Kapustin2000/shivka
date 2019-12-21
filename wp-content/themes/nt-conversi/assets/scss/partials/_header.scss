@@ -270,6 +270,8 @@ header {
       &-brand {
         img {
           width: get-vw-t(270px);
+          min-width: get-vw-t(270px);
+          height: get-vw-t(50px);
         }
       }
       &-toggler {

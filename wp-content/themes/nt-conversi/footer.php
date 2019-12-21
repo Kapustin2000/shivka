@@ -212,7 +212,7 @@ $services = pods('services')->find($params);
 <script defer src="<?php bloginfo('template_url'); ?>/assets/libs/imagefill/jquery-imagefill.js"></script>
 <script defer src="<?php bloginfo('template_url'); ?>/assets/libs/masonry/masonry.pkgd.min.js"></script>
 <script defer src="<?php bloginfo('template_url'); ?>/assets/js/scripts.js"></script>
- <script>
+<script>
     window.onload = function() {
         window.removeFakeCaptcha = function() {
             $('.captcha-fake-field').remove();
