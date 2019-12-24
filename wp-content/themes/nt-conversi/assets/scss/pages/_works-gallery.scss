@@ -38,31 +38,6 @@
   }
 }
 
-//.work-gallery {
-//  //margin-left: get-vw(-25px);
-//  //margin-right: get-vw(-25px);
-//  .gallery-item {
-//    display: inline-block;
-//    width: calc(50% - 25px);
-//    //margin: get-vw(50px) get-vw(25px);
-//    margin-bottom: 50px;
-//    &:first-child {
-//      margin-top: 50px;
-//    }
-//    &:nth-child(odd) {
-//      margin-right: 50px;
-//    }
-//    //&:nth-child(odd) {
-//    //  margin-right: get-vw(50px);
-//    //}
-//    img {
-//      width: 100%;
-//      height: auto;
-//      display: block;
-//    }
-//  }
-//}
-
 .work-gallery {
   margin-left: get-vw(-25px);
   margin-right: get-vw(-25px);
@@ -86,33 +61,11 @@
   width: calc(50% - 1.30208333333vw);
 }
 
-//.work-gallery {
-//  width: get-vw(775px);
-//  padding-bottom: get-vw(50px);
-//  .gallery-item {
-//    img {
-//
-//    }
-//  }
-//}
-//.work-gallery-nav {
-//  margin-bottom: get-vw(50px);
-//  img {
-//    cursor: pointer;
-//    width: auto;
-//    height: get-vw(200px);
-//    margin: 0 auto;
-//  }
-//  .slick-current {
-//    img {
-//      border: get-vw(10px) solid $violet;
-//    }
-//  }
-//}
-
 .bottom {
   display: flex;
   align-items: center;
+  position: relative;
+  top: get-vw(-50px);
   .back {
     text-align: right;
     padding-left: get-vw(190px);
@@ -123,49 +76,116 @@
   }
 }
 
-.page-template-works-gallery {
+.page-template-works-gallery,
+.gallery-template-default {
   & > .make-order {
     display: none;
   }
 }
 
-//@media (max-width: $large-desktop) {
-//  .work-info {
-//    &-img {
-//      display: none;
-//    }
-//    .info-block {
-//      padding: get-vw(50px);
-//    }
-//  }
-//}
-//
-//@media (max-width: $tablet) {
-//  .work-gallery {
-//    //column-count: 1;
-//  }
-//  .bottom {
-//    flex-direction: column;
-//    align-items: flex-start;
-//    .back {
-//      text-align: left;
-//      margin-top: get-vw(20px);
-//    }
-//  }
-//}
-//
-//@media (max-width: $mobile) {
-//  .work-gallery {
-//    .gallery-item {
-//      img {
-//        width: 100%;
-//        height: auto;
-//      }
-//    }
-//  }
-//  .work-gallery-nav {
-//    .gallery-nav-item img {
-//       height: get-vw(100px);
-//     }
-//  }
-//}
+@media (min-width: $min-tablet) and (max-width: $tablet) {
+  .work-info {
+    margin-bottom: get-vw-t(20px);
+    .work-info-img {
+      width: get-vw-t(455px);
+      &::after {
+        top: get-vw-t(-30px);
+        left: get-vw-t(-28px);
+        width: get-vw-t(515px);
+        height: calc(100% + -2.34375vw);
+        border: get-vw-t(12px) solid $violet;
+      }
+    }
+    .info-block {
+      width: get-vw-t(512px);
+      top: get-vw-t(180px);
+      padding: get-vw-t(133px) get-vw-t(45px) get-vw-t(20px);
+    }
+    h1 {
+      bottom: calc(100% - 6.8359375vw);
+      right: get-vw-t(13px);
+    }
+  }
+
+  .work-gallery {
+    left: get-vw-t(-5px);
+    .gallery-item {
+      width: calc(50% + -0.9765625vw);
+      margin-bottom: get-vw-t(40px);
+      padding: 0 get-vw-t(20px);
+      &:first-child {
+        margin-top: get-vw-t(40px);
+      }
+    }
+  }
+
+  .bottom {
+    top: get-vw-t(-41px);
+    position: relative;
+    .back {
+      font-size: get-vw-t(20px);
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .work-info {
+    margin-bottom: get-vw-m(35px);
+    .work-info-img {
+      width: get-vw-m(300px);
+      margin-left: get-vw-m(16px);
+      &::after {
+        top: get-vw-m(-37px);
+        left: get-vw-m(-17px);
+        width: get-vw-m(335px);
+        height: calc(100% + -2.34375vw);
+        border: get-vw-m(6px) solid $violet;
+      }
+    }
+    .info-block {
+      position: relative;
+      width: get-vw-m(330px);
+      margin-left: auto;
+      right: get-vw-m(-15px);
+      padding: get-vw-m(50px) get-vw-m(20px) get-vw-m(22px);
+    }
+    h1 {
+      font-size: get-vw-m(34px);
+      line-height: get-vw-m(40px);
+      bottom: calc(100% - 6.8359375vw);
+      right: get-vw-m(15px);
+    }
+  }
+
+  .work-gallery {
+    left: get-vw-m(3px);
+    margin-top: get-vw-m(90px);
+    .gallery-item {
+      width: get-vw-m(347px);
+      margin-bottom: get-vw-m(40px);
+      padding: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .bottom {
+    position: relative;
+    top: get-vw-m(-1px);
+    flex-direction: column;
+    .back {
+      font-size: get-vw-m(20px);
+      margin-top: get-vw-m(43px);
+      .icon-arrow {
+        top: get-vw-m(-4px);
+        left: get-vw-m(-30px);
+        width: get-vw-m(10px);
+        height: get-vw-m(32px);
+      }
+    }
+  }
+}

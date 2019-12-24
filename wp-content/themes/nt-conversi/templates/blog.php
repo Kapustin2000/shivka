@@ -41,10 +41,24 @@ $data = pods('blog')->find($params);
                                 <span>Новости</span>
                             </a>
                         </div>
+                        <select class="service-select">
+                            <option value="0" <?php if(!isset($_GET['type']) || (int) $_GET['type']==0){ ?>  selected <?php } ?>>
+                                <a href="?type=0">Все</a>
+                            </option>
+                            <option value="1" <?php if(!isset($_GET['type']) || (int) $_GET['type']==1){ ?>  selected <?php } ?>>
+                                <a href="?type=1">Статьи</a>
+                            </option>
+                            <option value="2" <?php if(!isset($_GET['type']) || (int) $_GET['type']==2){ ?>  selected <?php } ?>>
+                                <a href="?type=2">События</a>
+                            </option>
+                            <option value="3" <?php if(!isset($_GET['type']) || (int) $_GET['type']==3){ ?>  selected <?php } ?>>
+                                <a href="?type=3">Новости</a>
+                            </option>
+                        </select>
                         <div class="blog-inner-wrap">
                             <div class="row">
                                 <?php  while($data->fetch()){?>
-                                    <div class="col-6">
+                                    <div class="col-md-6 col-12">
                                         <a class="blog-post" data-post-type="article" href="<?=get_permalink($data->display('id'))?>">
                                             <div class="blog-img-wrap">
                                                 <div class="blog-img" style="background-image: url(<?=$data->display('image')?>);"></div>

@@ -34,15 +34,16 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
                     <div class="col-12">
                         <div class="info-block">
                             <h1><span>&nbsp;<?=$data->display('post_title')?>&nbsp;</span></h1>
-                            <?=$data->display('post_content')?>
+                            <div class="content-editable">
+                                <?=$data->display('post_content')?>
+                            </div>
                         </div>
                         <div class="work-info-img">
                             <img src="<?=$data->display('preview')?>" alt="<?=$data->display('post_title')?>">
                         </div>
 
                         <div class="related-categories services extra-services">
-                            <div class="row ajax-call">
-                            </div>
+                            <div class="row ajax-call"></div>
                         </div>
                         <div class="see-more eye-hover" id="works-category-ajax" data-total="<?=count($data->field('related_works'))?>">
                             <span class="underline">смотреть больше</span>

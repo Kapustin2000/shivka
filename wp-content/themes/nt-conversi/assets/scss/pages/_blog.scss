@@ -18,6 +18,9 @@
         }
       }
     }
+    .service-select + .select2-container--default {
+      display: none;
+    }
     .blog-inner-wrap {
       margin-bottom: get-vw(-50px);
     }
@@ -108,6 +111,9 @@
     }
     .blog-pagination {
       padding-bottom: get-vw(100px);
+      .bottom {
+        top: 0;
+      }
       .pagination {
         &::before {
           background-color: transparentize($yellow, .5);
@@ -124,9 +130,154 @@
 }
 
 @media (min-width: $min-tablet) and (max-width: $tablet) {
-
+  .smarthoop-blog {
+    margin-top: get-vw-t(100px);
+    .blog {
+      margin-top: get-vw(100px);
+      h1 {
+        margin: 0;
+      }
+      .tabs-wrap {
+        margin-bottom: get-vw-t(40px);
+        .btn-span {
+          padding-top: get-vw-t(14px);
+          padding-bottom: get-vw-t(14px);
+        }
+        a {
+          margin: 0 get-vw(1.5px);
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .blog-inner-wrap {
+        margin-bottom: get-vw(-50px);
+      }
+      .blog-post {
+        box-shadow: 0 0 get-vw(50px) rgba(0, 0, 0, 0.15);
+        margin-bottom: get-vw(50px);
+        &::before {
+          top: 0;
+          left: 0;
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .blog-img-wrap {
+          width: 100%;
+          height: get-vw-t(300px);
+          .blog-type {
+            font-family: 'Uni Sans Thin Caps', sans-serif;
+            top: get-vw-t(32px);
+            padding: 0 get-vw-t(19px);
+            min-width: get-vw-t(175px);
+            font-size: get-vw-t(20px);
+            line-height: get-vw-t(50px);
+          }
+        }
+        .blog-info {
+          padding: 0 get-vw-t(16px) get-vw(60px) get-vw(60px);
+          height: get-vw-t(260px);
+        }
+        .blog-title {
+          font-size: get-vw-t(24px);
+          line-height: get-vw-t(40px);
+          margin: get-vw-t(18.5px) 0 get-vw-t(14px);
+        }
+        .blog-short-desc {
+          display: block;
+          max-height: get-vw-t(140px);
+          height: get-vw-t(140px);
+        }
+        .btn {
+          top: get-vw-t(240px);
+          width: get-vw-t(225px);
+        }
+      }
+      .blog-pagination {
+        padding-bottom: get-vw-t(75px);
+        .bottom {
+          top: 0;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: $mobile) {
-
+  .smarthoop-blog {
+    margin-top: get-vw-m(100px);
+    .blog {
+      margin-top: 0;
+      h1 {
+        font-size: get-vw-m(34px);
+        line-height: get-vw-m(40px);
+      }
+      .tabs-wrap {
+        display: none;
+      }
+      .service-select + .select2-container--default .select2-selection--single {
+          border-radius: 0;
+      }
+      .blog-inner-wrap {
+        margin-top: get-vw-m(50px);
+        margin-bottom: get-vw(-50px);
+      }
+      .blog-post {
+        box-shadow: 0 0 get-vw-m(50px) rgba(0, 0, 0, 0.15);
+        margin-bottom: get-vw-m(40px);
+        &::before {
+          top: 0;
+          left: 0;
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .blog-img-wrap {
+          height: get-vw-m(230px);
+          .blog-type {
+            font-family: 'Uni Sans Thin Caps', sans-serif;
+            top: get-vw-m(34px);
+            padding: 0 get-vw-m(8px);
+            min-width: get-vw-m(160px);
+            font-size: get-vw-m(18px);
+            line-height: get-vw-m(40px);
+            border-radius: 0 get-vw-m(50px) get-vw-m(50px) 0;
+          }
+        }
+        .blog-info {
+          padding: 0 get-vw-m(10px) get-vw(60px) get-vw(60px);
+          height: auto;
+        }
+        .blog-title {
+          font-size: get-vw-m(18px);
+          line-height: get-vw-m(26px);
+          margin: get-vw-m(24px) 0 get-vw-m(10px);
+        }
+        .blog-short-desc {
+          display: block;
+          max-height: get-vw-m(140px);
+          height: auto;
+        }
+        .btn {
+          top: get-vw-m(190px);
+          width: get-vw-m(160px);
+        }
+      }
+      .blog-pagination {
+        padding-bottom: get-vw-m(35px);
+        margin-top: get-vw-m(-40px);
+        .pagination::before {
+          right: get-vw-m(-170px);
+          width: get-vw-m(400px);
+        }
+        .bottom {
+          top: 0;
+        }
+      }
+    }
+  }
 }
