@@ -58,10 +58,10 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
                                 </a>
                                 <?php } ?>
                                 <?php for($i=1;$i<=$pages_count;$i++){ ?>
-                                    <a href="<?=$_SERVER['REQUEST_URI']?>&pages=<?=$i?>" <?php if(isset($_GET['pages']) && (int) $_GET['pages'] == $i || !isset($_GET['pages']) && $i==1) { ?> class="active" <?php } ?>><?=$i?></a>
+                                    <a href="<?=$_SERVER['REQUEST_URI']?><?php echo (!isset($_GET['pages']) ? '?' : '&') ?>pages=<?=$i?>" <?php if(isset($_GET['pages']) && (int) $_GET['pages'] == $i || !isset($_GET['pages']) && $i==1) { ?> class="active" <?php } ?>><?=$i?></a>
                                 <?php } ?>
                                 <?php if($pages_count>1 && (!isset($_GET['pages']) || $_GET['pages']==1) || isset($_GET['pages']) && ((int) $_GET['pages'] + 1) <= $pages_count){ ?>
-                                    <a <?php if(!isset($_GET['pages'])){ ?> href="<?=$_SERVER['REQUEST_URI']?>&pages=2"  <?php }else{ ?> href="<?=$_SERVER['REQUEST_URI']?>&pages=<?=$_GET['pages']+1?>" <?php } ?> class="arrow next-arrow">
+                                    <a <?php if(!isset($_GET['pages'])){ ?> href="<?=$_SERVER['REQUEST_URI']?>?pages=2"  <?php }else{ ?> href="<?=$_SERVER['REQUEST_URI']?>&pages=<?=$_GET['pages']+1?>" <?php } ?> class="arrow next-arrow">
                                     <i class="icon icon-next"></i>
                                 </a>
                                 <?php } ?>
