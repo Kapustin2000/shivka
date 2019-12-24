@@ -5,7 +5,7 @@
  * Date: 23.04.19
  * Time: 13:39
  */
-$id = shivka_escapeParam(trim($_REQUEST['id'], '/'));
+$id = shivka_escapeParam(basename(parse_url($_SERVER["HTTP_REFERER"], PHP_URL_PATH)));
 $params = array('limit' => 1,
     'where' => "post_name = '" . $id . "'"
 );
