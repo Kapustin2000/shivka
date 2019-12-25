@@ -107,7 +107,7 @@ $works = pods('works')->find($params);
                             <a class="nav-link" href="/works">наши работы</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/shop">магазин</a>
+                            <a class="nav-link" href="/how-to-order">как заказать</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contacts">контакты</a>
@@ -165,7 +165,86 @@ $works = pods('works')->find($params);
                                 <a href="/prices">цены</a>
                             </li>
                             <li>
-                                <a href="/shop">магазин</a>
+                                <a href="/stock">акции</a>
+                            </li>
+                            <li>
+                                <a href="/shipping">доставка и оплата</a>
+                            </li>
+                            <li>
+                                <a href="/how-to-order">Как заказать</a>
+                            </li>
+                            <li>
+                                <a href="/contacts">контакты</a>
+                            </li>
+                            <li>
+                                <a href="/faq">faq</a>
+                            </li>
+                            <li>
+                                <a href="/blog">блог</a>
+                            </li>
+                            <li>
+                                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#callModal">
+                                    Заказать звонок
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="mobile-navbar-toggler" class="mobile-navbar-toggler navbar-toggler">
+                        <span class="navbar-toggler-icon"></span>
+                    </div>
+                    <div id="mobile-menu-toggle" class="mobile-menu-toggle">
+                        <ul>
+                            <li class="js-submenu">
+                                <span>
+                                    услуги
+                                    <span></span>
+                                </span>
+<!--                                --><?php //if($services->total_found()){ ?>
+<!--                                    <ul class="submenu">-->
+<!--                                        --><?php //while($services->fetch()) {?>
+<!--                                            <li>-->
+<!--                                                <a href="--><?//=get_permalink($services->display('id'))?><!--">-->
+<!--                                                    --><?//=$services->display('post_title')?>
+<!--                                                </a>-->
+<!--                                            </li>-->
+<!--                                        --><?php //} ?>
+<!--                                    </ul>-->
+<!--                                --><?php //} ?>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">kfjdjfd</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">kfjdjfd</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">kfjdjfd</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="js-submenu">
+                                <span>
+                                    наши работы
+                                    <span></span>
+                                </span>
+                                <?php if($works->total_found()){ ?>
+                                    <ul class="submenu">
+                                        <?php while($works->fetch()) {?>
+                                            <li>
+                                                <a href="<?=get_permalink($works->display('id'))?>">
+                                                    <?=$works->display('post_title')?>
+                                                </a>
+                                            </li>
+                                        <?php } ?>
+                                    </ul>
+                                <?php } ?>
+                            </li>
+                            <li>
+                                <a href="/about">о нас</a>
+                            </li>
+                            <li>
+                                <a href="/prices">цены</a>
                             </li>
                             <li>
                                 <a href="/stock">акции</a>

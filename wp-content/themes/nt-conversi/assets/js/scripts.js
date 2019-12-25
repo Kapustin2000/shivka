@@ -29,6 +29,11 @@ $(document).ready(function() {
         $('#menu-toggle').toggleClass('active');
     });
 
+    $('#mobile-navbar-toggler').on('click', function() {
+        $(this).toggleClass('active');
+        $('#mobile-menu-toggle').toggleClass('active');
+    });
+
     //
 
     function submenuWidthCalc(width, submenuWidth) {
@@ -65,6 +70,11 @@ $(document).ready(function() {
         if ($(window).width() > 768 && $(window).width() <= 1024) {
             submenuWidthCalc('66.66667vw', '- 40vw');
         }
+    });
+
+    $('.js-submenu').on('click', function() {
+        var $this = $(this);
+        $this.toggleClass('active').siblings().removeClass('active');
     });
 
     //---

@@ -774,7 +774,7 @@ and (max-width: $tablet) {
   }
   .box {
     position: relative;
-    padding: get-vw(17px) get-vw(48px) get-vw(10px);
+    padding: get-vw(12px) get-vw(48px) get-vw(10px);
     height: get-vw(150px);
     &.uploaded {
       & > .box__input > span {
@@ -783,7 +783,7 @@ and (max-width: $tablet) {
       .file-item:nth-child(4) span::after {
         content: '';
         position: absolute;
-        bottom: get-vw(-20px);;
+        bottom: get-vw(-20px);
         left: 0;
         width: 100%;
         height: get-vw(50px);
@@ -831,11 +831,13 @@ and (max-width: $tablet) {
       }
       .file-item {
         position: relative;
-        margin-bottom: get-vw(10px);
+        margin-bottom: get-vw(6px);
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
         span {
           font-size: get-vw(16px);
+          padding-left: get-vw(6px);
           font-weight: 600;
           font-stretch: condensed;
           font-style: normal;
@@ -848,7 +850,7 @@ and (max-width: $tablet) {
           width: get-vw(14px);
           height: get-vw(14px);
           padding: 0;
-          margin: 0;
+          margin: 0 0 0 auto;
         }
       }
     }
@@ -948,8 +950,14 @@ and (max-width: $tablet) {
       margin: get-vw-t(40px) 0 0;
     }
     .box {
-      padding: get-vw-t(17px) get-vw-t(48px) get-vw-t(10px);
+      padding: get-vw-t(14px) get-vw-t(48px) get-vw-t(10px);
       height: get-vw-t(140px);
+      &.uploaded {
+        .file-item:nth-child(4) span::after {
+          height: get-vw-t(50px);
+          bottom: get-vw-t(-23px);
+        }
+      }
       &__input {
         & > span {
           margin: get-vw-t(15px) 0 get-vw-t(8px);
@@ -968,9 +976,10 @@ and (max-width: $tablet) {
           padding-bottom: get-vw-t(10px);
         }
         .file-item {
-          margin-bottom: get-vw-t(10px);
+          margin-bottom: get-vw-t(5px);
           span {
             font-size: get-vw-t(16px);
+            padding-left: get-vw-t(6px);
           }
           .btn-close {
             width: get-vw-t(14px);
@@ -995,7 +1004,7 @@ and (max-width: $tablet) {
       margin: get-vw-m(30px) 0 0;
     }
     .box {
-      padding: get-vw-m(17px) get-vw-m(40px) get-vw-m(10px);
+      padding: get-vw-m(12px) get-vw-m(40px) get-vw-m(10px);
       height: get-vw-m(140px);
       &.uploaded {
         padding: get-vw-m(17px) get-vw-m(10px) get-vw-m(10px);
@@ -1003,7 +1012,7 @@ and (max-width: $tablet) {
           bottom: get-vw-m(10px);
         }
         .file-item:nth-child(4) span::after {
-          bottom: get-vw-m(-16px);
+          bottom: get-vw-m(-29px);
           height: get-vw-m(60px);
         }
       }
@@ -1022,9 +1031,10 @@ and (max-width: $tablet) {
           padding-bottom: get-vw-m(10px);
         }
         .file-item {
-          margin-bottom: get-vw-m(10px);
+          margin-bottom: get-vw-m(5px);
           span {
             font-size: get-vw-m(16px);
+            padding-left: get-vw-m(6px);
           }
           .btn-close {
             width: get-vw-m(14px);

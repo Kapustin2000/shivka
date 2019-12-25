@@ -183,7 +183,6 @@ $services = pods('services')->find($params);
                         <li><a href="/about">о нас</a></li>
                         <li><a href="/prices">цены</a></li>
                         <li><a href="/stock">акции</a></li>
-                        <li><a href="/shop">магазин</a></li>
                         <li><a href="/shipping">доставка и оплата</a></li>
                         <li><a href="/how-to-order">как заказать</a></li>
                         <li><a href="/blog">блог</a></li>

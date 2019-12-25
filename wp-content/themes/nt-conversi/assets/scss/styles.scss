@@ -819,3 +819,49 @@ and (max-width: $tablet) {
     visibility: hidden;
   }
 }
+
+.file-item {
+  &::before {
+    content: '';
+    background-image: url('../img/icon-file.jpg');
+    background-size: contain;
+    width: get-vw(17px);
+    height: get-vw(22px);
+  }
+  .btn-close {
+    font-size: 0;
+    background-image: url('../img/icon-close.png');
+    background-size: contain;
+    width: get-vw(14px);
+    height: get-vw(14px);
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $min-tablet)
+and (max-width: $tablet) {
+  .file-item {
+    &::before {
+      width: get-vw-t(15px);
+      height: get-vw-t(20px);
+    }
+    .btn-close {
+      width: get-vw-t(12px);
+      height: get-vw-t(12px);
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .file-item {
+    &::before {
+      width: get-vw-m(13px);
+      height: get-vw-m(18px);
+    }
+    .btn-close {
+      width: get-vw-m(10px);
+      height: get-vw-m(10px);
+    }
+  }
+}
+
