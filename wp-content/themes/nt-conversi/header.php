@@ -200,28 +200,17 @@ $works = pods('works')->find($params);
                                     услуги
                                     <span></span>
                                 </span>
-<!--                                --><?php //if($services->total_found()){ ?>
-<!--                                    <ul class="submenu">-->
-<!--                                        --><?php //while($services->fetch()) {?>
-<!--                                            <li>-->
-<!--                                                <a href="--><?//=get_permalink($services->display('id'))?><!--">-->
-<!--                                                    --><?//=$services->display('post_title')?>
-<!--                                                </a>-->
-<!--                                            </li>-->
-<!--                                        --><?php //} ?>
-<!--                                    </ul>-->
-<!--                                --><?php //} ?>
-                                <ul class="submenu">
-                                    <li>
-                                        <a href="#">kfjdjfd</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">kfjdjfd</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">kfjdjfd</a>
-                                    </li>
-                                </ul>
+                                <?php if($services->total_found()){ ?>
+                                    <ul class="submenu">
+                                        <?php $services->reset(); while($services->fetch()) {?>
+                                            <li>
+                                                <a href="<?=get_permalink($services->display('id'))?>">
+                                                    <?=$services->display('post_title')?>
+                                                </a>
+                                            </li>
+                                        <?php } ?>
+                                    </ul>
+                                <?php } ?>
                             </li>
                             <li class="js-submenu">
                                 <span>
