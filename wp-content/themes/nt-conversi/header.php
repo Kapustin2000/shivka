@@ -217,7 +217,7 @@ $works = pods('works')->find($params);
                                     наши работы
                                     <span></span>
                                 </span>
-                                <?php if($works->total_found()){ ?>
+                                <?php $works->reset(); if($works->total_found()){ ?>
                                     <ul class="submenu">
                                         <?php while($works->fetch()) {?>
                                             <li>
