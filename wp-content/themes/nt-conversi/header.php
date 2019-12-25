@@ -354,12 +354,12 @@ $works = pods('works')->find($params);
                     </div>
                     <form action="?form=success" class="order-form-js call-form order-form active" enctype="multipart/form-data" method="post">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-sm-6 col-12">
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="text" id="phone" placeholder="Телефон*" required name="phone">
                                 <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>  
                             </div>
-                            <div class="col-6">
+                            <div class="col-sm-6 col-12">
                                 <textarea rows="5" name="message"
                                           placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
                               <button style="" type="submit" class="btn btn-primary custom-submit">Отправить</button>
