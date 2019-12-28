@@ -109,7 +109,8 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
-        arrows: false
+        arrows: false,
+        autoplay: true
     });
 
     (function( ele, frame, step ) {
@@ -136,6 +137,8 @@ $(document).ready(function() {
 
         setInterval(move , 1000/frame);
     })('#marquee', 40, 1);
+
+    $('.smarthoop-blog').find('.select2-results__option').css('background', '#cdcfe9');
 
     //-------footer form
     $('#subscribe-form').on('submit', function(e) {

@@ -825,6 +825,7 @@ and (max-width: $tablet) {
     content: '';
     background-image: url('../img/icon-file.jpg');
     background-size: contain;
+    background-repeat: no-repeat;
     width: get-vw(17px);
     height: get-vw(22px);
   }
@@ -832,6 +833,7 @@ and (max-width: $tablet) {
     font-size: 0;
     background-image: url('../img/icon-close.png');
     background-size: contain;
+    background-repeat: no-repeat;
     width: get-vw(14px);
     height: get-vw(14px);
     margin-left: auto;
@@ -864,4 +866,39 @@ and (max-width: $tablet) {
     }
   }
 }
+
+#stockModal {
+  .make-order .g-recaptcha,
+  .make-order .custom-submit {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: $mobile) {
+  #callModal {
+    .make-order form {
+      textarea {
+        margin-bottom: get-vw-m(30px);
+      }
+      button {
+        margin-top: get-vw-m(30px);
+      }
+    }
+  }
+  #errorModal {
+    .modal-body {
+      padding: get-vw-m(80px) get-vw-m(30px) get-vw-m(56px);
+    }
+  }
+  #stockModal {
+    .make-order .g-recaptcha,
+    .make-order .custom-submit {
+      margin-top: get-vw-m(30px);
+    }
+    .make-order form textarea {
+      margin-bottom: 0;
+    }
+  }
+}
+
 

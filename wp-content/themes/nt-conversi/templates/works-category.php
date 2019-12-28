@@ -32,15 +32,16 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
             <div class="container">
                 <div class="row">
                     <div class="col-12">
+                        <div class="work-info-img">
+                            <img src="<?=$data->display('preview')?>" alt="<?=$data->display('post_title')?>">
+                        </div>
                         <div class="info-block">
                             <h1><span>&nbsp;<?=$data->display('post_title')?>&nbsp;</span></h1>
                             <div class="content-editable">
                                 <?=$data->display('post_content')?>
                             </div>
                         </div>
-                        <div class="work-info-img">
-                            <img src="<?=$data->display('preview')?>" alt="<?=$data->display('post_title')?>">
-                        </div>
+
 
                         <div class="related-categories services extra-services">
                             <div class="row ajax-call"></div>

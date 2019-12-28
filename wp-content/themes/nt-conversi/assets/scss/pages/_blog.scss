@@ -219,8 +219,18 @@
       .tabs-wrap {
         display: none;
       }
+      .service-select + .select2-container--default {
+        display: inline-block;
+      }
       .service-select + .select2-container--default .select2-selection--single {
-          border-radius: 0;
+        border-radius: 0;
+        padding-left: get-vw-m(18px);
+      }
+      .select2-container.select2-container--default .select2-dropdown.select2-dropdown--below {
+        border-radius: 0 !important;
+      }
+      .select2-results__option {
+        background-color: $lavander;
       }
       .blog-inner-wrap {
         margin-top: get-vw-m(50px);

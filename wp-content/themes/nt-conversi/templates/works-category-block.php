@@ -16,8 +16,7 @@ if(!empty($array) && $_REQUEST['offset'] < count($array)){
    ?>
     <?php for($i=$_REQUEST['offset']; ($i < ($_REQUEST['offset']+$_REQUEST['limit']) && $i < count($array)); $i++){$related_works = pods('works')->find(array('limit' => 1, 'where' => 'ID = '.$array[$i]['ID']));?>
         <?php while($related_works->fetch()){ ?>
-            <!--                                        <div class="col-md-4 col-12">-->
-            <div class="col-4">
+            <div class="col-xl-4 col-sm-6 col-12">
                 <a href="<?=get_permalink($related_works->field('gallery')['ID'])?>" class="service-item">
                     <div class="service-img-wrap">
                         <div class="service-img" style="background-image: url(<?=$related_works->display('preview')?>);"></div>

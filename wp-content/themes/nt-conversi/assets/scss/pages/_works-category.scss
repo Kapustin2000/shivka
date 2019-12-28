@@ -117,12 +117,13 @@
 @media (max-width: $mobile) {
   .smarthoop-works-category {
     .work-info {
+      position: relative;
       margin-top: 0;
       margin-bottom: get-vw-m(35px);
       .info-block {
         width: get-vw-m(307px);
-        top: get-vw-m(305px);
-        left: get-vw-m(25px);
+        top: get-vw-m(-112px);
+        left: get-vw-m(-10px);
         padding-top: get-vw-m(155px);
         padding-left: get-vw-m(8px);
         padding-right: get-vw-m(8px);
@@ -137,10 +138,10 @@
           background-color: inherit;
         }
         &::after {
-          top: get-vw-m(-250px);
+          top: get-vw-m(-90px);
           left: get-vw-t(-40px);
           width: calc(100% + 7.46666666667vw);
-          height: calc(100% + 71.4666666667vw);
+          height: calc(100% + 28.8vw);
           border: get-vw-m(6px) solid $yellow;
         }
         h1 {
@@ -155,15 +156,17 @@
         overflow-y: auto;
       }
       .work-info-img {
+        position: relative;
         width: get-vw-m(300px);
-        height: get-vw-m(410px);
-        overflow: hidden;
-        right: get-vw-m(15px);
+        right: get-vw-m(-42px);
         top: 0;
+        margin: 0;
+        left: auto;
+        z-index: 1;
       }
     }
     .services.extra-services.related-categories {
-      margin-top: get-vw-m(405px);
+      margin-top: get-vw-m(-12px);
     }
     .back {
       padding-left: get-vw-m(27px);

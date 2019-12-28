@@ -527,7 +527,7 @@ and (max-width: $tablet) {
                 padding: 0;
                 margin-top: get-vw(30px) !important;
                 &::after {
-                    top: calc(100% - 0.26041666666vw);
+                    top: calc(100% - 0.66666666666vw);
                     left: get-vw-m(-16px);
                     width: get-vw-m(148px);
                     height: get-vw-m(60px);

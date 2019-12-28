@@ -85,23 +85,23 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
                         </div>
                         <form action="<?=$_SERVER['REQUEST_URI']?>&form=success" id="order-form" class="order-form active" enctype="multipart/form-data" method="post">
                             <div class="row">
-                                <div class="col-6">
-                                     <input type="hidden" required name="stock_name" value="<?=$data->display('post_title')?>">
+                                <div class="col-sm-6 col-12">
+                                    <input type="hidden" required name="stock_name" value="<?=$data->display('post_title')?>">
                                     <input type="text" placeholder="Имя*" required name="full_name">
                                     <input type="email" placeholder="E-mail*" required name="email">
                                     <input type="text" id="phone" placeholder="Телефон" name="phone">
 
                                 </div>
-                                <div class="col-6">
+                                <div class="col-sm-6 col-12">
                                 <textarea rows="5" name="message"
                                           placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
                                 </div>
                                 <div class="col-12">
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <button type="submit" class="btn btn-primary custom-submit">Отправить</button>
                                         </div>
                                     </div>
