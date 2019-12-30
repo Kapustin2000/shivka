@@ -8,7 +8,7 @@ Template Name: Services
 
 $params = array(
     'where' => shivka_filters(),
-    'orderby'=>"order_weight.meta_value + 0 DESC,id DESC",
+    'orderby'=>"order_weight.meta_value + 0 DESC,term_id DESC",
 );
 $total_found = pods('services')->find()->total_found();
 $data = pods('services')->find($params);

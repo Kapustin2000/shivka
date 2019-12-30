@@ -7,7 +7,7 @@ $styles = array(
     'col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12'
 );
 $params = array(
-    'orderby'=>"order_weight.meta_value + 0 DESC,id DESC",
+    'orderby'=>"order_weight.meta_value + 0 DESC,term_id DESC",
     'offset' => isset($_REQUEST['offset']) ? intval($_REQUEST['offset']) : 0,
     'limit' => isset($_REQUEST['limit']) ? intval($_REQUEST['limit']) : 0
 );
@@ -19,7 +19,7 @@ if($data->total()){
     while ( $data->fetch() ) {   ?>
 <!--        <div class="col-xl-4 col-lg-6 col-12">-->
         <div class="col-xl-4 col-sm-6 col-12">
-            <a href="<?=get_permalink($data->display('id'))?>" class="service-item">
+            <a href="/services/<?=$data->display('slug')?>" class="service-item">
                 <div class="service-img-wrap">
                     <div class="service-img" style="background-image: url( <?=$data->display('preview')?>);"></div>
                 </div>

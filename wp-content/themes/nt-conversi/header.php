@@ -82,7 +82,7 @@
 <?php
 
 $params = array(
-    'orderby'=>"order_weight.meta_value + 0 DESC,id DESC",
+    'orderby'=>"order_weight.meta_value + 0 DESC,term_id DESC",
     'limit' => 12,
 );
 $services = pods('services')->find($params);
@@ -133,8 +133,8 @@ $works = pods('works')->find($params);
                                 <ul class="submenu">
                                     <?php while($services->fetch()) {?>
                                     <li>
-                                        <a href="<?=get_permalink($services->display('id'))?>">
-                                            <?=$services->display('post_title')?>
+                                        <a href="<?=get_permalink($services->display('term_id'))?>">
+                                            <?=$services->display('title')?>
                                         </a>
                                     </li>
                                     <?php } ?>
@@ -150,8 +150,8 @@ $works = pods('works')->find($params);
                                     <ul class="submenu">
                                         <?php while($works->fetch()) {?>
                                             <li>
-                                                <a href="<?=get_permalink($works->display('id'))?>">
-                                                    <?=$works->display('post_title')?>
+                                                <a href="<?=get_permalink($works->display('term_id'))?>">
+                                                    <?=$works->display('title')?>
                                                 </a>
                                             </li>
                                         <?php } ?>

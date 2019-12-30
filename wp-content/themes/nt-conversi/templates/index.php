@@ -12,7 +12,7 @@ $settings = pods('home_ui')->find();
 
 
 $params = array(
-    'orderby'=>"order_weight2.meta_value DESC,id DESC",
+    'orderby'=>"order_weight2.meta_value DESC,term_id DESC",
     'limit' => 3
 );
 $services = pods('services')->find($params);

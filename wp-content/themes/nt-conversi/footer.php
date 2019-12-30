@@ -16,7 +16,7 @@ $settings  = pods('website_settings')->find();
 <?php
 $params = array(
     'where' => shivka_filters(),
-    'orderby'=>"order_weight.meta_value DESC,id DESC",
+    'orderby'=>"order_weight.meta_value DESC,term_id DESC",
     'offset' => shivka_offset(9),
 );
 $services = pods('services')->find($params);

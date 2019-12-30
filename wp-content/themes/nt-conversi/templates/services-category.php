@@ -4,7 +4,7 @@ Template Name: Services - category
 */
 if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)))) {
 $params = array('limit' => 1,
-    'where'=>"post_name = '".$id."'"
+    'where'=>"name = '".$id."'"
 );
 $data = pods('services')->find($params);
 
@@ -13,6 +13,8 @@ if(!empty($data->total_found())) {
     while ($data->fetch()) {
         shivka_SetPodsSeo($data->display('id'),true);
         $found = true;
+
+        $related_service = pods('single_services')->find(array('where' => 'services.slug = "'.$id.'"'));
         break;
 
     }
@@ -34,13 +36,12 @@ if(!empty($data->total_found())) {
                 <div class="row">
                     <div class="col-12">
                         <h1>
-                            <span><?=$data->display('title')?></span>
+                            <span><?=$data->display('name')?></span>
                         </h1>
                         <div class="decorative yellow"></div>
                         <div class="decorative lavander"></div>
                         <div class="row">
-                            <?php if(!empty($data->field('related_single_service'))){  ?>
-                            <?php foreach($data->field('related_single_service') as $service) { $related_service = pods('single_services')->find(array('limit' => 1, 'where' => 'ID = '.$service['ID']));?>
+                            <?php if($related_service->total_found()){  while($related_service->fetch()){ ?>
                             <div class="col-md-6 col-12">
                                 <a href="<?=get_permalink($related_service->display('id'))?>" class="service-item">
                                     <div class="service-title-wrap">

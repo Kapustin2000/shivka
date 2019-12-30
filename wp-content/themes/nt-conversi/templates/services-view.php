@@ -3,8 +3,10 @@
 Template Name: Services - view
 */
 if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)))) {
+    $taxonomy = preg_split("#/#",parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+    $taxonomy = $taxonomy[count($taxonomy)-2];
     $params = array('limit' => 1,
-        'where' => "post_name = '" . $id . "'"
+        'where' => "post_name = '" . $id . "' and services.slug = '".$taxonomy."'"
     );
     $data = pods('single_services')->find($params);
 
