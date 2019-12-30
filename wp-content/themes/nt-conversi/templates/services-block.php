@@ -23,7 +23,7 @@ if($data->total()){
                 <div class="service-img-wrap">
                     <div class="service-img" style="background-image: url( <?=$data->display('preview')?>);"></div>
                 </div>
-                <div class="service-title"><?=$data->display('post_title')?></div>
+                <div class="service-title"><?=$data->display('name')?></div>
                 <span class="btn btn-primary btn-span">смотреть</span>
             </a>
         </div>
