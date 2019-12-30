@@ -14,7 +14,7 @@ $data = pods('works')->find($params);
 $array = $data->field('related_works');
 if(!empty($array) && $_REQUEST['offset'] < count($array)){
    ?>
-    <?php for($i=$_REQUEST['offset']; ($i < ($_REQUEST['offset']+$_REQUEST['limit']) && $i < count($array)); $i++){$related_works = pods('works')->find(array('limit' => 1, 'where' => 'ID = '.$array[$i]['ID']));?>
+    <?php for($i=$_REQUEST['offset']; ($i < ($_REQUEST['offset']+$_REQUEST['limit']) && $i < count($array)); $i++){$related_works = pods('works')->find(array('limit' => 1, 'where' => 'term_id = '.$array[$i]['term_id']));?>
         <?php while($related_works->fetch()){ ?>
             <div class="col-xl-4 col-sm-6 col-12">
                 <a href="<?=get_permalink($related_works->field('gallery')['ID'])?>" class="service-item">
