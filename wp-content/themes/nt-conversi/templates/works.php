@@ -6,7 +6,7 @@ Template Name: Works
 ?>
 <?php
 $params = array(
-    'orderby'=>"order_weight.meta_value + 0 DESC,id DESC",
+    'orderby'=>"order_weight.meta_value + 0 DESC,term_id DESC",
     'limit'=>3
 );
 $data =  pods('works')->find($params);

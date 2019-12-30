@@ -5,14 +5,14 @@ Template Name: Works - Category
 if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)))) {
 
     $params = array('limit' => 1,
-        'where' => "post_name = '" . $id . "'"
+        'where' => "name = '" . $id . "'"
     );
     $data = pods('works')->find($params);
 
     $found = false;
     if (!empty($data->total_found())) {
         while ($data->fetch()) {
-            shivka_SetPodsSeo($data->display('id'));
+            shivka_SetPodsSeo($data->display('term_id',true));
             $found = true;
             break;
         }
@@ -33,12 +33,12 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
                 <div class="row">
                     <div class="col-12">
                         <div class="work-info-img">
-                            <img src="<?=$data->display('preview')?>" alt="<?=$data->display('post_title')?>">
+                            <img src="<?=$data->display('preview')?>" alt="<?=$data->display('name')?>">
                         </div>
                         <div class="info-block">
-                            <h1><span>&nbsp;<?=$data->display('post_title')?>&nbsp;</span></h1>
+                            <h1><span>&nbsp;<?=$data->display('name')?>&nbsp;</span></h1>
                             <div class="content-editable">
-                                <?=$data->display('post_content')?>
+                                <?=$data->display('description')?>
                             </div>
                         </div>
 

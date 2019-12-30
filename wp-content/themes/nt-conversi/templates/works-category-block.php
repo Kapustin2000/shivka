@@ -7,7 +7,7 @@
  */
 $id = shivka_escapeParam(basename(parse_url($_SERVER["HTTP_REFERER"], PHP_URL_PATH)));
 $params = array('limit' => 1,
-    'where' => "post_name = '" . $id . "'"
+    'where' => "name = '" . $id . "'"
 );
 $data = pods('works')->find($params);
 
