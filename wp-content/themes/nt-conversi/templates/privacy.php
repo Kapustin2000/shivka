@@ -7,7 +7,10 @@ Template Name: Privacy
 ?>
 
 <?php get_header(); ?>
-
-<?php the_content(); ?>
+<div class="smarthoop-wrap smarthoop-blog-post">
+    <div class="container">
+        <?php the_content(); ?>
+    </div>
+</div>
 
 <?php get_footer(); ?>
