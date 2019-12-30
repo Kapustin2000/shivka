@@ -531,6 +531,7 @@ $services = pods('services')->find($params);
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/23509009" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+<?php wp_footer(); ?>
 
 
 </body>
