@@ -133,7 +133,7 @@ $works = pods('works')->find($params);
                                 <ul class="submenu">
                                     <?php while($services->fetch()) {?>
                                     <li>
-                                        <a href="/services/<?=$data->display('slug')?>">
+                                        <a href="/services/<?=$services->display('slug')?>">
                                             <?=$services->display('title')?>
                                         </a>
                                     </li>
@@ -204,8 +204,8 @@ $works = pods('works')->find($params);
                                     <ul class="submenu">
                                         <?php $services->reset(); while($services->fetch()) {?>
                                             <li>
-                                                <a href="/services/<?=$data->display('slug')?>">
-                                                    <?=$services->display('post_title')?>
+                                                <a href="/services/<?=$services->display('slug')?>">
+                                                    <?=$services->display('name')?>
                                                 </a>
                                             </li>
                                         <?php } ?>
