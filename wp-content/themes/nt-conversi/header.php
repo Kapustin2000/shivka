@@ -133,7 +133,7 @@ $works = pods('works')->find($params);
                                 <ul class="submenu">
                                     <?php while($services->fetch()) {?>
                                     <li>
-                                        <a href="<?=get_permalink($services->display('term_id'))?>">
+                                        <a href="/services/<?=$data->display('slug')?>">
                                             <?=$services->display('title')?>
                                         </a>
                                     </li>
@@ -150,7 +150,7 @@ $works = pods('works')->find($params);
                                     <ul class="submenu">
                                         <?php while($works->fetch()) {?>
                                             <li>
-                                                <a href="<?=get_permalink($works->display('term_id'))?>">
+                                                <a href="/works/<?=$works->display('slug')?>">
                                                     <?=$works->display('title')?>
                                                 </a>
                                             </li>
@@ -204,7 +204,7 @@ $works = pods('works')->find($params);
                                     <ul class="submenu">
                                         <?php $services->reset(); while($services->fetch()) {?>
                                             <li>
-                                                <a href="<?=get_permalink($services->display('id'))?>">
+                                                <a href="/services/<?=$data->display('slug')?>">
                                                     <?=$services->display('post_title')?>
                                                 </a>
                                             </li>
@@ -221,7 +221,7 @@ $works = pods('works')->find($params);
                                     <ul class="submenu">
                                         <?php while($works->fetch()) {?>
                                             <li>
-                                                <a href="<?=get_permalink($works->display('id'))?>">
+                                                <a href="/works/<?=$works->display('slug')?>">
                                                     <?=$works->display('post_title')?>
                                                 </a>
                                             </li>
@@ -287,7 +287,7 @@ $works = pods('works')->find($params);
                                 <select class="service-select" name="service_name">
                                     <option value="0" selected>Вид услуги</option>
                                     <?php $services->reset(); while($services->fetch()){ ?>
-                                        <option value="<?=$services->display('post_title')?>"><?=$services->display('post_title')?></option>
+                                        <option value="<?=$services->display('name')?>"><?=$services->display('name')?></option>
                                     <?php } ?>
                                 </select>
                             </div>

@@ -119,7 +119,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                         <div class="row">
                             <?php while($services->fetch()){ ?>
                                 <div class="col-xl-4 col-6">
-                                    <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
+                                    <a href="/services/<?=$data->display('slug')?>" class="service-item">
                                         <div class="service-img-wrap">
                                             <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
                                         </div>
@@ -135,7 +135,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                             <div class="col-12">
                                 <div id="services-carousel">
                                     <?php $services->reset(); while($services->fetch()){ ?>
-                                        <a href="<?=get_permalink($services->display('id'))?>" class="service-item">
+                                        <a href="/services/<?=$data->display('slug')?>" class="service-item">
                                             <div class="service-img-wrap">
                                                 <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
                                             </div>
