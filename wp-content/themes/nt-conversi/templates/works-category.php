@@ -5,10 +5,9 @@ Template Name: Works - Category
 if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)))) {
 
     $params = array('limit' => 1,
-        'where' => "name = '" . $id . "'"
+        'where' => "slug = '" . $id . "'"
     );
-    $data = pods('works')->find($params);
-
+    $data = pods('works')->find($params); 
     $found = false;
     if (!empty($data->total_found())) {
         while ($data->fetch()) {
