@@ -51,7 +51,7 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
                             <i class="icon icon-eye"></i>
                         </div>
                         
-                        <a href="/works" class="back">
+                        <a href="/nashi-raboti" class="back">
                             <span>
                                 <i class="icon icon-arrow"></i>
                                 Назад к работам

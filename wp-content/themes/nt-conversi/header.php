@@ -101,10 +101,10 @@ $works = pods('works')->find($params);
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/services">услуги</a>
+                            <a class="nav-link" href="/uslugi">услуги</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/works">наши работы</a>
+                            <a class="nav-link" href="/nashi-raboti">наши работы</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/how-to-order">как заказать</a>
@@ -125,7 +125,7 @@ $works = pods('works')->find($params);
                     <div id="menu-toggle" class="menu-toggle">
                         <ul>
                             <li class="has-submenu">
-                                <a href="/services">
+                                <a href="/uslugi">
                                     услуги
                                     <span></span>
                                 </a>
@@ -133,7 +133,7 @@ $works = pods('works')->find($params);
                                 <ul class="submenu">
                                     <?php while($services->fetch()) {?>
                                     <li>
-                                        <a href="/services/<?=$services->display('slug')?>">
+                                        <a href="/uslugi/<?=$services->display('slug')?>">
                                             <?=$services->display('title')?>
                                         </a>
                                     </li>
@@ -142,7 +142,7 @@ $works = pods('works')->find($params);
                                 <?php } ?>
                             </li>
                             <li class="has-submenu">
-                                <a href="/works">
+                                <a href="/nashi-raboti">
                                     наши работы
                                     <span></span>
                                 </a>
@@ -150,7 +150,7 @@ $works = pods('works')->find($params);
                                     <ul class="submenu">
                                         <?php while($works->fetch()) {?>
                                             <li>
-                                                <a href="/works/<?=$works->display('slug')?>">
+                                                <a href="/nashi-raboti/<?=$works->display('slug')?>">
                                                     <?=$works->display('title')?>
                                                 </a>
                                             </li>
@@ -204,7 +204,7 @@ $works = pods('works')->find($params);
                                     <ul class="submenu">
                                         <?php $services->reset(); while($services->fetch()) {?>
                                             <li>
-                                                <a href="/services/<?=$services->display('slug')?>">
+                                                <a href="/uslugi/<?=$services->display('slug')?>">
                                                     <?=$services->display('name')?>
                                                 </a>
                                             </li>
@@ -221,7 +221,7 @@ $works = pods('works')->find($params);
                                     <ul class="submenu">
                                         <?php while($works->fetch()) {?>
                                             <li>
-                                                <a href="/works/<?=$works->display('slug')?>">
+                                                <a href="/nashi-raboti/<?=$works->display('slug')?>">
                                                     <?=$works->display('post_title')?>
                                                 </a>
                                             </li>

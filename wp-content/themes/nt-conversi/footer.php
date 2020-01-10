@@ -178,8 +178,8 @@ $services = pods('services')->find($params);
             <div class="col-12">
                 <div class="footer-nav d-md-block d-xs-none d-none">
                     <ul>
-                        <li><a href="/services">услуги</a></li>
-                        <li><a href="/works">наши работы</a></li>
+                        <li><a href="/uslugi">услуги</a></li>
+                        <li><a href="/nashi-raboti">наши работы</a></li>
                         <li><a href="/about">о нас</a></li>
                         <li><a href="/prices">цены</a></li>
                         <li><a href="/stock">акции</a></li>
