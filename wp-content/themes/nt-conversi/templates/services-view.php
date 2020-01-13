@@ -101,7 +101,7 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
                                 <h2>Готовые товары с нашей вышивкой</h2>
                                 <p>Мы создаем эксклюзивные и необычайно художественные вышивки для коллекций таких брендов, как Yulia Magdych, Jean Gritsfeldt, Anna K, Varenyky Fashion, Marchi, MarKa Ua.</p>
                                 <p>Мы также вышиваем шевроны и нашивки, логотипы и эмблемы компаний, создадим вышивку на одежде и крое, домашнем текстиле и полотенцах, коже и замше.</p>
-                                <a href="/shop" class="btn btn-primary btn-span">перейти в магазин</a>
+                                <a href="/magazin-vishivki" class="btn btn-primary btn-span">перейти в магазин</a>
                             </div>
                         </div>
                     </div>
@@ -211,7 +211,7 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
                                         </a>
                                     <?php } } } ?>
                         </div>
-                        <a href="/services" class="back">
+                        <a href="/uslugi" class="back">
                             <span>
                                 <i class="icon icon-arrow"></i>
                                 Назад к услугам

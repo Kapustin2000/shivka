@@ -19,7 +19,7 @@ if($data->total()){
     while ( $data->fetch() ) {   ?>
 <!--        <div class="col-xl-4 col-lg-6 col-12">-->
         <div class="col-xl-4 col-sm-6 col-12">
-            <a href="/services/<?=$data->display('slug')?>" class="service-item">
+            <a href="/uslugi/<?=$data->display('slug')?>" class="service-item">
                 <div class="service-img-wrap">
                     <div class="service-img" style="background-image: url( <?=$data->display('preview')?>);"></div>
                 </div>
