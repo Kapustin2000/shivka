@@ -901,4 +901,10 @@ and (max-width: $tablet) {
   }
 }
 
+.page-template-default {
+  .make-order {
+    display: none;
+  }
+}
+
 

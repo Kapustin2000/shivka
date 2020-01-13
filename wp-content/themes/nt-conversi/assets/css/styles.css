@@ -6080,3 +6080,6 @@ footer {
     margin-top: 8vw; }
   #stockModal .make-order form textarea {
     margin-bottom: 0; } }
+
+.page-template-default .make-order {
+  display: none; }
