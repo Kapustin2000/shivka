@@ -151,7 +151,7 @@ $works = pods('works')->find($params);
                                         <?php while($works->fetch()) {?>
                                             <li>
                                                 <a href="/nashi-raboti/<?=$works->display('slug')?>">
-                                                    <?=$works->display('title')?>
+                                                    <?=$works->display('name')?>
                                                 </a>
                                             </li>
                                         <?php } ?>
