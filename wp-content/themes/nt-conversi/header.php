@@ -134,7 +134,7 @@ $works = pods('works')->find($params);
                                     <?php while($services->fetch()) {?>
                                     <li>
                                         <a href="/uslugi/<?=$services->display('slug')?>">
-                                            <?=$services->display('title')?>
+                                            <?=$services->display('name')?>
                                         </a>
                                     </li>
                                     <?php } ?>

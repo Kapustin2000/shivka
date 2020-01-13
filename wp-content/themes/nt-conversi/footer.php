@@ -52,7 +52,7 @@ $services = pods('services')->find($params);
                                 <select class="service-select" name="service_name">
                                     <option value="0" selected>Вид услуги</option>
                                     <?php while($services->fetch()){ ?>
-                                        <option value="<?=$services->display('post_title')?>"><?=$services->display('post_title')?></option>
+                                        <option value="<?=$services->display('name')?>"><?=$services->display('name')?></option>
                                     <?php } ?>
                                 </select>
                             </div>
