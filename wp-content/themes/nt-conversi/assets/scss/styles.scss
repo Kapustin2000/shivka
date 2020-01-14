@@ -129,6 +129,10 @@
   }
 }
 
+.hidden {
+  display: none;
+}
+
 .pagination {
   position: relative;
   font-family: "Uni Sans Thin Caps", sans-serif;
@@ -852,6 +856,12 @@ and (max-width: $tablet) {
       height: get-vw-t(12px);
     }
   }
+  .pod-page-nashi-raboti-w,
+  .pod-page-uslugi-w {
+    .make-order {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: $mobile) {
@@ -897,6 +907,12 @@ and (max-width: $tablet) {
     }
     .make-order form textarea {
       margin-bottom: 0;
+    }
+  }
+  .pod-page-nashi-raboti-w,
+  .pod-page-uslugi-w {
+    .make-order {
+      display: none;
     }
   }
 }

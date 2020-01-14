@@ -33,8 +33,8 @@
             }
             .service-img {
                 position: absolute;
-                bottom: get-vw(-80px);
-                left: get-vw(-30px);
+                bottom: 0;
+                left: 0;
                 z-index: 10;
                 img {
                     position: absolute;
@@ -256,8 +256,6 @@ and (max-width: $tablet) {
                     right: 0;
                 }
                 .service-img {
-                    bottom: get-vw-t(-24px);
-                    left: get-vw-t(-28px);
                     img {
                         height: get-vw-t(565px);
                     }

@@ -49,7 +49,7 @@ $services = pods('services')->find($params);
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="email" placeholder="E-mail*" required name="email">
                                 <input type="text" id="phone" placeholder="Телефон" name="phone">
-                                <select class="service-select" name="service_name">
+                                <select id="service-select" class="service-select" name="service_name">
                                     <option value="0" selected>Вид услуги</option>
                                     <?php while($services->fetch()){ ?>
                                         <option value="<?=$services->display('post_title')?>"><?=$services->display('post_title')?></option>
@@ -90,16 +90,25 @@ $services = pods('services')->find($params);
 
                     <form action="#" class="call-form">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="text" placeholder="Телефон*" required name="phone">
-                                <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
                             </div>
-                            <div class="col-6">
-                            <textarea rows="5"
+                            <div class="col-md-6 col-12">
+                                <textarea rows="5"
                                       name="message"
                                       placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                                <button type="submit" class="btn btn-primary custom-submit">Отправить</button>
+
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <button type="submit" class="btn btn-primary custom-submit">Отправить</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -186,7 +195,7 @@ $services = pods('services')->find($params);
                         <li><a href="/shipping">доставка и оплата</a></li>
                         <li><a href="/how-to-order">как заказать</a></li>
                         <li><a href="/blog">блог</a></li>
-                        <li><a href="/faq">f.a.q.</a></li>
+                        <li><a href="/faq">вопросы и ответы</a></li>
                     </ul>
                 </div>
             </div>

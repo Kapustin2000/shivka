@@ -16,7 +16,15 @@ $(document).ready(function() {
     });
 
     //-------file form
-    $('.service-select').select2();
+    $('.service-select:not(#type)').select2();
+
+    if ($('#type').length) {
+        $('#type').removeClass("hidden").on("change", function() {
+            var t, e = $(this);
+            t = -1 < window.location.href.indexOf("?") ? "&" + e.attr("id") + "=" + e.val() : "?" + e.attr("id") + "=" + e.val(),
+                window.location.href = window.location.href + t
+        }).select2();
+    }
 
     //
     $('#see-more').on('click', function() {
