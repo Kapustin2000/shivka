@@ -123,7 +123,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                                         <div class="service-img-wrap">
                                             <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
                                         </div>
-                                        <div class="service-title"><?=$services->display('post_title')?></div>
+                                        <div class="service-title"><?=$services->display('name')?></div>
                                         <span class="btn btn-primary btn-span">подробнее</span>
                                     </a>
                                 </div>
@@ -139,7 +139,7 @@ $stages_of_work = pods('stages_of_work')->find($params);
                                             <div class="service-img-wrap">
                                                 <div class="service-img" style="background-image: url(<?=$services->display('preview')?>);"></div>
                                             </div>
-                                            <div class="service-title"><?=$services->display('post_title')?></div>
+                                            <div class="service-title"><?=$services->display('name')?></div>
                                             <span class="btn btn-primary btn-span">подробнее</span>
                                         </a>
                                     <?php } ?>

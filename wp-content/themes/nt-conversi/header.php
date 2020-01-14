@@ -138,7 +138,7 @@ $works = pods('works')->find($params);
                                     <?php while($services->fetch()) {?>
                                     <li>
                                         <a href="/uslugi/<?=$services->display('slug')?>">
-                                            <?=$services->display('title')?>
+                                            <?=$services->display('name')?>
                                         </a>
                                     </li>
                                     <?php } ?>
@@ -155,7 +155,7 @@ $works = pods('works')->find($params);
                                         <?php while($works->fetch()) {?>
                                             <li>
                                                 <a href="/nashi-raboti/<?=$works->display('slug')?>">
-                                                    <?=$works->display('title')?>
+                                                    <?=$works->display('name')?>
                                                 </a>
                                             </li>
                                         <?php } ?>
@@ -226,7 +226,7 @@ $works = pods('works')->find($params);
                                         <?php while($works->fetch()) {?>
                                             <li>
                                                 <a href="/nashi-raboti/<?=$works->display('slug')?>">
-                                                    <?=$works->display('post_title')?>
+                                                    <?=$works->display('name')?>
                                                 </a>
                                             </li>
                                         <?php } ?>
