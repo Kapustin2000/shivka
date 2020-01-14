@@ -38,10 +38,12 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
                                 <span><?=$data->display('post_title')?></span>
                             </h1>
                             <div class="blog-type"><?=$data->display('blog_type')?></div>
-                            <div class="blog-content"><?=$data->display('post_content')?></div>
                         </div>
                         <div class="blog-description">
-                             <?=$data->display('description')?>
+                            <div class="blog-content"><?=$data->display('post_content')?></div>
+                            <div class="blog-desc-inner">
+                                <?=$data->display('description')?>
+                            </div>
                         </div>
                         <a href="/blog" class="back">
                             <span>

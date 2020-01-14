@@ -24,6 +24,10 @@
     <link href="<?php bloginfo('template_url'); ?>/assets/css/magnific-popup.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/assets/libs/select2/select2.min.css" rel="stylesheet" />
     <link href="<?php bloginfo('template_url'); ?>/assets/css/styles.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url'); ?>/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url'); ?>/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_url'); ?>/images/favicon-16x16.png">
+    <link rel="manifest" href="<?php bloginfo('template_url'); ?>/images/site.webmanifest">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <?php wp_head(); ?>  
     <style>
@@ -177,7 +181,7 @@ $works = pods('works')->find($params);
                                 <a href="/contacts">контакты</a>
                             </li>
                             <li>
-                                <a href="/faq">faq</a>
+                                <a href="/faq">вопросы и ответы</a>
                             </li>
                             <li>
                                 <a href="/blog">блог</a>
@@ -248,7 +252,7 @@ $works = pods('works')->find($params);
                                 <a href="/contacts">контакты</a>
                             </li>
                             <li>
-                                <a href="/faq">faq</a>
+                                <a href="/faq">вопросы и ответы</a>
                             </li>
                             <li>
                                 <a href="/blog">блог</a>
@@ -284,7 +288,7 @@ $works = pods('works')->find($params);
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="email" placeholder="E-mail*" required name="email">
                                 <input type="text" id="phone" placeholder="Телефон" name="phone">
-                                <select class="service-select" name="service_name">
+                                <select id="service-select" class="service-select" name="service_name">
                                     <option value="0" selected>Вид услуги</option>
                                     <?php $services->reset(); while($services->fetch()){ ?>
                                         <option value="<?=$services->display('name')?>"><?=$services->display('name')?></option>

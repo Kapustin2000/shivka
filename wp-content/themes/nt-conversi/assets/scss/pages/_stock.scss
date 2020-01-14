@@ -77,6 +77,7 @@
 
 @media (max-width: $mobile) {
   .smarthoop-stock {
+    margin-top: get-vw-m(46px);
     padding-bottom: get-vw-m(50px);
     h1 {
       margin: get-vw-m(50px) 0 get-vw-m(40px);

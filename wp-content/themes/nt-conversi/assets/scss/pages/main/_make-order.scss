@@ -72,6 +72,11 @@
     #order-form.active + form + .file-form {
         display: block;
     }
+    .call-form {
+        .g-recaptcha, .custom-submit {
+            margin-top: 0;
+        }
+    }
     .box-wrap {
         position: absolute;
         padding: 0;
@@ -180,6 +185,14 @@ and (max-width: $tablet) {
             }
             .select2-container {
                 margin-bottom: get-vw-m(30px);
+            }
+        }
+        .call-form {
+            .g-recaptcha, .custom-submit {
+                margin-top: get-vw-m(30px);
+            }
+            textarea {
+                margin-bottom: 0;
             }
         }
         .box-wrap {

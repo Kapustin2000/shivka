@@ -41,7 +41,7 @@ $data = pods('blog')->find($params);
                                 <span>Новости</span>
                             </a>
                         </div>
-                        <select class="service-select">
+                        <select id="type" class="service-select hidden">
                             <option value="0" <?php if(!isset($_GET['type']) || (int) $_GET['type']==0){ ?>  selected <?php } ?>>
                                 <a href="?type=0">Все</a>
                             </option>
