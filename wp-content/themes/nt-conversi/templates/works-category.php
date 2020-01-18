@@ -14,6 +14,8 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
             shivka_SetPodsSeo($data->display('term_id',true));
             $found = true;
             $related_gallery = pods('gallery')->find(array('where' => 'works.slug = "'.$id.'"'));
+
+            break;
         }
     }
 }else{
