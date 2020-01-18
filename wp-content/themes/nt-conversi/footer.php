@@ -96,8 +96,8 @@ $services = pods('services')->find($params);
                             </div>
                             <div class="col-md-6 col-12">
                                 <textarea rows="5"
-                                      name="message"
-                                      placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
+                                          name="message"
+                                          placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
 
                             </div>
                             <div class="col-12">
@@ -131,14 +131,14 @@ $services = pods('services')->find($params);
                             <a target="_blank" href="<?=$settings->display('wholesale_latitude')?>" class="map-link">
                                 <?=$settings->display('wholesale_city')?>
                             </a> <br/>
-                            Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>" class="phone-link"><?=$settings->display('wholesale_number')?></a>, <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="tel:+380<?=$settings->display('wholesale_number2')?>" class="phone-link"><?=$settings->display('wholesale_number2')?></a><br/>
+                            Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>" class="phone-link"><?=$settings->display('wholesale_number')?></a>, <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="tel:+380<?=$settings->display('wholesale_number2')?>" class="phone-link"><?=$settings->display('wholesale_number2')?></a><br/>
                             <span class="d-md-inline d-sm-none d-none">email:</span> <a href="mailto:<?=$settings->display('wholesale_email')?>"><?=$settings->display('wholesale_email')?></a>
                         </div>
                         <div class="contact d-xl-none">
                             <a target="_blank" href="<?=$settings->display('individually_latitude')?>" class="map-link">
                                 <?=$settings->display('individual_city')?>
                             </a> <br/>
-                            Тел: <a href="tel:+380<?=$settings->display('individually_number')?>" class="phone-link"><?=$settings->display('individually_number')?></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="tel:+380<?=$settings->display('individually_number2')?>" class="phone-link"><?=$settings->display('individually_number2')?></a><br/>
+                            Тел: <a href="tel:+380<?=$settings->display('individually_number')?>" class="phone-link"><?=$settings->display('individually_number')?></a>, <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="tel:+380<?=$settings->display('individually_number2')?>" class="phone-link"><?=$settings->display('individually_number2')?></a><br/>
                             <span class="d-md-inline d-sm-none d-none">email:</span> <a href="mailto:<?=$settings->display('individual_email')?>"><?=$settings->display('individual_email')?></a>
                         </div>
                     </div>
