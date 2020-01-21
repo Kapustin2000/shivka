@@ -410,6 +410,7 @@ and (max-width: $tablet) {
                     }
                 }
                 h1 {
+                    width: get-vw-m(350px);
                     top: get-vw-m(18px);
                     right: auto;
                     left: get-vw-m(-8px);

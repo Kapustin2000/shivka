@@ -86,7 +86,7 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
                     <div class="col-12">
                         <h2>описание услуги</h2>
                         <div class="decorative yellow"></div>
-                        <div class="full-description"><?=$data->display('full_description')?></div>
+                        <div class="content-editable full-description"><?=$data->display('full_description')?></div>
                     </div>
                 </div>
             </div>

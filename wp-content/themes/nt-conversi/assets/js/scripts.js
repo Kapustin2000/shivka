@@ -244,12 +244,13 @@ $(document).ready(function() {
         var limit = 9;
         var offset = initialLimit;
         var loadButton = button;
+        var containerHeight = $('.see-more').parent().height();
 
         if (state === 'inactive') {
             load_data(0, initialLimit);
         }
 
-        function load_data(offset, limit) {
+        function load_data(offset, limit, posY) {
             if (total === 0) {
                 loadButton.addClass('hidden');
                 return;
@@ -257,6 +258,7 @@ $(document).ready(function() {
             if (state === 'active') {
                 return;
             }
+            var posY = posY || undefined;
             $.ajax({
                 type: 'GET',
                 url: url,
@@ -272,6 +274,11 @@ $(document).ready(function() {
                     if (total <= offset + limit) {
                         loadButton.addClass('hidden');
                     }
+                    if (posY) {
+                        document.body.scrollTop = posY;
+                        // document.body.scrollTop = $('.see-more').parent().height() - containerHeight;
+                        // containerHeight = $('.see-more').parent().height();
+                    }
                 },
                 error: function(MLHttpRequest, textStatus, errorThrown) {
                     if (!offset) {
@@ -282,18 +289,18 @@ $(document).ready(function() {
             });
         }
 
-
         if (total < initialLimit || total < offset) {
             loadButton.addClass('hidden');
         }
 
         loadButton.on('click', function() {
+            var posY = document.body.scrollTop;
             if (total <= offset + limit) {
                 loadButton.addClass('hidden');
             }
             if (state === 'inactive'
                 && total !== 0) {
-                load_data(offset, limit);
+                load_data(offset, limit, posY);
                 state = 'active';
                 offset += limit;
             }

@@ -844,6 +844,12 @@ and (max-width: $tablet) {
   }
 }
 
+.pod-page-nashi-raboti-w {
+  .make-order {
+    display: none;
+  }
+}
+
 @media (min-width: $min-tablet)
 and (max-width: $tablet) {
   .file-item {

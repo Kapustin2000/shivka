@@ -3357,6 +3357,7 @@ footer {
           top: 0;
           height: 76.53333vw; }
       .smarthoop-single-service .single-service-description .bordered h1 {
+        width: 93.33333vw;
         top: 4.8vw;
         right: auto;
         left: -2.13333vw;
@@ -5319,7 +5320,7 @@ footer {
   .smarthoop-stock-item h1 {
     margin: 0;
     position: absolute;
-    max-width: 17.86458vw;
+    max-width: 50%;
     top: -2.60417vw;
     left: -2.60417vw; }
   .smarthoop-stock-item .stock-item {
@@ -6080,6 +6081,9 @@ footer {
   width: 0.72917vw;
   height: 0.72917vw;
   margin-left: auto; }
+
+.pod-page-nashi-raboti-w .make-order {
+  display: none; }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .file-item::before {
