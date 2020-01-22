@@ -12,6 +12,8 @@
  * @version 1.2
  */
 $settings  = pods('website_settings')->find();
+
+
 ?>
 <?php
 $params = array(
@@ -138,7 +140,7 @@ $services = pods('services')->find($params);
                             <a target="_blank" href="<?=$settings->display('individually_latitude')?>" class="map-link">
                                 <?=$settings->display('individual_city')?>
                             </a> <br/>
-                            Тел: <a href="tel:+380<?=$settings->display('individually_number')?>" class="phone-link"><?=$settings->display('individually_number')?></a>, <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="tel:+380<?=$settings->display('individually_number2')?>" class="phone-link"><?=$settings->display('individually_number2')?></a><br/>
+                            Тел: <a href="tel:+380<?=$settings->display('individually_number')?>" class="phone-link"><?=$settings->display('individually_number')?></a>, <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="tel:+380<?php echo $settings->display('individually_number2')?>" class="phone-link"><?php echo$settings->display('individually_number2')?></a><br/>
                             <span class="d-md-inline d-sm-none d-none">email:</span> <a href="mailto:<?=$settings->display('individual_email')?>"><?=$settings->display('individual_email')?></a>
                         </div>
                     </div>
@@ -148,7 +150,7 @@ $services = pods('services')->find($params);
                             <a target="_blank" href="<?=$settings->display('individually_latitude')?>" class="map-link">
                                 <?=$settings->display('individual_city')?>
                             </a> <br/>
-                            Тел: <a href="tel:+380<?=$settings->display('individually_number')?>" class="phone-link"><?=$settings->display('individually_number')?></a><br/>
+                            Тел: <a href="tel:+380<?=$settings->display('individually_number')?>" class="phone-link"><?=$settings->display('individually_number')?></a><br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="tel:+380<?php echo $settings->display('individually_number2')?>" class="phone-link"><?php echo$settings->display('individually_number2')?></a></br>
                             email: <a href="mailto:<?=$settings->display('individual_email')?>"><?=$settings->display('individual_email')?></a>
                         </div>
                     </div>

@@ -24,7 +24,7 @@ $settings  = pods('website_settings')->find();
                                 <?=$settings->display('wholesale_street')?><br/>
                                 <?=$settings->display('wholesale_working_hours')?><br/>
                                 <?=$settings->display('wholesale_working_days')?><br/>
-                                Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>"><?=$settings->display('wholesale_number')?></a> Viber/WhatsApp, <a href="tel:+380<?=$settings->display('wholesale_number2')?>"><?=$settings->display('wholesale_number')?></a><br/>
+                                Тел: <a href="tel:+380<?=$settings->display('wholesale_number')?>"><?=$settings->display('wholesale_number')?></a> Viber/WhatsApp,<br> <a href="tel:+380<?=$settings->display('wholesale_number2')?>"><?=$settings->display('wholesale_number2')?></a><br/>
                                 E-mail: <a href="maito:<?=$settings->display('wholesale_emaal')?>"><?=$settings->display('wholesale_email')?></a>
                             </p>
                         </div>
@@ -36,7 +36,7 @@ $settings  = pods('website_settings')->find();
                                 <?=$settings->display('individually_street')?><br/>
                                 <?=$settings->display('individually_working_hours')?><br/>
                                 <?=$settings->display('individually_working_days')?><br/>
-                                Тел: <a href="tel:+380<?=$settings->display('individually_number')?>"><?=$settings->display('individually_number')?></a> Viber/WhatsApp, <a href="tel:+380<?=$settings->display('individually_number2')?>"><?=$settings->display('individually_number2')?></a> <br/>
+                                Тел: <a href="tel:+380<?=$settings->display('individually_number')?>"><?=$settings->display('individually_number')?></a> Viber/WhatsApp, <br><a href="tel:+380<?=$settings->display('individually_number2')?>"><?=$settings->display('individually_number2')?></a> <br/>
                                 E-mail: <a href="maito: <?=$settings->display('individual_email')?>"> <?=$settings->display('individual_email')?></a>
                             </p>
                         </div>
