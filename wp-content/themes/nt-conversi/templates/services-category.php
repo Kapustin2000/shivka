@@ -11,7 +11,7 @@ $data = pods('services')->find($params);
 $found = false;
 if(!empty($data->total_found())) {
     while ($data->fetch()) {
-        shivka_SetPodsSeo($data->display('id'),true);
+        shivka_SetPodsSeo($data->display('id'),true,'services');
         $found = true;
 
         $related_service = pods('single_services')->find(array('where' => 'services.slug = "'.$id.'"'));
