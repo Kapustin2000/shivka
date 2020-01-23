@@ -275,7 +275,7 @@ $(document).ready(function() {
                         loadButton.addClass('hidden');
                     }
                     if (posY) {
-                        document.body.scrollTop = posY;
+                        $('body,html').scrollTop(posY);
                         // document.body.scrollTop = $('.see-more').parent().height() - containerHeight;
                         // containerHeight = $('.see-more').parent().height();
                     }
@@ -294,7 +294,7 @@ $(document).ready(function() {
         }
 
         loadButton.on('click', function() {
-            var posY = document.body.scrollTop;
+            var posY = document.body.scrollTop || window.scrollY;
             if (total <= offset + limit) {
                 loadButton.addClass('hidden');
             }
