@@ -14,7 +14,7 @@ if(!empty($data->total_found())) {
         shivka_SetPodsSeo($data->display('id'),true,'services');
         $found = true;
 
-        $related_service = pods('single_services')->find(array('where' => 'services.slug = "'.$id.'"'));
+        $related_service = pods('single_services')->find(array('where' => 'services.slug = "'.$id.'"','orderby'=>"order_weight.meta_value + 0 DESC,term_id DESC"));
         break;
 
     }
