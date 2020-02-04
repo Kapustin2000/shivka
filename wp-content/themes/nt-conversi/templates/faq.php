@@ -18,7 +18,7 @@ $data = pods('faq')->find(); ?>
         <div class="row">
             <div class="col-12">
                 <h1>
-                    <span>F.A.Q.</span>
+                    <span>ВОПРОСЫ И ОТВЕТЫ</span>
                 </h1>
             </div>
             <div class="inner-wrap col-12">
