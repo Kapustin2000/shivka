@@ -13,7 +13,7 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
         while ($data->fetch()) {
             shivka_SetPodsSeo($data->display('term_id',true,'works'));
             $found = true;
-            $related_gallery = pods('gallery')->find(array('where' => 'works.slug = "'.$id.'"','orderby'=>"order_weight.meta_value + 0 DESC,term_id DESC"));
+            $related_gallery = pods('gallery')->find(array('where' => 'works.slug = "'.$id.'"','orderby'=>"order_weight.meta_value + 0 DESC,ID DESC"));
 
             break;
         }
