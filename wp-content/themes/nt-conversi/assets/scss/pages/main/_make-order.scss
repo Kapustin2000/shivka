@@ -80,8 +80,8 @@
     .box-wrap {
         position: absolute;
         padding: 0;
-        right: get-vw(100px);
-        top: get-vw(604px);
+        left: get-vw(100px);
+        top: get-vw(698px);
         width: calc(50% - 6.23333vw);
         input {
             margin: 0;
@@ -135,8 +135,8 @@ and (max-width: $tablet) {
             }
         }
         .box-wrap {
-            right: get-vw-t(40px);
-            top: get-vw-t(530px);
+            left: get-vw-t(40px);
+            top: get-vw-t(624px);
             width: calc(50% - 5.3vw);
         }
     }
@@ -181,10 +181,9 @@ and (max-width: $tablet) {
             }
             textarea {
                 height: get-vw-m(170px);
-                margin-bottom: get-vw-m(200px);
             }
             .select2-container {
-                margin-bottom: get-vw-m(30px);
+                margin-bottom: get-vw-m(200px);
             }
         }
         .call-form {
@@ -196,8 +195,9 @@ and (max-width: $tablet) {
             }
         }
         .box-wrap {
+            left: auto;
             right: get-vw-m(12px);
-            top: get-vw-m(845px);
+            top: get-vw-m(853px);
             width: calc(100% - 6.4vw);
         }
     }

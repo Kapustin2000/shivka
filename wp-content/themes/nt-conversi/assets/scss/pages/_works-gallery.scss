@@ -68,7 +68,7 @@
   top: get-vw(-50px);
   .back {
     text-align: right;
-    padding-left: get-vw(190px);
+    padding: get-vw(50px) 0 get-vw(50px) get-vw(190px);
     font-family: "Uni Sans Thin Caps", sans-serif;
     font-size: get-vw(30px);
     font-weight: bold;
@@ -178,6 +178,8 @@
     top: get-vw-m(-1px);
     flex-direction: column;
     .back {
+      padding-top: 0;
+      padding-bottom: 0;
       font-size: get-vw-m(20px);
       margin-top: get-vw-m(43px);
       .icon-arrow {

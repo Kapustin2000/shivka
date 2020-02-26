@@ -16,7 +16,7 @@ $(document).ready(function() {
     });
 
     //-------file form
-    $('.service-select:not(#type)').select2();
+    $('.service-select').select2();
 
     if ($('#type').length) {
         $('#type').removeClass("hidden").on("change", function() {
@@ -39,6 +39,7 @@ $(document).ready(function() {
 
     $('#mobile-navbar-toggler').on('click', function() {
         $(this).toggleClass('active');
+        $('header').toggleClass('active');
         $('#mobile-menu-toggle').toggleClass('active');
     });
 
@@ -165,22 +166,21 @@ $(document).ready(function() {
         });
     });
 
-    function phoneLink() {
-        if ($(window).width() > 768) {
-            $('.phone-link').on('click', function(event) {
-                event.preventDefault();
-            });
-        }
-    }
-
-    $(window).on('resize', function() {
-        phoneLink();
-    });
-    phoneLink();
+    // function phoneLink() {
+    //     if ($(window).width() > 1024) {
+    //         $('.phone-link').on('click', function(event) {
+    //             event.preventDefault();
+    //         });
+    //     }
+    // }
+    //
+    // $(window).on('resize', function() {
+    //     phoneLink();
+    // });
+    // phoneLink();
 
     $('#js-address-next').on('click', function() {
        if ($('.address-wrap').length) {
-           console.log('lol');
            $('.address-wrap').find('.address.active').removeClass('active').siblings().addClass('active');
        }
     });

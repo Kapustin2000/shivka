@@ -388,7 +388,7 @@ and (max-width: $tablet) {
             padding: get-vw-m(50px) 0 get-vw-m(100px);
             .bordered {
                 max-width: get-vw-m(335px);
-                height: get-vw-m(520px);
+                height: auto;
                 margin-top: get-vw-m(3px);
                 margin-left: get-vw-m(13px);
                 &::after {
@@ -419,12 +419,13 @@ and (max-width: $tablet) {
                     line-height: get-vw-m(40px);
                 }
                 .text-wrap {
-                    top: get-vw-m(136px);
-                    left: get-vw-m(13px);
+                    position: relative;
+                    margin-top: get-vw-m(105px);
+                    left: get-vw-m(-2px);
                     right: auto;
                     padding: get-vw-m(50px) get-vw-m(10px) get-vw-m(20px);
                     width: get-vw-m(311px);
-                    height: get-vw-m(520px);
+                    height: auto;
                 }
             }
         }

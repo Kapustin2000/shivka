@@ -692,7 +692,7 @@ and (max-width: $tablet) {
       padding: 2.60417vw 5.20833vw;
     }
     .box-wrap {
-      top: get-vw(505px);
+      top: get-vw(602px);
     }
   }
   .call-form {
@@ -753,7 +753,9 @@ and (max-width: $tablet) {
         padding: 2.60417vw 5.20833vw;
       }
       .box-wrap {
-        top: get-vw-t(490px);
+        left: get-vw-t(52px);
+        top: get-vw-t(583px);
+        width: calc(50% - 6.54296875vw);
       }
     }
   }
@@ -926,6 +928,27 @@ and (max-width: $tablet) {
 .page-template-default {
   .make-order {
     display: none;
+  }
+}
+
+iframe[allowfullscreen] {
+  width: 100%;
+  height: get-vw(427px);
+  margin-top: get-vw(38px);
+}
+
+@media (min-width: $min-tablet)
+and (max-width: $tablet) {
+  iframe[allowfullscreen] {
+    margin-top: get-vw-t(32px);
+    height: get-vw-t(343px);
+  }
+}
+
+@media (max-width: $mobile) {
+  iframe[allowfullscreen] {
+    margin-top: get-vw-m(30px);
+    height: get-vw-m(195px);
   }
 }
 

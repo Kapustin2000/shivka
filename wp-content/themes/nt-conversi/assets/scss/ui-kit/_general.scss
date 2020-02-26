@@ -775,7 +775,7 @@ and (max-width: $tablet) {
   .box {
     position: relative;
     padding: get-vw(12px) get-vw(48px) get-vw(10px);
-    height: get-vw(150px);
+    height: get-vw(180px);
     &.uploaded {
       & > .box__input > span {
         display: none !important;
@@ -793,7 +793,7 @@ and (max-width: $tablet) {
       .btn-span {
         position: absolute;
         left: 50%;
-        bottom: get-vw(10px);
+        bottom: get-vw(40px);
         transform: translateX(-50%);
       }
     }
@@ -955,11 +955,14 @@ and (max-width: $tablet) {
     }
     .box {
       padding: get-vw-t(14px) get-vw-t(48px) get-vw-t(10px);
-      height: get-vw-t(140px);
+      height: get-vw-t(169px);
       &.uploaded {
         .file-item:nth-child(4) span::after {
           height: get-vw-t(50px);
           bottom: get-vw-t(-23px);
+        }
+        .btn-span {
+          bottom: get-vw-t(34px);
         }
       }
       &__input {
@@ -974,7 +977,7 @@ and (max-width: $tablet) {
           width: get-vw-t(160px);
         }
         .uploaded + .btn-span {
-          bottom: get-vw-t(10px);
+          bottom: get-vw-t(34px);
         }
         .files-names {
           padding-bottom: get-vw-t(10px);
