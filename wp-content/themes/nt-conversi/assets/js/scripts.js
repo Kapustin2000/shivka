@@ -60,6 +60,8 @@ $(document).ready(function() {
                 'width': 'calc(' + width + ' '+ submenuWidth +')' //- 24vw
             });
             $this.children('.submenu').fadeOut();
+        }).on('click', function(e) {
+            e.preventDefault();
         });
     }
 
