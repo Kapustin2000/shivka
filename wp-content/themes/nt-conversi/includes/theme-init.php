@@ -8,6 +8,21 @@
  */
 
 
+add_action('pods_api_post_save_pod_item', 'sism_pods_set_title_and_name', 10, 3);
+
+function sism_pods_set_title_and_name($pieces, $is_new, $id){
+
+    $post = get_post($id);
+
+
+
+    $post->post_name = sanitize_title($post->post_title);
+
+    remove_action('pods_api_post_save_pod_item', __FUNCTION__);
+    wp_update_post($post);
+    remove_action('pods_api_post_save_pod_item', __FUNCTION__);
+}
+
 
 function reArrayFiles(&$file_post) {
 
