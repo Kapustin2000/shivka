@@ -275,9 +275,11 @@
     margin-top: get-vw-m(125px);
     padding-bottom: get-vw-m(65px);
     h1 {
+      position: relative;
       max-width: 75%;
       top: get-vw-m(-32px);
-      left: get-vw-m(-14px);
+      left: 0;
+      margin-left: get-vw-m(-32px);
       line-height: get-vw-m(40px);
     }
     .stock-item {
@@ -292,24 +294,33 @@
         transform: translate(get-vw-t(10px), 0);
       }
       &::before {
-        top: get-vw-m(115px);
-        left: get-vw-m(4px);
-        width: get-vw-m(320px);
-        height: calc(100% + -9.4vw);
+        display: none;
       }
       &::after {
         height: get-vw-t(12px);
         bottom: get-vw-t(-12px);
       }
       .content-editable {
+        position: relative;
         width: get-vw-m(288px);
         height: auto;
         max-height: 100%;
         overflow: visible;
+        &::before {
+          content: '';
+          position: absolute;
+          background-color: #cdcfe9;
+          opacity: .5;
+          z-index: -1;
+          top: get-vw-m(-22px);
+          left: get-vw-m(-14px);
+          width: get-vw-m(320px);
+          height: calc(100% + 63.4vw);
+        }
       }
       h2 {
         max-width: 70%;
-        margin-top: get-vw-m(137px);
+        margin-top: get-vw-m(30px);
         margin-bottom: get-vw-m(15px);
       }
       p {

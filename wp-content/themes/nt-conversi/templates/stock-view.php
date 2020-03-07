@@ -30,8 +30,11 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
                 <div class="row">
                     <div class="col-12">
                         <div class="stock-item bordered">
+                            <h1 class="d-md-none">
+                                <span>&nbsp;<?=$data->display('post_title')?>&nbsp;</span>
+                            </h1>
                             <div class="content-editable">
-                                <h1>
+                                <h1 class="d-none d-md-block">
                                     <span>&nbsp;<?=$data->display('post_title')?>&nbsp;</span>
                                 </h1>
                                 <h2>

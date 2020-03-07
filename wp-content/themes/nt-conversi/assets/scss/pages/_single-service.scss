@@ -395,33 +395,39 @@ and (max-width: $tablet) {
             .bordered {
                 max-width: get-vw-m(335px);
                 height: auto;
-                margin-top: get-vw-m(3px);
+                margin-top: get-vw-m(50px);
                 margin-left: get-vw-m(13px);
                 &::after {
                     height: get-vw-m(6px);
                     bottom: get-vw-m(-6px);
                 }
                 & > .row > div:first-child {
-                    position: absolute;
-                    top: get-vw-m(-105px);
+                    position: relative;
+                    margin-top: get-vw-m(-155px);
                     height: get-vw-m(287px);
+                }
+                & > .row > div:nth-child(2) {
+                    margin-top: get-vw-m(20px);
                 }
                 .service-img {
                     top: 0;
                     bottom: auto;
-                    left: get-vw-m(85px);
+                    left: auto;
+                    right: get-vw-m(246px);
                     img {
                         top: 0;
                         height: get-vw-m(287px);
                     }
                 }
                 h1 {
-                    position: relative;
+                    position: absolute;
+                    top: auto;
+                    bottom: 100%;
+                    left: get-vw-m(7px);
                     transform: translateX(get-vw-m(-17px));
                     width: get-vw-m(350px);
-                    top: get-vw-m(18px);
+                    margin: 0;
                     right: auto;
-                    left: get-vw-m(-8px);
                     text-align: left;
                     font-size: get-vw-m(34px);
                     line-height: get-vw-m(40px);

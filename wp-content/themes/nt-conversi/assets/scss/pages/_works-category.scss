@@ -148,13 +148,14 @@
         h1 {
           font-size: get-vw-m(34px);
           line-height: get-vw-m(40px);
-          top: get-vw-m(39px);
+          top: auto;
+          bottom: calc(100% - 34.4vw);
           left: get-vw-m(-26px);
           margin: get-vw-m(-6px) 0 0;
         }
       }
       .content-editable {
-        padding-top: get-vw-m(178px);
+        padding-top: get-vw-m(155px);
         padding-bottom: get-vw-m(23px);
       }
       .work-info-img {
