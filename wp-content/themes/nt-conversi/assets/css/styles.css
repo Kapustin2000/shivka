@@ -3308,9 +3308,8 @@ footer {
   .smarthoop-single-service .make-order.upper {
     margin-top: -6.34766vw;
     padding-bottom: 8.30078vw; }
-    .smarthoop-single-service .make-order.upper .g-recaptcha,
-    .smarthoop-single-service .make-order.upper .custom-submit {
-      margin-top: 0; }
+    .smarthoop-single-service .make-order.upper .g-recaptcha {
+      margin-top: 8.59375vw; }
   .smarthoop-single-service .single-service-related {
     padding: 2.34375vw 0 5.37109vw; }
     .smarthoop-single-service .single-service-related h2 {
@@ -3471,6 +3470,8 @@ footer {
       height: 72.26667vw;
       background-color: rgba(205, 207, 233, 0.5);
       opacity: 1; }
+    .smarthoop-single-service .make-order.upper .g-recaptcha {
+      margin-top: 46.66667vw; }
     .smarthoop-single-service .make-order.upper .box-wrap {
       top: 205.33333vw; }
     .smarthoop-single-service .make-order.upper #phone + input {

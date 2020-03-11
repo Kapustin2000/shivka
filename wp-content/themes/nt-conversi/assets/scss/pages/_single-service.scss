@@ -327,9 +327,8 @@ and (max-width: $tablet) {
         .make-order.upper {
             margin-top: get-vw-t(-65px);
             padding-bottom: get-vw-t(85px);
-            .g-recaptcha,
-            .custom-submit {
-                margin-top: 0;
+            .g-recaptcha {
+                margin-top: get-vw-t(88px);
             }
         }
         .single-service-related {
@@ -535,6 +534,9 @@ and (max-width: $tablet) {
                 height: get-vw-m(271px);
                 background-color: rgba(205,207,233,.5);
                 opacity: 1;
+            }
+            .g-recaptcha {
+                margin-top: get-vw-m(175px);
             }
             .box-wrap {
                 top: get-vw-m(770px);
