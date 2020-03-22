@@ -147,14 +147,14 @@ $services = pods('services')->find($params);
                                         <input type="text" id="phone" placeholder="Телефон" name="phone">
                                     </div>
                                     <div class="col-md-6 col-12">
+                                        <textarea rows="5" name="message"
+                                            placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
                                         <select id="service-select" class="service-select" name="service_name">
                                             <option value="0" selected>Вид услуги</option>
                                             <?php while($services->fetch()){ ?>
                                                 <option value="<?=$services->display('name')?>"><?=$services->display('name')?></option>
                                             <?php } ?>
                                         </select>
-                                        <textarea rows="5" name="message"
-                                            placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
                                         <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
 
                                     </div>
