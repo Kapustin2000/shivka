@@ -24,6 +24,15 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
 }
 ?>
 
+<?php
+$params = array(
+    'where' => shivka_filters(),
+    'orderby'=>"order_weight.meta_value DESC,term_id DESC",
+    'offset' => shivka_offset(9),
+);
+$services = pods('services')->find($params);
+?>
+
 <?php get_header(); ?>
 
 <?php if($found){ ?>
