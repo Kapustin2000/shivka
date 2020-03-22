@@ -86,7 +86,7 @@ if($id = shivka_escapeParam(basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_
                             <h2><?=$data->display('post_title')?></h2>
                             <p>С <?=date("d.m.Y", strtotime($data->display('start_date')));?> по <?=date("d.m.Y", strtotime($data->display('end_date')));?></p>
                         </div>
-                        <form action="<?=$_SERVER['REQUEST_URI']?>&form=success" id="order-form" class="order-form active" enctype="multipart/form-data" method="post">
+                        <form action="<?=$_SERVER['REQUEST_URI']?>?form=success" id="order-form" class="order-form active" enctype="multipart/form-data" method="post">
                             <div class="row">
                                 <div class="col-md-6 col-12">
                                     <input type="hidden" required name="stock_name" value="<?=$data->display('post_title')?>">
