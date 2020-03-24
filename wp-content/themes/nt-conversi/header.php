@@ -29,32 +29,32 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_url'); ?>/images/favicon-16x16.png">
     <link rel="manifest" href="<?php bloginfo('template_url'); ?>/images/site.webmanifest">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <?php wp_head(); ?>  
+    <?php wp_head(); ?>
     <style>
-    .captcha-fake-field {
-  background: transparent;
-  bottom: 0;
-  border: none;
-  display: block;
-  height: 1px;
-  left: 12px;
-  width: 1px;
-  position: absolute;
-  z-index: -1;
-}
-        
+        .captcha-fake-field {
+            background: transparent;
+            bottom: 0;
+            border: none;
+            display: block;
+            height: 1px;
+            left: 12px;
+            width: 1px;
+            position: absolute;
+            z-index: -1;
+        }
+
         .g-recaptcha > div{
             margin: 0;
         }
         #g-recaptcha-response {
-    display: block !important;
-    position: absolute;
-    margin: -78px 0 0 0 !important;
-    width: 302px !important;
-    height: 76px !important;
-    z-index: -999999;
-    opacity: 0;
-}
+            display: block !important;
+            position: absolute;
+            margin: -78px 0 0 0 !important;
+            width: 302px !important;
+            height: 76px !important;
+            z-index: -999999;
+            opacity: 0;
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122764804-1"></script>
@@ -134,15 +134,15 @@ $works = pods('works')->find($params);
                                     <span></span>
                                 </a>
                                 <?php if($services->total_found()){ ?>
-                                <ul class="submenu">
-                                    <?php while($services->fetch()) {?>
-                                    <li>
-                                        <a href="/uslugi/<?=$services->display('slug')?>">
-                                            <?=$services->display('name')?>
-                                        </a>
-                                    </li>
-                                    <?php } ?>
-                                </ul>
+                                    <ul class="submenu">
+                                        <?php while($services->fetch()) {?>
+                                            <li>
+                                                <a href="/uslugi/<?=$services->display('slug')?>">
+                                                    <?=$services->display('name')?>
+                                                </a>
+                                            </li>
+                                        <?php } ?>
+                                    </ul>
                                 <?php } ?>
                             </li>
                             <li class="has-submenu">
@@ -288,18 +288,26 @@ $works = pods('works')->find($params);
                                 <input type="text" placeholder="Имя*" required name="full_name">
                                 <input type="email" placeholder="E-mail*" required name="email">
                                 <input type="text" id="phone" placeholder="Телефон" name="phone">
-                            </div>
-                            <div class="col-sm-6 col-12">
-                                <textarea rows="5" name="message"
-                                          placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                                <select class="service-select" name="service_name">
+                                <select id="service-select" class="service-select" name="service_name">
                                     <option value="0" selected>Вид услуги</option>
                                     <?php $services->reset(); while($services->fetch()){ ?>
                                         <option value="<?=$services->display('name')?>"><?=$services->display('name')?></option>
                                     <?php } ?>
                                 </select>
-                                <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
-                                <button type="submit" class="btn btn-primary custom-submit">Отправить</button>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <textarea rows="5" name="message"
+                                          placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-sm-6 col-12">
+                                        <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
+                                    </div>
+                                    <div class="col-sm-6 col-12">
+                                        <button type="submit" class="btn btn-primary custom-submit">Отправить</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -373,7 +381,7 @@ $works = pods('works')->find($params);
                     <span aria-hidden="true"></span>
                 </button>
                 <h2><?=$alerts->display('form_title')?></h2>
-                 <?=$alerts->display('form_description')?>
+                <?=$alerts->display('form_description')?>
                 <a href="/" class="btn btn-span btn-primary">на главную</a>
             </div>
         </div>
@@ -388,7 +396,7 @@ $works = pods('works')->find($params);
                     <span aria-hidden="true"></span>
                 </button>
                 <h2><?=$alerts->display('form_title_2')?></h2>
-                 <?=$alerts->display('form_description_2')?> 
+                <?=$alerts->display('form_description_2')?>
                 <a href="/" class="btn btn-span btn-primary">на главную</a>
             </div>
         </div>
