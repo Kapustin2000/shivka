@@ -3,7 +3,7 @@
 Template Name: Contacts
 */
 
-$settings  = pods('website_settings')->find();
+$settings  = pods('website-settings')->find();
 ?>
 
 <?php get_header(); ?>
