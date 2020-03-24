@@ -490,7 +490,6 @@ $services = pods('services')->find($params);
                                 }
                             })
                     }
-                    $('.custom-submit').hide();
                     if (valid) {
                         $.ajax({
                             type: 'POST',
