@@ -11,7 +11,7 @@
  * @since 1.0
  * @version 1.2
  */
-$settings  = pods('website_settings')->find();
+$settings  = pods('website-settings')->find();
 
 
 ?>
@@ -195,7 +195,7 @@ $services = pods('services')->find($params);
             </div>
             <div class="col-12">
                 <div class="footer-info">
-                    <a href="/politika-konfidenczialnosti">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                    <a href="/privacy-policy">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
                     <p>
                         ©2011 SmartHoop<br/>
                         Все права защищены и охраняются действующим законодательством Украины.
@@ -490,7 +490,6 @@ $services = pods('services')->find($params);
                                 }
                             })
                     }
-                    $('.custom-submit').hide();
                     if (valid) {
                         $.ajax({
                             type: 'POST',

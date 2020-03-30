@@ -29,32 +29,32 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_url'); ?>/images/favicon-16x16.png">
     <link rel="manifest" href="<?php bloginfo('template_url'); ?>/images/site.webmanifest">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <?php wp_head(); ?>  
+    <?php wp_head(); ?>
     <style>
-    .captcha-fake-field {
-  background: transparent;
-  bottom: 0;
-  border: none;
-  display: block;
-  height: 1px;
-  left: 12px;
-  width: 1px;
-  position: absolute;
-  z-index: -1;
-}
-        
+        .captcha-fake-field {
+            background: transparent;
+            bottom: 0;
+            border: none;
+            display: block;
+            height: 1px;
+            left: 12px;
+            width: 1px;
+            position: absolute;
+            z-index: -1;
+        }
+
         .g-recaptcha > div{
             margin: 0;
         }
         #g-recaptcha-response {
-    display: block !important;
-    position: absolute;
-    margin: -78px 0 0 0 !important;
-    width: 302px !important;
-    height: 76px !important;
-    z-index: -999999;
-    opacity: 0;
-}
+            display: block !important;
+            position: absolute;
+            margin: -78px 0 0 0 !important;
+            width: 302px !important;
+            height: 76px !important;
+            z-index: -999999;
+            opacity: 0;
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122764804-1"></script>
@@ -134,15 +134,15 @@ $works = pods('works')->find($params);
                                     <span></span>
                                 </a>
                                 <?php if($services->total_found()){ ?>
-                                <ul class="submenu">
-                                    <?php while($services->fetch()) {?>
-                                    <li>
-                                        <a href="/uslugi/<?=$services->display('slug')?>">
-                                            <?=$services->display('name')?>
-                                        </a>
-                                    </li>
-                                    <?php } ?>
-                                </ul>
+                                    <ul class="submenu">
+                                        <?php while($services->fetch()) {?>
+                                            <li>
+                                                <a href="/uslugi/<?=$services->display('slug')?>">
+                                                    <?=$services->display('name')?>
+                                                </a>
+                                            </li>
+                                        <?php } ?>
+                                    </ul>
                                 <?php } ?>
                             </li>
                             <li class="has-submenu">
@@ -373,7 +373,7 @@ $works = pods('works')->find($params);
                     <span aria-hidden="true"></span>
                 </button>
                 <h2><?=$alerts->display('form_title')?></h2>
-                 <?=$alerts->display('form_description')?>
+                <?=$alerts->display('form_description')?>
                 <a href="/" class="btn btn-span btn-primary">на главную</a>
             </div>
         </div>
@@ -388,7 +388,7 @@ $works = pods('works')->find($params);
                     <span aria-hidden="true"></span>
                 </button>
                 <h2><?=$alerts->display('form_title_2')?></h2>
-                 <?=$alerts->display('form_description_2')?> 
+                <?=$alerts->display('form_description_2')?>
                 <a href="/" class="btn btn-span btn-primary">на главную</a>
             </div>
         </div>

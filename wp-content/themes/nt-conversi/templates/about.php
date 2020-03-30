@@ -13,7 +13,7 @@ $params = array(
 );
 $partners = pods('partners')->find();
 
-$settings_website  = pods('website_settings')->find();
+$settings_website  = pods('website-settings')->find();
 ?>
 
 <!-- Need header -->
