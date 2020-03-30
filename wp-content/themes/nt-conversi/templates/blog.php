@@ -45,13 +45,13 @@ $data = pods('blog')->find($params);
                             <option value="0" <?php if(!isset($_GET['type']) || (int) $_GET['type']==0){ ?>  selected <?php } ?>>
                                 <a href="?type=0">Все</a>
                             </option>
-                            <option value="1" <?php if(!isset($_GET['type']) || (int) $_GET['type']==1){ ?>  selected <?php } ?>>
+                            <option value="1" <?php if(isset($_GET['type']) || (int) $_GET['type']==1){ ?>  selected <?php } ?>>
                                 <a href="?type=1">Статьи</a>
                             </option>
-                            <option value="2" <?php if(!isset($_GET['type']) || (int) $_GET['type']==2){ ?>  selected <?php } ?>>
+                            <option value="2" <?php if(isset($_GET['type']) || (int) $_GET['type']==2){ ?>  selected <?php } ?>>
                                 <a href="?type=2">События</a>
                             </option>
-                            <option value="3" <?php if(!isset($_GET['type']) || (int) $_GET['type']==3){ ?>  selected <?php } ?>>
+                            <option value="3" <?php if(isset($_GET['type']) || (int) $_GET['type']==3){ ?>  selected <?php } ?>>
                                 <a href="?type=3">Новости</a>
                             </option>
                         </select>
