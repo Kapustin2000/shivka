@@ -3308,8 +3308,10 @@ footer {
   .smarthoop-single-service .make-order.upper {
     margin-top: -6.34766vw;
     padding-bottom: 8.30078vw; }
-    .smarthoop-single-service .make-order.upper .g-recaptcha {
-      margin-top: 8.59375vw; }
+    .smarthoop-single-service .make-order.upper .submit-info-form .g-recaptcha {
+      margin-top: 4.29688vw; }
+    .smarthoop-single-service .make-order.upper .select2.select2-container.select2-container--default {
+      margin-top: -0.29297vw; }
   .smarthoop-single-service .single-service-related {
     padding: 2.34375vw 0 5.37109vw; }
     .smarthoop-single-service .single-service-related h2 {
@@ -3471,11 +3473,14 @@ footer {
       background-color: rgba(205, 207, 233, 0.5);
       opacity: 1; }
     .smarthoop-single-service .make-order.upper .g-recaptcha {
-      margin-top: 46.66667vw; }
+      margin-top: 5.33333vw; }
     .smarthoop-single-service .make-order.upper .box-wrap {
-      top: 205.33333vw; }
+      top: 229.33333vw; }
     .smarthoop-single-service .make-order.upper #phone + input {
       display: none; }
+    .smarthoop-single-service .make-order.upper .call-form .g-recaptcha {
+      margin-top: 0;
+      margin-bottom: 8vw; }
   .smarthoop-single-service .single-service-related {
     padding: 2.34375vw 0 5.37109vw; }
     .smarthoop-single-service .single-service-related h2 {
@@ -4637,6 +4642,8 @@ footer {
         left: 0;
         z-index: 10;
         background-color: #fff; }
+      .smarthoop-contacts .contacts .map-wrap small.map-big {
+        font-size: 1.30208vw; }
   .smarthoop-contacts .map-small {
     display: none; }
 
@@ -4672,6 +4679,8 @@ footer {
         right: 0;
         width: 48.82813vw;
         height: 66.89453vw; }
+        .smarthoop-contacts .contacts .map-wrap small.map-big {
+          font-size: 2.14844vw; }
   .page-template-page-contacts > .make-order .decorative.yellow {
     top: -3.90625vw;
     right: 1.46484vw;

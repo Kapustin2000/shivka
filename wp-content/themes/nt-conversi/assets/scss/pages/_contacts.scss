@@ -63,6 +63,9 @@
         z-index: 10;
         background-color: $white;
       }
+      small.map-big {
+        font-size: get-vw(25px);
+      }
     }
   }
   .map-small {
@@ -114,6 +117,9 @@
         right: 0;
         width: get-vw-t(500px);
         height: get-vw-t(685px);
+        small.map-big {
+          font-size: get-vw-t(22px);
+        }
       }
     }
   }

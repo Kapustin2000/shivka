@@ -327,8 +327,11 @@ and (max-width: $tablet) {
         .make-order.upper {
             margin-top: get-vw-t(-65px);
             padding-bottom: get-vw-t(85px);
-            .g-recaptcha {
-                margin-top: get-vw-t(88px);
+            .submit-info-form .g-recaptcha {
+                margin-top: get-vw-t(44px);
+            }
+            .select2.select2-container.select2-container--default {
+                margin-top: get-vw-t(-3px);
             }
         }
         .single-service-related {
@@ -536,13 +539,19 @@ and (max-width: $tablet) {
                 opacity: 1;
             }
             .g-recaptcha {
-                margin-top: get-vw-m(175px);
+                margin-top: get-vw-m(20px);
             }
             .box-wrap {
-                top: get-vw-m(770px);
+                top: get-vw-m(860px);
             }
             #phone + input {
                 display: none;
+            }
+            .call-form {
+                .g-recaptcha {
+                    margin-top: 0;
+                    margin-bottom: get-vw-m(30px);
+                }
             }
         }
         .single-service-related {

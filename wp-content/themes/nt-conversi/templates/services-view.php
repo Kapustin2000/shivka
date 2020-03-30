@@ -139,7 +139,7 @@ $services = pods('services')->find($params);
                                     <span>Заказать звонок</span>
                                 </button>
                             </div>
-                            <form  class="active submit-info-form" enctype="multipart/form-data" method="post">
+                            <form class="active submit-info-form" enctype="multipart/form-data" method="post">
                                 <div class="row">
                                     <div class="col-md-6 col-12">
                                         <input type="text" placeholder="Имя*" required name="full_name">
@@ -149,7 +149,7 @@ $services = pods('services')->find($params);
                                     <div class="col-md-6 col-12">
                                         <textarea rows="5" name="message"
                                             placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
-                                        <select id="service-select" class="service-select" name="service_name">
+                                        <select id="service-select" class="service-select form-select" name="service_name">
                                             <option value="0" selected>Вид услуги</option>
                                             <?php while($services->fetch()){ ?>
                                                 <option value="<?=$services->display('name')?>"><?=$services->display('name')?></option>
@@ -188,15 +188,15 @@ $services = pods('services')->find($params);
 
                             <form action="#" class="call-form">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-md-6 col-12">
                                         <input type="text" placeholder="Имя*" required name="full_name">
                                         <input type="text" placeholder="Телефон*" required name="phone">
                                         <div class="g-recaptcha" data-sitekey="6LeUUrYUAAAAAB-KRJVK-jCmqe3i0KXcpCI0qcv9" style="" data-callback="removeFakeCaptcha"></div><input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
                                     </div>
-                                    <div class="col-6">
-                            <textarea rows="5"
-                                      name="message"
-                                      placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
+                                    <div class="col-md-6 col-12">
+                                        <textarea rows="5"
+                                          name="message"
+                                          placeholder="СООБЩЕНИЕ: опишите ваши пожелания: на чем хотите заказать вышивку, планируемый размер, количество, а также любые другие пожелания относительно вышивки."></textarea>
                                         <button type="submit" class="btn btn-primary custom-submit">Отправить</button>
                                     </div>
                                 </div>

@@ -17,6 +17,7 @@ $(document).ready(function() {
 
     //-------file form
     $('.service-select').select2();
+    $('.form-select').select2();
 
     if ($('#type').length) {
         $('#type').removeClass("hidden").on("change", function() {
