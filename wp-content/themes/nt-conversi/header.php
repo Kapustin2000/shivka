@@ -137,7 +137,7 @@ $works = pods('works')->find($params);
                                     <ul class="submenu">
                                         <?php while($services->fetch()) {?>
                                             <li>
-                                                <a href="/uslugi/<?=$services->display('slug')?>">
+                                                <a href="https://smarthoop.com.ua/uslugi/<?=$services->display('slug')?>">
                                                     <?=$services->display('name')?>
                                                 </a>
                                             </li>
@@ -154,7 +154,7 @@ $works = pods('works')->find($params);
                                     <ul class="submenu">
                                         <?php while($works->fetch()) {?>
                                             <li>
-                                                <a href="/nashi-raboti/<?=$works->display('slug')?>">
+                                                <a href="https://smarthoop.com.ua/nashi-raboti/<?=$works->display('slug')?>">
                                                     <?=$works->display('name')?>
                                                 </a>
                                             </li>
