@@ -20,11 +20,32 @@ $(document).ready(function() {
     $('.form-select').select2();
 
     if ($('#type').length) {
-        $('#type').removeClass("hidden").on("change", function() {
-            var t, e = $(this);
-            t = -1 < window.location.href.indexOf("?") ? "&" + e.attr("id") + "=" + e.val() : "?" + e.attr("id") + "=" + e.val(),
-                window.location.href = window.location.href + t
-        }).select2();
+        $('#type').removeClass("hidden")
+            .on("change", function() {
+                var t, e = $(this);
+                t = -1 < window.location.href.indexOf("?") ? "&" + e.attr("id") + "=" + e.val() : "?" + e.attr("id") + "=" + e.val(),
+                    window.location.href = window.location.href + t
+            })
+            .select2();
+    }
+
+    if ($('.smarthoop-blog').length) {
+        if (/type=0$/.test(window.location.href) || /type=0(&pages=\d)+$/.test(window.location.href)) {
+            $('#type').val('0');
+            $('.select2-selection__rendered').html('Все');
+        }
+        if (/type=1$/.test(window.location.href) || /type=1(&pages=\d)+$/.test(window.location.href)) {
+            $('#type').val('1');
+            $('.select2-selection__rendered').html('Статьи');
+        }
+        if (/type=2$/.test(window.location.href) || /type=2(&pages=\d)+$/.test(window.location.href)) {
+            $('#type').val('2');
+            $('.select2-selection__rendered').html('События');
+        }
+        if (/type=3$/.test(window.location.href) || /type=3(&pages=\d)+$/.test(window.location.href)) {
+            $('#type').val('3');
+            $('.select2-selection__rendered').html('Новости');
+        }
     }
 
     //
