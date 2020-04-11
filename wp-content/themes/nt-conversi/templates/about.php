@@ -6,7 +6,7 @@ Template Name: About
 ?>
 
 <?php
-$settings = pods('about_ui')->find();
+$settings = pods('about-ui')->find();
 
 $params = array(
     'orderby'=>"order_weight.meta_value + 0 DESC,id DESC"

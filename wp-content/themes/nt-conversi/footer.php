@@ -195,7 +195,7 @@ $services = pods('services')->find($params);
             </div>
             <div class="col-12">
                 <div class="footer-info">
-                    <a href="/privacy-policy">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                    <a href="/politika-konfidenczialnosti">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
                     <p>
                         ©2011 SmartHoop<br/>
                         Все права защищены и охраняются действующим законодательством Украины.
