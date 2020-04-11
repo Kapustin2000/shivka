@@ -491,6 +491,7 @@ $services = pods('services')->find($params);
                             })
                     }
                     if (valid) {
+                        $('.custom-submit').hide();
                         $.ajax({
                             type: 'POST',
                             url:'/wp-json/cv/v1/send',
