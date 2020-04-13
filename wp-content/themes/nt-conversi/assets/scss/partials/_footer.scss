@@ -126,15 +126,6 @@ footer {
   }
 }
 
-@media (min-width: $tablet + 1px) {
-  .phone-link {
-    cursor: default;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}
-
 .icon {
   position: absolute;
   top: 50%;
